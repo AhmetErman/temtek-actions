@@ -1,0 +1,6 @@
+feedparser
+deep-translator
+google-genai
+apscheduler
+flask
+gunicorn

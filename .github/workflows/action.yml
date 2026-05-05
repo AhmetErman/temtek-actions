@@ -1,0 +1,50 @@
+name: Scheduled News Scraper
+
+on:
+  schedule:
+    # Runs at 05:00 UTC (08:00 AM UTC+3) every Monday and Thursday
+    - cron: '0 5 * * 1,4'
+  # Allows you to run this workflow manually from the Actions tab for testing
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-classify:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: Run Scraper and Classifier
+        env:
+          # Pulls the API key from your GitHub repository secrets
+          GEMINI_API: ${{ secrets.GEMINI_API }}
+        run: python scraper_w_filter.py
+        
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          # Stage the specific data files
+          git add tech_news_classified.json
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No new articles found. Nothing to commit."
+          else
+            git commit -m "Automated news scrape and classification [skip ci]"
+            git push
+          fi
