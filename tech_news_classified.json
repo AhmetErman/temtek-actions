@@ -2797,5 +2797,542 @@
         "url": "https://zenn.dev/yunamun/articles/7c42b5a0a29740",
         "summary": "はじめに\n2026年5月、Xで「高校生がサイゼリヤの非公式クライアントを作り、CLI からデザートを注文することに成功した」という投稿が話題になりました。さらに、Claude Code や Codex といった AI エージェントから料理を注文できるところまで実装されており、技術界隈は「天才」「すごい」と沸く一方、「これは技術者倫理に違反していないか」「不正アクセス禁止法では？」と懸念する声も少なくありません。\nこの記事は、当事者を糾弾することが目的ではありません。「できること」と「やっていいこと」のあいだに何があるのかを、技術・法律・倫理・ビジネスの 4 つの軸で整理し、AI エー...",
         "summary_en": "Introduction\nIn May 2026, a post titled ``A high school student created an unofficial Saizeriya client and succeeded in ordering dessert from the CLI'' became a hot topic on X. Furthermore, it has been implemented to the point where it is possible to order food from AI agents such as Claude Code and Codex, and while the technology world is buzzing with ``genius'' and ``amazing,'' there are also many voices of concern, such as ``Does this violate engineering ethics?'' and ``Is this a violation of the Unauthorized Access Prevention Act?''\nThis article is not intended to criticize the parties involved. We organize what lies between \"what can be done\" and \"what is okay to do\" along the four axes of technology, law, ethics, and business, and..."
+    },
+    {
+        "source": "ITmedia",
+        "title": "Switch 2「2年目失速」予想を嫌気　任天堂株、一時7000円割る　1年9カ月ぶり安値",
+        "title_en": "Disgusted by the prediction that Switch 2 will stall in its second year, Nintendo stock temporarily drops below 7,000 yen, the lowest in 1 year and 9 months",
+        "date": "Mon, 11 May 2026 16:48:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/11/news110.html",
+        "summary": "ゲーム機は2年目に販売が伸びるのが通例だが、任天堂は「Switch 2は初年度に販売が集中した」として前期比減を見込む。",
+        "summary_en": "Normally, sales of game consoles increase in the second year, but Nintendo expects sales to decline from the previous quarter, saying that ``Sales of the Switch 2 were concentrated in the first year.''"
+    },
+    {
+        "source": "ITmedia",
+        "title": "マネーフォワード、ユーザー補償は「検討中」　本番DBの侵害は「なし」",
+        "title_en": "Money Forward, user compensation is \"under consideration\", no infringement of production DB",
+        "date": "Mon, 11 May 2026 16:20:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/11/news106.html",
+        "summary": "銀行口座連携機能の再開時期は明らかにしておらず、「確定次第、速やかに知らせる」と述べるにとどめた。",
+        "summary_en": "The bank did not specify when the bank account linkage function would resume, only saying, ``We will notify you as soon as it is decided.''"
+    },
+    {
+        "source": "ITmedia",
+        "title": "ソニーが打ち出した「AIによる成長」と“ただし書き”の中身　26年度経営方針説明会",
+        "title_en": "Sony's \"growth through AI\" and the contents of the \"proviso\" FY2016 management policy briefing session",
+        "date": "Mon, 11 May 2026 14:27:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/11/news089.html",
+        "summary": "ソニーグループが8日に開催した「2026年度経営方針説明会」の主役は“AI”だった。エンターテインメント領域へさらに注力するに当たり、いかにAIの活用が重要になるかを具体的な事例を挙げて紹介したが、必ず“ただし書き”が付いていた。",
+        "summary_en": "The main theme of the Sony Group's 2026 Management Policy Briefing held on the 8th was AI. As we further focus on the entertainment field, we introduced specific examples of how the use of AI will become important, but there was always a caveat."
+    },
+    {
+        "source": "ITmedia",
+        "title": "「タコピーの原罪」元アシスタント開発の進捗管理アプリが話題に　作業可能時間から執筆ペースを自動算出",
+        "title_en": "A progress management app developed by a former assistant for ``Tacopi's Original Sin'' becomes a hot topic; it automatically calculates the writing pace from available work time.",
+        "date": "Mon, 11 May 2026 13:50:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/11/news081.html",
+        "summary": "創作活動の進捗管理に特化したスマートフォンアプリ「原稿プランナー」が、SNSを中心に話題を集めている。開発を手掛けたのは、アニメ『タコピーの原罪』でアシスタントを務めていたという平社員T氏。マンガや小説、イラスト集などの制作工程を細かく管理できるツールで、ユーザーの生活実態に即した「作業スタイル」を反映できる点が特徴という。",
+        "summary_en": "``Manuscript Planner,'' a smartphone app that specializes in managing the progress of creative activities, is gaining attention mainly on social media. The person who worked on the development was Mr. T, a common employee who worked as an assistant on the anime ``Tacopi's Original Sin.'' It is a tool that allows detailed management of the production process of manga, novels, illustration collections, etc., and is characterized by the ability to reflect the user's ``work style'' that matches their actual daily life."
+    },
+    {
+        "source": "ITmedia",
+        "title": "1人で続ける“漏えいしないBeReal”　友達ゼロでも楽しい理由",
+        "title_en": "“BeReal that doesn’t leak” by yourself: Why it’s fun even if you have no friends",
+        "date": "Mon, 11 May 2026 13:05:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/11/news076.html",
+        "summary": "つまらない日常のほうが「あのころは毎日、こんな感じだったな」とリアルな記憶が蘇る。",
+        "summary_en": "It's the boring daily life that brings back more realistic memories, like, ``Every day was like this back then.''"
+    },
+    {
+        "source": "ITmedia",
+        "title": "“ChatGPT以後”に公開のWebサイト、35％がAI生成に？　米スタンフォード大などが調査　広まる「不自然に明るい文章」",
+        "title_en": "Will 35% of websites published “after ChatGPT” be AI-generated? A study by Stanford University and others reveals the spread of “unnaturally bright writing”",
+        "date": "Mon, 11 May 2026 12:50:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/11/news027.html",
+        "summary": "英インペリアル・カレッジ・ロンドンや米国の非営利団体Internet Archive、米スタンフォード大学に所属する研究者らが発表した論文「The Impact of AI-Generated Text on the Internet」は、インターネット上のAI生成テキストの割合と、それがもたらす真の影響を明らかにした研究報告だ。",
+        "summary_en": "The paper, ``The Impact of AI-Generated Text on the Internet,'' published by researchers at Imperial College London, the US non-profit Internet Archive, and Stanford University, reveals the proportion of AI-generated text on the Internet and its true impact."
+    },
+    {
+        "source": "ITmedia",
+        "title": "マネーフォワード「なぜGitHubに個人情報が含まれていたか」を説明",
+        "title_en": "Money Forward explains “Why GitHub contained personal information”",
+        "date": "Mon, 11 May 2026 10:29:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/11/news059.html",
+        "summary": "「通常、GitHubに保存するソースコードに個人情報の入力はない」が……。」",
+        "summary_en": "``Normally, personal information is not entered in the source code saved on GitHub''... ”"
+    },
+    {
+        "source": "ITmedia",
+        "title": "マネーフォワードの銀行連携、10日経っても再開せず　ユーザーに不満、解約した人も",
+        "title_en": "Money Forward's bank cooperation does not restart after 10 days, leaving users dissatisfied and some canceling their subscriptions",
+        "date": "Mon, 11 May 2026 09:40:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/11/news056.html",
+        "summary": "資産管理サービス「マネーフォワード」で、銀行との連携停止が長期化しており、問題発生から10日経っても再開のめどが見えていない。",
+        "summary_en": "The asset management service ``Money Forward'' has been suspended from working with banks for an extended period of time, and even 10 days after the problem occurred, there is no prospect of resumption."
+    },
+    {
+        "source": "ITmedia",
+        "title": "「まるで一反もめん」と話題の“人型重機”　JRも活用する技術を市販ロボに　国産スタートアップ人機一体",
+        "title_en": "“Humanoid heavy machinery” is a hot topic, and is said to be “just like a one-liner.” Domestic startup Jin-Kitai Integrates technology used by JR into commercially available robots.",
+        "date": "Mon, 11 May 2026 09:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news061.html",
+        "summary": "「一反木綿みたい」と話題になった人型重機の技術を、既成のロボットにも──高所作業用ロボットなどを手掛けるスタートアップの人機一体が、鉄道設備メンテナンスで稼働している人型重機の基幹技術を、市販の産業用ロボット（協働ロボット）でも応用可能にする試みを進めている。",
+        "summary_en": "Applying the technology of humanoid heavy machinery, which has become a hot topic of discussion as ``Ittan Momen,'' to existing robots -- Jinki Ittai, a startup that works on robots for high-altitude work, is attempting to make the core technology of humanoid heavy machinery used in railway equipment maintenance applicable to commercially available industrial robots (collaborative robots)."
+    },
+    {
+        "source": "ITmedia",
+        "title": "AI生成の「ゴミ報告」が殺到、対応追い付かず疲弊……脆弱性発見の懸賞金制度に異変",
+        "title_en": "Inundated with AI-generated \"garbage reports\", we are exhausted because we cannot keep up with the response... Something unusual has changed in the bounty system for discovering vulnerabilities",
+        "date": "Mon, 11 May 2026 08:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/11/news021.html",
+        "summary": "オープンソースソフトウェア（OSS）の脆弱性に懸賞金をかけて発見を促し、対応を支援してきた米セキュリティ企業のHackerOneが、新規の報告受け付けを停止している。AIで生成された質の低い脆弱性報告の激増が原因といい、影響は主要OSSプロジェクトに及ぶ。同様の懸賞金プログラムを提供してきたGoogleも対応を強いられるなど、AIの影響が深刻化している現実が浮き彫りになった。",
+        "summary_en": "HackerOne, a US security company that has offered bounties on open source software (OSS) vulnerabilities to encourage discovery and support response efforts, has stopped accepting new reports. The cause is said to be a sharp increase in low-quality vulnerability reports generated by AI, and the impact extends to major OSS projects. Google, which has offered similar bounty programs, has been forced to take action, highlighting the reality that the impact of AI is becoming more serious."
+    },
+    {
+        "source": "ITmedia",
+        "title": "中国産ソシャゲ「NTE」をプレイしたマンガ家が思う「アニメ調オープンワールド大作」を日本が作らなくてもいい理由",
+        "title_en": "A manga artist who played the Chinese social game \"NTE\" thinks why Japan doesn't need to create an \"anime-like open world masterpiece\"",
+        "date": "Sun, 10 May 2026 07:14:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/10/news014.html",
+        "summary": "最近、SNSで盛り上がっている話題の一つに「日本のゲーム業界はアニメ調のオープンワールドゲームをなぜ作らないのか」というものがあります。キッカケは「NTE: Neverness to Everness」でした。",
+        "summary_en": "One of the hot topics on social media lately is ``Why doesn't the Japanese game industry make anime-style open world games?'' The kickoff was \"NTE: Neverness to Everness.\"",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Anime open world games"
+    },
+    {
+        "source": "ITmedia",
+        "title": "防衛装備庁、国産ドローン300台を1.1億円で導入へ　日本企業と契約",
+        "title_en": "Defense Equipment Agency signs contract with Japanese company to introduce 300 domestically produced drones for 110 million yen",
+        "date": "Sat, 09 May 2026 10:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/09/news024.html",
+        "summary": "防衛装備庁が、ドローン開発を手掛けるテラドローン（東京都渋谷区）と1億1543万4000円の製造委託契約を結び、同社のドローン「モジュール型UAV（汎用型）教育用」300機を導入する。テラドローンが発表した。",
+        "summary_en": "The Defense Equipment Agency has signed a 115,434,000 yen manufacturing contract with Terra Drone (Shibuya-ku, Tokyo), a drone developer, and will introduce 300 of the company's ``modular UAV (general-purpose) educational drones.'' Terra Drone announced.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Defense drone contract"
+    },
+    {
+        "source": "ITmedia",
+        "title": "ソニーセミコンとTSMC、次世代イメージセンサーで提携　フィジカルAI分野に照準",
+        "title_en": "Sony Semicon and TSMC partner on next-generation image sensors, targeting physical AI field",
+        "date": "Sat, 09 May 2026 07:02:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/09/news027.html",
+        "summary": "ソニーはTSMCと次世代イメージセンサーの開発・製造に関する合弁会社設立に向け基本合意した。熊本県に拠点を置き、車載やロボティクスなどのフィジカルAI分野を強化する。一方で、ホームAV事業をTCLとの合弁会社へ承継し、テレビの自社製造から事実上撤退しており、成長分野へ経営資源を集中させる構造改革を加速させる。",
+        "summary_en": "Sony has reached a basic agreement with TSMC to establish a joint venture to develop and manufacture next-generation image sensors. Based in Kumamoto Prefecture, the company will strengthen its field of physical AI such as in-vehicle and robotics. Meanwhile, the company has transferred its home AV business to a joint venture with TCL, effectively withdrawing from in-house TV manufacturing, and is accelerating structural reforms to concentrate management resources on growth fields.",
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 3,
+        "Gemini_Summary": "AI image sensors joint venture"
+    },
+    {
+        "source": "ITmedia",
+        "title": "Fitbitアプリは「Google Health」に　Googlがフィットネスアプリ統合　既存ユーザーも順次移行",
+        "title_en": "Fitbit app becomes \"Google Health\" Google integrates fitness app Existing users will gradually migrate",
+        "date": "Fri, 08 May 2026 18:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news113.html",
+        "summary": "米Googleは5月8日、ヘルスケアアプリ「Fitbit」の名称を「Google Health」へ変更し、全面刷新すると発表。米国時間19日より全ユーザーを対象に順次アップデートを開始する。",
+        "summary_en": "Google announced on May 8th that it will change the name of its healthcare app \"Fitbit\" to \"Google Health\" and completely revamp it. The update will start rolling out to all users starting on the 19th (US time).",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Fitbit rebranded Google Health"
+    },
+    {
+        "source": "ITmedia",
+        "title": "Apple、390億円の和解金支払いで合意　AI機能の開発遅れに関する集団訴訟で",
+        "title_en": "Apple agrees to pay 39 billion yen in settlement in class action lawsuit over delayed development of AI functions",
+        "date": "Fri, 08 May 2026 17:05:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news100.html",
+        "summary": "音声アシスタント「Siri」のAI機能の誇大広告を巡る集団訴訟について、米Appleが2億5000万ドル（約390億円）の支払いで合意する和解案を米国の裁判所へ提出した。2024年に発表したAIプラットフォーム「Apple Intelligence」の開発遅れに関するもので、同社は今後、和解の対象となる米国の消費者に対して端末1台につき基本25ドルを支払うとしている。",
+        "summary_en": "Apple has submitted a settlement proposal to a US court in which it agrees to pay $250 million (approximately 39 billion yen) in a class action lawsuit over the overhyped AI capabilities of its voice assistant Siri. The settlement relates to delays in the development of Apple Intelligence, an AI platform announced in 2024, and the company will now pay eligible U.S. consumers $25 per device.",
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 2,
+        "Gemini_Summary": "Apple AI lawsuit settlement"
+    },
+    {
+        "source": "ITmedia",
+        "title": "「Switch 2」値上げへ　1万円アップの5万9980円に",
+        "title_en": "\"Switch 2\" price hike: 10,000 yen increase to 59,980 yen",
+        "date": "Fri, 08 May 2026 16:17:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news101.html",
+        "summary": "任天堂が、ゲーム機本体および関連サービスの価格改定を発表した。新型機「Nintendo Switch 2」を含むSwitchシリーズ各機種に加え、サブスクリプションサービス「Nintendo Switch Online」、トランプ・花札などの玩具類が対象。",
+        "summary_en": "Nintendo has announced price revisions for game consoles and related services. In addition to all Switch series models including the new model \"Nintendo Switch 2\", the subscription service \"Nintendo Switch Online\" and toys such as playing cards and Hanafuda cards are eligible.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Nintendo Switch 2 price"
+    },
+    {
+        "source": "ITmedia",
+        "title": "ヤフオクも「ちいかわ」ハッピーセット出品一時禁止へ　メルカリに続き",
+        "title_en": "Yahoo! Auctions also temporarily bans listing of “Chiikawa” Happy Sets, following Mercari",
+        "date": "Fri, 08 May 2026 15:41:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news096.html",
+        "summary": "LINEヤフーは8日、日本マクドナルドが15日に販売を始める「ハッピーセット」の「ちいかわ」について、「Yahoo!フリマ」「Yahoo!オークション」への出品を一時的に禁止すると発表した。",
+        "summary_en": "LINE Yahoo announced on the 8th that it will temporarily prohibit the listing of ``Chikawa,'' a ``Happy Meal'' that McDonald's Japan will start selling on the 15th, on ``Yahoo! Flea Market'' and ``Yahoo! Auction.''",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Yahoo! Auctions Chiikawa ban"
+    },
+    {
+        "source": "ITmedia",
+        "title": "メローニ伊首相がAI生成とみられる自身の下着姿投稿　捏造画像通し「危険なツール」と警告",
+        "title_en": "Italian Prime Minister Meloni posts a fake image of herself in underwear that appears to be AI-generated, warning that it is a \"dangerous tool\"",
+        "date": "Fri, 08 May 2026 14:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news086.html",
+        "summary": "イタリアのメローニ首相が、AIの合成で作られたとみられる自身の下着姿の写真を、自らのSNSで公開し、虚偽画像が捏造される危険性について警告した。",
+        "summary_en": "Italian Prime Minister Meloni posted on his social media a photo of himself in underwear that appears to have been created using AI, warning of the risk of false images being fabricated.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AI generated fake image"
+    },
+    {
+        "source": "ITmedia",
+        "title": "はてな、約11億円の資金流出で特別調査委員会を設置　外部の専門家で構成",
+        "title_en": "Hatena establishes special investigation committee consisting of external experts after capital outflow of approximately 1.1 billion yen",
+        "date": "Fri, 08 May 2026 13:29:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news079.html",
+        "summary": "はてなは7日、不正な送金指示によって約11億円の資金が銀行口座から流出した件で、外部の専門家で構成する特別調査委員会を設置すると発表した。",
+        "summary_en": "Hatena announced on the 7th that it will establish a special investigation committee comprised of outside experts in connection with the leakage of approximately 1.1 billion yen from bank accounts due to fraudulent remittance instructions.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Hatena financial investigation"
+    },
+    {
+        "source": "ITmedia",
+        "title": "「FILCO」のダイヤテックが破産──東京商工リサーチ",
+        "title_en": "“FILCO” Diatech goes bankrupt ─ Tokyo Shoko Research",
+        "date": "Fri, 08 May 2026 13:14:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news077.html",
+        "summary": "「FILCO」ブランドのメカニカルキーボードで知られるダイヤテックが東京地裁から破産開始の決定を受けた。東京商工リサーチが5月8日に伝えた。",
+        "summary_en": "Diatech, known for its FILCO brand mechanical keyboards, has been ordered to enter bankruptcy by the Tokyo District Court. Tokyo Shoko Research reported on May 8th.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "FILCO keyboard company bankruptcy"
+    },
+    {
+        "source": "ITmedia",
+        "title": "メルカリ、「ちいかわ」のハッピーセット出品禁止へ",
+        "title_en": "Mercari to ban \"Chiikawa\" Happy Set listings",
+        "date": "Fri, 08 May 2026 12:30:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news072.html",
+        "summary": "メルカリは5月8日、日本マクドナルドが15日に提供開始するハッピーセットに付属する「ちいかわ」の玩具について、一時的に販売を制限すると発表した。監視を強化し、市販したユーザーには利用制限を課す可能性もある。",
+        "summary_en": "Mercari announced on May 8th that McDonald's Japan will temporarily restrict sales of the Chikawa toy that comes with the Happy Meal that McDonald's Japan will start offering on the 15th. There is also the possibility that monitoring will be strengthened and usage restrictions may be imposed on users who sell the product.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Mercari bans Happy Set listings"
+    },
+    {
+        "source": "ITmedia",
+        "title": "「イルカいないの？」って言ったヤツちょっと来い　蘇るトラウマ、「Copilot Keyboard」正式リリース",
+        "title_en": "Come on, the guy who said “Isn’t there a dolphin?” Reliving the trauma, “Copilot Keyboard” officially released",
+        "date": "Fri, 08 May 2026 11:18:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news062.html",
+        "summary": "かつて検索窓に「お前を消す方法」と入力したスクリーンショットがネットで大人気となり、ネットミーム化した「カイル」。ヤツが「Copilot Keyboard」正式版で帰ってきたのである。しかもタメ語で。",
+        "summary_en": "``Kyle'' once posted a screenshot of him typing ``How to make you disappear'' in the search window, which became very popular on the Internet and became an Internet meme. He's back with the official version of \"Copilot Keyboard.\" And in Tame language.",
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 3,
+        "Gemini_Summary": "Copilot Keyboard release"
+    },
+    {
+        "source": "ITmedia",
+        "title": "Spotify、AI生成の音声コンテンツを保存できるCLIツール「Save to Spotify」公開",
+        "title_en": "Spotify releases “Save to Spotify,” a CLI tool that can save AI-generated audio content",
+        "date": "Fri, 08 May 2026 10:55:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news059.html",
+        "summary": "Spotifyは、AIエージェントが生成した音声コンテンツをライブラリに保存・再生できる新機能「Save to Spotify」を発表した。CLIツールを利用し、AIによる要約やメモを非公開のポッドキャストとしてライブラリに追加できる。「OpenClaw」「Claude Code」「OpenAI Codex」などと連携し、アップロードやメタデータ付与までを自動で行う機能だ。",
+        "summary_en": "Spotify has announced a new feature called ``Save to Spotify'' that allows you to save and play audio content generated by AI agents in your library. Using the CLI tool, you can add AI summaries and notes to your library as private podcasts. This function works with \"OpenClaw,\" \"Claude Code,\" \"OpenAI Codex,\" etc., and automatically uploads and adds metadata.",
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 4,
+        "Gemini_Summary": "Spotify AI audio CLI tool"
+    },
+    {
+        "source": "ITmedia",
+        "title": "IT大喜利「エンタープライズ版BeReal.にありそうなこと」【結果発表】",
+        "title_en": "IT Ogiri “What is likely to happen in the enterprise version of BeReal.” [Results announced]",
+        "date": "Fri, 08 May 2026 10:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/07/news058.html",
+        "summary": "今回のお題は「エンタープライズ版BeReal.にありそうなこと」。本記事では読者の皆さまから集めた回答のうち、担当者が独断と偏見で選んだ名回答を紹介します。",
+        "summary_en": "This time's topic is \"What is likely to happen in the enterprise version of BeReal.\" In this article, we will introduce the best answers selected by the person in charge based on our own discretion and bias from among the answers collected from readers.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Enterprise BeReal hypothetical scenarios"
+    },
+    {
+        "source": "ITmedia",
+        "title": "「ChatGPT」に緊急連絡先機能「Trusted Contact」登場　自殺リスク検知で通知",
+        "title_en": "Emergency contact function “Trusted Contact” introduced in “ChatGPT” Notification when suicide risk is detected",
+        "date": "Fri, 08 May 2026 08:05:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news054.html",
+        "summary": "OpenAIは、「ChatGPT」にメンタルヘルスの懸念が生じた際に信頼できる人物へ通知する安全機能「Trusted Contact」を追加した。18歳以上の個人ユーザーが対象で、AIと人間が深刻なリスクを検知した場合にのみユーザーが指定した連絡先へ安否確認を促す。会話の詳細は非公開で、現実のサポートへの橋渡しを目的とする。",
+        "summary_en": "OpenAI has added a safety feature to ChatGPT called Trusted Contact, which notifies a trusted person when a mental health concern arises. Targeting individual users over the age of 18, the service will only prompt users to contact their designated contacts to confirm their safety if AI and humans detect a serious risk. The details of the conversation will not be made public, and the purpose is to provide a bridge to real-life support.",
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 3,
+        "Gemini_Summary": "ChatGPT Trusted Contact safety feature"
+    },
+    {
+        "source": "ITmedia",
+        "title": "「脳内のゴミ掃除機能」壊す新たな一因を特定　抗体で狙い撃ち→マウスのアルツハイマー症状が改善",
+        "title_en": "A new factor that disrupts the \"brain's garbage cleaning function\" is identified and targeted with antibodies → Alzheimer's symptoms improve in mice",
+        "date": "Fri, 08 May 2026 08:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news020.html",
+        "summary": "広州医科大学などに所属する研究者らが発表した論文「A brain-persistent DDR2-degrading antibody reverses Alzheimer’s pathologies by restoring brain fluid dynamics and metabolic clearance」は、アルツハイマー病に伴い脳の老廃物排出システムの崩壊を引き起こす原因タンパク質を特定し、これを分解する抗体を脳内に届けることで病態を改善できることをマウスで示した研究報告だ。",
+        "summary_en": "The paper ``A brain-persistent DDR2-degrading antibody reverses Alzheimer's pathologies by restoring brain fluid dynamics and metabolic clearance'' published by researchers affiliated with Guangzhou Medical University is a research report showing in mice that the disease condition can be improved by identifying the protein that causes the collapse of the brain's waste excretion system in Alzheimer's disease and delivering antibodies that degrade it into the brain.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Alzheimer's brain cleaning research"
+    },
+    {
+        "source": "ITmedia",
+        "title": "脳のオン/オフ切り替えは鍛えられる──イメトレで実際の運動能力向上に成功、慶應大がPNASで発表",
+        "title_en": "Turning the brain on and off can be trained - Image training successfully improves actual motor skills, Keio University announces on PNAS",
+        "date": "Fri, 08 May 2026 07:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news018.html",
+        "summary": "慶應義塾大学に所属する研究者らがPNASで発表した論文「Brain-computer interface-based neurofeedback training enables transferable control of cortical state switching in humans」は、ブレイン・コンピュータ・インタフェース（BCI）を活用し、イメージトレーニング（イメトレ）中の脳状態を可視化することで、実際の運動能力を向上させることに成功した研究報告だ。",
+        "summary_en": "The paper ``Brain-computer interface-based neuralfeedback training enables transferable control of cortical state switching in humans,'' published by researchers affiliated with Keio University in PNAS, is a research report that successfully improves actual motor performance by visualizing the brain state during image training using a brain-computer interface (BCI).",
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 3,
+        "Gemini_Summary": "BCI motor skill training"
+    },
+    {
+        "source": "ITmedia",
+        "title": "Google、画面がないフィットネストラッカー「Fitbit Air」発表　Geminiが“専任コーチ”に",
+        "title_en": "Google announces fitness tracker “Fitbit Air” without screen; Gemini becomes “dedicated coach”",
+        "date": "Fri, 08 May 2026 02:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/08/news050.html",
+        "summary": "米Googleは5月7日、ウェアラブル「Fitbit」シリーズの新モデル「Google Fitbit Air」を発表した。画面を搭載しないリストバンドタイプのトラッカーで、Fitbitシリーズ最小としている。同日にGoogle ストアで予約受付を開始し、26日に発売する。価格は1万6800円。AndroidだけでなくiOSでも利用可能。",
+        "summary_en": "On May 7th, Google announced the new model of its wearable Fitbit series, the Google Fitbit Air. It is a wristband-type tracker without a screen, and is the smallest in the Fitbit series. Pre-orders will begin on the Google Store on the same day, and it will be released on the 26th. The price is 16,800 yen. Available not only for Android but also for iOS.",
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 4,
+        "Gemini_Summary": "Fitbit Air wearable coach"
+    },
+    {
+        "source": "ITmedia",
+        "title": "大人向けビデオ通話「Kyuun」などで約4万件のユーザー情報漏えいか　11のアプリも対象",
+        "title_en": "Approximately 40,000 users' information was leaked through video calls for adults such as \"Kyuun,\" and 11 apps were also affected.",
+        "date": "Thu, 07 May 2026 20:32:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/07/news117.html",
+        "summary": "「Kyuun」を運営するSTARTDASHは、海外からの不正アクセスにより、Kyuunおよび11のスマートフォンアプリで一部ユーザー情報が外部に漏えいした可能性があると公表した。",
+        "summary_en": "STARTDASH, which operates Kyuun, has announced that some user information on Kyuun and 11 smartphone apps may have been leaked externally due to unauthorized access from overseas.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "User information leak incident"
+    },
+    {
+        "source": "ITmedia",
+        "title": "iPS細胞の特許延長、京大申請へ　再生医療等製品の条件付き承認受け",
+        "title_en": "Patent extension for iPS cells to be submitted to Kyoto University; conditional approval received for regenerative medicine products",
+        "date": "Thu, 07 May 2026 18:57:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/07/news114.html",
+        "summary": "京都大が人工多能性幹細胞（iPS細胞）に関する基本特許の権利延長に向け、6月までに特許庁へ申請する方針を明らかにした。開発初期に出願した基本特許は20年間で原則効力を失うが、iPS細胞を用いた2製品が再生医療等製品として製造販売の条件・期限付き承認を得たことで、最長5年間の延長申請が可能になった。",
+        "summary_en": "Kyoto University has announced that it will apply to the Japan Patent Office by June to extend its basic patent on induced pluripotent stem cells (iPS cells). In principle, basic patents applied for in the early stages of development lose their validity after 20 years, but two products using iPS cells have been approved for manufacture and sale as regenerative medicine products with conditions and time limits, making it possible to apply for an extension for up to five years.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "iPS cell patent extension"
+    },
+    {
+        "source": "ITmedia",
+        "title": "商品選びから決済までをAIでお助け──MUFGがGoogleとタッグで実現目指す　Google Cloud上にインフラ構築",
+        "title_en": "Helping with everything from product selection to payment using AI - MUFG aims to realize this in collaboration with Google - Building infrastructure on Google Cloud",
+        "date": "Thu, 07 May 2026 18:30:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/07/news110.html",
+        "summary": "No Summary Available",
+        "summary_en": "No Summary Available"
+    },
+    {
+        "source": "ITmedia",
+        "title": "Apple、一部Macで「大容量メモリ構成」削除　世界的なメモリ不足で　Mac Studioは最大96GBに制限",
+        "title_en": "Apple removes \"large memory configuration\" on some Macs; Mac Studio is limited to a maximum of 96GB due to global memory shortage",
+        "date": "Thu, 07 May 2026 17:15:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/07/news104.html",
+        "summary": "世界的なメモリ供給不足を受け、米Appleが「Mac Studio」および「Mac mini」のカスタマイズオプションから大容量メモリ構成を相次いで削除していることが分かった。Mac Studioは最大256GBから最大96GBへと大幅に制限されたほか、Mac miniはM4 Proモデルが最大48GB、M4モデルが最大24GBとなっている。",
+        "summary_en": "Due to the global memory shortage, Apple has been removing large memory configurations from the customization options for Mac Studio and Mac mini. Mac Studio has been significantly limited from a maximum of 256GB to a maximum of 96GB, and Mac mini has a maximum of 48GB for the M4 Pro model and 24GB for the M4 model."
+    },
+    {
+        "source": "ITmedia",
+        "title": "マネーフォワード、銀行連携の停止続く　不正アクセスから約1週間　再開は「安全性の確認が完了次第」",
+        "title_en": "Money Forward's bank cooperation continues to be suspended for about a week after unauthorized access. Resumption will be \"as soon as safety confirmation is completed\"",
+        "date": "Thu, 07 May 2026 16:20:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/07/news096.html",
+        "summary": "マネーフォワードが5月1日に発表した「GitHub」経由での不正アクセスを発表してから約1週間が経過した。同社は安全確認のため銀行口座連携機能を一時停止しているが、5月7日現在も多くの金融サービスで連携停止状態が続いている。同社は「現時点で銀行連携の再開は未定だが、安全性の確認が完了次第、連携を再開できるよう対応してまいります」と回答した。",
+        "summary_en": "About a week has passed since Money Forward announced on May 1st that unauthorized access occurred via GitHub. The company has temporarily suspended the bank account linkage function to confirm safety, but as of May 7th, linkage continues to be suspended for many financial services. The company responded, ``At this point, it is undecided whether we will resume cooperation with banks, but we will take measures to resume cooperation as soon as we have confirmed the safety.''"
+    },
+    {
+        "source": "Zenn",
+        "title": "コードを書かなくなった我々は何者か —— Product / Platform / Evaluate の3職責でエンジニアの役割を再定義する",
+        "title_en": "Who are we now that we no longer write code? — Redefining the role of engineers with three responsibilities: Product / Platform / Evaluate",
+        "date": "Mon, 11 May 2026 00:00:12 GMT",
+        "url": "https://zenn.dev/tokium_dev/articles/engineer-role-triangle-map",
+        "summary": "!\n本記事は前置きが長めです。早く結論を知りたい方は、3. 仮説 — エンジニアの職責は Product / Platform / Evaluate の3つに分かれる からお読みください。\n\n\n 1. はじめに\nエンジニアのみなさん。突然ですが、みなさんは自己紹介で自身の仕事を何と名乗っていますか？\n僕の場合、昨年12月からTypeScript + Hono.jsの技術スタックでWebサービスの開発に携わっているので、「Webエンジニア」あるいは「フルスタックエンジニア」と名乗っています。バックもフロントもインフラも、必要であれば全て巻き取る一方、「TypeScriptエンジニア」「Ho...",
+        "summary_en": "!\nThis article has a long introduction. If you want to know the conclusion quickly, please read 3. Hypothesis - Engineer's responsibilities are divided into three parts: Product / Platform / Evaluate.\n\n\n 1. Introduction\nDear engineers. This may be out of the blue, but what do you all call your work when you introduce yourself?\nIn my case, I have been involved in developing web services using the TypeScript + Hono.js technology stack since December last year, so I call myself a \"web engineer\" or \"full stack engineer.\" The back, front, and infrastructure are all rolled up if necessary, while \"TypeScript engineers\" and \"Ho..."
+    },
+    {
+        "source": "Zenn",
+        "title": "書籍のOCRにLLMを組み合わせることで精度を上げるだけでなく文書構造や図も表現した記録",
+        "title_en": "Combining book OCR with LLM not only improves accuracy but also records document structure and diagrams.",
+        "date": "Sun, 10 May 2026 14:58:21 GMT",
+        "url": "https://zenn.dev/phpmyadmin/articles/0dba6fef411e21",
+        "summary": "課題\n手元にあるビジネス書1冊 (縦書き和文、120ページ分) のページ画像をテキスト化したかった。\n入力は PNG 120 枚 (1ページ=1ファイル)、解像度は十分にきれい。図表はほぼなく、文章メイン。\n「専用OCR」「ローカルLLM」「両者の併用」の3手法を実装し、文字精度・処理時間・Markdown構造化要素の数で比較した。\n\n 結論\n\n\n\n手法\n正解類似度 (1849文字基準)\n120ページ処理時間\nMarkdown構造化要素\n\n\n\n\nQwen 単独 (qwen3.5:27b)\n89.82%\n約 80 分\n不安定 (ループあり)\n\n\nNDL OCR Lite 単独\n95.8...",
+        "summary_en": "Challenge\nI wanted to convert the page images of a business book I have (vertically written Japanese, 120 pages) into text.\nThe input is 120 PNG images (1 page = 1 file), and the resolution is sufficiently high. There are almost no diagrams and tables, mostly text.\nWe implemented three methods: ``dedicated OCR,'' ``local LLM,'' and ``a combination of both,'' and compared them in terms of character accuracy, processing time, and number of Markdown structuring elements.\n\n conclusion\n\n\n\nmethod\nCorrect answer similarity (based on 1849 characters)\n120 page processing time\nMarkdown structuring elements\n\n\n\n\nQwen alone (qwen3.5:27b)\n89.82%\nApproximately 80 minutes\nUnstable (with loop)\n\n\nNDL OCR Lite alone\n95.8..."
+    },
+    {
+        "source": "Zenn",
+        "title": "Next.jsからQwikへ丸ごと移行してみた - 個人開発した動的Webアプリのリアーキテクチャ実録",
+        "title_en": "I completely migrated from Next.js to Qwik - Real story of rearchitecture of a dynamic web application developed by an individual",
+        "date": "Sun, 10 May 2026 12:00:18 GMT",
+        "url": "https://zenn.dev/connect0459/articles/rearchitect-from-next-to-qwik",
+        "summary": "TL;DR\n\n対象\n\nNext.jsの経験がある方\nQwikに興味がある方\nフレームワーク移行を検討している方\n\n\n内容\n\nNext.js App Router v15.4からQwik v1.19へ移行し、自サイトのファーストパーティJS転送サイズを2〜4割削減\n移行戦略とQwikのPros/Consを評価\n\n\n\n\n 背景\n学生時代に所属していたコミュニティ向けに、Next.js App RouterでWebアプリを個人で開発・運用していました。しかし、デプロイアダプターの非推奨化を契機に、前々から気になっていたQwikへの移行を試してみました。\n移行にあたって意識したことや、実際に...",
+        "summary_en": "TL;DR\n\nTarget\n\nThose who have experience with Next.js\nFor those interested in Qwik\nFor those considering framework migration\n\n\nContent\n\nMigrate from Next.js App Router v15.4 to Qwik v1.19 and reduce first-party JS transfer size of your site by 20-40%\nEvaluate migration strategy and Qwik Pros/Cons\n\n\n\n\n background\nI personally developed and operated a web application using Next.js App Router for a community I belonged to when I was a student. However, with the deprecation of the deployment adapter, I decided to try migrating to Qwik, which I had been interested in for a while.\nWhat I was conscious of when transitioning and what I actually did..."
+    },
+    {
+        "source": "Zenn",
+        "title": "Obsidianで日常の記録を取るようになってから変わったこと - 人生をハックする",
+        "title_en": "Things that have changed since I started recording my daily life with Obsidian - Hacking my life",
+        "date": "Sun, 10 May 2026 08:33:41 GMT",
+        "url": "https://zenn.dev/dip_techblog/articles/d8d58c0f35708a",
+        "summary": "概要\nObsidianを用いて日常の記録を取るようになったことで、先延ばし癖が改善され、自己理解が深まった体験談\n\n 詳細\n\n はじめに\nこんにちは！新卒の本松です！\n大学1年生の1年間でX（旧Twitter）のポスト数が25,000回を超えるほどの「ツイ廃」でした（現在は完治済み）。その凄まじい発信エネルギーの矛先を、オープンなSNSからクローズドな自分だけのノートアプリ「Obsidian」へ向けたことで、私の日常は大きく変わり始めました。今回はObsidianええぞ、というお話です！\nhttps://obsidian.md/\n\n なぜNotionではなくObsidianなのか？\n...",
+        "summary_en": "Overview\nA story of how using Obsidian to record daily life improved procrastination and deepened self-understanding.\n\n Details\n\n Introduction\nHello! This is Honmatsu, a new graduate!\nDuring my first year at university, I posted more than 25,000 posts on X (old Twitter), which caused me to become a ``tweet addict'' (I have now fully recovered). My daily life began to change dramatically by directing that tremendous energy from open SNS to my own closed note-taking app, Obsidian. This time we're talking about Obsidian!\nhttps://obsidian.md/\n\n Why Obsidian instead of Notion?\n..."
+    },
+    {
+        "source": "Zenn",
+        "title": "CodexをローカルLLMで駆動する",
+        "title_en": "Drive Codex with local LLM",
+        "date": "Sun, 10 May 2026 07:47:08 GMT",
+        "url": "https://zenn.dev/robustonian/articles/codex_with_local_llm",
+        "summary": "はじめに\n本記事では、ローカルLLMを用いてCodex CLIを駆動するための方法についてまとめる。\n!\n検証環境はUbuntu 24.04 LTSで行っているが、一般的なLinuxや、Mac、WSL環境でもそのまま使えるかも。\n\n\n 背景\n私は生成AIのベンチマーク評価をすることが趣味の一つなのだが、最近はLLMとClaude CodeやCodexなどのハーネスを組み合わせた際のエージェント性能を評価することが多い。\n一般的なハーネスはOpenAI Compatible、すなわちChat Completion APIで動くものが殆どで、それ以外としてClaude CodeはAnth...",
+        "summary_en": "Introduction\nThis article summarizes how to drive Codex CLI using local LLM.\n!\nThe testing environment was Ubuntu 24.04 LTS, but it may also be usable in general Linux, Mac, and WSL environments.\n\n\n background\nOne of my hobbies is benchmarking generative AI, and recently I have been often evaluating agent performance when combining LLM with harnesses such as Claude Code and Codex.\nMost common harnesses are OpenAI Compatible, which means they work with the Chat Completion API, and Claude Code uses Anth..."
+    },
+    {
+        "source": "Zenn",
+        "title": "ISUNARABE合同演習2026に参加しました(INUCON チーム)",
+        "title_en": "Participated in ISUNARABE joint exercise 2026 (INUCON team)",
+        "date": "Sun, 10 May 2026 06:52:17 GMT",
+        "url": "https://zenn.dev/mazrean/articles/27fc724fde1b88",
+        "summary": "@KOBA789 さん主催のISUNARABE 合同演習 2026 に参加しました。\nチーム名は INUCON(以下略)で、結果としては参加者唯一の fail でした…\nそのざっくり参加記です。\n\n 前提\n自分の場合、以前から Grafana を中心とした対 ISUCON 用のツール群を整備していました。\nざっくり説明すると、ローカルで Grafana・Prometheus・Pyroscope・Loki を docker により構築し、サーバーに fluentbit と自作の自動計装ツールで各種メトリクスを仕込むことで1発で完全な計測環境ができるというものです[1]。\nhttps://t...",
+        "summary_en": "I participated in ISUNARABE joint exercise 2026 hosted by @KOBA789.\nThe team name was INUCON (abbreviated below), and as a result, they were the only participants to fail...\nThis is a rough record of the participation.\n\n premise\nIn my case, I had been preparing a set of tools for ISUCON, mainly Grafana.\nTo give you a rough explanation, you can create a complete measurement environment in one go by building Grafana, Prometheus, Pyroscope, and Loki locally using docker, and installing various metrics on the server using fluentbit and self-made automatic instrumentation tools [1].\nhttps://t..."
+    },
+    {
+        "source": "Zenn",
+        "title": "Dirty Frag (CVE-2026-43284/43500) — Copy Failの暫定策が効かない理由と未パッチ期の管理者対応",
+        "title_en": "Dirty Frag (CVE-2026-43284/43500) — Reasons why temporary Copy Fail measures do not work and what to do for administrators during unpatched periods",
+        "date": "Sun, 10 May 2026 03:31:29 GMT",
+        "url": "https://zenn.dev/linuxmaster/articles/dirty-frag-cve-2026-43284-43500",
+        "summary": "2026年5月8日（KST）、Linuxカーネルにまた新しいローカル権限昇格（LPE）の脆弱性が公表されました。通称「Dirty Frag」、CVE番号は2件チェーンで CVE-2026-43284（xfrm-ESP / IPsec ESP）と CVE-2026-43500（RxRPC）です。\n最初に書きたいのは、Copy Fail（CVE-2026-31431）の続報を待っていた方への結論です。\n\nCopy Fail で打った algif_aead のブラックリストは、Dirty Frag には効きません。 入口モジュールが違うからです。\n\n「先週やったから大丈夫」と思っているサーバー...",
+        "summary_en": "On May 8, 2026 (KST), another new local privilege escalation (LPE) vulnerability in the Linux kernel was disclosed. Commonly known as \"Dirty Frag\", the CVE numbers are CVE-2026-43284 (xfrm-ESP / IPsec ESP) and CVE-2026-43500 (RxRPC) in a chain of two.\nThe first thing I would like to write is the conclusion for those who have been waiting for the follow-up to Copy Fail (CVE-2026-31431).\n\nThe algif_aead blacklist created by Copy Fail does not work on Dirty Frag. This is because the entrance module is different.\n\nServers who think \"I did it last week so it's okay\"..."
+    },
+    {
+        "source": "Zenn",
+        "title": "Claude Codeでの個人開発とセキュリティ管理",
+        "title_en": "Personal development and security management with Claude Code",
+        "date": "Sun, 10 May 2026 02:53:33 GMT",
+        "url": "https://zenn.dev/btiw/articles/4420d8b95d3e09",
+        "summary": "はじめに\n個人の健康データを収集・集約・分析するシステムを開発している（以前の記事）。7つのリポジトリ、Railsアプリ、Pythonスクリプト群、MCPサーバーからなるシステムで、開発にはClaude Codeを全面的に使っている。\nClaude Codeは強力なツールである。CLAUDE.mdにプロジェクトの設計方針を書いておけば、それを踏まえた実装を提案してくれる。個人開発でありながら、アーキテクチャを崩さずにシステムを拡張し続けられたのは、このツールに負うところが大きい。\n一方で、使い込む中で気になったこともあった。とりわけ秘密情報の扱いである。AIコーディングツールはファイ...",
+        "summary_en": "Introduction\nWe are developing a system to collect, aggregate, and analyze personal health data (previous article). The system consists of seven repositories, a Rails app, a set of Python scripts, and an MCP server, and is fully developed using Claude Code.\nClaude Code is a powerful tool. If you write your project design policy in CLAUDE.md, it will suggest an implementation based on it. I owe a lot to this tool that I was able to continue expanding the system without breaking the architecture, even though I was developing it by myself.\nOn the other hand, there were some things I noticed while using it. In particular, the handling of confidential information. AI coding tools are..."
+    },
+    {
+        "source": "Zenn",
+        "title": "ユーザーストレスを低減するローディング体験の4原則",
+        "title_en": "4 principles for a loading experience that reduces user stress",
+        "date": "Sun, 10 May 2026 01:07:34 GMT",
+        "url": "https://zenn.dev/akfm/articles/better-loading-ux",
+        "summary": "昨今AI Agentの進化は凄まじく、ある程度AI Agent任せでもそれなりに良いUIが実装できるようになってきました。一方UX[1]を細かく作り込むには、AI Agentは明確な指示を必要とします。特にローディング体験[2]は細かい指示がなくともAI Agentがある程度よしなに実装してくれますが、筆者の理想とするような作り込みまでしてくれることはありません。これはおそらくモデルやツールの性能的な問題ではなく、プロンプトやルールを通じて行う目標設定の問題が大きいと筆者は考えています。AI Agentは実行に特化したツールであるため、明確な目標設定は人間側の責務であり、今後もしばらくは...",
+        "summary_en": "Recently, AI Agent has evolved tremendously, and it has become possible to implement a reasonably good UI even if you leave it to AI Agent to some extent. On the other hand, to create a detailed UX [1], AI Agent requires clear instructions. In particular, the loading experience [2] is implemented to some extent by AI Agent without detailed instructions, but it does not go as far as I would like it to be. I believe that this is probably not a performance issue with the model or tool, but rather a problem with goal setting through prompts and rules. Since AI Agent is a tool specialized for execution, it is the responsibility of humans to set clear goals, and this will continue to be the case for some time..."
+    },
+    {
+        "source": "Zenn",
+        "title": "Claude Code の Agent Teams ぽいものを自分で作ってみたい、ついでに Codex でも使いたい。",
+        "title_en": "I want to create something similar to Claude Code's Agent Teams, and I also want to use it in Codex.",
+        "date": "Sun, 10 May 2026 00:56:00 GMT",
+        "url": "https://zenn.dev/himkt/articles/00c6049542170b",
+        "summary": "https://x.com/himkt/status/2052013687914037561\nClaude Code の Agent Teams 的な機能を自分で実現したくなり、 cafleet という CLI ツールを作りました。この記事では Agent Teams の紹介と課題感、および cafleet の紹介とアプローチについて解説します。\nhttps://github.com/himkt/cafleet\n\n Background; Agent Teams は楽しい\nAgent Teams は複数の Claude Code セッションを協調させる機能です。これは Claude Co...",
+        "summary_en": "https://x.com/himkt/status/2052013687914037561\nI wanted to implement Claude Code's Agent Teams-like functionality myself, so I created a CLI tool called cafleet. This article provides an introduction to Agent Teams and its challenges, as well as an introduction to cafleet and its approach.\nhttps://github.com/himkt/cafleet\n\n Background; Agent Teams is fun\nAgent Teams is a feature that coordinates multiple Claude Code sessions. This is Claude Co..."
+    },
+    {
+        "source": "Zenn",
+        "title": "人間がMarkdownを書いたり修正しない時代に、Claude Code hookでドキュメントを自動でファンシーHTML化する",
+        "title_en": "Automatically convert documents into fancy HTML using Claude Code hook in an era where humans do not write or modify Markdown",
+        "date": "Sat, 09 May 2026 23:35:10 GMT",
+        "url": "https://zenn.dev/uehaj/articles/claude-code-fancy-html-hook",
+        "summary": "はじめに\nX 上で見かけた 「もう Markdown じゃなくて HTML でドキュメント書いた方がよくない？」 系の議論（@trq212 のポスト等）には、まったく同感です。\nというのも、自分は もう半年ほど前から、Claude CodeにHTMLでドキュメント生成させています。エージェントを使えばつかうほど、その生成物を直接人間が修正することが減るからです。プランファイルがその典型で、プランがまちがっていたらそれはAIに指示して修正させるべきで手動修正するべきではないのです。その理由は手間を減らしたいからではなく、「なぜそう出力されたか」の理由にたちもどって指示しないとAIは同じ...",
+        "summary_en": "Introduction\nI completely agree with the arguments I saw on X (such as @trq212's post) about \"Isn't it better to write documents in HTML instead of Markdown?\"\nThis is because I have been using Claude Code to generate HTML documents for about half a year now. The more agents are used, the less direct human modification of the product is. A typical example is the plan file; if the plan is wrong, you should instruct the AI ​​to correct it, not manually. The reason for this is not because we want to reduce the amount of effort involved, but rather, if we don't go back to the reason why it was output and give instructions, the AI ​​will be the same..."
+    },
+    {
+        "source": "Zenn",
+        "title": "なぜ Tailwind CSS は line-height を leading と呼ぶのか？ 由来や経緯を調べてみた",
+        "title_en": "Why does Tailwind CSS call line-height leading? I investigated the origin and history",
+        "date": "Sat, 09 May 2026 12:58:38 GMT",
+        "url": "https://zenn.dev/y_ta/articles/why-tailwind-leading-tracking",
+        "summary": "Tailwind CSSを使っていると、いつも直面する問題があります。それは、行間と文字間の指定方法を毎回忘れてしまうことです。\nCSSでは、行間はline-height、文字間はletter-spacingで指定します。ところがTailwind CSSでは、それぞれleadingとtrackingという、どこから出てきたのかまるでわからない名前を使用します。\n&lt;p class=\"leading-7 tracking-wide\"&gt;\n  Tailwind CSS\n&lt;/p&gt;\n最近はAIが出てきて別に忘れてしまったからと言って特段困るということはありませんが、以前は毎回...",
+        "summary_en": "There's a problem I always run into when using Tailwind CSS. The problem is that I always forget how to specify line spacing and character spacing.\nIn CSS, line spacing is specified by line-height, and character spacing is specified by letter-spacing. However, Tailwind CSS uses leading and tracking names, which are completely incomprehensible from where they came from.\n&lt;p class=\"leading-7 tracking-wide\"&gt;\n  Tailwind CSS\n&lt;/p&gt;\nNowadays, with the advent of AI, I don't have to worry about forgetting something, but in the past..."
+    },
+    {
+        "source": "Zenn",
+        "title": "今日からできるAIワークフロー設計シリーズ：LLMアプリを本番業務に入れるための設計パターン集",
+        "title_en": "AI workflow design series that you can start today: A collection of design patterns for implementing LLM applications into production operations",
+        "date": "Sat, 09 May 2026 10:35:01 GMT",
+        "url": "https://zenn.dev/kanaria007/articles/c74aae44ba99fb",
+        "summary": "このシリーズについて\nこのシリーズは、LLM / AI エージェントを本番業務に入れるときに必要になる設計パターンを整理したものです。\nどれも今日から部分的に実装可能な粒度でパターン化しています。\n中心にあるのは、モデルを賢くする話ではなく、AI の出力が、どの入力に基づき、どの境界を越え、誰に承認され、どの effect を起こし、あとからどう説明・停止・修復できるか、というワークフロー設計です。\nLLM アプリケーションは、最初はチャット欄や補助機能として始まります。\nしかし、業務に近づくほど、次のような問いが避けられなくなります。\n\nAI は何を読めているのか\nどこまでが提案な...",
+        "summary_en": "About this series\nThis series organizes the design patterns needed when putting LLM/AI agents into production.\nAll of them are patterned at a level of granularity that can be partially implemented starting today.\nThe focus is not on making the model smarter, but on the workflow design: what inputs will the AI ​​output be based on, what boundaries will it cross, who will approve it, what effects will it cause, and how can it be explained, stopped, and repaired afterwards.\nLLM applications start out as chat fields and support features.\nHowever, the closer you get to the business, the more questions you can't avoid:\n\nWhat is AI reading?\nHow far do you suggest..."
+    },
+    {
+        "source": "Zenn",
+        "title": "Claude Code・Codex CLI・Copilot CLI を QCD で比較する（オトナの自由研究 #16）",
+        "title_en": "Comparing Claude Code, Codex CLI, and Copilot CLI with QCD (adult independent study #16)",
+        "date": "Sat, 09 May 2026 06:32:56 GMT",
+        "url": "https://zenn.dev/nnakapa/articles/lab-16-rpi4-qcd",
+        "summary": "はじめに\n3者ほぼ互角。スコアに出ない差は「コードレビュー」に出た\nClaude Code・Codex CLI・GitHub Copilot CLI にタスクを 90回解かせ、品質・コスト・速度（QCD）の 3 軸で比較したところ、3者の品質はほぼ並び、用途で「迷ったら Claude Code、コスト優先なら Copilot CLI」と選び分けられる範囲に収まりました。\nむしろ 90 試行で最大の発見は、コードレビュー時におけるモデル間の挙動差。コードレビューを LLM に任せるなら CLI ではなくまずモデルを選べ——QCD ベンチマークの本筋から派生した、もう一つの知られざる事実...",
+        "summary_en": "Introduction\nThe three are almost evenly matched. The difference that was not shown in the score was shown in the \"code review\"\nWhen we asked Claude Code, Codex CLI, and GitHub Copilot CLI to solve a task 90 times and compared them on the three axes of quality, cost, and speed (QCD), the quality of the three was almost the same, and we were within the range of choosing Claude Code when in doubt, and Copilot CLI when cost is a priority.\nRather, the biggest discovery after 90 trials was the difference in behavior between models during code review. If you want LLM to do your code review, choose a model instead of CLI—another little-known fact derived from the core of QCD benchmarks..."
+    },
+    {
+        "source": "Zenn",
+        "title": "シャドーITのススメ",
+        "title_en": "Shadow IT recommendation",
+        "date": "Sat, 09 May 2026 04:07:20 GMT",
+        "url": "https://zenn.dev/yuta_enginner/articles/08b775eb6873df",
+        "summary": "「シャドーITは悪である」\n多くの企業の情報システム部門は、そう教える。\nしかし私は、製造業の現場にいる人間として、逆のことを言いたい。\nむしろ、現代日本企業においては、シャドーITこそが現場を支えている。\n\n 現場は“勝手に”Excelを使っているのではない\n製造業では、品質保証と法令遵守が絶対条件である。\n原料規格\n処方情報\n配合比率\n変更履歴\nトレーサビリティ\n本来なら、これらは統合されたシステムで厳密に管理されるべきだ。\nところが実際には、多くの企業でまともな基幹システムが存在しない。\n入力が不便。\n検索できない。\n変更履歴が追えない。\nマスタ管理が破綻している。\nその結果、各部...",
+        "summary_en": "\"Shadow IT is evil\"\nMany companies' information systems departments teach this.\nHowever, as someone who works in the manufacturing industry, I would like to say the opposite.\nIn fact, in modern Japanese companies, it is shadow IT that supports the workplace.\n\n In the field, Excel is not used “without permission”\nIn the manufacturing industry, quality assurance and legal compliance are absolute requirements.\nRaw material standards\nPrescription information\nMixing ratio\nChange history\ntraceability\nOriginally, these should be strictly managed in an integrated system.\nHowever, in reality, many companies do not have a proper core system.\nInput is inconvenient.\nCan't search.\nI can't track the change history.\nMaster management is broken.\nAs a result, each part..."
+    },
+    {
+        "source": "Zenn",
+        "title": "Claude Codeを\"使いこなす\"ための個人ルール設定 - 実際にやって効果が高かった設定",
+        "title_en": "Personal rule settings for \"mastering\" Claude Code - Settings that were actually effective",
+        "date": "Fri, 08 May 2026 12:38:57 GMT",
+        "url": "https://zenn.dev/dotdtech_blog/articles/92348ee48cc692",
+        "summary": "はじめに\nClaude Codeを使い始めて数ヶ月、便利だなと思いつつも「同じ指示を何度も書いてないか？」「無駄な前置きを毎回読まされてないか？」と感じる場面が増えてきました。\nAIに作業を任せるのは便利ですが、AIを使うこと自体に発生するタイムロスに目を向けると、まだまだ効率化の余地があると気づきました。\nこの記事では、Claude Codeを触り始めたエンジニア向けに、私が実際にやってみて効果が高かった「個人ルールの設定」をまとめます。難しい設定はなく、ファイルに数行追記するだけで作業効率がはっきり変わるものを紹介します。\n読み終わるころには、自分のCLAUDE.mdに何を書けば...",
+        "summary_en": "Introduction\nI've been using Claude Code for a few months now, and while I've found it useful, I've found myself increasingly finding myself writing the same instructions over and over again, and having to read unnecessary prefaces every time.\nIt is convenient to delegate work to AI, but when I looked at the time loss that occurs when using AI itself, I realized that there is still room for efficiency improvements.\nIn this article, for engineers who are just starting to use Claude Code, I will summarize the \"setting of personal rules\" that I have found to be very effective. There are no difficult settings, and just adding a few lines to the file will dramatically improve your work efficiency.\nBy the time you finish reading, you will know what to write in your CLAUDE.md..."
+    },
+    {
+        "source": "Zenn",
+        "title": "AI時代こそ、エンジニアは「師匠」が要る",
+        "title_en": "In the age of AI, engineers need a “master”",
+        "date": "Fri, 08 May 2026 10:19:21 GMT",
+        "url": "https://zenn.dev/acntechjp/articles/2e8d38ad383dd3",
+        "summary": "!\n\n 三行まとめ\n\nAIは「手がかり」を大量に渡すが、本質への跳躍は肩代わりしない。だからAI時代こそ、跳躍を見せてくれる師匠が要る。\n伝統芸能の徒弟制と同じ構造で、「同期的・長時間・思考開示型」のフォーマットでしか会得できない遠隔項を誰とどう持つかが重要である。\nAI時代の現場でそれを実装する一つの形がペアプロ・モブプロ。隣で学ぶ場を持つこと、いまできる動きの一つだと考える。\n\n\n!\n\n まえおき\n悪夢のような週5出社の大号令が発令されてからもう1年が経とうとしている。\n無論私も週5出社を継続している。そしていまでも出社は苦手だ。\nしかし、なんとか対面で働くことに意味を見出せないかと...",
+        "summary_en": "!\n\n Three line summary\n\nAI provides a large number of \"clues\" but does not take over the leap to the essence. Therefore, in the age of AI, we need a master who can show us the leap forward.\nIt has the same structure as the apprenticeship system of traditional performing arts, and it is important to know who and how to have distant knowledge that can only be acquired through a ``synchronous, long-term, thought-opening'' format.\nPair Pro and Mob Pro are one way to implement this in the field in the AI ​​era. I think having a place to learn next door is one of the things we can do right now.\n\n\n!\n\n Foreword\nIt's already been a year since the nightmarish directive to come to work five days a week was issued.\nOf course, I continue to come to work five days a week. And I still don't like going to work.\nHowever, I wonder if I can somehow find meaning in working face-to-face..."
+    },
+    {
+        "source": "Zenn",
+        "title": "AIエージェント時代のDB設計をTursoが書き換えに来ている話",
+        "title_en": "A story about Turso coming to rewrite DB design in the age of AI agents",
+        "date": "Fri, 08 May 2026 02:50:05 GMT",
+        "url": "https://zenn.dev/emuni/articles/6eef9f97f564b4",
+        "summary": "はじめに\nこんにちは、株式会社エムニでエンジニア・PMとして働いている宮木です。\n先日、Tursoから興味深いアナウンスが出ました。\n\nTurso Now Includes Unlimited Active Databases for Everybody\nhttps://turso.tech/blog/turso-now-includes-unlimited-databases-for-everybody\n\n要約すると、有料プランで「アクティブDBの数」という制限を撤廃したという話です。一見すると単なる料金プラン変更のニュースですが、この発表の背後には「データベースをどう設計するか」...",
+        "summary_en": "Introduction\nHello, my name is Miyagi and I work as an engineer and PM at Muni Co., Ltd.\nTurso made an interesting announcement the other day.\n\nTurso Now Includes Unlimited Active Databases for Everybody\nhttps://turso.tech/blog/turso-now-includes-unlimited-databases-for-everybody\n\nTo summarize, the story is that we have removed the limit on the number of active DBs in paid plans. At first glance, it is just news of a change in the price plan, but behind this announcement there is a question about how to design the database..."
+    },
+    {
+        "source": "Zenn",
+        "title": "あなたの Claude Code、実は前回のセッションを完全に忘れている (5 分で永続記憶を入れる)",
+        "title_en": "Your Claude Code has actually completely forgotten the previous session (add permanent memory in 5 minutes)",
+        "date": "Fri, 08 May 2026 00:38:24 GMT",
+        "url": "https://zenn.dev/kanseilink/articles/linksee-memory-claude-code-recall-20260508",
+        "summary": "こんな経験ありませんか?\n月曜の朝、 Claude Code を立ち上げる。\n\n「先週直したあのバグ、 どう直したか覚えてる?」\n\nClaude: すみません、 過去のセッションの内容にはアクセスできません。\n        どのような問題だったか、 もう一度教えていただけますか?\n…またこれだ。 先週も先々週も同じ説明をした。\n私は Claude Code を毎日使っている。 そして毎日、 同じ説明を同じ AI に何度も繰り返している。 「JWT_SECRET を rotate したら全 session が invalidate するから、 並行 redeploy しろ」 と教えた...",
+        "summary_en": "Have you ever experienced something like this?\nMonday morning, I launch Claude Code.\n\n\"Do you remember how you fixed that bug you fixed last week?\"\n\nClaude: Sorry, we don't have access to the content of past sessions.\n        Could you please tell me again what the problem was?\n...This is it again. I gave the same explanation last week and the week before that.\nI use Claude Code every day. And every day, they repeat the same explanation to the same AI over and over again. I told them, ``If you rotate JWT_SECRET, all sessions will be invalidated, so redeploy them in parallel.''"
+    },
+    {
+        "source": "Zenn",
+        "title": "1年間の育休に備えて「勝手に賢くなる」AI情報収集基盤を作った",
+        "title_en": "Created an AI information collection platform that \"becomes smarter on its own\" in preparation for a year of childcare leave",
+        "date": "Thu, 07 May 2026 06:00:09 GMT",
+        "url": "https://zenn.dev/tokium_dev/articles/20260427_ai_tech_researcher",
+        "summary": "はじめに\nこんにちは、TOKIUMでEMをしているskです。\nもうすぐ1年間の育休に入ります👶🍼\n新生活がとても楽しみな一方で、ひとつ気がかりなことがあります。\nそれは生成AI周りの技術トレンド、1年離れたら完全に浦島太郎になるのでは？ という点です。\nこの領域は1週間単位でも新しいツールや手法がどんどん出てきます。\n1年後に復帰して「え、この作業って誰も手動でやっていないの？」「社内でxxというAIツールが流行っているけど一体何者なんだ、、？」などと困惑する未来が容易に想像できました。\nかといって、育休中にZennやQiitaを巡回する余裕はなさそうです。\nほしいのは 「放っておい...",
+        "summary_en": "Introduction\nHello, I'm sk, an EM at TOKIUM.\nI'm about to go on maternity leave for a year👶🍼\nWhile I am very excited about my new life, there is one thing I am concerned about.\nIt's a technology trend surrounding generative AI, and if you leave it for a year, won't it become Taro Urashima? That's the point.\nIn this area, new tools and techniques are constantly appearing on a weekly basis.\nI could easily imagine a future where I would come back a year later and be confused and wonder things like, ``Wait, no one does this work manually?'' or ``There's an AI tool called xx that's popular within the company, but what exactly is it?''\nHowever, I don't think I can afford to visit Zenn or Qiita during my childcare leave.\nWhat I want is ``Leave me alone...''"
     }
 ]
