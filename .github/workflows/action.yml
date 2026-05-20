@@ -13,13 +13,14 @@ permissions:
 jobs:
   scrape-and-classify:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         
       - name: Set up Python 3.13
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13'
           cache: 'pip'
@@ -33,6 +34,8 @@ jobs:
         env:
           # Pulls the API key from your GitHub repository secrets
           GEMINI_API: ${{ secrets.GEMINI_API }}
+          # Ensure Python output streams in real-time (no buffering)
+          PYTHONUNBUFFERED: '1'
         run: python scraper_w_filter.py
         
       - name: Commit and Push changes

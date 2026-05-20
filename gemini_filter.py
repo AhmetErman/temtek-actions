@@ -114,9 +114,14 @@ class GeminiClassifier:
                 )
                 
                 if response.text:
-                    if not response.text.strip().startswith('{'):
+                    stripped = response.text.strip()
+                    if not stripped.startswith('{'):
                         raise ValueError("API returned non-JSON string.")
-                    return json.loads(response.text)
+                    # Use raw_decode to parse only the first JSON object,
+                    # ignoring any trailing data the model may append
+                    decoder = json.JSONDecoder()
+                    result, _ = decoder.raw_decode(stripped)
+                    return result
                 raise ValueError("API response text is missing (possible block).")
                 
             except Exception as e:
