@@ -145,14 +145,14 @@ Chemical Interaction & Smart Dosing: Studies regarding the synergy between deter
 
 Hygiene & Health Technologies: Focuses on sanitization and allergen removal. This category covers high-temperature or steam-based cycles (Hygiene+) designed to eliminate bacteria, viruses, and allergens, as well as odor removal technologies that don't necessarily require water.
 
-AI, IoT & Smart Sensors: Covers the digitalization of appliances. This includes HomeWhiz integration, machine learning algorithms for cycle optimization, sensor development for load sensing, turbidity detection, and noise/vibration control (Unbalanced Load detection).
+IoT & Smart Sensors: Covers the digitalization of home appliances. This includes smart home integration, machine learning algorithms for cycle optimization, sensor development for load sensing, turbidity detection, and noise/vibration control (Unbalanced Load detection).
 
 Other: Choose this category if the text describes general mechanical design, supply chain innovations, structural durability tests, industrial design, or any other R&D activity that does not directly fit into the specific cleaning and textile categories listed above."""
     
     classifier = GeminiClassifier(
         api_key=api_key,
-        model_name="gemini-3.0-flash", 
-        batch_size=10,
+        model_name="gemini-3.5-flash", 
+        batch_size=50,
         system_prompt=system_prompt,
         response_schema=""
     )

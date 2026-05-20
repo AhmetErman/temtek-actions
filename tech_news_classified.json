@@ -4900,5 +4900,65 @@
         "Classification": "Other",
         "RelationScore": 5,
         "Gemini_Summary": "Home server recovery"
+    },
+    {
+        "source": "ITmedia",
+        "title": "Google、AIが価格監視や決済最適化を自動で行う「Universal Cart」発表",
+        "title_en": "Google announces \"Universal Cart\", which uses AI to automatically monitor prices and optimize payments",
+        "date": "Wed, 20 May 2026 14:41:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/20/news102.html",
+        "summary": "Googleが「Google I/O 2026」で発表した「Universal Cart」は、検索、Gemini、YouTube、Gmailなどの同社サービスを横断して商品を一元管理できるショッピングカート。Geminiが価格変動の監視や在庫アラート、カート内商品の互換性チェックをバックグラウンドで実行し、Google Walletと連携して最適な決済方法も提案する。",
+        "summary_en": "The Universal Cart, which Google announced at Google I/O 2026, is a shopping cart that allows you to centrally manage products across Google's services such as Search, Gemini, YouTube, and Gmail. Gemini monitors price fluctuations, provides inventory alerts, checks compatibility with cart items in the background, and works with Google Wallet to suggest the best payment method.",
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Google AI Shopping Cart"
+    },
+    {
+        "source": "Zenn",
+        "title": "Antigravity 2.0、IDEが消えた・サインインできない問題の対処法",
+        "title_en": "Antigravity 2.0, how to deal with the issue of IDE disappearing or not being able to sign in",
+        "date": "Tue, 19 May 2026 19:52:27 GMT",
+        "url": "https://zenn.dev/rei2718/articles/01d92f4913277f",
+        "summary": "!\n対象読者: Antigravity 2.0リリース直後にハマっている方\n\nAntigravity 2.0リリース直後、サインインできない・IDEが消えたという報告がコミュニティ・X等で多数上がっている。本記事では原因と対処法を簡潔にまとめた。\n\n Q. サインインできない\nA. アプリを一度終了して再起動する。\n認証自体は完了しているがステート管理の問題で画面遷移ができていない状態。再インストール不要。複数回の再起動で解消したケースも報告されている。\n\n Q. Antigravity IDEがどこかに消えた\nA. IDEはなくなっていない。Antigravity 2.0とは別アプリと...",
+        "summary_en": "!\nTarget audience: People who are addicted to Antigravity 2.0 right after its release.\n\nImmediately after the release of Antigravity 2.0, there were many reports in the community, X, etc. that they could not sign in or the IDE disappeared. This article briefly summarizes the causes and solutions.\n\n Q. I can't sign in.\nA. Close the app and restart it.\nAuthentication itself has been completed, but screen transitions are not possible due to state management issues. No reinstallation required. There have also been reports of cases where the issue was resolved by restarting multiple times.\n\n Q. Antigravity IDE disappeared somewhere\nA. IDEs are not going away. Antigravity 2.0 is a different app...",
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Antigravity IDE troubleshooting"
+    },
+    {
+        "source": "Zenn",
+        "title": "Gemma 4 E4Bをローカルで量子化してみた",
+        "title_en": "I tried quantizing Gemma 4 E4B locally",
+        "date": "Tue, 19 May 2026 16:37:23 GMT",
+        "url": "https://zenn.dev/monjofight/articles/4a2b3393581229",
+        "summary": "!\nこの記事はClaude Codeと一緒に、自分の学習のためにLLMの量子化を一通り体験してみた記録です。Claude Codeに手順を聞きながら、自分のターミナルで実際に動かして試しています。\n本文もClaude Codeで整えています。その点はご了承ください。\n\n\n はじめに\n最近LocalLLMを自分のPCで動かしてみたり、メモリ512GBのMac Studioを触る機会があったりして、ローカルでLLMを動かすことへの興味がかなり出てきました。\nその中でよく出てくるのが、Q4_K_Mとか、4bit量子化、8bit量子化みたいな言葉です。\nざっくり「数字の桁数というか、重みの情報量...",
+        "summary_en": "!\nThis article is a record of my experience with LLM quantization for my own learning with Claude Code. I'm listening to Claude Code's instructions and trying it out on my own terminal.\nThe main text is also arranged using Claude Code. Please understand that point.\n\n\n Introduction\nRecently, I tried running LocalLLM on my PC and had the opportunity to use Mac Studio with 512GB of memory, and I became very interested in running LLM locally.\nAmong them, words such as Q4_K_M, 4bit quantization, and 8bit quantization are often used.\nRoughly speaking, it is the number of digits in a number, or the amount of information in its weight...",
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Local LLM quantization test"
+    },
+    {
+        "source": "Zenn",
+        "title": "AWS CDK の単体テストの『使い所』を Coding Agent に判断させる Skill を作った",
+        "title_en": "I created a skill that allows Coding Agent to determine the ``use'' of AWS CDK unit tests.",
+        "date": "Tue, 19 May 2026 09:55:25 GMT",
+        "url": "https://zenn.dev/go_to_k/articles/aws-cdk-unit-testing",
+        "summary": "以前 AWS の公式ウェブマガジン builders.flash に寄稿した AWS CDK における単体テストの使い所を学ぶ という記事の内容を、Coding Agent が自動で参照・判断できるように aws-cdk-unit-testing という Skill として OSS 化しました。\n将来的に CDK 関連の Skill を追加していく予定なので、cdk-skills という Skills 集リポジトリを作って、そこから配布するようにしています。\nhttps://github.com/go-to-k/cdk-skills\n\n 背景: CDK 単体テストの「使い所」は判断が難し...",
+        "summary_en": "The content of the article \"Learn how to use unit testing in AWS CDK\", which I previously contributed to the AWS official web magazine builders.flash, has been made available as OSS as a skill called aws-cdk-unit-testing so that Coding Agent can automatically refer to and make decisions.\nSince we plan to add CDK-related skills in the future, we are creating a skills collection repository called cdk-skills and distributing it from there.\nhttps://github.com/go-to-k/cdk-skills\n\n Background: It is difficult to determine the \"use\" of CDK unit tests...",
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "AWS CDK testing skill"
+    },
+    {
+        "source": "Zenn",
+        "title": "AIでコードが増えていくこの時代に、メンテナンスコスト削減にもAIを",
+        "title_en": "In this era where AI is increasing the number of codes, AI can also be used to reduce maintenance costs.",
+        "date": "Tue, 19 May 2026 07:33:00 GMT",
+        "url": "https://zenn.dev/r_kaga/articles/00f4bef5a8ac70",
+        "summary": "AIにIssueを渡してPRを作らせたり、夜中に作業を進めてもらったりすることが当たり前になり、実装速度が上がっている実感はかなりあります。\n一方で、実装速度が上がるほど気になることは、このままのペースで増やしたコードを、来年も同じように直せるんだろうか？という点です。\nAIコーディングの話では「どれだけ速く作れたか」が目立ちます。\nでも、その裏側にあるメンテナンスコストの存在は忘れられがちです。私も忘れがちです。\n圧倒的なスピードでコードを積み重ねる体験はAIコーディングハイです。\n\nしかし、ここを見ないまま生成速度だけを上げると、未来の変更コストを積み増しているだけになりかねません。...",
+        "summary_en": "It has become commonplace to hand an issue to AI and have it create a PR or work on it in the middle of the night, and I feel that the speed of implementation has increased considerably.\nOn the other hand, the more the implementation speed increases, the more I wonder if I will be able to fix the same amount of code next year at the same pace? That's the point.\nWhen it comes to AI coding, what stands out is how fast it can be created.\nHowever, the existence of maintenance costs behind the scenes is often forgotten. I also tend to forget.\nThe experience of accumulating code at overwhelming speed is AI Coding High.\n\nHowever, if you only increase the generation speed without looking at this point, you may only be accumulating future change costs. ...",
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "AI coding maintenance costs"
     }
 ]
