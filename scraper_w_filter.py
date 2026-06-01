@@ -4,16 +4,19 @@ import time
 import os
 import threading
 from deep_translator import GoogleTranslator
+import config
 
-
-def _translate_with_timeout(translator, text, timeout=30):
-    """Wrapper to prevent GoogleTranslator.translate() from hanging indefinitely."""
+def _translate_batch_with_timeout(translator, texts, timeout=300):
+    """Wrapper to prevent GoogleTranslator.translate_batch() from hanging indefinitely."""
+    if not texts:
+        return []
+        
     result = [None]
     error = [None]
     
     def _do_translate():
         try:
-            result[0] = translator.translate(text)
+            result[0] = translator.translate_batch(texts)
         except Exception as e:
             error[0] = e
     
@@ -23,18 +26,13 @@ def _translate_with_timeout(translator, text, timeout=30):
     thread.join(timeout=timeout)
     
     if thread.is_alive():
-        raise TimeoutError(f"Translation timed out after {timeout}s")
+        raise TimeoutError(f"Batch translation timed out after {timeout}s")
     if error[0]:
         raise error[0]
-    return result[0] or ""
+    return result[0] or []
 
 def scrape_and_translate():
-    rss_sources = {
-        "ITmedia": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
-        "Zenn": "https://zenn.dev/feed",
-    }
-    
-    classified_filename = "tech_news_classified.json"
+    classified_filename = config.CLASSIFIED_FILENAME
     
     # Load existing classified articles to avoid duplicates
     existing_urls = set()
@@ -56,12 +54,14 @@ def scrape_and_translate():
         except (json.JSONDecodeError, FileNotFoundError):
             print(f"Could not read existing {classified_filename}. Starting fresh.")
     
-    translator = GoogleTranslator(source='ja', target='en')
-    
     total_scraped = 0
     new_articles = []
+    new_entries_to_process = []
     
-    for source_name, feed_url in rss_sources.items():
+    for source_name, source_info in config.RSS_SOURCES.items():
+        feed_url = source_info['url']
+        source_lang = source_info['language']
+        
         print(f"\nFetching data from: {source_name}...")
         feed = feedparser.parse(feed_url)
 
@@ -83,30 +83,58 @@ def scrape_and_translate():
             title = entry.get('title', 'No Title Available')
             summary = entry.get('summary', 'No Summary Available')
             
-            print(f"  -> Translating new article: {title[:30]}...")
+            # deep_translator crashes on completely empty strings
+            if not title or not title.strip(): title = "No Title Available"
+            if not summary or not summary.strip(): summary = "No Summary Available"
             
-            try:
-                title_en = _translate_with_timeout(translator, title)
-                summary_en = _translate_with_timeout(translator, summary)
-            except Exception as e:
-                print(f"Error translating article: {e}")
-                title_en = ""
-                summary_en = ""
-                
-            article_data = {
+            new_entries_to_process.append({
                 "source": source_name,
                 "title": title,
-                "title_en": title_en,
                 "date": entry.get('published', entry.get('updated', 'No Date Available')),
                 "url": url,
                 "summary": summary,
-                "summary_en": summary_en
-            }
-            
-            new_articles.append(article_data)
+                "language": source_lang
+            })
             existing_urls.add(url)
             
-            time.sleep(0.5) # Prevent rate limiting
+    if new_entries_to_process:
+        print(f"\nFound {len(new_entries_to_process)} new articles. Batch translating...")
+        
+        # Group by language
+        entries_by_lang = {}
+        for entry in new_entries_to_process:
+            lang = entry['language']
+            if lang not in entries_by_lang:
+                entries_by_lang[lang] = []
+            entries_by_lang[lang].append(entry)
+            
+        translators = {}
+        for lang, entries in entries_by_lang.items():
+            if lang not in translators:
+                translators[lang] = GoogleTranslator(source=lang, target=config.TARGET_LANGUAGE)
+            translator = translators[lang]
+            
+            titles_to_translate = [entry['title'] for entry in entries]
+            summaries_to_translate = [entry['summary'] for entry in entries]
+            
+            try:
+                print(f"  -> Batch translating titles ({lang})...")
+                titles_en = _translate_batch_with_timeout(translator, titles_to_translate, timeout=config.TRANSLATION_TIMEOUT)
+            except Exception as e:
+                print(f"Error batch translating titles ({lang}): {e}")
+                titles_en = [""] * len(titles_to_translate)
+                
+            try:
+                print(f"  -> Batch translating summaries ({lang})...")
+                summaries_en = _translate_batch_with_timeout(translator, summaries_to_translate, timeout=config.TRANSLATION_TIMEOUT)
+            except Exception as e:
+                print(f"Error batch translating summaries ({lang}): {e}")
+                summaries_en = [""] * len(summaries_to_translate)
+                
+            for i, entry in enumerate(entries):
+                entry["title_en"] = titles_en[i] if titles_en and i < len(titles_en) else ""
+                entry["summary_en"] = summaries_en[i] if summaries_en and i < len(summaries_en) else ""
+                new_articles.append(entry)
     
     print(f"\n=== Scrape Summary ===")
     print(f"Total articles found in feeds: {total_scraped}")
@@ -140,28 +168,12 @@ def scrape_and_translate():
         return
     
     from gemini_filter import GeminiClassifier
-    system_prompt = """Classification Prompt
-Task: Please classify the given R&D project description or technical text into one of the following categories based on its primary focus. Use the category name as the label.
-
-Categories & Descriptions:
-
-Sustainability & Environmental Impact: Focuses on minimizing the ecological footprint of home appliances. This includes microfiber filtration systems to prevent ocean pollution, technologies for water and energy conservation (e.g., AquaTech), and the use of recycled materials in product components.
-
-Fabric Care & Textile Engineering: Research dedicated to the physical and thermal effects of washing and drying on various textiles (silk, wool, technical fabrics). It covers garment longevity, color preservation, wrinkle reduction (e.g., SteamCure), and mechanical stress analysis on fibers.
-
-Chemical Interaction & Smart Dosing: Studies regarding the synergy between detergents, additives, and machine hardware. This includes automated dosing systems (AutoDose), detergent dissolution efficiency, and the chemical impact of cleaning agents on different fabric types.
-
-Hygiene & Health Technologies: Focuses on sanitization and allergen removal. This category covers high-temperature or steam-based cycles (Hygiene+) designed to eliminate bacteria, viruses, and allergens, as well as odor removal technologies that don't necessarily require water.
-
-IoT & Smart Sensors: Covers the digitalization of home appliances. This includes smart home integration, machine learning algorithms for cycle optimization, sensor development for load sensing, turbidity detection, and noise/vibration control (Unbalanced Load detection).
-
-Other: Choose this category if the text describes general mechanical design, supply chain innovations, structural durability tests, industrial design, or any other R&D activity that does not directly fit into the specific cleaning and textile categories listed above."""
     
     classifier = GeminiClassifier(
         api_key=api_key,
-        model_name=["gemini-3.5-flash", "gemini-3.0-flash", "gemini-2.5-flash", "gemini-2.0-flash"], 
-        batch_size=50,
-        system_prompt=system_prompt,
+        model_name=config.GEMINI_MODELS, 
+        batch_size=config.GEMINI_BATCH_SIZE,
+        system_prompt=config.SYSTEM_PROMPT,
         response_schema=""
     )
     
