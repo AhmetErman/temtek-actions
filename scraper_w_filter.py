@@ -39,14 +39,20 @@ def scrape_and_translate():
     # Load existing classified articles to avoid duplicates
     existing_urls = set()
     existing_classified = []
+    unclassified_backlog = []
     
     if os.path.exists(classified_filename):
         try:
             with open(classified_filename, "r", encoding="utf-8") as f:
-                existing_classified = json.load(f)
-                for article in existing_classified:
+                existing_data = json.load(f)
+                for article in existing_data:
                     if 'url' in article:
                         existing_urls.add(article['url'])
+                    
+                    if article.get('Classification') and article.get('Classification') != "N/A":
+                        existing_classified.append(article)
+                    else:
+                        unclassified_backlog.append(article)
         except (json.JSONDecodeError, FileNotFoundError):
             print(f"Could not read existing {classified_filename}. Starting fresh.")
     
@@ -107,12 +113,14 @@ def scrape_and_translate():
     print(f"New articles translated: {len(new_articles)}")
 
     # === Classification Phase ===
-    if not new_articles:
-        print("No new articles to classify.")
+    articles_to_classify = unclassified_backlog + new_articles
+    
+    if not articles_to_classify:
+        print("No articles to classify.")
         return
     
     print(f"\n=== Starting Classification phase ===")
-    print(f"Found {len(new_articles)} new articles to classify.")
+    print(f"Found {len(articles_to_classify)} articles to classify ({len(unclassified_backlog)} from backlog, {len(new_articles)} new).")
     
     api_key = os.getenv("GEMINI_API")
     if not api_key and os.path.exists(".env"):
@@ -125,10 +133,10 @@ def scrape_and_translate():
     if not api_key:
         print("GEMINI_API key not found in environment or .env file. Skipping classification.")
         # Still save unclassified articles so they aren't lost
-        existing_classified.extend(new_articles)
+        existing_classified.extend(articles_to_classify)
         with open(classified_filename, "w", encoding="utf-8") as f_out:
             json.dump(existing_classified, f_out, indent=4, ensure_ascii=False)
-        print(f"Saved {len(new_articles)} unclassified articles to {classified_filename}")
+        print(f"Saved {len(articles_to_classify)} unclassified articles to {classified_filename}")
         return
     
     from gemini_filter import GeminiClassifier
@@ -151,7 +159,7 @@ Other: Choose this category if the text describes general mechanical design, sup
     
     classifier = GeminiClassifier(
         api_key=api_key,
-        model_name="gemini-3.5-flash", 
+        model_name=["gemini-3.5-flash", "gemini-3.0-flash", "gemini-2.5-flash", "gemini-2.0-flash"], 
         batch_size=50,
         system_prompt=system_prompt,
         response_schema=""
@@ -170,7 +178,7 @@ Other: Choose this category if the text describes general mechanical design, sup
             print(f"  -> ETA: ~{args[0]:.1f} min")
             
     print("Running Gemini Classification...")
-    classified_results = classifier.process_list(new_articles, progress_callback=print_progress)
+    classified_results = classifier.process_list(articles_to_classify, progress_callback=print_progress)
     
     existing_classified.extend(classified_results)
     

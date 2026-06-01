@@ -10,7 +10,11 @@ logger = logging.getLogger(__name__)
 class GeminiClassifier:
     def __init__(self, api_key, model_name, batch_size, system_prompt, response_schema):
         self.api_key = api_key
-        self.model_name = model_name
+        if isinstance(model_name, list):
+            self.model_names = model_name
+        else:
+            self.model_names = [model_name]
+        self.current_model_idx = 0
         self.batch_size = int(batch_size)
         
         # Default fallback prompt if empty
@@ -106,9 +110,11 @@ class GeminiClassifier:
         for attempt in range(max_retries):
             if not self.is_running:
                 break
+                
+            model_to_use = self.model_names[self.current_model_idx]
             try:
                 response = self.client.models.generate_content(
-                    model=self.model_name,
+                    model=model_to_use,
                     contents=news_text,
                     config=generation_config,
                 )
@@ -126,6 +132,14 @@ class GeminiClassifier:
                 
             except Exception as e:
                 logger.warning(f"Classification batch error (Attempt {attempt+1}/{max_retries}): {e}")
+                err_str = str(e)
+                if "503" in err_str or "429" in err_str:
+                    if self.current_model_idx < len(self.model_names) - 1:
+                        old_model = self.model_names[self.current_model_idx]
+                        self.current_model_idx += 1
+                        if progress_callback:
+                            progress_callback("warning", f"Model {old_model} failed (503/429), switching to {self.model_names[self.current_model_idx]}")
+                
                 if attempt < max_retries - 1:
                     wait_time = 2 ** attempt
                     if progress_callback:
@@ -211,8 +225,13 @@ class GeminiClassifier:
         self.is_running = True
         self._is_active = True
         
-        # We will modify a copy of the dictionaries
-        output_list = [dict(item) for item in data_list]
+        # We will modify a copy of the dictionaries, ensuring default N/A for failed classification
+        output_list = []
+        for item in data_list:
+            new_item = dict(item)
+            if 'Classification' not in new_item:
+                new_item['Classification'] = 'N/A'
+            output_list.append(new_item)
         
         try:
             total_news = len(output_list)

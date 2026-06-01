@@ -2,8 +2,8 @@ name: Scheduled News Scraper
 
 on:
   schedule:
-    # Runs at 01:00 UTC every Monday and Thursday
-    - cron: '0 1 * * 1,4'
+    # Runs at 21:00 UTC every Monday and Thursday to avoid API peak load
+    - cron: '0 21 * * 1,4'
   # Allows you to run this workflow manually from the Actions tab for testing
   workflow_dispatch:
 
