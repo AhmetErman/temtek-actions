@@ -6796,5 +6796,590 @@
         "Classification": "Other",
         "RelationScore": 5,
         "Gemini_Summary": "Specification Driven SDLC Redesign"
+    },
+    {
+        "source": "ITmedia",
+        "title": "NVIDIA、Windows用プロセッサ「RTX Spark」発表　ノートPCでローカルAIを高速実行",
+        "title_en": "NVIDIA announces Windows processor \"RTX Spark\" - Fast execution of local AI on laptops",
+        "date": "Mon, 01 Jun 2026 14:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2606/01/news088.html",
+        "summary": "米NVIDIAは6月1日、台湾で開催中の「GTC Taipei 2026」の基調講演で、PC向けの新チップ「NVIDIA RTX Spark」を発表した。",
+        "summary_en": "On June 1st, NVIDIA of the United States announced a new chip for PCs, ``NVIDIA RTX Spark'', at the keynote speech at ``GTC Taipei 2026'' being held in Taiwan."
+    },
+    {
+        "source": "ITmedia",
+        "title": "セブン銀行、ファミマに進出　「ファミマATM」提供開始",
+        "title_en": "Seven Bank expands into Family Mart and starts offering “Fami Mart ATM”",
+        "date": "Mon, 01 Jun 2026 13:20:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2606/01/news084.html",
+        "summary": "ファミリーマートとセブン銀行が、ファミリーマート独自デザインのATM「ファミマATM」の設置とサービス提供を6月1日に始めた。緑色を基調とした実機で、現金の入出金やキャッシュレス決済サービスのチャージ、顔認証取引などに対応する。",
+        "summary_en": "FamilyMart and Seven Bank began installing and providing services for FamilyMart's uniquely designed ATM ``Famima ATM'' on June 1st. The actual machine is green in color and supports cash deposits and withdrawals, cashless payment service charging, facial recognition transactions, etc."
+    },
+    {
+        "source": "ITmedia",
+        "title": "つまようじメーカーが衣料品通販サイト？　気づかぬうちに社名悪用、大増殖する偽サイト",
+        "title_en": "Is a toothpick maker an online clothing retailer? Fake sites that misuse company names and proliferate without realizing it",
+        "date": "Mon, 01 Jun 2026 11:54:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2606/01/news077.html",
+        "summary": "103万3675件──205年間に警察庁が把握した、実在する企業を模した偽サイトなどの件数だ。20年は約1万9000件だったのが、急激に増加している。模倣は大手通販サイトや金融機関にとどまらず、大阪の国産つまようじメーカーも被害を受けた。本物と見分けがつきにくい精巧な偽サイトもあり、警察当局は一層の注意を呼びかけている。",
+        "summary_en": "1,033,675 - This is the number of fake websites imitating real companies that the National Police Agency has come to know about over the past 205 years. In 2020, there were approximately 19,000 cases, but this has been rapidly increasing. The counterfeiting was not limited to major mail-order sites and financial institutions; domestic toothpick manufacturers in Osaka were also affected. There are also sophisticated fake websites that are difficult to distinguish from the real ones, and police authorities are calling for greater caution."
+    },
+    {
+        "source": "ITmedia",
+        "title": "WOWOWがドラマ受注に注力　NHKで「ミッドナイトタクシー」スタート　新たな事業収益狙う",
+        "title_en": "WOWOW focuses on drama orders, starts “Midnight Taxi” on NHK, aiming for new business profits",
+        "date": "Mon, 01 Jun 2026 11:43:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2606/01/news076.html",
+        "summary": "WOWOWが社外からドラマなどの企画・制作を請け負うプロダクション受注事業に力を入れている。。コンテンツ競争の激化などを背景に減少する会員収入を補う新たな事業収益の獲得を狙う。",
+        "summary_en": "WOWOW is focusing on its production business, which involves contracting out the planning and production of dramas and other projects from outside the company. . The company aims to generate new business revenue to supplement member revenue, which is declining due to intensifying content competition."
+    },
+    {
+        "source": "ITmedia",
+        "title": "キラキラSNSに疲れたか　人気のBeRealで相次ぐ内部情報流出　限定公開の油断か罠か",
+        "title_en": "Are you tired of glittering SNS? A series of internal information leaks from the popular BeReal. Is it a lapse of care or a trap due to limited public disclosure?",
+        "date": "Mon, 01 Jun 2026 11:38:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2606/01/news073.html",
+        "summary": "若手社員らが勤務先の内部情報が写りこんだ画像をSNSに投稿し、拡散する事案が相次いでいる。顧客情報の漏えいなど深刻な損害も生じた。発端となったのは公開範囲が限定されたアプリへの投稿。背景には、SNSで写真映えなどを競い合うことに疲れた若者心理があるとも指摘され、専門家は安易な投稿に警鐘を鳴らす。",
+        "summary_en": "There have been a number of incidents in which young employees have posted images containing internal information about their workplaces on social media, and these images have gone viral. Serious damage was also caused, including the leakage of customer information. It all started with a post on an app whose visibility was limited. It has also been pointed out that the underlying reason behind this is the psychology of young people who are tired of competing with each other to look good in photos on social media, and experts are sounding the alarm against easy posting."
+    },
+    {
+        "source": "ITmedia",
+        "title": "ソフトバンクG、時価総額が一時国内首位に　47兆円でトヨタ超え",
+        "title_en": "SoftBank G's market capitalization temporarily became the top in Japan with 47 trillion yen, surpassing Toyota",
+        "date": "Mon, 01 Jun 2026 11:22:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2606/01/news072.html",
+        "summary": "ソフトバンクグループの時価総額がトヨタ自動車を超え、日本企業で一時トップとなった。トヨタが首位を譲るのは約22年ぶり。",
+        "summary_en": "SoftBank Group's market capitalization exceeded that of Toyota Motor Corporation, making it the top Japanese company for a time. This is the first time in about 22 years that Toyota has relinquished the lead."
+    },
+    {
+        "source": "ITmedia",
+        "title": "ファンティア「修正・モザイク基準」改定を撤回　「過去作の修正は待って」　振り回されるクリエイター",
+        "title_en": "Fantia rescinds revisions to revision/mosaic standards; creators being swayed to “wait before modifying past works”",
+        "date": "Mon, 01 Jun 2026 11:14:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2606/01/news070.html",
+        "summary": "新基準の発表も撤回も急で、クリエイターは振り回される形になっており、運営への不信感が広がっている。",
+        "summary_en": "Announcements and withdrawals of new standards have been sudden, creators are being left at the mercy of others, and there is a growing sense of distrust in the management."
+    },
+    {
+        "source": "ITmedia",
+        "title": "Google Store、日本初上陸　表参道に26年夏オープン",
+        "title_en": "Google Store launches in Japan for the first time, opening in Omotesando in summer 2026",
+        "date": "Mon, 01 Jun 2026 11:08:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2606/01/news068.html",
+        "summary": "米Googleは6月1日、米国外で初の直営店「Google Store 表参道」を2026年夏、東京・表参道にオープンすると発表した。",
+        "summary_en": "Google announced on June 1 that it will open its first directly managed store outside the United States, Google Store Omotesando, in Omotesando, Tokyo, in the summer of 2026."
+    },
+    {
+        "source": "ITmedia",
+        "title": "エリン・ブロコビッチ氏、AIデータセンター建設の「透明性欠如」を批判　住民報告マップも公開",
+        "title_en": "Erin Brockovich criticizes ``lack of transparency'' in AI data center construction, also releases resident report map",
+        "date": "Mon, 01 Jun 2026 07:03:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2606/01/news054.html",
+        "summary": "環境活動家のエリン・ブロコビッチ氏は、急増するAIデータセンター建設をめぐり、地域住民への情報開示が不十分だと批判する記事を公開した。NDA締結などによる秘密裏の計画進行を問題視し、住民からの報告をもとに懸念を可視化するマップサイトを開設。インフラへの影響に関する完全な情報開示を求めている。",
+        "summary_en": "Environmental activist Erin Brockovich published an article criticizing the lack of information disclosure to local residents regarding the rapidly increasing construction of AI data centers. Concerning the secretive progress of plans through NDA agreements, etc., we have established a map site that visualizes concerns based on reports from residents. We want full disclosure on infrastructure impacts."
+    },
+    {
+        "source": "ITmedia",
+        "title": "ソフトバンクG、フランスで最大750億ユーロ（約14兆円）投資　5GWのAIデータセンター整備へ",
+        "title_en": "SoftBank G invests up to 75 billion euros (approximately 14 trillion yen) in France to develop a 5GW AI data center",
+        "date": "Sun, 31 May 2026 10:31:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/31/news022.html",
+        "summary": "ソフトバンクグループは、フランス国内で5GWのAIデータセンターを開発・運営するため、最大750億ユーロを投資すると発表した。同社にとって欧州最大のAIインフラ投資となる。第1フェーズではダンケルクなどに建設し、2031年までに3.1GWの容量を提供、数千人規模の雇用創出も見込んでいる。",
+        "summary_en": "SoftBank Group announced that it will invest up to 75 billion euros to develop and operate a 5GW AI data center in France. This will be the company's largest AI infrastructure investment in Europe. The first phase will be built in Dunkirk and other locations, providing 3.1GW of capacity by 2031 and is expected to create thousands of jobs."
+    },
+    {
+        "source": "ITmedia",
+        "title": "薄くてモバイルバッテリーでも動いてスマホ操作もできて秋には小さく収納できる「扇風機」を見てきた",
+        "title_en": "I've seen ``electric fans'' that are thin, run on a mobile battery, can be operated with a smartphone, and can be stored small in the fall.",
+        "date": "Sun, 31 May 2026 08:14:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/31/news021.html",
+        "summary": "「Mijia スマート扇風機 Pro Slim」は非常にユニークな扇風機。とくに付属のケースにより、収納時に驚くほど場所を取らない点が便利です。",
+        "summary_en": "\"Mijia Smart Fan Pro Slim\" is a very unique fan. The included case is especially convenient because it takes up surprisingly little space when stored."
+    },
+    {
+        "source": "ITmedia",
+        "title": "「Forza Horizon 6」にハマったマンガ家がレースゲームに興味ない人にも勧めたい理由は……できなくてもいい快適さ？",
+        "title_en": "The reason why a manga artist who is addicted to \"Forza Horizon 6\" would recommend it to people who are not interested in racing games is... Is it comfortable even if you can't do it?",
+        "date": "Sun, 31 May 2026 07:14:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/31/news014.html",
+        "summary": "実はボクは車やレースゲームにそこまで興味があるわけではありませんが、「Forza Horizon 6」にはすっかりハマりました。ボクを夢中にさせたのは、その自由度の高さです。",
+        "summary_en": "Actually, I'm not that interested in cars or racing games, but I was completely hooked on \"Forza Horizon 6.\" What hooked me was the high degree of freedom."
+    },
+    {
+        "source": "ITmedia",
+        "title": "VR上でも“触感”を再現　光で硬さを自在に変えられる新素材、「NHK技研公開」で展示中",
+        "title_en": "A new material whose hardness can be freely changed using light, which reproduces the feeling of touch even in VR, is on display at the NHK Giken Open House.",
+        "date": "Sat, 30 May 2026 12:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/30/news029.html",
+        "summary": "NHK放送技術研究所は、技術展示イベント「技研公開2026」（5月28日～31日）で、光を当てると軟らかさが変わる材料を使った触感提示デバイスの研究成果を展示している。青色光を当てると軟らかくなり、止めると元の硬さに戻る独自のポリマー材料を開発した。",
+        "summary_en": "NHK Broadcasting Technology Research Institute is exhibiting its research results on a tactile presentation device using a material that changes its softness when exposed to light at the technology exhibition event \"STRL Open House 2026\" (May 28th to 31st). We have developed a unique polymer material that softens when exposed to blue light and returns to its original hardness when it is turned off."
+    },
+    {
+        "source": "ITmedia",
+        "title": "「作れば売れる」時代の終わり――岐路に立たされるアニメ業界、決算が映す各社の“明暗”を分けたもの",
+        "title_en": "The end of the era of \"if you make it, it will sell\" - the anime industry is at a crossroads, and the financial results reflect the \"bright and dark\" of each company",
+        "date": "Sat, 30 May 2026 10:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news101.html",
+        "summary": "ここ数週間で出そろったアニメ関連企業の決算が、業界に静かな衝撃を広げている。市場規模は4兆円に迫り過去最高を更新する一方、KADOKAWAは出版事業の業績悪化が伝えられ、制作現場では債務超過も相次ぐ。「配信バブル」に支えられた成長は、ついに潮目を迎えたのか。アニメビジネスの第一人者・数土直志氏とともに、決算の数字から業界の地殻変動を読み解く。",
+        "summary_en": "The financial results of anime-related companies that have been released in recent weeks are sending a quiet shock through the industry. While the market size is approaching 4 trillion yen, a new record high, KADOKAWA's publishing business is reported to be suffering from deterioration, and production sites are experiencing a series of insolvency issues. Has the growth supported by the \"distribution bubble\" finally reached its climax? Together with anime business guru Naoshi Sudo, we will decipher the seismic shifts in the industry from financial results."
+    },
+    {
+        "source": "ITmedia",
+        "title": "映像に「いつ・誰が・どう編集したか」を刻む技術、NHK技研が開発　来歴情報で“AIフェイク”も判別可能",
+        "title_en": "NHK Giken develops a technology that engraves “when, who, and how it was edited” on the video. “AI fakes” can also be identified using provenance information",
+        "date": "Sat, 30 May 2026 09:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/30/news025.html",
+        "summary": "NHK放送技術研究所は、技術展示イベント「技研公開2026」（5月28日～31日）で、映像の撮影から配信までの過程を記録・検証する「来歴情報技術」の研究成果を展示している。C2PA規格に基づき、放送局とユーザーの双方がコンテンツの信頼性を確認できる仕組みだ。",
+        "summary_en": "NHK Broadcasting Technology Research Institute is exhibiting research results on ``provenance information technology,'' which records and verifies the process from video shooting to distribution, at the technology exhibition event ``STRL Open House 2026'' (May 28th to 31st). Based on the C2PA standard, it is a system that allows both broadcasters and users to confirm the authenticity of content."
+    },
+    {
+        "source": "ITmedia",
+        "title": "イメージセンサーを“湾曲“させて広角撮影時の周辺ぼやけを抑える技術、NHK技研が開発",
+        "title_en": "NHK Giken develops a technology that \"curves\" the image sensor to reduce peripheral blur during wide-angle shooting",
+        "date": "Sat, 30 May 2026 07:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/30/news022.html",
+        "summary": "NHK放送技術研究所は、技術展示イベント「技研公開2026」（5月28日～31日）で、広視野カメラの小型化と高画質化を両立する「凹面湾曲イメージセンサー」を展示している。厚さわずか0.01mmまで薄くしたセンサーを凹面状に湾曲させ、広角レンズで生じる映像周辺部のぼやけを抑える。2030年ごろの実用化を目指す。",
+        "summary_en": "NHK Broadcasting Technology Research Institute is exhibiting a ``concave curved image sensor'' that achieves both miniaturization and high image quality of wide-field cameras at the technology exhibition event ``STRL Open House 2026'' (May 28th to 31st). The sensor is thinned to just 0.01mm thick and curved into a concave shape to suppress blurring at the periphery of the image that occurs with wide-angle lenses. The aim is to put it into practical use around 2030."
+    },
+    {
+        "source": "ITmedia",
+        "title": "OpenAIが生命科学推論AI「GPT-Rosalind」をバイオディフェンスに開放　デュアルユースリスクに懸念も",
+        "title_en": "OpenAI releases life science reasoning AI “GPT-Rosalind” for biodefense, with concerns about dual-use risk",
+        "date": "Sat, 30 May 2026 06:48:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/30/news031.html",
+        "summary": "OpenAIは、生命科学研究に特化したフロンティア推論モデル「GPT-Rosalind」を活用した「Rosalind Biodefense」プログラムを発表した。生物脅威の検知など防衛目的に限定し、審査済みの開発者や米政府機関および同盟国のパートナー組織にAPIを無償提供する。",
+        "summary_en": "OpenAI announced the \"Rosalind Biodefense\" program, which utilizes the frontier inference model \"GPT-Rosalind\" specialized in life science research. The API will be provided free of charge to vetted developers and partner organizations in U.S. government agencies and allied countries for limited defense purposes, such as detecting biological threats."
+    },
+    {
+        "source": "ITmedia",
+        "title": "フルカラー3D像が空中に浮かぶ「透明ホログラム」、NHK技研が公開　30年に動画表示目指す",
+        "title_en": "NHK Giken releases a \"transparent hologram\" with a full-color 3D image floating in the air, aiming for video display in 2030",
+        "date": "Sat, 30 May 2026 05:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/30/news028.html",
+        "summary": "NHK放送技術研究所は、フルカラーの3次元像を空中に映し出す「透明ホログラム」を開発した。技術展示イベント「技研公開2026」（5月28日～31日）で公開中だ。",
+        "summary_en": "NHK Broadcasting Technology Research Institute has developed a \"transparent hologram\" that projects a full-color, three-dimensional image in the air. It is on display at the technology exhibition event \"STIKEN Open House 2026\" (May 28th to 31st)."
+    },
+    {
+        "source": "ITmedia",
+        "title": "「Nano Banana 2」「Nano Banana Pro」が一般提供開始　「2」は動画からの画像生成もサポート",
+        "title_en": "\"Nano Banana 2\" and \"Nano Banana Pro\" are now generally available. \"2\" also supports image generation from videos",
+        "date": "Fri, 29 May 2026 20:30:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news146.html",
+        "summary": "米Googleは5月29日、「Nano Banana 2」（Gemini 3.1 Flash Image）と「Nano Banana Pro」（Gemini 3 Pro Image）の一般提供を開始すると発表した。加えて、動画入力に対応する新機能をNano Banana 2でプレビュー公開する。",
+        "summary_en": "Google announced on May 29 that it will begin general availability of ``Nano Banana 2'' (Gemini 3.1 Flash Image) and ``Nano Banana Pro'' (Gemini 3 Pro Image). In addition, Nano Banana 2 will preview a new feature that supports video input."
+    },
+    {
+        "source": "ITmedia",
+        "title": "北海道が全国初の「鳥獣被害対策タスクフォース」設置、ICT技術活用で農業被害抑制へ",
+        "title_en": "Hokkaido establishes the nation's first \"Bird and Beast Damage Countermeasures Task Force\", uses ICT technology to reduce agricultural damage",
+        "date": "Fri, 29 May 2026 19:21:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news145.html",
+        "summary": "全国の都道府県で初となる「鳥獣被害対策タスクフォース」が北海道に設置され、5月29日に札幌市内で本部チーム会議の初会合が開かれた。農業被害額の8割を占めるエゾシカをはじめとする鳥獣被害の抑制に向けて旭川市、富良野市、清里町、池田町、足寄町の5市町を今年度の重点支援対象に選定。3カ年計画でICT技術を活用した鳥獣被害対策の高度化を進め、農業被害の抑制を目指す。",
+        "summary_en": "The first \"Bird and Beast Damage Countermeasures Task Force\" in any prefecture in Japan was established in Hokkaido, and the first meeting of the headquarters team was held in Sapporo on May 29th. Five cities and towns have been selected as priority support targets for this fiscal year: Asahikawa City, Furano City, Kiyosato Town, Ikeda Town, and Ashoro Town, in order to control damage from birds and animals, including sika deer, which account for 80% of agricultural damage. The three-year plan aims to advance the sophistication of wildlife damage countermeasures using ICT technology and to reduce agricultural damage."
+    },
+    {
+        "source": "ITmedia",
+        "title": "日本政府と主要金融機関、OpenAI新モデルのアクセス権を取得　サイバー対策強化へ",
+        "title_en": "Japanese government and major financial institutions gain access to new OpenAI model to strengthen cyber countermeasures",
+        "date": "Fri, 29 May 2026 19:14:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news144.html",
+        "summary": "片山さつき金融担当相が、米OpenAIが開発した新型AIのアクセス権を政府と主要金融機関が取得したと明らかにした。高性能AIがサイバー攻撃に悪用される懸念が高まる中、AIを防御に活用した対策が急務となっている。片山氏は「わが国金融機関のサイバーセキュリティー強化の観点から歓迎するべきものだ」と述べた。",
+        "summary_en": "Finance Minister Satsuki Katayama announced that the government and major financial institutions have obtained access rights to a new type of AI developed by U.S. OpenAI. Amid growing concerns that high-performance AI will be misused in cyber attacks, there is an urgent need for countermeasures that utilize AI for defense. Mr. Katayama said, ``This is something that should be welcomed from the perspective of strengthening the cybersecurity of Japan's financial institutions.''"
+    },
+    {
+        "source": "ITmedia",
+        "title": "Microsoft、事前共有なしのゼロデイ脆弱性公表を批判　バグハンターと対立",
+        "title_en": "Microsoft criticizes disclosure of zero-day vulnerability without prior sharing, confronts bug hunters",
+        "date": "Fri, 29 May 2026 17:55:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news123.html",
+        "summary": "米Microsoftは5月27日、事前共有なしにゼロデイ脆弱性（修正前の弱点）を公表する行為について、公式ブログで批判した。同社は顧客保護のため24時間体制で対応中とし、「協調的脆弱性開示（CVD）」の重要性を改めて訴える。",
+        "summary_en": "On May 27, Microsoft criticized on its official blog the act of disclosing zero-day vulnerabilities (vulnerabilities that have yet to be fixed) without prior sharing. The company says it is working 24 hours a day to protect its customers, and reiterates the importance of \"coordinated vulnerability disclosure (CVD).\""
+    },
+    {
+        "source": "ITmedia",
+        "title": "MIXI創業者・笠原健治氏、保有株18億円規模を社員1700人に無償譲渡　「成果を分かち合いたい」",
+        "title_en": "MIXI founder Kenji Kasahara transfers his 1.8 billion yen shareholdings to 1,700 employees for free: ``I want to share the results''",
+        "date": "Fri, 29 May 2026 17:22:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news120.html",
+        "summary": "「当社の成長をより身近に感じてもらい、成果を分かち合っていきたいという、笠原の想いから」実施するという。",
+        "summary_en": "The event will be held ``because of Kasahara's desire to have people feel closer to our company's growth and to share our achievements.''"
+    },
+    {
+        "source": "ITmedia",
+        "title": "不動産会社が今もFAXを手放せない理由　DXを阻む“紙と零細”の壁",
+        "title_en": "Why real estate companies still can't let go of fax: The \"paper and small business\" barrier that blocks DX",
+        "date": "Fri, 29 May 2026 17:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news059.html",
+        "summary": "他の業界では常識なのに、不動産業界では非常識。そんな不動産の「ミステリー」を専門家がわかりやすく読み解き、AIをはじめITを活用した不動産の近未来を探る。第2回は「なぜいまだに不動産取引でFAXが使われるのか」を深堀りする。",
+        "summary_en": "What is common sense in other industries is completely absurd in the real estate industry. Experts will decipher such real estate \"mysteries\" in an easy-to-understand manner and explore the near future of real estate using IT, including AI. In Part 2, we will delve into why faxes are still used in real estate transactions."
+    },
+    {
+        "source": "ITmedia",
+        "title": "「頭の下がる思い」鈴木農相、完全養殖ウナギ販売で開発者ねぎらう　「数十年の研究」成果",
+        "title_en": "``Humbling'' Agriculture Minister Suzuki praises developer for selling fully farmed eels - result of ``decades of research''",
+        "date": "Fri, 29 May 2026 15:06:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news109.html",
+        "summary": "鈴木憲和農相が閣議後の記者会見で、店頭やオンラインで初めて販売された完全養殖ウナギについて、「研究機関や水研機構が完全養殖の技術について数十年にわたって研究を重ねてきた。販売までこぎ着けたことに頭の下がる思いでいる」と語り、関係者の労をねぎらった。",
+        "summary_en": "At a press conference after the Cabinet meeting, Agriculture Minister Norikazu Suzuki said of the first fully farmed eel sold in stores or online, ``Research institutes and the National Fisheries Research Institute have spent decades researching the technology for fully farmed eel."
+    },
+    {
+        "source": "ITmedia",
+        "title": "ブルーオリジンの大型ロケットが爆発　ベゾス氏「原因特定に向けて取り組んでいる」",
+        "title_en": "Blue Origin's large rocket explodes; Bezos says: ``We're working to determine the cause.''",
+        "date": "Fri, 29 May 2026 14:20:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news100.html",
+        "summary": "米Blue Originの大型ロケット「New Glenn」が爆発したと、海外メディアが報じた。オーナーで米Amazon創業者のジェフ・ベゾス氏がXでコメントし、原因特定に着手したと述べた上で、再建して飛行に復帰すると表明した。",
+        "summary_en": "Foreign media reported that the large rocket ``New Glenn'' of the US Blue Origin exploded. Owner and Amazon founder Jeff Bezos said in a statement on X that he had begun to determine the cause of the crash, and that the plane would be rebuilt and returned to flight."
+    },
+    {
+        "source": "ITmedia",
+        "title": "日本で培った地震の知見を世界に……とある地震計メーカーの“海外向け公式ページ”活用術",
+        "title_en": "Sharing the knowledge of earthquakes cultivated in Japan to the world... How to utilize a certain seismometer manufacturer's \"official page for overseas\"",
+        "date": "Fri, 29 May 2026 14:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news017.html",
+        "summary": "グローバルニッチは高い技術力を持つ一方で、知名度が実力に比べて劣り、ITを駆使して海外でのブランディングや販売に生かしていることも多い。この連載では、こうした企業のIT戦略をインタビューで深堀りする。今回は地震計や振動試験機などを製造・販売するIMV（大阪市）を取り上げる。",
+        "summary_en": "While global niche companies have high technological capabilities, their name recognition is inferior to their actual capabilities, and they often make full use of IT for branding and sales overseas. In this series, we will dig deeper into the IT strategies of these companies through interviews. This time, we will be focusing on IMV (Osaka City), which manufactures and sells seismometers and vibration testing machines."
+    },
+    {
+        "source": "ITmedia",
+        "title": "データセンター会社の偉い人に「自分だけのDCを作れるゲーム」遊んでもらった　プロ目線でガチレビュー",
+        "title_en": "We asked a high-ranking person at a data center company to play a game where you can create your own DC. A serious review from a professional perspective.",
+        "date": "Fri, 29 May 2026 11:45:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news018.html",
+        "summary": "データセンター事業を手掛ける企業の幹部による「自分だけのDCを作れるゲーム」のプレイを見学できることに。",
+        "summary_en": "You will be able to watch executives from companies involved in the data center business play a game where you can create your own DC."
+    },
+    {
+        "source": "ITmedia",
+        "title": "富士通、約4万5000人分の物資をリアルタイム管理するシステムを海上自衛隊に提供",
+        "title_en": "Fujitsu provides the Japan Maritime Self-Defense Force with a system that manages supplies for approximately 45,000 people in real time",
+        "date": "Fri, 29 May 2026 11:40:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news088.html",
+        "summary": "富士通が海上自衛隊向けに全物資情報をリアルタイムで管理する基幹業務システムを構築し、5月に提供した。システムのベースには、SAPジャパンのERPソリューション（基幹業務を統合管理するシステム）「S/4HANA」を採用する。",
+        "summary_en": "Fujitsu has built a core business system for the Maritime Self-Defense Force that manages all material information in real time, and provided it in May. The system will be based on SAP Japan's ERP solution (a system for integrated management of core business) ``S/4HANA''."
+    },
+    {
+        "source": "ITmedia",
+        "title": "それで、メモリ不足はいつまで続くの？　なかなか終わらない狂騒のウラ側",
+        "title_en": "So how long will the memory shortage last? The back side of the madness that never ends",
+        "date": "Fri, 29 May 2026 10:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news041.html",
+        "summary": "長引くメモリ不足。いつ安く購入できるようになるのか……。",
+        "summary_en": "Prolonged memory shortage. When will I be able to purchase it cheaply?"
+    },
+    {
+        "source": "ITmedia",
+        "title": "「Mythos級モデル」一般提供、数週間以内に　米Anthropic「Opus 4.8」リリース",
+        "title_en": "",
+        "date": "Fri, 29 May 2026 09:55:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news084.html",
+        "summary": "より強力な安全策を講じた上で、数週間以内に全顧客に提供するとの見通しだという。",
+        "summary_en": ""
+    },
+    {
+        "source": "ITmedia",
+        "title": "YouTube PremiumにPodcast向け新機能　AIによる再生速度の自動調整など3機能",
+        "title_en": "YouTube Premium has new features for podcasts: 3 features including automatic adjustment of playback speed using AI",
+        "date": "Fri, 29 May 2026 09:42:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news082.html",
+        "summary": "YouTubeは、YouTube Premiumユーザー向けにPodcast関連の3つの新機能を発表した。外出先での操作を快適にする「On-the-go mode」、AIが再生速度を自動調整する「Auto speed」、対話型AIでお勧めを探せる「Ask Music」（日本はまだ）のPodcast対応を導入し、リスナーの体験向上を図る。",
+        "summary_en": "YouTube announced three new podcast-related features for YouTube Premium users. We aim to improve the listener's experience by introducing podcast support for ``On-the-go mode,'' which makes it easier to operate on the go, ``Auto speed,'' which uses AI to automatically adjust the playback speed, and ``Ask Music,'' which allows you to search for recommendations using interactive AI (not yet available in Japan)."
+    },
+    {
+        "source": "ITmedia",
+        "title": "Waymo、Zeekr製造の新型ロボタクシー「Ojai」を初公開",
+        "title_en": "Waymo unveils new robotaxi “Ojai” manufactured by Zeekr",
+        "date": "Fri, 29 May 2026 08:34:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news081.html",
+        "summary": "Waymoは、第6世代ロボタクシー「Ojai」の無料乗車体験をサンフランシスコなどで開始すると発表した。中国Zeekrが製造した車両に最新の自動運転システムを統合したもので、「走るリビングルーム」をコンセプトとする。アプリから申し込むことで体験可能で、2026年中の一般提供拡大を目指す。",
+        "summary_en": "Waymo announced that it will begin offering free rides on its 6th generation robotaxis, Ojai, in San Francisco and other locations. It is a vehicle manufactured by China's Zeekr that integrates the latest autonomous driving system, and is based on the concept of a \"mobile living room.\"アプリから申し込むことで体験可能で、2026年中の一般提供拡大を目指す。"
+    },
+    {
+        "source": "ITmedia",
+        "title": "「dodaやマイナビで休職歴の開示が必須化された」ってホント？　提供各社に聞いてみたら……",
+        "title_en": "Is it true that \"disclosure of leave of absence history has become mandatory on Doda and Mynavi\"? I asked each provider...",
+        "date": "Fri, 29 May 2026 08:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news150.html",
+        "summary": "「転職サービスのdodaで、休職歴の開示が必須化された」──とあるユーザーの投稿をきっかけに、Xでこんな情報が広がっている。ITmedia NEWS編集部がdodaを提供するパーソルキャリアに聞いたところ……",
+        "summary_en": "``The job change service DODA has made it mandatory to disclose your leave of absence history.'' This information has been spreading on X after a user posted it. When the ITmedia NEWS editorial department asked Persol Carrier, which provides doda..."
+    },
+    {
+        "source": "ITmedia",
+        "title": "Anthropic、650億ドル調達──評価額は3カ月で2.5倍の9650億ドルとなりOpenAIを上回る",
+        "title_en": "Anthropic raises $65 billion; valuation increases 2.5 times to $965 billion in 3 months, surpassing OpenAI",
+        "date": "Fri, 29 May 2026 07:14:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/29/news080.html",
+        "summary": "Anthropicは、シリーズHラウンドで650億ドルを調達したと発表した。資金調達後の評価額は9650億ドルに達し、未上場としてOpenAIを抜き、世界最高の評価額を持つAI企業となった。同日には最新モデル「Claude Opus 4.8」の提供も開始した。",
+        "summary_en": "Anthropic announced that it has raised $65 billion in Series H funding. After raising funds, the company was valued at $965 billion, making it the world's most valued AI company, surpassing OpenAI as a privately held company. On the same day, the latest model \"Claude Opus 4.8\" was also launched."
+    },
+    {
+        "source": "ITmedia",
+        "title": "「先週いくら使った？」ChatGPTが即答　資産管理のマネーツリーに新機能",
+        "title_en": "“How much did you spend last week?” ChatGPT instantly answers new feature in money tree for asset management",
+        "date": "Thu, 28 May 2026 19:30:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news144.html",
+        "summary": "MUFGとマネーツリーは5月28日、「Apps in ChatGPT」を通じて口座残高や取引明細をChatGPT上で確認できる新サービスの提供を開始した。",
+        "summary_en": "On May 28, MUFG and MoneyTree launched a new service that allows users to check account balances and transaction details on ChatGPT through \"Apps in ChatGPT.\""
+    },
+    {
+        "source": "ITmedia",
+        "title": "レノボ、国内に“水冷AIインフラ”の検証施設　GPUサーバ需要増で水冷活用促す",
+        "title_en": "Lenovo establishes “water-cooled AI infrastructure” verification facility in Japan to encourage water-cooling use as demand for GPU servers increases",
+        "date": "Thu, 28 May 2026 19:25:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news145.html",
+        "summary": "レノボ・ジャパンが水冷技術を活用したAIインフラの検証施設「Neptuneラボ」を新設した。レノボの冷却技術を使う顧客やパートナー企業に対し、本番に近い検証・PoC環境として提供する。クラウドベンダーやSIerとの共同検証を通し、推奨される機器構成などの策定にも役立てる。レノボが日本で同様の施設を開設するのは初という。",
+        "summary_en": "Lenovo Japan has established a new AI infrastructure testing facility called Neptune Lab that utilizes water cooling technology. It will be provided as a verification/PoC environment close to actual production for customers and partner companies that use Lenovo's cooling technology. Through joint verification with cloud vendors and system integrators, it will also be useful in formulating recommended equipment configurations. This is the first time Lenovo has opened a similar facility in Japan."
+    },
+    {
+        "source": "ITmedia",
+        "title": "ヤマハ、ネットワーク機器値上げ　20万円アップの製品も",
+        "title_en": "Yamaha raises prices of network equipment, some products costing 200,000 yen more",
+        "date": "Thu, 28 May 2026 19:17:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news143.html",
+        "summary": "ヤマハが7月1日以降、ルーターや無線アクセスポイント、ネットワークスイッチなどを3000円～18万円程度値上げする。「半導体部品の原材料価格をはじめ、輸送や燃料費などコスト上昇の影響を受け、価格を維持することが困難となった」という。",
+        "summary_en": "From July 1st, Yamaha will raise the prices of routers, wireless access points, network switches, etc. by about 3,000 yen to 180,000 yen. ``It has become difficult to maintain prices due to the impact of rising costs such as raw material prices for semiconductor parts, transportation and fuel costs.''"
+    },
+    {
+        "source": "ITmedia",
+        "title": "乗っ取り被害を受けた在日米海軍の公式X、ユーザー名も取り戻し“完全復活”",
+        "title_en": "Official",
+        "date": "Thu, 28 May 2026 19:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news137.html",
+        "summary": "在日米海軍司令部は5月28日、不正アクセスによる乗っ取り被害を受けていた公式Xアカウント（@CNFJ）が復旧したと発表した。",
+        "summary_en": "On May 28, the U.S. Navy Command in Japan announced that the official X account (@CNFJ), which had been hijacked due to unauthorized access, had been restored."
+    },
+    {
+        "source": "ITmedia",
+        "title": "「答弁原案も作成」　政府職員10万人が生成AI「源内」利用可能に　デジタル庁が大規模実証開始",
+        "title_en": "``Create draft answer'' 100,000 government employees can now use generated AI ``Gennai'' Digital Agency begins large-scale demonstration",
+        "date": "Thu, 28 May 2026 18:20:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news136.html",
+        "summary": "デジタル庁は5月28日、政府職員向け生成AI利用環境「源内」（げんない）の大規模実証実験を開始したと発表した。29日には約10万人の政府職員が利用できる見込みで、今後、全府省庁の約18万人に対象を広げる。",
+        "summary_en": "On May 28, the Digital Agency announced that it has begun a large-scale demonstration experiment of Gennai, a generative AI usage environment for government employees. Approximately 100,000 government employees are expected to be able to use the service on the 29th, and the service will be expanded to approximately 180,000 people from all ministries and agencies."
+    },
+    {
+        "source": "ITmedia",
+        "title": "エレコムがロゴ刷新、創立40周年で　多摩電子工業の買収完了も発表",
+        "title_en": "ELECOM renews its logo, celebrates 40th anniversary, and also announces completion of acquisition of Tama Electronics Industry",
+        "date": "Thu, 28 May 2026 17:50:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news120.html",
+        "summary": "PC周辺機器メーカーのエレコムが創立40周年を機に5月28日、コーポレートロゴを刷新した。美術家の野老朝雄氏がデザインを手がけ、メインカラーに日本の伝統色「萌黄色」を採用した。",
+        "summary_en": "Elecom, a PC peripheral equipment manufacturer, updated its corporate logo on May 28th to commemorate its 40th anniversary. It was designed by artist Asao Noro, and the main color is Moe Yellow, a traditional Japanese color."
+    },
+    {
+        "source": "ITmedia",
+        "title": "SpaceXのIPO、日本からも申し込み可能に　楽天証券・SBI証券が募集へ",
+        "title_en": "SpaceX IPO now open for applications from Japan; Rakuten Securities and SBI Securities are recruiting",
+        "date": "Thu, 28 May 2026 16:55:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news115.html",
+        "summary": "米SpaceXが米Nasdaqへの上場を計画する中、楽天証券とSBI証券が5月27日、日本の個人投資家向けにIPOのブックビルディング（株式購入前の需要申告）取り扱いを発表した。上場申請書類の引受人一覧にはみずほ証券USA合同会社も名を連ねている。",
+        "summary_en": "As U.S. SpaceX plans to list on the U.S. Nasdaq, Rakuten Securities and SBI Securities announced on May 27 that they will handle IPO book building (declaration of demand before purchasing shares) for Japanese individual investors. Mizuho Securities USA LLC is also included in the list of underwriters in the listing application documents."
+    },
+    {
+        "source": "ITmedia",
+        "title": "NASAが月に人類の拠点を建設へ　2032年以降は宇宙飛行士が常時滞在　JAXAも関与",
+        "title_en": "NASA plans to build a human base on the moon; astronauts will stay there permanently from 2032; JAXA also involved",
+        "date": "Thu, 28 May 2026 16:20:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news127.html",
+        "summary": "NASA（米航空宇宙局）は5月26日（現地時間）、月面に人類の拠点を築く「ムーンベース」計画を3段階に分けて進める開発計画を公表した。最終段階となる2032年以降には、人類の継続的な月面居住を目指す。同日、第1段階で実施する3つのミッションと、宇宙飛行士が乗る探査車の発注先も発表した。",
+        "summary_en": "On May 26th (local time), NASA (National Aeronautics and Space Administration) announced a three-stage development plan for the ``Moonbase'' project to build a human base on the moon. In the final stage, after 2032, the goal is for humans to continue living on the moon. On the same day, they also announced the three missions to be carried out in the first phase and the ordering company for the rover that will carry the astronauts."
+    },
+    {
+        "source": "ITmedia",
+        "title": "駅でのカスハラ、ゼロ件に　小田急の装着型カメラ導入1カ月　現場は歓迎「安心感高い」",
+        "title_en": "Odakyu's body-worn cameras have been introduced for a month, with zero cases of harassment at stations; workers at the station welcome ``high sense of security''",
+        "date": "Thu, 28 May 2026 16:05:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news126.html",
+        "summary": "小田急電鉄が先月、駅員が装着して動画を撮影する小型ウエアラブルカメラの運用を全70駅で始めた。異常発生時に状況を記録して情報をスムーズに共有したり、乗客による暴言や不当要求といったカスタマーハラスメント（カスハラ）を防いだりするのが狙い。導入後の1カ月間にカスハラの報告はなく、早くも効果が数字に表れた。",
+        "summary_en": "Last month, Odakyu Electric Railway began using small wearable cameras, which station staff wear to record videos, at all 70 stations. The aim is to record the situation when an abnormality occurs, share information smoothly, and prevent customer harassment such as abusive language and unreasonable demands from passengers. There were no reports of harassment in the first month after its introduction, and the results were already showing in the numbers."
+    },
+    {
+        "source": "ITmedia",
+        "title": "“AIの身元”確かめる認証基盤　みずほFGとNECが共同実証、AIエージェントが銀行を使う時代見据え",
+        "title_en": "Mizuho FG and NEC jointly demonstrate authentication platform to confirm “AI’s identity”, anticipating the era when AI agents use banks",
+        "date": "Thu, 28 May 2026 16:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2605/28/news124.html",
+        "summary": "みずほFGとNECは5月28日、AIエージェントが本人の正当な代理であることを暗号技術で証明する新基盤「KYA」の共同実証実験を6月から始めると発表した。",
+        "summary_en": "Mizuho FG and NEC announced on May 28 that they will begin joint demonstration experiments in June of a new platform called ``KYA'' that uses cryptographic technology to prove that an AI agent is a legitimate representative of the person in question."
+    },
+    {
+        "source": "Zenn",
+        "title": "Ubuntu 26.04 LTS を1ヶ月使って感じたメリット6選",
+        "title_en": "6 benefits I found after using Ubuntu 26.04 LTS for a month",
+        "date": "Sun, 31 May 2026 04:40:31 GMT",
+        "url": "https://zenn.dev/zundamon_it/articles/8ed8520c0bc837",
+        "summary": "「これがやりたい」とはっきりわかっているのに、OSが「そこから先は触らせません」と壁を作る——。長年WindowsとmacOSを使ってきて、私がいちばん堪えたのはこの感覚でした。\n申し遅れました。モデムが「ピーガー」と鳴っていた時代からPCを触ってきた、いわゆる古老PC勢です。Windowsおじ → Mac初老 → そしてついにLinux古老へと、ポケモンのように進化（老化？）を続けています。一般ユーザーとしてのOS知識はとっくに飽和していて、だからこそ「触れない領域があること」そのものがストレスでした。\nそんな私が、Ubuntu 26.04 LTS を1ヶ月、日常のメイン機として使って...",
+        "summary_en": "Even though you clearly know what you want to do, the OS puts up a wall and says, ``I won't let you touch it from that point forward.'' After using Windows and macOS for many years, this was the feeling I endured the most.\nI'm late. These are the so-called old PC people who have been using PCs since the days when modems made beeping noises. It continues to evolve (aging?) like a Pokemon, from being a Windows old man to a Mac old man and finally to a Linux old man. As a general user, my knowledge of the OS has become saturated long ago, which is why the fact that there are areas I can't touch on was stressful in itself.\nI've been using Ubuntu 26.04 LTS as my daily main computer for a month..."
+    },
+    {
+        "source": "Zenn",
+        "title": "TypeScript を用いた LWC 開発が完全にサポートされるようになったので試してみた",
+        "title_en": "LWC development using TypeScript is now fully supported, so I tried it out.",
+        "date": "Sun, 31 May 2026 03:19:48 GMT",
+        "url": "https://zenn.dev/skussun1/articles/d4998ba152bafc",
+        "summary": "はじめに\nVS Code 用の Salesforce 拡張機能が、TypeScript を使用した Lightning Web Components (LWC) の作成と開発を完全にサポートするようになったとのことから、実際に使えるのかどうか試してみました。\nDeveloper Preview の頃は、JavaScript で生成された LWC を手動で .ts に変更したり、設定を追加したりする必要がありました。現在は --lwc-language typescript を指定することで、TypeScript 用の設定を含むプロジェクトを生成できます。\n今回は、Salesforce...",
+        "summary_en": "Introduction\nThe Salesforce extension for VS Code now fully supports the creation and development of Lightning Web Components (LWC) using TypeScript, so I decided to give it a try.\nBack in the Developer Preview, you had to manually change the LWC generated by JavaScript to .ts or add settings. You can now generate a project with settings for TypeScript by specifying --lwc-language typescript.\nThis time, Salesforce..."
+    },
+    {
+        "source": "Zenn",
+        "title": "IT民俗学：なぜExcel方眼紙は滅びないのか",
+        "title_en": "IT Folklore: Why Excel Graph Paper Will Never Die",
+        "date": "Sun, 31 May 2026 01:00:05 GMT",
+        "url": "https://zenn.dev/banboobloom/articles/2026053100001",
+        "summary": "IT民俗学：なぜExcel方眼紙は滅びないのか\nかつて社給PCがWindowsだったころ、すべてのPCにはExcelが標準搭載されていました。\nそして職場には大量のExcelファイルがありました。\nそれらはマニュアルであり、申請書であり、障害台帳であり、タイムカードでもありました。\n開いてみると、枠線やヘッダ/フッタが整備されている。\n入力された予定日付に従ってセルに■が表示されスケジュールが視認できる。\n実績日程が入力されていると、予定との進捗差異をイナヅマ線として線オブジェクトが配置される。\n決められたルールで入力すれば、勝手に内容が埋まっていく。\nExcelさえあれば誰でも使え...",
+        "summary_en": "IT Folklore: Why Excel Graph Paper Will Never Die\nIn the past, when company-provided PCs ran Windows, all PCs came with Excel installed as standard.\nAnd there were a lot of Excel files at work.\nThey were manuals, application forms, disability registers, and time cards.\nWhen you open it, you will see that the borders and header/footer are in place.\n■ is displayed in the cell according to the input scheduled date and the schedule can be viewed.\nIf the actual schedule has been input, a line object is placed as a progress line to indicate the difference in progress from the schedule.\nIf you enter data according to set rules, the information will be filled in automatically.\nAnyone with Excel can use it..."
+    },
+    {
+        "source": "Zenn",
+        "title": "CodexでFlutterアプリを3か月未満で公開したけど、今どきの個人開発はコード以外が大変すぎる",
+        "title_en": "I published a Flutter app on Codex in less than 3 months, but personal development these days is too difficult except for the code.",
+        "date": "Sun, 31 May 2026 00:08:10 GMT",
+        "url": "https://zenn.dev/mfactory_uh/articles/f793050a48813b",
+        "summary": "OpenAIのCodexを試すつもりでFlutterアプリを作り始めたら、気づいたら87日でGoogle Play公開まで到達していました。\n\n!\n出来た Flutter 製ギャラリーアプリ「マイギャラリー」は、Google Play で公開しています。\nhttps://play.google.com/store/apps/details?id=me.mfactory.mygallery\n\nしかし一番衝撃だったのは、コードを書く時間よりも、公開するための周辺作業の方が圧倒的に大変だったということです。\n前回の記事では、Codex を試すつもりで Flutter アプリを作り始めたら、約2...",
+        "summary_en": "I started making a Flutter app with the intention of trying out OpenAI's Codex, and before I knew it, I had reached the point where it was published on Google Play in 87 days.\n\n!\nThe resulting Flutter gallery app ``My Gallery'' is available on Google Play.\nhttps://play.google.com/store/apps/details?id=me.mfactory.mygallery\n\nHowever, what shocked me most was that the peripheral work involved in publishing was far more difficult than the time it took to write the code.\nIn the previous article, when I started creating a Flutter app with the intention of trying out Codex, I learned about 2..."
+    },
+    {
+        "source": "Zenn",
+        "title": "GitHub Copilot app で rubber-duck が既定有効になったので考えたこと",
+        "title_en": "What I thought about rubber-duck being enabled by default in GitHub Copilot app",
+        "date": "Sat, 30 May 2026 23:56:52 GMT",
+        "url": "https://zenn.dev/tomokusaba/articles/787d8cb138491b",
+        "summary": "はじめに\nGitHub Copilot app の changelog を眺めていたところ、v0.2.14 で個人的にかなり気になる更新が入っていました。\n\nThe rubber-duck agent is now enabled by default for all users, providing constructive feedback on code and designs via the /rubber-duck slash command.\n— github/app changelog v0.2.14\n\n要するに、changelog 上は rubber-duck エージ...",
+        "summary_en": "Introduction\nWhen I was looking at the changelog of the GitHub Copilot app, I found an update in v0.2.14 that I personally found quite interesting.\n\nThe rubber-duck agent is now enabled by default for all users, providing constructive feedback on code and designs via the /rubber-duck slash command.\n— github/app changelog v0.2.14\n\nIn short, the changelog shows the rubber-duck age..."
+    },
+    {
+        "source": "Zenn",
+        "title": "AWS WAFのログ分析をAgent Skillにまとめた話",
+        "title_en": "A story about AWS WAF log analysis compiled into Agent Skill",
+        "date": "Sat, 30 May 2026 22:00:05 GMT",
+        "url": "https://zenn.dev/yamadatt/articles/20260531-aws-waf-log-analysis-claude-skill",
+        "summary": "はじめに\nALBのアクセスログを眺めていると、/.env や /wp-login.php、/vendor/phpunit/...eval-stdin.php といった、どう見ても正規アクセスではないリクエストが大量に流れているのが見えてきます。\nそこで、L7のフィルタが無いALBに対してAWS WAFを導入することにしました。しかし、WAFは「入れたら終わり」ではありません。\nAWS WAFの定石は、次の3ステップです。\n\nCOUNTモードで導入する\n1〜2週間メトリクスとログを観察して誤検知をチューニングする\nBLOCKに切り替える\n\nところがこの「ログを観察する」工程が地味に重い...",
+        "summary_en": "Introduction\nWhen I look at the ALB access log, I see a large number of requests for /.env, /wp-login.php, /vendor/phpunit/...eval-stdin.php, which are clearly not legitimate accesses.\nTherefore, we decided to implement AWS WAF for ALBs that do not have L7 filters. However, WAF is not \"once you start, it's over.\"\nAWS WAF has the following three steps.\n\nDeploy in COUNT mode\nObserve metrics and logs for 1-2 weeks to tune for false positives\nSwitch to BLOCK\n\nHowever, this process of ``observing logs'' is quite complicated..."
+    },
+    {
+        "source": "Zenn",
+        "title": "会議で「言いにくいこと」を、AI に代わりに言ってもらう AI ファシリテーター \"Helmsman\"",
+        "title_en": "\"Helmsman\" is an AI facilitator that lets AI say things that are difficult to say on your behalf during meetings.",
+        "date": "Sat, 30 May 2026 15:24:02 GMT",
+        "url": "https://zenn.dev/jagaimo_poteto/articles/aa2aca6b25e3d5",
+        "summary": "はじめに\n\n\n\n何を作ったか: Microsoft Teams の会議に「Helmsman(舵手、操舵手)」という名前で参加して、議論をそっと見守ってくれる AI です。ここぞというときは、会議の中で日本語の声で発言 までしてくれます。\n\nいちばん伝えたいこと: 偉い人がいると言いづらい反論、目上の人の事実誤認、「そろそろ時間ですよ」のひとこと ― 会議で人間が言いにくいことを、AI が代わりに言ってくれます。\n\nなぜ作ったか: 議事録の AI は、もうかなり良いものが揃っています。でもそれって「うまくいかなかった会議を、あとからきれいに書き残してくれる」だけなんですよね。会議が終わ...",
+        "summary_en": "Introduction\n\n\n\nWhat we created: An AI that participates in Microsoft Teams meetings under the name \"Helmsman\" and quietly monitors the discussion. When necessary, he even speaks in Japanese during meetings.\n\nWhat you want to convey most: Rebuttals that are difficult to make when someone is in a position of authority, a factual misunderstanding by someone superior to you, or a remark like “It’s about time” - AI will say things on your behalf that are difficult for humans to say in meetings.\n\nWhy we made it: AI for minutes is already pretty good. But that only means that you can write down the meetings that didn't go well later on. The meeting is over..."
+    },
+    {
+        "source": "Zenn",
+        "title": "5億ドル請求されないようにOllamaのCloudを使う。",
+        "title_en": "Use Ollama's Cloud to avoid being charged $500 million.",
+        "date": "Sat, 30 May 2026 15:01:41 GMT",
+        "url": "https://zenn.dev/yumayx/articles/c69ac22ce07bea",
+        "summary": "つれづれなるままに、1日中コンピューターに向かって、思ったことを書いてみる。\n!\nこの記事の内容は、コンピューターのハードウェアリソースを積めばLLMの回答は速くなるし、それをOllama Cloudは無料で提供するなんて、すごいことやってるなあと、驚いた話である。他の媒体には、同じような記事があったが、Zennで、\"ollama cloud\"を検索してもヒットしなかったので、書いてみる。\n\nLLMが出てきた頃から、ずっと思ってる仮説は、プログラムの改善を無限回繰り返し行えば、プログラム・ソフトウェアは最適になる、というのがある。\n貧乏であるから、フロンティアモデルに課金するお金も無い。...",
+        "summary_en": "I sit at my computer all day long and write down whatever comes to my mind.\n!\nThe content of this article is that LLM answers will become faster if you accumulate computer hardware resources, and Ollama Cloud is doing an amazing job of providing this for free.I was surprised. There were similar articles in other media, but when I searched for \"ollama cloud\" on Zenn, I couldn't find anything, so I'll write about it.\n\nEver since LLM came out, I've always believed in the hypothesis that if a program is improved an infinite number of times, the program/software will become optimal.\nSince they are poor, they don't have the money to pay for the frontier model. ..."
+    },
+    {
+        "source": "Zenn",
+        "title": "yadm + mise で dotfiles 環境構築を整理する",
+        "title_en": "Organize dotfiles environment construction with yadm + mise",
+        "date": "Sat, 30 May 2026 15:00:38 GMT",
+        "url": "https://zenn.dev/vim_jp/articles/2ee400a66228a7",
+        "summary": "!\nこの記事は Vim駅伝 の 2026-05-29 の記事です。\nVim 駅伝は常に参加者を募集しています。詳しくはこちらのページをご覧ください。\n\n\n はじめに\nDotfiles についてご存知でしょうか?\n.bashrc, .vimrc のような dot 文字 (.) から始まる設定ファイルをまとめたところを由来として、普段用いる開発ツールのための様々な設定ファイルをまとめたものを dotfiles と呼びます。\nこれらの設定が有効になった開発環境というのはエンジニア/開発者にとって我が家 ($HOME) のようなものであり、生産性の高い快適な開発体験を実現するために無くてはならな...",
+        "summary_en": "!\nThis article is from Vim Ekiden on 2026-05-29.\nVim Ekiden is always looking for participants. Please see this page for more details.\n\n\n Introduction\nHave you heard of Dotfiles?\nOriginating from the collection of configuration files starting with the dot character (.) such as .bashrc and .vimrc, dotfiles is a collection of various configuration files for development tools that are commonly used.\nA development environment with these settings enabled is like a home ($HOME) for engineers/developers, and is essential for realizing a highly productive and comfortable development experience."
+    },
+    {
+        "source": "Zenn",
+        "title": "CDKをやめてTerraformに移行しようか迷っている話 vol.1",
+        "title_en": "A story about deciding whether to quit CDK and move to Terraform vol.1",
+        "date": "Sat, 30 May 2026 06:01:15 GMT",
+        "url": "https://zenn.dev/rrrraaaaa6/articles/5a8a540a864d83",
+        "summary": "これはなに\nどうもかわごえです。\nわたし、めっちゃCDKが好きです。Cfnも大好きです。\nAWSの中で好きなサービスは？と聞かれたら、間違いなくこれらのIaCのサービスを真っ先に挙げると思います。\nいままでCDKでいろんなシステムを構築し、運用してきました。\nその中でも、やはりCDKで楽になった反面、どうしても超えられない障壁があり。\nこれを機に、一度terraformに移行しようと考えているときの、思考のダンプです。\n繰り返しになりますが私はCDKが好きですし、\n小規模な開発であれば、やはり第一にCDKを選択すると思いますが\n大規模なシステムといったことを考える時にはもしかすると、...",
+        "summary_en": "what is this\nHello, this is Kawagoe.\nI really like CDK. I also love Cfn.\nWhat is your favorite AWS service? If you were asked this question, I would definitely mention these IaC services first.\nUntil now, we have built and operated various systems with CDK.\nAmong them, although CDK has made life easier, there are still barriers that cannot be overcome.\nThis is a thought dump when I was thinking about migrating to terraform.\nAgain, I like CDK,\nFor small-scale development, I think CDK is the first choice.\nWhen thinking about large-scale systems, perhaps..."
+    },
+    {
+        "source": "Zenn",
+        "title": "AIを使った効率的な体験改善のための開発フロー",
+        "title_en": "Development flow for efficient experience improvement using AI",
+        "date": "Sat, 30 May 2026 03:54:36 GMT",
+        "url": "https://zenn.dev/noppe/articles/2113952a4bf0cc",
+        "summary": "OpenAIのハーネスエンジニアリング：エージェントファーストの世界における Codex の活用において、次のような一節があります。\n\nコードのスループットが増加するにつれて、ボトルネックは人間の QA 能力となりました。固定された制約が人間の時間と注意力であったため、アプリケーション UI やログ、アプリのメトリクスを Codex が直接読み取れるようにすることで、エージェントの機能強化に取り組んできました。\n\nエージェントファーストの開発フローでは、このように開発プロセスから人間に依存する部分を減らすことが、重要なテーマになります。\nこのアプローチはTUIアプリケーションやスタティッ...",
+        "summary_en": "OpenAI Harness Engineering: Leveraging Codex in an Agent-First World includes the following passage:\n\nAs code throughput increased, the bottleneck became human QA capabilities. Since the fixed constraints were human time and attention, we worked to enhance the agent by allowing Codex to directly read the application UI, logs, and app metrics.\n\nIn an agent-first development flow, reducing human dependence from the development process is an important theme.\nThis approach is useful for TUI applications and static..."
+    },
+    {
+        "source": "Zenn",
+        "title": "自動運転アーキテクチャの一つの提案/Tri-Modal BEV VLA Planner",
+        "title_en": "A proposal for autonomous driving architecture/Tri-Modal BEV VLA Planner",
+        "date": "Fri, 29 May 2026 16:11:06 GMT",
+        "url": "https://zenn.dev/tatsuyai713/books/53b0b03395e35f",
+        "summary": "本書は、Vision・LiDAR・Radarを統合したBEV表現を中心に、言語指示、動的物体予測、Lane Topology、複数候補軌跡、外部安全評価器、そして実車向けの舵角変換までを一体として扱う、次世代自動運転アーキテクチャの設計の一例です。\n\n従来のADASのようにレーン中心を追従するだけではなく、人間が実際に運転した軌跡を教師データとして学習し、周辺状況に応じた自然な未来軌跡を生成することを目指します。一方で、純粋なブラックボックスEnd-to-Endに寄せすぎず、BEV情報、動的リスク、レーングラフ、候補軌跡、外部評価器といった検証可能な構造を残すことで、実車適用や製品化に必要な説明性・安全性・デバッグ性も重視しています。\n\nまた、TeslaのようなLane Topologyや事前レーンマップを活用したルート誘導、Comma.ai的な人間走行軌跡の学習、Waymo型の安全ケース、SparseDrive的な軽量化設計など、既存ADASと最新研究・製品動向の両方を踏まえながら、なぜこの構成が有効なのかを解説しています。\n\n自動運転モデルを単なる認識ネットワークとしてではなく、実際の車両で安全に走らせるための「認識・予測・計画・評価・制御」の統合システムとして理解したい読者に向けた一冊です。",
+        "summary_en": "This book is an example of the design of a next-generation autonomous driving architecture that handles language instructions, dynamic object prediction, lane topology, multiple candidate trajectories, external safety evaluators, and steering angle conversion for actual vehicles as one, centered on BEV expression that integrates Vision, LiDAR, and Radar.\n\nRather than just following the center of the lane like conventional ADAS, the system learns from actual driving trajectories used by humans as training data, and aims to generate natural future trajectories according to surrounding conditions. On the other hand, by not relying too much on a pure black box end-to-end, and leaving verifiable structures such as BEV information, dynamic risks, lane graphs, candidate trajectories, and external evaluators, we also emphasize the explainability, safety, and debuggability necessary for application to actual vehicles and commercialization.\n\nWe also explain why this configuration is effective, based on both existing ADAS and the latest research and product trends, such as route guidance using Lane Topology and advance lane maps like Tesla, learning human travel trajectories like Comma.ai, safety cases like Waymo, and lightweight designs like SparseDrive.\n\nThis book is for readers who want to understand autonomous driving models not just as a recognition network, but as an integrated system of \"recognition, prediction, planning, evaluation, and control\" for safe driving in actual vehicles."
+    },
+    {
+        "source": "Zenn",
+        "title": "MLエンジニアのための本質から理解するLLM推論 KV cache編",
+        "title_en": "Understanding LLM inference from the essence for ML engineers KV cache edition",
+        "date": "Fri, 29 May 2026 13:53:59 GMT",
+        "url": "https://zenn.dev/kaz20/articles/c77f8a41cf2bf5",
+        "summary": "はじめに\n東京科学大学 博士課程の藤井です。本記事では、LLM推論において非常に重要な役割を果たすKV cacheについてより深く理解するために 「Key, ValueだけcacheしてQueryをcacheしないのはなぜか？」 という問いに皆さんが正確に答えられるようになることを目指して解説を行います。なお本記事では、「KV cacheとは何か？」や、KV cacheの低精度化などについては取り扱いません。関連する内容については、私が執筆している「MLエンジニアのための本質から理解するxxx」シリーズの記事を参照ください。執筆が完了した記事から順に公開していますので時期によっては、...",
+        "summary_en": "Introduction\nMy name is Fujii and I am a doctoral student at Tokyo University of Science. In this article, in order to gain a deeper understanding of KV cache, which plays a very important role in LLM inference, I will explain the purpose of helping you accurately answer the question, \"Why don't we cache only keys and values ​​but not cache queries?\" In this article, we do not deal with \"What is KV cache?\" or how to reduce the accuracy of KV cache. For related content, please refer to the articles I am writing in the \"Understanding from the Essentials XXX for ML Engineers\" series. We publish articles in the order they are completed, so depending on the time..."
+    },
+    {
+        "source": "Zenn",
+        "title": "Claude Codeに株・仮想通貨botを300個作らせて見えてきたこと",
+        "title_en": "What I learned after having Claude Code create 300 stock/virtual currency bots",
+        "date": "Fri, 29 May 2026 12:28:43 GMT",
+        "url": "https://zenn.dev/kobao/articles/64a72dc0167ca3",
+        "summary": "こんにちは、塩辛botterです。\n今回の記事では、Claude Codeに株・仮想通貨botを300個作らせて見えてきたことをお伝えしたいと思います。\n結論から言うと、以下の感覚です。\n\nClaude Codeに作らせた戦略: 300\n　↓\nそのうち利益が出る(とAIが判定した)戦略: 200\n　↓\n深堀して運用に耐えられる(と私が判断した)戦略: 20\n　↓\n実際に運用開始できた戦略: 5\n　↓\n本当に儲かった戦略: &lt;未知数、半年後に答え合わせ&gt;\n\nフルタイムで仕事、土日も子育てに忙しく、作業ができるのは夜１～２時間程度でしたが、\n１～２か月で上記の工程をやり切れたので...",
+        "summary_en": "Hello, this is Shiokarabotter.\nIn this article, I would like to tell you what I learned after having Claude Code create 300 stock/cryptocurrency bots.\nIn conclusion, my impression is as follows.\n\nStrategy created by Claude Code: 300\n↓\nStrategy that will be profitable (as judged by AI): 200\n↓\nStrategies that are deep and workable (in my opinion): 20\n↓\nStrategies that were actually put into operation: 5\n↓\nReally profitable strategy: &lt;Unknown quantity, answer in 6 months&gt;\n\nI worked full time and was busy raising children on weekends, so I was only able to work for about 1 to 2 hours at night.\nI was able to complete the above process in 1-2 months..."
+    },
+    {
+        "source": "Zenn",
+        "title": "構成図を描くだけでAWSの月額コストが分かるツールを作って公開した",
+        "title_en": "Created and released a tool that allows you to calculate monthly AWS costs just by drawing a configuration diagram",
+        "date": "Fri, 29 May 2026 11:37:30 GMT",
+        "url": "https://zenn.dev/tyumugiko/articles/83b15adf3370fd",
+        "summary": "はじめに\nサーバーレスリソースを使ったAWSの構成を考えるのは、非常に楽しい作業です。\nしかし、最もめんどくさいのは 「構成の月額料金を算出する」 作業ではないでしょうか。\n私の職種はSIerですが、構成を考えると月額利用料の見積もりがセットで求められます。\n月ごとのアクセス数やデータ量を、まだ想定が固まっていない段階で算出することも多く、複数のアクセスパターンを想定した見積もりを要求されることも少なくありません。\n見積もりツールとして最もポピュラーなのは、AWS 公式の AWS Pricing Calculator だと思います。\nただ、このツールはサービスを1つずつ積み上げる方式...",
+        "summary_en": "Introduction\nConfiguring AWS with serverless resources is a lot of fun.\nHowever, the most troublesome task is probably ``calculating the monthly fee for the configuration.''\nMy job title is SIer, but considering the structure, I am required to estimate the monthly usage fee as a set.\nMonthly access numbers and data volumes are often calculated before assumptions have been finalized, and estimates that assume multiple access patterns are often requested.\nI think the most popular estimation tool is the official AWS Pricing Calculator.\nHowever, this tool is a method of stacking services one by one..."
+    },
+    {
+        "source": "Zenn",
+        "title": "全部Terraformで管理してはいけない？「かつての最適解」が生んだ管理の壁と、私たちが引き直した境界線",
+        "title_en": "Shouldn't everything be managed with Terraform? The management wall created by the “former optimal solution” and the boundaries we have redrawn",
+        "date": "Fri, 29 May 2026 10:21:27 GMT",
+        "url": "https://zenn.dev/jinjer_techblog/articles/5812546fb399e7",
+        "summary": "導入：ジョイン直後に感じた「開発サイクルの重さ」\n「入社して3ヶ月、私はある『ジレンマ』を抱えていました。」\n2025年11月、SREとしてjinjerにジョインした私を迎えたのは、Terraformによって厳格にコード化されたインフラ基盤でした。すべてのリソースがIaCで管理され、手動変更を排した運用ルールが徹底されている。これはSREとして、非常に信頼性の高い、誇れる環境だと言えます。\nしかし、その「正しさ」が、開発のスピード感と衝突する場面を目の当たりにするようになりました。\nたとえば、ECSのタスク定義にある環境変数を1つ追加するだけでも、SEからJiraで依頼を受け、SRE...",
+        "summary_en": "Introduction: “The weight of the development cycle” felt immediately after joining\n``Three months after joining the company, I had a dilemma.''\nWhen I joined Jinjer as an SRE in November 2025, I was greeted by an infrastructure strictly coded by Terraform. All resources are managed by IaC, and operational rules that eliminate manual changes are strictly enforced. As an SRE, this is an extremely reliable environment that we can be proud of.\nHowever, I began to see situations where this \"correctness\" clashed with the speed of development.\nFor example, even if you just add one environment variable in the ECS task definition, an SE will request it in Jira and the SRE..."
+    },
+    {
+        "source": "Zenn",
+        "title": "LiteLLMをやめて自作Goバイナリに置き換えたら一気に軽くなりました - 「実践 AI エージェント開発」を実装してみた",
+        "title_en": "When I stopped using LiteLLM and replaced it with my own Go binary, it suddenly became lighter - I tried implementing \"Practical AI Agent Development\"",
+        "date": "Thu, 28 May 2026 22:02:24 GMT",
+        "url": "https://zenn.dev/okamyuji/articles/golang-litellm-alternative-single-binary",
+        "summary": "!\nオライリー・ジャパンから「実践 AI エージェント開発」として日本語版が出版されたことを記念して、今年の春に英語版の\"Building Applications with AI Agents\"を読んでいたので、本書が示す本番運用要件をそのままGoの単一バイナリAIエージェントに実装してみました。本記事では、まず自分の手元用に書き上げた最小構成を紹介し、そのあとで書籍を読んで補ったプロダクション向け機能を、書籍の章立てに対応する実装順で解説します。\n\n\n できあがったもの\nGo 1.25で書いたgo-llm-agentというシングルバイナリのAIエージェントを公開しました。CGO_EN...",
+        "summary_en": "!\nTo commemorate the publication of the Japanese version as \"Practical AI Agent Development\" by O'Reilly Japan, I read the English version of \"Building Applications with AI Agents\" this spring, so I tried implementing the production operation requirements described in the book as is into a single binary AI agent in Go. In this article, I will first introduce the minimum configuration that I wrote for my own use, and then explain the production functions that I added by reading the book, in the order of implementation that corresponds to the book's chapter structure.\n\n\n The finished product\nI have released a single binary AI agent called go-llm-agent written in Go 1.25. CGO_EN..."
+    },
+    {
+        "source": "Zenn",
+        "title": "Karpathy氏の200行GPT「microGPT」を1行1行読み解く",
+        "title_en": "Interpreting Mr. Karpathy's 200-line GPT \"microGPT\" line by line",
+        "date": "Thu, 28 May 2026 16:08:17 GMT",
+        "url": "https://zenn.dev/karaage0703/articles/1e7106add712d1",
+        "summary": "2026年2月にAndrej Karpathy（アンドレ・カーパシー）氏が公開した「microGPT」。話題になったときに触っていて、途中まで記事を書きかけにしていたの、すっかり忘れていたので今頃公開してみます。\nhttps://x.com/karpathy/status/2021694437152157847\nhttps://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95\n200行の外部ライブラリを使わない（PyTorchもNumPyもないです）で、GPTを訓練・推論するという意欲的なコードです。\nこの記事では、mic...",
+        "summary_en": "\"microGPT\" was released by Andrej Karpathy in February 2026. I was touching it when it became a hot topic, and I was halfway through writing the article, but I had completely forgotten about it, so I decided to publish it now.\nhttps://x.com/karpathy/status/2021694437152157847\nhttps://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95\nIt is an ambitious code that trains and infers GPT without using any external libraries (no PyTorch or NumPy) and is 200 lines long.\nIn this article, mic..."
+    },
+    {
+        "source": "Zenn",
+        "title": "楽しかったコーディングエージェントサブスク時代の終わり",
+        "title_en": "The end of the fun coding agent subscription era",
+        "date": "Thu, 28 May 2026 15:05:05 GMT",
+        "url": "https://zenn.dev/tkithrta/articles/0378bc53599fb3",
+        "summary": "はじめに\n!\nこの記事は2026年4月2日から2026年5月29日までの公開情報をもとにしています。\n料金・プラン名・含まれる利用枠は頻繁に変わるため、導入時は必ず各社の公式ページで確認してください。\n\nGitHub Copilotから始まるAIコーディング支援ツールは、数年前まで「月額いくらで補完とチャットが使える」という、比較的わかりやすいサブスクリプションモデルとして理解できました。\n個人でChatGPT PlusやClaude Proを使っている限り、支払いの感覚は今でもそれに近いかもしれません。\nしかし、企業導入やエージェント型のコーディング支援まで含めて見ると、状況はかな...",
+        "summary_en": "Introduction\n!\nThis article is based on public information from April 2, 2026 to May 29, 2026.\nPrices, plan names, and included usage quotas change frequently, so be sure to check each company's official website before installing.\n\nUntil a few years ago, AI coding support tools starting with GitHub Copilot could be understood as a relatively easy-to-understand subscription model where you could use completion and chat for a monthly fee.\nAs long as you personally use ChatGPT Plus or Claude Pro, the payment experience may still be similar to that.\nHowever, if you look at it including corporate implementation and agent-type coding support, the situation is..."
+    },
+    {
+        "source": "Zenn",
+        "title": "スペック文書を「読みたくなるHTML」に変換するClaude Codeスキルを作った話（スキル本文付き）",
+        "title_en": "A story about creating a Claude Code skill that converts spec documents into \"HTML that you want to read\" (skill text included)",
+        "date": "Thu, 28 May 2026 05:35:47 GMT",
+        "url": "https://zenn.dev/spacemarket/articles/6c4992227d0b0d",
+        "summary": "こんにちは！スペースマーケットの jin です🐶\n今回は、仕様書やスペック文書を人間が読みやすいHTMLレポートに変換するClaude Codeスキル「spec-to-readable-html」を作った話を書きます。\n作った動機、設計で考えたこと、実際に使ってみた結果などをまとめたので、Claude Codeスキルの開発に興味がある方の参考になれば嬉しいです。\n\n\n▲ 今回作成したスキルを使って個人プロジェクトをHTML化したサンプルの一部です\n\n きっかけ：「The Unreasonable Effectiveness of HTML」\nことの始まりは、Anthropic の Cla...",
+        "summary_en": "Hello! This is jin from Space Market 🐶\nThis time, I will write about how I created the Claude Code skill \"spec-to-readable-html\", which converts specifications and spec documents into human-readable HTML reports.\nI have summarized the motivation for creating it, what I thought about when designing it, and the results of actually using it, so I hope it will be helpful for those who are interested in developing Claude Code skills.\n\n\n▲ This is a sample of a personal project converted into HTML using the skills I created this time.\n\n Trigger: “The Unreasonable Effectiveness of HTML”\nIt all started with Anthropic's Cla..."
     }
 ]
