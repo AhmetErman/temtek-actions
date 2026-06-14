@@ -6,6 +6,32 @@ import threading
 from deep_translator import GoogleTranslator
 import config
 
+def _is_valid_entry(entry):
+    """Guard against malformed input from any source (RSS or custom scrapers).
+
+    A usable article needs a non-empty string ``url`` and ``title``. Optional
+    text fields are normalized to strings so downstream translation never
+    crashes on None/non-string values. Returns False for anything unusable.
+    """
+    if not isinstance(entry, dict):
+        return False
+    url = entry.get('url')
+    title = entry.get('title')
+    if not isinstance(url, str) or not url.strip():
+        return False
+    if not isinstance(title, str) or not title.strip():
+        return False
+    for key in ('source', 'title', 'summary', 'date', 'language'):
+        val = entry.get(key)
+        if val is None:
+            entry[key] = ''
+        elif not isinstance(val, str):
+            entry[key] = str(val)
+    # deep_translator chokes on empty strings; fall back to the title.
+    if not entry.get('summary', '').strip():
+        entry['summary'] = entry['title']
+    return True
+
 def _translate_batch_with_timeout(translator, texts, timeout=300):
     """Wrapper to prevent GoogleTranslator.translate_batch() from hanging indefinitely."""
     if not texts:
@@ -96,7 +122,56 @@ def scrape_and_translate():
                 "language": source_lang
             })
             existing_urls.add(url)
-            
+
+    # === Custom HTML scrapers (sites without RSS, e.g. cheaa) ===
+    # Fully optional and isolated: any failure here is logged and skipped so the
+    # RSS articles still get translated and classified.
+    cheaa_cfg = getattr(config, "CHEAA_SCRAPER", None)
+    if cheaa_cfg and cheaa_cfg.get("enabled"):
+        try:
+            from cheaa_scraper import scrape_cheaa_sections
+            print("\nScraping cheaa sections (no RSS available)...")
+            cheaa_entries = scrape_cheaa_sections(
+                sections=cheaa_cfg.get("sections", {}),
+                language=cheaa_cfg.get("language", "zh-CN"),
+                existing_urls=existing_urls,
+                max_per_section=cheaa_cfg.get("max_per_section", 10),
+                fetch_summaries=cheaa_cfg.get("fetch_summaries", True),
+                timeout=cheaa_cfg.get("request_timeout", 20),
+                sleep_between=cheaa_cfg.get("sleep_between", 1.0),
+                log=lambda level, msg: print(f"  -> {msg}"),
+            )
+            new_entries_to_process.extend(cheaa_entries)
+            total_scraped += len(cheaa_entries)
+        except Exception as e:
+            print(f"  -> cheaa scraper unavailable, skipping: {e}")
+
+    ofweek_cfg = getattr(config, "OFWEEK_SCRAPER", None)
+    if ofweek_cfg and ofweek_cfg.get("enabled"):
+        try:
+            from ofweek_scraper import scrape_ofweek_sections
+            print("\nScraping OFweek sections (no RSS available)...")
+            ofweek_entries = scrape_ofweek_sections(
+                sections=ofweek_cfg.get("sections", {}),
+                language=ofweek_cfg.get("language", "zh-CN"),
+                existing_urls=existing_urls,
+                max_per_section=ofweek_cfg.get("max_per_section", 10),
+                timeout=ofweek_cfg.get("request_timeout", 20),
+                log=lambda level, msg: print(f"  -> {msg}"),
+            )
+            new_entries_to_process.extend(ofweek_entries)
+            total_scraped += len(ofweek_entries)
+        except Exception as e:
+            print(f"  -> OFweek scraper unavailable, skipping: {e}")
+
+    # Drop/normalize any malformed entries from ANY source before we spend time
+    # translating and classifying them.
+    before = len(new_entries_to_process)
+    new_entries_to_process = [e for e in new_entries_to_process if _is_valid_entry(e)]
+    dropped = before - len(new_entries_to_process)
+    if dropped:
+        print(f"  -> Dropped {dropped} malformed entr{'y' if dropped == 1 else 'ies'}.")
+
     if new_entries_to_process:
         print(f"\nFound {len(new_entries_to_process)} new articles. Batch translating...")
         
