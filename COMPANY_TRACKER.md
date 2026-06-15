@@ -61,3 +61,21 @@ CI: `.github/workflows/company-news.yml` runs the incremental update weekly
 - **Phase-2 companies:** connect the Chrome extension and use it to discover each
   site's JSON API (then hit it with the current tools), or add a Playwright-based
   scraper module for the bot-protected ones (LG).
+
+## Products page (`/products`)
+
+A washing-machine technology comparison across all 8 brands, served from a
+curated, editable dataset (`products.json`) — `app.py` route `/products` +
+`/api/products`, rendered by `templates/products.html`.
+
+- **Why curated, not scraped:** product-spec pages are JS-rendered, region-gated
+  and bot-protected, so reliable uniform scraping isn't feasible. `products.json`
+  holds each brand's flagship washer (model, type, capacity, spin, energy, motor,
+  highlight, source URL) plus a per-technology map (`yes`/`partial`/`no`).
+- **The page:** a technology matrix (8 models × 10 technologies) with a
+  per-technology availability count, flagship product cards, and a spec table.
+  Click a technology column to highlight it; filter by "has technology".
+- **Editing:** just edit `products.json` — no code changes needed. Add a brand by
+  appending a product object; add a technology by extending `technologies`.
+- Data sourced 2026-06-15 from official product/newsroom pages (links in each
+  product's `url`). Refresh periodically as flagships change.

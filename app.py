@@ -8,6 +8,7 @@ app = Flask(__name__)
 DATA_FILE = "tech_news_classified.json"
 COMPANY_NEWS_FILE = "company_news.json"
 COMPANY_ANALYSIS_FILE = "company_analysis.json"
+PRODUCTS_FILE = "products.json"
 
 
 def _load_json(path, default):
@@ -47,6 +48,18 @@ def get_company_news():
 @app.route('/api/company-analysis')
 def get_company_analysis():
     data = _load_json(COMPANY_ANALYSIS_FILE, {})
+    if isinstance(data, dict) and "error" in data:
+        return jsonify(data), 500
+    return jsonify(data)
+
+
+@app.route('/products')
+def products():
+    return render_template('products.html')
+
+@app.route('/api/products')
+def get_products():
+    data = _load_json(PRODUCTS_FILE, {})
     if isinstance(data, dict) and "error" in data:
         return jsonify(data), 500
     return jsonify(data)

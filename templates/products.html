@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washing Machine Tech Comparison</title>
+    <meta name="description" content="Flagship washing-machine comparison and technology matrix across top home-appliance brands.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg: #fafaf9; --surface: #ffffff; --border: #e7e5e4; --border-hover: #d6d3d1;
+            --text-1: #1c1917; --text-2: #57534e; --text-3: #a8a29e;
+            --accent: #b45309; --accent-bg: #fffbeb; --accent-border: #fde68a;
+            --yes: #16a34a; --yes-bg: #dcfce7; --partial: #d97706; --partial-bg: #fef3c7; --no: #d6d3d1;
+            --radius: 10px;
+        }
+        body.dark-theme {
+            --bg: #0c0a09; --surface: #1c1917; --border: #2e2a24; --border-hover: #44403c;
+            --text-1: #f5f5f4; --text-2: #d6d3d1; --text-3: #78716c;
+            --accent: #f59e0b; --accent-bg: #451a03; --accent-border: #78350f;
+            --yes: #4ade80; --yes-bg: #064e3b; --partial: #fbbf24; --partial-bg: #451a03; --no: #44403c;
+        }
+        body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text-1); line-height: 1.5; min-height: 100vh; transition: background .2s, color .2s; }
+        .site-header { border-bottom: 1px solid var(--border); background: var(--surface); padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+        .logo { font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: .5rem; }
+        .logo-icon { width: 28px; height: 28px; background: var(--accent); border-radius: 7px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; }
+        .nav { display: flex; gap: .25rem; }
+        .nav a { font-size: .85rem; font-weight: 600; color: var(--text-2); text-decoration: none; padding: .4rem .8rem; border-radius: 8px; }
+        .nav a:hover { background: var(--border); color: var(--text-1); }
+        .nav a.active { background: var(--text-1); color: var(--bg); }
+        .theme-toggle { background: none; border: 1px solid var(--border); color: var(--text-2); padding: .4rem .75rem; border-radius: 8px; cursor: pointer; font-size: .85rem; display: flex; gap: .4rem; align-items: center; }
+        .theme-toggle:hover { background: var(--border); color: var(--text-1); }
+        .wrap { max-width: 1200px; margin: 0 auto; padding: 1.5rem 2rem 4rem; }
+        .page-title { font-size: 1.5rem; font-weight: 700; margin-bottom: .25rem; }
+        .page-sub { color: var(--text-3); font-size: .9rem; margin-bottom: 1.5rem; }
+        h2.sec { font-size: 1.05rem; font-weight: 600; margin: 2rem 0 .25rem; }
+        .sec-hint { font-size: .8rem; color: var(--text-3); margin-bottom: 1rem; }
+
+        .toolbar { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
+        .search-box { flex: 1; min-width: 200px; position: relative; }
+        .search-box input { width: 100%; padding: .55rem .75rem .55rem 2.1rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .875rem; background: var(--surface); color: var(--text-1); }
+        .search-box input:focus { outline: none; border-color: var(--accent); }
+        .search-box::before { content: '⌕'; position: absolute; left: .7rem; top: 50%; transform: translateY(-50%); color: var(--text-3); }
+        .toolbar select { padding: .55rem .75rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .85rem; background: var(--surface); color: var(--text-1); cursor: pointer; }
+
+        .matrix-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+        table.matrix { border-collapse: collapse; width: 100%; min-width: 760px; font-size: .82rem; }
+        table.matrix th, table.matrix td { padding: .55rem .4rem; text-align: center; border-bottom: 1px solid var(--border); }
+        table.matrix thead th { font-weight: 600; color: var(--text-2); font-size: .72rem; cursor: pointer; user-select: none; white-space: nowrap; position: relative; }
+        table.matrix thead th:hover { color: var(--accent); }
+        table.matrix th.prod, table.matrix td.prod { text-align: left; position: sticky; left: 0; background: var(--surface); z-index: 2; min-width: 180px; }
+        table.matrix td.prod .pm { font-weight: 600; font-size: .85rem; display: flex; align-items: center; gap: .4rem; }
+        table.matrix td.prod .pc { font-size: .72rem; color: var(--text-3); margin-left: 1rem; }
+        .cdot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+        .cell { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 6px; font-weight: 700; font-size: .8rem; }
+        .cell.yes { background: var(--yes-bg); color: var(--yes); }
+        .cell.partial { background: var(--partial-bg); color: var(--partial); }
+        .cell.no { color: var(--no); }
+        table.matrix tbody tr:hover td { background: var(--bg); }
+        table.matrix tbody tr:hover td.prod { background: var(--bg); }
+        col.hl { background: var(--accent-bg); }
+        tr.cover td { font-size: .72rem; color: var(--text-3); font-weight: 600; border-top: 2px solid var(--border); }
+        tr.cover td.prod { color: var(--text-2); }
+
+        .legend { display: flex; gap: 1rem; flex-wrap: wrap; margin: .75rem 0 0; font-size: .78rem; color: var(--text-3); align-items: center; }
+        .legend .cell { width: 20px; height: 20px; }
+
+        .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+        .card-head { padding: .85rem 1rem; color: #fff; }
+        .card-head .co { font-size: .75rem; font-weight: 600; opacity: .9; }
+        .card-head .mdl { font-size: 1rem; font-weight: 700; line-height: 1.3; }
+        .card-body { padding: .85rem 1rem; flex: 1; display: flex; flex-direction: column; gap: .6rem; }
+        .specs { display: grid; grid-template-columns: 1fr 1fr; gap: .35rem .75rem; font-size: .8rem; }
+        .specs .k { color: var(--text-3); }
+        .specs .v { color: var(--text-1); font-weight: 500; }
+        .hl { font-size: .83rem; color: var(--text-2); line-height: 1.5; }
+        .techchips { display: flex; flex-wrap: wrap; gap: .3rem; }
+        .tchip { font-size: .68rem; padding: .12rem .5rem; border-radius: 5px; border: 1px solid; }
+        .tchip.yes { background: var(--yes-bg); color: var(--yes); border-color: var(--yes-bg); }
+        .tchip.partial { background: var(--partial-bg); color: var(--partial); border-color: var(--partial-bg); }
+        .card a.more { font-size: .8rem; color: var(--accent); text-decoration: none; font-weight: 600; }
+        .card a.more:hover { text-decoration: underline; }
+
+        .spectable-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); }
+        table.spec { border-collapse: collapse; width: 100%; min-width: 720px; font-size: .82rem; }
+        table.spec th, table.spec td { padding: .55rem .7rem; text-align: left; border-bottom: 1px solid var(--border); }
+        table.spec thead th { background: var(--surface); color: var(--text-2); font-weight: 600; font-size: .75rem; }
+        table.spec tbody tr:hover td { background: var(--bg); }
+        .loading, .empty { text-align: center; padding: 3rem; color: var(--text-3); }
+        @media (max-width: 640px) { .wrap { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo"><div class="logo-icon">W</div> Washer Tech Comparison</div>
+            <nav class="nav">
+                <a href="/">Tech News</a>
+                <a href="/companies">Companies</a>
+                <a href="/products" class="active">Products</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span><span id="themeText">Light</span></button>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <div class="page-title">Flagship washing machines — technology comparison</div>
+        <div class="page-sub" id="sub">Top washer per brand, with a side-by-side technology matrix.</div>
+
+        <div id="loading" class="loading">Loading products…</div>
+
+        <div id="content" style="display:none;">
+            <div class="toolbar">
+                <div class="search-box"><input id="search" placeholder="Search models or brands…"></div>
+                <select id="techFilter"><option value="All">Has any technology</option></select>
+            </div>
+
+            <h2 class="sec">Technology matrix</h2>
+            <div class="sec-hint">Click a technology column to highlight it. ✓ available · ~ partial / select models · – not on flagship.</div>
+            <div class="matrix-wrap"><table class="matrix" id="matrix"></table></div>
+            <div class="legend">
+                <span><span class="cell yes">✓</span> Available</span>
+                <span><span class="cell partial">~</span> Partial / select models</span>
+                <span><span class="cell no">–</span> Not on flagship</span>
+            </div>
+
+            <h2 class="sec">Flagship products</h2>
+            <div class="sec-hint" id="cardHint"></div>
+            <div class="cards" id="cards"></div>
+
+            <h2 class="sec">Spec comparison</h2>
+            <div class="spectable-wrap"><table class="spec" id="spectable"></table></div>
+        </div>
+    </main>
+
+    <script>
+        const PALETTE = ['#2563eb','#dc2626','#16a34a','#d97706','#7c3aed','#0891b2','#db2777','#65a30d'];
+        const SHORT = {ai:'AI', autodose:'Auto-dose', steam:'Steam', heatpump:'Heat-pump', inverter:'Inverter', wifi:'Wi-Fi', hygiene:'Hygiene', quick:'Quick', additem:'Add-item', eco:'Eco'};
+        let DATA = {}, COLOR = {}, curSearch = '', curTech = 'All', hlTech = null;
+
+        function initTheme(){ const s=localStorage.getItem('theme'); const d=window.matchMedia('(prefers-color-scheme: dark)').matches; if(s==='dark'||(!s&&d))document.body.classList.add('dark-theme'); syncBtn(); }
+        function syncBtn(){ const d=document.body.classList.contains('dark-theme'); themeIcon.textContent=d?'🌙':'☀️'; themeText.textContent=d?'Dark':'Light'; }
+        themeToggle.onclick=()=>{ document.body.classList.toggle('dark-theme'); localStorage.setItem('theme', document.body.classList.contains('dark-theme')?'dark':'light'); syncBtn(); };
+
+        function sym(v){ return v==='yes'?'✓':v==='partial'?'~':'–'; }
+
+        async function init(){
+            initTheme();
+            try {
+                DATA = await fetch('/api/products').then(r=>r.json());
+                (DATA.products||[]).forEach((p,i)=> COLOR[p.company]=PALETTE[i%PALETTE.length]);
+                loading.style.display='none'; content.style.display='block';
+                document.getElementById('sub').textContent = `${(DATA.products||[]).length} flagship washers · ${(DATA.technologies||[]).length} technologies compared`;
+                buildFilters(); render();
+            } catch(e){ loading.textContent='Error: '+e.message; }
+        }
+
+        function buildFilters(){
+            const tf=document.getElementById('techFilter');
+            (DATA.technologies||[]).forEach(t=>{ const o=document.createElement('option'); o.value=t.key; o.textContent='Has '+t.label; tf.appendChild(o); });
+            document.getElementById('search').addEventListener('input', e=>{ curSearch=e.target.value.trim().toLowerCase(); render(); });
+            tf.addEventListener('change', e=>{ curTech=e.target.value; render(); });
+        }
+
+        function visibleProducts(){
+            let list = (DATA.products||[]).slice();
+            if (curSearch) list = list.filter(p=> (p.model+' '+p.company).toLowerCase().includes(curSearch));
+            if (curTech!=='All') list = list.filter(p=> p.tech[curTech]==='yes' || p.tech[curTech]==='partial');
+            return list;
+        }
+
+        function render(){
+            const techs = DATA.technologies||[];
+            const prods = visibleProducts();
+            // matrix
+            let cols = `<colgroup><col>${techs.map(t=>`<col class="${hlTech===t.key?'hl':''}">`).join('')}</colgroup>`;
+            let head = `<thead><tr><th class="prod">Product</th>${techs.map(t=>`<th title="${t.label}" onclick="toggleHl('${t.key}')">${SHORT[t.key]||t.label}</th>`).join('')}</tr></thead>`;
+            let rows = prods.map(p=>{
+                const cells = techs.map(t=>{ const v=p.tech[t.key]||'no'; return `<td><span class="cell ${v}">${sym(v)}</span></td>`; }).join('');
+                return `<tr><td class="prod"><div class="pm"><span class="cdot" style="background:${COLOR[p.company]}"></span>${p.company}</div><div class="pc">${p.model}</div></td>${cells}</tr>`;
+            }).join('');
+            // coverage row
+            const cover = techs.map(t=>{ const n=prods.filter(p=>p.tech[t.key]==='yes').length; return `<td>${n}/${prods.length}</td>`; }).join('');
+            rows += `<tr class="cover"><td class="prod">Full availability</td>${cover}</tr>`;
+            document.getElementById('matrix').innerHTML = cols+head+`<tbody>${rows}</tbody>`;
+
+            // cards
+            document.getElementById('cardHint').textContent = `${prods.length} of ${(DATA.products||[]).length} shown`;
+            document.getElementById('cards').innerHTML = prods.map(p=>{
+                const col=COLOR[p.company];
+                const chips = (DATA.technologies||[]).filter(t=>p.tech[t.key]==='yes' || p.tech[t.key]==='partial')
+                    .map(t=>`<span class="tchip ${p.tech[t.key]}">${SHORT[t.key]}</span>`).join('');
+                return `<div class="card">
+                    <div class="card-head" style="background:${col}"><div class="co">${p.company}</div><div class="mdl">${p.model}</div></div>
+                    <div class="card-body">
+                        <div class="specs">
+                            <span class="k">Type</span><span class="v">${p.type||'—'}</span>
+                            <span class="k">Capacity</span><span class="v">${p.capacity||'—'}</span>
+                            <span class="k">Max spin</span><span class="v">${p.spin||'—'}</span>
+                            <span class="k">Energy</span><span class="v">${p.energy||'—'}</span>
+                            <span class="k">Motor</span><span class="v">${p.motor||'—'}</span>
+                        </div>
+                        <div class="hl">${p.highlight||''}</div>
+                        <div class="techchips">${chips}</div>
+                        ${p.url?`<a class="more" href="${p.url}" target="_blank" rel="noopener">View product ↗</a>`:''}
+                    </div></div>`;
+            }).join('') || '<div class="empty">No products match.</div>';
+
+            // spec table
+            const st = document.getElementById('spectable');
+            st.innerHTML = `<thead><tr><th>Brand</th><th>Model</th><th>Type</th><th>Capacity</th><th>Spin</th><th>Energy</th><th>Motor</th></tr></thead>`+
+                `<tbody>${prods.map(p=>`<tr><td><span class="cdot" style="display:inline-block;background:${COLOR[p.company]};margin-right:6px"></span>${p.company}</td><td>${p.model}</td><td>${p.type||'—'}</td><td>${p.capacity||'—'}</td><td>${p.spin||'—'}</td><td>${p.energy||'—'}</td><td>${p.motor||'—'}</td></tr>`).join('')}</tbody>`;
+        }
+
+        function toggleHl(k){ hlTech = (hlTech===k? null : k); render(); }
+        init();
+    </script>
+</body>
+</html>
