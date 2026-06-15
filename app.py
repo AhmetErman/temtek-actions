@@ -4,8 +4,21 @@ from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
-# The data file is in the same directory
+# Data files in the same directory
 DATA_FILE = "tech_news_classified.json"
+COMPANY_NEWS_FILE = "company_news.json"
+COMPANY_ANALYSIS_FILE = "company_analysis.json"
+
+
+def _load_json(path, default):
+    if os.path.exists(path):
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            return {"error": str(e)}
+    return default
+
 
 @app.route('/')
 def index():
@@ -13,16 +26,31 @@ def index():
 
 @app.route('/api/news')
 def get_news():
-    if os.path.exists(DATA_FILE):
-        try:
-            with open(DATA_FILE, 'r', encoding='utf-8') as f:
-                news_data = json.load(f)
-            # Reverse order so newest parsed is first
-            news_data.reverse() 
-            return jsonify(news_data)
-        except Exception as e:
-            return jsonify({"error": str(e)}), 500
-    return jsonify([])
+    data = _load_json(DATA_FILE, [])
+    if isinstance(data, dict) and "error" in data:
+        return jsonify(data), 500
+    data.reverse()  # newest parsed first
+    return jsonify(data)
+
+
+@app.route('/companies')
+def companies():
+    return render_template('companies.html')
+
+@app.route('/api/company-news')
+def get_company_news():
+    data = _load_json(COMPANY_NEWS_FILE, [])
+    if isinstance(data, dict) and "error" in data:
+        return jsonify(data), 500
+    return jsonify(data)
+
+@app.route('/api/company-analysis')
+def get_company_analysis():
+    data = _load_json(COMPANY_ANALYSIS_FILE, {})
+    if isinstance(data, dict) and "error" in data:
+        return jsonify(data), 500
+    return jsonify(data)
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

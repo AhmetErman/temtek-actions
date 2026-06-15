@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-06-14T20:58:19Z",
+  "total_articles": 208,
+  "companies": [
+    "Samsung",
+    "Haier",
+    "Midea",
+    "BSH (Bosch/Siemens)",
+    "Whirlpool"
+  ],
+  "totals": {
+    "Whirlpool": 5,
+    "Samsung": 150,
+    "Midea": 18,
+    "BSH (Bosch/Siemens)": 12,
+    "Haier": 23
+  },
+  "quarters": [
+    "2023-Q1",
+    "2023-Q2",
+    "2023-Q3",
+    "2023-Q4",
+    "2024-Q1",
+    "2024-Q2",
+    "2024-Q3",
+    "2024-Q4",
+    "2025-Q1",
+    "2025-Q2",
+    "2025-Q3",
+    "2025-Q4",
+    "2026-Q1",
+    "2026-Q2"
+  ],
+  "by_quarter": {
+    "Whirlpool": {
+      "2026-Q2": 5
+    },
+    "Samsung": {
+      "2026-Q2": 8,
+      "2026-Q1": 14,
+      "2025-Q4": 12,
+      "2025-Q3": 17,
+      "2025-Q2": 9,
+      "2025-Q1": 16,
+      "2024-Q4": 9,
+      "2024-Q3": 13,
+      "2024-Q2": 11,
+      "2024-Q1": 9,
+      "2023-Q4": 8,
+      "2023-Q3": 17,
+      "2023-Q2": 7
+    },
+    "Midea": {
+      "2026-Q2": 1,
+      "2025-Q4": 4,
+      "2025-Q3": 5,
+      "2025-Q2": 3,
+      "2025-Q1": 1,
+      "2024-Q3": 1,
+      "2024-Q1": 1,
+      "2023-Q3": 1,
+      "2023-Q2": 1
+    },
+    "BSH (Bosch/Siemens)": {
+      "2025-Q3": 2,
+      "2024-Q4": 2,
+      "2024-Q3": 1,
+      "2024-Q1": 1,
+      "2023-Q4": 2,
+      "2023-Q3": 4
+    },
+    "Haier": {
+      "2025-Q1": 2,
+      "2024-Q4": 3,
+      "2024-Q3": 1,
+      "2024-Q2": 2,
+      "2024-Q1": 3,
+      "2023-Q4": 5,
+      "2023-Q3": 3,
+      "2023-Q2": 1,
+      "2023-Q1": 3
+    }
+  },
+  "themes": [
+    "AI",
+    "IoT & Connectivity",
+    "Sustainability & Energy",
+    "Hygiene & Health",
+    "Laundry",
+    "Refrigeration",
+    "Cooking & Kitchen",
+    "Design & Events",
+    "Business & Corporate",
+    "Other"
+  ],
+  "by_theme": {
+    "Whirlpool": {
+      "Design & Events": 5,
+      "Business & Corporate": 5
+    },
+    "Samsung": {
+      "AI": 93,
+      "Design & Events": 111,
+      "IoT & Connectivity": 41,
+      "Sustainability & Energy": 28,
+      "Laundry": 24,
+      "Refrigeration": 21,
+      "Cooking & Kitchen": 21,
+      "Hygiene & Health": 4,
+      "Business & Corporate": 8,
+      "Other": 3
+    },
+    "Midea": {
+      "AI": 4,
+      "Other": 4,
+      "Refrigeration": 1,
+      "Cooking & Kitchen": 3,
+      "Design & Events": 7,
+      "IoT & Connectivity": 2,
+      "Business & Corporate": 5,
+      "Sustainability & Energy": 2
+    },
+    "BSH (Bosch/Siemens)": {
+      "Design & Events": 8,
+      "Sustainability & Energy": 2,
+      "IoT & Connectivity": 2,
+      "Laundry": 2,
+      "Cooking & Kitchen": 5,
+      "Business & Corporate": 2,
+      "Other": 1,
+      "AI": 1,
+      "Refrigeration": 1
+    },
+    "Haier": {
+      "Other": 4,
+      "Laundry": 6,
+      "Design & Events": 12,
+      "IoT & Connectivity": 1,
+      "Cooking & Kitchen": 3,
+      "AI": 2,
+      "Business & Corporate": 3,
+      "Sustainability & Energy": 3
+    }
+  },
+  "date_range": {
+    "Whirlpool": {
+      "earliest": "2026-05-06",
+      "latest": "2026-06-12"
+    },
+    "Samsung": {
+      "earliest": "2023-06-01",
+      "latest": "2026-06-04"
+    },
+    "Midea": {
+      "earliest": "2023-04-01",
+      "latest": "2026-04-14"
+    },
+    "BSH (Bosch/Siemens)": {
+      "earliest": "2023-09-02",
+      "latest": "2025-09-04"
+    },
+    "Haier": {
+      "earliest": "2023-02-13",
+      "latest": "2025-01-27"
+    }
+  }
+}
