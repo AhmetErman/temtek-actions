@@ -1,0 +1,114 @@
+{
+  "generated": "2026-06-15",
+  "note": "Curated flagship washing-machine dataset, researched from official product/newsroom pages. tech values: yes | partial | no. Edit freely to refine.",
+  "technologies": [
+    {"key": "ai", "label": "AI wash optimization"},
+    {"key": "autodose", "label": "Auto-dosing"},
+    {"key": "steam", "label": "Steam treatment"},
+    {"key": "heatpump", "label": "Heat-pump drying"},
+    {"key": "inverter", "label": "Inverter / direct-drive"},
+    {"key": "wifi", "label": "Wi-Fi / app control"},
+    {"key": "hygiene", "label": "Allergy / anti-bacterial"},
+    {"key": "quick", "label": "Quick wash"},
+    {"key": "additem", "label": "Add-garment mid-cycle"},
+    {"key": "eco", "label": "Eco / sustainable design"}
+  ],
+  "products": [
+    {
+      "company": "Samsung",
+      "model": "Bespoke AI Laundry Combo",
+      "type": "Washer-dryer combo (ventless heat-pump)",
+      "capacity": "5.3 cu ft (up to 25 kg in KR)",
+      "spin": "—",
+      "energy": "A (washer)",
+      "motor": "Digital Inverter",
+      "highlight": "AI Opti Wash & Dry in one drum, Flex Auto Dispense (up to 47 loads), Steam Sanitize, Super Speed 79-min, Auto Open Door+.",
+      "url": "https://www.samsung.com/us/laundry/washer-and-dryer-sets/all-in-one-washer-dryer-combo-bespoke-ai-laundry-ventless-combo-super-speed-5-3-cu-ft-dark-steel-sku-wd53dba900hza1/",
+      "tech": {"ai": "yes", "autodose": "yes", "steam": "yes", "heatpump": "yes", "inverter": "yes", "wifi": "yes", "hygiene": "yes", "quick": "yes", "additem": "yes", "eco": "partial"}
+    },
+    {
+      "company": "LG",
+      "model": "AI DD TurboWash 360 (WM6500HBA)",
+      "type": "Front-load washer",
+      "capacity": "5.0 cu ft (~13 kg)",
+      "spin": "1300 rpm",
+      "energy": "ENERGY STAR",
+      "motor": "AI Direct Drive",
+      "highlight": "AI DD senses fabric and picks the wash; TurboWash 360 cleans big loads in under 30 min; Allergiene steam cycle (AAFA); ThinQ app.",
+      "url": "https://www.lg.com/us/washers-dryers/lg-wm6500hba-front-load-washer",
+      "tech": {"ai": "yes", "autodose": "partial", "steam": "yes", "heatpump": "no", "inverter": "yes", "wifi": "yes", "hygiene": "yes", "quick": "yes", "additem": "partial", "eco": "partial"}
+    },
+    {
+      "company": "Bosch (BSH)",
+      "model": "Series 8 i-DOS (WGB256)",
+      "type": "Front-load washer",
+      "capacity": "10 kg",
+      "spin": "1400 rpm",
+      "energy": "A",
+      "motor": "EcoSilence Drive",
+      "highlight": "i-DOS auto-doses exact detergent (saves ~38% detergent, ~10 L water/wash); Home Connect app guidance; anti-stain & hygiene programs.",
+      "url": "https://www.bosch-home.co.uk/bosch-innovations/i-dos",
+      "tech": {"ai": "partial", "autodose": "yes", "steam": "partial", "heatpump": "no", "inverter": "yes", "wifi": "yes", "hygiene": "yes", "quick": "yes", "additem": "no", "eco": "yes"}
+    },
+    {
+      "company": "Electrolux",
+      "model": "UltimateCare 900 AutoDose (EWF1141R9WB)",
+      "type": "Front-load washer",
+      "capacity": "11 kg",
+      "spin": "1400 rpm",
+      "energy": "A",
+      "motor": "Inverter",
+      "highlight": "SensorWash AI removes 49 stains; AutoDose + UltraCare pre-mix; SteamCare cuts wrinkles; HygienicCare removes 99.9% allergens at 40°C; Wi-Fi.",
+      "url": "https://www.electrolux.com.au/laundry/washing-machines/ewf1041r9wb/",
+      "tech": {"ai": "yes", "autodose": "yes", "steam": "yes", "heatpump": "no", "inverter": "yes", "wifi": "yes", "hygiene": "yes", "quick": "yes", "additem": "no", "eco": "yes"}
+    },
+    {
+      "company": "Beko (Arçelik)",
+      "model": "AutoDose SteamCure (BFLB904ADG)",
+      "type": "Front-load washer",
+      "capacity": "9 kg",
+      "spin": "1400 rpm",
+      "energy": "A",
+      "motor": "ProSmart Inverter",
+      "highlight": "AutoDose detergent + softener; SteamCure cuts allergens 99.9% (Allergy UK); HygieneShield hot-air refresh; RecycledTub; HomeWhiz Wi-Fi.",
+      "url": "https://www.beko.com/au-en/product_feature_technology/SteamCure",
+      "tech": {"ai": "no", "autodose": "yes", "steam": "yes", "heatpump": "no", "inverter": "yes", "wifi": "yes", "hygiene": "yes", "quick": "yes", "additem": "no", "eco": "yes"}
+    },
+    {
+      "company": "Haier",
+      "model": "I-Pro Series 7 (HW100-B14979)",
+      "type": "Front-load washer",
+      "capacity": "10 kg",
+      "spin": "1400 rpm",
+      "energy": "A",
+      "motor": "Direct Motion (direct-drive)",
+      "highlight": "Beltless Direct Motion motor (lifetime guarantee); Steam diffusion for stains/ironing; ABT anti-bacterial; auto weight detection; hOn Wi-Fi app.",
+      "url": "https://www.haier-europe.com/en_IE/i-pro-series-7/",
+      "tech": {"ai": "partial", "autodose": "no", "steam": "yes", "heatpump": "no", "inverter": "yes", "wifi": "yes", "hygiene": "yes", "quick": "yes", "additem": "partial", "eco": "partial"}
+    },
+    {
+      "company": "Whirlpool",
+      "model": "FreshCare+ 6th Sense (FDLR10250)",
+      "type": "Front-load washer",
+      "capacity": "10 kg",
+      "spin": "1400 rpm",
+      "energy": "A",
+      "motor": "SENSE Inverter",
+      "highlight": "6th Sense auto-adapts water/energy/time; FreshCare+ keeps loads fresh up to 6 h with steam jets; Steam Hygiene removes 99.9% bacteria/allergens.",
+      "url": "https://whirlpool.com.au/products/freshcare-10kg-front-load-washer-fdlr10250",
+      "tech": {"ai": "partial", "autodose": "no", "steam": "yes", "heatpump": "no", "inverter": "yes", "wifi": "partial", "hygiene": "yes", "quick": "yes", "additem": "no", "eco": "partial"}
+    },
+    {
+      "company": "Midea",
+      "model": "Inverter Quattro Health Guard (MF200W90B)",
+      "type": "Front-load washer",
+      "capacity": "9 kg",
+      "spin": "1400 rpm",
+      "energy": "A",
+      "motor": "Inverter Quattro",
+      "highlight": "Inverter Quattro motor (70% energy saving, 10-yr warranty); Health Guard steam sterilizes 99.9%; Auto Clean drum; dynamic vibration control.",
+      "url": "https://www.midea.com/eg/laundry/front-load-washer/mf200-inverter-quattro---health-guard.mf200w90b-tt",
+      "tech": {"ai": "no", "autodose": "no", "steam": "yes", "heatpump": "no", "inverter": "yes", "wifi": "partial", "hygiene": "yes", "quick": "yes", "additem": "no", "eco": "partial"}
+    }
+  ]
+}
