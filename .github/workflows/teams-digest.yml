@@ -1,0 +1,53 @@
+name: Teams Weekly Digest
+
+on:
+  schedule:
+    # Fridays 08:00 UTC - after the Mon/Thu scrape, so the week's news is in.
+    - cron: '0 8 * * 5'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'test = post top items now (ignores state); normal = only new since last digest'
+        type: choice
+        options: [test, normal]
+        default: test
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Send digest
+        env:
+          TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          PYTHONUNBUFFERED: '1'
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "test" ]; then
+            python teams_digest.py --force --limit 10
+          else
+            python teams_digest.py
+          fi
+
+      - name: Commit digest state
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add teams_digest_state.json
+          if git diff --staged --quiet; then
+            echo "No digest-state change to commit."
+          else
+            git commit -m "Update Teams digest state [skip ci]"
+            git push
+          fi
