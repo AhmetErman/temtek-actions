@@ -266,12 +266,42 @@ def scrape_and_translate():
             
     print("Running Gemini Classification...")
     classified_results = classifier.process_list(articles_to_classify, progress_callback=print_progress)
-    
+
     existing_classified.extend(classified_results)
-    
+
+    # === Normalize labels + Layer-2 dynamic subclassification of "Other" ===
+    # Fault-isolated: any problem here must not lose the primary classification.
+    try:
+        from taxonomy import normalize_classification
+        for art in existing_classified:
+            if art.get("Classification") is not None:
+                art["Classification"] = normalize_classification(art["Classification"])
+
+        dyn_cfg = getattr(config, "DYNAMIC_SUBCLASS", None)
+        if dyn_cfg and dyn_cfg.get("enabled"):
+            from dynamic_subclassifier import DynamicSubclassifier
+            # Only subclass "Other" items that don't already carry a sub-class.
+            todo = [a for a in existing_classified
+                    if a.get("Classification") == "Other" and not a.get("OtherSubclass")]
+            if todo:
+                print(f"\n=== Layer-2: dynamic subclassification of {len(todo)} 'Other' items ===")
+                sub = DynamicSubclassifier(
+                    api_key=api_key,
+                    models=config.GEMINI_MODELS,
+                    batch_size=dyn_cfg.get("batch_size", 25),
+                    store_path=dyn_cfg.get("store_file", "dynamic_classes.json"),
+                    base_instruction=dyn_cfg.get("base_instruction", ""),
+                )
+                sub.subclassify(todo, progress_callback=print_progress)
+                sub.recount(existing_classified)
+                sub.save()
+                print(f"  -> sub-taxonomy now has {len(sub.registry['classes'])} classes.")
+    except Exception as e:
+        print(f"  -> Dynamic subclassification skipped: {e}")
+
     with open(classified_filename, "w", encoding="utf-8") as f_out:
         json.dump(existing_classified, f_out, indent=4, ensure_ascii=False)
-        
+
     print(f"Classified data saved to {classified_filename}")
 
 if __name__ == "__main__":

@@ -91,3 +91,42 @@ Classification rules:
 - If the item describes a concrete appliance feature or capability, prefer the matching feature category over Other.
 - Use Other for business, retail, policy, and generic marketing items even when they mention an appliance brand or product.
 - Always use the exact category names above, including "Other"."""
+
+# --- Layer-2: dynamic (unsupervised) subclassification of the "Other" bucket ---
+# The fixed taxonomy above is never changed. Everything that lands in "Other" is
+# passed to a SECOND Gemini pass (dynamic_subclassifier.py) that groups those
+# items into reusable sub-topics it discovers on its own (e.g. "Generative AI",
+# "Gaming"). Discovered sub-classes are stored in `store_file` and re-injected
+# into the prompt below on every run, so the sub-taxonomy under "Other" GROWS
+# over time without affecting the normal classes. Set "enabled" to False to skip.
+DYNAMIC_SUBCLASS = {
+    "enabled": True,
+    "store_file": "dynamic_classes.json",
+    "batch_size": 25,
+    "base_instruction": """You are organizing the "Other" bucket of a home-appliance (laundry-focused) news classifier. Every item you receive was already judged NOT to be about a home-appliance feature, so these are general or off-topic news items - for example: general AI/software, smartphones and consumer electronics, gaming, sports, entertainment/media, finance and markets, automotive/EV, semiconductors, cybersecurity, social media, or policy.
+
+Your job is to organize these items into specific, REUSABLE sub-topics so the opaque "Other" bucket becomes a structured sub-taxonomy.
+
+Rules:
+- You are given a list of EXISTING SUB-CLASSES with descriptions. For each news item, FIRST try to fit it into an existing sub-class and reuse its EXACT name. Strongly prefer reusing an existing sub-class over inventing a new one.
+- Only if no existing sub-class reasonably fits, create ONE new sub-class: a concise name (1-3 words, Title Case) plus a one-sentence description. Make new sub-classes general enough to apply to many future articles - never about a single company or a one-off event.
+- Set IsNew=true ONLY when you introduce a sub-class that is not already in the existing list; otherwise set IsNew=false and reuse the existing name verbatim.
+- Assign RelationScore from 1 to 5 for how well the item fits its sub-class.
+- Every item must receive exactly one sub-class. Never use "Other" as a sub-class name. Return every NewsIndex you were given.""",
+}
+
+# --- Weekly Teams trend digest (teams_digest.py) ---
+# One-way digest posted to a Teams channel through a Power Automate "Workflows"
+# webhook. Only posts RELEVANT items: a real (non-excluded) class with
+# RelationScore >= min_relation_score. The webhook URL is read from the env var
+# named below (a GitHub Actions secret) and must never be committed.
+TEAMS_DIGEST = {
+    "enabled": True,
+    "webhook_env": "TEAMS_WEBHOOK_URL",
+    "state_file": "teams_digest_state.json",
+    "min_relation_score": 3,
+    "max_items": 12,
+    "exclude_categories": ["Other"],
+    "title": "🧺 Weekly Appliance Tech Digest",
+    "request_timeout": 20,
+}

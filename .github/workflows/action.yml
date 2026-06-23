@@ -42,8 +42,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          # Stage the specific data files
-          git add tech_news_classified.json
+          # Stage the data files (classified news + the dynamic "Other" sub-taxonomy)
+          git add tech_news_classified.json dynamic_classes.json
           # Check if there are changes to commit
           if git diff --staged --quiet; then
             echo "No new articles found. Nothing to commit."
