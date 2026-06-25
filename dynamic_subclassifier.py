@@ -110,10 +110,14 @@ def _article_text(a, i):
 
 
 class DynamicSubclassifier:
-    def __init__(self, api_key, models, batch_size, store_path, base_instruction):
+    def __init__(self, api_key, models, batch_size, store_path, base_instruction,
+                 request_timeout=90):
         if not _GENAI_OK:
             raise RuntimeError("google-genai is not available")
-        self.client = genai.Client(api_key=api_key)
+        self.client = genai.Client(
+            api_key=api_key,
+            http_options=types.HttpOptions(timeout=int(request_timeout * 1000)),
+        )
         self.models = list(models) if isinstance(models, (list, tuple)) else [models]
         self.model_idx = 0
         self.batch_size = int(batch_size)
@@ -209,9 +213,18 @@ class DynamicSubclassifier:
             return
         start = time.time()
         done = 0
+        consecutive_failures = 0
         for bstart in range(0, total, self.batch_size):
             batch = other_items[bstart:bstart + self.batch_size]
-            self._process_batch(batch)
+            tagged = self._process_batch(batch)
+            if tagged:
+                consecutive_failures = 0
+            else:
+                consecutive_failures += 1
+                if consecutive_failures >= 2:
+                    print("  -> Gemini unavailable for consecutive batches; "
+                          "stopping subclassification (remaining items left untagged).")
+                    break
             done += len(batch)
             elapsed = time.time() - start
             eta = (elapsed / done) * (total - done) / 60 if done else 0

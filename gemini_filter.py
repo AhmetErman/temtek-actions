@@ -8,7 +8,8 @@ from google.genai import types
 logger = logging.getLogger(__name__)
 
 class GeminiClassifier:
-    def __init__(self, api_key, model_name, batch_size, system_prompt, response_schema):
+    def __init__(self, api_key, model_name, batch_size, system_prompt, response_schema,
+                 request_timeout=90):
         self.api_key = api_key
         if isinstance(model_name, list):
             self.model_names = model_name
@@ -67,7 +68,11 @@ class GeminiClassifier:
             logger.warning("Response schema missing 'type' field, falling back to default.")
             self.response_schema = DEFAULT_STRUCT
             
-        self.client = genai.Client(api_key=self.api_key)
+        # Per-request timeout (ms) so a stalled call can't hang the whole job.
+        self.client = genai.Client(
+            api_key=self.api_key,
+            http_options=types.HttpOptions(timeout=int(request_timeout * 1000)),
+        )
         self.is_running = False
         self._is_active = False  # True while process_dataframe thread is alive
 
@@ -237,14 +242,15 @@ class GeminiClassifier:
             total_news = len(output_list)
             processed_count = 0
             start_time = time.time()
+            consecutive_failures = 0
 
             for batch_start in range(0, total_news, self.batch_size):
                 if not self.is_running:
                     break
-                    
+
                 batch_end = min(batch_start + self.batch_size, total_news)
                 batch_indices = range(batch_start, batch_end)
-                
+
                 batch_data = []
                 for i, idx in enumerate(batch_indices):
                     row = output_list[idx]
@@ -252,24 +258,36 @@ class GeminiClassifier:
                     # Specifically, try to use title_en and summary_en if available
                     title = row.get('title_en') or row.get('title', '')
                     summary = row.get('summary_en') or row.get('summary', '')
-                    
+
                     batch_data.append({
                         'index': i,
                         'title': title,
                         'summary': summary
                     })
-                
+
                 results = self.classify_batch(batch_data, max_retries=3, progress_callback=progress_callback)
-                
-                if results and 'news' in results:
-                    for res in results['news']:
+
+                news_items = results.get('news') if isinstance(results, dict) else None
+                if news_items:
+                    consecutive_failures = 0
+                    for res in news_items:
                         b_idx = res.get('NewsIndex')
                         if b_idx is not None and 0 <= b_idx < len(batch_data):
                             actual_idx = batch_start + b_idx
                             output_list[actual_idx]['Classification'] = res.get('Classification', 'N/A')
                             output_list[actual_idx]['RelationScore'] = res.get('RelationScore', -1)
                             output_list[actual_idx]['Gemini_Summary'] = res.get('Summary', 'N/A')
-                
+                else:
+                    # Whole batch failed (e.g. repeated 503). If this keeps
+                    # happening the API is down: stop and leave the rest as
+                    # 'N/A' backlog for the next run instead of burning the
+                    # job's time budget and getting force-cancelled.
+                    consecutive_failures += 1
+                    if consecutive_failures >= 2:
+                        if progress_callback:
+                            progress_callback("error", "Gemini unavailable for consecutive batches; stopping. Remaining articles stay unclassified and will be retried next run.")
+                        break
+
                 processed_count += len(batch_data)
                 
                 if progress_callback:

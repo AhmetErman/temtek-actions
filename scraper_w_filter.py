@@ -246,10 +246,11 @@ def scrape_and_translate():
     
     classifier = GeminiClassifier(
         api_key=api_key,
-        model_name=config.GEMINI_MODELS, 
+        model_name=config.GEMINI_MODELS,
         batch_size=config.GEMINI_BATCH_SIZE,
         system_prompt=config.SYSTEM_PROMPT,
-        response_schema=""
+        response_schema="",
+        request_timeout=getattr(config, "GEMINI_REQUEST_TIMEOUT", 90),
     )
     
     def print_progress(msg_type, *args):
@@ -291,6 +292,7 @@ def scrape_and_translate():
                     batch_size=dyn_cfg.get("batch_size", 25),
                     store_path=dyn_cfg.get("store_file", "dynamic_classes.json"),
                     base_instruction=dyn_cfg.get("base_instruction", ""),
+                    request_timeout=getattr(config, "GEMINI_REQUEST_TIMEOUT", 90),
                 )
                 sub.subclassify(todo, progress_callback=print_progress)
                 sub.recount(existing_classified)

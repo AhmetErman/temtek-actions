@@ -69,6 +69,10 @@ GEMINI_MODELS = [
 
 GEMINI_BATCH_SIZE = 25
 
+# Per-request timeout (seconds) for Gemini calls, so a stalled API call can't
+# hang the GitHub Actions job (30-min cap) until it gets force-cancelled.
+GEMINI_REQUEST_TIMEOUT = 90
+
 SYSTEM_PROMPT = """Classification Prompt
 Task: You are classifying home-appliance news from Japan and China, with a focus on laundry (washing machines, dryers, washer-dryers) and related home appliances. Each item may be a news article, a product launch or feature announcement, or an R&D/technical text. Assign the single category that best fits its PRIMARY topic. Classify product and feature news too - not only formal R&D. Use the exact category name (as written below) as the label.
 
