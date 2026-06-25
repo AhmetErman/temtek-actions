@@ -1,102 +1,102 @@
 {
   "version": 1,
-  "updated_at": "2026-06-23T18:32:27Z",
+  "updated_at": "2026-06-25T21:32:17Z",
   "classes": [
     {
       "name": "Artificial Intelligence",
       "description": "Developments, applications, and corporate activities in artificial intelligence.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 78
+      "count": 88
     },
     {
       "name": "Gaming",
       "description": "News, updates, and releases in the video game and interactive entertainment industry.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 9
+      "count": 11
     },
     {
       "name": "Streaming Services",
       "description": "Developments, subscription models, and news related to digital media streaming platforms.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 19
+      "count": 20
     },
     {
       "name": "Consumer Electronics",
       "description": "Hardware releases, reviews, and news regarding personal tech and consumer gadgets.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 42
+      "count": 55
     },
     {
       "name": "Space Industry",
       "description": "Commercial spaceflight, satellite technology, and outer space exploration initiatives.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Enterprise Software",
       "description": "Developments and operational events concerning software and IT services used by businesses.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 22
+      "count": 24
     },
     {
       "name": "Finance and Markets",
       "description": "Stock market events, corporate mergers, acquisitions, and financial services news.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 97
+      "count": 106
     },
     {
       "name": "Cybersecurity",
       "description": "Information security, encryption technology, data breaches, and digital safety.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 23
+      "count": 37
     },
     {
       "name": "Business Regulation",
       "description": "Government guidelines, antitrust laws, consumer protection, and business compliance.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 18
+      "count": 21
     },
     {
       "name": "Toys and Hobbies",
       "description": "Collectible items, toys, hobbies, and fan-oriented miniature models.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Transportation",
       "description": "News regarding commercial aviation, public transit, and automotive technologies like autonomous driving.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 31
+      "count": 36
     },
     {
       "name": "Science",
       "description": "Academic studies, research findings, and scientific discoveries in various disciplines.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 12
+      "count": 15
     },
     {
       "name": "Infrastructure and Utilities",
       "description": "News regarding energy generation, public utilities, and critical physical infrastructure operations.",
       "created_at": "2026-06-23T13:41:51Z",
-      "count": 12
+      "count": 16
     },
     {
       "name": "Retail and Lifestyle",
       "description": "News, business activities, and consumer trends in retail, fashion, food, and lifestyle products.",
       "created_at": "2026-06-23T13:42:26Z",
-      "count": 76
+      "count": 100
     },
     {
       "name": "Semiconductors",
       "description": "Developments, manufacturing, corporate activities, and market trends in the microchip and semiconductor industry.",
       "created_at": "2026-06-23T13:43:09Z",
-      "count": 8
+      "count": 16
     },
     {
       "name": "Sports",
       "description": "News, events, achievements, and updates from the world of professional sports and athletics.",
       "created_at": "2026-06-23T13:43:09Z",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Entertainment and Media",
@@ -114,25 +114,31 @@
       "name": "Social Media",
       "description": "Developments, features, and platform updates for social networking and interactive media services.",
       "created_at": "2026-06-23T13:49:24Z",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Personal Commentary",
       "description": "Articles featuring personal opinions, experiences, or anecdotal stories that do not fit into specific industry categories.",
       "created_at": "2026-06-23T18:31:02Z",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Entrepreneurship and Startups",
       "description": "News and discussions related to founding, growth, funding, and challenges of new businesses and startups.",
       "created_at": "2026-06-23T18:32:03Z",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Business Strategy",
       "description": "Strategic announcements, corporate restructuring, and major business direction changes for companies across various industries.",
       "created_at": "2026-06-23T18:32:27Z",
-      "count": 1
+      "count": 4
+    },
+    {
+      "name": "Robotics",
+      "description": "News regarding the development, testing, and deployment of autonomous and specialized robotic systems.",
+      "created_at": "2026-06-25T21:30:29Z",
+      "count": 4
     }
   ]
 }
