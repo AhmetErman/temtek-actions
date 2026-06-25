@@ -42,6 +42,11 @@ jobs:
 
       - name: Commit digest state
         run: |
+          # test/force runs intentionally do not write the state file - skip then.
+          if [ ! -f teams_digest_state.json ]; then
+            echo "No state file written (test/force mode); nothing to commit."
+            exit 0
+          fi
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add teams_digest_state.json
