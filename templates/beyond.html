@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Our Focus — Cleaning and Textile Squad News Tracker</title>
+    <meta name="description" content="Wider tech and world news outside our core cleaning and textile topics.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <div class="logo-icon">T</div>
+                Cleaning and Textile Squad News Tracker
+            </div>
+            <nav style="display:flex;gap:.25rem;">
+                <a href="/" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Tech News</a>
+                <a href="/companies" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Companies</a>
+                <a href="/products" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Products</a>
+            </nav>
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span id="themeToggleIcon">☀️</span>
+                    <span id="themeToggleText">Light</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="toolbar" id="toolbar">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search wider news... (press '/' to focus)" />
+        </div>
+        <select id="topicFilter">
+            <option value="All">All topics</option>
+        </select>
+        <select id="sortOrder">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="score-high">Relevance ↓</option>
+            <option value="score-low">Relevance ↑</option>
+        </select>
+    </div>
+
+    <main class="main-content">
+        <div class="page-intro">
+            <a href="/" class="back-link">← Back to Tech News</a>
+            <h1>Beyond Our Focus</h1>
+            <p>Wider tech &amp; world news that fell outside our core cleaning &amp; textile topics, grouped into sub-topics. Open a topic to browse its articles.</p>
+        </div>
+        <div id="loading" class="loading-state">
+            <div class="spinner"></div>
+            Loading news...
+        </div>
+        <div id="resultCount" class="result-count" style="display:none;"></div>
+        <div id="groups"></div>
+    </main>
+
+    <footer class="page-footer" id="pageFooter"></footer>
+
+    <button class="back-to-top" id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
+
+    <script>
+        let allNews = [];
+        let offNews = [];          // off-topic ("Other") items only
+        let currentSearch = '';
+        let currentTopic = 'All';
+        let currentSort = 'newest';
+        let latestNewsTime = 0;
+
+        const TAG_MAP = {
+            'AI, IoT & Smart Sensors': 'tag-ai',
+            'Sustainability & Environmental Impact': 'tag-sustain',
+            'Fabric Care & Textile Engineering': 'tag-fabric',
+            'Chemical Interaction & Smart Dosing': 'tag-chem',
+            'Hygiene & Health Technologies': 'tag-hygiene',
+            'Other': 'tag-other', 'N/A': 'tag-na'
+        };
+        function getTagClass(cat) { return TAG_MAP[cat] || 'tag-other'; }
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.body.classList.add('dark-theme');
+                document.getElementById('themeToggleIcon').textContent = '🌙';
+                document.getElementById('themeToggleText').textContent = 'Dark';
+            }
+        }
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            const isDark = document.body.classList.toggle('dark-theme');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            document.getElementById('themeToggleIcon').textContent = isDark ? '🌙' : '☀️';
+            document.getElementById('themeToggleText').textContent = isDark ? 'Dark' : 'Light';
+        });
+
+        function parseDate(s) { if (!s) return null; const d = new Date(s); return isNaN(d) ? null : d; }
+        function formatDate(s) {
+            const d = parseDate(s);
+            if (!d) return s || '';
+            const days = Math.floor((new Date() - d) / 86400000);
+            if (days === 0) return 'Today';
+            if (days === 1) return 'Yesterday';
+            if (days < 7) return days + 'd ago';
+            return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        }
+        function subOf(item) { return item.OtherSubclass || 'Uncategorized'; }
+
+        function toggleAbstract(id) {
+            const el = document.getElementById('abs-' + id);
+            const btn = document.getElementById('btn-' + id);
+            if (el.classList.contains('open')) { el.classList.remove('open'); btn.textContent = 'Show details ▸'; }
+            else { el.classList.add('open'); btn.textContent = 'Hide details ▾'; }
+        }
+        function toggleSub(btn) { btn.classList.toggle('open'); btn.nextElementSibling.classList.toggle('open'); }
+
+        function buildRow(item, index) {
+            const title = item.title_en || item.title || 'Untitled';
+            const summary = item.summary_en || item.summary || '';
+            const tagLabel = subOf(item);
+            const dateStr = formatDate(item.date);
+            const geminiSummary = item.Gemini_Summary && item.Gemini_Summary !== 'N/A' ? item.Gemini_Summary : '';
+            const uid = 'n' + index;
+            const itemTime = parseDate(item.date);
+            const isNew = itemTime && (latestNewsTime - itemTime.getTime() < 3600000 * 24);
+
+            let detailsHTML = '';
+            if ((summary && summary.length > 10) || item.title) {
+                detailsHTML = `
+                    <button class="news-expand-btn" id="btn-${uid}" onclick="toggleAbstract('${uid}')">Show details ▸</button>
+                    <div class="news-abstract" id="abs-${uid}">
+                        ${summary ? `<p>${summary}</p>` : ''}
+                        <div class="original-text-section">
+                            <div class="original-title">🇯🇵 Original Title: ${item.title || 'Untitled'}</div>
+                            ${item.summary ? `<div class="original-body">${item.summary}</div>` : ''}
+                        </div>
+                    </div>`;
+            }
+            return `<div class="news-row">
+                <div class="news-main">
+                    <div class="news-meta">
+                        <span class="news-tag tag-other">${tagLabel}</span>
+                        <span class="news-source">${item.source || ''}</span>
+                        <span class="meta-dot"></span>
+                        <span class="news-date">${dateStr}</span>
+                        ${isNew ? `<span class="new-badge">New</span>` : ''}
+                    </div>
+                    <div class="news-title">
+                        <a href="${item.url || '#'}" target="_blank" rel="noopener noreferrer">${title}</a>
+                    </div>
+                    ${geminiSummary ? `<div class="news-gemini-summary">${geminiSummary}</div>` : ''}
+                    ${detailsHTML}
+                </div>
+            </div>`;
+        }
+
+        function getFiltered() {
+            let list = [...offNews];
+            if (currentSearch) {
+                const q = currentSearch.toLowerCase();
+                list = list.filter(i =>
+                    (i.title_en || i.title || '').toLowerCase().includes(q) ||
+                    (i.summary_en || i.summary || '').toLowerCase().includes(q) ||
+                    (i.Gemini_Summary || '').toLowerCase().includes(q) ||
+                    subOf(i).toLowerCase().includes(q));
+            }
+            if (currentTopic !== 'All') list = list.filter(i => subOf(i) === currentTopic);
+            list.sort((a, b) => {
+                if (currentSort === 'newest') return (parseDate(b.date) || 0) - (parseDate(a.date) || 0);
+                if (currentSort === 'oldest') return (parseDate(a.date) || 0) - (parseDate(b.date) || 0);
+                if (currentSort === 'score-high') return (b.RelationScore || 0) - (a.RelationScore || 0);
+                if (currentSort === 'score-low') return (a.RelationScore || 0) - (b.RelationScore || 0);
+                return 0;
+            });
+            return list;
+        }
+
+        function render() {
+            const list = getFiltered();
+            const groupsEl = document.getElementById('groups');
+            const countEl = document.getElementById('resultCount');
+            countEl.style.display = 'block';
+            countEl.textContent = `${list.length} article${list.length !== 1 ? 's' : ''}` +
+                (currentSearch ? ` matching "${currentSearch}"` : '') +
+                (currentTopic !== 'All' ? ` in ${currentTopic}` : '');
+
+            let rowId = 0;
+            // Flat list while searching or when a single topic is chosen; otherwise grouped.
+            if (currentSearch || currentTopic !== 'All') {
+                groupsEl.innerHTML = list.length
+                    ? `<div class="news-list">${list.map(i => buildRow(i, rowId++)).join('')}</div>`
+                    : `<div class="empty-state">No articles found.</div>`;
+                return;
+            }
+            const groups = {};
+            list.forEach(i => { const s = subOf(i); (groups[s] = groups[s] || []).push(i); });
+            const subs = Object.keys(groups).sort((a, b) => groups[b].length - groups[a].length);
+            groupsEl.innerHTML = subs.map(sub => `
+                <div class="subcat-group">
+                    <button class="subcat-toggle" onclick="toggleSub(this)">
+                        <span class="chevron">▸</span>
+                        ${sub} <span class="tab-count">${groups[sub].length}</span>
+                    </button>
+                    <div class="subcat-list">
+                        <div class="news-list">${groups[sub].map(i => buildRow(i, rowId++)).join('')}</div>
+                    </div>
+                </div>`).join('');
+        }
+
+        function setup() {
+            offNews = allNews.filter(i => !i.Classification || i.Classification === 'Other' || i.Classification === 'N/A');
+
+            const counts = {};
+            offNews.forEach(i => { const s = subOf(i); counts[s] = (counts[s] || 0) + 1; });
+            const subs = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+            const topicEl = document.getElementById('topicFilter');
+            subs.forEach(s => {
+                const opt = document.createElement('option');
+                opt.value = s; opt.textContent = `${s} (${counts[s]})`;
+                topicEl.appendChild(opt);
+            });
+
+            const newest = offNews.reduce((best, i) => {
+                const d = parseDate(i.date); return d && (!best || d > best) ? d : best;
+            }, null);
+            if (newest) latestNewsTime = newest.getTime();
+            const sources = new Set(offNews.map(i => i.source).filter(Boolean));
+            document.getElementById('pageFooter').innerHTML = `
+                <span>${offNews.length} off-topic articles</span>
+                <span>${subs.length} sub-topics</span>
+                <span>${sources.size} sources</span>`;
+        }
+
+        document.getElementById('searchInput').addEventListener('input', e => { currentSearch = e.target.value.trim(); render(); });
+        document.getElementById('topicFilter').addEventListener('change', e => { currentTopic = e.target.value; render(); });
+        document.getElementById('sortOrder').addEventListener('change', e => { currentSort = e.target.value; render(); });
+
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => backToTopBtn.classList.toggle('visible', window.scrollY > 300));
+        backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        window.addEventListener('keydown', e => {
+            if (e.key === '/' && document.activeElement !== document.getElementById('searchInput')) {
+                e.preventDefault(); const s = document.getElementById('searchInput'); s.focus(); s.select();
+            }
+        });
+
+        async function init() {
+            initTheme();
+            try {
+                allNews = await (await fetch('/api/news')).json();
+                document.getElementById('loading').style.display = 'none';
+                allNews.sort((a, b) => (parseDate(b.date) || 0) - (parseDate(a.date) || 0));
+                setup();
+                render();
+            } catch (err) {
+                document.getElementById('loading').innerHTML = `Error: ${err.message}`;
+            }
+        }
+        init();
+    </script>
+</body>
+</html>

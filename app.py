@@ -53,6 +53,11 @@ def get_company_analysis():
     return jsonify(data)
 
 
+@app.route('/beyond')
+def beyond():
+    return render_template('beyond.html')
+
+
 @app.route('/products')
 def products():
     return render_template('products.html')
