@@ -109,7 +109,7 @@ def _truncate(text, n):
     return text if len(text) <= n else text[: n - 1].rstrip() + "…"
 
 
-def build_card(items, title, period_label):
+def build_card(items, title, period_label, footer=None):
     body = [
         {"type": "TextBlock", "size": "Large", "weight": "Bolder", "text": title, "wrap": True},
         {"type": "TextBlock", "spacing": "None", "isSubtle": True, "wrap": True,
@@ -133,6 +133,10 @@ def build_card(items, title, period_label):
             block["items"].append(
                 {"type": "TextBlock", "spacing": "None", "wrap": True, "text": summary})
         body.append(block)
+
+    if footer:
+        body.append({"type": "TextBlock", "separator": True, "spacing": "Medium",
+                     "isSubtle": True, "wrap": True, "text": footer})
 
     card = {
         "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -220,7 +224,7 @@ def main():
         return
 
     period = datetime.datetime.now(datetime.timezone.utc).strftime("Week of %d %b %Y")
-    payload = build_card(selected, title, period)
+    payload = build_card(selected, title, period, cfg.get("footer"))
 
     if args.dry_run:
         print("\n[dry-run] payload that WOULD be posted:\n")

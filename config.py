@@ -128,5 +128,6 @@ TEAMS_DIGEST = {
     "max_items": 6,
     "exclude_categories": ["Other"],
     "title": "Weekly Tech News",
+    "footer": "You can visit [https://temtek-actions.onrender.com/](https://temtek-actions.onrender.com/) for more…",
     "request_timeout": 20,
 }
