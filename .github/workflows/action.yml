@@ -2,8 +2,9 @@ name: Scheduled News Scraper
 
 on:
   schedule:
-    # Runs at 21:00 UTC every Monday and Thursday to avoid API peak load
-    - cron: '0 21 * * 1,4'
+    # Runs at 21:00 UTC every 2 days. Note: cron */2 counts day-of-month, so it
+    # resets on the 1st - the gap across a month boundary can be a single day.
+    - cron: '0 21 */2 * *'
   # Allows you to run this workflow manually from the Actions tab for testing
   workflow_dispatch:
 

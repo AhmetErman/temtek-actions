@@ -2,8 +2,8 @@ name: Teams Weekly Digest
 
 on:
   schedule:
-    # Fridays 08:00 UTC - after the Mon/Thu scrape, so the week's news is in.
-    - cron: '0 8 * * 5'
+    # Mondays 08:00 UTC - weekly digest of the week's relevant news.
+    - cron: '0 8 * * 1'
   workflow_dispatch:
     inputs:
       mode:
@@ -35,7 +35,7 @@ jobs:
           PYTHONUNBUFFERED: '1'
         run: |
           if [ "${{ github.event.inputs.mode }}" = "test" ]; then
-            python teams_digest.py --force --limit 10
+            python teams_digest.py --force --limit 6
           else
             python teams_digest.py
           fi

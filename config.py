@@ -125,8 +125,8 @@ TEAMS_DIGEST = {
     "webhook_env": "TEAMS_WEBHOOK_URL",
     "state_file": "teams_digest_state.json",
     "min_relation_score": 3,
-    "max_items": 12,
+    "max_items": 6,
     "exclude_categories": ["Other"],
-    "title": "🧺 Weekly Appliance Tech Digest",
+    "title": "Weekly Tech News",
     "request_timeout": 20,
 }

@@ -80,6 +80,28 @@ def candidate_articles(articles, min_score, exclude_categories):
     return [a for _, a in out]
 
 
+def diversify(pool, n):
+    """Pick up to n articles maximizing category spread.
+
+    `pool` is pre-sorted best-first. We round-robin across categories: one
+    article per category each pass, so a digest of 6 ideally shows 6 different
+    categories. If fewer categories are available, later passes add a second
+    (then third, ...) from the richer categories until n is reached.
+    """
+    from collections import OrderedDict
+    groups = OrderedDict()
+    for a in pool:
+        groups.setdefault(normalize_classification(a.get("Classification")), []).append(a)
+    selected = []
+    while len(selected) < n and any(groups.values()):
+        for items in groups.values():
+            if items:
+                selected.append(items.pop(0))
+                if len(selected) >= n:
+                    break
+    return selected
+
+
 # --- Adaptive Card -------------------------------------------------------
 
 def _truncate(text, n):
@@ -97,7 +119,7 @@ def build_card(items, title, period_label):
         headline = _truncate(a.get("title_en") or a.get("title"), 140)
         url = a.get("url")
         cls = normalize_classification(a.get("Classification"))
-        meta = f"**{cls}** · {a.get('source', '')} · relevance {a.get('RelationScore')}/5"
+        meta = f"**{cls}**"
         summary = _truncate(a.get("Gemini_Summary") or a.get("summary_en") or "", 160)
         block = {
             "type": "Container", "separator": True, "spacing": "Medium", "items": [
@@ -179,16 +201,17 @@ def main():
     sent = set(state["sent_urls"]) if state else set()
 
     if args.force:
-        selected = candidates[:max_items]
-        mode = "force"
+        pool, mode = candidates, "force"
     elif bootstrap:
-        selected = candidates[:max_items]
-        mode = "bootstrap"
+        pool, mode = candidates, "bootstrap"
     else:
-        new = [a for a in candidates if a.get("url") not in sent]
-        selected = new[:max_items]
+        pool = [a for a in candidates if a.get("url") not in sent]
         mode = "incremental"
-    print(f"Mode: {mode}; selected {len(selected)} article(s).")
+
+    selected = diversify(pool, max_items)
+    cats = {normalize_classification(a.get("Classification")) for a in selected}
+    print(f"Mode: {mode}; {len(pool)} eligible; selected {len(selected)} "
+          f"across {len(cats)} categories.")
 
     if not selected and not args.force:
         print("Nothing new to post.")
