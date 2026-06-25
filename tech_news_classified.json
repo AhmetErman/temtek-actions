@@ -9659,5 +9659,82 @@
         "Gemini_Summary": "Smart TV retail market report",
         "OtherSubclass": "Retail and Lifestyle",
         "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "IBM、世界初の「1nm未満」チップ技術を発表――3D構造「ナノスタック」でAIの処理を高速化",
+        "date": "Fri, 26 Jun 2026 06:47:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2606/26/news059.html",
+        "summary": "IBMは、世界初となる1ナノメートル未満（sub-1nm）のチップ技術を発表した。独自の3次元トランジスタ構造「nanostack」（ナノスタック）を開発し、原子数個分の微細化を達成。2nmノード比で性能が最大50％向上、電力効率が70％改善する。生成AIの高度なデータ処理を支える基盤として、今後5年以内の量産化を目指す。",
+        "language": "ja",
+        "title_en": "IBM announces world's first \"less than 1nm\" chip technology - 3D structure \"Nanostack\" speeds up AI processing",
+        "summary_en": "IBM announced the world's first sub-nanometer (sub-1nm) chip technology. Developed a unique three-dimensional transistor structure, \"nanostack,\" and achieved miniaturization to the size of several atoms. Up to 50% performance improvement and 70% power efficiency improvement compared to 2nm node. The aim is to mass-produce it within the next five years as a platform to support advanced data processing of generative AI.",
+        "Classification": "N/A"
+    },
+    {
+        "source": "KadenWatch",
+        "title": "私の第2の故郷。友人宅で早めの夏休み気分",
+        "date": "2026-06-26T07:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/column/puko/2120024.html",
+        "summary": "子供の頃から、「田舎」というものに憧れていた。特段都会で育ったわけではない私には、「田舎」は都会から離れた自然の多いところという意味もあったけれど、「ふるさと」という意味合いの方が強かった。",
+        "language": "ja",
+        "title_en": "my second home. Feeling like an early summer vacation at a friend's house",
+        "summary_en": "Ever since I was a child, I have admired the ``countryside''. For me, who didn't grow up in a big city, the word ``rural'' meant a place with a lot of nature away from the city, but it had a stronger meaning of ``hometown.''",
+        "Classification": "N/A"
+    },
+    {
+        "source": "Senken",
+        "title": "《ニュースの顔》八木通商社長に就任した八木洋三さん",
+        "date": "Fri, 26 Jun 2026 06:27:00 +0900",
+        "url": "https://senken.co.jp/posts/yagitsu-260626",
+        "summary": "6月11日付で、創業80周年の節目の年に八木通商の代表取締役社長に就任した。父であり前社長の八木雄三氏は代表取締役会長に就き、長男の洋三氏が現場の指揮を全面的に引き継ぐ形での交代となった。社長就任の抱負は「世界中...",
+        "language": "ja",
+        "title_en": "[Face in the news] Yozo Yagi has been appointed as president of Yagi Tsusho",
+        "summary_en": "On June 11, 2019, he was appointed as the representative director and president of Yagi Tsusho, marking the 80th anniversary of the company's founding. His father and former president, Yuzo Yagi, became chairman and representative director, with his eldest son, Yozo, taking over full on-site command. As president, my ambition is to ``worldwide...''",
+        "Classification": "N/A"
+    },
+    {
+        "source": "Senken",
+        "title": "《売れてます》フィセルの「パッとサッと肌着」　赤ちゃんを起こしにくい工夫に支持",
+        "date": "Fri, 26 Jun 2026 06:26:00 +0900",
+        "url": "https://senken.co.jp/posts/ficelle-260626",
+        "summary": "子供服・ベビー用品のフィセルの「パッとサッと肌着」が売れている。4、5月の売り上げ数量は前年同月比80％増だった。【関連記事】子供服・ベビー用品のフィセル26～27年秋冬　「ホッペッタ」はIP協業でかっこよく　こ...",
+        "language": "ja",
+        "title_en": "《Selling》Ficelle's ``Putto Quick Underwear'' - Supported by its ingenuity that makes it difficult to wake up the baby",
+        "summary_en": "Children's clothing and baby products such as Ficel's ``Patto Sato Underwear'' are selling well. Sales volume in April and May was 80% higher than the same month last year. [Related article] Children's clothing and baby products FICEL 26-27 fall/winter \"Hoppetta\" is cool due to IP collaboration...",
+        "Classification": "N/A"
+    },
+    {
+        "source": "Senken",
+        "title": "エルエアが成果作品展　2人のアーティストが皮革産地・姫路で滞在制作",
+        "date": "Fri, 26 Jun 2026 06:25:00 +0900",
+        "url": "https://senken.co.jp/posts/l-air-260626",
+        "summary": "皮革に特化したアーティスト・イン・レジデンスに取り組む一般社団法人L-AIR（エルエア、兵庫県姫路市）が、2人のアーティストの最終成果作品展を開いている。2カ月以上姫路市に滞在してもらい、地元の物作りや文化に触れ...",
+        "language": "ja",
+        "title_en": "EL AIR exhibits the results of their work; two artists stay in Himeji, a leather producing region, to create works",
+        "summary_en": "L-AIR (Himeji City, Hyogo Prefecture), a general incorporated association that works on artist-in-residence programs specializing in leather, is holding an exhibition of the final works of two artists. Students will stay in Himeji City for over two months and experience local manufacturing and culture...",
+        "Classification": "N/A"
+    },
+    {
+        "source": "Senken",
+        "title": "《めてみみ》テナントリーシングの要",
+        "date": "Fri, 26 Jun 2026 06:24:00 +0900",
+        "url": "https://senken.co.jp/posts/mete-260626",
+        "summary": "「地域初」「新業態」「旗艦店」－－商業施設の新規開業や大規模改装に関するプレスリリースのテナント紹介には、こんな説明書きが付いている。競合施設との差異化や施設の独自性を表す注目テナントの位置付けだ。また、取材時に...",
+        "language": "ja",
+        "title_en": "《Metemimi》Key points of tenant leasing",
+        "summary_en": "``First in the region,'' ``New business format,'' ``Flagship store'' -- press releases about new openings and large-scale renovations of commercial facilities include the following explanations when introducing tenants. It is positioned as a noteworthy tenant, which shows the uniqueness of the facility and differentiates it from competing facilities. Also, during the interview...",
+        "Classification": "N/A"
+    },
+    {
+        "source": "OFweek SmartHome",
+        "title": "空调企业搞定用户领跑家电业",
+        "date": "2026-06-23",
+        "url": "https://smarthome.ofweek.com/2026-06/ART-91009-8420-30691642.html",
+        "summary": "空调,产品体验",
+        "language": "zh-CN",
+        "title_en": "Air-conditioning companies lead the home appliance industry by attracting users",
+        "summary_en": "air conditioning, product experience",
+        "Classification": "N/A"
     }
 ]
