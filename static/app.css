@@ -237,6 +237,16 @@
             transition: all 0.15s;
         }
         .beyond-link:hover { border-color: var(--accent); }
+        /* In dark mode, match the neutral tabs instead of the blue accent. */
+        body.dark-theme .beyond-link {
+            color: var(--text-2);
+            background: var(--surface);
+            border-color: var(--border);
+        }
+        body.dark-theme .beyond-link:hover {
+            border-color: var(--border-hover);
+            background: var(--border);
+        }
 
         /* "Beyond Our Focus" page intro */
         .page-intro { padding: 1.5rem 0 0.75rem; }
