@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cleaning and Textile Technologies News Tracker</title>
+    <title>Cleaning and Textile Squad News Tracker</title>
     <meta name="description" content="AI-classified R&D and technology news from Far East countries and global tech sources.">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -423,7 +423,46 @@
             display: none;
             margin-top: 0.5rem;
         }
-        .others-list.open { display: flex; flex-direction: column; }
+        .others-list.open { display: flex; flex-direction: column; gap: 0.25rem; }
+
+        /* Sub-categories inside "Beyond Our Focus" */
+        .subcat-group { margin-top: 0.25rem; }
+        .subcat-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0.85rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--bg);
+            cursor: pointer;
+            font: inherit;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-2);
+            width: 100%;
+            transition: background 0.15s;
+        }
+        .subcat-toggle:hover { background: var(--surface); }
+        .subcat-toggle .chevron { transition: transform 0.2s; font-size: 0.7rem; }
+        .subcat-toggle.open .chevron { transform: rotate(90deg); }
+        .subcat-list { display: none; margin: 0.25rem 0 0.5rem; }
+        .subcat-list.open { display: block; }
+
+        /* Page footer (article/source stats moved here from the header) */
+        .page-footer {
+            max-width: 1100px;
+            margin: 2.5rem auto 3rem;
+            padding: 1.25rem 2rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: var(--text-3);
+        }
+        .page-footer span { white-space: nowrap; }
 
         /* --- BACK TO TOP --- */
         .back-to-top {
@@ -501,7 +540,7 @@
         <div class="header-inner">
             <div class="logo">
                 <div class="logo-icon">T</div>
-                Tech News Tracker
+                Cleaning and Textile Squad News Tracker
             </div>
             <nav style="display:flex;gap:.25rem;">
                 <a href="/" style="font-size:.85rem;font-weight:600;color:var(--bg);background:var(--text-1);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Tech News</a>
@@ -509,7 +548,6 @@
                 <a href="/products" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Products</a>
             </nav>
             <div class="header-controls">
-                <div class="header-stats" id="headerStats"></div>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                     <span id="themeToggleIcon">☀️</span>
                     <span id="themeToggleText">Light</span>
@@ -550,6 +588,8 @@
         <div id="newsList"></div>
         <div id="othersSection" class="others-section" style="display:none;"></div>
     </main>
+
+    <footer class="page-footer" id="pageFooter"></footer>
 
     <button class="back-to-top" id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
 
@@ -643,6 +683,7 @@
             const title = item.title_en || item.title || 'Untitled';
             const summary = item.summary_en || item.summary || '';
             const cat = item.Classification || 'Uncategorized';
+            const tagLabel = (cat === 'Other' && item.OtherSubclass) ? item.OtherSubclass : getShortName(cat);
             const dateStr = formatDate(item.date);
             const geminiSummary = item.Gemini_Summary && item.Gemini_Summary !== 'N/A' ? item.Gemini_Summary : '';
             const score = item.RelationScore || 0;
@@ -673,7 +714,7 @@
             return `<div class="news-row">
                 <div class="news-main">
                     <div class="news-meta">
-                        <span class="news-tag ${getTagClass(cat)}">${getShortName(cat)}</span>
+                        <span class="news-tag ${getTagClass(cat)}">${tagLabel}</span>
                         <span class="news-source">${item.source || ''}</span>
                         <span class="meta-dot"></span>
                         <span class="news-date">${dateStr}</span>
@@ -761,8 +802,12 @@
                 (currentSearch ? ` matching "${currentSearch}"` : '') +
                 (currentCategory !== 'All' ? ` in ${getShortName(currentCategory)}` : '');
 
+            // Unique, monotonic row ids so expand/collapse targets never collide.
+            let rowId = 0;
+            const row = (item) => buildRow(item, rowId++);
+
             if (mainNews.length > 0) {
-                listEl.innerHTML = `<div class="news-list">${mainNews.map((item, i) => buildRow(item, i)).join('')}</div>`;
+                listEl.innerHTML = `<div class="news-list">${mainNews.map(row).join('')}</div>`;
             } else if (otherNews.length === 0) {
                 listEl.innerHTML = `<div class="empty-state">No articles found.</div>`;
             } else {
@@ -770,14 +815,32 @@
             }
 
             if (otherNews.length > 0 && currentCategory === 'All') {
+                // Group off-topic items by their dynamic sub-category, largest first.
+                const groups = {};
+                otherNews.forEach(item => {
+                    const sub = item.OtherSubclass || 'Uncategorized';
+                    (groups[sub] = groups[sub] || []).push(item);
+                });
+                const subs = Object.keys(groups).sort((a, b) => groups[b].length - groups[a].length);
+
                 othersEl.style.display = 'block';
                 othersEl.innerHTML = `
                     <button class="others-toggle" onclick="toggleOthers(this)">
                         <span class="chevron">▸</span>
-                        Other & Uncategorized (${otherNews.length} articles)
+                        Beyond Our Focus — wider tech &amp; world news (${otherNews.length} articles · ${subs.length} topics)
                     </button>
                     <div class="others-list">
-                        <div class="news-list">${otherNews.map((item, i) => buildRow(item, mainNews.length + i)).join('')}</div>
+                        ${subs.map(sub => `
+                            <div class="subcat-group">
+                                <button class="subcat-toggle" onclick="toggleSub(this)">
+                                    <span class="chevron">▸</span>
+                                    ${sub} <span class="tab-count">${groups[sub].length}</span>
+                                </button>
+                                <div class="subcat-list">
+                                    <div class="news-list">${groups[sub].map(row).join('')}</div>
+                                </div>
+                            </div>
+                        `).join('')}
                     </div>
                 `;
             } else {
@@ -789,6 +852,11 @@
             btn.classList.toggle('open');
             const list = btn.nextElementSibling;
             list.classList.toggle('open');
+        }
+
+        function toggleSub(btn) {
+            btn.classList.toggle('open');
+            btn.nextElementSibling.classList.toggle('open');
         }
 
         function setupUI() {
@@ -806,9 +874,8 @@
             mainCats.forEach(cat => {
                 tabsHTML += `<button class="tab-btn" data-cat="${cat}" onclick="selectTab(this)">${getShortName(cat)} <span class="tab-count">${cats[cat]}</span></button>`;
             });
-            if (otherCount > 0) {
-                tabsHTML += `<button class="tab-btn" data-cat="Other" onclick="selectTab(this)">Other <span class="tab-count">${otherCount}</span></button>`;
-            }
+            // No "Other" tab: off-topic news lives in the collapsible
+            // "Beyond Our Focus" section at the bottom of the All view instead.
             tabsEl.innerHTML = tabsHTML;
 
             const sources = [...new Set(allNews.map(i => i.source).filter(Boolean))].sort();
@@ -826,11 +893,11 @@
             }, null);
             if (newest) latestNewsTime = newest.getTime();
 
-            const statsEl = document.getElementById('headerStats');
+            const statsEl = document.getElementById('pageFooter');
             statsEl.innerHTML = `
                 <span>${allNews.length} articles</span>
                 <span>${sources.length} sources</span>
-                ${newest ? `<span>Latest: ${newest.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>` : ''}
+                ${newest ? `<span>Latest scrape: ${newest.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>` : ''}
             `;
         }
 
