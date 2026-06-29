@@ -2,8 +2,8 @@ name: Teams Weekly Digest
 
 on:
   schedule:
-    # Mondays 08:00 UTC - weekly digest of the week's relevant news.
-    - cron: '0 8 * * 1'
+    # Mondays 06:00 Turkey time (TRT = UTC+3) => 03:00 UTC.
+    - cron: '0 3 * * 1'
   workflow_dispatch:
     inputs:
       mode:
