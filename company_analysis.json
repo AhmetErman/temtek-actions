@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T23:09:25Z",
-  "total_articles": 210,
+  "generated_at": "2026-07-05T23:05:46Z",
+  "total_articles": 211,
   "companies": [
     "Samsung",
     "Haier",
@@ -9,9 +9,9 @@
     "Whirlpool"
   ],
   "totals": {
+    "Midea": 19,
     "Samsung": 151,
     "Whirlpool": 6,
-    "Midea": 18,
     "BSH (Bosch/Siemens)": 12,
     "Haier": 23
   },
@@ -29,9 +29,22 @@
     "2025-Q3",
     "2025-Q4",
     "2026-Q1",
-    "2026-Q2"
+    "2026-Q2",
+    "2026-Q3"
   ],
   "by_quarter": {
+    "Midea": {
+      "2026-Q3": 1,
+      "2026-Q2": 1,
+      "2025-Q4": 4,
+      "2025-Q3": 5,
+      "2025-Q2": 3,
+      "2025-Q1": 1,
+      "2024-Q3": 1,
+      "2024-Q1": 1,
+      "2023-Q3": 1,
+      "2023-Q2": 1
+    },
     "Samsung": {
       "2026-Q2": 9,
       "2026-Q1": 14,
@@ -49,17 +62,6 @@
     },
     "Whirlpool": {
       "2026-Q2": 6
-    },
-    "Midea": {
-      "2026-Q2": 1,
-      "2025-Q4": 4,
-      "2025-Q3": 5,
-      "2025-Q2": 3,
-      "2025-Q1": 1,
-      "2024-Q3": 1,
-      "2024-Q1": 1,
-      "2023-Q3": 1,
-      "2023-Q2": 1
     },
     "BSH (Bosch/Siemens)": {
       "2025-Q3": 2,
@@ -94,6 +96,16 @@
     "Other"
   ],
   "by_theme": {
+    "Midea": {
+      "Design & Events": 8,
+      "Business & Corporate": 6,
+      "AI": 4,
+      "Other": 4,
+      "Refrigeration": 1,
+      "Cooking & Kitchen": 3,
+      "IoT & Connectivity": 2,
+      "Sustainability & Energy": 2
+    },
     "Samsung": {
       "AI": 94,
       "Design & Events": 112,
@@ -109,16 +121,6 @@
     "Whirlpool": {
       "Design & Events": 6,
       "Business & Corporate": 6
-    },
-    "Midea": {
-      "AI": 4,
-      "Other": 4,
-      "Refrigeration": 1,
-      "Cooking & Kitchen": 3,
-      "Design & Events": 7,
-      "IoT & Connectivity": 2,
-      "Business & Corporate": 5,
-      "Sustainability & Energy": 2
     },
     "BSH (Bosch/Siemens)": {
       "Design & Events": 8,
@@ -143,6 +145,10 @@
     }
   },
   "date_range": {
+    "Midea": {
+      "earliest": "2023-04-01",
+      "latest": "2026-07-01"
+    },
     "Samsung": {
       "earliest": "2023-06-01",
       "latest": "2026-06-23"
@@ -150,10 +156,6 @@
     "Whirlpool": {
       "earliest": "2026-05-06",
       "latest": "2026-06-15"
-    },
-    "Midea": {
-      "earliest": "2023-04-01",
-      "latest": "2026-04-14"
     },
     "BSH (Bosch/Siemens)": {
       "earliest": "2023-09-02",
