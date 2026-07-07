@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updated_at": "2026-07-07T06:26:07Z",
+  "updated_at": "2026-07-07T22:16:48Z",
   "classes": [
     {
       "name": "Artificial Intelligence",
       "description": "Developments, applications, and corporate activities in artificial intelligence.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 130
+      "count": 133
     },
     {
       "name": "Gaming",
@@ -24,25 +24,25 @@
       "name": "Consumer Electronics",
       "description": "Hardware releases, reviews, and news regarding personal tech and consumer gadgets.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 101
+      "count": 102
     },
     {
       "name": "Space Industry",
       "description": "Commercial spaceflight, satellite technology, and outer space exploration initiatives.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 19
+      "count": 20
     },
     {
       "name": "Enterprise Software",
       "description": "Developments and operational events concerning software and IT services used by businesses.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 36
+      "count": 37
     },
     {
       "name": "Finance and Markets",
       "description": "Stock market events, corporate mergers, acquisitions, and financial services news.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 182
+      "count": 204
     },
     {
       "name": "Cybersecurity",
@@ -54,7 +54,7 @@
       "name": "Business Regulation",
       "description": "Government guidelines, antitrust laws, consumer protection, and business compliance.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 39
+      "count": 42
     },
     {
       "name": "Toys and Hobbies",
@@ -66,25 +66,25 @@
       "name": "Transportation",
       "description": "News regarding commercial aviation, public transit, and automotive technologies like autonomous driving.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 60
+      "count": 61
     },
     {
       "name": "Science",
       "description": "Academic studies, research findings, and scientific discoveries in various disciplines.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Infrastructure and Utilities",
       "description": "News regarding energy generation, public utilities, and critical physical infrastructure operations.",
       "created_at": "2026-06-23T13:41:51Z",
-      "count": 25
+      "count": 26
     },
     {
       "name": "Retail and Lifestyle",
       "description": "News, business activities, and consumer trends in retail, fashion, food, and lifestyle products.",
       "created_at": "2026-06-23T13:42:26Z",
-      "count": 173
+      "count": 179
     },
     {
       "name": "Semiconductors",
@@ -114,25 +114,25 @@
       "name": "Social Media",
       "description": "Developments, features, and platform updates for social networking and interactive media services.",
       "created_at": "2026-06-23T13:49:24Z",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Personal Commentary",
       "description": "Articles featuring personal opinions, experiences, or anecdotal stories that do not fit into specific industry categories.",
       "created_at": "2026-06-23T18:31:02Z",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Entrepreneurship and Startups",
       "description": "News and discussions related to founding, growth, funding, and challenges of new businesses and startups.",
       "created_at": "2026-06-23T18:32:03Z",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Business Strategy",
       "description": "Strategic announcements, corporate restructuring, and major business direction changes for companies across various industries.",
       "created_at": "2026-06-23T18:32:27Z",
-      "count": 23
+      "count": 25
     },
     {
       "name": "Robotics",
@@ -150,7 +150,7 @@
       "name": "News Digest",
       "description": "Curated daily or periodic summaries and newsletters covering a wide range of business, technology, and industry developments.",
       "created_at": "2026-06-27T22:11:23Z",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Real Estate",
@@ -169,6 +169,12 @@
       "description": "News and updates regarding postal services, shipping, freight, and supply chain logistics.",
       "created_at": "2026-07-07T06:25:01Z",
       "count": 2
+    },
+    {
+      "name": "Education",
+      "description": "News, policies, and developments related to academic curriculum, schools, and teaching.",
+      "created_at": "2026-07-07T22:16:23Z",
+      "count": 1
     }
   ]
 }
