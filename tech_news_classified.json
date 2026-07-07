@@ -13465,7 +13465,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Publisher apology to manga author"
+        "Gemini_Summary": "Publisher apology to manga author",
+        "OtherSubclass": "Entertainment and Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13478,7 +13480,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Yu-Pack postal rate increases"
+        "Gemini_Summary": "Yu-Pack postal rate increases",
+        "OtherSubclass": "Logistics and Delivery",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13491,7 +13495,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Minister comments on LUUP security"
+        "Gemini_Summary": "Minister comments on LUUP security",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -13504,7 +13510,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Starlink on fire hydrant poles"
+        "Gemini_Summary": "Starlink on fire hydrant poles",
+        "OtherSubclass": "Infrastructure and Utilities",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13517,7 +13525,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "AI-driven news PR service"
+        "Gemini_Summary": "AI-driven news PR service",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -13530,7 +13540,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Social media entomological discovery"
+        "Gemini_Summary": "Social media entomological discovery",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13543,7 +13555,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Muji enters audio device market"
+        "Gemini_Summary": "Muji enters audio device market",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13556,7 +13570,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Anthropic Samsung chip negotiations"
+        "Gemini_Summary": "Anthropic Samsung chip negotiations",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13569,7 +13585,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Sony ends game disc production"
+        "Gemini_Summary": "Sony ends game disc production",
+        "OtherSubclass": "Gaming",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13582,7 +13600,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Cloudflare controls AI crawlers"
+        "Gemini_Summary": "Cloudflare controls AI crawlers",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -13595,7 +13615,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Amazon satellite fleet exceeds 300"
+        "Gemini_Summary": "Amazon satellite fleet exceeds 300",
+        "OtherSubclass": "Space Industry",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13608,7 +13630,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Kadokawa early retirement program"
+        "Gemini_Summary": "Kadokawa early retirement program",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13621,7 +13645,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Nvidia launches cloud GPU model"
+        "Gemini_Summary": "Nvidia launches cloud GPU model",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13634,7 +13660,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Manga bonus cards sold overseas"
+        "Gemini_Summary": "Manga bonus cards sold overseas",
+        "OtherSubclass": "Toys and Hobbies",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13647,7 +13675,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Micron invests in Trump Accounts"
+        "Gemini_Summary": "Micron invests in Trump Accounts",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -13660,7 +13690,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Kakuyasu decodes legacy system"
+        "Gemini_Summary": "Kakuyasu decodes legacy system",
+        "OtherSubclass": "Enterprise Software",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13673,7 +13705,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Microsoft launches AI consulting arm"
+        "Gemini_Summary": "Microsoft launches AI consulting arm",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13686,7 +13720,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "LINE introduces premium block feature"
+        "Gemini_Summary": "LINE introduces premium block feature",
+        "OtherSubclass": "Social Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13699,7 +13735,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Nippon Life investment in SpaceX"
+        "Gemini_Summary": "Nippon Life investment in SpaceX",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13712,7 +13750,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Mixed reviews for AI employee"
+        "Gemini_Summary": "Mixed reviews for AI employee",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -13725,7 +13765,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Anthropic restarts Claude Fable 5"
+        "Gemini_Summary": "Anthropic restarts Claude Fable 5",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13738,7 +13780,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "LINE and PayPay account integration"
+        "Gemini_Summary": "LINE and PayPay account integration",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -13751,7 +13795,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Mobile Suica outage affects users"
+        "Gemini_Summary": "Mobile Suica outage affects users",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -13764,7 +13810,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Disneyland adds first drone show"
+        "Gemini_Summary": "Disneyland adds first drone show",
+        "OtherSubclass": "Entertainment and Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13777,7 +13825,9 @@
         "summary_en": "",
         "Classification": "Other",
         "RelationScore": 5,
-        "Gemini_Summary": "Backlash over domain sale"
+        "Gemini_Summary": "Backlash over domain sale",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -13788,7 +13838,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Google Gemini macOS update",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13799,7 +13853,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Vint Cerf Google retirement",
+        "OtherSubclass": "Enterprise Software",
+        "OtherSubclassScore": 3
     },
     {
         "source": "ITmedia",
@@ -13810,7 +13868,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "AI Milgram experiment research",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13821,7 +13883,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Color vision mechanism discovery",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -13832,7 +13898,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Anthropic AI agent business",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -13843,7 +13913,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Yodobashi Camera store opening",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -13854,7 +13928,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Chiikawa batteries release",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -13865,7 +13943,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Portable electric air pump",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -13876,7 +13958,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Cordless camera doorbell release",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -13887,7 +13973,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Numazu cycle festival event",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -13898,7 +13988,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Olfa new work scissors",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -13909,7 +14003,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "New electric assist bicycle",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -13920,7 +14018,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Lemongrass chili oil review",
+        "OtherSubclass": "Personal Commentary",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -13931,7 +14033,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Tomato scramble egg recipe",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -13942,7 +14048,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "New white Jackery power",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -13953,7 +14063,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Retort food warming thermos",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -13964,7 +14078,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Battery powered security camera",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -13975,7 +14093,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Olfa specialty cutting knife",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -13986,7 +14108,9 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Fabric Care & Textile Engineering",
+        "RelationScore": 5,
+        "Gemini_Summary": "Panasonic clothes dryer release"
     },
     {
         "source": "KadenWatch",
@@ -13997,7 +14121,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Bathroom cleaning product tips",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -14008,7 +14136,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Nakameguro concept store opening",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -14019,7 +14151,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Fashion school tuition increase",
+        "OtherSubclass": "Arts and Culture",
+        "OtherSubclassScore": 4
     },
     {
         "source": "Senken",
@@ -14030,7 +14166,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "New recovery wear release",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -14041,7 +14181,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Department store sales report",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -14052,7 +14196,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Princesstraya EC site strategy",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -14063,7 +14211,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Sakazen e-commerce size solutions",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -14074,7 +14226,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Kiyohara new showroom opening",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "Senken",
@@ -14085,7 +14241,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "France fast fashion regulation",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -14096,7 +14256,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "General music nostalgia article",
+        "OtherSubclass": "Personal Commentary",
+        "OtherSubclassScore": 4
     },
     {
         "source": "Senken",
@@ -14107,7 +14271,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Kornit Digital textile production",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 3
     },
     {
         "source": "36Kr",
@@ -14118,7 +14286,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Biotech ecosystem in Barcelona",
+        "OtherSubclass": "Entrepreneurship and Startups",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -14129,7 +14301,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "SiliconFlow IPO financial analysis",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14140,7 +14316,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Corporate news summary evening",
+        "OtherSubclass": "News Digest",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14151,7 +14331,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Li Auto organizational restructuring",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14162,7 +14346,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "OMOWAY smart motorcycle expansion",
+        "OtherSubclass": "Entrepreneurship and Startups",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14173,7 +14361,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Hydrogen energy solution funding",
+        "OtherSubclass": "Entrepreneurship and Startups",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -14184,7 +14376,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Daily tech industry news",
+        "OtherSubclass": "News Digest",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14195,7 +14391,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Corporate earnings and news",
+        "OtherSubclass": "News Digest",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14206,7 +14406,9 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 3,
+        "Gemini_Summary": "AI agent workplace productivity"
     },
     {
         "source": "36Kr",
@@ -14217,7 +14419,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "36Kr AI tools community",
+        "OtherSubclass": "Enterprise Software",
+        "OtherSubclassScore": 3
     },
     {
         "source": "36Kr",
@@ -14228,7 +14434,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Shenshui Haina control change",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14239,7 +14449,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Xpeng Shenzhou rental cooperation",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -14250,7 +14464,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Yunnan Energy storage project",
+        "OtherSubclass": "Infrastructure and Utilities",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14261,7 +14479,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Xueqi Electric share transfer",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14272,7 +14494,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Aerospace industry standard release",
+        "OtherSubclass": "Space Industry",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14283,7 +14509,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Cinema business diversification policy",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14294,7 +14524,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Shengu Group IPO approval",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14305,7 +14539,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Tianci Material project termination",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14316,7 +14554,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Shenzhen exchange rule revision",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14327,7 +14569,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Shenzhen exchange refinancing rules",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14338,7 +14584,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Optimizing private placement procedures",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14349,7 +14599,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "New real-time interactive model",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14360,7 +14614,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Private equity fund investment",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14371,7 +14629,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Simplify private placement conditions",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14382,7 +14644,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Optimize small-scale financing rules",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14393,7 +14659,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Establish shelf registration system",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14404,7 +14674,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Private placement for expansion",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -14415,7 +14689,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Korea satellite network plan",
+        "OtherSubclass": "Space Industry",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14426,7 +14704,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Earnings report and growth",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14437,7 +14719,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Stock market trading surveillance",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 4
     },
     {
         "source": "OFweek SmartHome",
@@ -14448,7 +14734,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Smart litter box safety",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -14459,7 +14749,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Major white goods strategies",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -14470,7 +14764,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Appliance market brand competition",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -14481,7 +14779,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Corporate stock and finance",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 4
     },
     {
         "source": "OFweek SmartHome",
@@ -14492,7 +14794,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Gree shareholder dividend controversy",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -14503,7 +14809,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Smart appliances for seniors",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -14514,7 +14824,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Smart lock market trends",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -14525,7 +14839,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Home appliance market analysis",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -14536,7 +14854,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Small appliance export strategy",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -14547,7 +14869,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Home furnishing company earnings",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -14558,7 +14884,11 @@
         "language": "ja",
         "title_en": "Is the release of a new popular horror game canceled? “The difficulty of mockumentaries” felt by a manga artist who saw the announcement post",
         "summary_en": "Regarding ``Japan Accident Property Monitoring Association 3'', the latest installment of the popular horror game series to be released in August, a post on the official X account caused a bit of controversy.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Horror game release controversy",
+        "OtherSubclass": "Gaming",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -14569,7 +14899,11 @@
         "language": "ja",
         "title_en": "I can't compete with Bikame or Yamada - What is the \"overwhelming strength\" that a former local felt when we sneaked into the \"Yodobashi Ikebukuro store\" that was about to open?",
         "summary_en": "The newly opened \"Yodobashi Camera Multimedia Ikebukuro\". It has already become a hot topic on social media, but from the perspective of former locals...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Retail store opening review",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -14580,7 +14914,11 @@
         "language": "ja",
         "title_en": "GoPro's revival: \"MISSION 1 PRO\" review with \"cinema\"",
         "summary_en": "\"GoPro MISSION 1\" appeared as action cameras became more and more cinema cameras.In recent years, GoPro has been under the spotlight due to a decline in market share due to intensifying competition, recalls, and restructuring, but will the new series be the sign of a comeback?",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Action camera product review",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -14591,7 +14929,11 @@
         "language": "ja",
         "title_en": "TSI “Lufill” strengthens existing stores and EC, expands store custom items",
         "summary_en": "TSI's women's brand \"Luffy\" has put an end to its store opening strategy and will focus on increasing sales at existing stores and e-commerce. Mitsukoshi Ginza store and Newman Takanawa store will open this spring, and a new store will open in August. Total of 4 department stores and 4 fashion building stores...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Fashion brand sales strategy",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -14602,7 +14944,11 @@
         "language": "ja",
         "title_en": "Sanyo Shokai opens a new store format for SCs, “Sanyo Style Store Plus,” at Aeon Mall Okazaki in September",
         "summary_en": "Sanyo Shokai will open a new store format for suburban shopping malls, ``Sanyo Style Store Plus,'' at Aeon Mall Okazaki on September 16th. Utilizing the know-how of ``Sanyo Style Store,'' a women's clothing complex mainly comprised of department stores, we have developed products, prices, and sales...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "New retail store opening",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -14613,7 +14959,11 @@
         "language": "ja",
         "title_en": "“48th Senken Award” presentation ceremony: unique skills, intentions, and enthusiasm become valuable",
         "summary_en": "The 48th (25th) Senken Award presentation ceremony was held in Tokyo on July 2nd, and commemorative plaques were presented to seven groups, including those receiving special awards. [Related article] The 48th Senken Award has been decided. On behalf of the selection committee, Akihiro Nikkei, chairman of the selection committee (Chairman of the Board of Toray Industries), said, ``AI (artificial intelligence) is spreading...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Presentation of Senken Awards",
+        "OtherSubclass": "Arts and Culture",
+        "OtherSubclassScore": 4
     },
     {
         "source": "Senken",
@@ -14624,7 +14974,11 @@
         "language": "ja",
         "title_en": "\"Metemi\" Spring/Summer Real Style",
         "summary_en": "Spring/Summer 2027 European Men's Fashion Week was held in temperatures of over 40 degrees. The show I saw during the heat wave made me think about whether this could really become a real style for the spring/summer season. Beautifully tailored...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Fashion week real style",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14635,7 +14989,9 @@
         "language": "zh-CN",
         "title_en": "Hard Krypton Debut | Yisheng Technology, founded by a professor from the University of Hong Kong, has received hundreds of millions in angel round financing and is committed to building a memory system for robots",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 3,
+        "Gemini_Summary": "Yisheng Tech robot intelligence"
     },
     {
         "source": "36Kr",
@@ -14646,7 +15002,9 @@
         "language": "zh-CN",
         "title_en": "First release of hard krypton | Brothers from Tsinghua Automobile Institute start a business in embodied intelligence. They have completed hundreds of millions of yuan in angel financing and will be launched in the automotive industry.",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 4,
+        "Gemini_Summary": "Guangxiang Tech embodied robotics"
     },
     {
         "source": "36Kr",
@@ -14657,7 +15015,9 @@
         "language": "zh-CN",
         "title_en": "Hard Krypton Debut | Former Xiaomi executive Tang Mu started a coffee robot and completed hundreds of millions in financing. Lin Bin and Li Wanqiang had invested in it",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 4,
+        "Gemini_Summary": "Yingzhi XBOT coffee robots"
     },
     {
         "source": "36Kr",
@@ -14668,7 +15028,9 @@
         "language": "zh-CN",
         "title_en": "A conversation with Xu Zhenhua, founder of Aosha: When sci-fi mechas become outdoor equipment, how do exoskeletons redefine the relationship between man and machine?",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Fabric Care & Textile Engineering",
+        "RelationScore": 2,
+        "Gemini_Summary": "Aosha outdoor exoskeleton technology"
     },
     {
         "source": "36Kr",
@@ -14679,7 +15041,11 @@
         "language": "zh-CN",
         "title_en": "9:01 Krypton | Alibaba has completely banned Claude Code internally; FF’s Los Angeles headquarters is empty? Company response: Untrue; Microsoft spent $2.5 billion to form a new AI company with 6,000 people",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Tech news summary roundup",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14690,7 +15056,9 @@
         "language": "zh-CN",
         "title_en": "First published on 36Kr | Cambridge associate professor started a silicon photonic chip, has cooperated with Huawei, and received 100 million investment",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 2,
+        "Gemini_Summary": "Guangyin silicon photonic chips"
     },
     {
         "source": "36Kr",
@@ -14701,7 +15069,9 @@
         "language": "zh-CN",
         "title_en": "Yisheng Pharmaceutical: After receiving a notice of risk control measures from the Food and Drug Administration, the production and sales of the products involved, Shengmai Injection and Bujin Tablets, were suspended.",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Hygiene & Health Technologies",
+        "RelationScore": 3,
+        "Gemini_Summary": "Pharmaceutical product line suspension"
     },
     {
         "source": "36Kr",
@@ -14712,7 +15082,11 @@
         "language": "zh-CN",
         "title_en": "Allied: Net profit is expected to increase by 492.49%-603.58% year-on-year in the first half of 2026",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Aolaide financial performance update",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14723,7 +15097,9 @@
         "language": "zh-CN",
         "title_en": "Best: The humanoid robot business is still in the prototype stage",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 3,
+        "Gemini_Summary": "Robot business prototype status"
     },
     {
         "source": "36Kr",
@@ -14734,7 +15110,11 @@
         "language": "zh-CN",
         "title_en": "Zhefu Holdings: Net profit is expected to increase by 121%-156% year-on-year in the first half of 2026",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Zhefu financial profit growth",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14745,7 +15125,11 @@
         "language": "zh-CN",
         "title_en": "China Merchants Energy Shipping: Net profit in the first half of the year is expected to increase by 214%-248% year-on-year",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Merchants Energy profit growth",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -14756,7 +15140,11 @@
         "language": "zh-CN",
         "title_en": "Yongding Shares: It is expected that the net profit attributable to the parent company in the first half of 2026 will be 500 million to 700 million yuan, a year-on-year increase of 57% to 120%",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Yongding shares profit forecast",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14767,7 +15155,11 @@
         "language": "zh-CN",
         "title_en": "Tianshan Aluminum: Net profit in the first half of the year increased by 101.52% year-on-year",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Tianshan Aluminum profit growth",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14778,7 +15170,11 @@
         "language": "zh-CN",
         "title_en": "Shijia Photonics: Shareholder Hebi Investment Group plans to reduce its holdings by no more than 1% of its shares",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Shijia Photonics share reduction",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14789,7 +15185,11 @@
         "language": "zh-CN",
         "title_en": "Hon Hai: Sales in June were NT$821.8 billion, a year-on-year increase of 52.1%",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Hon Hai sales update",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -14800,7 +15200,11 @@
         "language": "zh-CN",
         "title_en": "Oriental Shenghong: Net profit in the first half of the year is expected to increase by 987.39%-1194.51% year-on-year",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Oriental Shenghong profit increase",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14811,7 +15215,11 @@
         "language": "zh-CN",
         "title_en": "The shareholdings of southbound funds in 6 stocks increased by more than 10% month-on-month",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Southbound fund investment trends",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14822,7 +15230,11 @@
         "language": "zh-CN",
         "title_en": "Biotechnology shares: Net profit in the first half of the year is expected to increase by 50.6% year-on-year to 80.39%",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Bio-shares profit growth forecast",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14833,7 +15245,11 @@
         "language": "zh-CN",
         "title_en": "CICC: It is recommended that long-term agricultural products be positioned on dips in the mid- to long-term",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "CICC agricultural market outlook",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -14844,7 +15260,11 @@
         "language": "zh-CN",
         "title_en": "The movie \"Minions and Monsters\" was released for 3 days, and the total box office exceeded 90 million yuan",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Movie box office report",
+        "OtherSubclass": "Entertainment and Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14855,7 +15275,11 @@
         "language": "zh-CN",
         "title_en": "Huagong Technology's complex curved surface six-axis laser processing equipment was selected as a typical case of the Ministry of Industry and Information Technology's industrial base machine innovative products",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Laser equipment innovation award",
+        "OtherSubclass": "Enterprise Software",
+        "OtherSubclassScore": 3
     },
     {
         "source": "36Kr",
@@ -14866,7 +15290,11 @@
         "language": "zh-CN",
         "title_en": "Ma Kui, head of the strategy department of CICC, also serves as vice president of CICC International",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "CICC executive personnel change",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -14877,7 +15305,11 @@
         "language": "zh-CN",
         "title_en": "Jiang Fangzhou responded again to the Tsinghua professor’s accusation of paper fraud",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Author fraud allegation response",
+        "OtherSubclass": "Personal Commentary",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -14888,7 +15320,11 @@
         "language": "zh-CN",
         "title_en": "The box office of summer movies in 2026 (including pre-sales) will exceed 2 billion yuan",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Summer movie box office results",
+        "OtherSubclass": "Entertainment and Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -14899,7 +15335,11 @@
         "language": "zh-CN",
         "title_en": "Zhang Xue said the debt is close to 100 million yuan and will pay off all debts this month",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Individual debt repayment announcement",
+        "OtherSubclass": "Personal Commentary",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -14910,7 +15350,11 @@
         "language": "zh-CN",
         "title_en": "Maike Pharmaceuticals’ MT1002 completed the enrollment of the first patient in Phase Ib/II, and the “dual pipeline” layout for stroke accelerated",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Pharma drug development clinical trial",
+        "OtherSubclass": "Public Health",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -14921,7 +15365,11 @@
         "language": "zh-CN",
         "title_en": "From short-term arbitrage to long-term consumption reform: the new logic of China’s big household appliances going overseas under the high temperature in Europe!",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Home appliance export business strategies",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -14932,7 +15380,11 @@
         "language": "zh-CN",
         "title_en": "Midea air conditioners are being robbed as \"luxury goods\" in Europe, and Gree is also working hard",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "European market appliance sales trends",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -14943,7 +15395,11 @@
         "language": "ja",
         "title_en": "This is the asteroid \"Trifune\" photographed by Hayabusa2 at an explosive speed of 5 kilometers per second",
         "summary_en": "JAXA's asteroid explorer ``Hayabusa2'' successfully completed a flyby (the spacecraft passes close to a celestial body) of the elongated asteroid ``Trifune'' with a diameter of approximately 500 m at around 6:30 pm on July 5th.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Asteroid explorer mission report",
+        "OtherSubclass": "Space Industry",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -14954,7 +15410,11 @@
         "language": "ja",
         "title_en": "JAXA to develop a probe that can talk, allowing you to \"challenge missions while talking to people\" like in science fiction movies",
         "summary_en": "JAXA announced on July 3 that, in collaboration with Idina, which plans and develops experiences using voice AI, it has been working since June on the conceptual design and verification of Mission Buddy, an interface that can communicate with spacecraft such as probes.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Space probe AI interface development",
+        "OtherSubclass": "Space Industry",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -14965,7 +15425,11 @@
         "language": "ja",
         "title_en": "Problem with Gigafile flight, partial recovery with temporary domain",
         "summary_en": "In response to an issue that has been occurring with the file transfer service ``Giga File Bin'' since the morning of July 6, the company's management has announced that the domain has been temporarily changed to ``gigafile.jp.'' Published URLs can also be accessed by rewriting the domain part.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "File transfer service domain issues",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -14976,7 +15440,11 @@
         "language": "ja",
         "title_en": "Smartphone game KLab enters the defense industry to promote the introduction of anti-drone defense systems in the Arab world; partner information not disclosed",
         "summary_en": "KLab announced on July 6 that it has signed a memorandum of understanding with a foreign defense company that possesses RF (radio frequency) technology to promote the introduction of anti-drone defense systems in the United Arab Emirates.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Anti-drone defense system partnership",
+        "OtherSubclass": "Robotics",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -14987,7 +15455,11 @@
         "language": "ja",
         "title_en": "Credit card payment agency Zentoshin goes bankrupt, terminals become unusable, debt is 125.9 billion yen, the largest this year - Teikoku Databank",
         "summary_en": "Zentoshin (Chuo-ku, Osaka), a credit card payment agency, applied for personal bankruptcy at the Osaka District Court on July 6, and received a decision to begin bankruptcy proceedings on the same day. According to Teikoku Databank, the debt is approximately 125,929 million yen (as of the end of the fiscal year ending March 2025), which is the largest amount of debt this year.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Credit payment agency bankruptcy filing",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -14998,7 +15470,11 @@
         "language": "ja",
         "title_en": "BIGLOBE's email addresses leaked were found to be for approximately 5.02 million people; Nifty's email addresses were also for approximately 2.25 million people; unauthorized access to KDDI infrastructure continues",
         "summary_en": "BIGLOBE announced on July 6 that it had confirmed that a total of 5,016,432 email addresses and BIGLOBE IDs had been leaked due to unauthorized access to BIGLOBE Mail. On the same day, Nifty, which uses the same platform, announced a leak involving 2,248,708 people.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Email data leakage security incident",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -15009,7 +15485,11 @@
         "language": "ja",
         "title_en": "KDDI leaks passwords for 7.6 million people and email addresses for 12.2 million people due to unauthorized access to ISP system",
         "summary_en": "KDDI has announced that it has confirmed that 12,233,087,000 email addresses and 7,616,173,000 passwords have been leaked due to unauthorized access to the email system it provides to ISP operators. Initially, it was announced that up to 14.22 million records may have been leaked.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Large scale ISP system leak",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -15020,7 +15500,11 @@
         "language": "ja",
         "title_en": "Will action cams have a “dream of compact digital camera”? Possibilities as snapshot cameras are becoming visible",
         "summary_en": "I think that the theme for action cameras is \"graduation from action\". Changes that give this feeling are occurring mainly in the peripheral equipment market. Then, the \"GoPro Mission 1\" appeared.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Action camera market development trends",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -15031,7 +15515,11 @@
         "language": "ja",
         "title_en": "Current owner of a Tesla car shouts at the Japanese company, raising concerns about the domestic system due to a series of delivery problems",
         "summary_en": "The number of Tesla owners is rapidly increasing, with sales in Japan surpassing that of BMW. Despite its welcome popularity, existing owners like myself, who have been riding the bike for four and a half years, are slowly starting to feel uneasy. If the number of vehicles continues to swell without maintenance, vehicle inspections, or loaner vehicles being able to keep up, where will the problem go? The delivery trouble that occurred at the end of June prompted us to reevaluate our stance.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Tesla delivery and service concerns",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -15042,7 +15530,11 @@
         "language": "ja",
         "title_en": "Sakana AI's free translation function \"Sakana Translate\" that translates honorifics and internet slang with \"the same feeling of temperature\" supports Japanese, English, and Chinese",
         "summary_en": "On July 6th, Sakana AI began offering the translation function ``Sakana Translate'' on the chat service ``Sakana Chat.'' It supports mutual translation between Japanese, English, and Chinese, and you can use 3 modes of translation, correction, and question and answer for free just by registering an account.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AI language translation software launch",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -15053,7 +15545,11 @@
         "language": "ja",
         "title_en": "“Make your own malicious program using ChatGPT” 15-year-old arrested again for allegedly causing 46,800 users to withdraw from Bandai Channel without permission. Report",
         "summary_en": "The Metropolitan Police Department has re-arrested a 15-year-old high school boy from Tokorozawa City, Saitama Prefecture, on suspicion of obstructing business operations by fraudulent means, after causing approximately 46,800 members of the video streaming service Bandai Channel to withdraw without permission and interfering with the operations of the operating company. He reportedly stated that he created the malicious program himself using the generation AI ChatGPT.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Teenager arrested for AI misuse",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -15064,7 +15560,11 @@
         "language": "ja",
         "title_en": "Broadcom's alleged cross-selling of VMware products is not found to be a violation of antitrust laws; FTC investigation ends",
         "summary_en": "The Japan Fair Trade Commission has announced that it has ended its investigation into Broadcom's violation of the Antimonopoly Act, as it found no facts sufficient to warrant a violation.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Antitrust investigation findings end",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -15075,7 +15575,11 @@
         "language": "ja",
         "title_en": "Sharp makes money with AI servers, aims for over 80% of new business sales in 2030, collaborates with Honkai",
         "summary_en": "Sharp President Tetsuji Kawamura responded to a press interview in Osaka on July 3, and revealed that of the company's annual sales target of 200 billion to 300 billion yen for new businesses in fiscal 2030, more than 80% is expected to be related to servers for AI. Adjustments will be made so that Sharp will be responsible for domestic sales and maintenance, leveraging the procurement and manufacturing capabilities of parent company Hon Hai Precision Industry.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Sharp AI server business strategy",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -15086,7 +15590,11 @@
         "language": "ja",
         "title_en": "KIOXIA begins sample shipment of new memory, utilizing state-of-the-art equipment at Iwate factory",
         "summary_en": "KIOXIA Holdings, a major semiconductor company, announced that it has begun shipping sample products of a new type of high-capacity, low-power memory memory. The product will be produced using state-of-the-art equipment at the No. 2 manufacturing building at the Kitakami Plant (Kitakami City, Iwate Prefecture).",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Semiconductor memory sample shipment started",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -15097,7 +15605,11 @@
         "language": "ja",
         "title_en": "\"Amazon Mechanical Turk\" ends new applications on July 30th -- AWS crowdsourcing started in 2005",
         "summary_en": "AWS's crowdsourcing service \"Amazon Mechanical Turk\" will stop accepting new customers on July 30th. Launched in 2005, the service pioneered a marketplace where detailed tasks that only humans can do can be outsourced to crowdworkers around the world. AWS said that after \"careful consideration,\" existing customers will continue to use the service as before, but no new features will be added.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AWS crowdsourcing service updates",
+        "OtherSubclass": "Enterprise Software",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -15108,7 +15620,11 @@
         "language": "ja",
         "title_en": "3% of men and 6% of women want to work longer hours...What kind of people are they? The University of Tokyo investigated",
         "summary_en": "The University of Tokyo Institute of Social Science has announced the latest survey results (2026) regarding working hours of working people.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Working hours survey research",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -15119,7 +15635,11 @@
         "language": "ja",
         "title_en": "Chikawa's portable moisturizing balm also includes Hachiware, Rabbit, and Momonga",
         "summary_en": "BeeCruise released ``Lovisia Chikawa Multi Balm'' from the gift cosmetic brand ``Lovisia Cosmetics Series'' on June 19th. The price is 990 yen each.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Character themed cosmetic balm release",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -15130,7 +15650,11 @@
         "language": "ja",
         "title_en": "3COINS smartphone photo printer, top Braun silk shaver [Weekly ranking June 29, 2026 to July 5, 2026]",
         "summary_en": "3COINS, a photo printer that allows you to easily print smartphone photos",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Weekly household appliance ranking summary",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -15141,7 +15665,11 @@
         "language": "ja",
         "title_en": "Milwaukee, a compact blower that makes it easy to clean the workplace",
         "summary_en": "Milwaukee Tool Japan released the \"M18 PACKOUT Compact Blower M18 BBL-0\" on July 1st as a new addition to the M18 series. The price is 14,080 yen.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "New compact tool product release",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -15152,7 +15680,9 @@
         "language": "ja",
         "title_en": "TOTO's all residential washlets are instantaneous, reducing standby power and saving energy",
         "summary_en": "TOTO will release the redesigned ``GG-800'' toilet with built-in washlet and the ``GG (wall drain type)'' for condominium remodeling on August 3rd. Prices are 315,590 yen to 391,490 yen for the GG-800 (floor drain) and 324,720 yen to 400,620 yen for the GG (wall drain).",
-        "Classification": "N/A"
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 5,
+        "Gemini_Summary": "Energy efficient washlet toilet launch"
     },
     {
         "source": "KadenWatch",
@@ -15163,7 +15693,11 @@
         "language": "ja",
         "title_en": "LG's pet-specific air purifier collects about 30 times more dust from loose hair",
         "summary_en": "LG Electronics Japan released the ``LG PuriCare Pet Gen3 AS657DWT2'', an air purifier equipped with a circulator that specializes in pet hair loss and odor control, on June 24th. Prices are open prices. Estimated market price is around 69,900 yen.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "LG pet-specific air purifier",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -15174,7 +15708,11 @@
         "language": "ja",
         "title_en": "BRUNO, a hot plate for baking Winnie the Pooh pancakes",
         "summary_en": "BRUNO will release four kitchen items featuring Winnie the Pooh designs on July 17th. Pre-orders are being accepted on the directly managed e-commerce site from July 3rd. Prices range from 2,530 yen to 17,600 yen.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "BRUNO Winnie Pooh collection",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -15185,7 +15723,11 @@
         "language": "ja",
         "title_en": "Hanshin logo smart ring allows you to make Visa touch payments by holding it up",
         "summary_en": "EVERING released the ``Hanshin Tigers x EVERING Payment Smart Ring'' in limited quantities on July 1st. The price is 9,900 yen. Available at EVERING's official online store, Joshin's Nihonbashi store, Kishiwada store, and official home appliance mail order site.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Hanshin Tigers smart ring",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -15196,7 +15738,11 @@
         "language": "ja",
         "title_en": "Iris Ohyama's freezer \"Sukimax\" that fits in the gap",
         "summary_en": "Iris Ohyama will release the new model \"W Slim Freezer 91L KUSN-SS9A\" in the slim freezer series \"Sukimax\" on July 14th. Direct sales price is 76,780 yen.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "New Iris Ohyama freezer",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -15207,7 +15753,11 @@
         "language": "ja",
         "title_en": "Lion's detergent for pre-washing the dishwasher - just spray and add",
         "summary_en": "Lion will release ``CHARMY Crysta Pre-wash Foam Spray'' for pre-washing before dishwashers on September 9th. The lineup includes a main body with a capacity of 300ml and a refill with a capacity of 500ml. All prices are open.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Lion dishwasher detergent spray",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -15218,7 +15768,9 @@
         "language": "ja",
         "title_en": "Is it possible to live a life without purchasing electricity? Purchase additional storage batteries for V2H!",
         "summary_en": "It's been more than two and a half years since I purchased a Nissan Sakura electric car to use as a storage battery at home and started using it in combination with solar power generation. There is a lot of information about V2H on the internet, but it's all about manufacturers and dealers, and there's not much information from the user's perspective, leading to confusion, failures, and hardships.",
-        "Classification": "N/A"
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 4,
+        "Gemini_Summary": "V2H solar storage discussion"
     },
     {
         "source": "Senken",
@@ -15229,7 +15781,11 @@
         "language": "ja",
         "title_en": "Zeon Shoji changes company name to \"J-Plus International\" in September",
         "summary_en": "Effective September 1, Zeon Shoji will absorb its wholly owned subsidiary J-Plus International and change its company name to \"J-Plus International.\" Ahead of our 60th anniversary, we are reorganizing our business foundation, expanding our overseas business, and implementing new growth strategies...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Zeon Shoji corporate rebranding",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -15240,7 +15796,11 @@
         "language": "ja",
         "title_en": "Designer Yosuke Aizawa establishes new company Stactis Studio",
         "summary_en": "This spring, designer Yosuke Aizawa established stactis studio, a design firm that creates new experiences and value. Not just fashion, but sports, fashion, outdoor, product...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Yosuke Aizawa new studio",
+        "OtherSubclass": "Entrepreneurship and Startups",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -15251,7 +15811,11 @@
         "language": "ja",
         "title_en": "AOKI President Daijiro Koide",
         "summary_en": "As of June 24, AOKI's Director and Executive Vice President Daijiro Koide has been appointed as Representative Director and President. Akihiro Aoki, Representative Director, Chairman and President, has been promoted to Chairman of the Board. Mr. Daijiro Koide After graduating from university in 1989, he joined an apparel manufacturer. ...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AOKI executive leadership change",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -15262,7 +15826,11 @@
         "language": "ja",
         "title_en": "Mitsubishi Estate participates in large-scale mixed-use development in Bangkok, making the largest investment ever in Thailand business, with phased opening starting in 2027",
         "summary_en": "Mitsubishi Estate has participated in the large-scale mixed-use development \"Central Central\" (tentative name) in Bangkok, Thailand. Commercial facilities will open in stages from 2027 to 2029. The development project cost was approximately 11 billion Thai baht (approximately 53.9 billion yen), the highest ever for the company's Thailand business...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Mitsubishi Bangkok real estate",
+        "OtherSubclass": "Real Estate",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -15273,7 +15841,11 @@
         "language": "ja",
         "title_en": "Knit designer Yoko Yamamoto doesn't end hand knitting with \"handicraft\"",
         "summary_en": "Knit designer Yoko Yamamoto runs the knit brand ``Tasnit'' and is involved in a wide range of activities, from designing and producing items, creating knitting patterns, and teaching classes and workshops. This is an original work that incorporates rock and fashion sensibilities, and is...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Knit designer Yoko Yamamoto",
+        "OtherSubclass": "Arts and Culture",
+        "OtherSubclassScore": 4
     },
     {
         "source": "Senken",
@@ -15284,7 +15856,11 @@
         "language": "ja",
         "title_en": "Noriko Enomoto, who launched the jewelry “Garbu”, what is the origin of her design?",
         "summary_en": "In November 2015, she launched a new jewelry brand, Garb, and opened her first limited-time store at Shibuya Parco until early June. He also handles the popular bag brand ``Norie Nomoto,'' and his presence on SNS is attracting attention, especially among young people. Both feature curves...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Jewelry brand Garb launch",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -15295,7 +15871,11 @@
         "language": "ja",
         "title_en": "[Selling] \"Oriental Traffic\" mule sandals Made of delicate sheer material for a soft fit",
         "summary_en": "Double A's women's shoes, ``Oriental Traffic,'' are selling mule sandals (7,900 yen including tax) made of sheer material this spring and summer. Two colors, gray and black, will be released in February. It has been well received since the beginning, and as the weather warms up, sales numbers continue to increase...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Oriental Traffic sandal sales",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -15306,7 +15886,11 @@
         "language": "ja",
         "title_en": "Toray opens new dyeing base in Sichuan, China, expects domestic demand, expects full operation in 2028",
         "summary_en": "Toray has decided to establish a new dyeing and processing base in Sichuan Province, China. Aiming for full operation in 2028. While taking advantage of the cost advantage of being inland, we will increase production capacity for high value-added materials that are expected to further expand domestic demand. [Related article] Toray, Nagoya...",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Toray China dyeing facility",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -15317,7 +15901,9 @@
         "language": "zh-CN",
         "title_en": "Krypton Evening News｜Youjia Innovation officially releases the four-wheeled robot; Qianwen’s large model is upgraded to the real-time speech recognition model Fun-ASR-Realtime",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 3,
+        "Gemini_Summary": "Tech firms AI developments"
     },
     {
         "source": "36Kr",
@@ -15328,7 +15914,9 @@
         "language": "zh-CN",
         "title_en": "With millions of dollars in investment from DCM Ventures, APTSell hopes to become the AI ​​version of chief sales officer｜New projects emerge",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 4,
+        "Gemini_Summary": "APTSell AI sales agent"
     },
     {
         "source": "36Kr",
@@ -15339,7 +15927,11 @@
         "language": "zh-CN",
         "title_en": "36 Kr first release | The former Siemens and Rolls-Royce electric flight team started a business to make aviation electric drive systems, and raised tens of millions of yuan in two consecutive rounds",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Cape Electric aviation investment",
+        "OtherSubclass": "Entrepreneurship and Startups",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15350,7 +15942,11 @@
         "language": "zh-CN",
         "title_en": "On the eve of listing | A PhD student at Harbin Institute of Technology rushes for a Hong Kong stock IPO with a market value of tens of billions, and only one of the three founders remains",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "珞石机器人IPO申请",
+        "OtherSubclass": "Robotics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15361,7 +15957,11 @@
         "language": "zh-CN",
         "title_en": "On the eve of listing｜4-month net profit of 3.84 billion yuan, Shenzhen Storage dark horse rushed to Hong Kong IPO",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Macro storage industry report",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15372,7 +15972,11 @@
         "language": "zh-CN",
         "title_en": "The trend of cross-border e-commerce has changed: the new generation no longer only fights for price, but begins to fight for \"pricing power\"丨The forefront",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Cross-border e-commerce trends",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -15383,7 +15987,9 @@
         "language": "zh-CN",
         "title_en": "The first batch of big factory workers cut off by AI: high salary, high performance, high P | Shen Krypton",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 3,
+        "Gemini_Summary": "Internet layoffs due AI"
     },
     {
         "source": "36Kr",
@@ -15394,7 +16000,11 @@
         "language": "zh-CN",
         "title_en": "2026, the late carnival of quantum computing: able to get orders, rush to IPO, market value exceeds 10 billion",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Quantum computing sector growth",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15405,7 +16015,11 @@
         "language": "zh-CN",
         "title_en": "8:01 Krypton丨7-11 accuses Nike of plagiarizing the color scheme of its new shoes; the new trading rules for A-shares will take effect today; Wall Street says Apple purchased Changxin Memory to lower prices",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "General tech news digest",
+        "OtherSubclass": "News Digest",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15416,7 +16030,9 @@
         "language": "zh-CN",
         "title_en": "Ordos and Heda Financial Services jointly led the investment, and \"Yiru Technology\" completed a series A financing of over 100 million yuan | 36 Krypton first release",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 5,
+        "Gemini_Summary": "Sustainable bio-based leather investment"
     },
     {
         "source": "36Kr",
@@ -15427,7 +16043,11 @@
         "language": "zh-CN",
         "title_en": "Sinoma Technology: Application for issuance of shares to specific objects was approved by the Shenzhen Stock Exchange",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Sinoma Technology share issuance",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15438,7 +16058,11 @@
         "language": "zh-CN",
         "title_en": "Goldman Sachs names Google's Kotsovinos as head of asset and wealth management engineering",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Goldman Sachs hires engineering lead",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -15449,7 +16073,11 @@
         "language": "zh-CN",
         "title_en": "Most popular Chinese concept stocks in the U.S. rose before the market opened, with Bilibili rising more than 3%",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Chinese stocks rise in US",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15460,7 +16088,11 @@
         "language": "zh-CN",
         "title_en": "Most large U.S. technology stocks rose before the market opened, with Intel rising more than 3%",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "US tech stocks rise premarket",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15471,7 +16103,11 @@
         "language": "zh-CN",
         "title_en": "Xiang Fenghua: Application for issuance of stocks to specific objects was accepted by Shenzhen Stock Exchange",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Stock issuance application accepted",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15482,7 +16118,11 @@
         "language": "zh-CN",
         "title_en": "Micron Technology and Ford Motor Sign Strategic Agreement to Strengthen Supply of Memory and Storage Solutions",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Micron and Ford strategic agreement",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15493,7 +16133,11 @@
         "language": "zh-CN",
         "title_en": "Zangge Mining: Net profit in the first half of the year is expected to increase by 97.2%-108.31% year-on-year",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Mining company reports profit growth",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15504,7 +16148,11 @@
         "language": "zh-CN",
         "title_en": "SK Hynix’s U.S. ADR issuance has been significantly oversubscribed",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "SK Hynix ADR oversubscribed",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15515,7 +16163,11 @@
         "language": "zh-CN",
         "title_en": "Nanxing Shares: The controlling shareholder plans to reduce its holdings in the company to no more than 3%",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Shareholder plans to reduce holdings",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15526,7 +16178,11 @@
         "language": "zh-CN",
         "title_en": "Shenzhen Stock Exchange: Closely monitoring the trading situation of China Public Education and taking regulatory measures such as suspending trading on relevant investors in accordance with regulations",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Regulators monitor stock market trading",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15537,7 +16193,11 @@
         "language": "zh-CN",
         "title_en": "Broadcom will develop custom ASIC chip products for Apple and agrees to expand technical collaboration until 2031",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Broadcom and Apple extend partnership",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15548,7 +16208,11 @@
         "language": "zh-CN",
         "title_en": "Hangjin Technology: Net profit in the first half of the year is expected to increase by 191.45%-308.03% year-on-year",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Technology company reports profit surge",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15559,7 +16223,11 @@
         "language": "zh-CN",
         "title_en": "This year’s list of “double-heavy” construction projects has been released",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Government construction project list released",
+        "OtherSubclass": "Infrastructure and Utilities",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15570,7 +16238,11 @@
         "language": "zh-CN",
         "title_en": "Saiyi Information: Net profit in the first half of the year is expected to increase by 188.36%-257.01% year-on-year",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Software firm reports profit growth",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15581,7 +16253,11 @@
         "language": "zh-CN",
         "title_en": "Telford Technology: Plans to raise no more than 2.8 billion yuan in additional capital",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Company plans private stock placement",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15592,7 +16268,11 @@
         "language": "zh-CN",
         "title_en": "Yuexiu Capital: Net profit in the first half of the year is expected to increase by 75%-95% year-on-year",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Capital firm reports profit growth",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15603,7 +16283,11 @@
         "language": "zh-CN",
         "title_en": "Trading volume of U.S. dollar gold futures on Hong Kong Exchange hits record high",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Gold futures trading record set",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "36Kr",
@@ -15614,7 +16298,11 @@
         "language": "zh-CN",
         "title_en": "Aiai Precision: Planning for change of control of the company, stocks suspended from the 7th",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Control change causes stock suspension",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -15625,7 +16313,11 @@
         "language": "zh-CN",
         "title_en": "Shanghai International Port Group: It is expected that the container throughput of the home port will increase by 6.1% year-on-year in June",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Port throughput increases in June",
+        "OtherSubclass": "Logistics and Delivery",
+        "OtherSubclassScore": 4
     },
     {
         "source": "36Kr",
@@ -15636,7 +16328,11 @@
         "language": "zh-CN",
         "title_en": "Trading Ecology: Appointment of He Xinglong as General Manager",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Company appoints new general manager",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -15647,7 +16343,9 @@
         "language": "zh-CN",
         "title_en": "AI air conditioners, AI washing machines, and AI fans have all come alive. Is the adoption of AI in home appliances a gimmick or a necessity?",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 5,
+        "Gemini_Summary": "AI in home appliances discussion"
     },
     {
         "source": "OFweek SmartHome",
@@ -15658,7 +16356,11 @@
         "language": "zh-CN",
         "title_en": "Midea eats meat, Haier and Hisense drink soup, and Gree washes dishes.",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Appliance market sales status update",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -15669,6 +16371,872 @@
         "language": "zh-CN",
         "title_en": "Can there be gold mines in the home appliance subcategory?",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Appliance subcategory market potential",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "スターバックス、12～24歳限定の新サービス開始　公式アプリ経由で毎月100円オフの「U24パス」配布",
+        "date": "Tue, 07 Jul 2026 14:27:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/07/news124.html",
+        "summary": "スターバックス コーヒー ジャパンは7月7日、12～24歳向けの新サービス「マイスターバックスストアU24」を開始した。お気に入り店舗を登録すると、毎月100円オフの「U24パス」が届く。同社によるU24世代向けサービスは初。",
+        "language": "ja",
+        "title_en": "Starbucks launches new service limited to 12-24 year olds - Distributes 100 yen off \"U24 Pass\" every month via official app",
+        "summary_en": "On July 7, Starbucks Coffee Japan launched ``My Starbucks Store U24,'' a new service for people aged 12 to 24. If you register your favorite stores, you will receive a 100 yen off \"U24 Pass\" every month. This is the company's first service for the U24 generation.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Starbucks launches youth discount",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "「全東信の端末使用を即時停止して」――食団連が飲食店へ注意喚起　全東信の破産受け",
+        "date": "Tue, 07 Jul 2026 14:20:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/07/news118.html",
+        "summary": "一般社団法人日本飲食団体連合会は7月6日、会員飲食店に向けた注意喚起と支援策を示した。クレジットカード決済代行の全東信の破産手続開始決定を受けたもので、該当する会員に端末使用の即時停止など対応を求めた。",
+        "language": "ja",
+        "title_en": "\"Immediately stop using Zentoshin's terminals\" - Food Federation warns restaurants following Zentoshin's bankruptcy",
+        "summary_en": "On July 6, the Japan Federation of Food and Beverage Organizations (general incorporated association) announced a warning and support measures for member restaurants. This was in response to the decision to begin bankruptcy proceedings for credit card payment agency Zentoshin, and the affected members were asked to take measures such as immediately stopping the use of their terminals.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Payment processor bankruptcy warning",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "ITmedia",
+        "title": "「クリスタ」好調、セルシスが増配　35周年記念、業績は過去最高",
+        "date": "Tue, 07 Jul 2026 14:10:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/07/news120.html",
+        "summary": "「クリスタ」好調で過去最高業績が続いている。",
+        "language": "ja",
+        "title_en": "“Crysta” is doing well, Celsys increases its dividend, commemorating its 35th anniversary, and its performance is the highest ever",
+        "summary_en": "“Crysta” is doing well and continues to have record high performance.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Software company reports record performance",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "ITmedia",
+        "title": "「iPhone Air」が2万円引き　「プライムデー先行セール」開始、Apple製品が安い",
+        "date": "Tue, 07 Jul 2026 12:26:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/07/news112.html",
+        "summary": "日本のプライムデーに初めて登場した「iPhone Air」（256GB／SIMフリー版）は、参考価格の15万9800円から2万円引き（13％オフ）の13万9800円で販売している。",
+        "language": "ja",
+        "title_en": "\"iPhone Air\" is 20,000 yen off, \"Prime Day advance sale\" starts, Apple products are cheap",
+        "summary_en": "The iPhone Air (256GB/SIM-free version), which first appeared on Japan's Prime Day, is being sold at 139,800 yen, a 20,000 yen discount (13% off) from the reference price of 159,800 yen.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Apple product discount news",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "欧州のSwitch 2、バッテリー交換式へ　EU新規制に対応　初代Switchファミリーは販売終了",
+        "date": "Tue, 07 Jul 2026 12:07:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/07/news106.html",
+        "summary": "任天堂の欧州法人Nintendo of Europeは7月6日（現地時間）、欧州で2027年2月中旬に施行されるバッテリー規制の変更に備え、「Nintendo Switch 2」本体や周辺機器を、ユーザー自身でバッテリーを交換できる改訂版へ26年夏から順次切り替えると発表した。初代「Nintendo Switch」ファミリーは改訂の対象外とし、27年2月中旬に販売を終える。",
+        "language": "ja",
+        "title_en": "Switch 2 in Europe becomes replaceable battery Compliant with new EU regulations Sales of the original Switch family discontinued",
+        "summary_en": "Nintendo of Europe, Nintendo's European subsidiary, announced on July 6th (local time) that in preparation for changes in battery regulations that will take effect in Europe in mid-February 2027, the Nintendo Switch 2 console and peripherals will be gradually replaced with a revised version that will allow users to replace the battery themselves starting in summer 2026. The original Nintendo Switch family will not be subject to the revision, and sales will end in mid-February 2027.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Nintendo battery regulation change",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "SpaceX、xAIの正式名称を「SpaceXAI」に　新ロゴも公開",
+        "date": "Tue, 07 Jul 2026 10:50:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/07/news084.html",
+        "summary": "SpaceXは、傘下のAI部門であるxAIの正式名称をSpaceXAIに変更し、新しいロゴを発表した。新ロゴはSpaceXの「X」の部分に「AI」が隠れるようなデザイン。今回の名称変更と統合により、衛星通信網Starlinkや大型ロケットStarshipの運用にxAIの技術を直接活用していく方針だ。",
+        "language": "ja",
+        "title_en": "SpaceX officially names xAI “SpaceXAI” and also releases new logo",
+        "summary_en": "SpaceX has changed the official name of its AI division xAI to SpaceXAI and announced a new logo. The new logo is designed so that \"AI\" is hidden behind the \"X\" part of SpaceX. With this name change and integration, the company plans to directly utilize xAI technology in the operation of the Starlink satellite communication network and Starship large rocket.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "SpaceX AI division rebranding",
+        "OtherSubclass": "Space Industry",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "月初襲ったPASMO障害「定期買えず払った運賃」補償へ　申請→個別調査で「時間かかる」",
+        "date": "Tue, 07 Jul 2026 10:11:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/07/news079.html",
+        "summary": "6月30日～7月1日は月末月初で定期券更新のタイミングと重なっており、定期券購入を諦めてPASMOやSuicaの残高などから支払った乗客も多かったとみられる。",
+        "language": "ja",
+        "title_en": "Apply for compensation for PASMO failure that occurred at the beginning of the month for “fare paid due to inability to purchase a regular subscription” → Individual investigation “takes time”",
+        "summary_en": "The period from June 30th to July 1st coincided with the renewal of commuter passes at the end of each month, and it appears that many passengers gave up on purchasing commuter passes and instead paid with their PASMO or Suica balances.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "PASMO system failure compensation",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "ITmedia",
+        "title": "佃煮の日「クソダサポスター」ホントにAIに作れない？　GeminiとChatGPTに挑戦させてみた結果",
+        "date": "Tue, 07 Jul 2026 10:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/06/news053.html",
+        "summary": "農林水産省の公式Xが6月29日に投稿した「佃煮の日」ポスターが、良い意味で“クソダサい”と話題になった。コメント欄には「AIには出せない温かみがあって好き」「AI使わないところがほんと良い」という声が目立ったという。……でも待ってほしい。今のAIなら、こういう雰囲気も作れるのでは？　というわけで、AIにチャレンジさせてみた。",
+        "language": "ja",
+        "title_en": "Is it really possible for an AI to make a “crappy poster” for Tsukudani Day? Results of trying Gemini and ChatGPT",
+        "summary_en": "The ``Tsukudani Day'' poster posted by the Ministry of Agriculture, Forestry and Fisheries' official In the comment section, there were comments such as ``I like it because it has a warmth that AI can't provide,'' and ``I really like that it doesn't use AI.'' ...But I want you to wait. With today's AI, wouldn't it be possible to create an atmosphere like this? So, I decided to challenge AI.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AI poster design experiment",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "Broadcom、Appleとの半導体契約を2031年まで延長　複数世代のApple製品にカスタムASICを供給へ",
+        "date": "Tue, 07 Jul 2026 07:46:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/07/news078.html",
+        "summary": "Broadcomは、Appleとの技術協業を2031年まで延長・拡大すると発表した。新たな複数年契約に基づき、複数世代のApple製品向けにカスタムASICを供給する。協業はAppleが開発中のAIサーバ向けチップにも広がっているとみられ、Apple Intelligenceを支えるクラウド基盤での利用が想定されている。",
+        "language": "ja",
+        "title_en": "Broadcom extends semiconductor contract with Apple until 2031 to supply custom ASICs for multiple generations of Apple products",
+        "summary_en": "Broadcom announced that it will extend and expand its technology collaboration with Apple until 2031. Under a new multi-year agreement, the company will supply custom ASICs for multiple generations of Apple products. The collaboration appears to be extending to chips for AI servers that Apple is currently developing, and is expected to be used in the cloud infrastructure that supports Apple Intelligence.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Broadcom Apple semiconductor agreement",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "Microsoft、Xboxで約3200人を削減し4スタジオを分離――「われわれの事業は健全でない」とCEO",
+        "date": "Tue, 07 Jul 2026 07:03:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/07/news077.html",
+        "summary": "MicrosoftのXbox部門は、2027会計年度を通じて部門全体で約3200人を削減すると発表した。アシャ・シャルマCEOは社内メモで利益率の低さやハードウェアの危機を指摘し、大規模な組織再編を行うとした。4つのスタジオが独立や移籍をするほか、管理階層を大幅に削減し、新設するCOOのもとで成長軌道への回帰を目指す。",
+        "language": "ja",
+        "title_en": "Microsoft cuts about 3,200 jobs at Xbox and separates four studios -- ``Our business is not healthy,'' CEO says",
+        "summary_en": "Microsoft's Xbox division announced it will cut approximately 3,200 jobs across the division through fiscal year 2027. In an internal memo, CEO Asha Sharma pointed out low profit margins and a hardware crisis, and announced a major organizational restructuring. In addition to four studios becoming independent or transferring, the company aims to significantly reduce the management hierarchy and return to a growth trajectory under a new COO.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Xbox division layoffs restructuring",
+        "OtherSubclass": "Gaming",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "Microsoft、全社で約4800人を削減へ――法人向け部門とXbox部門が中心",
+        "date": "Tue, 07 Jul 2026 07:01:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/articles/2607/07/news076.html",
+        "summary": "Microsoftは、従業員全体の約2.1％に当たる約4800人の人員削減を発表した。削減は法人向けの部門とXboxゲーム部門が中心となる。業務のAI化による直接の置き換えではないとしつつ、インフラ変化への対応と組織効率化を進める。Xbox部門では2027会計年度中に計3200人を削減する方針。",
+        "language": "ja",
+        "title_en": "Microsoft to cut approximately 4,800 jobs company-wide, mainly in enterprise and Xbox divisions",
+        "summary_en": "Microsoft announced that it will cut approximately 4,800 jobs, or approximately 2.1% of its workforce. The reductions will be mainly in the corporate sector and the Xbox games sector. Although it will not be a direct replacement of operations with AI, it will respond to infrastructure changes and improve organizational efficiency. The Xbox division plans to cut a total of 3,200 jobs by fiscal year 2027.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Microsoft company-wide staff layoffs",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "KadenWatch",
+        "title": "初音ミクがしゃべる血圧計、タニタ",
+        "date": "2026-07-07T15:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2122940.html",
+        "summary": "タニタは、バーチャルシンガー「初音ミク」とコラボレーションした「上腕式音声血圧計 BP-CU(初音ミクモデル)」を発売する。価格は14,300円。9月7日15時までタニタオンラインショップで予約を受け付け、商品の発送は2027年3月中旬以降を予定している。",
+        "language": "ja",
+        "title_en": "Hatsune Miku's talking blood pressure monitor, Tanita",
+        "summary_en": "TANITA will release the ``Brachial Voice Blood Pressure Monitor BP-CU (Hatsune Miku Model)'' in collaboration with the virtual singer ``Hatsune Miku''. The price is 14,300 yen. Reservations will be accepted at the Tanita Online Shop until 3:00 PM on September 7th, and shipping is scheduled for mid-March 2027.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Hatsune Miku blood pressure monitor",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "KadenWatch",
+        "title": "ヘルメットあご紐に装着し、耳ふさがない28gのインカム",
+        "date": "2026-07-07T14:16:02+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2123011.html",
+        "summary": "Paradoxは、自社ブランド「A Mastery」より、オープンイヤー型インカム「Active intercom」の先行販売を7月上旬からMakuakeで開始した。価格は23,980円のところ、最大25%OFFの17,985円(4台購入の場合1台あたり)で購入できる(7月7日時点)。",
+        "language": "ja",
+        "title_en": "A 28g intercom that attaches to the helmet chin strap and does not block your ears.",
+        "summary_en": "Paradox began pre-sale of the open-ear intercom ``Active intercom'' from its own brand ``A Mastery'' on Makuake in early July. The price is 23,980 yen, but you can purchase it for up to 25% off at 17,985 yen (per unit if purchasing 4 units) (as of July 7th).",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Open-ear helmet intercom product",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "KadenWatch",
+        "title": "衣類乾燥除湿機での時短部屋干しには3つのコツ",
+        "date": "2026-07-07T14:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2122690.html",
+        "summary": "梅雨明けも近づいているが、コロナは衣類乾燥除湿機を使用した部屋干し時間短縮のコツを紹介している。",
+        "language": "ja",
+        "title_en": "3 tips for drying clothes indoors to save time using a dehumidifier",
+        "summary_en": "As the rainy season approaches, Corona introduces tips for shortening the time it takes to dry clothes indoors using a dehumidifier.",
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 3,
+        "Gemini_Summary": "Efficient indoor clothes drying"
+    },
+    {
+        "source": "KadenWatch",
+        "title": "高い切断力と耐久性の多用途な本格ナイフ",
+        "date": "2026-07-07T12:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2122176.html",
+        "summary": "スタンレー ブラック・アンド・デッカーは、ツールブランド「DEWALT(デウォルト)」から、「タフシリーズ ユーティリティナイフ」5モデルを7月上旬に発売する。価格は2,860円～4,180円。",
+        "language": "ja",
+        "title_en": "Versatile professional knife with high cutting power and durability",
+        "summary_en": "Stanley Black & Decker will release five models of the \"Tough Series Utility Knife\" from the tool brand \"DEWALT\" in early July. Prices range from 2,860 yen to 4,180 yen.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "DEWALT utility knife release",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "KadenWatch",
+        "title": "熱帯夜にエアコンを切るのは損?　一晩の電気代差は?",
+        "date": "2026-07-07T11:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2122672.html",
+        "summary": "夏の寝苦しい夜、エアコンを「つけっぱなし」にするか、「切タイマー」で途中で切ったほうが良いのか、パナソニックが実施した実験により、これら2つの使用方法における室温変化と消費電力量の具体的な差が明らかになった。",
+        "language": "ja",
+        "title_en": "Is it a waste to turn off the air conditioner on a tropical night? What is the difference in electricity bill overnight?",
+        "summary_en": "On those sleepless nights in summer, is it better to leave the air conditioner on or use the off timer to turn it off mid-way?An experiment conducted by Panasonic revealed the specific differences in room temperature changes and power consumption between these two usage methods.",
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 4,
+        "Gemini_Summary": "AC energy consumption study"
+    },
+    {
+        "source": "KadenWatch",
+        "title": "プライムデーにロボット掃除機が半額以下! エコバックスのねらい目モデル[Sponsored]",
+        "date": "2026-07-07T09:00:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/topic/special/2121131.html",
+        "summary": "Amazon「プライムデー」先行セールが7月7日よりスタート。エコバックスのロボット掃除機DEEBOTシリーズや、窓拭きロボットWINBOTなどが、最大で50%を超える大幅な割引となるのが注目だ。プライムデー先行セールは7月9日(木)まで、プライムデー本番は7月10日(金)～13日(月)23時59分。",
+        "language": "ja",
+        "title_en": "Robot vacuum cleaners are less than half price on Prime Day! Ecovacs' target model [Sponsored]",
+        "summary_en": "Amazon's \"Prime Day\" advance sale starts on July 7th. It is noteworthy that products such as Ecovacs' DEEBOT series of robot vacuum cleaners and WINBOT window cleaning robot will be discounted by up to over 50%. The Prime Day advance sale will run until July 9th (Thursday), and the actual Prime Day sale will run from July 10th (Friday) to July 13th (Monday) at 23:59.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Robot vacuum Amazon discount",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "KadenWatch",
+        "title": "プライムデー先行セール開始! Jackeryポータブル電源は自分に合うお得な1台選べる[Sponsored]",
+        "date": "2026-07-07T09:00:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/topic/special/2120808.html",
+        "summary": "Amazonの「プライムデー」先行セールが本日7月7日よりスタート。Jackery Japanのポータブル電源やソーラーパネル付きセットが、40%を超える大幅な割引となる。プライムデーは先行セールが7月9日(木)まで、本番セールは7月10日(金)～7月13日(月)23時59分。",
+        "language": "ja",
+        "title_en": "Prime Day advance sale begins! Jackery portable power supply allows you to choose the best value for you [Sponsored]",
+        "summary_en": "Amazon's \"Prime Day\" advance sale starts today, July 7th. Jackery Japan's portable power supply and solar panel set will be discounted by more than 40%. Prime Day's advance sale will run until July 9th (Thursday), and the actual sale will run from July 10th (Friday) to July 13th (Monday) at 11:59 p.m.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Portable power supply sale",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "KadenWatch",
+        "title": "プライムデーはSwitchBot最新サーキュレーター割引! スマートホームを手軽に[Sponsored]",
+        "date": "2026-07-07T09:00:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/topic/special/2120238.html",
+        "summary": "Amazon「プライムデー」の先行セールが7月7日からスタート。スマートホーム製品が人気のSwitchBotから、夏を過ごしやすく安全に暮らせる製品が割引対象となっている。プライムデーに先駆けて、6月30日(火)からはSwitchBot公式サイトで先行セールが開催中。期間は先行セールが7月9日(木)23時59分まで、プライムデー本番が7月10日(金)0時～7月13日(月)23時59分。",
+        "language": "ja",
+        "title_en": "SwitchBot latest circulator discount on Prime Day! Easily make your smart home [Sponsored]",
+        "summary_en": "Amazon's \"Prime Day\" advance sale starts on July 7th. SwitchBot, which is popular for its smart home products, is offering discounts on products that will make your summer easier and safer. Ahead of Prime Day, a pre-sale is being held on the official SwitchBot website starting June 30th (Tuesday). The advance sale period will be from 23:59 on July 9th (Thursday), and the Prime Day actual sale will be from 0:00 am on July 10th (Friday) to 23:59 on July 13th (Monday).",
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 4,
+        "Gemini_Summary": "Smart home product sale"
+    },
+    {
+        "source": "KadenWatch",
+        "title": "新ルンバは小さくても掃除はしっかり! もっと日本の暮らしにフィットしました[Sponsored]",
+        "date": "2026-07-07T08:00:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/topic/special/2118614.html",
+        "summary": "ロボット掃除機の高性能化が止まりません。2002年にルンバが日本に上陸して以来、筆者もその進化を追い続けてきましたが、特にここ数年の進化は目覚ましく、もはや「人間より丁寧に掃除してくれる」と感じることもしばしばです。",
+        "language": "ja",
+        "title_en": "Although the new Roomba is small, it cleans well! It fits more into Japanese life [Sponsored]",
+        "summary_en": "The performance of robot vacuum cleaners continues to improve. I have been following the evolution of the Roomba since it arrived in Japan in 2002, and the evolution in the past few years has been particularly remarkable, and I often feel that it can no longer clean more carefully than humans.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Roomba evolution and performance",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "長い夏が生む新市場　“凍らせること”が価値に",
+        "date": "Tue, 07 Jul 2026 12:30:00 +0900",
+        "url": "https://senken.co.jp/posts/ice-slurry-260707",
+        "summary": "今の日本では、実質的に5～10月が夏といえるほど暑さが長期化。気象庁が今年4月に気温40度超を「酷暑日」と定義したことは、その深刻さを象徴している。こうした環境変化は、新たな食品市場機会をもたらす。　長引く夏を背...",
+        "language": "ja",
+        "title_en": "A new market created by the long summer: “Freezing” becomes valuable",
+        "summary_en": "In Japan today, the heat has been so long that it can practically be called summer from May to October. The fact that the Japan Meteorological Agency defined a temperature of over 40 degrees Celsius as an \"extremely hot day\" in April of this year symbolizes the seriousness of the situation. These environmental changes bring new food market opportunities. With a prolonged summer behind us...",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Heat wave food market",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "Senken",
+        "title": "アトレ中野、12月9日開業　新駅舎に併設し約70店出店",
+        "date": "Tue, 07 Jul 2026 12:00:00 +0900",
+        "url": "https://senken.co.jp/posts/atre-260707",
+        "summary": "アトレはJR中野駅に新商業施設「アトレ中野」を12月9日に開業する。【関連記事】アトレ、5月に台湾再進出1号店　台北駅地下に食中心で　JR東日本による中野駅の再開発の一環。西側線路上空に整備する南北通路とともに、...",
+        "language": "ja",
+        "title_en": "Atre Nakano opens on December 9th with approximately 70 stores attached to the new station building",
+        "summary_en": "Atre will open a new commercial facility called \"Atre Nakano\" at JR Nakano Station on December 9th. [Related article] Atre will re-open its first store in Taiwan in May, with a focus on food in the basement of Taipei Station. Part of JR East's redevelopment of Nakano Station. Along with the north-south passage that will be constructed above the western track,...",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "New commercial facility opening",
+        "OtherSubclass": "Real Estate",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "「ナオトサトウ」　独自のネオプレンバッグが好評",
+        "date": "Tue, 07 Jul 2026 11:30:00 +0900",
+        "url": "https://senken.co.jp/posts/naotosatoh-260707",
+        "summary": "バッグブランド「ナオトサトウ」がセレクトショップや専門店、EC卸で好評だ。5～6月に3週間、伊勢丹新宿本店メンズ館で開いたフェア兼オーダー会では、過去最高の売り上げ個数を記録した。　軽量で立体感のあるエレガントな...",
+        "language": "ja",
+        "title_en": "“Naotosato” unique neoprene bag is popular",
+        "summary_en": "The bag brand ``Naotosato'' is popular at select shops, specialty stores, and e-commerce wholesalers. At the fair and order event held for three weeks in May and June at the Isetan Shinjuku Main Store Men's Building, the number of items sold was the highest ever. Lightweight and elegant with a three-dimensional feel...",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Neoprene bag brand popularity",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "「エズミ」　アトリエに予約制のスタジオショップをオープン",
+        "date": "Tue, 07 Jul 2026 11:00:00 +0900",
+        "url": "https://senken.co.jp/posts/ezumi-260707",
+        "summary": "デザイナーの江角泰俊が手掛ける「エズミ」は東京・神宮前のアトリエの1階に、予約制のスタジオショップ「STuDio R.D」をオープンした。展示会や商談用に使ってきた空間を、より多くの人にブランドの姿勢に触れてもら...",
+        "language": "ja",
+        "title_en": "“Ezumi” Opens a reservation-only studio shop in the atelier",
+        "summary_en": "Designer Yasutoshi Ezumi's ``Ezumi'' has opened ``STuDio R.D'', a reservation-only studio shop on the first floor of its atelier in Jingumae, Tokyo. The space that has been used for exhibitions and business negotiations will be used to allow more people to experience the brand's stance.",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Fashion studio shop opening",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "「オムプリッセ・イッセイミヤケ」　マーク・ボスウィック氏が撮影した作品を展示",
+        "date": "Tue, 07 Jul 2026 10:59:00 +0900",
+        "url": "https://senken.co.jp/posts/isseymiyake-260707",
+        "summary": "イッセイミヤケの「オムプリッセ・イッセイミヤケ」は7月28日まで、直営店「イッセイミヤケ・ギンザ／445」1階の展示空間CUBEで、特別展「マーク・ボスウィック：Something Out of Nothing ...",
+        "language": "ja",
+        "title_en": "\"Homme Plissé Issey Miyake\" Exhibition of works photographed by Mark Borthwick",
+        "summary_en": "Issey Miyake's \"Homme Plissé Issey Miyake\" will be on display until July 28th at the exhibition space CUBE on the 1st floor of the directly managed store \"Issey Miyake Ginza/445\".The special exhibition \"Mark Borthwick: Something Out of Nothing...",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Fashion photography art exhibition",
+        "OtherSubclass": "Arts and Culture",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "商機を奪うフランスの猛暑　政府、セールを延長する異例の措置",
+        "date": "Tue, 07 Jul 2026 07:58:00 +0900",
+        "url": "https://senken.co.jp/posts/france-260707",
+        "summary": "【パリ＝松井孝予通信員】6月下旬にフランスを襲った記録的な熱波は、人々の暮らしだけでなく商業のあり方も変えた。猛暑がセール開始と重なって来店客数が激減したことを受け、政府は中心市街地の小売業を支援するため、4週間...",
+        "language": "ja",
+        "title_en": "France's heat wave deprives business opportunities; government takes unprecedented measures to extend sales",
+        "summary_en": "[Paris = Correspondent Takayuki Matsui] The record heat wave that hit France in late June changed not only people's lives but also the way commerce operates. In response to a sharp drop in the number of customers visiting stores as the heatwave coincided with the start of sales, the government decided to support retail businesses in the city center for four weeks...",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Heat wave retail impact",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "Senken",
+        "title": "「メイソングレイ」　SNSプロモーションで新客獲得　店頭とECの両方に効果",
+        "date": "Tue, 07 Jul 2026 06:27:00 +0900",
+        "url": "https://senken.co.jp/posts/java-corporation-260707",
+        "summary": "ジャヴァコーポレーションの「メイソングレイ」は、昨年9月からインスタグラムを活用して従来通りの投稿に加えインフルエンサーとのタイアップ広告の運用も始め、新客を獲得している。ECと実店舗の両方への送客が出来ているな...",
+        "language": "ja",
+        "title_en": "“Mason Gray” Acquire new customers through SNS promotion Effective for both in-store and EC",
+        "summary_en": "Since September of last year, Java Corporation's ``Mason Gray'' has been using Instagram to acquire new customers by starting to run advertising tie-ups with influencers in addition to regular posting. We are able to send customers to both e-commerce and physical stores...",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Fashion brand social marketing",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "就活よりAI、半年かけてスキルを磨く　東京モード学園学生がAIでブランド立ち上げ",
+        "date": "Tue, 07 Jul 2026 06:26:00 +0900",
+        "url": "https://senken.co.jp/posts/mode-260707",
+        "summary": "東京モード学園は、AI（人工知能）活用のファッションカリキュラムを始めた。学生は6月から約半年かけ、ブランドの企画や生産、展示会の開催などAIツールを使ってブランド運営を学ぶ。既存のカリキュラムを履修しながらのプ...",
+        "language": "ja",
+        "title_en": "Using AI instead of job hunting, Tokyo Mode Gakuen student spends half a year honing his skills to launch a brand using AI",
+        "summary_en": "Tokyo Mode Gakuen has started a fashion curriculum that utilizes AI (artificial intelligence).学生は6月から約半年かけ、ブランドの企画や生産、展示会の開催などAIツールを使ってブランド運営を学ぶ。 Practicing while taking the existing curriculum...",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AI fashion business curriculum",
+        "OtherSubclass": "Entrepreneurship and Startups",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "Senken",
+        "title": "「古着屋JAM」　心斎橋店内に本格コーヒースタンド",
+        "date": "Tue, 07 Jul 2026 06:25:00 +0900",
+        "url": "https://senken.co.jp/posts/jamtrading-2604707",
+        "summary": "古着小売りのJAMトレーディング（大阪市）は「古着屋JAM」心斎橋店の中に、コーヒースタンド「JAMスタンドコーヒー」を開設した。飲食業態は初めて。本格的なコーヒーを提供することで、「古着屋JAMで自分だけの古着...",
+        "language": "ja",
+        "title_en": "\"Secondhand shop JAM\" Authentic coffee stand in Shinsaibashi store",
+        "summary_en": "JAM Trading (Osaka City), a second-hand clothing retailer, has opened a coffee stand called ``JAM Stand Coffee'' inside the second-hand clothing shop JAM Shinsaibashi store. This is my first time working in the restaurant industry. By providing authentic coffee, ``JAM second-hand clothing store allows you to create your own second-hand clothes.''",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Second-hand shop opens coffee stand",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "《めてみみ》今日は七夕",
+        "date": "Tue, 07 Jul 2026 06:24:00 +0900",
+        "url": "https://senken.co.jp/posts/mete-260707",
+        "summary": "今日は七夕。天の川を挟んで東の空に輝く織姫（ベガ）と彦星（アルタイル）が1年に一度会えるという伝説が由来だ。8月上旬にはペルセウス座流星群があり、運が良ければ1時間に数十個の流れ星が見られる。夏は星空を見上げるの...",
+        "language": "ja",
+        "title_en": "《Metemimi》Today is Tanabata",
+        "summary_en": "Today is Tanabata. It originates from the legend that Orihime (Vega) and Hikoboshi (Altair), who shine in the eastern sky across the Milky Way, meet once a year. In early August, there is the Perseid meteor shower, and if you're lucky you can see dozens of shooting stars every hour. In summer, I look up at the starry sky...",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Starry sky and Tanabata festival",
+        "OtherSubclass": "Personal Commentary",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "36Kr",
+        "title": "前大疆员工做了款消费级纺织机，拿下红杉、顺为、米哈游等数亿融资｜产品观察",
+        "date": "2026-07-07 10:29:47  +0800",
+        "url": "https://36kr.com/p/3876837605585160?f=rss",
+        "summary": "<p>作者｜黄楠</p>\n  <p>编辑｜袁斯来</p>\n  <p>浪爪智能（CLAWLAB）创始人胡文鑫，是当下硬件赛道一个不太按常理出牌的人。</p>\n  <p>工程师背景出身，曾就职于大疆、美团等头部大厂，拿过顶级机构的钱，履历足以支撑他选择任何一个被市场验证过的热门赛道，在最短时间内做出产品、讲故事、滚动融资。</p>\n  <p>但胡文鑫扎进了一个过去三十年几乎无人问津的品类：家用纺织机。</p>\n  <p>很少有人知道胡文鑫具体在做什么。浪爪智能成立于2022年12月，近几年里，团队刻意保持水下状态——BP从不外发，没有主动路演或公司传播，有投资人对产品方向感兴趣就直接到办公室看Demo。</p>\n  <p>硬氪独家获悉，过去几年，浪爪智能已连续完成数轮超亿元融资，Pre-A2轮由元璟资本领投、老股东顺为资本超额加注，Pre-A3轮由米哈游领投、老股东元璟及顺为大幅超额加注。此前投资方包括红杉等。</p>\n  <p>选择纺织方向，基于一个极为朴素的认知。“纺织天然切中‘衣食住行’的首位，是一件足够大且真实存在的需求。而定制化DIY，是在刚性需求被满足之后，用户向内探索自我表达、向外输出个性化的自然延伸。”创业初期胡文鑫就判断，这个赛道的天花板足够高，值得用很长的时间去探索。</p>\n  <p>纺织DIY赛道在全球拥有上亿潜在人群，但长期缺少软硬件一体化完整方案。和3D打印赛道不同，家用智能编织机没有可复用的零部件和开源算法，它们能参考的，只有老式编织机。也就是说，胡文鑫要从零定义一台全新的设备。</p>\n  <p>2024年，浪爪智能推出首款产品为自动簇绒枪，仅作为海外小规模市场验证工具，两年累计营收近亿元。</p>\n  <p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260702/v2_82fcef95db7f459195b82928eb6c5a84@6022551_oswg2127834oswg1660oswg1208_img_png?x-oss-process=image/quality,q_80/format,jpg/interlace,1\" /></p>\n  <p class=\"img-desc\">浪爪智能自动簇绒枪（图源/企业）</p>\n  <p>但硬件之外，胡文鑫耗费大量时间打磨的，是一款消费级纺织Station平台。这是一套全新形态物理计算终端，不需要专业制版，通过简易绘图或拍照即可生成编织版型，并完成围巾、娃衣、宠物配饰、小型毛绒制品等多种织物的织造工作。</p>\n  <p>在深圳，只做出90分的硬件，根本无法在丛林中存活，现在创业公司的天花板，其实是软件和生态能力，这个Station平台，也成了浪爪最深的护城河。公司即将发布新款轻量化桌面级编织产品，并搭建内容分享社区，承接爱好者的解压创作与小微定制需求。</p>\n  <p>纺织是最古老的工艺之一。当市场还在追逐可被智能化的新品类时，胡文鑫已经把目光投向了一片体量庞大、尚未被现代计算技术触及的蓝海。</p>\n  <h2>家用智能织造工作站</h2>\n  <p>胡文鑫选择锚定“编织”工具品类，并非出于直觉。早在产品定义阶段，他跟研发团队便对纺织四大类工艺——刺、钩、缝、织——做了系统摸排。</p>\n  <p>他们发现，刺、钩、缝这前三道工艺，其工序天然分散，只能对已有的布料做“加法”或“拼接”，无法独立生成一件完整的织物。而编织可直接以纱线为原料，成型衣物、围巾、配饰、毛绒玩偶等各类立体成品，工序高度闭合，更适配被集成到一站式的智能化设备中，符合“放入原料、制出成品”的桌面造物逻辑。</p>\n  <p>这个差异决定了家庭场景的可能性。编织工艺虽然难度高，但本身足够成体系，可以用智能化的工程方法去解构。</p>\n  <p>而过去三十年，几乎没有企业在这个方向上做过系统性尝试。90年代，家用编织机曾有过短暂的辉煌时期，以银笛、兄弟等老牌品牌长期占据编织设备的主流市场份额，后续还诞生了多款国产手摇编织机产品。这类设备完全依靠纯机械结构，全都需要手动完成。</p>\n  <p>看似简单的编织动作，实则是个高度依赖时序的动态过程——不同版型颜色、不同织针、各行纹路联动，任意一处张力、走位偏差，都会造成整件织物报废。</p>\n  <p>因此，做一台自动化编织设备，首要解决的不是材料堆叠或定点加工的问题，而是如何搭建一套实时感知、调节与补偿的动态控制系统。</p>\n  <p><strong>“很多人觉得编织不就是把线织成布，知道我们开始做了才发现，每个环节都是一个独立的技术难题。”</strong>胡文鑫告诉硬氪，“平针和麻花针的机械动作组合完全不同，粗羊毛和细棉线的张力控制曲线完全不同，一件衣服和一顶帽子的轮廓成型逻辑完全不同。这些差异不能靠调试解决，必须在系统设计之初就被定义清楚。”</p>\n  <p>而横亘在浪爪智能面前的第一道坎，是技术和数据的双重缺失。没有开源算法可以参考，没有现成数据集可以训练，没有成熟供应链可以复用。甚至连“编织动作应该如何被数字化定义”这个最基础的问题，此前都没有人给出过回答。</p>\n  <p>胡文鑫和团队花了近三年时间，将编织工艺逐级拆解为可编程的控制算法，形成了自己的技术壁垒。</p>\n  <p>团队的解法是，将机器人控制、运动规划到计算机图形学等AI硬件能力迁移至产品研发环节。做了一年半，他们终于跑通第一版可靠的编织流程。</p>\n  <p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260702/v2_96337f2410284bbd8b5d8802175a4523@6022551_oswg878842oswg1058oswg648_img_png?x-oss-process=image/quality,q_90/format,jpg/interlace,1\" /></p>\n  <p class=\"img-desc\">浪爪智能可编程控制算法（图源/企业）</p>\n  <p>但一台设备要从“工具型”产品进入家庭，真正的挑战在用户交互层。他们必须把设计门槛降到足够低，让一个毫无编织经验的人也能上手，否则产品依然只能停留在专业圈层内部。</p>\n  <p>传统编织的制版极度依赖经验。一个合格的制版师傅需要5到10年的训练，才能看懂图谱、理解针法逻辑、调整纱线参数。</p>\n  <p><strong>浪爪智能团队也在自主研发纺织AI Agent，基于领域知识增强的垂直模型，内置了团队积累的制版算法和编译能力。</strong>进入编织场景后，用户不需要懂复杂的针法和版型参数，上传图片后，一个能理解用户想要什么的设计Agent可自动解析织物风格、提取特征，生成可直接交由机器编织的设计方案。</p>\n  <p>用户只需要通过自然语言描述自己的设计意图，便交由AI Agent完成后续所有编织工作。传统制版师需要几天完成的工作，在这个一站式纺织Station中被压缩至几分钟，完成了一个从“用户意图”到“物理成品”的完整闭环。</p>\n  <p>这或许是这个品类最有趣的地方。它一方面是一个尚未被验证但潜力巨大的蓝海市场，但另一方面又长期缺乏现代化技术的系统性介入，留出了巨大的技术空白。不过也正因为冷门，一旦完成全栈体系搭建，这道护城河的宽度远超单品硬件逻辑所能理解。</p>\n  <p>更深一层的吸引力来自赛道本身。在胡文鑫看来，这不是一个单品类的故事，更具备平台化的可能性。“仅编织机这款设备，在其底层技术底座之上，针对不同细分场景就能衍生出多种差异化的产品定义。我们相信纺织赛道还有大量未被触及的场景和品类等待发掘。”</p>\n  <h2><strong>一个超亿人群的水下市场</strong></h2>\n  <p>当前全球范围内，编织在欧美、东亚等市场热度持续攀升，核心活跃爱好者群体规模达数千万级别，泛潜在覆盖人群规模可破亿。</p>\n  <p>公开社媒平台数据显示，小红书上“织女”相关话题阅读量近9亿，钩针编织、手工钩织等相关话题总流量超30亿；TikTok平台上“crochet（钩针、编织）”标签的观看次数达2000多亿次。</p>\n  <p>人群足够大，这只是第一步。更重要的是，编织的终端产品不需要教育。围巾的温暖、帽子的陪伴、毛衣的柔软、毛绒玩具的治愈感，人对这类情绪型产品的向往是天然的、无需解释的。</p>\n  <p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260702/v2_4d85e7c3d82448d0a60f153610148c50@6022551_oswg3109133oswg2004oswg1152_img_png?x-oss-process=image/quality,q_80/format,jpg/interlace,1\" /></p>\n  <p class=\"img-desc\">使用浪爪智能织造工作站所产出的编织产品（图源/企业）</p>\n  <p>“平台上用户展示的编织作品只是冰山一角，评论区里那些‘好看’‘我也想要’‘有没有教程’的声音，才是真正的水下需求。”胡文鑫说，“我们不是在创造一个新需求。目前没有产品能够满足这些人想要一件定制毛衣、一个特定图案抱枕的需求。这正是我们的切入点。”</p>\n  <p>破局点在于将耗时数周的重复劳动、制版和织造环节交给机器，让用户保留设计、选择、以及亲手创造的情绪价值，把用户从想要到拥有的耗时和门槛大幅降低。</p>\n  <p>胡文鑫告诉硬氪，这种补偿方式可以催生出一条独特的用户演化路径。大量纺织DIY用户最初进入这个领域，驱动力是情绪性的：解压、打发时间、享受亲手做出一件东西的满足感。随着技能积累和社群影响，一部分人开始从兴趣爱好延伸至轻量化商业阶段，接洽小批量订单。</p>\n  <p>围绕这条从情绪消费到轻量化商业的演化路径，浪爪智能将用户画像划分为四类渗透方向。</p>\n  <p>首批种子用户是存量编织设备的重度使用者。他们或是多年老式编织机的爱好者，或是通过手工编织获得稳定收入的个体创作者，对产品工具有认知基础，痛点直接而具体：手动排花效率低、复杂图案实现困难、良品率不稳定。这类用户不需要被教育“编织机能做什么”，而是真正能解决日常问题的产品。</p>\n  <p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260702/v2_34c7f46734b94323a357273b4b8397c2@6022551_oswg2116990oswg1402oswg1034_img_png?x-oss-process=image/quality,q_80/format,jpg/interlace,1\" /></p>\n  <p class=\"img-desc\">浪爪智能自动簇绒枪（图源/企业）</p>\n  <p>第二类目标用户是小B端经营者，比如做娃衣的、织宠物服饰的、接节日定制单等。其核心诉求围绕效率和定制化能力展开，一台设备能有效缩短单件创作周期。这类人群的价值不止于购买设备，其产出的成品也会自然吸引C端用户关注，形成从B端向C端的渗透。</p>\n  <p>最终，浪爪智能的目标是覆盖大众普通消费者，没有DIY创作需求、也不关心编织工艺，而是能否快速获取自己想要的织物。到这一阶段，其产品将脱离造物工具、创作工具的定位，真正落地于家庭场景的小型柔性供应链，实现织物即时定制交付。</p>\n  <p>&nbsp;“这类人群本质上是需求层次不断上移的过程。第一阶段用户解决的是痛点，第二阶段解决的是效率，第三阶段解决的是好看，第四阶段真正实现用户想要就有。”胡文鑫分析。</p>\n  <p>过去三十年，家用编织从“家家一台缝纫机“的生产力需求，逐渐淡出了人们的日常生活，花几周钩一条毯子在快节奏生活中被大多数人放弃。工业时代把编织送进了工厂流水线，标准化的围巾、标准化的毛衣，以最低成本流向每一个货架。效率极大提升，但代价也随之发生：编织原本携带的个体属性被彻底压缩。每一件织物背后那个具体的人、具体的审美选择、具体的表达意图，全部被简化为\"同款\"。</p>\n  <p>但亲手创造的情感需求从未消失。随着硬件供应链的成熟、电机与传感器成本的下降、AI能力的可迁移，让“把一台复杂的编织设备做到消费级产品”第一次具备了可行性。</p>\n  <p>“每个人心里都有想表达的东西。一个喜欢的图案、一种偏好的颜色、一份属于自己的触感，以及附着其上的某段回忆、某种情绪。这些想法不应该被‘批量生产’挡在门外。于是浪爪智能做了一台能放在书桌上的编织机。不是玩具，不是概念，是能真正织出成品的机器。”胡文鑫说。</p>\n  <p>用户的设计从屏幕里生长出来，变成可以触摸的纹理、可以围在肩上的温度、可以送人的独一无二。这台机器解决的问题不是更快或更便宜，而是让织物重新属于具体的人。</p>",
+        "language": "zh-CN",
+        "title_en": "A former DJI employee built a consumer-grade textile machine and received hundreds of millions in financing from Sequoia, Shunwei, MiHoYo, etc.｜Product Observation",
+        "summary_en": "",
+        "Classification": "Fabric Care & Textile Engineering",
+        "RelationScore": 5,
+        "Gemini_Summary": "Smart home textile machine startup"
+    },
+    {
+        "source": "36Kr",
+        "title": "用AI“复刻”人类细胞、预判药效，「华源智因」获千万级人民币种子轮融资｜36氪首发",
+        "date": "2026-07-07 09:05:00  +0800",
+        "url": "https://36kr.com/p/3883943959621634?f=rss",
+        "summary": "<p>文｜胡香赟</p>\n  <p>编辑｜海若镜</p>\n  <p>36氪获悉，AI虚拟细胞（AIVC）企业华源智因近期已完成千万级人民币种子轮融资。本轮融资由水木创投领投，募集资金将主要用于多模态测序底层技术迭代，进一步拓展与头部三甲医院的合作，以及团队扩充等。此外，华源智因团队已计划启动新一轮融资。</p>\n  <p>华源智因创始团队由资深医药产业从业者、计算生物学研发人员组成，并邀请到深圳国家基因库等单位专家组成科学顾问委员会，形成科研与产业协同的团队架构。公司CEO杜润诗就读于加州大学洛杉矶分校，是AI领域连续创业者；CTO王艺璇为香港中文大学计算机科学与工程专业博士生，曾在百图生科牵头搭建基因扰动转录效应的预测模型xTrimoSC Perturb。此外，香港中文大学算机科学与工程系助理教授李煜任华源智因首席AI科学家。</p>\n  <p>在新药研发领域，“10年、10亿美金”是公认困境。其中，九成资源流向人体临床试验阶段，但最终仅有10%左右的候选药物能够顺利通过全部临床、成功上市。造成超高失败率的核心原因之一，是动物实验与人体真实生理环境的巨大差异。</p>\n  <p>那么，能否在投入高昂成本进入人体临床试验环节前，先在计算机里模拟出药物进入人体后的真实反应，以降低新药研发的失败率？</p>\n  <p>杜润诗认为，传统AI制药公司大多聚焦于解决研发前端问题，也就是利用AI更高效地找到潜在致病靶点、生成化合物。但这相当于只优化“找药”的第一步，无法完整预判成药后用到人身上时，究竟是否有效、有没有副作用等。而判断“某款药到底值不值得推进人体试验”，才是解决问题的关键。</p>\n  <p>这也是华源智因选择自研Wise-Perturb细胞药物扰动应用模型、专攻人体药效预测的根本原因。</p>\n  <p>简单理解，人类细胞包含约2万个蛋白编码基因，细胞健康状态、病变进程以及药物响应，均由多基因协同调控产生。行业所说的“细胞扰动”，指人为对细胞施加外源干预，主要分为两大研究方向：一是基因编辑扰动，通过敲除、上调特定基因，观测下游基因连锁表达变化，快速定位疾病致病靶点；二是药物分子扰动，将候选药物输入虚拟细胞模型，依托AI完整推演药物作用下细胞内基因、蛋白、信号通路的动态改变，以此评估药物人体疗效与潜在毒性。这也是华源智因现阶段核心研发重心。</p>\n  <p>据介绍，Wise-Perturb主要有两层突破。首先，它针对性弥补传统模型依赖单一RNA测序、脱离真实患者病理特征的短板。传统AI细胞模型训练数据多来源于实验室人工改造永生细胞系，这类细胞脱离人体原生病理微环境，缺少患者个体化基因特征，用于人体药效预测时易产生明显偏差；同时传统测序手段难以同步获取DNA、RNA、蛋白三层关键组学信息，难以完整还原细胞真实调控逻辑。</p>\n  <p>为此，华源智因搭建单细胞多组学整合分析体系，通过同细胞单细胞检测分别捕获细胞DNA、转录组、蛋白组数据，再依托自研多模态融合算法打通三层组学信息，搭建三层金字塔式数据底座，其中，底层为海量通用静态单细胞测序数据集，中层为数亿体外细胞系、PDX模型药物与基因扰动配对实验数据，顶层为稀缺人体临床肿瘤队列给药前后配对测序数据。</p>\n  <p>“我们与超一线头部三甲医院达成创新性合作，共建联合实验室。未来还计划针对各医院的优势科室，定向采集对应适应症的专属数据，训练细分疾病专家模型。希望在未来1-3年，至少与30家头部三家医院实现深度合作。”杜润诗表示。</p>\n  <p>此外，Wise-Perturb的另一特点在于模型的细胞特异性设计。普通AI模型通常默认细胞对药物的反应相同，但现实中，不同细胞的生理机制存在差异，比如，一款药在肺部起效，却有可能会损伤肝脏。因此，华源智因团队在Wise-Perturb中专门加入细胞类型识别架构，使其具备零样本跨细胞、跨癌种、跨新药泛化预测能力，不针对每一种疾病重新大规模训练、依靠少量已知患者数据，就能预测全新病种或药物的人体效果。</p>\n  <p>华源智因提供了两组真实验证案例，其中之一是ADC明星药物DS-8201的跨适应症验证。杜润诗介绍：“我们采用乳腺癌患者临床数据完成模型基础训练，在无卵巢癌患者训练样本的前提下，完成卵巢癌PDX模型药物响应预测，模型打分与动物体内真实药效匹配；对比通用虚拟细胞模型，预测一致性提升。”</p>\n  <p>另一例则是与中国医学科学院肿瘤医院合作的非小细胞肺癌靶向药奥希替尼药效分层研究。“医院提供患者治疗前肿瘤基线测序数据，未同步开放任何临床随访结局，由模型独立输出患者药效分层结果，分层结论与临床长期观测疗效吻合。”杜润诗表示。</p>\n  <p>在华源智因方面看来，这套经过临床样本验证的预测能力，让公司跳出行业“先投入高额研发、后期再拓展客户”的传统路径，成立早期即可对接医疗机构、药企落地真实付费合作。</p>\n  <p>杜润诗介绍称，<strong>目前，华源智因已“收获多家头部三甲医院、跨国药企、AI生物企业的合作订单，多项目服务费已完成回款”</strong>。</p>\n  <p>现阶段，华源智因共有两大核心商业化服务。一是面向药企提供临床前管线价值评估、临床试验入组患者分层定制服务，按项目评估，收取基础服务费或其他收益模式 ；二是与三甲医院共建干湿结合联合实验室，联合开展老药新用挖掘、全新疾病靶点筛选等科研项目。长期规划中，公司还计划推出与药企风险共担、药物上市收益分成的联合研发模式。</p>\n  <p>“我们优先落地小规模验证项目，用可复现、高一致性的预测数据建立客户信任，再持续深化长期合作。当前，人体精准药效预测是行业刚性需求，成熟替代技术方案稀缺，医疗机构与药企愿意开放临床样本数据开展联合研究。”杜润诗总结道。</p>",
+        "language": "zh-CN",
+        "title_en": "Using AI to “replicate” human cells and predict drug effects, “Huayuan Intelligence” received tens of millions of RMB in seed round financing | 36 Krypton first release",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AI virtual cell drug prediction",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "36氪首发丨上科大博士团队加速国产超高速光电探测芯片量产，获千万级天使轮融资",
+        "date": "2026-07-07 09:00:00  +0800",
+        "url": "https://36kr.com/p/3884289424437511?f=rss",
+        "summary": "<p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260706/v2_86e8a7fe5e73441aa2345416e68dcc99@6221844_oswg884550oswg1073oswg723_img_png?x-oss-process=image/quality,q_90/format,jpg/interlace,1\" /></p>\n  <p class=\"img-desc\">图源/企业</p>\n  <blockquote>\n   <p>本文约<strong>2000</strong>字，建议阅读<strong>5</strong>分钟</p>\n  </blockquote>\n  <p>作者丨欧雪</p>\n  <p>编辑丨袁斯来</p>\n  <p>硬氪获悉，上海快粼光电科技有限公司（以下简称“快粼光电”）近期已完成数千万元天使轮融资。本轮融资由小苗朗程领投，一村资本跟投。中岚科创担任长期财务顾问，提供产业协同和资本对接服务。此次募集资金将主要用于公司超高速光探测芯片的研发迭代与送样验证，加速国产光探测芯片量产进程以及企业高端人才引进。</p>\n  <p>快粼光电2024年成立于上海，是一家专注于III-V族高速光电探测芯片的研发与产业化的硬科技公司，曾在AI光互联与6G通信核心的光芯片领域刷新世界纪录，填补了国内超高速收端光芯片的空白。</p>\n  <p>快粼光电的核心团队由4位师出同门、平均年龄不到30岁的年轻博士组成。创始人李林泽及三位联合创始人——王景熠、王鲁玉、龙天宇，均源自上海科技大学陈佰乐教授课题组。陈佰乐教授在高速光电子、III-V族半导体、光探测器件领域研究多年，具有深厚的行业影响力，创始人团队成员也有多项研究成果发表在《Nature》、《Nature Photonics》等顶级期刊。</p>\n  <p>AI算力集群正从“算力瓶颈”转向“互联瓶颈”。AI算力集群扩张、数据中心升级、高速光模块迭代，正推动光互联带宽需求爆发式增长。</p>\n  <p>光探测芯片作为高速光接收链路的核心器件，其带宽、响应度、暗电流与可靠性等关键性能，直接影响光互连系统的传输速率、接收灵敏度、链路功耗与规模化应用表现。</p>\n  <p>不过，光探测芯片的相关技术专利多数由国外企业掌握，因此长期以来，国内相关产品的高端光探测芯片高度依赖进口，国产化率偏低，供应链安全与自主可控正面临“卡脖子”的压力。</p>\n  <p>目前产业端已经展开技术攻关，但多数布局仍集中在特定环节或跟进式创新。能够打通从芯片设计到工艺实现、在高性能与量产良率之间取得平衡的完整自研团队仍然稀缺。</p>\n  <p>据创始人李林泽介绍，快粼光电已构建从器件结构设计、III-V族材料外延到封装集成的完整开发体系，围绕数通领域高速光接收需求，持续布局 InP 光探测器（PD）及阵列产品。</p>\n  <p>该系列产品可广泛应用于800G、1.6T、3.2T高速光互连，以及LPO/LRO、NPO/CPO等下一代数据中心网络架构，精准卡位AI算力集群与DCI（数据中心互联）对“超高速、高带宽、低功耗”光电器件的迫切需求，助力低功耗、高带宽光互连系统升级与国内光互联行业的自主可控。</p>\n  <p>业务方面，快粼光电聚焦高速光通信为主、6G太赫兹通信为辅的发展路径，重点布局单波100G、200G及下一代400G光探测芯片，适配800G、1.6T、3.2T高速光模块市场需求。</p>\n  <p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260706/v2_040a8b71628b495cb1267ab61ebc4121@6221844_oswg228270oswg468oswg398_img_000?x-oss-process=image/format,jpg/interlace,1\" /></p>\n  <p class=\"img-desc\">超高速光电探测器芯片图（图源/企业）</p>\n  <p>目前，公司已完成核心技术验证，正全力推进量产工艺开发与客户送样，计划2027年实现核心产品规模化交付；同时在6G太赫兹高端芯片领域已实现阶段性收入，技术能力获得行业认可。</p>\n  <p>李林泽告诉硬氪：“光模块厂商对探测芯片的要求非常明确：一是产能，二是可靠性。公司这轮融资的核心目标，就是拿到量产这张门票——在量产产线上生产出的具备高性能、高可靠性的产品交到客户手里。”</p>\n  <p><strong>以下是硬氪与李林泽的对话节选：</strong></p>\n  <p><strong>硬氪：光探测芯片最大的技术难点是什么？快粼光电的解法有何不同？</strong></p>\n  <p><strong>李林泽：</strong>难点在于带宽和效率很难兼得。传统结构下，带宽越高，响应度越低，而这两者对光模块接收端都很关键。我们的UTC-PD结构本质上是把载流子从“两种”变成“一种”，发挥电子快速输运的优势，在不影响效率的同时大幅提升带宽。我们的研发样品能实现超过200 GHz带宽、0.8 A/W的响应度，这两项指标在国际上来看也是第一梯队。</p>\n  <p><strong>硬氪：为什么不先做其它的商业化场景，而是直接瞄准光通信？</strong></p>\n  <p><strong>李林泽：</strong>我们先前也做了太赫兹通信、6G、精密仪器等前沿场景，实现百万级收入。然而对我们来说，太赫兹是长期的星辰大海，而光通信则是算力升级、刚性需求爆发的黄金周期，必须跟时间赛跑。</p>\n  <p><strong>硬氪：从技术验证到量产送样，中间最大的不确定性是什么？</strong></p>\n  <p><strong>李林泽：</strong>最大的不确定性不是技术本身，而是“技术”和“产线”的适配。我们在实验室可以把性能做得很好，但光模块客户要求的不是单颗芯片多快，而是批量出货时每一颗都足够稳定。这需要把我们自己的工艺know-how完整地移植到代工厂的量产线上，包括外延、制程、测试每一个环节的良率控制。我们花了很多时间做资源整合，正全力推进产品的量产开发。</p>\n  <p><strong>投资方观点：</strong></p>\n  <p><strong>小苗朗程基金管理合伙人俞佳伟：</strong>本次投资快粼光电是基金在算力基础设施领域的又一投资布局，坚定看好公司即将量产的高性能单波200G/400G PD芯片的产品力，也期待公司的UTC-PD芯片、光混频器产品在光电量测设备、太赫兹通信、全光基站、星地微波通信等潜力领域逐步实现客户导入。</p>\n  <p><strong>一村资本董事总经理李中宇：</strong>快粼光电团队由上海科技大学培育，团队核心成员师出同门，基于MUTC结构光电探测器，实现了世界级的技术突破，是一个典型的硬科技项目。快粼的赛道正在加速增长——1.6T光模块量产在即，3.2T箭在弦上，单波200G/400G PD芯片是确定性升级方向；更远处，公司的UTC-PD是6G太赫兹光混频器的核心器件，一村愿意长期支持快粼成长和发展。</p>",
+        "language": "zh-CN",
+        "title_en": "36氪First Release丨Shanghai University of Science and Technology’s PhD team accelerated the mass production of domestic ultra-high-speed photoelectric detection chips and received tens of millions of angel round financing",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "High-speed photoelectric chip funding",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "8点1氪丨SK海力士本周五将登陆纳斯达克；99万机器人“伴侣”续航撑不过一晚？优必选回应；青海省博物馆回应“国家一级文物发现TCL字样”",
+        "date": "2026-07-07 08:15:11  +0800",
+        "url": "https://36kr.com/p/3884831072514309?f=rss",
+        "summary": "<h2>今日热点导览</h2>\n  <p>华为Mate90系列有望搭载基于韬定律的新麒麟芯片</p>\n  <p>央视曝光滴眼液涉事企业被立案，对滴眼液乱象开展调查处置&nbsp;</p>\n  <p>千问大模型升级实时语音识别大模型Fun-ASR-Realtime</p>\n  <p>WPS回应“滥收费、背刺用户”言论</p>\n  <h2>TOP3大新闻</h2>\n  <p><strong>SK海力士10日在纳斯达克上市290亿美元规模ADR，创外资企业史上最大规模</strong></p>\n  <p>据报道，SK海力士将以约44万亿韩元规模的美国存托凭证（ADR）在纳斯达克上市，挑战外资企业在美国股市上市的历史最大规模。纳斯达克上市后，SK海力士可在美国正规市场进行交易，并获得纳入纳斯达克100等主要指数的资格，追踪相关指数的交易所交易基金（ETF）的买入资金流入也备受期待。不过，也有声音对AI存储半导体板块的急涨势头是否过热提出警示。随着大型科技企业持续通过债券和股票市场筹集数据中心投资资金，外界对存储行业景气能否持续的担忧与日俱增。（界面新闻）</p>\n  <p><strong>99万机器人“伴侣”续航撑不过一晚？优必选：属行业普遍情况</strong></p>\n  <p>近日，优必选最新发布的全尺寸超仿生机器人U1备受外界关注，其中U1 Ultra男版价格高达99万元，但续航却仅能维持2到4小时，“撑不过一晚”，因此遭到外界质疑。7月6日，优必选方面回应界面新闻称，目前全尺寸人形机器人续航基本上都在2-4小时，这是行业普遍情况。优必选面向家庭和个人的仿生机器人主要是半身版U1 Lite和高配全身版U1 Pro，U1 Ultra是高动态版本，面向商业场景。优必选方面还强调，仿生机器人定位是情感陪伴，这是国家提倡和认可的方向，不是男友、女友或者伴侣。（界面新闻）</p>\n  <p><strong>青海省博物馆回应“国家一级文物发现TCL字样”&nbsp;</strong></p>\n  <p>近日有网友关注到，中国工艺美术馆举办的艺术展上，国家一级文物永乐款鎏金铜观音菩萨像展柜内，从造像下方仰观，观音裙摆、脚踝区域能清晰看见TCL字样。2026年7月6日上午，澎湃新闻致电青海省博物馆，一位工作人员介绍，网友看到的TCL广告字样是一张报纸。这位工作人员介绍，这尊永乐款鎏金铜观音菩萨像2000年左右从瞿昙寺移交至青海省博物馆时，文物的这处就有这张报纸，这张报纸起到封底的作用。</p>\n  <p>佛像封底通常是“装藏”的最后一步。“装藏”是佛教造像仪轨的一项重要内容，是指在塑造或建造好的佛像、佛塔内装入圣物，以此来赋予塔像“神力”的行为。从目前的考古发现来看，已有一些能明确体现装藏的例子，但并不多见。上述工作人员提到，这尊菩萨像封底损坏了，为防止里面的香灰、柏香等物品掉落，瞿昙寺的僧人用报纸封住。“那时候条件没这么完善，没有海绵、无酸纸等这种包装。”这位工作人员解释，用报纸是很常见的操作。</p>\n  <p>此外，青海省博物馆另一位工作人员还提到，瞿昙寺僧人用报纸封底之后，为了保护文物，移交到青海省博物馆之后他们没有再打开。从藏传佛教装藏的情况来看，里面都会有香灰、柏香，有些保存好的装藏还会有经书、宝石。另据青海省文物局一位工作人员介绍，2026年7月5日晚，青海省博物馆已组织专家和技术人员飞赴北京核实文物底部出现TCL字样一事，核实后第一时间会发布情况说明。（澎湃新闻）</p>\n  <p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260707/v2_b84b947b83744afcb2e648db1bb17f5a@5667365_oswg26317oswg800oswg440_img_000?x-oss-process=image/format,jpg/interlace,1\" /></p>\n  <p class=\"img-desc\">配图</p>\n  <h2>AI最前沿</h2>\n  <p><strong>千问大模型升级实时语音识别大模型Fun-ASR-Realtime</strong></p>\n  <p>36氪获悉，千问大模型正式升级实时语音识别大模型Fun-ASR-Realtime——一款首字延迟控制在百毫秒级别、识别准确率接近离线模型的流式语音识别模型，支持16种方言和30种语言。</p>\n  <p><strong>微软Teams加强第三方AI智能体权限管理，需会议组织者确认后方可放行</strong></p>\n  <p>微软发文，宣布为Microsoft Teams会议应用推出全新的AI机器人管理策略，当第三方AI机器人尝试加入会议时，必须先获得会议组织者批准后才能进入。据介绍，目前微软已在Teams管理中心新增“Manage external bots and their access to meetings”管理策略，该功能默认启用，管理员可将该策略应用于指定用户或用户组，当Teams检测到外部AI机器人尝试加入会议时，会先将其置于会议等候室（Lobby），只有在会议组织者确认批准后，机器人才能正式加入会议。当然管理员也可根据企业需求选择关闭这一功能。（新浪财经）</p>\n  <p><strong>腾讯混元Hy3正式发布</strong></p>\n  <p>36氪获悉，7月6日，腾讯混元Hy3正式发布。相比preview版本，它展现出显著强于同尺寸模型且比肩（参数规模2—5倍的）旗舰模型的智能水平，定价进一步降低。据了解，Hy3已在WorkBuddy/CodeBuddy、元宝、Marvis、ima等多个业务接入，API已在腾讯云TokenHub上线，多个海外API平台也将陆续接入。</p>\n  <p><strong>英伟达AI服务器架构据传将延后推出，公司回应称路线图并没有改变</strong></p>\n  <p>由于有消息称英伟达的下一代人工智能（AI）服务器机架架构因制造困难将推迟一年以上推出，亚洲印刷电路板（PCB）板制造商的股价重挫。研究机构SemiAnalysis在X平台发文称，英伟达Kyber NVL144架构系统在PCB制造环节遭遇挫折。英伟达发言人通过书面声明回应称，“我们的路线图并没有改变”。（新浪财经）</p>\n  <p><strong>沙利文全栈AI云服务报告：阿里云占比40.1%</strong></p>\n  <p>36氪获悉，7月6日，国际市场调研机构沙利文发布《开箱即用的AI云服务——2025中国全栈AI云服务市场报告》。报告显示，2025年中国IaaS、PaaS、MaaS总市场规模达595.9亿元，其中阿里云总收入达239亿元，以40.1%的市场份额位列第一，稳居中国最大AI云服务厂商。</p>\n  <h2>大公司/大事件</h2>\n  <p><strong>苹果首款折叠屏iPhone Ultra，今年最多产不到千万台</strong></p>\n  <p>7月6日，博主定焦数码爆料，苹果首款折叠屏iPhone Ultra目前已开始小批量生产，最快将在本月底进入大规模量产阶段。由于国内代工厂生产人员紧缺，相关产线正在紧急招工，用工需求十分迫切。值得注意的是，蓝思科技集团近日发布了大规模急招信息，扩招岗位涵盖操作工人、质检员、包装员、技术员等多个类别，月薪5500至7500元，提供包吃住待遇并报销路费，无经验者亦可入职。业界普遍认为，蓝思科技此次集中扩招，极有可能是在为苹果折叠屏iPhone Ultra的量产做人力储备。（快科技）</p>\n  <p><strong>华为Mate90系列有望搭载基于韬定律的新麒麟芯片</strong></p>\n  <p>7月6日，从知情人士处获悉，将于今年秋季发布的华为Mate90系列，计划搭载基于韬定律的新麒麟芯片。华为于今年5月发表了指导半导体产业发展的新原则——韬（τ）定律，其目标是以系统性降低时间常数τ为核心，通过逻辑折叠等技术，持续压缩芯片内部的信号传播时延，从而不断提升晶体管密度，实现半导体与电子系统的持续演进。而将于2026年秋季面世的麒麟芯片，率先采用了逻辑折叠技术，性能大幅提升。（财联社）</p>\n  <p><strong>中公教育：公司近期生产经营情况正常，内外部经营环境未发生且未预计将要发生重大变化</strong></p>\n  <p>36氪获悉，中公教育公告，公司近期生产经营情况正常，内外部经营环境未发生且未预计将要发生重大变化。公司目前没有任何根据深交所《股票上市规则》规定应予以披露而未披露的事项或与该事项有关的筹划、商谈、意向、协议等；董事会确认公司不存在有根据深交所的规定应予以披露而未披露的、对公司股票交易价格产生较大影响的信息；公司前期披露的信息不存在需要更正、补充之处。</p>\n  <p>36氪获悉，深交所发布通报，2026年7月6日，中公教育股票价格出现异常波动，上市公司已发布交易风险提示公告。深交所密切监控该股交易情况，对影响股票正常交易秩序的异常交易行为，依规对相关投资者采取了暂停交易等监管措施。深交所提醒广大投资者关注投资风险，合规审慎交易。</p>\n  <p><strong>WPS回应“滥收费、背刺用户”言论</strong></p>\n  <p>7月6日，针对近期有关“WPS滥收费、背刺用户”的言论，金山办公WPS办公助手发文回应称：WPS免费基础功能在持续增加，从未、也不会将已有免费基础功能变成收费功能；会员权益不上移、不缩水，极个别权益因体验、技术或合作原因确需下架，会提前公告并给出解决方案；少数第三方服务和AI办公智能体等高成本服务，会通过独立权益包或按量计费提供，用户可按需购买，并与WPS会员权益明确区分。（第一财经）</p>\n  <p><strong>快手：腾讯持股比例将由约15.68%下降至9.37%，不再为本公司主要股东</strong></p>\n  <p>36氪获悉，快手公告，已获悉腾讯控股有限公司于2026年7月6日（交易时段后），透过场外大宗交易方式向若干买方出售合共272,947,700股本公司B类股份，该等买方为若干独立第三方且与本公司及其关连人士并无关连。出售事项完成后，腾讯持股比例将由约15.68%下降至9.37%，并不再为本公司主要股东。腾讯表示，其对本集团长远发展前景拥有信心，双方亦会继续维持共赢关系，包括延续双方的战略合作。本公司预期出售事项将不会对本集团营运产生任何重大不利影响。</p>\n  <p><strong>上半年上海脑机接口融资事件数量占全国近60%</strong></p>\n  <p>在6日举行的“活力中国调研行”上海站主题采访活动情况介绍会上，上海市科委主任骆大进表示，上海强化战略敏捷，超前布局前沿科技与未来产业。目前，重点跟踪的战略前沿领域已增至20个。全市集聚脑机接口企业数量占全国1/3，上半年融资事件数量和披露金额分别占全国近60%和40%；集聚了全国半数的中性原子量子计算整机企业、硅光和第四代半导体企业。打造了4个市级未来产业集聚区、2个未来产业培育区。（第一财经）</p>\n  <p><strong>爱仕达与智元机器人签署战略合作协议，五大方向开展深度合作</strong></p>\n  <p>爱仕达下属人形机器人子公司与智元机器人于7月6日正式签署战略合作协议。根据协议，双方将在采购订单与产品交付、具身智能机器人委托制造、具身智能机器人供应链合作、技术支持及场景化赋能、股权投资及合资公司设立五大方向开展深度合作。（财联社）</p>\n  <p><strong>保时捷考虑在德国再裁减4000个岗位</strong></p>\n  <p>当地时间7月5日，据报道，知情人士表示，保时捷考虑在其祖文豪森工厂再裁员多达4000人，此前该公司已同意削减3900个岗位。其中，行政和管理部门将尤其受到影响。下一轮裁员的具体规模预计将在7月底前确定。此外，报道称，保时捷还可能将其魏斯阿赫研发基地的产能减少约30%。（界面新闻）</p>\n  <p><strong>海力士半导体大连公司法定代表人变更</strong></p>\n  <p>36氪获悉，天眼查App显示，近日，爱思开海力士半导体（大连）有限公司发生工商变更，朴元星卸任法定代表人、董事，由李秉起接任。该公司成立于2021年5月，注册资本31亿美元，经营范围包括集成电路制造、集成电路芯片及产品制造、电子元器件制造、集成电路芯片设计及服务等，由SK海力士株式会社全资持股。</p>\n  <p><strong>捷豹路虎中国经销商停售所有国产车型，经销商十年亏损渠道缩水近六成</strong></p>\n  <p>据报道，2026年7月捷豹路虎中国经销商停止进购所有国产车型。此前2026年3月国产车型全系停产（发现运动版、捷豹XEL、XFL、E-PACE已于2025年陆续停产），合资公司终结了所有国产车型生产与销售。多位经销商透露，自2015年国产车型投产以来，国产车在经销端几乎全线亏损，十年间单车平均亏损约3万元。</p>\n  <p>厂家通过进口车与国产车配额捆绑的商务政策（为获得高利润进口车资源，经销商被动承担损失），长期库存压力与配额绑定侵蚀渠道利润并透支国产车型价格体系。2018年经销商数量达历史顶峰约240家，截至目前锐减至百余家（正常运营仅约90家），渠道规模缩水近六成。（财经汽车）</p>\n  <p><strong>央视曝光滴眼液涉事企业被立案，对滴眼液乱象开展调查处置</strong></p>\n  <p>7月5日，总台报道了网售“健字号”滴眼液乱象。河南省南阳市镇平县两家企业在获得行业协会的“健字号”批文后，或提供包装或违规生产所谓“保健用品”，并宣传其护眼功效。目前，已依法控制两家涉事企业的法定代表人和实际控制人袁某某、王某、李某某，对企业涉嫌违法违规行为立案调查；依法查封相关生产设备、材料和台账资料等；向涉事外省企业所在地市场监管部门发函协查；协调网络销售平台下架相关产品。（央视新闻）</p>\n  <p><strong>郭明錤爆料最新苹果折叠手机：出货量明显不足，或重现“饥饿营销”</strong></p>\n  <p>知名分析师郭明錤分析指出，苹果可折叠iPhone预计2026年下半年出货，但初期供应可能不足。他称自己的行业调查显示，2026年下半年可折叠iPhone的组装出货量约为700万至800万部，第三季度出货量约为50万至100万部，约占苹果总出货量的10%。该产品价格可能在2300至2500美元左右，而供应限制将导致转售价格溢价50%至100%。他认为判断可折叠iPhone销售前景的关键在于2026年末至2027年第一季度。（财联社）</p>\n  <p><strong>苹果供应商立讯精密据悉香港的上市价格定在区间顶端</strong></p>\n  <p>苹果供应商立讯精密据悉香港的上市价格定在区间顶端。（21财经）</p>\n  <p><strong>中国航天科技集团商业火箭公司增资至41.7亿，增幅约199%</strong></p>\n  <p>36氪获悉，天眼查App显示，近日，中国航天科技集团商业火箭有限公司发生工商变更，注册资本由13.96亿人民币增至约41.7亿人民币，增幅约199%。该公司成立于2024年9月，法定代表人为候正全，经营范围包括民用航天发射技术服务，火箭控制系统研发，火箭发动机研发与制造，火箭发射设备研发和制造，特种设备设计，技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广等，由中国航天科技集团有限公司、中国长城工业集团有限公司、上海航天设备制造总厂有限公司等共同持股。</p>\n  <p><strong>英特尔回应CPU涨价，入门级产品基本保持原价</strong></p>\n  <p>继DRAM、NAND Flash等存储器价格持续上涨之后，CPU成为最新加入涨价阵营的核心零部件。7月6日，英特尔对该媒体确认了涨价信息。英特尔表示，价格调整是基于不断变化的市场动态定期对供应链以及与之相关成本的持续监控。根据行业对英特产品涨价前后的对比调研，此次涨价主要针对部分消费级酷睿Ultra处理器以及Xeon服务器处理器。其中，高端Xeon服务器产品整体涨幅达到7%至12%，而入门级产品基本保持原价；消费级产品也仅对酷睿Ultra 7 270K Plus、酷睿Ultra 5 250K Plus等部分型号进行了调整。（第一财经）</p>\n  <p><strong>美联储7月维持利率不变的概率为77%</strong></p>\n  <p>据CME“美联储观察”：美联储7月维持利率不变的概率为77%，累计加息25个基点的概率为23%。 美联储到9月维持利率不变的概率为41.9%，累计加息25个基点的概率为47.6%，累计加息50个基点的概率为10.5%。（财联社）</p>\n  <p><strong>印度市场监管机构拟大幅放宽投资者做空股票的限制</strong></p>\n  <p>据报道，知情人士透露，印度市场监管机构计划大幅放宽投资者做空股票的限制，将可用于融券借贷的股票数量近乎翻倍。印度证券交易委员会还计划降低股票融券的保证金要求。（界面新闻）</p>\n  <p><strong>花旗获准成为LPMCL第五家清算行，贵金属业务取得重大进展</strong></p>\n  <p>花旗周一表示，已获准成为第五家在伦敦场外黄金市场进行交易清算的银行，标志着其贵金属业务取得重大进展。此举拓展了支撑日均交易额约1600亿美元的伦敦黄金市场的清算网络，使花旗集团能够直接参与全球贵金属交易的核心结算业务。（财联社）</p>\n  <p><strong>研究人员借助AI技术发现两种新型超导体</strong></p>\n  <p>芬兰阿尔托大学参与的一个国际研究团队利用人工智能（AI）发现两种新型超导体，为更高效筛选和研发超导材料提供了新的技术路径。这一成果有助于加快新型超导体研发进程，为寻找可在室温下工作的超导材料带来新的希望。（新华社）</p>\n  <p><strong>博通将为苹果开发定制ASIC芯片产品，同意扩大技术协作至2031年</strong></p>\n  <p>博通7月6日向美国证监会提交文件，宣布与苹果公司将签署多年期协议，把双方长期技术合作关系延续至2031年。根据协议，博通将为苹果多代产品开发并供应一系列定制ASIC芯片产品。（界面新闻）</p>\n  <p><strong>美股三大指数集体收涨，大型科技股涨跌不一</strong></p>\n  <p>36氪获悉，7月6日收盘，美股三大指数集体上涨，道指涨0.29%，纳指涨1.12%，标普500指数涨0.72%。大型科技股涨跌不一，特斯拉涨超6%，Meta、Arm涨超2%，谷歌、苹果涨超1%，亚马逊、英伟达小幅上涨；奈飞跌超2%，SpaceX、微软跌近1%。热门中概股普涨，爱奇艺涨超5%，蔚来、B站涨超4%，小鹏集团涨超3%，网易涨超2%，腾讯音乐、阿里巴巴、拼多多涨超1%。</p>\n  <h2>上市进行时</h2>\n  <p><strong>深圳四方精创资讯股份有限公司再次向港交所提交上市申请书</strong></p>\n  <p>36氪获悉，据港交所文件，深圳四方精创资讯股份有限公司再次向港交所提交上市申请书，联席保荐人为招银国际、国信证券。</p>\n  <p><strong>阿根廷可再生能源公司Genneia冲刺美股IPO</strong></p>\n  <p>阿根廷可再生能源生产商Genneia上周四向美国证券交易委员会（SEC）提交文件，计划通过首次公开募股（IPO）筹集至多1亿美元资金，有望成为2019年以来首家在美国上市的阿根廷企业。该公司计划在纽约证券交易所和阿根廷证券交易所双重上市，股票代码为“GENN”。（财联社）</p>\n  <p><strong>超颖电子：拟发行H股并在香港联交所主板挂牌上市</strong></p>\n  <p>36氪获悉，超颖电子公告，公司拟发行H股股票并在香港联交所主板挂牌上市。公司将充分考虑现有股东的利益和境内外资本市场的情况，在股东会决议有效期内或股东同意延长的其他期限内选择适当的时机和发行窗口完成此次H股发行上市。</p>\n  <h2>大公司财报</h2>\n  <p><strong>三星电子预计第二季度营业利润同比暴增1810%</strong></p>\n  <p>三星电子公布第二季度业绩预告，第二季度销售额171.00万亿韩元，同比增长129%，预估169.23万亿韩元，上年同期为74.6万亿韩；第二季度营业利润89.40万亿韩元，同比增长1810%，预估84.2万亿韩元，上年同期为4.7万亿韩元。（财联社）</p>\n  <p><strong>新凤鸣：上半年净利润同比预增94.59%—111.51%</strong></p>\n  <p>36氪获悉，新凤鸣披露业绩预告，预计2026年上半年实现归属于母公司所有者的净利润13.8亿元到15亿元，同比增长94.59%到111.51%。报告期内，行业新增供给有序放缓，景气度回升，市场供需关系优化，产品价差进一步扩大，毛利率同比提升，主营业务盈利能力改善。</p>\n  <p><strong>万华化学：上半年净利润同比预增60.05%—69.85%</strong></p>\n  <p>36氪获悉，万华化学披露业绩预告，预计2026年上半年实现归属于上市公司股东的净利润98亿元到104亿元，同比增长60.05%到69.85%。</p>\n  <p><strong>浙江东方：预计上半年净利润8.72亿元，同比增长约114.25%</strong></p>\n  <p>36氪获悉，浙江东方披露业绩预告，预计2026年上半年归属于母公司所有者的净利润8.72亿元，同比增长约114.25%。</p>\n  <h2>投融资</h2>\n  <p><strong>英国GEO公司geoSurge完成1200万美元种子轮融资</strong></p>\n  <p>36氪获悉，总部位于伦敦的AI公司geoSurge宣布完成1200万美元超额认购的种子轮融资，用于推进其在AI可见性领域的全新方法，帮助品牌塑造自身在ChatGPT、Gemini、Claude等生成式AI系统中的呈现方式。本轮融资由AlbionVC领投，Play Ventures、Octopus Ventures、Celero Ventures、Boost Capital参投，现有投资方Passion Capital与Tuesday Capital跟投，并获得来自Google DeepMind、Microsoft AI与Signal AI的多位天使投资人支持。</p>\n  <h2>酷产品</h2>\n  <p><strong>佑驾创新正式发布四轮足机器人</strong></p>\n  <p>36氪获悉，7月6日，佑驾创新正式发布“Combo”全链路无人物流闭环方案，由其旗下曜行动力打造的四轮足式机器人同步亮相。</p>\n  <p><strong>整理</strong>｜葡萄</p>",
+        "language": "zh-CN",
+        "title_en": "8:01 Krypton丨SK Hynix will be listed on Nasdaq this Friday; 990,000 robot \"companions\" will not last one night? UBTECH responds; Qinghai Provincial Museum responds to \"National first-class cultural relics found with the words TCL\"",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Daily tech and corporate updates",
+        "OtherSubclass": "News Digest",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "商业银行不良处置仍在加速，上半年全行业转让核销合计至少5000亿",
+        "date": "2026-07-07 14:16:54  +0800",
+        "url": "https://36kr.com/newsflashes/3885187316920581?f=rss",
+        "summary": "商业银行仍在加快不良资产的处置。银登中心和机构最新统计数据显示，上半年银登中心转让不良为1011亿元，结合前5个月商业银行不良核销4868亿元，粗略合计上半年全行业不良资产处置至少超5000亿元。 （财联社）",
+        "language": "zh-CN",
+        "title_en": "The disposal of non-performing assets in commercial banks is still accelerating. In the first half of the year, the total transfer write-off in the entire industry was at least 500 billion.",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Commercial bank asset disposal",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "零一万物推出三款“一号位决策AI”产品",
+        "date": "2026-07-07 14:14:08  +0800",
+        "url": "https://36kr.com/newsflashes/3885184582414600?f=rss",
+        "summary": "36氪获悉，7月7日，零一万物宣布推出的三款“一号位决策AI”产品：老板AI、销冠AI、投资官AI，分别面向经营一号位、销售一号位和投资者一号位。",
+        "language": "zh-CN",
+        "title_en": "Lingyiwan launches three “No. 1 decision-making AI” products",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Decision-making AI products launch",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "陕西新疆两地娃哈哈公司完成更名",
+        "date": "2026-07-07 14:10:16  +0800",
+        "url": "https://36kr.com/newsflashes/3885180786634754?f=rss",
+        "summary": "36氪获悉，天眼查App显示，近日，陕西娃哈哈食品有限公司发生工商变更，企业名称变更为陕西宏泽恒枫食品有限公司。该公司成立于2005年1月，法定代表人为曾哲泉，注册资本800万美元，经营范围包括饮料生产、食品销售等，由盛佳集团有限公司、丽水宏博饮料有限公司共同持股。此外，新疆昌吉娃哈哈乳业有限公司近期也发生工商变更，企业名称变更为新疆宏胜恒枫乳业有限公司。",
+        "language": "zh-CN",
+        "title_en": "Wahaha companies in Shaanxi and Xinjiang completed name changes",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Wahaha subsidiaries rename entities",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "广东省新增11款已完成登记的生成式人工智能服务",
+        "date": "2026-07-07 14:06:58  +0800",
+        "url": "https://36kr.com/newsflashes/3885177550156041?f=rss",
+        "summary": "36氪获悉，据网信广东，截至7月7日，广东省新增11款已完成登记的生成式人工智能服务，累计已完成64款生成式人工智能服务登记。",
+        "language": "zh-CN",
+        "title_en": "Guangdong Province adds 11 new generative artificial intelligence services that have been registered",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Guangdong AI services registration",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "韩国企业第一季度持有过剩资金超20.8万亿韩元，创历史新高",
+        "date": "2026-07-07 13:54:18  +0800",
+        "url": "https://36kr.com/newsflashes/3885165100560641?f=rss",
+        "summary": "韩国央行周二公布的数据显示，今年第一季度韩国企业持有的过剩资金达到历史最高水平，因为半导体出口强劲推动了企业盈利。根据韩国央行的数据，截至3月底，非金融企业持有的净金融资产——即金融资产减去金融负债的价值——达到20.8万亿韩元（约合136亿美元），较三个月前的1000亿韩元大幅增长。（新浪财经）",
+        "language": "zh-CN",
+        "title_en": "South Korean companies held excess funds of more than 20.8 trillion won in the first quarter, a record high",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "South Korean firm excess funds",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "追觅在武汉成立新信息技术公司",
+        "date": "2026-07-07 13:48:59  +0800",
+        "url": "https://36kr.com/newsflashes/3885159859941380?f=rss",
+        "summary": "36氪获悉，天眼查App显示，近日，追觅信息技术（武汉）有限公司成立，法定代表人为姚康，注册资本100万人民币，经营范围包括信息技术咨询服务、智能机器人销售、软件开发等，由追觅信息技术（苏州）有限公司全资持股。",
+        "language": "zh-CN",
+        "title_en": "Zhuimi established a new information technology company in Wuhan",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Dreame new IT company establishment",
+        "OtherSubclass": "Entrepreneurship and Startups",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "36Kr",
+        "title": "智谱涨幅扩大至10%",
+        "date": "2026-07-07 13:43:10  +0800",
+        "url": "https://36kr.com/newsflashes/3885154142007305?f=rss",
+        "summary": "36氪获悉，智谱涨幅扩大至10%。此前智谱辟谣“撤回A股IPO辅导备案”：不属实，存在恶意炒作之嫌，A股发行辅导工作已完成。",
+        "language": "zh-CN",
+        "title_en": "Zhipu’s increase expanded to 10%",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Zhipu stock price gain",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "沪深两市成交额突破2万亿",
+        "date": "2026-07-07 13:42:46  +0800",
+        "url": "https://36kr.com/newsflashes/3885153755918592?f=rss",
+        "summary": "36氪获悉，沪深两市成交额突破2万亿。",
+        "language": "zh-CN",
+        "title_en": "The turnover of Shanghai and Shenzhen stock markets exceeded 2 trillion",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Stock market turnover hits record",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "宁德时代入股江苏开洋船舶公司",
+        "date": "2026-07-07 13:31:08  +0800",
+        "url": "https://36kr.com/newsflashes/3885142311858176?f=rss",
+        "summary": "36氪获悉，天眼查App显示，近日，江苏开洋船舶有限公司发生工商变更，原股东常州市龙城船舶修造有限公司退出，新增宁德时代电船科技有限公司为股东。该公司成立于2024年1月，法定代表人为邹宇，注册资本7000万人民币，经营范围包括船舶制造、船舶设计、船舶修理、新能源原动设备制造等，现由江苏浩泰新能源科技有限公司、苏州丛蓉泓浩创业投资合伙企业（有限合伙）及上述新增股东等共同持股。",
+        "language": "zh-CN",
+        "title_en": "CATL invests in Jiangsu Kaiyang Shipping Company",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "CATL invests in shipping company",
+        "OtherSubclass": "Infrastructure and Utilities",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "36Kr",
+        "title": "现货黄金日内跌幅扩大至1%",
+        "date": "2026-07-07 13:16:59  +0800",
+        "url": "https://36kr.com/newsflashes/3885128410984453?f=rss",
+        "summary": "36氪获悉，现货黄金日内跌幅扩大至1%，报4121.74美元/盎司。",
+        "language": "zh-CN",
+        "title_en": "Spot gold's intraday decline expanded to 1%",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Gold price drops intraday",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "韩国监管机构警告股票投资过度杠杆化",
+        "date": "2026-07-07 13:14:20  +0800",
+        "url": "https://36kr.com/newsflashes/3885125806206984?f=rss",
+        "summary": "韩国金融监管机构负责人周二表示，过度杠杆化的股票投资可能损害家庭的财务健康，并警告散户投资者在股市上涨时不要承担过高的风险。韩国金融监督院（FSS）院长李灿镇在与相关官员就金融消费者保护问题举行会议时发表了上述言论。他表示，如果家庭金融资产过度集中于某些资产，或以超出可接受水平的杠杆进行投资，家庭的财务状况可能会受到严重损害。（新浪财经）",
+        "language": "zh-CN",
+        "title_en": "South Korean regulator warns of excessive leverage in stock investments",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Risk warning on stock leverage",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "创业板指跌超2%",
+        "date": "2026-07-07 13:10:02  +0800",
+        "url": "https://36kr.com/newsflashes/3885121571155974?f=rss",
+        "summary": "36氪获悉，创业板指跌超2%。",
+        "language": "zh-CN",
+        "title_en": "GEM index fell more than 2%",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "GEM index decline update",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "快手轻雀在上海成立新公司",
+        "date": "2026-07-07 13:07:53  +0800",
+        "url": "https://36kr.com/newsflashes/3885111713870082?f=rss",
+        "summary": "36氪获悉，天眼查App显示，近日，上海可灵星图科技有限公司成立，法定代表人为宋成儒，注册资本1000万人民币，经营范围包括人工智能基础软件开发、人工智能应用软件开发、人工智能行业应用系统集成服务等。股东信息显示，该公司由北京可灵智能科技有限公司全资持股。",
+        "language": "zh-CN",
+        "title_en": "Kuaishou Qingque establishes new company in Shanghai",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Kuaishou establishes AI company",
+        "OtherSubclass": "Entrepreneurship and Startups",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "AI小程序成长计划上新混元Hy3",
+        "date": "2026-07-07 12:53:31  +0800",
+        "url": "https://36kr.com/newsflashes/3885105346277381?f=rss",
+        "summary": "36氪获悉，据腾讯公开课，小程序成长计划再次升级，据了解，本次升级把资源扶持加码到底，大模型Token额度从1亿提升至10亿，AI生图额度从1万张提升至10万张；同时模型全面升级至混元最新模型Hy3与Hy Image 3.0生图模型。",
+        "language": "zh-CN",
+        "title_en": "AI mini program growth plan launches new Hunyuan Hy3",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Tencent AI model upgrade",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "Omdia：中国半导体市场规模将在2026年超过8000亿美金，存储芯片市场总额暴涨262.9%",
+        "date": "2026-07-07 12:52:30  +0800",
+        "url": "https://36kr.com/newsflashes/3885104344527109?f=rss",
+        "summary": "36氪获悉，Omdia报告显示，2026年中国半导体市场预计同比增长率将大幅上修至92.9%，达8120.8亿美元，相较于《AMFT出货量：中国——2025年四季度更新》版本 (2026年中国半导体市场预计增长31.26%，市场规模将达到5465亿美元)整体上调了2656亿美金，增幅达到48.6%。根据Omdia 2026年二季度最新数据显示，2026年中国半导体存储市场预计增长率大幅上修至262.9%，达4496亿美元。",
+        "language": "zh-CN",
+        "title_en": "Omdia: China’s semiconductor market will exceed US$800 billion in 2026, and the total memory chip market will surge by 262.9%",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "China semiconductor market forecast",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "必和必拓获批启动智利150亿美元铜矿扩张",
+        "date": "2026-07-07 12:24:20  +0800",
+        "url": "https://36kr.com/newsflashes/3885057092284676?f=rss",
+        "summary": "7月7日消息，必和必拓已获得智利埃斯康迪达铜矿扩张项目的首个重大环保批准，标志着总价高达147亿美元的系列工程正式启动。（界面）",
+        "language": "zh-CN",
+        "title_en": "BHP Billiton gets approval to launch $15 billion copper mine expansion in Chile",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "BHP copper mine expansion approval",
+        "OtherSubclass": "Infrastructure and Utilities",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "36Kr",
+        "title": "百度旗下基金等入股无界智航",
+        "date": "2026-07-07 12:16:48  +0800",
+        "url": "https://36kr.com/newsflashes/3885055580794886?f=rss",
+        "summary": "36氪获悉，天眼查App显示，近日，深圳无界智航科技有限公司发生工商变更，新增百度旗下三亚百川致新私募股权投资基金合伙企业（有限合伙）、深圳鼎晖泰科天使创业投资合伙企业（有限合伙）、杭州初者之心股权投资合伙企业（有限合伙）等为股东，穆世龙卸任法定代表人，由熊祺接任，同时，注册资本由60万人民币增至约564.4万人民币。",
+        "language": "zh-CN",
+        "title_en": "Baidu’s funds and others invest in Unbounded Intelligent Aviation",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Baidu invests in aviation firm",
+        "OtherSubclass": "Entrepreneurship and Startups",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "半日主力资金加仓电子、传媒股，抛售医药股",
+        "date": "2026-07-07 12:12:22  +0800",
+        "url": "https://36kr.com/newsflashes/3885055138869512?f=rss",
+        "summary": "主力资金早间净流入电子、传媒、通信、机械设备、电力设备、计算机等板块，净流出医药生物、非银金融、交通运输、食品饮料、公用事业、石油石化等板块。具体到个股来看，华天科技、长电科技、中际旭创获净流入41.68亿元、25.59亿元、15.74亿元。净流出方面，德明利、澜起科技、东方财富遭抛售9.00亿元、8.64亿元、7.16亿元。（第一财经）",
+        "language": "zh-CN",
+        "title_en": "During the half-day, major funds increased positions in electronics and media stocks and sold pharmaceutical stocks.",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Main fund inflow sector report",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "36Kr",
+        "title": "香港交易所与跨境清算公司签署合作备忘录，加强香港离岸人民币结算基础设施建设",
+        "date": "2026-07-07 12:03:42  +0800",
+        "url": "https://36kr.com/newsflashes/3885056363639046?f=rss",
+        "summary": "香港交易所今天宣布，已与人民币跨境支付系统（CIPS）的营运机构—跨境银行间支付清算有限责任公司（跨境清算公司）签署合作备��录，共同探讨深化跨境人民币业务合作，支持香港固定收益及货币生态圈的长远发展。据合作备忘录，香港交易所旗下附属公司香港场外结算有限公司（场外结算公司）拟于2026年底前提交成为CIPS直接参与者的申请，跨境清算公司将为该申请提供必要的辅导及培训。（财联社）",
+        "language": "zh-CN",
+        "title_en": "Hong Kong Exchanges and Clearing Corporation signed a memorandum of cooperation to strengthen the construction of offshore RMB settlement infrastructure in Hong Kong",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "HKEx RMB settlement cooperation",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "36Kr",
+        "title": "恒指午间休盘跌0.42%，恒生科技指数0.28%",
+        "date": "2026-07-07 12:01:58  +0800",
+        "url": "https://36kr.com/newsflashes/3885054658294017?f=rss",
+        "summary": "36氪获悉，恒指午间休盘跌0.42%，恒生科技指数0.28%；半导体、有色金属、食品板块领跌，兆易创新跌超8%，大唐黄金跌超6%，蒙牛乳业跌超4%；软件服务、银行板块走强，优必选跌超4%，渣打银行涨超1%；南向资金净买入30.61亿港元。",
+        "language": "zh-CN",
+        "title_en": "The Hang Seng Index fell 0.42% at the midday break, and the Hang Seng Technology Index fell 0.28%.",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Financial market indices summary",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "OFweek SmartHome",
+        "title": "欧洲疯抢中国空调背后，被遗忘的格力",
+        "date": "2026-07",
+        "url": "https://smarthome.ofweek.com/2026-07/ART-91005-8130-30693535.html",
+        "summary": "空调,海外市场",
+        "language": "zh-CN",
+        "title_en": "Behind Europe’s rush to grab Chinese air conditioners, the forgotten Gree",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Gree's position in Europe",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "OFweek SmartHome",
+        "title": "家电高端市场还有戏吗？",
+        "date": "2026-07",
+        "url": "https://smarthome.ofweek.com/2026-07/ART-91009-8420-30693523.html",
+        "summary": "家电市场,高端",
+        "language": "zh-CN",
+        "title_en": "Is there still room for high-end home appliance market?",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "High-end appliance market analysis",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "OFweek SmartHome",
+        "title": "2026年上半年中国家电外需走强：高温与世界杯带动出口放量",
+        "date": "2026-07",
+        "url": "https://smarthome.ofweek.com/2026-07/ART-91009-8420-30693479.html",
+        "summary": "家电,出口",
+        "language": "zh-CN",
+        "title_en": "China’s external demand for home appliances will strengthen in the first half of 2026: high temperatures and the World Cup will drive export volume",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Appliance export market outlook",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "OFweek SmartHome",
+        "title": "科沃斯、石头科技、追觅：智能清洁三巨头，谁在破局，谁在迷途？",
+        "date": "2026-07",
+        "url": "https://smarthome.ofweek.com/2026-07/ART-91005-8420-30693470.html",
+        "summary": "智能清洁,电器市场",
+        "language": "zh-CN",
+        "title_en": "Ecovacs, Roborock Technology, and Zhuimi: Among the three giants of smart cleaning, who is breaking through and who is lost?",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Cleaning appliance market competition",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     }
 ]
