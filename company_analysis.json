@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-05T23:05:46Z",
-  "total_articles": 211,
+  "generated_at": "2026-07-12T22:55:52Z",
+  "total_articles": 212,
   "companies": [
     "Samsung",
     "Haier",
@@ -9,8 +9,8 @@
     "Whirlpool"
   ],
   "totals": {
+    "Samsung": 152,
     "Midea": 19,
-    "Samsung": 151,
     "Whirlpool": 6,
     "BSH (Bosch/Siemens)": 12,
     "Haier": 23
@@ -33,19 +33,8 @@
     "2026-Q3"
   ],
   "by_quarter": {
-    "Midea": {
-      "2026-Q3": 1,
-      "2026-Q2": 1,
-      "2025-Q4": 4,
-      "2025-Q3": 5,
-      "2025-Q2": 3,
-      "2025-Q1": 1,
-      "2024-Q3": 1,
-      "2024-Q1": 1,
-      "2023-Q3": 1,
-      "2023-Q2": 1
-    },
     "Samsung": {
+      "2026-Q3": 1,
       "2026-Q2": 9,
       "2026-Q1": 14,
       "2025-Q4": 12,
@@ -59,6 +48,18 @@
       "2023-Q4": 8,
       "2023-Q3": 17,
       "2023-Q2": 7
+    },
+    "Midea": {
+      "2026-Q3": 1,
+      "2026-Q2": 1,
+      "2025-Q4": 4,
+      "2025-Q3": 5,
+      "2025-Q2": 3,
+      "2025-Q1": 1,
+      "2024-Q3": 1,
+      "2024-Q1": 1,
+      "2023-Q3": 1,
+      "2023-Q2": 1
     },
     "Whirlpool": {
       "2026-Q2": 6
@@ -96,6 +97,18 @@
     "Other"
   ],
   "by_theme": {
+    "Samsung": {
+      "AI": 95,
+      "Sustainability & Energy": 29,
+      "Laundry": 25,
+      "Design & Events": 113,
+      "IoT & Connectivity": 41,
+      "Refrigeration": 21,
+      "Cooking & Kitchen": 21,
+      "Hygiene & Health": 4,
+      "Business & Corporate": 8,
+      "Other": 3
+    },
     "Midea": {
       "Design & Events": 8,
       "Business & Corporate": 6,
@@ -105,18 +118,6 @@
       "Cooking & Kitchen": 3,
       "IoT & Connectivity": 2,
       "Sustainability & Energy": 2
-    },
-    "Samsung": {
-      "AI": 94,
-      "Design & Events": 112,
-      "IoT & Connectivity": 41,
-      "Sustainability & Energy": 28,
-      "Laundry": 24,
-      "Refrigeration": 21,
-      "Cooking & Kitchen": 21,
-      "Hygiene & Health": 4,
-      "Business & Corporate": 8,
-      "Other": 3
     },
     "Whirlpool": {
       "Design & Events": 6,
@@ -145,13 +146,13 @@
     }
   },
   "date_range": {
+    "Samsung": {
+      "earliest": "2023-06-01",
+      "latest": "2026-07-08"
+    },
     "Midea": {
       "earliest": "2023-04-01",
       "latest": "2026-07-01"
-    },
-    "Samsung": {
-      "earliest": "2023-06-01",
-      "latest": "2026-06-23"
     },
     "Whirlpool": {
       "earliest": "2026-05-06",
