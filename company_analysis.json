@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-12T22:55:52Z",
-  "total_articles": 212,
+  "generated_at": "2026-07-19T22:57:02Z",
+  "total_articles": 215,
   "companies": [
     "Samsung",
     "Haier",
@@ -9,8 +9,8 @@
     "Whirlpool"
   ],
   "totals": {
-    "Samsung": 152,
-    "Midea": 19,
+    "Samsung": 154,
+    "Midea": 20,
     "Whirlpool": 6,
     "BSH (Bosch/Siemens)": 12,
     "Haier": 23
@@ -34,7 +34,7 @@
   ],
   "by_quarter": {
     "Samsung": {
-      "2026-Q3": 1,
+      "2026-Q3": 3,
       "2026-Q2": 9,
       "2026-Q1": 14,
       "2025-Q4": 12,
@@ -53,7 +53,7 @@
       "2026-Q3": 1,
       "2026-Q2": 1,
       "2025-Q4": 4,
-      "2025-Q3": 5,
+      "2025-Q3": 6,
       "2025-Q2": 3,
       "2025-Q1": 1,
       "2024-Q3": 1,
@@ -98,25 +98,25 @@
   ],
   "by_theme": {
     "Samsung": {
-      "AI": 95,
+      "AI": 97,
+      "IoT & Connectivity": 43,
+      "Cooking & Kitchen": 22,
+      "Design & Events": 115,
+      "Laundry": 26,
       "Sustainability & Energy": 29,
-      "Laundry": 25,
-      "Design & Events": 113,
-      "IoT & Connectivity": 41,
       "Refrigeration": 21,
-      "Cooking & Kitchen": 21,
       "Hygiene & Health": 4,
       "Business & Corporate": 8,
       "Other": 3
     },
     "Midea": {
-      "Design & Events": 8,
+      "Design & Events": 9,
       "Business & Corporate": 6,
       "AI": 4,
       "Other": 4,
       "Refrigeration": 1,
-      "Cooking & Kitchen": 3,
-      "IoT & Connectivity": 2,
+      "Cooking & Kitchen": 4,
+      "IoT & Connectivity": 3,
       "Sustainability & Energy": 2
     },
     "Whirlpool": {
@@ -148,7 +148,7 @@
   "date_range": {
     "Samsung": {
       "earliest": "2023-06-01",
-      "latest": "2026-07-08"
+      "latest": "2026-07-16"
     },
     "Midea": {
       "earliest": "2023-04-01",
