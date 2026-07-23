@@ -1,180 +1,180 @@
 {
   "version": 1,
-  "updated_at": "2026-07-07T22:16:48Z",
+  "updated_at": "2026-07-23T05:48:02Z",
   "classes": [
     {
       "name": "Artificial Intelligence",
       "description": "Developments, applications, and corporate activities in artificial intelligence.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 133
+      "count": 188
     },
     {
       "name": "Gaming",
       "description": "News, updates, and releases in the video game and interactive entertainment industry.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 19
+      "count": 32
     },
     {
       "name": "Streaming Services",
       "description": "Developments, subscription models, and news related to digital media streaming platforms.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Consumer Electronics",
       "description": "Hardware releases, reviews, and news regarding personal tech and consumer gadgets.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 102
+      "count": 139
     },
     {
       "name": "Space Industry",
       "description": "Commercial spaceflight, satellite technology, and outer space exploration initiatives.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 20
+      "count": 23
     },
     {
       "name": "Enterprise Software",
       "description": "Developments and operational events concerning software and IT services used by businesses.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 37
+      "count": 51
     },
     {
       "name": "Finance and Markets",
       "description": "Stock market events, corporate mergers, acquisitions, and financial services news.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 204
+      "count": 316
     },
     {
       "name": "Cybersecurity",
       "description": "Information security, encryption technology, data breaches, and digital safety.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 48
+      "count": 70
     },
     {
       "name": "Business Regulation",
       "description": "Government guidelines, antitrust laws, consumer protection, and business compliance.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 42
+      "count": 63
     },
     {
       "name": "Toys and Hobbies",
       "description": "Collectible items, toys, hobbies, and fan-oriented miniature models.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 8
+      "count": 15
     },
     {
       "name": "Transportation",
       "description": "News regarding commercial aviation, public transit, and automotive technologies like autonomous driving.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 61
+      "count": 76
     },
     {
       "name": "Science",
       "description": "Academic studies, research findings, and scientific discoveries in various disciplines.",
       "created_at": "2026-06-23T13:40:57Z",
-      "count": 27
+      "count": 41
     },
     {
       "name": "Infrastructure and Utilities",
       "description": "News regarding energy generation, public utilities, and critical physical infrastructure operations.",
       "created_at": "2026-06-23T13:41:51Z",
-      "count": 26
+      "count": 31
     },
     {
       "name": "Retail and Lifestyle",
       "description": "News, business activities, and consumer trends in retail, fashion, food, and lifestyle products.",
       "created_at": "2026-06-23T13:42:26Z",
-      "count": 179
+      "count": 248
     },
     {
       "name": "Semiconductors",
       "description": "Developments, manufacturing, corporate activities, and market trends in the microchip and semiconductor industry.",
       "created_at": "2026-06-23T13:43:09Z",
-      "count": 45
+      "count": 65
     },
     {
       "name": "Sports",
       "description": "News, events, achievements, and updates from the world of professional sports and athletics.",
       "created_at": "2026-06-23T13:43:09Z",
-      "count": 6
+      "count": 8
     },
     {
       "name": "Entertainment and Media",
       "description": "News and updates regarding movies, television, music, theater, and the broader media entertainment industry.",
       "created_at": "2026-06-23T13:43:09Z",
-      "count": 22
+      "count": 33
     },
     {
       "name": "Public Health",
       "description": "News regarding disease outbreaks, global health statistics, healthcare systems, and medical news.",
       "created_at": "2026-06-23T13:44:11Z",
-      "count": 4
+      "count": 14
     },
     {
       "name": "Social Media",
       "description": "Developments, features, and platform updates for social networking and interactive media services.",
       "created_at": "2026-06-23T13:49:24Z",
-      "count": 11
+      "count": 20
     },
     {
       "name": "Personal Commentary",
       "description": "Articles featuring personal opinions, experiences, or anecdotal stories that do not fit into specific industry categories.",
       "created_at": "2026-06-23T18:31:02Z",
-      "count": 12
+      "count": 24
     },
     {
       "name": "Entrepreneurship and Startups",
       "description": "News and discussions related to founding, growth, funding, and challenges of new businesses and startups.",
       "created_at": "2026-06-23T18:32:03Z",
-      "count": 14
+      "count": 33
     },
     {
       "name": "Business Strategy",
       "description": "Strategic announcements, corporate restructuring, and major business direction changes for companies across various industries.",
       "created_at": "2026-06-23T18:32:27Z",
-      "count": 25
+      "count": 49
     },
     {
       "name": "Robotics",
       "description": "News regarding the development, testing, and deployment of autonomous and specialized robotic systems.",
       "created_at": "2026-06-25T21:30:29Z",
-      "count": 10
+      "count": 29
     },
     {
       "name": "Arts and Culture",
       "description": "News, exhibitions, events, and developments in fine arts, cultural heritage, and creative design.",
       "created_at": "2026-06-27T22:10:25Z",
-      "count": 6
+      "count": 11
     },
     {
       "name": "News Digest",
       "description": "Curated daily or periodic summaries and newsletters covering a wide range of business, technology, and industry developments.",
       "created_at": "2026-06-27T22:11:23Z",
-      "count": 9
+      "count": 19
     },
     {
       "name": "Real Estate",
       "description": "Developments, market trends, transactions, and policy updates in the residential and commercial property sector.",
       "created_at": "2026-06-27T22:12:04Z",
-      "count": 5
+      "count": 10
     },
     {
       "name": "Home Appliances",
       "description": "News, market trends, and product developments in the broader household and major appliance industries.",
       "created_at": "2026-07-01T22:26:34Z",
-      "count": 29
+      "count": 101
     },
     {
       "name": "Logistics and Delivery",
       "description": "News and updates regarding postal services, shipping, freight, and supply chain logistics.",
       "created_at": "2026-07-07T06:25:01Z",
-      "count": 2
+      "count": 12
     },
     {
       "name": "Education",
       "description": "News, policies, and developments related to academic curriculum, schools, and teaching.",
       "created_at": "2026-07-07T22:16:23Z",
-      "count": 1
+      "count": 3
     }
   ]
 }
