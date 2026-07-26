@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-19T22:57:02Z",
-  "total_articles": 215,
+  "generated_at": "2026-07-26T23:02:29Z",
+  "total_articles": 217,
   "companies": [
     "Samsung",
     "Haier",
@@ -9,9 +9,9 @@
     "Whirlpool"
   ],
   "totals": {
+    "Whirlpool": 8,
     "Samsung": 154,
     "Midea": 20,
-    "Whirlpool": 6,
     "BSH (Bosch/Siemens)": 12,
     "Haier": 23
   },
@@ -33,6 +33,10 @@
     "2026-Q3"
   ],
   "by_quarter": {
+    "Whirlpool": {
+      "2026-Q3": 2,
+      "2026-Q2": 6
+    },
     "Samsung": {
       "2026-Q3": 3,
       "2026-Q2": 9,
@@ -60,9 +64,6 @@
       "2024-Q1": 1,
       "2023-Q3": 1,
       "2023-Q2": 1
-    },
-    "Whirlpool": {
-      "2026-Q2": 6
     },
     "BSH (Bosch/Siemens)": {
       "2025-Q3": 2,
@@ -97,6 +98,10 @@
     "Other"
   ],
   "by_theme": {
+    "Whirlpool": {
+      "Business & Corporate": 8,
+      "Design & Events": 6
+    },
     "Samsung": {
       "AI": 97,
       "IoT & Connectivity": 43,
@@ -118,10 +123,6 @@
       "Cooking & Kitchen": 4,
       "IoT & Connectivity": 3,
       "Sustainability & Energy": 2
-    },
-    "Whirlpool": {
-      "Design & Events": 6,
-      "Business & Corporate": 6
     },
     "BSH (Bosch/Siemens)": {
       "Design & Events": 8,
@@ -146,6 +147,10 @@
     }
   },
   "date_range": {
+    "Whirlpool": {
+      "earliest": "2026-05-06",
+      "latest": "2026-07-23"
+    },
     "Samsung": {
       "earliest": "2023-06-01",
       "latest": "2026-07-16"
@@ -153,10 +158,6 @@
     "Midea": {
       "earliest": "2023-04-01",
       "latest": "2026-07-01"
-    },
-    "Whirlpool": {
-      "earliest": "2026-05-06",
-      "latest": "2026-06-15"
     },
     "BSH (Bosch/Siemens)": {
       "earliest": "2023-09-02",
