@@ -64,18 +64,34 @@ CI: `.github/workflows/company-news.yml` runs the incremental update weekly
 
 ## Products page (`/products`)
 
-A washing-machine technology comparison across all 8 brands, served from a
-curated, editable dataset (`products.json`) — `app.py` route `/products` +
-`/api/products`, rendered by `templates/products.html`.
+Four product categories (washing machines, washer-dryers, dryers, dishwashers)
+behind a tab bar, each stacking two datasets — `app.py` route `/products`,
+rendered by `templates/products.html`:
+
+1. **EPREL energy benchmark** (`eprel_products.json`, `/api/eprel`) — the top
+   1000 models per category scraped from the EU energy-label registry by
+   `eprel_scraper.py`, ranked by energy class then weighted energy consumption.
+   Sortable on every column, filterable by brand / class / tracked brands, with
+   a "best per brand" toggle. This is the same shape as the hand-built
+   `eprel/eprel_washer_dryer_benchmark.xlsx`, generated for all four categories.
+2. **Curated technology comparison** (`products.json`, `/api/products`) — below
+   the table: technology matrix, flagship cards and spec table. Each category
+   brings its own spec fields and technology list, and rows marked
+   `"status": "placeholder"` render as "to research".
 
 - **Why curated, not scraped:** product-spec pages are JS-rendered, region-gated
   and bot-protected, so reliable uniform scraping isn't feasible. `products.json`
-  holds each brand's flagship washer (model, type, capacity, spin, energy, motor,
-  highlight, source URL) plus a per-technology map (`yes`/`partial`/`no`).
-- **The page:** a technology matrix (8 models × 10 technologies) with a
-  per-technology availability count, flagship product cards, and a spec table.
-  Click a technology column to highlight it; filter by "has technology".
+  holds each brand's flagship model per category (specs, highlight, source URL)
+  plus a per-technology map (`yes`/`partial`/`no`/`unknown`).
+- **The page:** category tabs, then a technology matrix (8 models × 10
+  technologies) with a per-technology availability count, flagship product cards,
+  and a spec table. Click a technology column to highlight it; filter by "has
+  technology" or hide rows still awaiting research.
 - **Editing:** just edit `products.json` — no code changes needed. Add a brand by
-  appending a product object; add a technology by extending `technologies`.
+  appending a product object with its `category`; add a technology or spec field
+  by extending that category's `technologies` / `specs`; add a whole category by
+  appending to `categories`.
+- **Research status:** washing machines are researched; washer-dryer, dryer and
+  dishwasher rows are placeholders (8 brands each) waiting to be filled in.
 - Data sourced 2026-06-15 from official product/newsroom pages (links in each
   product's `url`). Refresh periodically as flagships change.

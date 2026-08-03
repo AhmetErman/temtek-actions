@@ -9,6 +9,7 @@ DATA_FILE = "tech_news_classified.json"
 COMPANY_NEWS_FILE = "company_news.json"
 COMPANY_ANALYSIS_FILE = "company_analysis.json"
 PRODUCTS_FILE = "products.json"
+EPREL_FILE = "eprel_products.json"
 
 
 def _load_json(path, default):
@@ -65,6 +66,14 @@ def products():
 @app.route('/api/products')
 def get_products():
     data = _load_json(PRODUCTS_FILE, {})
+    if isinstance(data, dict) and "error" in data:
+        return jsonify(data), 500
+    return jsonify(data)
+
+@app.route('/api/eprel')
+def get_eprel():
+    # Absent until eprel_scraper.py has run once; the page degrades gracefully.
+    data = _load_json(EPREL_FILE, {"categories": {}})
     if isinstance(data, dict) and "error" in data:
         return jsonify(data), 500
     return jsonify(data)

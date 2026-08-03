@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washing Machine Tech Comparison</title>
-    <meta name="description" content="Flagship washing-machine comparison and technology matrix across top home-appliance brands.">
+    <title>Appliance Tech Comparison</title>
+    <meta name="description" content="Flagship washing machine, washer-dryer, dryer and dishwasher comparison and technology matrix across top home-appliance brands.">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -13,6 +13,7 @@
             --text-1: #1c1917; --text-2: #57534e; --text-3: #a8a29e;
             --accent: #2563eb; --accent-bg: #eff6ff; --accent-border: #bfdbfe;
             --yes: #16a34a; --yes-bg: #dcfce7; --partial: #d97706; --partial-bg: #fef3c7; --no: #d6d3d1;
+            --unknown: #a8a29e; --unknown-bg: #f5f5f4;
             --radius: 10px;
         }
         body.dark-theme {
@@ -20,6 +21,7 @@
             --text-1: #f5f5f4; --text-2: #d6d3d1; --text-3: #78716c;
             --accent: #60a5fa; --accent-bg: #172554; --accent-border: #1e40af;
             --yes: #4ade80; --yes-bg: #064e3b; --partial: #fbbf24; --partial-bg: #451a03; --no: #44403c;
+            --unknown: #78716c; --unknown-bg: #292524;
         }
         body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text-1); line-height: 1.5; min-height: 100vh; transition: background .2s, color .2s; }
         .site-header { border-bottom: 1px solid var(--border); background: var(--surface); padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
@@ -34,9 +36,22 @@
         .theme-toggle:hover { background: var(--border); color: var(--text-1); }
         .wrap { max-width: 1200px; margin: 0 auto; padding: 1.5rem 2rem 4rem; }
         .page-title { font-size: 1.5rem; font-weight: 700; margin-bottom: .25rem; }
-        .page-sub { color: var(--text-3); font-size: .9rem; margin-bottom: 1.5rem; }
+        .page-sub { color: var(--text-3); font-size: .9rem; margin-bottom: 1.25rem; }
         h2.sec { font-size: 1.05rem; font-weight: 600; margin: 2rem 0 .25rem; }
         .sec-hint { font-size: .8rem; color: var(--text-3); margin-bottom: 1rem; }
+
+        /* --- category tabs --- */
+        .cat-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: .75rem; }
+        .cat-tab { display: flex; align-items: center; gap: .45rem; padding: .5rem .9rem; border: 1px solid var(--border); background: var(--surface); color: var(--text-2);
+                   border-radius: 999px; font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+        .cat-tab:hover { border-color: var(--border-hover); color: var(--text-1); }
+        .cat-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+        .cat-tab .count { font-size: .72rem; font-weight: 600; opacity: .75; }
+        .cat-tab .todo { font-size: .68rem; font-weight: 700; padding: .05rem .35rem; border-radius: 5px; background: var(--partial-bg); color: var(--partial); }
+        .cat-tab.active .todo { background: rgba(255,255,255,.22); color: #fff; }
+
+        .banner { display: flex; gap: .6rem; align-items: flex-start; background: var(--partial-bg); color: var(--partial); border: 1px solid var(--partial-bg);
+                  padding: .7rem .9rem; border-radius: var(--radius); font-size: .82rem; margin-bottom: 1rem; }
 
         .toolbar { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
         .search-box { flex: 1; min-width: 200px; position: relative; }
@@ -44,6 +59,44 @@
         .search-box input:focus { outline: none; border-color: var(--accent); }
         .search-box::before { content: '⌕'; position: absolute; left: .7rem; top: 50%; transform: translateY(-50%); color: var(--text-3); }
         .toolbar select { padding: .55rem .75rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .85rem; background: var(--surface); color: var(--text-1); cursor: pointer; }
+        .toolbar label.chk { display: flex; align-items: center; gap: .4rem; font-size: .82rem; color: var(--text-2); cursor: pointer; }
+
+        /* --- EPREL benchmark table --- */
+        .estats { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .estat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .85rem; min-width: 108px; }
+        .estat .n { font-size: 1.1rem; font-weight: 700; line-height: 1.2; }
+        .estat .l { font-size: .7rem; color: var(--text-3); text-transform: uppercase; letter-spacing: .03em; }
+        .btable-wrap { overflow: auto; max-height: 640px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+        table.btable { border-collapse: separate; border-spacing: 0; width: 100%; font-size: .8rem; white-space: nowrap; }
+        table.btable th, table.btable td { padding: .45rem .6rem; border-bottom: 1px solid var(--border); text-align: left; }
+        table.btable thead th { position: sticky; top: 0; z-index: 3; background: var(--surface); color: var(--text-2); font-weight: 600;
+                                font-size: .7rem; text-transform: uppercase; letter-spacing: .02em; cursor: pointer; user-select: none; box-shadow: inset 0 -1px 0 var(--border); }
+        table.btable thead th:hover { color: var(--accent); }
+        table.btable thead th.sorted { color: var(--accent); }
+        table.btable thead th .u { font-weight: 400; text-transform: none; color: var(--text-3); }
+        table.btable td.num, table.btable th.num { text-align: right; font-variant-numeric: tabular-nums; }
+        table.btable tbody tr:hover td { background: var(--bg); }
+        table.btable td.rk { color: var(--text-3); font-variant-numeric: tabular-nums; }
+        table.btable td.mdl { font-weight: 500; max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+        table.btable td.brd { font-weight: 600; }
+        table.btable tr.tracked td.brd { color: var(--accent); }
+        .ecls { display: inline-block; padding: .08rem .42rem; border-radius: 5px; font-weight: 700; font-size: .74rem; }
+        .ecls.c-a { background: #dcfce7; color: #15803d; } .ecls.c-b { background: #d9f99d; color: #4d7c0f; }
+        .ecls.c-c { background: #fef9c3; color: #a16207; } .ecls.c-d { background: #fef3c7; color: #b45309; }
+        .ecls.c-e { background: #ffedd5; color: #c2410c; } .ecls.c-f { background: #fee2e2; color: #b91c1c; }
+        .ecls.c-g { background: #fecaca; color: #991b1b; }
+        body.dark-theme .ecls.c-a { background: #064e3b; color: #6ee7b7; } body.dark-theme .ecls.c-b { background: #14532d; color: #bef264; }
+        body.dark-theme .ecls.c-c { background: #422006; color: #fde047; } body.dark-theme .ecls.c-d { background: #451a03; color: #fbbf24; }
+        body.dark-theme .ecls.c-e { background: #431407; color: #fdba74; } body.dark-theme .ecls.c-f { background: #450a0a; color: #fca5a5; }
+        body.dark-theme .ecls.c-g { background: #450a0a; color: #f87171; }
+        .flag { color: var(--partial); cursor: help; font-weight: 700; }
+        .elink { color: var(--accent); text-decoration: none; font-weight: 600; }
+        .elink:hover { text-decoration: underline; }
+        .tfoot { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: .6rem; font-size: .8rem; color: var(--text-3); flex-wrap: wrap; }
+        .more-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text-1); padding: .45rem 1rem; border-radius: 8px; font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer; }
+        .more-btn:hover { border-color: var(--accent); color: var(--accent); }
+        .more-btn:disabled { opacity: .45; cursor: default; border-color: var(--border); color: var(--text-3); }
+        .divider { border-top: 1px solid var(--border); margin: 2.5rem 0 1.5rem; }
 
         .matrix-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
         table.matrix { border-collapse: collapse; width: 100%; min-width: 760px; font-size: .82rem; }
@@ -58,6 +111,7 @@
         .cell.yes { background: var(--yes-bg); color: var(--yes); }
         .cell.partial { background: var(--partial-bg); color: var(--partial); }
         .cell.no { color: var(--no); }
+        .cell.unknown { background: var(--unknown-bg); color: var(--unknown); }
         table.matrix tbody tr:hover td { background: var(--bg); }
         table.matrix tbody tr:hover td.prod { background: var(--bg); }
         col.hl { background: var(--accent-bg); }
@@ -69,14 +123,17 @@
 
         .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; margin-top: 1rem; }
         .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
-        .card-head { padding: .85rem 1rem; color: #fff; }
+        .card.todo { border-style: dashed; }
+        .card-head { padding: .85rem 1rem; color: #fff; display: flex; align-items: flex-start; justify-content: space-between; gap: .5rem; }
         .card-head .co { font-size: .75rem; font-weight: 600; opacity: .9; }
         .card-head .mdl { font-size: 1rem; font-weight: 700; line-height: 1.3; }
+        .card-head .badge { font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding: .15rem .45rem; border-radius: 5px; background: rgba(255,255,255,.22); white-space: nowrap; }
         .card-body { padding: .85rem 1rem; flex: 1; display: flex; flex-direction: column; gap: .6rem; }
         .specs { display: grid; grid-template-columns: 1fr 1fr; gap: .35rem .75rem; font-size: .8rem; }
         .specs .k { color: var(--text-3); }
         .specs .v { color: var(--text-1); font-weight: 500; }
         .hl { font-size: .83rem; color: var(--text-2); line-height: 1.5; }
+        .hl.todo { font-style: italic; color: var(--text-3); }
         .techchips { display: flex; flex-wrap: wrap; gap: .3rem; }
         .tchip { font-size: .68rem; padding: .12rem .5rem; border-radius: 5px; border: 1px solid; }
         .tchip.yes { background: var(--yes-bg); color: var(--yes); border-color: var(--yes-bg); }
@@ -96,10 +153,10 @@
 <body>
     <header class="site-header">
         <div class="header-inner">
-            <div class="logo"><div class="logo-icon">W</div> Washer Tech Comparison</div>
+            <div class="logo"><div class="logo-icon">P</div> Appliance Tech Comparison</div>
             <nav class="nav">
                 <a href="/">Tech News</a>
-                <a href="/companies">Companies</a>
+                <a href="/companies">Company News</a>
                 <a href="/products" class="active">Products</a>
             </nav>
             <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span><span id="themeText">Light</span></button>
@@ -107,24 +164,50 @@
     </header>
 
     <main class="wrap">
-        <div class="page-title">Flagship washing machines — technology comparison</div>
-        <div class="page-sub" id="sub">Top washer per brand, with a side-by-side technology matrix.</div>
+        <div class="page-title" id="pageTitle">Flagship appliances — technology comparison</div>
+        <div class="page-sub" id="sub">Top model per brand, with a side-by-side technology matrix.</div>
 
         <div id="loading" class="loading">Loading products…</div>
 
         <div id="content" style="display:none;">
+            <div class="cat-tabs" id="catTabs"></div>
+
+            <h2 class="sec" style="margin-top:.5rem">EPREL energy benchmark</h2>
+            <div class="sec-hint" id="eprelHint"></div>
+            <div id="eprelStats" class="estats"></div>
+            <div class="toolbar" id="eprelToolbar">
+                <div class="search-box"><input id="eSearch" placeholder="Search models or brands…"></div>
+                <select id="eBrand"><option value="All">All brands</option></select>
+                <select id="eClass"><option value="All">All energy classes</option></select>
+                <label class="chk"><input type="checkbox" id="eTracked"> Tracked brands only</label>
+                <label class="chk"><input type="checkbox" id="eBest"> Best per brand</label>
+            </div>
+            <div class="btable-wrap"><table class="btable" id="btable"></table></div>
+            <div class="tfoot">
+                <span id="eCount"></span>
+                <button class="more-btn" id="eMore">Show more</button>
+            </div>
+
+            <div class="divider"></div>
+            <h2 class="sec" style="margin-top:0">Curated technology comparison</h2>
+            <div class="sec-hint" id="curatedHint">One hand-researched flagship per brand — features EPREL does not record (AI, auto-dosing, steam, connectivity).</div>
+
+            <div id="banner"></div>
+
             <div class="toolbar">
                 <div class="search-box"><input id="search" placeholder="Search models or brands…"></div>
                 <select id="techFilter"><option value="All">Has any technology</option></select>
+                <label class="chk"><input type="checkbox" id="hideTodo"> Hide rows awaiting research</label>
             </div>
 
             <h2 class="sec">Technology matrix</h2>
-            <div class="sec-hint">Click a technology column to highlight it. ✓ available · ~ partial / select models · – not on flagship.</div>
+            <div class="sec-hint">Click a technology column to highlight it. ✓ available · ~ partial / select models · – not on flagship · ? not researched yet.</div>
             <div class="matrix-wrap"><table class="matrix" id="matrix"></table></div>
             <div class="legend">
                 <span><span class="cell yes">✓</span> Available</span>
                 <span><span class="cell partial">~</span> Partial / select models</span>
                 <span><span class="cell no">–</span> Not on flagship</span>
+                <span><span class="cell unknown">?</span> Awaiting research</span>
             </div>
 
             <h2 class="sec">Flagship products</h2>
@@ -138,81 +221,248 @@
 
     <script>
         const PALETTE = ['#2563eb','#dc2626','#16a34a','#d97706','#7c3aed','#0891b2','#db2777','#65a30d'];
-        const SHORT = {ai:'AI', autodose:'Auto-dose', steam:'Steam', heatpump:'Heat-pump', inverter:'Inverter', wifi:'Wi-Fi', hygiene:'Hygiene', quick:'Quick', additem:'Add-item', eco:'Eco'};
-        let DATA = {}, COLOR = {}, curSearch = '', curTech = 'All', hlTech = null;
+        const E_PAGE = 60;   // benchmark rows revealed per "Show more" click
+        let DATA = {}, COLOR = {}, curCat = null, curSearch = '', curTech = 'All', hlTech = null, hideTodo = false;
+        let EPREL = {categories:{}}, eSort = {key:'rank', dir:1}, eShown = E_PAGE,
+            eF = {search:'', brand:'All', cls:'All', tracked:false, best:false};
 
         function initTheme(){ const s=localStorage.getItem('theme'); const d=window.matchMedia('(prefers-color-scheme: dark)').matches; if(s==='dark'||(!s&&d))document.body.classList.add('dark-theme'); syncBtn(); }
         function syncBtn(){ const d=document.body.classList.contains('dark-theme'); themeIcon.textContent=d?'🌙':'☀️'; themeText.textContent=d?'Dark':'Light'; }
         themeToggle.onclick=()=>{ document.body.classList.toggle('dark-theme'); localStorage.setItem('theme', document.body.classList.contains('dark-theme')?'dark':'light'); syncBtn(); };
 
-        function sym(v){ return v==='yes'?'✓':v==='partial'?'~':'–'; }
+        function sym(v){ return v==='yes'?'✓':v==='partial'?'~':v==='no'?'–':'?'; }
+        // Placeholder rows carry no tech values yet -> render them as "unknown".
+        function techVal(p, key){ const v=(p.tech||{})[key]; return (v==='yes'||v==='partial'||v==='no')?v:'unknown'; }
+        // Specs live in p.specs; fall back to flat legacy fields for older records.
+        function specVal(p, key){ const v=(p.specs||{})[key] ?? p[key]; return (v===undefined||v===null||v==='')?'':String(v); }
+        function isTodo(p){ return p.status==='placeholder' || !p.model; }
+
+        function categories(){ return DATA.categories||[]; }
+        function cat(){ return categories().find(c=>c.key===curCat) || {specs:[], technologies:[]}; }
+        function techs(){ return cat().technologies||[]; }
+        function specs(){ return cat().specs||[]; }
+        function shortOf(t){ return t.short || t.label; }
+        function inCat(key){ return (DATA.products||[]).filter(p=>p.category===key); }
 
         async function init(){
             initTheme();
             try {
-                DATA = await fetch('/api/products').then(r=>r.json());
-                (DATA.products||[]).forEach((p,i)=> COLOR[p.company]=PALETTE[i%PALETTE.length]);
+                const [prod, eprel] = await Promise.all([
+                    fetch('/api/products').then(r=>r.json()),
+                    // The EPREL database is optional: the page still works without it.
+                    fetch('/api/eprel').then(r=>r.json()).catch(()=>({categories:{}}))
+                ]);
+                DATA = prod; EPREL = eprel && eprel.categories ? eprel : {categories:{}};
+                if (!categories().length) throw new Error('products.json has no categories');
+                // Colors are per brand, so they stay stable across categories.
+                [...new Set((DATA.products||[]).map(p=>p.company))].forEach((c,i)=> COLOR[c]=PALETTE[i%PALETTE.length]);
+                curCat = categories()[0].key;
                 loading.style.display='none'; content.style.display='block';
-                document.getElementById('sub').textContent = `${(DATA.products||[]).length} flagship washers · ${(DATA.technologies||[]).length} technologies compared`;
-                buildFilters(); render();
+                buildTabs();
+                document.getElementById('search').addEventListener('input', e=>{ curSearch=e.target.value.trim().toLowerCase(); render(); });
+                document.getElementById('techFilter').addEventListener('change', e=>{ curTech=e.target.value; render(); });
+                document.getElementById('hideTodo').addEventListener('change', e=>{ hideTodo=e.target.checked; render(); });
+                document.getElementById('eSearch').addEventListener('input', e=>{ eF.search=e.target.value.trim().toLowerCase(); eShown=E_PAGE; renderEprel(); });
+                document.getElementById('eBrand').addEventListener('change', e=>{ eF.brand=e.target.value; eShown=E_PAGE; renderEprel(); });
+                document.getElementById('eClass').addEventListener('change', e=>{ eF.cls=e.target.value; eShown=E_PAGE; renderEprel(); });
+                document.getElementById('eTracked').addEventListener('change', e=>{ eF.tracked=e.target.checked; eShown=E_PAGE; renderEprel(); });
+                document.getElementById('eBest').addEventListener('change', e=>{ eF.best=e.target.checked; eShown=E_PAGE; renderEprel(); });
+                document.getElementById('eMore').addEventListener('click', ()=>{ eShown+=E_PAGE; renderEprel(); });
+                selectCat(curCat);
             } catch(e){ loading.textContent='Error: '+e.message; }
         }
 
-        function buildFilters(){
+        function buildTabs(){
+            document.getElementById('catTabs').innerHTML = categories().map(c=>{
+                const list = inCat(c.key), todo = list.filter(isTodo).length;
+                return `<button class="cat-tab" data-key="${c.key}" onclick="selectCat('${c.key}')">
+                    <span>${c.icon||''} ${c.label}</span>
+                    <span class="count">${list.length - todo}/${list.length}</span>
+                    ${todo?`<span class="todo">${todo} to research</span>`:''}
+                </button>`;
+            }).join('');
+        }
+
+        function selectCat(key){
+            curCat = key; hlTech = null; curTech = 'All';
+            document.querySelectorAll('.cat-tab').forEach(b=> b.classList.toggle('active', b.dataset.key===key));
+            // Technology filter options are per category.
             const tf=document.getElementById('techFilter');
-            (DATA.technologies||[]).forEach(t=>{ const o=document.createElement('option'); o.value=t.key; o.textContent='Has '+t.label; tf.appendChild(o); });
-            document.getElementById('search').addEventListener('input', e=>{ curSearch=e.target.value.trim().toLowerCase(); render(); });
-            tf.addEventListener('change', e=>{ curTech=e.target.value; render(); });
+            tf.innerHTML = '<option value="All">Has any technology</option>' +
+                techs().map(t=>`<option value="${t.key}">Has ${t.label}</option>`).join('');
+            // Benchmark filters are per category too: reset them and rebuild.
+            eSort = {key:'rank', dir:1}; eShown = E_PAGE;
+            eF = {search:'', brand:'All', cls:'All', tracked:false, best:false};
+            document.getElementById('eSearch').value = '';
+            ['eTracked','eBest'].forEach(id=> document.getElementById(id).checked=false);
+            const ec = ecat();
+            document.getElementById('eBrand').innerHTML = '<option value="All">All brands</option>' +
+                Object.entries((ec&&ec.brand_counts)||{}).map(([b,n])=>`<option value="${esc(b)}">${esc(b)} (${n})</option>`).join('');
+            document.getElementById('eClass').innerHTML = '<option value="All">All energy classes</option>' +
+                ((ec&&ec.class_order)||[]).filter(c=>(ec.class_counts||{})[c]).map(c=>`<option value="${c}">${c} (${ec.class_counts[c]})</option>`).join('');
+            render();
+        }
+
+        /* ---------------- EPREL benchmark table ---------------- */
+        function ecat(){ return (EPREL.categories||{})[curCat] || null; }
+        function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+        function clsKey(label){ const m=String(label||'').match(/^A\+*|^[A-G]/); return 'c-'+(m?m[0][0]:'x').toLowerCase(); }
+        function trackedSet(){ return new Set(EPREL.tracked_brands||[]); }
+
+        function eprelRows(){
+            const ec = ecat(); if (!ec) return [];
+            let rows = ec.products || [];
+            if (eF.search) rows = rows.filter(r=> (r.model+' '+r.brand+' '+(r.supplier||'')).toLowerCase().includes(eF.search));
+            if (eF.brand!=='All') rows = rows.filter(r=> r.brand===eF.brand);
+            if (eF.cls!=='All') rows = rows.filter(r=> r.classLabel===eF.cls);
+            if (eF.tracked){ const t=trackedSet(); rows = rows.filter(r=> t.has(r.brand)); }
+
+            const col = (ec.columns||[]).find(c=>c.key===eSort.key);
+            const type = eSort.key==='rank' ? 'rank' : (col ? col.type : 'text');
+            rows = rows.slice().sort((a,b)=>{
+                let av, bv;
+                if (type==='rank'){ av=a.rank; bv=b.rank; }
+                else if (type==='class'){ av=a.classRank; bv=b.classRank; }         // A+++ before A, not alphabetical
+                else if (type==='num'){ av=a[eSort.key]; bv=b[eSort.key]; }
+                else if (type==='bool'){ av=a[eSort.key]?1:0; bv=b[eSort.key]?1:0; }
+                else { av=String(a[eSort.key]??'').toLowerCase(); bv=String(b[eSort.key]??'').toLowerCase(); }
+                // Missing values always sort last, whichever direction is active.
+                const an=(av===null||av===undefined||av===''), bn=(bv===null||bv===undefined||bv==='');
+                if (an&&bn) return a.rank-b.rank;
+                if (an) return 1;
+                if (bn) return -1;
+                if (av<bv) return -1*eSort.dir;
+                if (av>bv) return 1*eSort.dir;
+                return a.rank-b.rank;
+            });
+            if (eF.best){                                    // one row per brand, best first
+                const seen=new Set();
+                rows = rows.filter(r=> seen.has(r.brand)?false:(seen.add(r.brand),true));
+            }
+            return rows;
+        }
+
+        function eCell(r, col){
+            const v = r[col.key];
+            if (col.type==='link') return v ? `<a class="elink" href="${esc(v)}" target="_blank" rel="noopener">EPREL ↗</a>` : '';
+            if (col.type==='class') return v ? `<span class="ecls ${clsKey(v)}">${esc(v)}</span>` : '—';
+            if (col.type==='bool') return v===true ? '✓' : (v===false ? '–' : '');
+            if (v===null || v===undefined || v==='') return '—';
+            return esc(v);
+        }
+
+        function renderEprel(){
+            const ec = ecat();
+            const hint = document.getElementById('eprelHint');
+            const wrap = document.querySelector('.btable-wrap');
+            if (!ec){
+                hint.textContent = 'No EPREL data for this category yet — run `python eprel_scraper.py` to build eprel_products.json.';
+                document.getElementById('eprelStats').innerHTML = '';
+                document.getElementById('eprelToolbar').style.display = 'none';
+                wrap.style.display='none'; document.querySelector('.tfoot').style.display='none';
+                return;
+            }
+            document.getElementById('eprelToolbar').style.display = 'flex';
+            wrap.style.display='block'; document.querySelector('.tfoot').style.display='flex';
+            hint.innerHTML = `Top <strong>${ec.kept}</strong> of ${(ec.unique_models||0).toLocaleString()} models registered in EPREL under ${esc(ec.regulation)}, `
+                + `ranked by energy class then weighted energy consumption. ${esc(ec.energy_note)} `
+                + `Click any column to re-sort — energy is an absolute figure, so it favours smaller machines; `
+                + `<strong>sort by EEI</strong> for size-independent efficiency. ⚠ marks a registration whose declared values contradict each other.`;
+
+            document.getElementById('eprelStats').innerHTML = [
+                ['Models ranked', ec.kept],
+                ['EPREL registrations', (ec.registered_total||0).toLocaleString()],
+                ['Brands', Object.keys(ec.brand_counts||{}).length],
+                ['Best class', (ec.class_order||[]).find(c=>(ec.class_counts||{})[c]) || '—'],
+                ['Regulation', ec.regulation||'—'],
+            ].map(([l,n])=>`<div class="estat"><div class="n">${esc(n)}</div><div class="l">${esc(l)}</div></div>`).join('');
+
+            const cols = ec.columns||[], rows = eprelRows(), page = rows.slice(0, eShown), tset = trackedSet();
+            const head = `<thead><tr><th class="num" onclick="eSortBy('rank')">#</th>` + cols.map(c=>{
+                const cls = (c.type==='num'?'num ':'') + (eSort.key===c.key?'sorted':'');
+                const arrow = eSort.key===c.key ? (eSort.dir===1?' ↑':' ↓') : '';
+                return `<th class="${cls}" onclick="eSortBy('${c.key}')">${esc(c.label)}${c.unit?` <span class="u">${esc(c.unit)}</span>`:''}${arrow}</th>`;
+            }).join('') + '</tr></thead>';
+
+            const body = page.map(r=>{
+                const tr = tset.has(r.brand) ? ' class="tracked"' : '';
+                const flag = r.dataFlag ? ' <span class="flag" title="EPREL registration declares an EEI inconsistent with its energy class">⚠</span>' : '';
+                return `<tr${tr}><td class="rk">${r.rank}</td>` + cols.map(c=>{
+                    const cn = c.type==='num' ? 'num' : (c.key==='model' ? 'mdl' : (c.key==='brand' ? 'brd' : ''));
+                    const extra = c.key==='model' ? flag : '';
+                    return `<td class="${cn}"${c.key==='model'?` title="${esc(r.model)}"`:''}>${eCell(r,c)}${extra}</td>`;
+                }).join('') + '</tr>';
+            }).join('') || `<tr><td colspan="${cols.length+1}" style="text-align:center;padding:2rem;color:var(--text-3)">No models match these filters.</td></tr>`;
+
+            document.getElementById('btable').innerHTML = head + `<tbody>${body}</tbody>`;
+            document.getElementById('eCount').textContent =
+                `Showing ${Math.min(eShown, rows.length)} of ${rows.length} models` + (ec.flagged ? ` · ${ec.flagged} flagged for inconsistent EPREL data` : '');
+            const more = document.getElementById('eMore');
+            more.disabled = eShown >= rows.length;
+            more.textContent = more.disabled ? 'All shown' : `Show ${Math.min(E_PAGE, rows.length-eShown)} more`;
+        }
+
+        function eSortBy(key){
+            if (eSort.key===key) eSort.dir *= -1; else eSort = {key, dir:1};
+            eShown = E_PAGE; renderEprel();
         }
 
         function visibleProducts(){
-            let list = (DATA.products||[]).slice();
+            let list = inCat(curCat);
+            if (hideTodo) list = list.filter(p=>!isTodo(p));
             if (curSearch) list = list.filter(p=> (p.model+' '+p.company).toLowerCase().includes(curSearch));
-            if (curTech!=='All') list = list.filter(p=> p.tech[curTech]==='yes' || p.tech[curTech]==='partial');
+            if (curTech!=='All') list = list.filter(p=> ['yes','partial'].includes(techVal(p, curTech)));
             return list;
         }
 
         function render(){
-            const techs = DATA.technologies||[];
-            const prods = visibleProducts();
+            renderEprel();
+            const c = cat(), T = techs(), S = specs(), prods = visibleProducts();
+            const all = inCat(curCat), todoCount = all.filter(isTodo).length;
+
+            document.getElementById('pageTitle').textContent = `Flagship ${c.label.toLowerCase()} — technology comparison`;
+            document.getElementById('sub').textContent =
+                `${all.length} models · ${T.length} technologies compared${c.blurb?' · '+c.blurb:''}`;
+            document.getElementById('banner').innerHTML = todoCount
+                ? `<div class="banner"><span>⚠</span><span><strong>${todoCount} of ${all.length}</strong> ${c.label.toLowerCase()} rows are structural placeholders — model, specs and technology support still need research.</span></div>`
+                : '';
+
             // matrix
-            let cols = `<colgroup><col>${techs.map(t=>`<col class="${hlTech===t.key?'hl':''}">`).join('')}</colgroup>`;
-            let head = `<thead><tr><th class="prod">Product</th>${techs.map(t=>`<th title="${t.label}" onclick="toggleHl('${t.key}')">${SHORT[t.key]||t.label}</th>`).join('')}</tr></thead>`;
+            let cols = `<colgroup><col>${T.map(t=>`<col class="${hlTech===t.key?'hl':''}">`).join('')}</colgroup>`;
+            let head = `<thead><tr><th class="prod">Product</th>${T.map(t=>`<th title="${t.label}" onclick="toggleHl('${t.key}')">${shortOf(t)}</th>`).join('')}</tr></thead>`;
             let rows = prods.map(p=>{
-                const cells = techs.map(t=>{ const v=p.tech[t.key]||'no'; return `<td><span class="cell ${v}">${sym(v)}</span></td>`; }).join('');
-                return `<tr><td class="prod"><div class="pm"><span class="cdot" style="background:${COLOR[p.company]}"></span>${p.company}</div><div class="pc">${p.model}</div></td>${cells}</tr>`;
+                const cells = T.map(t=>{ const v=techVal(p,t.key); return `<td><span class="cell ${v}">${sym(v)}</span></td>`; }).join('');
+                return `<tr><td class="prod"><div class="pm"><span class="cdot" style="background:${COLOR[p.company]}"></span>${p.company}</div><div class="pc">${p.model||'— to research —'}</div></td>${cells}</tr>`;
             }).join('');
-            // coverage row
-            const cover = techs.map(t=>{ const n=prods.filter(p=>p.tech[t.key]==='yes').length; return `<td>${n}/${prods.length}</td>`; }).join('');
+            const cover = T.map(t=>{ const n=prods.filter(p=>techVal(p,t.key)==='yes').length; return `<td>${n}/${prods.length}</td>`; }).join('');
             rows += `<tr class="cover"><td class="prod">Full availability</td>${cover}</tr>`;
             document.getElementById('matrix').innerHTML = cols+head+`<tbody>${rows}</tbody>`;
 
             // cards
-            document.getElementById('cardHint').textContent = `${prods.length} of ${(DATA.products||[]).length} shown`;
+            document.getElementById('cardHint').textContent = `${prods.length} of ${all.length} shown`;
             document.getElementById('cards').innerHTML = prods.map(p=>{
-                const col=COLOR[p.company];
-                const chips = (DATA.technologies||[]).filter(t=>p.tech[t.key]==='yes' || p.tech[t.key]==='partial')
-                    .map(t=>`<span class="tchip ${p.tech[t.key]}">${SHORT[t.key]}</span>`).join('');
-                return `<div class="card">
-                    <div class="card-head" style="background:${col}"><div class="co">${p.company}</div><div class="mdl">${p.model}</div></div>
+                const col=COLOR[p.company], todo=isTodo(p);
+                const chips = T.filter(t=>['yes','partial'].includes(techVal(p,t.key)))
+                    .map(t=>`<span class="tchip ${techVal(p,t.key)}">${shortOf(t)}</span>`).join('');
+                const specRows = S.map(s=>`<span class="k">${s.label}</span><span class="v">${specVal(p,s.key)||'—'}</span>`).join('');
+                return `<div class="card${todo?' todo':''}">
+                    <div class="card-head" style="background:${col}">
+                        <div><div class="co">${p.company}</div><div class="mdl">${p.model||'Model TBD'}</div></div>
+                        ${todo?'<span class="badge">To research</span>':''}
+                    </div>
                     <div class="card-body">
-                        <div class="specs">
-                            <span class="k">Type</span><span class="v">${p.type||'—'}</span>
-                            <span class="k">Capacity</span><span class="v">${p.capacity||'—'}</span>
-                            <span class="k">Max spin</span><span class="v">${p.spin||'—'}</span>
-                            <span class="k">Energy</span><span class="v">${p.energy||'—'}</span>
-                            <span class="k">Motor</span><span class="v">${p.motor||'—'}</span>
-                        </div>
-                        <div class="hl">${p.highlight||''}</div>
+                        <div class="specs">${specRows}</div>
+                        <div class="hl${todo?' todo':''}">${p.highlight || (todo?'No data yet — flagship model and key technologies pending research.':'')}</div>
                         <div class="techchips">${chips}</div>
                         ${p.url?`<a class="more" href="${p.url}" target="_blank" rel="noopener">View product ↗</a>`:''}
                     </div></div>`;
             }).join('') || '<div class="empty">No products match.</div>';
 
-            // spec table
-            const st = document.getElementById('spectable');
-            st.innerHTML = `<thead><tr><th>Brand</th><th>Model</th><th>Type</th><th>Capacity</th><th>Spin</th><th>Energy</th><th>Motor</th></tr></thead>`+
-                `<tbody>${prods.map(p=>`<tr><td><span class="cdot" style="display:inline-block;background:${COLOR[p.company]};margin-right:6px"></span>${p.company}</td><td>${p.model}</td><td>${p.type||'—'}</td><td>${p.capacity||'—'}</td><td>${p.spin||'—'}</td><td>${p.energy||'—'}</td><td>${p.motor||'—'}</td></tr>`).join('')}</tbody>`;
+            // spec table (columns follow the category's spec fields)
+            document.getElementById('spectable').innerHTML =
+                `<thead><tr><th>Brand</th><th>Model</th>${S.map(s=>`<th>${s.label}</th>`).join('')}</tr></thead>` +
+                `<tbody>${prods.map(p=>`<tr><td><span class="cdot" style="display:inline-block;background:${COLOR[p.company]};margin-right:6px"></span>${p.company}</td>`+
+                    `<td>${p.model||'—'}</td>${S.map(s=>`<td>${specVal(p,s.key)||'—'}</td>`).join('')}</tr>`).join('')}</tbody>`;
         }
 
         function toggleHl(k){ hlTech = (hlTech===k? null : k); render(); }

@@ -1,0 +1,63 @@
+name: EPREL Product Database
+
+on:
+  schedule:
+    # Monthly, 1st at 23:00 UTC (offset from the other jobs). EPREL registrations
+    # change slowly, so a monthly refresh is plenty.
+    - cron: '0 23 1 * *'
+  workflow_dispatch:
+    inputs:
+      category:
+        description: 'Single category to refresh (blank = all)'
+        type: choice
+        options: ['', washing-machine, washer-dryer, dryer, dishwasher]
+        default: ''
+      top:
+        description: 'Models kept per category'
+        default: '1000'
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-eprel:
+    runs-on: ubuntu-latest
+    # A full refresh pages through ~46k registrations across 4 product groups.
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run EPREL scraper
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          ARGS="--top ${{ github.event.inputs.top || '1000' }}"
+          if [ -n "${{ github.event.inputs.category }}" ]; then
+            ARGS="$ARGS --category ${{ github.event.inputs.category }}"
+          fi
+          python eprel_scraper.py $ARGS
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add eprel_products.json
+          if git diff --staged --quiet; then
+            echo "No EPREL changes to commit."
+          else
+            git commit -m "Automated EPREL product database refresh [skip ci]"
+            git push
+          fi
