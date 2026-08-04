@@ -38,15 +38,6 @@
         .page-title { font-size: 1.5rem; font-weight: 700; margin-bottom: .25rem; }
         .page-sub { color: var(--text-3); font-size: .9rem; margin-bottom: 1.25rem; max-width: 90ch; }
 
-        /* --- machine picker --- */
-        .picker { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; margin-bottom: 1.25rem;
-                  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem; }
-        .picker label { font-size: .8rem; font-weight: 600; color: var(--text-2); }
-        .picker select#catPick { padding: .55rem 2rem .55rem .8rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .95rem;
-                                 font-weight: 600; background: var(--bg); color: var(--text-1); cursor: pointer; min-width: 240px; }
-        .picker select#catPick:focus { outline: none; border-color: var(--accent); }
-        .picker .reg { font-size: .8rem; color: var(--text-3); margin-left: auto; }
-
         .estats { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
         .estat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .85rem; min-width: 112px; }
         .estat .n { font-size: 1.1rem; font-weight: 700; line-height: 1.2; }
@@ -58,6 +49,9 @@
         .search-box input:focus { outline: none; border-color: var(--accent); }
         .search-box::before { content: '⌕'; position: absolute; left: .7rem; top: 50%; transform: translateY(-50%); color: var(--text-3); }
         .toolbar select { padding: .55rem .75rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .85rem; background: var(--surface); color: var(--text-1); cursor: pointer; }
+        /* The machine-type picker leads the toolbar, so it carries a little more weight. */
+        .toolbar select.primary { font-weight: 600; border-color: var(--border-hover); }
+        .toolbar select:focus { outline: none; border-color: var(--accent); }
         .toolbar label.chk { display: flex; align-items: center; gap: .4rem; font-size: .82rem; color: var(--text-2); cursor: pointer; }
 
         .btable-wrap { overflow: auto; max-height: 72vh; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
@@ -92,7 +86,7 @@
         .more-btn:disabled { opacity: .45; cursor: default; border-color: var(--border); color: var(--text-3); }
         .loading, .empty { text-align: center; padding: 3rem; color: var(--text-3); }
         .note { font-size: .78rem; color: var(--text-3); margin-top: 1rem; max-width: 95ch; }
-        @media (max-width: 640px) { .wrap { padding: 1rem; } .picker .reg { margin-left: 0; } }
+        @media (max-width: 640px) { .wrap { padding: 1rem; } }
     </style>
 </head>
 <body>
@@ -102,8 +96,7 @@
             <nav class="nav">
                 <a href="/">Tech News</a>
                 <a href="/companies">Company News</a>
-                <a href="/products">Products</a>
-                <a href="/eprel" class="active">EPREL Database</a>
+                <a href="/products" class="active">Products</a>
             </nav>
             <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span><span id="themeText">Light</span></button>
         </div>
@@ -112,27 +105,22 @@
     <main class="wrap">
         <a class="back" href="/products">← Back to Products</a>
         <div class="page-title">EPREL energy database</div>
-        <div class="page-sub" id="sub">Every machine we track from the EU's public product registry, ranked by energy class then weighted energy consumption.</div>
+        <div class="page-sub" id="sub">EU energy-label registry, ranked by energy class then energy use.</div>
 
         <div id="loading" class="loading">Loading EPREL database…</div>
 
         <div id="content" style="display:none;">
-            <div class="picker">
-                <label for="catPick">Machine type</label>
-                <select id="catPick"></select>
-                <span class="reg" id="regNote"></span>
-            </div>
-
-            <div class="estats" id="eprelStats"></div>
-            <div class="sec-hint page-sub" id="eprelHint"></div>
-
             <div class="toolbar">
+                <select id="catPick" class="primary"></select>
                 <div class="search-box"><input id="eSearch" placeholder="Search models or brands…"></div>
                 <select id="eBrand"><option value="All">All brands</option></select>
                 <select id="eClass"><option value="All">All energy classes</option></select>
                 <label class="chk"><input type="checkbox" id="eTracked"> Tracked brands only</label>
                 <label class="chk"><input type="checkbox" id="eBest"> Best per brand</label>
+                <button class="more-btn" id="eExport" title="Download the filtered table as an Excel workbook (.xlsx)">⤓ Excel</button>
             </div>
+
+            <div class="estats" id="eprelStats"></div>
 
             <div class="btable-wrap"><table class="btable" id="btable"></table></div>
             <div class="tfoot">
@@ -177,10 +165,8 @@
                 loading.style.display='none'; content.style.display='block';
 
                 const pick = document.getElementById('catPick');
-                pick.innerHTML = cats.map(k=>{
-                    const c = EPREL.categories[k];
-                    return `<option value="${esc(k)}">${esc(c.label)} — ${c.kept} models</option>`;
-                }).join('');
+                pick.innerHTML = cats.map(k=>
+                    `<option value="${esc(k)}">${esc(EPREL.categories[k].label)}</option>`).join('');
                 // Deep-linkable: /eprel#dryer opens that machine type directly.
                 const hash = (location.hash||'').replace('#','');
                 curCat = cats.includes(hash) ? hash : cats[0];
@@ -197,9 +183,12 @@
                 document.getElementById('eTracked').addEventListener('change', e=>{ eF.tracked=e.target.checked; eShown=E_PAGE; render(); });
                 document.getElementById('eBest').addEventListener('change', e=>{ eF.best=e.target.checked; eShown=E_PAGE; render(); });
                 document.getElementById('eMore').addEventListener('click', ()=>{ eShown+=E_PAGE; render(); });
+                document.getElementById('eExport').addEventListener('click', exportXlsx);
 
                 document.getElementById('srcNote').textContent =
-                    `${EPREL.source||''} Scraped ${EPREL.generated||'—'}. ${EPREL.note||''}`;
+                    `Source: EPREL (European Product Registry for Energy Labelling), scraped ${EPREL.generated||'—'}. `
+                    + `Energy classes shown as "A-30%" indicate how far below the class ceiling the model's EEI sits. `
+                    + `⚠ marks a registration whose declared values contradict each other.`;
                 selectCat(curCat);
             } catch(e){ loading.textContent='Error: '+e.message; }
         }
@@ -263,24 +252,15 @@
 
         function render(){
             const c = ecat(); if (!c) return;
-            document.getElementById('sub').textContent =
-                `Every ${c.label.toLowerCase().replace(/s$/,'')} we track from the EU's public product registry, ranked by energy class then weighted energy consumption.`;
-            document.getElementById('regNote').textContent =
-                `${(c.registered_total||0).toLocaleString()} registrations scanned · ${(c.unique_models||0).toLocaleString()} unique models · ${c.regulation}`;
+            const cols = c.columns||[], list = rows(), page = list.slice(0, eShown), tset = trackedSet();
 
             document.getElementById('eprelStats').innerHTML = [
-                ['Models listed', c.kept],
-                ['Brands', Object.keys(c.brand_counts||{}).length],
-                ['Best class', (c.class_order||[]).find(x=>(c.class_counts||{})[x]) || '—'],
-                ['EPREL registrations', (c.registered_total||0).toLocaleString()],
+                ['Models', list.length],
+                ['Brands', new Set(list.map(r=>r.brand)).size],
+                ['Best class', (list.find(r=>r.classLabel)||{}).classLabel || '—'],
                 ['Regulation', c.regulation||'—'],
             ].map(([l,n])=>`<div class="estat"><div class="n">${esc(n)}</div><div class="l">${esc(l)}</div></div>`).join('');
 
-            document.getElementById('eprelHint').innerHTML =
-                `${esc(c.energy_note)} Click any column to re-sort — energy is an absolute figure, so it favours smaller machines; `
-                + `<strong>sort by EEI</strong> for size-independent efficiency. ⚠ marks a registration whose declared values contradict each other.`;
-
-            const cols = c.columns||[], list = rows(), page = list.slice(0, eShown), tset = trackedSet();
             const head = `<thead><tr><th class="num" onclick="sortBy('rank')">#</th>` + cols.map(col=>{
                 const cn = (col.type==='num'?'num ':'') + (eSort.key===col.key?'sorted':'');
                 const arrow = eSort.key===col.key ? (eSort.dir===1?' ↑':' ↓') : '';
@@ -298,8 +278,7 @@
             }).join('') || `<tr><td colspan="${cols.length+1}" class="empty">No models match these filters.</td></tr>`;
 
             document.getElementById('btable').innerHTML = head + `<tbody>${body}</tbody>`;
-            document.getElementById('eCount').textContent =
-                `Showing ${Math.min(eShown, list.length)} of ${list.length} models` + (c.flagged ? ` · ${c.flagged} flagged for inconsistent EPREL data` : '');
+            document.getElementById('eCount').textContent = `${Math.min(eShown, list.length)} of ${list.length} shown`;
             const more = document.getElementById('eMore');
             more.disabled = eShown >= list.length;
             more.textContent = more.disabled ? 'All shown' : `Show ${Math.min(E_PAGE, list.length-eShown)} more`;
@@ -309,6 +288,135 @@
             if (eSort.key===key) eSort.dir *= -1; else eSort = {key, dir:1};
             eShown = E_PAGE; render();
         }
+
+        /* ---------------- Excel export ----------------
+           Writes a real .xlsx (a ZIP of OOXML parts) with no library: the repo
+           deliberately carries no front-end dependencies and CSV would lose the
+           column typing. Entries are stored uncompressed, which Excel accepts. */
+        const CRC_TABLE = (()=>{ const t=new Uint32Array(256);
+            for(let n=0;n<256;n++){ let c=n; for(let k=0;k<8;k++) c = c&1 ? 0xEDB88320^(c>>>1) : c>>>1; t[n]=c>>>0; }
+            return t; })();
+        function crc32(bytes){
+            let c = 0xFFFFFFFF;
+            for (let i=0;i<bytes.length;i++) c = CRC_TABLE[(c ^ bytes[i]) & 0xFF] ^ (c>>>8);
+            return (c ^ 0xFFFFFFFF) >>> 0;
+        }
+        function utf8(s){ return new TextEncoder().encode(s); }
+        function xmlEsc(s){ return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c])); }
+
+        function zipStore(files){
+            const now = new Date();
+            const dosTime = (now.getHours()<<11) | (now.getMinutes()<<5) | (now.getSeconds()>>1);
+            const dosDate = ((now.getFullYear()-1980)<<9) | ((now.getMonth()+1)<<5) | now.getDate();
+            const locals = [], centrals = [];
+            let offset = 0;
+            for (const f of files){
+                const name = utf8(f.name), crc = crc32(f.data), len = f.data.length;
+                const lh = new Uint8Array(30 + name.length);
+                const lv = new DataView(lh.buffer);
+                lv.setUint32(0, 0x04034b50, true); lv.setUint16(4, 20, true);
+                lv.setUint16(6, 0x0800, true);              // UTF-8 filename flag
+                lv.setUint16(8, 0, true);                   // stored, no compression
+                lv.setUint16(10, dosTime, true); lv.setUint16(12, dosDate, true);
+                lv.setUint32(14, crc, true); lv.setUint32(18, len, true); lv.setUint32(22, len, true);
+                lv.setUint16(26, name.length, true); lv.setUint16(28, 0, true);
+                lh.set(name, 30);
+                locals.push(lh, f.data);
+
+                const ch = new Uint8Array(46 + name.length);
+                const cv = new DataView(ch.buffer);
+                cv.setUint32(0, 0x02014b50, true); cv.setUint16(4, 20, true); cv.setUint16(6, 20, true);
+                cv.setUint16(8, 0x0800, true); cv.setUint16(10, 0, true);
+                cv.setUint16(12, dosTime, true); cv.setUint16(14, dosDate, true);
+                cv.setUint32(16, crc, true); cv.setUint32(20, len, true); cv.setUint32(24, len, true);
+                cv.setUint16(28, name.length, true); cv.setUint16(30, 0, true); cv.setUint16(32, 0, true);
+                cv.setUint16(34, 0, true); cv.setUint16(36, 0, true); cv.setUint32(38, 0, true);
+                cv.setUint32(42, offset, true);
+                ch.set(name, 46);
+                centrals.push(ch);
+                offset += lh.length + len;
+            }
+            const cdSize = centrals.reduce((n,c)=>n+c.length, 0);
+            const eocd = new Uint8Array(22), ev = new DataView(eocd.buffer);
+            ev.setUint32(0, 0x06054b50, true);
+            ev.setUint16(8, files.length, true); ev.setUint16(10, files.length, true);
+            ev.setUint32(12, cdSize, true); ev.setUint32(16, offset, true);
+
+            const parts = [...locals, ...centrals, eocd];
+            const total = parts.reduce((n,p)=>n+p.length, 0);
+            const out = new Uint8Array(total);
+            let at = 0;
+            for (const p of parts){ out.set(p, at); at += p.length; }
+            return out;
+        }
+
+        function colRef(i){                                  // 0 -> A, 26 -> AA
+            let s = '';
+            for (i += 1; i > 0; i = Math.floor((i-1)/26)) s = String.fromCharCode(65 + (i-1)%26) + s;
+            return s;
+        }
+        function sheetXml(header, body){
+            const cellXml = (v, ref) => {
+                if (v === null || v === undefined || v === '') return `<c r="${ref}"/>`;
+                if (typeof v === 'number' && isFinite(v)) return `<c r="${ref}"><v>${v}</v></c>`;
+                return `<c r="${ref}" t="inlineStr"><is><t xml:space="preserve">${xmlEsc(v)}</t></is></c>`;
+            };
+            const rowXml = (vals, n) =>
+                `<row r="${n}">${vals.map((v,i)=>cellXml(v, colRef(i)+n)).join('')}</row>`;
+            return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>`
+                + `<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData>`
+                + rowXml(header, 1)
+                + body.map((r,i)=>rowXml(r, i+2)).join('')
+                + `</sheetData></worksheet>`;
+        }
+
+        function buildXlsx(sheetName, header, body){
+            const name = String(sheetName).replace(/[\[\]:*?\/\\]/g, '').slice(0, 31) || 'Sheet1';
+            const parts = [
+                ['[Content_Types].xml',
+                 `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">`
+                 + `<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>`
+                 + `<Default Extension="xml" ContentType="application/xml"/>`
+                 + `<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>`
+                 + `<Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/></Types>`],
+                ['_rels/.rels',
+                 `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">`
+                 + `<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>`],
+                ['xl/workbook.xml',
+                 `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" `
+                 + `xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">`
+                 + `<sheets><sheet name="${xmlEsc(name)}" sheetId="1" r:id="rId1"/></sheets></workbook>`],
+                ['xl/_rels/workbook.xml.rels',
+                 `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">`
+                 + `<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/></Relationships>`],
+                ['xl/worksheets/sheet1.xml', sheetXml(header, body)],
+            ];
+            return zipStore(parts.map(([n, xml])=>({name:n, data:utf8(xml)})));
+        }
+
+        function exportXlsx(){
+            const c = ecat(); if (!c) return;
+            const cols = (c.columns||[]).filter(col=>col.type!=='link');
+            const header = ['#', ...cols.map(col=> col.unit ? `${col.label} (${col.unit})` : col.label),
+                            'EPREL link', 'Data flag'];
+            const body = rows().map(r=>[
+                r.rank,
+                ...cols.map(col=>{
+                    const v = r[col.key];
+                    if (col.type==='bool') return v===true ? 'Yes' : (v===false ? 'No' : '');
+                    return (v===null||v===undefined) ? '' : v;
+                }),
+                r.url || '', r.dataFlag || ''
+            ]);
+            const blob = new Blob([buildXlsx(c.label, header, body)],
+                                  {type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `eprel-${curCat}-${EPREL.generated||'export'}.xlsx`;
+            document.body.appendChild(a); a.click(); a.remove();
+            setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
+        }
+
         init();
     </script>
 </body>

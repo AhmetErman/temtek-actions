@@ -61,16 +61,14 @@
         .toolbar select { padding: .55rem .75rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .85rem; background: var(--surface); color: var(--text-1); cursor: pointer; }
         .toolbar label.chk { display: flex; align-items: center; gap: .4rem; font-size: .82rem; color: var(--text-2); cursor: pointer; }
 
-        /* --- category bar + EPREL entry point --- */
-        .cat-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
-                   border-bottom: 1px solid var(--border); padding-bottom: .75rem; margin-bottom: 1rem; }
-        .cat-bar .cat-tabs { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
-        .eprel-cta { display: inline-flex; align-items: center; gap: .45rem; white-space: nowrap; text-decoration: none;
-                     font-size: .85rem; font-weight: 600; color: var(--accent); background: var(--accent-bg);
-                     border: 1px solid var(--accent-border); border-radius: 999px; padding: .5rem .95rem; transition: background .15s, border-color .15s; }
-        .eprel-cta:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
-        .eprel-cta span { transition: transform .15s; }
-        .eprel-cta:hover span { transform: translateX(2px); }
+        /* Link-style button at the end of the category tabs -> /eprel page.
+           Mirrors .beyond-link on the Tech News page. */
+        .eprel-link { margin-left: auto; padding: .4rem .9rem; border: 1px solid var(--accent-border); border-radius: 20px;
+                      font-size: .8rem; font-weight: 600; text-decoration: none; color: var(--accent);
+                      background: var(--accent-bg); white-space: nowrap; transition: all .15s; align-self: center; }
+        .eprel-link:hover { border-color: var(--accent); }
+        body.dark-theme .eprel-link { color: var(--text-2); background: var(--surface); border-color: var(--border); }
+        body.dark-theme .eprel-link:hover { border-color: var(--border-hover); background: var(--border); }
 
         .matrix-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
         table.matrix { border-collapse: collapse; width: 100%; min-width: 760px; font-size: .82rem; }
@@ -144,10 +142,7 @@
         <div id="loading" class="loading">Loading products…</div>
 
         <div id="content" style="display:none;">
-            <div class="cat-bar">
-                <div class="cat-tabs" id="catTabs"></div>
-                <a class="eprel-cta" id="eprelCta" href="/eprel">See EPREL Database <span>→</span></a>
-            </div>
+            <div class="cat-tabs" id="catTabs"></div>
 
             <div class="sec-hint" id="curatedHint">One hand-researched flagship per brand — features EPREL does not record (AI, auto-dosing, steam, connectivity).</div>
 
@@ -218,7 +213,7 @@
         }
 
         function buildTabs(){
-            document.getElementById('catTabs').innerHTML = categories().map(c=>{
+            let html = categories().map(c=>{
                 const list = inCat(c.key), todo = list.filter(isTodo).length;
                 return `<button class="cat-tab" data-key="${c.key}" onclick="selectCat('${c.key}')">
                     <span>${c.icon||''} ${c.label}</span>
@@ -226,6 +221,9 @@
                     ${todo?`<span class="todo">${todo} to research</span>`:''}
                 </button>`;
             }).join('');
+            // Sits at the end of the tab row, like "Beyond Our Focus" on /.
+            html += `<a class="eprel-link" id="eprelLink" href="/eprel" title="EU energy-label registry for every brand">EPREL Database →</a>`;
+            document.getElementById('catTabs').innerHTML = html;
         }
 
         function selectCat(key){
@@ -236,9 +234,7 @@
             tf.innerHTML = '<option value="All">Has any technology</option>' +
                 techs().map(t=>`<option value="${t.key}">Has ${t.label}</option>`).join('');
             // Carry the chosen machine type over to the EPREL page.
-            const cta=document.getElementById('eprelCta');
-            cta.href = '/eprel#' + key;
-            cta.title = `Open the EPREL energy database for ${cat().label.toLowerCase()}`;
+            document.getElementById('eprelLink').href = '/eprel#' + key;
             render();
         }
 

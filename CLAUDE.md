@@ -31,8 +31,9 @@ separate pages backed by two independent datasets:
 | `/products` | `products.json` (hand-written) | one flagship per brand, with the features EPREL does *not* record (AI, auto-dosing, steam, connectivity) | tab bar |
 | `/eprel` | `eprel_products.json` (scraped) | top 1000 models per type (4000 rows, 2.8 MB) out of ~46k EU registrations | dropdown |
 
-`/products` links to `/eprel` with a "See EPREL Database →" button that carries the selected type
-as a hash (`/eprel#dryer`); the EPREL page reads that hash and preselects it in the dropdown.
+`/products` links to `/eprel` with an "EPREL Database →" link at the end of its tab row (styled like
+`.beyond-link` on the Tech News page) that carries the selected type as a hash (`/eprel#dryer`); the
+EPREL page reads that hash and preselects it in its machine-type dropdown.
 **Keep the four category keys in sync** between `products.json`, `eprel_config.CATEGORIES` and both
 templates — the hash hand-off is the only thing joining the two pages.
 
@@ -67,6 +68,9 @@ EPREL is the EU's public product registry. Facts that shaped the design — don'
   value may be a **list** of API keys, tried in order, for exactly this case.
 - `/api/eprel` serves the whole 2.8 MB file, matching how `/api/news` serves its dataset. If page
   weight ever matters, split it into a per-category endpoint.
+- The ⤓ Excel button writes a real `.xlsx` in the browser — a store-only ZIP of hand-built OOXML
+  parts, no library, because this repo carries no front-end dependencies and CSV would lose the
+  numeric column typing. It exports the *filtered* rows, not just the paged-in ones.
 
 Adding a category or column is a `eprel_config.py` edit only — `columns[]` drives the rendered
 table (label, unit and `type`, which decides both cell rendering and sort behaviour: `class` sorts
