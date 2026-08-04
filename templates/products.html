@@ -61,42 +61,16 @@
         .toolbar select { padding: .55rem .75rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .85rem; background: var(--surface); color: var(--text-1); cursor: pointer; }
         .toolbar label.chk { display: flex; align-items: center; gap: .4rem; font-size: .82rem; color: var(--text-2); cursor: pointer; }
 
-        /* --- EPREL benchmark table --- */
-        .estats { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
-        .estat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .85rem; min-width: 108px; }
-        .estat .n { font-size: 1.1rem; font-weight: 700; line-height: 1.2; }
-        .estat .l { font-size: .7rem; color: var(--text-3); text-transform: uppercase; letter-spacing: .03em; }
-        .btable-wrap { overflow: auto; max-height: 640px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
-        table.btable { border-collapse: separate; border-spacing: 0; width: 100%; font-size: .8rem; white-space: nowrap; }
-        table.btable th, table.btable td { padding: .45rem .6rem; border-bottom: 1px solid var(--border); text-align: left; }
-        table.btable thead th { position: sticky; top: 0; z-index: 3; background: var(--surface); color: var(--text-2); font-weight: 600;
-                                font-size: .7rem; text-transform: uppercase; letter-spacing: .02em; cursor: pointer; user-select: none; box-shadow: inset 0 -1px 0 var(--border); }
-        table.btable thead th:hover { color: var(--accent); }
-        table.btable thead th.sorted { color: var(--accent); }
-        table.btable thead th .u { font-weight: 400; text-transform: none; color: var(--text-3); }
-        table.btable td.num, table.btable th.num { text-align: right; font-variant-numeric: tabular-nums; }
-        table.btable tbody tr:hover td { background: var(--bg); }
-        table.btable td.rk { color: var(--text-3); font-variant-numeric: tabular-nums; }
-        table.btable td.mdl { font-weight: 500; max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
-        table.btable td.brd { font-weight: 600; }
-        table.btable tr.tracked td.brd { color: var(--accent); }
-        .ecls { display: inline-block; padding: .08rem .42rem; border-radius: 5px; font-weight: 700; font-size: .74rem; }
-        .ecls.c-a { background: #dcfce7; color: #15803d; } .ecls.c-b { background: #d9f99d; color: #4d7c0f; }
-        .ecls.c-c { background: #fef9c3; color: #a16207; } .ecls.c-d { background: #fef3c7; color: #b45309; }
-        .ecls.c-e { background: #ffedd5; color: #c2410c; } .ecls.c-f { background: #fee2e2; color: #b91c1c; }
-        .ecls.c-g { background: #fecaca; color: #991b1b; }
-        body.dark-theme .ecls.c-a { background: #064e3b; color: #6ee7b7; } body.dark-theme .ecls.c-b { background: #14532d; color: #bef264; }
-        body.dark-theme .ecls.c-c { background: #422006; color: #fde047; } body.dark-theme .ecls.c-d { background: #451a03; color: #fbbf24; }
-        body.dark-theme .ecls.c-e { background: #431407; color: #fdba74; } body.dark-theme .ecls.c-f { background: #450a0a; color: #fca5a5; }
-        body.dark-theme .ecls.c-g { background: #450a0a; color: #f87171; }
-        .flag { color: var(--partial); cursor: help; font-weight: 700; }
-        .elink { color: var(--accent); text-decoration: none; font-weight: 600; }
-        .elink:hover { text-decoration: underline; }
-        .tfoot { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: .6rem; font-size: .8rem; color: var(--text-3); flex-wrap: wrap; }
-        .more-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text-1); padding: .45rem 1rem; border-radius: 8px; font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer; }
-        .more-btn:hover { border-color: var(--accent); color: var(--accent); }
-        .more-btn:disabled { opacity: .45; cursor: default; border-color: var(--border); color: var(--text-3); }
-        .divider { border-top: 1px solid var(--border); margin: 2.5rem 0 1.5rem; }
+        /* --- category bar + EPREL entry point --- */
+        .cat-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+                   border-bottom: 1px solid var(--border); padding-bottom: .75rem; margin-bottom: 1rem; }
+        .cat-bar .cat-tabs { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+        .eprel-cta { display: inline-flex; align-items: center; gap: .45rem; white-space: nowrap; text-decoration: none;
+                     font-size: .85rem; font-weight: 600; color: var(--accent); background: var(--accent-bg);
+                     border: 1px solid var(--accent-border); border-radius: 999px; padding: .5rem .95rem; transition: background .15s, border-color .15s; }
+        .eprel-cta:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+        .eprel-cta span { transition: transform .15s; }
+        .eprel-cta:hover span { transform: translateX(2px); }
 
         .matrix-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
         table.matrix { border-collapse: collapse; width: 100%; min-width: 760px; font-size: .82rem; }
@@ -170,26 +144,11 @@
         <div id="loading" class="loading">Loading products…</div>
 
         <div id="content" style="display:none;">
-            <div class="cat-tabs" id="catTabs"></div>
-
-            <h2 class="sec" style="margin-top:.5rem">EPREL energy benchmark</h2>
-            <div class="sec-hint" id="eprelHint"></div>
-            <div id="eprelStats" class="estats"></div>
-            <div class="toolbar" id="eprelToolbar">
-                <div class="search-box"><input id="eSearch" placeholder="Search models or brands…"></div>
-                <select id="eBrand"><option value="All">All brands</option></select>
-                <select id="eClass"><option value="All">All energy classes</option></select>
-                <label class="chk"><input type="checkbox" id="eTracked"> Tracked brands only</label>
-                <label class="chk"><input type="checkbox" id="eBest"> Best per brand</label>
-            </div>
-            <div class="btable-wrap"><table class="btable" id="btable"></table></div>
-            <div class="tfoot">
-                <span id="eCount"></span>
-                <button class="more-btn" id="eMore">Show more</button>
+            <div class="cat-bar">
+                <div class="cat-tabs" id="catTabs"></div>
+                <a class="eprel-cta" id="eprelCta" href="/eprel">See EPREL Database <span>→</span></a>
             </div>
 
-            <div class="divider"></div>
-            <h2 class="sec" style="margin-top:0">Curated technology comparison</h2>
             <div class="sec-hint" id="curatedHint">One hand-researched flagship per brand — features EPREL does not record (AI, auto-dosing, steam, connectivity).</div>
 
             <div id="banner"></div>
@@ -221,10 +180,7 @@
 
     <script>
         const PALETTE = ['#2563eb','#dc2626','#16a34a','#d97706','#7c3aed','#0891b2','#db2777','#65a30d'];
-        const E_PAGE = 60;   // benchmark rows revealed per "Show more" click
         let DATA = {}, COLOR = {}, curCat = null, curSearch = '', curTech = 'All', hlTech = null, hideTodo = false;
-        let EPREL = {categories:{}}, eSort = {key:'rank', dir:1}, eShown = E_PAGE,
-            eF = {search:'', brand:'All', cls:'All', tracked:false, best:false};
 
         function initTheme(){ const s=localStorage.getItem('theme'); const d=window.matchMedia('(prefers-color-scheme: dark)').matches; if(s==='dark'||(!s&&d))document.body.classList.add('dark-theme'); syncBtn(); }
         function syncBtn(){ const d=document.body.classList.contains('dark-theme'); themeIcon.textContent=d?'🌙':'☀️'; themeText.textContent=d?'Dark':'Light'; }
@@ -247,12 +203,7 @@
         async function init(){
             initTheme();
             try {
-                const [prod, eprel] = await Promise.all([
-                    fetch('/api/products').then(r=>r.json()),
-                    // The EPREL database is optional: the page still works without it.
-                    fetch('/api/eprel').then(r=>r.json()).catch(()=>({categories:{}}))
-                ]);
-                DATA = prod; EPREL = eprel && eprel.categories ? eprel : {categories:{}};
+                DATA = await fetch('/api/products').then(r=>r.json());
                 if (!categories().length) throw new Error('products.json has no categories');
                 // Colors are per brand, so they stay stable across categories.
                 [...new Set((DATA.products||[]).map(p=>p.company))].forEach((c,i)=> COLOR[c]=PALETTE[i%PALETTE.length]);
@@ -262,12 +213,6 @@
                 document.getElementById('search').addEventListener('input', e=>{ curSearch=e.target.value.trim().toLowerCase(); render(); });
                 document.getElementById('techFilter').addEventListener('change', e=>{ curTech=e.target.value; render(); });
                 document.getElementById('hideTodo').addEventListener('change', e=>{ hideTodo=e.target.checked; render(); });
-                document.getElementById('eSearch').addEventListener('input', e=>{ eF.search=e.target.value.trim().toLowerCase(); eShown=E_PAGE; renderEprel(); });
-                document.getElementById('eBrand').addEventListener('change', e=>{ eF.brand=e.target.value; eShown=E_PAGE; renderEprel(); });
-                document.getElementById('eClass').addEventListener('change', e=>{ eF.cls=e.target.value; eShown=E_PAGE; renderEprel(); });
-                document.getElementById('eTracked').addEventListener('change', e=>{ eF.tracked=e.target.checked; eShown=E_PAGE; renderEprel(); });
-                document.getElementById('eBest').addEventListener('change', e=>{ eF.best=e.target.checked; eShown=E_PAGE; renderEprel(); });
-                document.getElementById('eMore').addEventListener('click', ()=>{ eShown+=E_PAGE; renderEprel(); });
                 selectCat(curCat);
             } catch(e){ loading.textContent='Error: '+e.message; }
         }
@@ -290,121 +235,11 @@
             const tf=document.getElementById('techFilter');
             tf.innerHTML = '<option value="All">Has any technology</option>' +
                 techs().map(t=>`<option value="${t.key}">Has ${t.label}</option>`).join('');
-            // Benchmark filters are per category too: reset them and rebuild.
-            eSort = {key:'rank', dir:1}; eShown = E_PAGE;
-            eF = {search:'', brand:'All', cls:'All', tracked:false, best:false};
-            document.getElementById('eSearch').value = '';
-            ['eTracked','eBest'].forEach(id=> document.getElementById(id).checked=false);
-            const ec = ecat();
-            document.getElementById('eBrand').innerHTML = '<option value="All">All brands</option>' +
-                Object.entries((ec&&ec.brand_counts)||{}).map(([b,n])=>`<option value="${esc(b)}">${esc(b)} (${n})</option>`).join('');
-            document.getElementById('eClass').innerHTML = '<option value="All">All energy classes</option>' +
-                ((ec&&ec.class_order)||[]).filter(c=>(ec.class_counts||{})[c]).map(c=>`<option value="${c}">${c} (${ec.class_counts[c]})</option>`).join('');
+            // Carry the chosen machine type over to the EPREL page.
+            const cta=document.getElementById('eprelCta');
+            cta.href = '/eprel#' + key;
+            cta.title = `Open the EPREL energy database for ${cat().label.toLowerCase()}`;
             render();
-        }
-
-        /* ---------------- EPREL benchmark table ---------------- */
-        function ecat(){ return (EPREL.categories||{})[curCat] || null; }
-        function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-        function clsKey(label){ const m=String(label||'').match(/^A\+*|^[A-G]/); return 'c-'+(m?m[0][0]:'x').toLowerCase(); }
-        function trackedSet(){ return new Set(EPREL.tracked_brands||[]); }
-
-        function eprelRows(){
-            const ec = ecat(); if (!ec) return [];
-            let rows = ec.products || [];
-            if (eF.search) rows = rows.filter(r=> (r.model+' '+r.brand+' '+(r.supplier||'')).toLowerCase().includes(eF.search));
-            if (eF.brand!=='All') rows = rows.filter(r=> r.brand===eF.brand);
-            if (eF.cls!=='All') rows = rows.filter(r=> r.classLabel===eF.cls);
-            if (eF.tracked){ const t=trackedSet(); rows = rows.filter(r=> t.has(r.brand)); }
-
-            const col = (ec.columns||[]).find(c=>c.key===eSort.key);
-            const type = eSort.key==='rank' ? 'rank' : (col ? col.type : 'text');
-            rows = rows.slice().sort((a,b)=>{
-                let av, bv;
-                if (type==='rank'){ av=a.rank; bv=b.rank; }
-                else if (type==='class'){ av=a.classRank; bv=b.classRank; }         // A+++ before A, not alphabetical
-                else if (type==='num'){ av=a[eSort.key]; bv=b[eSort.key]; }
-                else if (type==='bool'){ av=a[eSort.key]?1:0; bv=b[eSort.key]?1:0; }
-                else { av=String(a[eSort.key]??'').toLowerCase(); bv=String(b[eSort.key]??'').toLowerCase(); }
-                // Missing values always sort last, whichever direction is active.
-                const an=(av===null||av===undefined||av===''), bn=(bv===null||bv===undefined||bv==='');
-                if (an&&bn) return a.rank-b.rank;
-                if (an) return 1;
-                if (bn) return -1;
-                if (av<bv) return -1*eSort.dir;
-                if (av>bv) return 1*eSort.dir;
-                return a.rank-b.rank;
-            });
-            if (eF.best){                                    // one row per brand, best first
-                const seen=new Set();
-                rows = rows.filter(r=> seen.has(r.brand)?false:(seen.add(r.brand),true));
-            }
-            return rows;
-        }
-
-        function eCell(r, col){
-            const v = r[col.key];
-            if (col.type==='link') return v ? `<a class="elink" href="${esc(v)}" target="_blank" rel="noopener">EPREL ↗</a>` : '';
-            if (col.type==='class') return v ? `<span class="ecls ${clsKey(v)}">${esc(v)}</span>` : '—';
-            if (col.type==='bool') return v===true ? '✓' : (v===false ? '–' : '');
-            if (v===null || v===undefined || v==='') return '—';
-            return esc(v);
-        }
-
-        function renderEprel(){
-            const ec = ecat();
-            const hint = document.getElementById('eprelHint');
-            const wrap = document.querySelector('.btable-wrap');
-            if (!ec){
-                hint.textContent = 'No EPREL data for this category yet — run `python eprel_scraper.py` to build eprel_products.json.';
-                document.getElementById('eprelStats').innerHTML = '';
-                document.getElementById('eprelToolbar').style.display = 'none';
-                wrap.style.display='none'; document.querySelector('.tfoot').style.display='none';
-                return;
-            }
-            document.getElementById('eprelToolbar').style.display = 'flex';
-            wrap.style.display='block'; document.querySelector('.tfoot').style.display='flex';
-            hint.innerHTML = `Top <strong>${ec.kept}</strong> of ${(ec.unique_models||0).toLocaleString()} models registered in EPREL under ${esc(ec.regulation)}, `
-                + `ranked by energy class then weighted energy consumption. ${esc(ec.energy_note)} `
-                + `Click any column to re-sort — energy is an absolute figure, so it favours smaller machines; `
-                + `<strong>sort by EEI</strong> for size-independent efficiency. ⚠ marks a registration whose declared values contradict each other.`;
-
-            document.getElementById('eprelStats').innerHTML = [
-                ['Models ranked', ec.kept],
-                ['EPREL registrations', (ec.registered_total||0).toLocaleString()],
-                ['Brands', Object.keys(ec.brand_counts||{}).length],
-                ['Best class', (ec.class_order||[]).find(c=>(ec.class_counts||{})[c]) || '—'],
-                ['Regulation', ec.regulation||'—'],
-            ].map(([l,n])=>`<div class="estat"><div class="n">${esc(n)}</div><div class="l">${esc(l)}</div></div>`).join('');
-
-            const cols = ec.columns||[], rows = eprelRows(), page = rows.slice(0, eShown), tset = trackedSet();
-            const head = `<thead><tr><th class="num" onclick="eSortBy('rank')">#</th>` + cols.map(c=>{
-                const cls = (c.type==='num'?'num ':'') + (eSort.key===c.key?'sorted':'');
-                const arrow = eSort.key===c.key ? (eSort.dir===1?' ↑':' ↓') : '';
-                return `<th class="${cls}" onclick="eSortBy('${c.key}')">${esc(c.label)}${c.unit?` <span class="u">${esc(c.unit)}</span>`:''}${arrow}</th>`;
-            }).join('') + '</tr></thead>';
-
-            const body = page.map(r=>{
-                const tr = tset.has(r.brand) ? ' class="tracked"' : '';
-                const flag = r.dataFlag ? ' <span class="flag" title="EPREL registration declares an EEI inconsistent with its energy class">⚠</span>' : '';
-                return `<tr${tr}><td class="rk">${r.rank}</td>` + cols.map(c=>{
-                    const cn = c.type==='num' ? 'num' : (c.key==='model' ? 'mdl' : (c.key==='brand' ? 'brd' : ''));
-                    const extra = c.key==='model' ? flag : '';
-                    return `<td class="${cn}"${c.key==='model'?` title="${esc(r.model)}"`:''}>${eCell(r,c)}${extra}</td>`;
-                }).join('') + '</tr>';
-            }).join('') || `<tr><td colspan="${cols.length+1}" style="text-align:center;padding:2rem;color:var(--text-3)">No models match these filters.</td></tr>`;
-
-            document.getElementById('btable').innerHTML = head + `<tbody>${body}</tbody>`;
-            document.getElementById('eCount').textContent =
-                `Showing ${Math.min(eShown, rows.length)} of ${rows.length} models` + (ec.flagged ? ` · ${ec.flagged} flagged for inconsistent EPREL data` : '');
-            const more = document.getElementById('eMore');
-            more.disabled = eShown >= rows.length;
-            more.textContent = more.disabled ? 'All shown' : `Show ${Math.min(E_PAGE, rows.length-eShown)} more`;
-        }
-
-        function eSortBy(key){
-            if (eSort.key===key) eSort.dir *= -1; else eSort = {key, dir:1};
-            eShown = E_PAGE; renderEprel();
         }
 
         function visibleProducts(){
@@ -416,7 +251,6 @@
         }
 
         function render(){
-            renderEprel();
             const c = cat(), T = techs(), S = specs(), prods = visibleProducts();
             const all = inCat(curCat), todoCount = all.filter(isTodo).length;
 

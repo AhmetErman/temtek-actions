@@ -15,26 +15,28 @@ Two independent pipelines live side by side (they share only `app.py` and the Ge
 |---|---|---|---|
 | Tech news (JP/CN RSS + scrapers, Gemini-classified) | `scraper_w_filter.py` | `tech_news_classified.json`, `dynamic_classes.json` | `/`, `/beyond` |
 | Company newsroom tracker (competitor press releases) | `company_pipeline.py` | `company_news.json`, `company_analysis.json` | `/companies` |
-| EPREL product database (EU energy-label registry) | `eprel_scraper.py` | `eprel_products.json` | `/products` |
+| EPREL product database (EU energy-label registry) | `eprel_scraper.py` | `eprel_products.json` | `/eprel` |
 
 A third script, `teams_digest.py`, reads `tech_news_classified.json` and posts a weekly Adaptive
 Card to a Teams webhook (state in `teams_digest_state.json`). `products.json` / `/products` is a
 hand-curated dataset, never scraped.
 
-## Products page — two datasets, four categories
+## Two product pages, four machine types
 
-`/products` shows four product categories (washing machines, washer-dryers, dryers, dishwashers)
-behind a tab bar. Each tab stacks **two independent datasets**:
+The same four machine types (`washing-machine`, `washer-dryer`, `dryer`, `dishwasher`) drive two
+separate pages backed by two independent datasets:
 
-1. **EPREL energy benchmark** (top) — scraped, `eprel_products.json`, top 1000 models per category
-   (4000 rows, 2.8 MB) drawn from ~46k EU registrations.
-2. **Curated technology comparison** (below) — hand-written, `products.json`, one flagship per brand,
-   covering the features EPREL does *not* record (AI, auto-dosing, steam, connectivity).
+| Page | Dataset | What it is | Picker |
+|---|---|---|---|
+| `/products` | `products.json` (hand-written) | one flagship per brand, with the features EPREL does *not* record (AI, auto-dosing, steam, connectivity) | tab bar |
+| `/eprel` | `eprel_products.json` (scraped) | top 1000 models per type (4000 rows, 2.8 MB) out of ~46k EU registrations | dropdown |
 
-They share only the four category keys (`washing-machine`, `washer-dryer`, `dryer`, `dishwasher`);
-keep those in sync between `products.json`, `eprel_config.CATEGORIES` and the template.
+`/products` links to `/eprel` with a "See EPREL Database →" button that carries the selected type
+as a hash (`/eprel#dryer`); the EPREL page reads that hash and preselects it in the dropdown.
+**Keep the four category keys in sync** between `products.json`, `eprel_config.CATEGORIES` and both
+templates — the hash hand-off is the only thing joining the two pages.
 
-### EPREL scraper (`eprel_scraper.py` + `eprel_config.py`)
+### EPREL page + scraper (`eprel_scraper.py` + `eprel_config.py` + `templates/eprel.html`)
 
 EPREL is the EU's public product registry. Facts that shaped the design — don't undo them:
 
@@ -67,7 +69,9 @@ EPREL is the EU's public product registry. Facts that shaped the design — don'
   weight ever matters, split it into a per-category endpoint.
 
 Adding a category or column is a `eprel_config.py` edit only — `columns[]` drives the rendered
-table, and `fields{}` maps output keys to EPREL API field names.
+table (label, unit and `type`, which decides both cell rendering and sort behaviour: `class` sorts
+by `classRank` so A+++ beats A, never alphabetically), and `fields{}` maps output keys to EPREL API
+field names. `templates/eprel.html` needs no change.
 
 Note that EPREL carries **no price or retailer data** — the Price (€) / Market URL columns in
 `eprel/eprel_washer_dryer_benchmark.xlsx` came from a separate manual price lookup and have no

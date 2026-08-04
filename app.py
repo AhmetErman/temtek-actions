@@ -70,6 +70,10 @@ def get_products():
         return jsonify(data), 500
     return jsonify(data)
 
+@app.route('/eprel')
+def eprel():
+    return render_template('eprel.html')
+
 @app.route('/api/eprel')
 def get_eprel():
     # Absent until eprel_scraper.py has run once; the page degrades gracefully.

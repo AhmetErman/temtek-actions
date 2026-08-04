@@ -64,20 +64,18 @@ CI: `.github/workflows/company-news.yml` runs the incremental update weekly
 
 ## Products page (`/products`)
 
-Four product categories (washing machines, washer-dryers, dryers, dishwashers)
-behind a tab bar, each stacking two datasets — `app.py` route `/products`,
-rendered by `templates/products.html`:
+Four machine types (washing machines, washer-dryers, dryers, dishwashers)
+behind a tab bar, showing the curated technology comparison — `app.py` route
+`/products` + `/api/products`, rendered by `templates/products.html`. Each
+category brings its own spec fields and technology list, and rows marked
+`"status": "placeholder"` render as "to research".
 
-1. **EPREL energy benchmark** (`eprel_products.json`, `/api/eprel`) — the top
-   1000 models per category scraped from the EU energy-label registry by
-   `eprel_scraper.py`, ranked by energy class then weighted energy consumption.
-   Sortable on every column, filterable by brand / class / tracked brands, with
-   a "best per brand" toggle. This is the same shape as the hand-built
-   `eprel/eprel_washer_dryer_benchmark.xlsx`, generated for all four categories.
-2. **Curated technology comparison** (`products.json`, `/api/products`) — below
-   the table: technology matrix, flagship cards and spec table. Each category
-   brings its own spec fields and technology list, and rows marked
-   `"status": "placeholder"` render as "to research".
+A **"See EPREL Database →"** button next to the tabs opens `/eprel`
+(`templates/eprel.html`, `/api/eprel`), a separate page listing every machine
+scraped from the EU energy-label registry by `eprel_scraper.py` — top 1000 per
+type, ranked by energy class then weighted energy consumption, with a machine-type
+dropdown, sortable columns, brand/class filters and "best per brand". The button
+passes the selected type through as `/eprel#washer-dryer`.
 
 - **Why curated, not scraped:** product-spec pages are JS-rendered, region-gated
   and bot-protected, so reliable uniform scraping isn't feasible. `products.json`

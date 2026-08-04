@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPREL Database — Appliance Energy Benchmark</title>
+    <meta name="description" content="Every appliance in the EU EPREL energy-label registry we track: washing machines, washer-dryers, dryers and dishwashers, ranked by energy class and consumption.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg: #fafaf9; --surface: #ffffff; --border: #e7e5e4; --border-hover: #d6d3d1;
+            --text-1: #1c1917; --text-2: #57534e; --text-3: #a8a29e;
+            --accent: #2563eb; --accent-bg: #eff6ff; --accent-border: #bfdbfe;
+            --partial: #d97706; --partial-bg: #fef3c7;
+            --radius: 10px;
+        }
+        body.dark-theme {
+            --bg: #0c0a09; --surface: #1c1917; --border: #2e2a24; --border-hover: #44403c;
+            --text-1: #f5f5f4; --text-2: #d6d3d1; --text-3: #78716c;
+            --accent: #60a5fa; --accent-bg: #172554; --accent-border: #1e40af;
+            --partial: #fbbf24; --partial-bg: #451a03;
+        }
+        body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text-1); line-height: 1.5; min-height: 100vh; transition: background .2s, color .2s; }
+        .site-header { border-bottom: 1px solid var(--border); background: var(--surface); padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+        .header-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+        .logo { font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: .5rem; }
+        .logo-icon { width: 28px; height: 28px; background: var(--accent); border-radius: 7px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; }
+        .nav { display: flex; gap: .25rem; }
+        .nav a { font-size: .85rem; font-weight: 600; color: var(--text-2); text-decoration: none; padding: .4rem .8rem; border-radius: 8px; }
+        .nav a:hover { background: var(--border); color: var(--text-1); }
+        .nav a.active { background: var(--text-1); color: var(--bg); }
+        .theme-toggle { background: none; border: 1px solid var(--border); color: var(--text-2); padding: .4rem .75rem; border-radius: 8px; cursor: pointer; font-size: .85rem; display: flex; gap: .4rem; align-items: center; }
+        .theme-toggle:hover { background: var(--border); color: var(--text-1); }
+        .wrap { max-width: 1400px; margin: 0 auto; padding: 1.5rem 2rem 4rem; }
+        .back { display: inline-flex; align-items: center; gap: .35rem; font-size: .82rem; font-weight: 600; color: var(--text-3); text-decoration: none; margin-bottom: .75rem; }
+        .back:hover { color: var(--accent); }
+        .page-title { font-size: 1.5rem; font-weight: 700; margin-bottom: .25rem; }
+        .page-sub { color: var(--text-3); font-size: .9rem; margin-bottom: 1.25rem; max-width: 90ch; }
+
+        /* --- machine picker --- */
+        .picker { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; margin-bottom: 1.25rem;
+                  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem; }
+        .picker label { font-size: .8rem; font-weight: 600; color: var(--text-2); }
+        .picker select#catPick { padding: .55rem 2rem .55rem .8rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .95rem;
+                                 font-weight: 600; background: var(--bg); color: var(--text-1); cursor: pointer; min-width: 240px; }
+        .picker select#catPick:focus { outline: none; border-color: var(--accent); }
+        .picker .reg { font-size: .8rem; color: var(--text-3); margin-left: auto; }
+
+        .estats { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .estat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .85rem; min-width: 112px; }
+        .estat .n { font-size: 1.1rem; font-weight: 700; line-height: 1.2; }
+        .estat .l { font-size: .7rem; color: var(--text-3); text-transform: uppercase; letter-spacing: .03em; }
+
+        .toolbar { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
+        .search-box { flex: 1; min-width: 200px; position: relative; }
+        .search-box input { width: 100%; padding: .55rem .75rem .55rem 2.1rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .875rem; background: var(--surface); color: var(--text-1); }
+        .search-box input:focus { outline: none; border-color: var(--accent); }
+        .search-box::before { content: '⌕'; position: absolute; left: .7rem; top: 50%; transform: translateY(-50%); color: var(--text-3); }
+        .toolbar select { padding: .55rem .75rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .85rem; background: var(--surface); color: var(--text-1); cursor: pointer; }
+        .toolbar label.chk { display: flex; align-items: center; gap: .4rem; font-size: .82rem; color: var(--text-2); cursor: pointer; }
+
+        .btable-wrap { overflow: auto; max-height: 72vh; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+        table.btable { border-collapse: separate; border-spacing: 0; width: 100%; font-size: .8rem; white-space: nowrap; }
+        table.btable th, table.btable td { padding: .45rem .6rem; border-bottom: 1px solid var(--border); text-align: left; }
+        table.btable thead th { position: sticky; top: 0; z-index: 3; background: var(--surface); color: var(--text-2); font-weight: 600;
+                                font-size: .7rem; text-transform: uppercase; letter-spacing: .02em; cursor: pointer; user-select: none; box-shadow: inset 0 -1px 0 var(--border); }
+        table.btable thead th:hover { color: var(--accent); }
+        table.btable thead th.sorted { color: var(--accent); }
+        table.btable thead th .u { font-weight: 400; text-transform: none; color: var(--text-3); }
+        table.btable td.num, table.btable th.num { text-align: right; font-variant-numeric: tabular-nums; }
+        table.btable tbody tr:hover td { background: var(--bg); }
+        table.btable td.rk { color: var(--text-3); font-variant-numeric: tabular-nums; }
+        table.btable td.mdl { font-weight: 500; max-width: 280px; overflow: hidden; text-overflow: ellipsis; }
+        table.btable td.brd { font-weight: 600; }
+        table.btable tr.tracked td.brd { color: var(--accent); }
+        .ecls { display: inline-block; padding: .08rem .42rem; border-radius: 5px; font-weight: 700; font-size: .74rem; }
+        .ecls.c-a { background: #dcfce7; color: #15803d; } .ecls.c-b { background: #d9f99d; color: #4d7c0f; }
+        .ecls.c-c { background: #fef9c3; color: #a16207; } .ecls.c-d { background: #fef3c7; color: #b45309; }
+        .ecls.c-e { background: #ffedd5; color: #c2410c; } .ecls.c-f { background: #fee2e2; color: #b91c1c; }
+        .ecls.c-g { background: #fecaca; color: #991b1b; }
+        body.dark-theme .ecls.c-a { background: #064e3b; color: #6ee7b7; } body.dark-theme .ecls.c-b { background: #14532d; color: #bef264; }
+        body.dark-theme .ecls.c-c { background: #422006; color: #fde047; } body.dark-theme .ecls.c-d { background: #451a03; color: #fbbf24; }
+        body.dark-theme .ecls.c-e { background: #431407; color: #fdba74; } body.dark-theme .ecls.c-f { background: #450a0a; color: #fca5a5; }
+        body.dark-theme .ecls.c-g { background: #450a0a; color: #f87171; }
+        .flag { color: var(--partial); cursor: help; font-weight: 700; }
+        .elink { color: var(--accent); text-decoration: none; font-weight: 600; }
+        .elink:hover { text-decoration: underline; }
+        .tfoot { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: .6rem; font-size: .8rem; color: var(--text-3); flex-wrap: wrap; }
+        .more-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text-1); padding: .45rem 1rem; border-radius: 8px; font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer; }
+        .more-btn:hover { border-color: var(--accent); color: var(--accent); }
+        .more-btn:disabled { opacity: .45; cursor: default; border-color: var(--border); color: var(--text-3); }
+        .loading, .empty { text-align: center; padding: 3rem; color: var(--text-3); }
+        .note { font-size: .78rem; color: var(--text-3); margin-top: 1rem; max-width: 95ch; }
+        @media (max-width: 640px) { .wrap { padding: 1rem; } .picker .reg { margin-left: 0; } }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo"><div class="logo-icon">E</div> EPREL Database</div>
+            <nav class="nav">
+                <a href="/">Tech News</a>
+                <a href="/companies">Company News</a>
+                <a href="/products">Products</a>
+                <a href="/eprel" class="active">EPREL Database</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span><span id="themeText">Light</span></button>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <a class="back" href="/products">← Back to Products</a>
+        <div class="page-title">EPREL energy database</div>
+        <div class="page-sub" id="sub">Every machine we track from the EU's public product registry, ranked by energy class then weighted energy consumption.</div>
+
+        <div id="loading" class="loading">Loading EPREL database…</div>
+
+        <div id="content" style="display:none;">
+            <div class="picker">
+                <label for="catPick">Machine type</label>
+                <select id="catPick"></select>
+                <span class="reg" id="regNote"></span>
+            </div>
+
+            <div class="estats" id="eprelStats"></div>
+            <div class="sec-hint page-sub" id="eprelHint"></div>
+
+            <div class="toolbar">
+                <div class="search-box"><input id="eSearch" placeholder="Search models or brands…"></div>
+                <select id="eBrand"><option value="All">All brands</option></select>
+                <select id="eClass"><option value="All">All energy classes</option></select>
+                <label class="chk"><input type="checkbox" id="eTracked"> Tracked brands only</label>
+                <label class="chk"><input type="checkbox" id="eBest"> Best per brand</label>
+            </div>
+
+            <div class="btable-wrap"><table class="btable" id="btable"></table></div>
+            <div class="tfoot">
+                <span id="eCount"></span>
+                <button class="more-btn" id="eMore">Show more</button>
+            </div>
+
+            <div class="note" id="srcNote"></div>
+        </div>
+    </main>
+
+    <script>
+        const E_PAGE = 60;   // rows revealed per "Show more" click
+        let EPREL = {categories:{}}, curCat = null, eSort = {key:'rank', dir:1}, eShown = E_PAGE,
+            eF = {search:'', brand:'All', cls:'All', tracked:false, best:false};
+
+        function initTheme(){ const s=localStorage.getItem('theme'); const d=window.matchMedia('(prefers-color-scheme: dark)').matches; if(s==='dark'||(!s&&d))document.body.classList.add('dark-theme'); syncBtn(); }
+        function syncBtn(){ const d=document.body.classList.contains('dark-theme'); themeIcon.textContent=d?'🌙':'☀️'; themeText.textContent=d?'Dark':'Light'; }
+        themeToggle.onclick=()=>{ document.body.classList.toggle('dark-theme'); localStorage.setItem('theme', document.body.classList.contains('dark-theme')?'dark':'light'); syncBtn(); };
+
+        function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+        function clsKey(label){ const m=String(label||'').match(/^A\+*|^[A-G]/); return 'c-'+(m?m[0][0]:'x').toLowerCase(); }
+        function ecat(){ return (EPREL.categories||{})[curCat] || null; }
+        function trackedSet(){ return new Set(EPREL.tracked_brands||[]); }
+
+        // Category order follows products.json's four machine types.
+        const CAT_ORDER = ['washing-machine','washer-dryer','dryer','dishwasher'];
+        function orderedCats(){
+            const keys = Object.keys(EPREL.categories||{});
+            return keys.slice().sort((a,b)=>{
+                const ia=CAT_ORDER.indexOf(a), ib=CAT_ORDER.indexOf(b);
+                return (ia<0?99:ia)-(ib<0?99:ib);
+            });
+        }
+
+        async function init(){
+            initTheme();
+            try {
+                EPREL = await fetch('/api/eprel').then(r=>r.json());
+                const cats = orderedCats();
+                if (!cats.length) throw new Error('eprel_products.json is empty — run `python eprel_scraper.py` to build it.');
+                loading.style.display='none'; content.style.display='block';
+
+                const pick = document.getElementById('catPick');
+                pick.innerHTML = cats.map(k=>{
+                    const c = EPREL.categories[k];
+                    return `<option value="${esc(k)}">${esc(c.label)} — ${c.kept} models</option>`;
+                }).join('');
+                // Deep-linkable: /eprel#dryer opens that machine type directly.
+                const hash = (location.hash||'').replace('#','');
+                curCat = cats.includes(hash) ? hash : cats[0];
+                pick.value = curCat;
+                pick.addEventListener('change', e=>{ selectCat(e.target.value); });
+                window.addEventListener('hashchange', ()=>{
+                    const h=(location.hash||'').replace('#','');
+                    if (EPREL.categories[h] && h!==curCat){ pick.value=h; selectCat(h); }
+                });
+
+                document.getElementById('eSearch').addEventListener('input', e=>{ eF.search=e.target.value.trim().toLowerCase(); eShown=E_PAGE; render(); });
+                document.getElementById('eBrand').addEventListener('change', e=>{ eF.brand=e.target.value; eShown=E_PAGE; render(); });
+                document.getElementById('eClass').addEventListener('change', e=>{ eF.cls=e.target.value; eShown=E_PAGE; render(); });
+                document.getElementById('eTracked').addEventListener('change', e=>{ eF.tracked=e.target.checked; eShown=E_PAGE; render(); });
+                document.getElementById('eBest').addEventListener('change', e=>{ eF.best=e.target.checked; eShown=E_PAGE; render(); });
+                document.getElementById('eMore').addEventListener('click', ()=>{ eShown+=E_PAGE; render(); });
+
+                document.getElementById('srcNote').textContent =
+                    `${EPREL.source||''} Scraped ${EPREL.generated||'—'}. ${EPREL.note||''}`;
+                selectCat(curCat);
+            } catch(e){ loading.textContent='Error: '+e.message; }
+        }
+
+        function selectCat(key){
+            curCat = key;
+            if (location.hash.replace('#','') !== key) history.replaceState(null, '', '#'+key);
+            eSort = {key:'rank', dir:1}; eShown = E_PAGE;
+            eF = {search:'', brand:'All', cls:'All', tracked:false, best:false};
+            document.getElementById('eSearch').value = '';
+            ['eTracked','eBest'].forEach(id=> document.getElementById(id).checked=false);
+            const c = ecat();
+            document.getElementById('eBrand').innerHTML = '<option value="All">All brands</option>' +
+                Object.entries((c&&c.brand_counts)||{}).map(([b,n])=>`<option value="${esc(b)}">${esc(b)} (${n})</option>`).join('');
+            document.getElementById('eClass').innerHTML = '<option value="All">All energy classes</option>' +
+                ((c&&c.class_order)||[]).filter(x=>(c.class_counts||{})[x]).map(x=>`<option value="${esc(x)}">${esc(x)} (${c.class_counts[x]})</option>`).join('');
+            render();
+        }
+
+        function rows(){
+            const c = ecat(); if (!c) return [];
+            let list = c.products || [];
+            if (eF.search) list = list.filter(r=> (r.model+' '+r.brand+' '+(r.supplier||'')).toLowerCase().includes(eF.search));
+            if (eF.brand!=='All') list = list.filter(r=> r.brand===eF.brand);
+            if (eF.cls!=='All') list = list.filter(r=> r.classLabel===eF.cls);
+            if (eF.tracked){ const t=trackedSet(); list = list.filter(r=> t.has(r.brand)); }
+
+            const col = (c.columns||[]).find(x=>x.key===eSort.key);
+            const type = eSort.key==='rank' ? 'rank' : (col ? col.type : 'text');
+            list = list.slice().sort((a,b)=>{
+                let av, bv;
+                if (type==='rank'){ av=a.rank; bv=b.rank; }
+                else if (type==='class'){ av=a.classRank; bv=b.classRank; }      // A+++ before A, not alphabetical
+                else if (type==='num'){ av=a[eSort.key]; bv=b[eSort.key]; }
+                else if (type==='bool'){ av=a[eSort.key]?1:0; bv=b[eSort.key]?1:0; }
+                else { av=String(a[eSort.key]==null?'':a[eSort.key]).toLowerCase(); bv=String(b[eSort.key]==null?'':b[eSort.key]).toLowerCase(); }
+                // Missing values always sort last, whichever direction is active.
+                const an=(av===null||av===undefined||av===''), bn=(bv===null||bv===undefined||bv==='');
+                if (an&&bn) return a.rank-b.rank;
+                if (an) return 1;
+                if (bn) return -1;
+                if (av<bv) return -1*eSort.dir;
+                if (av>bv) return 1*eSort.dir;
+                return a.rank-b.rank;
+            });
+            if (eF.best){                                   // one row per brand, best first
+                const seen=new Set();
+                list = list.filter(r=> seen.has(r.brand)?false:(seen.add(r.brand),true));
+            }
+            return list;
+        }
+
+        function cell(r, col){
+            const v = r[col.key];
+            if (col.type==='link') return v ? `<a class="elink" href="${esc(v)}" target="_blank" rel="noopener">EPREL ↗</a>` : '';
+            if (col.type==='class') return v ? `<span class="ecls ${clsKey(v)}">${esc(v)}</span>` : '—';
+            if (col.type==='bool') return v===true ? '✓' : (v===false ? '–' : '');
+            if (v===null || v===undefined || v==='') return '—';
+            return esc(v);
+        }
+
+        function render(){
+            const c = ecat(); if (!c) return;
+            document.getElementById('sub').textContent =
+                `Every ${c.label.toLowerCase().replace(/s$/,'')} we track from the EU's public product registry, ranked by energy class then weighted energy consumption.`;
+            document.getElementById('regNote').textContent =
+                `${(c.registered_total||0).toLocaleString()} registrations scanned · ${(c.unique_models||0).toLocaleString()} unique models · ${c.regulation}`;
+
+            document.getElementById('eprelStats').innerHTML = [
+                ['Models listed', c.kept],
+                ['Brands', Object.keys(c.brand_counts||{}).length],
+                ['Best class', (c.class_order||[]).find(x=>(c.class_counts||{})[x]) || '—'],
+                ['EPREL registrations', (c.registered_total||0).toLocaleString()],
+                ['Regulation', c.regulation||'—'],
+            ].map(([l,n])=>`<div class="estat"><div class="n">${esc(n)}</div><div class="l">${esc(l)}</div></div>`).join('');
+
+            document.getElementById('eprelHint').innerHTML =
+                `${esc(c.energy_note)} Click any column to re-sort — energy is an absolute figure, so it favours smaller machines; `
+                + `<strong>sort by EEI</strong> for size-independent efficiency. ⚠ marks a registration whose declared values contradict each other.`;
+
+            const cols = c.columns||[], list = rows(), page = list.slice(0, eShown), tset = trackedSet();
+            const head = `<thead><tr><th class="num" onclick="sortBy('rank')">#</th>` + cols.map(col=>{
+                const cn = (col.type==='num'?'num ':'') + (eSort.key===col.key?'sorted':'');
+                const arrow = eSort.key===col.key ? (eSort.dir===1?' ↑':' ↓') : '';
+                return `<th class="${cn}" onclick="sortBy('${col.key}')">${esc(col.label)}${col.unit?` <span class="u">${esc(col.unit)}</span>`:''}${arrow}</th>`;
+            }).join('') + '</tr></thead>';
+
+            const body = page.map(r=>{
+                const tr = tset.has(r.brand) ? ' class="tracked"' : '';
+                const flag = r.dataFlag ? ' <span class="flag" title="EPREL registration declares values that contradict each other">⚠</span>' : '';
+                return `<tr${tr}><td class="rk">${r.rank}</td>` + cols.map(col=>{
+                    const cn = col.type==='num' ? 'num' : (col.key==='model' ? 'mdl' : (col.key==='brand' ? 'brd' : ''));
+                    const extra = col.key==='model' ? flag : '';
+                    return `<td class="${cn}"${col.key==='model'?` title="${esc(r.model)}"`:''}>${cell(r,col)}${extra}</td>`;
+                }).join('') + '</tr>';
+            }).join('') || `<tr><td colspan="${cols.length+1}" class="empty">No models match these filters.</td></tr>`;
+
+            document.getElementById('btable').innerHTML = head + `<tbody>${body}</tbody>`;
+            document.getElementById('eCount').textContent =
+                `Showing ${Math.min(eShown, list.length)} of ${list.length} models` + (c.flagged ? ` · ${c.flagged} flagged for inconsistent EPREL data` : '');
+            const more = document.getElementById('eMore');
+            more.disabled = eShown >= list.length;
+            more.textContent = more.disabled ? 'All shown' : `Show ${Math.min(E_PAGE, list.length-eShown)} more`;
+        }
+
+        function sortBy(key){
+            if (eSort.key===key) eSort.dir *= -1; else eSort = {key, dir:1};
+            eShown = E_PAGE; render();
+        }
+        init();
+    </script>
+</body>
+</html>
