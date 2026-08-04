@@ -70,6 +70,22 @@
         body.dark-theme .eprel-link { color: var(--text-2); background: var(--surface); border-color: var(--border); }
         body.dark-theme .eprel-link:hover { border-color: var(--border-hover); background: var(--border); }
 
+        table.spec th.num, table.spec td.num { text-align: right; font-variant-numeric: tabular-nums; }
+        table.spec th .u { font-weight: 400; text-transform: none; color: var(--text-3); }
+        table.spec td.mdl { font-weight: 500; }
+        .ecls { display: inline-block; padding: .08rem .42rem; border-radius: 5px; font-weight: 700; font-size: .74rem; }
+        .ecls.c-a { background: #dcfce7; color: #15803d; } .ecls.c-b { background: #d9f99d; color: #4d7c0f; }
+        .ecls.c-c { background: #fef9c3; color: #a16207; } .ecls.c-d { background: #fef3c7; color: #b45309; }
+        .ecls.c-e { background: #ffedd5; color: #c2410c; } .ecls.c-f { background: #fee2e2; color: #b91c1c; }
+        .ecls.c-g { background: #fecaca; color: #991b1b; }
+        body.dark-theme .ecls.c-a { background: #064e3b; color: #6ee7b7; } body.dark-theme .ecls.c-b { background: #14532d; color: #bef264; }
+        body.dark-theme .ecls.c-c { background: #422006; color: #fde047; } body.dark-theme .ecls.c-d { background: #451a03; color: #fbbf24; }
+        body.dark-theme .ecls.c-e { background: #431407; color: #fdba74; } body.dark-theme .ecls.c-f { background: #450a0a; color: #fca5a5; }
+        body.dark-theme .ecls.c-g { background: #450a0a; color: #f87171; }
+        .vtag { font-size: .7rem; font-weight: 700; padding: .1rem .45rem; border-radius: 5px; white-space: nowrap; cursor: help; }
+        .vtag.ok { background: var(--yes-bg); color: var(--yes); }
+        .vtag.todo { background: var(--partial-bg); color: var(--partial); }
+
         .matrix-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
         table.matrix { border-collapse: collapse; width: 100%; min-width: 760px; font-size: .82rem; }
         table.matrix th, table.matrix td { padding: .55rem .4rem; text-align: center; border-bottom: 1px solid var(--border); }
@@ -184,14 +200,22 @@
         function sym(v){ return v==='yes'?'✓':v==='partial'?'~':v==='no'?'–':'?'; }
         // Placeholder rows carry no tech values yet -> render them as "unknown".
         function techVal(p, key){ const v=(p.tech||{})[key]; return (v==='yes'||v==='partial'||v==='no')?v:'unknown'; }
-        // Specs live in p.specs; fall back to flat legacy fields for older records.
-        function specVal(p, key){ const v=(p.specs||{})[key] ?? p[key]; return (v===undefined||v===null||v==='')?'':String(v); }
+        // Specs come from the model's EPREL registration.
+        function specVal(p, key){ const v=(p.eprel||{})[key]; return (v===undefined||v===null||v==='')?'':String(v); }
         function isTodo(p){ return p.status==='placeholder' || !p.model; }
+        function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+        function clsKey(l){ const m=String(l||'').match(/^A\+*|^[A-G]/); return 'c-'+(m?m[0][0]:'x').toLowerCase(); }
+        function specCell(p, col){
+            const v=(p.eprel||{})[col.key];
+            if (col.type==='class') return v?`<span class="ecls ${clsKey(v)}">${esc(v)}</span>`:'—';
+            if (col.type==='bool') return v===true?'✓':(v===false?'–':'—');
+            return (v===null||v===undefined||v==='')?'—':esc(v);
+        }
 
         function categories(){ return DATA.categories||[]; }
         function cat(){ return categories().find(c=>c.key===curCat) || {specs:[], technologies:[]}; }
         function techs(){ return cat().technologies||[]; }
-        function specs(){ return cat().specs||[]; }
+        function specs(){ return cat().specColumns||[]; }
         function shortOf(t){ return t.short || t.label; }
         function inCat(key){ return (DATA.products||[]).filter(p=>p.category===key); }
 
@@ -274,25 +298,36 @@
                 const col=COLOR[p.company], todo=isTodo(p);
                 const chips = T.filter(t=>['yes','partial'].includes(techVal(p,t.key)))
                     .map(t=>`<span class="tchip ${techVal(p,t.key)}">${shortOf(t)}</span>`).join('');
-                const specRows = S.map(s=>`<span class="k">${s.label}</span><span class="v">${specVal(p,s.key)||'—'}</span>`).join('');
+                const specRows = S.slice(0,6).map(s=>`<span class="k">${esc(s.label)}</span><span class="v">${specVal(p,s.key)||'—'}</span>`).join('');
                 return `<div class="card${todo?' todo':''}">
                     <div class="card-head" style="background:${col}">
-                        <div><div class="co">${p.company}</div><div class="mdl">${p.model||'Model TBD'}</div></div>
-                        ${todo?'<span class="badge">To research</span>':''}
+                        <div><div class="co">${esc(p.company)}${p.range?' · '+esc(p.range):''}</div><div class="mdl">${esc(p.model||'Model TBD')}</div></div>
+                        ${todo?'<span class="badge">To research</span>':(p.verified==='retail'?`<span class="badge">${esc(p.market||'EU')}</span>`:'<span class="badge">EPREL only</span>')}
                     </div>
                     <div class="card-body">
                         <div class="specs">${specRows}</div>
-                        <div class="hl${todo?' todo':''}">${p.highlight || (todo?'No data yet — flagship model and key technologies pending research.':'')}</div>
+                        <div class="hl${todo?' todo':''}">${esc(p.evidence || (todo?'No data yet — flagship model and key technologies pending research.':'Registered and on-market in EPREL; retail listing not confirmed yet.'))}</div>
                         <div class="techchips">${chips}</div>
                         ${p.url?`<a class="more" href="${p.url}" target="_blank" rel="noopener">View product ↗</a>`:''}
                     </div></div>`;
             }).join('') || '<div class="empty">No products match.</div>';
 
-            // spec table (columns follow the category's spec fields)
+            // Spec table = the EPREL benchmark for these flagships: same columns as
+            // /eprel, so the figures match the EU energy label exactly.
             document.getElementById('spectable').innerHTML =
-                `<thead><tr><th>Brand</th><th>Model</th>${S.map(s=>`<th>${s.label}</th>`).join('')}</tr></thead>` +
-                `<tbody>${prods.map(p=>`<tr><td><span class="cdot" style="display:inline-block;background:${COLOR[p.company]};margin-right:6px"></span>${p.company}</td>`+
-                    `<td>${p.model||'—'}</td>${S.map(s=>`<td>${specVal(p,s.key)||'—'}</td>`).join('')}</tr>`).join('')}</tbody>`;
+                `<thead><tr><th>Brand</th><th>Model</th>` +
+                S.map(c=>`<th class="${c.type==='num'?'num':''}">${esc(c.label)}${c.unit?` <span class="u">${esc(c.unit)}</span>`:''}</th>`).join('') +
+                `<th>On Market</th><th>Availability</th><th>EPREL</th></tr></thead>` +
+                `<tbody>${prods.map(p=>{
+                    const vb = p.verified==='retail'
+                        ? `<span class="vtag ok" title="${esc(p.evidence||'')}">${esc(p.market||'EU')}${p.price?` · €${p.price}`:''}</span>`
+                        : `<span class="vtag todo" title="Registered and on-market in EPREL; retail listing not confirmed">EPREL only</span>`;
+                    return `<tr><td><span class="cdot" style="display:inline-block;background:${COLOR[p.company]};margin-right:6px"></span>${esc(p.company)}</td>`
+                        + `<td class="mdl" title="${esc(p.range||'')}">${esc(p.model||'—')}</td>`
+                        + S.map(c=>`<td class="${c.type==='num'?'num':''}">${specCell(p,c)}</td>`).join('')
+                        + `<td>${esc(p.marketStart||'—')}</td><td>${vb}</td>`
+                        + `<td>${p.url?`<a class="more" href="${esc(p.url)}" target="_blank" rel="noopener">EPREL ↗</a>`:'—'}</td></tr>`;
+                }).join('')}</tbody>`;
         }
 
         function toggleHl(k){ hlTech = (hlTech===k? null : k); render(); }
