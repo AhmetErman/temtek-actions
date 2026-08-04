@@ -73,50 +73,69 @@ CATEGORY_META = {
 # listing was reached; None where it still needs checking.
 PICKS = {
     "washing-machine": [
-        ("Bosch",      "WGB256A2GB",   "Series 8 i-DOS",           "retail", "UK", 1149,
-         "John Lewis / Marks Electrical / Appliances Direct (GBP 999)"),
-        ("LG",         "F4X9009TBC",   "Series 9 AI DD (VX90)",    "retail", "UK", None,
+        ("Bosch",      "WGB256A2GB",   "Series 8 i-DOS",           "retail", "UK", 999, "GBP",
+         "John Lewis / Marks Electrical / Appliances Direct"),
+        ("LG",         "F4X9009TBC",   "Series 9 AI DD (VX90)",    "retail", "UK", None, None,
          "lg.com/uk; in stock at Marks Electrical, ao.com, Hughes, Appliance City"),
-        ("Samsung",    "WF90F09C4S",   "Series 9 Bespoke AI",      "retail", "UK", None,
+        ("Samsung",    "WF90F09C4S",   "Series 9 Bespoke AI",      "retail", "UK", None, None,
          "samsung.com/uk product page live (SKU WF90F09C4SU1)"),
-        ("Beko",       "B5W5941BD",    "AutoDose SteamCure",       "retail", "UK", None,
+        ("Beko",       "B5W5941BD",    "AutoDose SteamCure",       "retail", "UK", None, None,
          "beko.co.uk product page live"),
-        ("Haier",      "HW100-B14397EU1", "I-Pro Series 7",        "retail", "NL", None,
+        ("Haier",      "HW100-B14397EU1", "I-Pro Series 7",        "retail", "NL", None, None,
          "coolblue.nl lists the HW100-BD14397U1S variant"),
-        ("Electrolux", "EW9F5417SWCE", "900 series AutoDose",      "eprel",  None, None, None),
-        ("Whirlpool",  "W0M 912G ADS FR", "W Collection AutoDose", "eprel",  None, None, None),
-        ("Midea",      "MF205W90BA50/T-IT", "MF205 series",        "eprel",  None, None, None),
+        ("AEG",        "LFR95146SUC",  "9000 series AbsoluteCare", "eprel",  None, None, None, None),
+        ("Electrolux", "EW9F5417SWCE", "900 series AutoDose",      "eprel",  None, None, None, None),
+        ("Whirlpool",  "W0M 912G ADS FR", "W Collection AutoDose", "eprel",  None, None, None, None),
+        ("Hisense",    "WF7E1045BWQ",  "7 Series",                 "eprel",  None, None, None, None),
+        ("Midea",      "MF205W90BA50/T-IT", "MF205 series",        "eprel",  None, None, None, None),
     ],
+    # Washer-dryers carry BOTH drying technologies where a brand sells both:
+    # heat-pump and condenser are different products, not different trims.
     "washer-dryer": [
-        ("LG",         "F164HP2BST",   "Heat-pump washer-dryer",   "eprel",  None, None, None),
-        ("Haier",      "HWD180-BD12LGNU1", "I-Pro Series 8 11kg",  "eprel",  None, None, None),
-        ("Electrolux", "EW9W1165RB",   "900 series SteamCare",     "eprel",  None, None, None),
-        ("Beko",       "B7DFT61041W",  "AutoDose washer-dryer",    "eprel",  None, None, None),
-        ("Whirlpool",  "BWT 106A3C BC", "6th Sense washer-dryer",  "eprel",  None, None, None),
-        ("Bosch",      "WNG24401BY",   "Series 6 washer-dryer",    "eprel",  None, None, None),
-        ("Samsung",    "WD10HG6U34BB", "Series 6 washer-dryer",    "eprel",  None, None, None),
-        ("Midea",      "MF205D80BA/W-ES", "MF205 washer-dryer",    "eprel",  None, None, None),
+        ("Samsung",    "WD18DB8995BZ", "Bespoke AI Laundry Combo", "retail", "NL", 2213, "EUR",
+         "Launched in Europe at IFA 2024; price from the earlier EPREL benchmark sheet"),
+        ("LG",         "F164HP2BST",   "Heat-pump washer-dryer",   "eprel",  None, None, None, None),
+        ("Haier",      "HWD120-BD16397EU1", "I-Pro Series 6 heat-pump", "eprel", None, None, None, None),
+        ("Hisense",    "WD5I1245BBRH", "5S Series heat-pump",      "eprel",  None, None, None, None),
+        ("AEG",        "LWR9506BN4",   "9000 series heat-pump",    "eprel",  None, None, None, None),
+        ("Electrolux", "EW9W1165RB",   "900 series heat-pump",     "eprel",  None, None, None, None),
+        ("Whirlpool",  "BWT 106A3C BC", "6th Sense heat-pump",     "eprel",  None, None, None, None),
+        ("Beko",       "B7DFT61041W",  "AutoDose heat-pump",       "eprel",  None, None, None, None),
+        ("Samsung",    "WD10HG6U34BB", "Series 6 condenser",       "eprel",  None, None, None, None),
+        ("LG",         "F164X58WHST",  "Condenser washer-dryer",   "eprel",  None, None, None, None),
+        ("Bosch",      "WNA254REPL",   "Series 4 condenser",       "eprel",  None, None, None, None),
+        ("Haier",      "HWD80-BP1433637T", "Condenser washer-dryer", "eprel", None, None, None, None),
+        ("Hisense",    "W1D2A854ADPS", "Condenser washer-dryer",   "eprel",  None, None, None, None),
+        ("AEG",        "L6WJ68WC",     "6000 series condenser",    "eprel",  None, None, None, None),
+        ("Electrolux", "EW2W3068E4",   "300 series condenser",     "eprel",  None, None, None, None),
+        ("Whirlpool",  "WAD 8536WBC EE", "Condenser washer-dryer", "eprel",  None, None, None, None),
+        ("Beko",       "BMM5DFO5841MDC", "Condenser washer-dryer", "eprel",  None, None, None, None),
+        ("Midea",      "MF200D80WB/1/W-HR", "MF200 condenser",     "eprel",  None, None, None, None),
     ],
     "dryer": [
-        ("Electrolux", "EW9H48A",      "900 series heat-pump",     "eprel",  None, None, None),
-        ("Samsung",    "DV90DB7845GB", "Bespoke AI heat-pump",     "retail", "UK", None,
+        ("AEG",        "TR9HH8AY",     "9000 series heat-pump",    "eprel",  None, None, None, None),
+        ("Electrolux", "EW9H48A",      "900 series heat-pump",     "eprel",  None, None, None, None),
+        ("Samsung",    "DV90DB7845GB", "Bespoke AI heat-pump",     "retail", "UK", None, None,
          "samsung.com/uk support page live for SKU DV90DB7845GBU3"),
-        ("Whirlpool",  "C WD R47M WBS IT", "Supreme Silence heat-pump", "eprel", None, None, None),
-        ("LG",         "RH9X76BM",     "Dual Inverter heat-pump",  "eprel",  None, None, None),
-        ("Bosch",      "WQB246D41",    "Series 8 heat-pump",       "eprel",  None, None, None),
-        ("Midea",      "MD20EH80WB-A3", "MD20 heat-pump",          "eprel",  None, None, None),
-        ("Haier",      "HD90-CQ387U1", "I-Pro Series 3",           "eprel",  None, None, None),
-        ("Beko",       "BM3T38220X",   "BM3T heat-pump",           "eprel",  None, None, None),
+        ("Hisense",    "DH5I104BBAB",  "5S Series heat-pump",      "eprel",  None, None, None, None),
+        ("Whirlpool",  "C WD R47M WBS IT", "Supreme Silence heat-pump", "eprel", None, None, None, None),
+        ("LG",         "RH9X76BM",     "Dual Inverter heat-pump",  "eprel",  None, None, None, None),
+        ("Bosch",      "WQB246D41",    "Series 8 heat-pump",       "eprel",  None, None, None, None),
+        ("Midea",      "MD20EH80WB-A3", "MD20 heat-pump",          "eprel",  None, None, None, None),
+        ("Haier",      "HD90-CQ387U1", "I-Pro Series 3",           "eprel",  None, None, None, None),
+        ("Beko",       "BM3T38220X",   "BM3T heat-pump",           "eprel",  None, None, None, None),
     ],
     "dishwasher": [
-        ("Whirlpool",  "WH5IA5015BT1LS", "MaxiSpace 15ps",         "eprel",  None, None, None),
-        ("Samsung",    "DW80H77H3B0",  "Bespoke AI dishwasher",    "eprel",  None, None, None),
-        ("LG",         "DB597TXSN",    "TrueSteam QuadWash",       "eprel",  None, None, None),
-        ("Electrolux", "E82IX220ST",   "800 GlassCare",            "eprel",  None, None, None),
-        ("Bosch",      "SBD6ECX21E",   "Series 6 dishwasher",      "eprel",  None, None, None),
-        ("Beko",       "BDIN38560WPF", "AutoDose 15ps",            "eprel",  None, None, None),
-        ("Haier",      "XF 4A4M0W-80", "XF Series 4",              "eprel",  None, None, None),
-        ("Midea",      "MDWEB1403M(B)-WA-UK", "MDWEB1403",         "eprel",  None, None, None),
+        ("Whirlpool",  "WH5IA5015BT1LS", "MaxiSpace 15ps",         "eprel",  None, None, None, None),
+        ("Samsung",    "DW80H77H3B0",  "Bespoke AI dishwasher",    "eprel",  None, None, None, None),
+        ("LG",         "DB597TXSN",    "TrueSteam QuadWash",       "eprel",  None, None, None, None),
+        ("Hisense",    "HFI5A6360H",   "5S Series 16ps",           "eprel",  None, None, None, None),
+        ("AEG",        "FSE77707P",    "7000 series GlassCare",    "eprel",  None, None, None, None),
+        ("Electrolux", "E82IX220ST",   "800 GlassCare",            "eprel",  None, None, None, None),
+        ("Bosch",      "SBD6ECX21E",   "Series 6 dishwasher",      "eprel",  None, None, None, None),
+        ("Beko",       "BDIN38560WPF", "AutoDose 15ps",            "eprel",  None, None, None, None),
+        ("Haier",      "XF 4A4M0W-80", "XF Series 4",              "eprel",  None, None, None, None),
+        ("Midea",      "MDWEB1403M(B)-WA-UK", "MDWEB1403",         "eprel",  None, None, None, None),
     ],
 }
 
@@ -132,12 +151,24 @@ TECH_FACTS = {
     ("washing-machine", "Beko"):       {"autodose": "yes", "steam": "yes", "recycled": "yes",
                                         "microplastic": "partial", "ai": "no", "directdrive": "no"},
     ("washing-machine", "Electrolux"): {"autodose": "yes", "ai": "yes", "steam": "yes"},
+    ("washing-machine", "AEG"):        {"autodose": "yes", "ai": "yes", "steam": "yes"},
     ("washing-machine", "Haier"):      {"directdrive": "yes", "steam": "yes", "ai": "partial",
                                         "autodose": "no"},
     ("washing-machine", "Whirlpool"):  {"autodose": "yes", "ai": "partial", "steam": "yes"},
-    ("dryer", "Samsung"):              {"heatpump": "yes", "ai": "yes", "wifi": "yes"},
-    ("washer-dryer", "LG"):            {"heatpump": "yes", "directdrive": "yes", "steam": "yes"},
-    ("washer-dryer", "Haier"):         {"heatpump": "yes", "directdrive": "yes"},
+    # --- dryers (brand-range evidence) ---
+    ("dryer", "Samsung"):              {"ai": "yes", "wifi": "yes"},
+    ("dryer", "Bosch"):                {"selfclean": "yes", "reverse": "yes", "steam": "yes"},
+    ("dryer", "LG"):                   {"selfclean": "yes", "ai": "yes", "wifi": "yes"},
+    ("dryer", "Hisense"):              {"selfclean": "yes", "steam": "yes", "ai": "yes", "wifi": "yes"},
+    # --- washer-dryers ---
+    ("washer-dryer", "LG"):            {"directdrive": "yes", "steam": "yes", "ai": "yes"},
+    ("washer-dryer", "Haier"):         {"directdrive": "yes"},
+    ("washer-dryer", "Samsung"):       {"ai": "yes", "autodose": "yes"},
+    # --- dishwashers (brand-range evidence) ---
+    ("dishwasher", "Bosch"):           {"autoopen": "yes", "thirdrack": "yes", "zeolith": "partial"},
+    ("dishwasher", "Beko"):            {"autodose": "yes", "ai": "yes"},
+    ("dishwasher", "Whirlpool"):       {"autoopen": "yes", "thirdrack": "yes"},
+    ("dishwasher", "Samsung"):         {"autoopen": "yes", "thirdrack": "yes"},
 }
 
 SPEC_NOTE = ("Specs are read from the model's EPREL registration, so they match the "
@@ -153,7 +184,7 @@ def build():
             "technologies": [{"key": k, "label": lb, "short": sh}
                              for k, lb, sh in TECHNOLOGIES[key]],
         })
-        for brand, model, range_name, verified, country, price, evidence in picks:
+        for brand, model, range_name, verified, country, price, currency, evidence in picks:
             rec, how = L.resolve(key, model, brand)
             if not rec:
                 missing.append((key, brand, model))
@@ -161,6 +192,12 @@ def build():
                 continue
             tech = dict.fromkeys([k for k, _, _ in TECHNOLOGIES[key]], "unknown")
             tech.update(TECH_FACTS.get((key, brand), {}))
+            # Drying technology is not a claim to research: EPREL's own class
+            # determines it, so fill that column objectively.
+            if "heatpump" in tech:
+                dt = (rec.get("dryingTech") or "").lower()
+                tech["heatpump"] = ("yes" if dt.startswith("heat pump") and "likely" not in dt
+                                    else "partial" if "likely" in dt else "no")
             products.append({
                 "category": key,
                 "company": brand,
@@ -170,6 +207,7 @@ def build():
                 "verified": verified,
                 "market": country,
                 "price": price,
+                "priceCurrency": currency,
                 "evidence": evidence,
                 "eprelMatch": how,
                 "registration": rec.get("registration"),
