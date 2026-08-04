@@ -10,6 +10,7 @@ COMPANY_NEWS_FILE = "company_news.json"
 COMPANY_ANALYSIS_FILE = "company_analysis.json"
 PRODUCTS_FILE = "products.json"
 EPREL_FILE = "eprel_products.json"
+TECH_EVIDENCE_FILE = "tech_evidence.json"
 
 
 def _load_json(path, default):
@@ -73,6 +74,14 @@ def get_products():
 @app.route('/eprel')
 def eprel():
     return render_template('eprel.html')
+
+@app.route('/api/tech-evidence')
+def get_tech_evidence():
+    # Written by tech_matrix.py; absent until that job has run once.
+    data = _load_json(TECH_EVIDENCE_FILE, {})
+    if isinstance(data, dict) and "error" in data:
+        return jsonify(data), 500
+    return jsonify(data)
 
 @app.route('/api/eprel')
 def get_eprel():

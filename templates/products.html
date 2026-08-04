@@ -46,7 +46,6 @@
                    border-radius: 999px; font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
         .cat-tab:hover { border-color: var(--border-hover); color: var(--text-1); }
         .cat-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-        .cat-tab .count { font-size: .72rem; font-weight: 600; opacity: .75; }
         .cat-tab .todo { font-size: .68rem; font-weight: 700; padding: .05rem .35rem; border-radius: 5px; background: var(--partial-bg); color: var(--partial); }
         .cat-tab.active .todo { background: rgba(255,255,255,.22); color: #fff; }
 
@@ -85,6 +84,22 @@
         .vtag { font-size: .7rem; font-weight: 700; padding: .1rem .45rem; border-radius: 5px; white-space: nowrap; cursor: help; }
         .vtag.ok { background: var(--yes-bg); color: var(--yes); }
         .vtag.todo { background: var(--partial-bg); color: var(--partial); }
+
+        .ref-btn { margin-left: auto; background: none; border: 1px solid var(--border); color: var(--text-3);
+                   font: inherit; font-size: .75rem; padding: .2rem .6rem; border-radius: 20px; cursor: pointer; }
+        .ref-btn:hover { border-color: var(--accent); color: var(--accent); }
+        .refs { margin-top: .75rem; border: 1px solid var(--border); border-radius: var(--radius);
+                background: var(--surface); padding: .9rem 1rem; font-size: .78rem; color: var(--text-2); }
+        .refs h4 { font-size: .8rem; margin: .8rem 0 .3rem; color: var(--text-1); }
+        .refs h4:first-child { margin-top: 0; }
+        .refs .src { color: var(--text-3); word-break: break-all; }
+        .refs .q { display: block; margin: .15rem 0 .4rem 1rem; padding-left: .6rem;
+                   border-left: 2px solid var(--border); color: var(--text-3); font-style: italic; }
+        .refs .none { color: var(--text-3); }
+
+        h3.msub { font-size: .85rem; font-weight: 600; color: var(--text-2); margin: 1.1rem 0 .4rem; display: flex; align-items: center; gap: .5rem; }
+        h3.msub:first-child { margin-top: 0; }
+        h3.msub span { font-size: .7rem; font-weight: 600; color: var(--text-3); background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: .05rem .45rem; }
 
         .matrix-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
         table.matrix { border-collapse: collapse; width: 100%; min-width: 760px; font-size: .82rem; }
@@ -160,7 +175,6 @@
         <div id="content" style="display:none;">
             <div class="cat-tabs" id="catTabs"></div>
 
-            <div class="sec-hint" id="curatedHint">One hand-researched flagship per brand — features EPREL does not record (AI, auto-dosing, steam, connectivity).</div>
 
             <div id="banner"></div>
 
@@ -171,14 +185,15 @@
             </div>
 
             <h2 class="sec">Technology matrix</h2>
-            <div class="sec-hint">Click a technology column to highlight it. ✓ available · ~ partial / select models · – not on flagship · ? not researched yet.</div>
-            <div class="matrix-wrap"><table class="matrix" id="matrix"></table></div>
+            <div id="matrixes"></div>
             <div class="legend">
                 <span><span class="cell yes">✓</span> Available</span>
                 <span><span class="cell partial">~</span> Partial / select models</span>
                 <span><span class="cell no">–</span> Not on flagship</span>
                 <span><span class="cell unknown">?</span> Awaiting research</span>
+                <button class="ref-btn" id="refBtn" title="Where each ✓ and – comes from">ⓘ Sources</button>
             </div>
+            <div class="refs" id="refs" hidden></div>
 
             <h2 class="sec">Flagship products</h2>
             <div class="sec-hint" id="cardHint"></div>
@@ -191,7 +206,7 @@
 
     <script>
         const PALETTE = ['#2563eb','#dc2626','#16a34a','#d97706','#7c3aed','#0891b2','#db2777','#65a30d'];
-        let DATA = {}, COLOR = {}, curCat = null, curSearch = '', curTech = 'All', hlTech = null, hideTodo = false;
+        let DATA = {}, EVIDENCE = {}, COLOR = {}, curCat = null, curSearch = '', curTech = 'All', hlTech = null, hideTodo = false;
 
         function initTheme(){ const s=localStorage.getItem('theme'); const d=window.matchMedia('(prefers-color-scheme: dark)').matches; if(s==='dark'||(!s&&d))document.body.classList.add('dark-theme'); syncBtn(); }
         function syncBtn(){ const d=document.body.classList.contains('dark-theme'); themeIcon.textContent=d?'🌙':'☀️'; themeText.textContent=d?'Dark':'Light'; }
@@ -222,7 +237,12 @@
         async function init(){
             initTheme();
             try {
-                DATA = await fetch('/api/products').then(r=>r.json());
+                const [prod, ev] = await Promise.all([
+                    fetch('/api/products').then(r=>r.json()),
+                    // Optional: present only once tech_matrix.py has run.
+                    fetch('/api/tech-evidence').then(r=>r.json()).catch(()=>({}))
+                ]);
+                DATA = prod; EVIDENCE = ev || {};
                 if (!categories().length) throw new Error('products.json has no categories');
                 // Colors are per brand, so they stay stable across categories.
                 [...new Set((DATA.products||[]).map(p=>p.company))].forEach((c,i)=> COLOR[c]=PALETTE[i%PALETTE.length]);
@@ -240,8 +260,7 @@
             let html = categories().map(c=>{
                 const list = inCat(c.key), todo = list.filter(isTodo).length;
                 return `<button class="cat-tab" data-key="${c.key}" onclick="selectCat('${c.key}')">
-                    <span>${c.icon||''} ${c.label}</span>
-                    <span class="count">${list.length - todo}/${list.length}</span>
+                    <span>${c.label}</span>
                     ${todo?`<span class="todo">${todo} to research</span>`:''}
                 </button>`;
             }).join('');
@@ -276,21 +295,30 @@
 
             document.getElementById('pageTitle').textContent = `Flagship ${c.label.toLowerCase()} — technology comparison`;
             document.getElementById('sub').textContent =
-                `${all.length} models · ${T.length} technologies compared${c.blurb?' · '+c.blurb:''}`;
+                `${all.length} models · ${T.length} technologies compared`;
             document.getElementById('banner').innerHTML = todoCount
                 ? `<div class="banner"><span>⚠</span><span><strong>${todoCount} of ${all.length}</strong> ${c.label.toLowerCase()} rows are structural placeholders — model, specs and technology support still need research.</span></div>`
                 : '';
 
-            // matrix
-            let cols = `<colgroup><col>${T.map(t=>`<col class="${hlTech===t.key?'hl':''}">`).join('')}</colgroup>`;
-            let head = `<thead><tr><th class="prod">Product</th>${T.map(t=>`<th title="${t.label}" onclick="toggleHl('${t.key}')">${shortOf(t)}</th>`).join('')}</tr></thead>`;
-            let rows = prods.map(p=>{
-                const cells = T.map(t=>{ const v=techVal(p,t.key); return `<td><span class="cell ${v}">${sym(v)}</span></td>`; }).join('');
-                return `<tr><td class="prod"><div class="pm"><span class="cdot" style="background:${COLOR[p.company]}"></span>${p.company}</div><div class="pc">${p.model||'— to research —'}</div></td>${cells}</tr>`;
+            // matrix — washer-dryers split by drying technology, since a
+            // heat-pump combo and a condenser combo are different products.
+            const groups = curCat==='washer-dryer'
+                ? [["Heat-pump", prods.filter(p=>['yes','partial'].includes(techVal(p,'heatpump')))],
+                   ["Condenser / vented", prods.filter(p=>!['yes','partial'].includes(techVal(p,'heatpump')))]]
+                : [[null, prods]];
+            document.getElementById('matrixes').innerHTML = groups.map(([title, list])=>{
+                if (!list.length) return '';
+                const cols = `<colgroup><col>${T.map(t=>`<col class="${hlTech===t.key?'hl':''}">`).join('')}</colgroup>`;
+                const head = `<thead><tr><th class="prod">Product</th>${T.map(t=>`<th title="${esc(t.label)}" onclick="toggleHl('${t.key}')">${esc(shortOf(t))}</th>`).join('')}</tr></thead>`;
+                let rows = list.map(p=>{
+                    const cells = T.map(t=>{ const v=techVal(p,t.key); return `<td><span class="cell ${v}">${sym(v)}</span></td>`; }).join('');
+                    return `<tr><td class="prod"><div class="pm"><span class="cdot" style="background:${COLOR[p.company]}"></span>${esc(p.company)}</div><div class="pc">${esc(p.model||'— to research —')}</div></td>${cells}</tr>`;
+                }).join('');
+                const cover = T.map(t=>{ const n=list.filter(p=>techVal(p,t.key)==='yes').length; return `<td>${n}/${list.length}</td>`; }).join('');
+                rows += `<tr class="cover"><td class="prod">Full availability</td>${cover}</tr>`;
+                return (title?`<h3 class="msub">${esc(title)} <span>${list.length}</span></h3>`:'')
+                     + `<div class="matrix-wrap"><table class="matrix">${cols}${head}<tbody>${rows}</tbody></table></div>`;
             }).join('');
-            const cover = T.map(t=>{ const n=prods.filter(p=>techVal(p,t.key)==='yes').length; return `<td>${n}/${prods.length}</td>`; }).join('');
-            rows += `<tr class="cover"><td class="prod">Full availability</td>${cover}</tr>`;
-            document.getElementById('matrix').innerHTML = cols+head+`<tbody>${rows}</tbody>`;
 
             // cards
             document.getElementById('cardHint').textContent = `${prods.length} of ${all.length} shown`;
@@ -331,6 +359,34 @@
         }
 
         function toggleHl(k){ hlTech = (hlTech===k? null : k); render(); }
+
+        /* Sources panel: every yes/no in the matrix traced back to the page it
+           came from, so a reader can check the call rather than trust it. */
+        function renderRefs(){
+            const box=document.getElementById('refs'), T=techs();
+            const rows=visibleProducts().filter(p=>EVIDENCE[evKey(p)]);
+            if (!rows.length){
+                box.innerHTML='<span class="none">No source pages recorded for this category yet — run <code>python tech_matrix.py --discover --scan</code>.</span>';
+                return;
+            }
+            box.innerHTML = rows.map(p=>{
+                const ev=EVIDENCE[evKey(p)];
+                const hits=T.filter(t=>(ev.tech[t.key]||{}).found)
+                    .map(t=>`<div><strong>${esc(shortOf(t))}</strong> — matched “${esc(ev.tech[t.key].phrase)}”<span class="q">${esc(ev.tech[t.key].snippet||'')}</span></div>`).join('');
+                const absent=T.filter(t=>ev.tech[t.key] && !ev.tech[t.key].found).map(t=>esc(shortOf(t)));
+                return `<h4>${esc(p.company)} ${esc(p.model)}</h4>`
+                    + ev.pages.map(u=>`<div class="src">${esc(u)}</div>`).join('')
+                    + `<div class="src">checked ${esc(ev.checked)}</div>`
+                    + (hits||'')
+                    + (absent.length?`<div class="q">Not mentioned on the page, so recorded as “no”: ${absent.join(', ')}</div>`:'');
+            }).join('');
+        }
+        function evKey(p){ return `${p.category}|${p.company}|${p.model}`; }
+        document.getElementById('refBtn').addEventListener('click', ()=>{
+            const box=document.getElementById('refs');
+            box.hidden=!box.hidden;
+            if(!box.hidden) renderRefs();
+        });
         init();
     </script>
 </body>
