@@ -42,9 +42,14 @@ templates — the hash hand-off is the only thing joining the two pages.
 EPREL is the EU's public product registry. Facts that shaped the design — don't undo them:
 
 - The read API answers **403 without browser-like headers** (`eprel_config.REQUEST_HEADERS`).
-- **No sort or filter parameter works.** Every `sortBy`/`order`/`energyClass` spelling is ignored,
-  so ranking must happen locally over the *whole* product group. Deep pagination does work, and
-  `_limit` silently truncates to 25 above 100.
+- **No sort parameter works** (every `sortBy`/`order` spelling is ignored), so ranking must happen
+  locally. Deep pagination does work, and `_limit` silently truncates to 25 above 100.
+- **Filters do work — but only under the real API field name for that product group.**
+  `supplierOrTrademark=Bosch` (prefix match), `modelIdentifier=WGB256A0GB` (exact),
+  `energyClass=A` for washing machines/dishwashers but `energyClassWashAndDry=A` for washer-dryers.
+  An unrecognised key is silently ignored and returns the unfiltered set, which is what made these
+  look broken at first. `eprel_lookup.py` uses them; the bulk scraper still enumerates everything
+  because it needs a true whole-group ranking.
 - The same model appears once per **registration version**, so records are deduped on
   `eprelRegistrationNumber`, keeping the highest `versionNumber`.
 - Ranking is energy class first, then weighted energy consumption ascending, capped at

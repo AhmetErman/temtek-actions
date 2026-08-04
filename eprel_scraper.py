@@ -114,6 +114,34 @@ def duration_text(minutes):
     return f"{m // 60} hours, {m % 60} mins"
 
 
+def _iso(ts):
+    """EPREL timestamps are seconds; some are far-future placeholders."""
+    if not isinstance(ts, (int, float)) or ts <= 0:
+        return None
+    try:
+        return time.strftime("%Y-%m-%d", time.gmtime(ts))
+    except (ValueError, OSError):
+        return None
+
+
+def market_status(start_iso, end_iso, today=None):
+    """Availability straight from the registry's placed-on-market window.
+
+    'on-market'    still sold: started, and no end date or an end date ahead of us
+    'upcoming'     registered but the start date has not arrived
+    'withdrawn'    the supplier declared an end date that has passed
+
+    Suppliers often park the end date decades out, so this proves withdrawal but
+    not continued retail presence — treat 'on-market' as necessary, not sufficient.
+    """
+    today = today or time.strftime("%Y-%m-%d")
+    if end_iso and end_iso < today:
+        return "withdrawn"
+    if start_iso and start_iso > today:
+        return "upcoming"
+    return "on-market"
+
+
 def pretty_enum(value):
     """FREE_STANDING -> Free standing."""
     if not isinstance(value, str):
@@ -249,6 +277,10 @@ def normalize(hit, key, cfg):
         rec["dryingTech"] = drying_tech_from_class(cls)
     elif "dryerType" in rec:
         rec["dryingTech"] = dryer_tech(rec.get("dryerType"), cls)
+
+    rec["marketStart"] = _iso(rec.pop("marketStartTS", None))
+    rec["marketEnd"] = _iso(rec.pop("marketEndTS", None))
+    rec["market"] = market_status(rec["marketStart"], rec["marketEnd"])
 
     rec["programTimeText"] = duration_text(rec.get("programTime"))
     for enum_key in ("design", "dryerType"):
