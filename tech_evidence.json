@@ -1,0 +1,244 @@
+{
+ "washing-machine|LG|F4X9009TBC": {
+  "pages": [
+   "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+  ],
+  "checked": "2026-08-04",
+  "tech": {
+   "autodose": {
+    "found": true,
+    "phrase": "auto dose",
+    "snippet": "mitest. Q. How does the Auto-dosing function work? Expand Collapse A. The LG ezDispense™ auto dose system allows you to pre-load the detergent dispenser and leave your washing machine to do",
+    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+   },
+   "ai": {
+    "found": true,
+    "phrase": "ai wash",
+    "snippet": "m™ technology reduces allergens by up to 99.99%. Wrinkle Care reduces creases by 30% The AI Wash™ cycle uses the best motion and stroke depending on the fabric for optimal care LG AI Dire",
+    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+   },
+   "microplastic": {
+    "found": true,
+    "phrase": "microplastic",
+    "snippet": "iew LG 9kg 1400 spin AI Direct Drive Washing Machine, Black, F4X9009TBC, Door Open AI DD Microplastics Turbowash side view side view with door open side view with door open details details det",
+    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "steam",
+    "snippet": "z through a 5kg load in just 39 minutes with TurboWash™360 tech, maintaining quality. LG Steam™ technology reduces allergens by up to 99.99%. Wrinkle Care reduces creases by 30% The AI",
+    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+   },
+   "directdrive": {
+    "found": true,
+    "phrase": "direct drive",
+    "snippet": "UK Get more information on the LG F4X9009TBC. Click for pictures & tech specs for the AI Direct Drive 9kg Washing Machine Series 9 in Black. Get free delivery and 5% off you first order. pdp-p",
+    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+   },
+   "additem": {
+    "found": true,
+    "phrase": "audit",
+    "snippet": "LG spec table verbatim: 'Add Item Yes ezDispense No'",
+    "source": "matrix audit 2026-08-04"
+   },
+   "dosescan": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+   },
+   "recycled": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+   }
+  }
+ },
+ "washer-dryer|Samsung|WD10HG6U34BB": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "autodose": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "Samsung UK spec table for this SKU reads 'Auto Dispense: No'; Auto Dispense belongs to the sibling WD10HG6U94BE",
+    "source": "matrix audit 2026-08-04"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "audit",
+    "snippet": "Samsung UK: 'Hygiene Steam ... removes grime and 99.9% of certain bacteria'",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "dryer|Bosch|WQB246D41": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "steam": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "Bosch feature string for this SKU: Silent Dry, Quick Dry Wash, Auto Dry, Self-Cleaning Condenser, Drum Interior Lighting, Home Connect - no steam",
+    "source": "matrix audit 2026-08-04"
+   },
+   "wifi": {
+    "found": true,
+    "phrase": "audit",
+    "snippet": "Home Connect named in every retail listing for this SKU",
+    "source": "matrix audit 2026-08-04"
+   },
+   "reverse": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "Reversing drum action not named in any listing for this SKU; plausible but unevidenced",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "washing-machine|AEG|LFR95146SUC 914505611": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "autodose": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "AEG 9000 AbsoluteCare sells on SoftWater + PowerCare; AutoDose is the AEG 8000 series. Claim was copied from the Electrolux platform twin",
+    "source": "matrix audit 2026-08-04"
+   },
+   "ai": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "AEG markets ProSense load sensing, not AI; no AI branding on the model page",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "dishwasher|Bosch|SBD6ECX21E": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "zeolith": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "Bosch encodes Zeolith/PerfectDry with a Z in the model code (SMS6ZCW10G); this is SBD6ECX21E. No listing mentions PerfectDry",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "washing-machine|Beko|B5W5941BDG 457100046100": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "recycled": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "Beko's page for this SKU lists EnergySpin, Autodose, IronFast, SteamCure, AddXtra - no RecycledTub. Beko titles RecycledTub models explicitly",
+    "source": "matrix audit 2026-08-04"
+   },
+   "microplastic": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "Same page: no FiberCatcher or microplastic filter of any kind",
+    "source": "matrix audit 2026-08-04"
+   },
+   "additem": {
+    "found": true,
+    "phrase": "audit",
+    "snippet": "Beko's page names AddXtra - mid-cycle garment addition",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "dishwasher|Beko|BDIN38560WPF 7675093877": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "ai": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "Beko markets ProSmart Inverter, AutoDose, CornerIntense, HygieneShield, TrayWash, HomeWhiz - no AI branding",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "dryer|Hisense|DH5I104BBAB": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "ai": {
+    "found": true,
+    "phrase": "audit",
+    "snippet": "Hisense 5i claims are Smart Link (auto-selects programme from paired washer) and ConnectLife - automation, not advertised AI",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "washer-dryer|Whirlpool|BWT 106A3C BC": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "heatpump": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "Value was purely class-derived; no Whirlpool source confirms a heat-pump washer-dryer under this code",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "washer-dryer|Beko|B7DFT61041W 457000020300": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "heatpump": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "Same class-C inference; no Beko heat-pump washer-dryer found in EU retail (Beko heat pumps are standalone dryers)",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "washing-machine|Electrolux|EW9F5417SWCE 914475615": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "ai": {
+    "found": true,
+    "phrase": "audit",
+    "snippet": "Electrolux AI claim attaches to SensorWash as a brand technology; not confirmed on this SKU",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "washing-machine|Samsung|WF90F09C4S": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "directdrive": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "Samsung UK spec table lists motor as DIT (Digital Inverter Technology) - belt-driven brushless, not direct drive",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ },
+ "washer-dryer|Samsung|WD18DB8995BZ": {
+  "pages": [],
+  "checked": "2026-08-04",
+  "tech": {
+   "microplastic": {
+    "found": true,
+    "phrase": "audit",
+    "snippet": "Samsung UK: 'A Less Microfiber Cycle reduces the release of microfibres by up to 39%' - a cycle, not a filter",
+    "source": "matrix audit 2026-08-04"
+   },
+   "autodry": {
+    "found": true,
+    "phrase": "audit",
+    "snippet": "Samsung UK: 'AI Opti WashDry includes ... dry level sensing'",
+    "source": "matrix audit 2026-08-04"
+   }
+  }
+ }
+}

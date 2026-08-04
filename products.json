@@ -528,7 +528,7 @@
     "microplastic": "unknown",
     "steam": "yes",
     "directdrive": "yes",
-    "additem": "partial",
+    "additem": "yes",
     "dosescan": "no",
     "recycled": "unknown"
    }
@@ -572,7 +572,7 @@
     "ai": "yes",
     "microplastic": "partial",
     "steam": "yes",
-    "directdrive": "unknown",
+    "directdrive": "no",
     "additem": "yes",
     "dosescan": "unknown",
     "recycled": "unknown"
@@ -615,12 +615,12 @@
    "tech": {
     "autodose": "yes",
     "ai": "no",
-    "microplastic": "partial",
+    "microplastic": "no",
     "steam": "yes",
     "directdrive": "no",
-    "additem": "unknown",
+    "additem": "yes",
     "dosescan": "unknown",
-    "recycled": "yes"
+    "recycled": "no"
    }
   },
   {
@@ -703,8 +703,8 @@
     "programTimeText": "3 hours, 55 mins"
    },
    "tech": {
-    "autodose": "yes",
-    "ai": "yes",
+    "autodose": "no",
+    "ai": "no",
     "microplastic": "unknown",
     "steam": "yes",
     "directdrive": "unknown",
@@ -749,7 +749,7 @@
    },
    "tech": {
     "autodose": "yes",
-    "ai": "yes",
+    "ai": "partial",
     "microplastic": "unknown",
     "steam": "yes",
     "directdrive": "unknown",
@@ -937,10 +937,10 @@
     "autodose": "yes",
     "ai": "yes",
     "nonstop": "unknown",
-    "autodry": "unknown",
+    "autodry": "yes",
     "steam": "unknown",
     "directdrive": "unknown",
-    "microplastic": "unknown"
+    "microplastic": "partial"
    }
   },
   {
@@ -1197,7 +1197,7 @@
    "category": "washer-dryer",
    "company": "Whirlpool",
    "model": "BWT 106A3C BC",
-   "range": "6th Sense heat-pump",
+   "range": "6th Sense",
    "status": "researched",
    "verified": "eprel",
    "market": null,
@@ -1233,7 +1233,7 @@
     "programTimeText": "8 hours, 45 mins"
    },
    "tech": {
-    "heatpump": "partial",
+    "heatpump": "unknown",
     "autodose": "unknown",
     "ai": "unknown",
     "nonstop": "unknown",
@@ -1247,7 +1247,7 @@
    "category": "washer-dryer",
    "company": "Beko",
    "model": "B7DFT61041W 457000020300",
-   "range": "AutoDose heat-pump",
+   "range": "AutoDose",
    "status": "researched",
    "verified": "eprel",
    "market": null,
@@ -1283,7 +1283,7 @@
     "programTimeText": "8 hours, 45 mins"
    },
    "tech": {
-    "heatpump": "partial",
+    "heatpump": "unknown",
     "autodose": "unknown",
     "ai": "unknown",
     "nonstop": "unknown",
@@ -1334,11 +1334,11 @@
    },
    "tech": {
     "heatpump": "no",
-    "autodose": "yes",
-    "ai": "yes",
+    "autodose": "no",
+    "ai": "unknown",
     "nonstop": "unknown",
     "autodry": "unknown",
-    "steam": "unknown",
+    "steam": "yes",
     "directdrive": "unknown",
     "microplastic": "unknown"
    }
@@ -1385,11 +1385,11 @@
    "tech": {
     "heatpump": "no",
     "autodose": "unknown",
-    "ai": "yes",
+    "ai": "unknown",
     "nonstop": "unknown",
     "autodry": "unknown",
-    "steam": "yes",
-    "directdrive": "yes",
+    "steam": "unknown",
+    "directdrive": "unknown",
     "microplastic": "unknown"
    }
   },
@@ -1489,7 +1489,7 @@
     "nonstop": "unknown",
     "autodry": "unknown",
     "steam": "unknown",
-    "directdrive": "yes",
+    "directdrive": "unknown",
     "microplastic": "unknown"
    }
   },
@@ -1964,7 +1964,7 @@
    },
    "tech": {
     "heatpump": "yes",
-    "ai": "yes",
+    "ai": "partial",
     "steam": "yes",
     "selfclean": "yes",
     "reverse": "unknown",
@@ -2100,10 +2100,10 @@
    "tech": {
     "heatpump": "yes",
     "ai": "unknown",
-    "steam": "yes",
+    "steam": "no",
     "selfclean": "yes",
-    "reverse": "yes",
-    "wifi": "unknown",
+    "reverse": "unknown",
+    "wifi": "yes",
     "heatex": "unknown",
     "rackdry": "unknown"
    }
@@ -2535,7 +2535,7 @@
    },
    "tech": {
     "autoopen": "yes",
-    "zeolith": "partial",
+    "zeolith": "no",
     "autodose": "unknown",
     "thirdrack": "yes",
     "zonewash": "unknown",
@@ -2582,7 +2582,7 @@
     "autodose": "yes",
     "thirdrack": "unknown",
     "zonewash": "unknown",
-    "ai": "yes",
+    "ai": "no",
     "softener": "unknown",
     "wifi": "unknown"
    }

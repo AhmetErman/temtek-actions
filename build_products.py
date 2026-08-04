@@ -139,8 +139,16 @@ PICKS = {
     ],
 }
 
-# Technology support confirmed from brand/retailer sources during research.
-# Anything absent stays "unknown" and renders as "?" — never guessed.
+# Technology support confirmed during research.
+#
+# Keys are (category, brand) and therefore RANGE-level claims. That is only safe
+# while a brand contributes ONE model to a category. Washer-dryers now list two
+# models per brand, and a 2026 audit found flagship features leaking onto the
+# budget sibling that way (Samsung's Auto Dispense onto WD10HG6U34BB, Bosch's
+# washer steam onto the WQB246D41 dryer, Electrolux AutoDose onto its AEG twin).
+# MODEL_FACTS below overrides per model and always wins; put anything
+# model-specific there, and `check_range_leak()` fails the build if a range-level
+# claim would be stamped onto more than one model in a category.
 TECH_FACTS = {
     ("washing-machine", "Bosch"):      {"autodose": "yes", "dosescan": "yes", "steam": "yes",
                                         "ai": "partial", "directdrive": "no", "additem": "no"},
@@ -161,15 +169,47 @@ TECH_FACTS = {
     ("dryer", "LG"):                   {"selfclean": "yes", "ai": "yes", "wifi": "yes"},
     ("dryer", "Hisense"):              {"selfclean": "yes", "steam": "yes", "ai": "yes", "wifi": "yes"},
     # --- washer-dryers ---
-    ("washer-dryer", "LG"):            {"directdrive": "yes", "steam": "yes", "ai": "yes"},
-    ("washer-dryer", "Haier"):         {"directdrive": "yes"},
-    ("washer-dryer", "Samsung"):       {"ai": "yes", "autodose": "yes"},
     # --- dishwashers (brand-range evidence) ---
     ("dishwasher", "Bosch"):           {"autoopen": "yes", "thirdrack": "yes", "zeolith": "partial"},
     ("dishwasher", "Beko"):            {"autodose": "yes", "ai": "yes"},
     ("dishwasher", "Whirlpool"):       {"autoopen": "yes", "thirdrack": "yes"},
     ("dishwasher", "Samsung"):         {"autoopen": "yes", "thirdrack": "yes"},
 }
+
+# (category, model-prefix) -> per-model truth, applied after the range-level map.
+MODEL_FACTS = {
+    ("washer-dryer", "WD10HG6U34BB"): {"autodose": "no", "steam": "yes"},
+    ("washer-dryer", "F164HP2BST"):   {"directdrive": "yes", "steam": "yes", "ai": "yes"},
+    ("washer-dryer", "HWD120-BD16397EU1"): {"directdrive": "yes"},
+    ("washer-dryer", "WD18DB8995BZ"): {"microplastic": "partial", "autodry": "yes",
+                                       "ai": "yes", "autodose": "yes"},
+    ("washer-dryer", "BWT 106A3C"):   {"heatpump": "unknown"},
+    ("washer-dryer", "B7DFT61041W"):  {"heatpump": "unknown"},
+    ("dryer", "WQB246D41"):           {"steam": "no", "wifi": "yes", "reverse": "unknown"},
+    ("dryer", "DH5I104BBAB"):         {"ai": "partial"},
+    ("washing-machine", "LFR95146SUC"): {"autodose": "no", "ai": "no"},
+    ("washing-machine", "B5W5941BDG"):  {"recycled": "no", "microplastic": "no", "additem": "yes"},
+    ("washing-machine", "EW9F5417SWCE"): {"ai": "partial"},
+    ("washing-machine", "F4X9009TBC"):   {"additem": "yes"},
+    ("washing-machine", "WF90F09C4S"):   {"directdrive": "no"},
+    ("dishwasher", "SBD6ECX21E"):     {"zeolith": "no"},
+    ("dishwasher", "BDIN38560WPF"):   {"ai": "no"},
+}
+
+
+def check_range_leak():
+    """A range-level claim is only valid when the brand has one model here."""
+    bad = []
+    for cat, picks in PICKS.items():
+        seen = {}
+        for row in picks:
+            seen.setdefault(row[0], []).append(row[1])
+        for brand, models in seen.items():
+            if len(models) > 1 and (cat, brand) in TECH_FACTS:
+                bad.append(f"{cat}/{brand}: range-level TECH_FACTS would apply to "
+                           f"{len(models)} models ({', '.join(models)}) - move them to MODEL_FACTS")
+    return bad
+
 
 SPEC_NOTE = ("Specs are read from the model's EPREL registration, so they match the "
              "EU energy label rather than marketing copy.")
@@ -192,6 +232,9 @@ def build():
                 continue
             tech = dict.fromkeys([k for k, _, _ in TECHNOLOGIES[key]], "unknown")
             tech.update(TECH_FACTS.get((key, brand), {}))
+            for (mcat, mprefix), facts in MODEL_FACTS.items():
+                if mcat == key and rec["model"].startswith(mprefix):
+                    tech.update(facts)          # per-model truth always wins
             # Drying technology is not a claim to research: EPREL's own class
             # determines it, so fill that column objectively.
             if "heatpump" in tech:
@@ -225,6 +268,8 @@ def build():
 
 
 if __name__ == "__main__":
+    for problem in check_range_leak():
+        print(f"  WARNING {problem}")
     cats, products, missing = build()
     out = {
         "generated": "2026-08-04",
