@@ -1,76 +1,130 @@
 {
  "washing-machine|LG|F4X9009TBC": {
   "pages": [
-   "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+   "https://www.hughes.co.uk/product/kitchen-appliances/laundry/washing-machines/lg/f4x9009tbc"
   ],
-  "checked": "2026-08-04",
+  "checked": "2026-08-05",
   "tech": {
    "autodose": {
-    "found": true,
-    "phrase": "auto dose",
-    "snippet": "mitest. Q. How does the Auto-dosing function work? Expand Collapse A. The LG ezDispense™ auto dose system allows you to pre-load the detergent dispenser and leave your washing machine to do",
-    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+    "found": false,
+    "phrase": "audit",
+    "snippet": "information at your fingertips. Specifications General Add Wash Yes Anti-Flood Device No Auto Dosing No Capacity in kg 9 Colour Of Unit Black Delicate wash Yes Energy Consumption 22 Energy Ef",
+    "source": "matrix audit 2026-08-04"
    },
    "ai": {
     "found": true,
-    "phrase": "ai wash",
-    "snippet": "m™ technology reduces allergens by up to 99.99%. Wrinkle Care reduces creases by 30% The AI Wash™ cycle uses the best motion and stroke depending on the fabric for optimal care LG AI Dire",
-    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+    "phrase": "ai direct drive",
+    "snippet": "k-to-fit=no index,follow 15 days 9kg Drum Capacity 1400rpm Spin Speed 24 Wash Programmes AI Direct Drive VX Display Product Description The LG F4X9009TBC VX90 Series Washing Machine combines cutt",
+    "url": "https://www.hughes.co.uk/product/kitchen-appliances/laundry/washing-machines/lg/f4x9009tbc"
    },
    "microplastic": {
-    "found": true,
-    "phrase": "microplastic",
-    "snippet": "iew LG 9kg 1400 spin AI Direct Drive Washing Machine, Black, F4X9009TBC, Door Open AI DD Microplastics Turbowash side view side view with door open side view with door open details details det",
-    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.hughes.co.uk/product/kitchen-appliances/laundry/washing-machines/lg/f4x9009tbc"
    },
    "steam": {
     "found": true,
     "phrase": "steam",
-    "snippet": "z through a 5kg load in just 39 minutes with TurboWash™360 tech, maintaining quality. LG Steam™ technology reduces allergens by up to 99.99%. Wrinkle Care reduces creases by 30% The AI",
-    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+    "snippet": "orcare Handhelds Handhelds Robot Cleaners Robot Cleaners Vacuum Cleaners Vacuum Cleaners Steam Cleaners Steam Cleaners Floor Cleaners Floor Cleaners Cordless Vacuum Cleaners Cordless Va",
+    "url": "https://www.hughes.co.uk/product/kitchen-appliances/laundry/washing-machines/lg/f4x9009tbc"
    },
    "directdrive": {
     "found": true,
     "phrase": "direct drive",
-    "snippet": "UK Get more information on the LG F4X9009TBC. Click for pictures & tech specs for the AI Direct Drive 9kg Washing Machine Series 9 in Black. Get free delivery and 5% off you first order. pdp-p",
-    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+    "snippet": "o-fit=no index,follow 15 days 9kg Drum Capacity 1400rpm Spin Speed 24 Wash Programmes AI Direct Drive VX Display Product Description The LG F4X9009TBC VX90 Series Washing Machine combines cutt",
+    "url": "https://www.hughes.co.uk/product/kitchen-appliances/laundry/washing-machines/lg/f4x9009tbc"
    },
    "additem": {
     "found": true,
     "phrase": "audit",
-    "snippet": "LG spec table verbatim: 'Add Item Yes ezDispense No'",
+    "snippet": "t provides intuitive controls and information at your fingertips. Specifications General Add Wash Yes Anti-Flood Device No Auto Dosing No Capacity in kg 9 Colour Of Unit Black Delicate was",
     "source": "matrix audit 2026-08-04"
    },
    "dosescan": {
     "found": false,
     "phrase": null,
     "snippet": null,
-    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+    "url": "https://www.hughes.co.uk/product/kitchen-appliances/laundry/washing-machines/lg/f4x9009tbc"
    },
    "recycled": {
     "found": false,
     "phrase": null,
     "snippet": null,
-    "url": "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
+    "url": "https://www.hughes.co.uk/product/kitchen-appliances/laundry/washing-machines/lg/f4x9009tbc"
    }
+  },
+  "scanned": {
+   "ai": "yes",
+   "microplastic": "no",
+   "steam": "yes",
+   "directdrive": "yes",
+   "dosescan": "no",
+   "recycled": "no"
   }
  },
  "washer-dryer|Samsung|WD10HG6U34BB": {
-  "pages": [],
-  "checked": "2026-08-04",
+  "pages": [
+   "https://www.samsung.com/de/washers-and-dryers/washer-dryer-combo/wd6000f-wd10hg6u34bbu2-10kg-plus-6kg-white-wd10hg6u34beu2/"
+  ],
+  "checked": "2026-08-05",
   "tech": {
+   "heatpump": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/de/washers-and-dryers/washer-dryer-combo/wd6000f-wd10hg6u34bbu2-10kg-plus-6kg-white-wd10hg6u34beu2/"
+   },
    "autodose": {
     "found": false,
     "phrase": "audit",
-    "snippet": "Samsung UK spec table for this SKU reads 'Auto Dispense: No'; Auto Dispense belongs to the sibling WD10HG6U94BE",
+    "snippet": "verdict from the 2026-08-04 matrix audit; see docs_matrix_audit.md",
     "source": "matrix audit 2026-08-04"
+   },
+   "ai": {
+    "found": true,
+    "phrase": "ai wash",
+    "snippet": "einen AI-Algorithmus und funktioniert nur in den Programmen Baumwolle, Pflegeleicht oder AI Wash mit einer Waschladung von weniger als 2 kg. Sie erkennt 3 Textilarten (Baumwolle, Feinwäsc",
+    "url": "https://www.samsung.com/de/washers-and-dryers/washer-dryer-combo/wd6000f-wd10hg6u34bbu2-10kg-plus-6kg-white-wd10hg6u34beu2/"
+   },
+   "nonstop": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/de/washers-and-dryers/washer-dryer-combo/wd6000f-wd10hg6u34bbu2-10kg-plus-6kg-white-wd10hg6u34beu2/"
+   },
+   "autodry": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/de/washers-and-dryers/washer-dryer-combo/wd6000f-wd10hg6u34bbu2-10kg-plus-6kg-white-wd10hg6u34beu2/"
    },
    "steam": {
     "found": true,
     "phrase": "audit",
-    "snippet": "Samsung UK: 'Hygiene Steam ... removes grime and 99.9% of certain bacteria'",
+    "snippet": "ter Indicator 1 Indicator 2 Indicator 3 Hygiene Zurück Hygienisch saubere Wäsche Hygiene-Dampfprogramm Reinige deine Wäsche gründlich und hygienisch mit Dampf. Im Hygiene-Dampfprogramm",
     "source": "matrix audit 2026-08-04"
+   },
+   "directdrive": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/de/washers-and-dryers/washer-dryer-combo/wd6000f-wd10hg6u34bbu2-10kg-plus-6kg-white-wd10hg6u34beu2/"
+   },
+   "microplastic": {
+    "found": true,
+    "phrase": "microfiber",
+    "snippet": "was die effiziente Waschleistung von AI Bubble verdeutlicht. AI Ecobubble sorgt im „Less Microfiber“-Programm für bis zu 54 % weniger Mikroplastikabgabe*****, bis zu 20 % bessere Schmutzentf",
+    "url": "https://www.samsung.com/de/washers-and-dryers/washer-dryer-combo/wd6000f-wd10hg6u34bbu2-10kg-plus-6kg-white-wd10hg6u34beu2/"
    }
+  },
+  "scanned": {
+   "heatpump": "no",
+   "ai": "yes",
+   "nonstop": "no",
+   "autodry": "no",
+   "directdrive": "no",
+   "microplastic": "yes"
   }
  },
  "dryer|Bosch|WQB246D41": {
@@ -95,7 +149,8 @@
     "snippet": "Reversing drum action not named in any listing for this SKU; plausible but unevidenced",
     "source": "matrix audit 2026-08-04"
    }
-  }
+  },
+  "scanned": {}
  },
  "washing-machine|AEG|LFR95146SUC 914505611": {
   "pages": [],
@@ -113,7 +168,8 @@
     "snippet": "AEG markets ProSense load sensing, not AI; no AI branding on the model page",
     "source": "matrix audit 2026-08-04"
    }
-  }
+  },
+  "scanned": {}
  },
  "dishwasher|Bosch|SBD6ECX21E": {
   "pages": [],
@@ -125,42 +181,134 @@
     "snippet": "Bosch encodes Zeolith/PerfectDry with a Z in the model code (SMS6ZCW10G); this is SBD6ECX21E. No listing mentions PerfectDry",
     "source": "matrix audit 2026-08-04"
    }
-  }
+  },
+  "scanned": {}
  },
  "washing-machine|Beko|B5W5941BDG 457100046100": {
-  "pages": [],
-  "checked": "2026-08-04",
+  "pages": [
+   "https://www.beko.co.uk/appliances/laundry/washing-machines/product/freestanding-9kg-1400rpm-washing-machine-energyspin-autodose-b5w5941bd-graphite-white"
+  ],
+  "checked": "2026-08-05",
   "tech": {
-   "recycled": {
+   "autodose": {
+    "found": true,
+    "phrase": "autodose",
+    "snippet": "IE=edge Freestanding 9kg 1400rpm Washing Machine with EnergySpin and Autodose B5W5941BD https://storage.beko.co.uk/beko2015products/master/457100047900_MDM2_LOW_1.png w",
+    "url": "https://www.beko.co.uk/appliances/laundry/washing-machines/product/freestanding-9kg-1400rpm-washing-machine-energyspin-autodose-b5w5941bd-graphite-white"
+   },
+   "ai": {
     "found": false,
-    "phrase": "audit",
-    "snippet": "Beko's page for this SKU lists EnergySpin, Autodose, IronFast, SteamCure, AddXtra - no RecycledTub. Beko titles RecycledTub models explicitly",
-    "source": "matrix audit 2026-08-04"
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.beko.co.uk/appliances/laundry/washing-machines/product/freestanding-9kg-1400rpm-washing-machine-energyspin-autodose-b5w5941bd-graphite-white"
    },
    "microplastic": {
     "found": false,
     "phrase": "audit",
-    "snippet": "Same page: no FiberCatcher or microplastic filter of any kind",
+    "snippet": "verdict from the 2026-08-04 matrix audit; see docs_matrix_audit.md",
     "source": "matrix audit 2026-08-04"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "steam",
+    "snippet": "cy, using up to 30% less energy than standard Class A models. Enhanced with IronFast and SteamCure technologies to reduce wrinkles, it also offers Quick Programmes, including a 28-minut",
+    "url": "https://www.beko.co.uk/appliances/laundry/washing-machines/product/freestanding-9kg-1400rpm-washing-machine-energyspin-autodose-b5w5941bd-graphite-white"
+   },
+   "directdrive": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.beko.co.uk/appliances/laundry/washing-machines/product/freestanding-9kg-1400rpm-washing-machine-energyspin-autodose-b5w5941bd-graphite-white"
    },
    "additem": {
     "found": true,
     "phrase": "audit",
-    "snippet": "Beko's page names AddXtra - mid-cycle garment addition",
+    "snippet": "des Dishwasher Guides Washing Machine Guides How to fix your washing machine if it stops mid-cycle Tumble Dryers Guides Small Appliances Guides HygieneShield™ Guides Instruction Manuals FAQ",
+    "source": "matrix audit 2026-08-04"
+   },
+   "dosescan": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.beko.co.uk/appliances/laundry/washing-machines/product/freestanding-9kg-1400rpm-washing-machine-energyspin-autodose-b5w5941bd-graphite-white"
+   },
+   "recycled": {
+    "found": false,
+    "phrase": "audit",
+    "snippet": "verdict from the 2026-08-04 matrix audit; see docs_matrix_audit.md",
     "source": "matrix audit 2026-08-04"
    }
+  },
+  "scanned": {
+   "autodose": "yes",
+   "ai": "no",
+   "steam": "yes",
+   "directdrive": "no",
+   "dosescan": "no"
   }
  },
  "dishwasher|Beko|BDIN38560WPF 7675093877": {
-  "pages": [],
-  "checked": "2026-08-04",
+  "pages": [
+   "https://www.beko.co.uk/appliances/integrated-appliances/dishwashers/product/integrated-full-size-dishwasher-powerintense-fast45-bdin38560wpf"
+  ],
+  "checked": "2026-08-05",
   "tech": {
+   "autoopen": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.beko.co.uk/appliances/integrated-appliances/dishwashers/product/integrated-full-size-dishwasher-powerintense-fast45-bdin38560wpf"
+   },
+   "zeolith": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.beko.co.uk/appliances/integrated-appliances/dishwashers/product/integrated-full-size-dishwasher-powerintense-fast45-bdin38560wpf"
+   },
+   "autodose": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.beko.co.uk/appliances/integrated-appliances/dishwashers/product/integrated-full-size-dishwasher-powerintense-fast45-bdin38560wpf"
+   },
+   "thirdrack": {
+    "found": true,
+    "phrase": "3rd rack",
+    "snippet": "min) 4:35 Noise Class B Interior Configuration Additional Cutlery Tray (removable) Flexi 3rd Rack Cutlery Basket (removable) Yes Folding Tines on Upper Basket 6 & Soft Spike Upper Basket H",
+    "url": "https://www.beko.co.uk/appliances/integrated-appliances/dishwashers/product/integrated-full-size-dishwasher-powerintense-fast45-bdin38560wpf"
+   },
+   "zonewash": {
+    "found": true,
+    "phrase": "half load",
+    "snippet": "meter in Lower Basket (cm) 29.5 Maximum Plate Diameter in Upper Basket (cm) 25 Functions Half Load Yes Tablet Function No Child lock No Time delay Up to 24h Function 1 SilentWash Function 2",
+    "url": "https://www.beko.co.uk/appliances/integrated-appliances/dishwashers/product/integrated-full-size-dishwasher-powerintense-fast45-bdin38560wpf"
+   },
    "ai": {
     "found": false,
     "phrase": "audit",
     "snippet": "Beko markets ProSmart Inverter, AutoDose, CornerIntense, HygieneShield, TrayWash, HomeWhiz - no AI branding",
     "source": "matrix audit 2026-08-04"
+   },
+   "softener": {
+    "found": true,
+    "phrase": "water softener",
+    "snippet": "r - Light Yes Rinse Aid Indicator - Light Yes Adjustable Rinse Aid Dosage Yes Adjustable Water Softener Yes Inner Illumination Yes Programmes Programme 1 SensorAdapt Programme 2 Intensive Progra",
+    "url": "https://www.beko.co.uk/appliances/integrated-appliances/dishwashers/product/integrated-full-size-dishwasher-powerintense-fast45-bdin38560wpf"
+   },
+   "wifi": {
+    "found": true,
+    "phrase": "wi-fi",
+    "snippet": "assurance of the product's security, a Statement of Compliance (SoC) is provided for all Wi-Fi-connected products. Please read our Vulnerability Disclosure Procedure for further informa",
+    "url": "https://www.beko.co.uk/appliances/integrated-appliances/dishwashers/product/integrated-full-size-dishwasher-powerintense-fast45-bdin38560wpf"
    }
+  },
+  "scanned": {
+   "autoopen": "no",
+   "zeolith": "no",
+   "thirdrack": "yes",
+   "zonewash": "yes",
+   "softener": "yes",
+   "wifi": "yes"
   }
  },
  "dryer|Hisense|DH5I104BBAB": {
@@ -173,7 +321,8 @@
     "snippet": "Hisense 5i claims are Smart Link (auto-selects programme from paired washer) and ConnectLife - automation, not advertised AI",
     "source": "matrix audit 2026-08-04"
    }
-  }
+  },
+  "scanned": {}
  },
  "washer-dryer|Whirlpool|BWT 106A3C BC": {
   "pages": [],
@@ -185,7 +334,8 @@
     "snippet": "Value was purely class-derived; no Whirlpool source confirms a heat-pump washer-dryer under this code",
     "source": "matrix audit 2026-08-04"
    }
-  }
+  },
+  "scanned": {}
  },
  "washer-dryer|Beko|B7DFT61041W 457000020300": {
   "pages": [],
@@ -197,7 +347,8 @@
     "snippet": "Same class-C inference; no Beko heat-pump washer-dryer found in EU retail (Beko heat pumps are standalone dryers)",
     "source": "matrix audit 2026-08-04"
    }
-  }
+  },
+  "scanned": {}
  },
  "washing-machine|Electrolux|EW9F5417SWCE 914475615": {
   "pages": [],
@@ -209,36 +360,1130 @@
     "snippet": "Electrolux AI claim attaches to SensorWash as a brand technology; not confirmed on this SKU",
     "source": "matrix audit 2026-08-04"
    }
-  }
+  },
+  "scanned": {}
  },
  "washing-machine|Samsung|WF90F09C4S": {
-  "pages": [],
-  "checked": "2026-08-04",
+  "pages": [
+   "https://www.samsung.com/uk/washers-and-dryers/washing-machines/wf90f24-front-load-washer-a-55-percent-energy-efficiency-ai-home-ai-wash-9kg-silver-wf90f09c4su1/"
+  ],
+  "checked": "2026-08-05",
   "tech": {
+   "autodose": {
+    "found": true,
+    "phrase": "auto dose",
+    "snippet": "Meanwhile, Hygiene Steam removes up to a gigantic 99.9% of bacteria and allergens, while Auto Dose eliminates the need to manually measure detergent for every single load and stores enough",
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washing-machines/wf90f24-front-load-washer-a-55-percent-energy-efficiency-ai-home-ai-wash-9kg-silver-wf90f09c4su1/"
+   },
+   "ai": {
+    "found": true,
+    "phrase": "ai wash",
+    "snippet": "IE=edge text/html; charset=UTF-8 width=device-width, initial-scale=1 Series 9 Bespoke AI Washing Machine WF90F09C4SU1 | Samsung UK Series 9 Bespoke AI Washing Machine WF90F09C4SU1 | Sa",
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washing-machines/wf90f24-front-load-washer-a-55-percent-energy-efficiency-ai-home-ai-wash-9kg-silver-wf90f09c4su1/"
+   },
+   "microplastic": {
+    "found": true,
+    "phrase": "microplastic",
+    "snippet": "% cotton, 3kg load, with standard powder detergent. Individual results may vary. Reduces microplastic Less Microfiber Cycle The Less Microfiber cycle works to make clothes shed less microplast",
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washing-machines/wf90f24-front-load-washer-a-55-percent-energy-efficiency-ai-home-ai-wash-9kg-silver-wf90f09c4su1/"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "steam",
+    "snippet": ". Next Indicator 1 Indicator 2 Indicator 3 Hygiene Previous Go cleaner with the power of steam Hygiene Steam When it comes to deep down cleaning, not all washing machines are up to the",
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washing-machines/wf90f24-front-load-washer-a-55-percent-energy-efficiency-ai-home-ai-wash-9kg-silver-wf90f09c4su1/"
+   },
    "directdrive": {
     "found": false,
     "phrase": "audit",
-    "snippet": "Samsung UK spec table lists motor as DIT (Digital Inverter Technology) - belt-driven brushless, not direct drive",
+    "snippet": "well made from Samsung as always. Counter parts are equal im sure but having gone from a direct drive unit from another high end manufacturer that ended up with it shaking the bones from the h",
     "source": "matrix audit 2026-08-04"
+   },
+   "additem": {
+    "found": true,
+    "phrase": "add wash",
+    "snippet": ": 5 ( Number of Ratings : 9,999 ) This washing machine makes your life easy. No need to add washing detergent all the times. You can monitor the progress of wash in smart things app. View",
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washing-machines/wf90f24-front-load-washer-a-55-percent-energy-efficiency-ai-home-ai-wash-9kg-silver-wf90f09c4su1/"
+   },
+   "dosescan": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washing-machines/wf90f24-front-load-washer-a-55-percent-energy-efficiency-ai-home-ai-wash-9kg-silver-wf90f09c4su1/"
+   },
+   "recycled": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washing-machines/wf90f24-front-load-washer-a-55-percent-energy-efficiency-ai-home-ai-wash-9kg-silver-wf90f09c4su1/"
    }
+  },
+  "scanned": {
+   "autodose": "yes",
+   "ai": "yes",
+   "microplastic": "yes",
+   "steam": "yes",
+   "additem": "yes",
+   "dosescan": "no",
+   "recycled": "no"
   }
  },
  "washer-dryer|Samsung|WD18DB8995BZ": {
-  "pages": [],
-  "checked": "2026-08-04",
+  "pages": [
+   "https://www.samsung.com/uk/washers-and-dryers/washer-dryer-combo/wd8000dk-combo-all-in-one-combo-super-speed-18kg-gray-wd18db8995bzt1/",
+   "https://www.samsung.com/ie/washers-and-dryers/washer-dryer-combo/wd8000dk-combo-all-in-one-combo-super-speed-18kg-gray-wd18db8995bzt1/"
+  ],
+  "checked": "2026-08-05",
   "tech": {
-   "microplastic": {
+   "heatpump": {
     "found": true,
-    "phrase": "audit",
-    "snippet": "Samsung UK: 'A Less Microfiber Cycle reduces the release of microfibres by up to 39%' - a cycle, not a filter",
-    "source": "matrix audit 2026-08-04"
+    "phrase": "heat pump",
+    "snippet": "IE=edge text/html; charset=UTF-8 width=device-width, initial-scale=1 Bespoke AI Heat Pump Washer Dryer 18KG WD8000DK | Samsung UK Bespoke AI Heat Pump Washer Dryer 18KG WD8000DK |",
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washer-dryer-combo/wd8000dk-combo-all-in-one-combo-super-speed-18kg-gray-wd18db8995bzt1/"
+   },
+   "autodose": {
+    "found": true,
+    "phrase": "auto dispense",
+    "snippet": "on individual use. To prevent wear, wash like fabrics together Convenience Previous Flex Auto Dispense System Auto dispensing of detergent & softener Get great washing results with less effort.",
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washer-dryer-combo/wd8000dk-combo-all-in-one-combo-super-speed-18kg-gray-wd18db8995bzt1/"
+   },
+   "ai": {
+    "found": true,
+    "phrase": "ai wash",
+    "snippet": "D 4K TV OLED 4K TV New The Frame Pro New Odyssey OLED G8 Bespoke AI Refrigerator Bespoke AI Washer Bespoke AI Jet Ultra Bespoke AI Jet Ultra Bespoke AI Jet Ultra Oven Dual Cook Flex Oven",
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washer-dryer-combo/wd8000dk-combo-all-in-one-combo-super-speed-18kg-gray-wd18db8995bzt1/"
+   },
+   "nonstop": {
+    "found": true,
+    "phrase": "wash to dry",
+    "snippet": "t by auto dispensing, telling you when you need to do a maintenance cycle and going from wash to dry. It is not often I get that impressed by tech but i sure am impressed with this. View more",
+    "url": "https://www.samsung.com/ie/washers-and-dryers/washer-dryer-combo/wd8000dk-combo-all-in-one-combo-super-speed-18kg-gray-wd18db8995bzt1/"
    },
    "autodry": {
     "found": true,
     "phrase": "audit",
-    "snippet": "Samsung UK: 'AI Opti WashDry includes ... dry level sensing'",
+    "snippet": "verdict from the 2026-08-04 matrix audit; see docs_matrix_audit.md",
+    "source": "matrix audit 2026-08-04"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "steam",
+    "snippet": "nual cleaning is required after using the dry cycle every 180 times. Easily clean stains Steam Wash Use the power of steam to eliminate stains without pre-treatments. The powerful Steam",
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washer-dryer-combo/wd8000dk-combo-all-in-one-combo-super-speed-18kg-gray-wd18db8995bzt1/"
+   },
+   "directdrive": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/uk/washers-and-dryers/washer-dryer-combo/wd8000dk-combo-all-in-one-combo-super-speed-18kg-gray-wd18db8995bzt1/"
+   },
+   "microplastic": {
+    "found": true,
+    "phrase": "audit",
+    "snippet": "tics and AI Wash with loads less than 2kg. Less Microfiber Cycle Reduces the shedding of microplastic By adjusting the motor’s revolution speed and washing intensiveness, the Less Microfiber c",
     "source": "matrix audit 2026-08-04"
    }
+  },
+  "scanned": {
+   "heatpump": "yes",
+   "autodose": "yes",
+   "ai": "yes",
+   "nonstop": "yes",
+   "steam": "yes",
+   "directdrive": "no"
+  }
+ },
+ "washing-machine|Haier|HW100-B14397EU1": {
+  "pages": [
+   "https://www.haier-europe.com/pl_PL/products/31021025-hw100-b14397eu1s"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "autodose": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/pl_PL/products/31021025-hw100-b14397eu1s"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/pl_PL/products/31021025-hw100-b14397eu1s"
+   },
+   "microplastic": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/pl_PL/products/31021025-hw100-b14397eu1s"
+   },
+   "steam": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/pl_PL/products/31021025-hw100-b14397eu1s"
+   },
+   "directdrive": {
+    "found": true,
+    "phrase": "direct motion",
+    "snippet": "ies 11 - HW100-B14397EU1 - 31021025 – Haier Polska Wolnostojąca, 10 Kg, 1400 RPM, Silnik Direct Motion, Klasa energetyczna A, Biały, 14 programy, S x G x W (mm) 595x678x850 /73210462397/digital",
+    "url": "https://www.haier-europe.com/pl_PL/products/31021025-hw100-b14397eu1s"
+   },
+   "additem": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/pl_PL/products/31021025-hw100-b14397eu1s"
+   },
+   "dosescan": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/pl_PL/products/31021025-hw100-b14397eu1s"
+   },
+   "recycled": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/pl_PL/products/31021025-hw100-b14397eu1s"
+   }
+  },
+  "scanned": {
+   "autodose": "no",
+   "ai": "no",
+   "microplastic": "no",
+   "steam": "no",
+   "directdrive": "yes",
+   "additem": "no",
+   "dosescan": "no",
+   "recycled": "no"
+  }
+ },
+ "washing-machine|Midea|MF205W90BA50/T-IT": {
+  "pages": [
+   "https://www.midea.com/it/washers-and-dryers/front-loading-washing-machines/front-load-washing-machine-mf205-class-a-50-9-kg-titanium.mf205w90ba50-t-it"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "autodose": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/it/washers-and-dryers/front-loading-washing-machines/front-load-washing-machine-mf205-class-a-50-9-kg-titanium.mf205w90ba50-t-it"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/it/washers-and-dryers/front-loading-washing-machines/front-load-washing-machine-mf205-class-a-50-9-kg-titanium.mf205w90ba50-t-it"
+   },
+   "microplastic": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/it/washers-and-dryers/front-loading-washing-machines/front-load-washing-machine-mf205-class-a-50-9-kg-titanium.mf205w90ba50-t-it"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "vapore",
+    "snippet": "’ambiente di lavaggio pulito e igienico per prestazioni sempre ottimali. Sanificazione a vapore Il programma HealthGuard utilizza il vapore caldo per ammorbidire le macchie più resistent",
+    "url": "https://www.midea.com/it/washers-and-dryers/front-loading-washing-machines/front-load-washing-machine-mf205-class-a-50-9-kg-titanium.mf205w90ba50-t-it"
+   },
+   "directdrive": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/it/washers-and-dryers/front-loading-washing-machines/front-load-washing-machine-mf205-class-a-50-9-kg-titanium.mf205w90ba50-t-it"
+   },
+   "additem": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/it/washers-and-dryers/front-loading-washing-machines/front-load-washing-machine-mf205-class-a-50-9-kg-titanium.mf205w90ba50-t-it"
+   },
+   "dosescan": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/it/washers-and-dryers/front-loading-washing-machines/front-load-washing-machine-mf205-class-a-50-9-kg-titanium.mf205w90ba50-t-it"
+   },
+   "recycled": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/it/washers-and-dryers/front-loading-washing-machines/front-load-washing-machine-mf205-class-a-50-9-kg-titanium.mf205w90ba50-t-it"
+   }
+  },
+  "scanned": {
+   "autodose": "no",
+   "ai": "no",
+   "microplastic": "no",
+   "steam": "yes",
+   "directdrive": "no",
+   "additem": "no",
+   "dosescan": "no",
+   "recycled": "no"
+  }
+ },
+ "washer-dryer|Haier|HWD120-BD16397EU1": {
+  "pages": [
+   "https://www.haier-europe.com/en_GB/washer-dryers/31020725/hwd120bd16397euk/",
+   "https://www.haier-europe.com/en_IE/washer-dryers/31020725/hwd120bd16397euk/"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "heatpump": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/washer-dryers/31020725/hwd120bd16397euk/"
+   },
+   "autodose": {
+    "found": true,
+    "phrase": "autodose",
+    "snippet": "ndry fresh for up to 12 hours by preventing humidity, mould, and odours, even overnight. AutoDose and the TFT screen offer effortless, autonomous washing, while I-Refresh Pro uses micro-va",
+    "url": "https://www.haier-europe.com/en_GB/washer-dryers/31020725/hwd120bd16397euk/"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/washer-dryers/31020725/hwd120bd16397euk/"
+   },
+   "nonstop": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/washer-dryers/31020725/hwd120bd16397euk/"
+   },
+   "autodry": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/washer-dryers/31020725/hwd120bd16397euk/"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "steam",
+    "snippet": "s and Functions Number of programmes 18 Start delay options Yes (up to 24h) Autodose Yes Steam programme Yes Aesthetic Colour White Colour of door Black Performance and Consumption Spin",
+    "url": "https://www.haier-europe.com/en_GB/washer-dryers/31020725/hwd120bd16397euk/"
+   },
+   "directdrive": {
+    "found": true,
+    "phrase": "direct motion",
+    "snippet": "s 11 - HWD120-BD16397EU1 - 31020725 – Haier UK Freestanding, 12 / 7 Kg, 1600 RPM, Engine Direct Motion, Combined cycle energy class A, White, W x D x H (mm) 595x661x850 /71463207101/digital_wal",
+    "url": "https://www.haier-europe.com/en_GB/washer-dryers/31020725/hwd120bd16397euk/"
+   },
+   "microplastic": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/washer-dryers/31020725/hwd120bd16397euk/"
+   }
+  },
+  "scanned": {
+   "heatpump": "no",
+   "autodose": "yes",
+   "ai": "no",
+   "nonstop": "no",
+   "autodry": "no",
+   "steam": "yes",
+   "directdrive": "yes",
+   "microplastic": "no"
+  }
+ },
+ "washer-dryer|AEG|LWR9506BN4 914610721": {
+  "pages": [
+   "https://www.coolblue.be/en/product/964318/aeg-lwr9506bn4-absolutecare-10-6kg.html"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "heatpump": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.coolblue.be/en/product/964318/aeg-lwr9506bn4-absolutecare-10-6kg.html"
+   },
+   "autodose": {
+    "found": true,
+    "phrase": "autodose",
+    "snippet": "oduct AEG LWR9506BN4 AbsoluteCare - 10/6kg LG HPWD116A - 11/6kg AEG LWR8716AD6 PowerCare AutoDose - 10/6kg Miele WTD 163 WCS - 8/5 kg Siemens WN54C2A0NL 10.5/6 kg 1.309 ,- 1.399 ,- 1.239 ,",
+    "url": "https://www.coolblue.be/en/product/964318/aeg-lwr9506bn4-absolutecare-10-6kg.html"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.coolblue.be/en/product/964318/aeg-lwr9506bn4-absolutecare-10-6kg.html"
+   },
+   "nonstop": {
+    "found": true,
+    "phrase": "non-stop",
+    "snippet": "No More information about Opening diameter Opening diameter 34 cm More information about Non-stop wash and dry cycle Non-stop wash and dry cycle Yes More information about Duration non-sto",
+    "url": "https://www.coolblue.be/en/product/964318/aeg-lwr9506bn4-absolutecare-10-6kg.html"
+   },
+   "autodry": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.coolblue.be/en/product/964318/aeg-lwr9506bn4-absolutecare-10-6kg.html"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "steam",
+    "snippet": "ng cycle, Auto shut-off, Laundry-care drum, Self-cleaning detergent drawer, Start delay, Steam function, Time remaining indicator More information about Add laundry during cycle Add lau",
+    "url": "https://www.coolblue.be/en/product/964318/aeg-lwr9506bn4-absolutecare-10-6kg.html"
+   },
+   "directdrive": {
+    "found": true,
+    "phrase": "direct drive",
+    "snippet": "cleaning detergent drawer Yes More information about Brushless motor Brushless motor Yes Direct drive No More information about Propulsion type Propulsion type With drive belt More information",
+    "url": "https://www.coolblue.be/en/product/964318/aeg-lwr9506bn4-absolutecare-10-6kg.html"
+   },
+   "microplastic": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.coolblue.be/en/product/964318/aeg-lwr9506bn4-absolutecare-10-6kg.html"
+   }
+  },
+  "scanned": {
+   "heatpump": "no",
+   "autodose": "yes",
+   "ai": "no",
+   "nonstop": "yes",
+   "autodry": "no",
+   "steam": "yes",
+   "directdrive": "yes",
+   "microplastic": "no"
+  }
+ },
+ "washer-dryer|Electrolux|EW9W1165RB 914600379": {
+  "pages": [
+   "https://www.boulanger.com/ref/1220605"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "heatpump": {
+    "found": true,
+    "phrase": "pompe à chaleur",
+    "snippet": "pro Machine à laver pas cher Sèche-linge Sèche-linge Voir tout Nos produits Sèche-linge pompe à chaleur Sèche-linge à condensation Sèche-linge à évacuation Armoire séchante Sèche-linge pro Sèche",
+    "url": "https://www.boulanger.com/ref/1220605"
+   },
+   "autodose": {
+    "found": true,
+    "phrase": "dosage automatique",
+    "snippet": "reuses ou quand vous n'êtes pas présent. Distributeur automatique de lessive non, pas de dosage automatique. Personnalisation du temps de lavage oui, après sélection de votre programme de lavage, aj",
+    "url": "https://www.boulanger.com/ref/1220605"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.boulanger.com/ref/1220605"
+   },
+   "nonstop": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.boulanger.com/ref/1220605"
+   },
+   "autodry": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.boulanger.com/ref/1220605"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "steam",
+    "snippet": "licats Programmes de séchage prêt à repasser, prêt à ranger Technologie(s) du lave linge Steam refresh programme qui diffuse de la vapeur et régénère ainsi la fraîcheur de vos vêtements",
+    "url": "https://www.boulanger.com/ref/1220605"
+   },
+   "directdrive": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.boulanger.com/ref/1220605"
+   },
+   "microplastic": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.boulanger.com/ref/1220605"
+   }
+  },
+  "scanned": {
+   "heatpump": "yes",
+   "autodose": "yes",
+   "ai": "no",
+   "nonstop": "no",
+   "autodry": "no",
+   "steam": "yes",
+   "directdrive": "no",
+   "microplastic": "no"
+  }
+ },
+ "washer-dryer|Electrolux|EW2W3068E4 914603727": {
+  "pages": [
+   "https://www.elon.se/electrolux-ew2w3068e4-149044"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "heatpump": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.elon.se/electrolux-ew2w3068e4-149044"
+   },
+   "autodose": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.elon.se/electrolux-ew2w3068e4-149044"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.elon.se/electrolux-ew2w3068e4-149044"
+   },
+   "nonstop": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.elon.se/electrolux-ew2w3068e4-149044"
+   },
+   "autodry": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.elon.se/electrolux-ew2w3068e4-149044"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "steam",
+    "snippet": "os Elon. EW2W3068E4 har följande fördelar: Kapacitet: 8/4 kg tvätt/tork|Skonsam DualCare|SteamRefresh|Time Manager sparar tid|Tvätt & tork på 60 minuter Electrolux EW2W3068E4 INDEX,FOLL",
+    "url": "https://www.elon.se/electrolux-ew2w3068e4-149044"
+   },
+   "directdrive": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.elon.se/electrolux-ew2w3068e4-149044"
+   },
+   "microplastic": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.elon.se/electrolux-ew2w3068e4-149044"
+   }
+  },
+  "scanned": {
+   "heatpump": "no",
+   "autodose": "no",
+   "ai": "no",
+   "nonstop": "no",
+   "autodry": "no",
+   "steam": "yes",
+   "directdrive": "no",
+   "microplastic": "no"
+  }
+ },
+ "washer-dryer|Whirlpool|WAD 8536WBC EE": {
+  "pages": [
+   "https://www.whirlpool.cz/w/volne-stojici-pracka-se-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690",
+   "https://www.whirlpool.sk/w/volne-stojaca-pracka-so-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "heatpump": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.whirlpool.cz/w/volne-stojici-pracka-se-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690"
+   },
+   "autodose": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.whirlpool.cz/w/volne-stojici-pracka-se-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.whirlpool.cz/w/volne-stojici-pracka-se-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690"
+   },
+   "nonstop": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.whirlpool.cz/w/volne-stojici-pracka-se-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690"
+   },
+   "autodry": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.whirlpool.cz/w/volne-stojici-pracka-se-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690"
+   },
+   "steam": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.whirlpool.cz/w/volne-stojici-pracka-se-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690"
+   },
+   "directdrive": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.whirlpool.cz/w/volne-stojici-pracka-se-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690"
+   },
+   "microplastic": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.whirlpool.cz/w/volne-stojici-pracka-se-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690"
+   }
+  },
+  "scanned": {
+   "heatpump": "no",
+   "autodose": "no",
+   "ai": "no",
+   "nonstop": "no",
+   "autodry": "no",
+   "steam": "no",
+   "directdrive": "no",
+   "microplastic": "no"
+  }
+ },
+ "dryer|AEG|TR9HH8AY 916900397": {
+  "pages": [
+   "https://www.vieffetrade.com/uk_en/aeg-tr9hh8ay-serie-9000x-absolutecarer-pro-60-cm-dryer-8-kg-capacity-white-581561.html"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "heatpump": {
+    "found": true,
+    "phrase": "heat pump",
+    "snippet": "Y tumble dryer - 60 cm - 8 kg capacity - white Specifications Capacity: 8 kg Technology: heat pump Inverter Motor OptiSense Electronics: automatic adjustment of consumption and times based",
+    "url": "https://www.vieffetrade.com/uk_en/aeg-tr9hh8ay-serie-9000x-absolutecarer-pro-60-cm-dryer-8-kg-capacity-white-581561.html"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.vieffetrade.com/uk_en/aeg-tr9hh8ay-serie-9000x-absolutecarer-pro-60-cm-dryer-8-kg-capacity-white-581561.html"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "steam",
+    "snippet": "ilt-in ovens see all Built-in ovens: image Electric oven Electric oven Gas oven Gas oven Steam oven Steam oven Built-in microwave oven Built-in microwave oven Fan oven Fan oven Combi st",
+    "url": "https://www.vieffetrade.com/uk_en/aeg-tr9hh8ay-serie-9000x-absolutecarer-pro-60-cm-dryer-8-kg-capacity-white-581561.html"
+   },
+   "selfclean": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.vieffetrade.com/uk_en/aeg-tr9hh8ay-serie-9000x-absolutecarer-pro-60-cm-dryer-8-kg-capacity-white-581561.html"
+   },
+   "reverse": {
+    "found": true,
+    "phrase": "anti-crease",
+    "snippet": "dicators: Filter, Tank, Condenser Dashboard options: ON/OFF, Drying level, Timed drying, Anti-crease, Extra Silent, Energy Save, TIME SAVE, Finish in, Remote start, Start/Pause, SyncDry Place",
+    "url": "https://www.vieffetrade.com/uk_en/aeg-tr9hh8ay-serie-9000x-absolutecarer-pro-60-cm-dryer-8-kg-capacity-white-581561.html"
+   },
+   "wifi": {
+    "found": true,
+    "phrase": "connected",
+    "snippet": "cess humidity building up in the laundry room. A WHOLE NEW LEVEL OF INTERACTION WITH AEG CONNECTED Use the AEG app to customize settings and get helpful tips and tricks. Customize wash cycl",
+    "url": "https://www.vieffetrade.com/uk_en/aeg-tr9hh8ay-serie-9000x-absolutecarer-pro-60-cm-dryer-8-kg-capacity-white-581561.html"
+   },
+   "heatex": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.vieffetrade.com/uk_en/aeg-tr9hh8ay-serie-9000x-absolutecarer-pro-60-cm-dryer-8-kg-capacity-white-581561.html"
+   },
+   "rackdry": {
+    "found": true,
+    "phrase": "shoe rack",
+    "snippet": "shing accessories: image Coat hanger Coat hanger Shelf Shelf Bottle holder Bottle holder Shoe rack Shoe rack Mirror Mirror Coffee table Coffee table see all See all Beds Beds: image Beds Ba",
+    "url": "https://www.vieffetrade.com/uk_en/aeg-tr9hh8ay-serie-9000x-absolutecarer-pro-60-cm-dryer-8-kg-capacity-white-581561.html"
+   }
+  },
+  "scanned": {
+   "heatpump": "yes",
+   "ai": "no",
+   "steam": "yes",
+   "selfclean": "no",
+   "reverse": "yes",
+   "wifi": "yes",
+   "heatex": "no",
+   "rackdry": "yes"
+  }
+ },
+ "dryer|Samsung|DV90DB7845GB": {
+  "pages": [
+   "https://www.samsung.com/it/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/",
+   "https://www.samsung.com/be/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "heatpump": {
+    "found": true,
+    "phrase": "heatpump",
+    "snippet": "olore porta Tempered Glass Door Display AI Control Prestazioni Tecnologia di asciugatura Heatpump Classe di efficienza energetica A Consumo di Energia (100 Cicli) 79 kWh/Anno Rated capacit",
+    "url": "https://www.samsung.com/it/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/"
+   },
+   "ai": {
+    "found": true,
+    "phrase": "ai dry",
+    "snippet": "ni di utilizzo effettive. Funzioni automatiche per un’asciugatura ancora più efficiente* AI Dry+ Un'asciugatura più rapida e precisa* che riduce del 20%** sia i consumi energetici che il",
+    "url": "https://www.samsung.com/it/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/"
+   },
+   "steam": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/it/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/"
+   },
+   "selfclean": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/it/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/"
+   },
+   "reverse": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/it/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/"
+   },
+   "wifi": {
+    "found": true,
+    "phrase": "wi-fi",
+    "snippet": "r smartphone.** Disponibile su dispositivi Android e iOS. Sono necessari una connessione Wi-Fi e un account Samsung.*** La funzione Auto Cycle Link è disponibile solo se sia la lavatric",
+    "url": "https://www.samsung.com/it/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/"
+   },
+   "heatex": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/it/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/"
+   },
+   "rackdry": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/it/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/"
+   }
+  },
+  "scanned": {
+   "heatpump": "yes",
+   "ai": "yes",
+   "steam": "no",
+   "selfclean": "no",
+   "reverse": "no",
+   "wifi": "yes",
+   "heatex": "no",
+   "rackdry": "no"
+  }
+ },
+ "dryer|LG|RH9X76BM": {
+  "pages": [
+   "https://www.lg.com/fr/lavage/seche-linge/lg-rh9x76bm-seche-linge/",
+   "https://www.auchan.fr/lg-seche-linge-pompe-a-chaleur-rh9x76bm/pr-3006267b-f28e-41c9-860a-139351b6aa55"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "heatpump": {
+    "found": true,
+    "phrase": "heat pump",
+    "snippet": "pe à chaleur peut réduire les plis. Les deux cylindres à l’intérieur de la DUAL Inverter Heat Pump™ tournent dans des directions opposées pour équilibrer et réduire les vibrations durant le",
+    "url": "https://www.lg.com/fr/lavage/seche-linge/lg-rh9x76bm-seche-linge/"
+   },
+   "ai": {
+    "found": true,
+    "phrase": "ai dry",
+    "snippet": "g RH9X76BM | LG France Découvrez le LG RH9X76BM un sèche-linge avec molette écran LCD et AI Dry™ pour un séchage optimal pdp-page index, follow {\"graphqlEndpoint\":\"/api/graphql\",\"graphql",
+    "url": "https://www.lg.com/fr/lavage/seche-linge/lg-rh9x76bm-seche-linge/"
+   },
+   "steam": {
+    "found": true,
+    "phrase": "vapeur",
+    "snippet": "ouillage enfant Oui Départ différé Oui Eclairage du tambour Oui Démarrage à distance Oui Vapeur Non durée du séchage Non FONCTIONS THINQ Smart Diagnosis Oui Téléchargement de cycle Oui D",
+    "url": "https://www.lg.com/fr/lavage/seche-linge/lg-rh9x76bm-seche-linge/"
+   },
+   "selfclean": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/fr/lavage/seche-linge/lg-rh9x76bm-seche-linge/"
+   },
+   "reverse": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/fr/lavage/seche-linge/lg-rh9x76bm-seche-linge/"
+   },
+   "wifi": {
+    "found": true,
+    "phrase": "wifi",
+    "snippet": "e fonction nécessite que le lave-linge et le sèche-linge soient connectés à votre réseau WiFi domestique et enregistrés dans l’application intelligente LG ThinQ™. LG ThinQ™ La vie inte",
+    "url": "https://www.lg.com/fr/lavage/seche-linge/lg-rh9x76bm-seche-linge/"
+   },
+   "heatex": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/fr/lavage/seche-linge/lg-rh9x76bm-seche-linge/"
+   },
+   "rackdry": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/fr/lavage/seche-linge/lg-rh9x76bm-seche-linge/"
+   }
+  },
+  "scanned": {
+   "heatpump": "yes",
+   "ai": "yes",
+   "steam": "yes",
+   "selfclean": "no",
+   "reverse": "no",
+   "wifi": "yes",
+   "heatex": "no",
+   "rackdry": "no"
+  }
+ },
+ "dryer|Midea|MD20EH80WB-A3": {
+  "pages": [
+   "https://www.midea.com/de/waschen-trocknen/trockner/waermepumpentrockner-md20eh80wb-a3.md20eh80wb-a3"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "heatpump": {
+    "found": true,
+    "phrase": "wärmepumpe",
+    "snippet": "Midea Wärmepumpentrockner MD20EH80WB-A3 Schonendes Waschprogramm für Kleidung aus Wolle. Smart Control dank",
+    "url": "https://www.midea.com/de/waschen-trocknen/trockner/waermepumpentrockner-md20eh80wb-a3.md20eh80wb-a3"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/de/waschen-trocknen/trockner/waermepumpentrockner-md20eh80wb-a3.md20eh80wb-a3"
+   },
+   "steam": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/de/waschen-trocknen/trockner/waermepumpentrockner-md20eh80wb-a3.md20eh80wb-a3"
+   },
+   "selfclean": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/de/waschen-trocknen/trockner/waermepumpentrockner-md20eh80wb-a3.md20eh80wb-a3"
+   },
+   "reverse": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/de/waschen-trocknen/trockner/waermepumpentrockner-md20eh80wb-a3.md20eh80wb-a3"
+   },
+   "wifi": {
+    "found": true,
+    "phrase": "wi-fi",
+    "snippet": "rhalb eines Spektrums von A bis G. EU Datenblatt Icon Wolle-Programm Wolle-Programm Icon Wi-Fi Wlan Icon LED Display LED-Display Spezifikationen Alle Spezifikationen Produkt Model MD20E",
+    "url": "https://www.midea.com/de/waschen-trocknen/trockner/waermepumpentrockner-md20eh80wb-a3.md20eh80wb-a3"
+   },
+   "heatex": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/de/waschen-trocknen/trockner/waermepumpentrockner-md20eh80wb-a3.md20eh80wb-a3"
+   },
+   "rackdry": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.midea.com/de/waschen-trocknen/trockner/waermepumpentrockner-md20eh80wb-a3.md20eh80wb-a3"
+   }
+  },
+  "scanned": {
+   "heatpump": "yes",
+   "ai": "no",
+   "steam": "no",
+   "selfclean": "no",
+   "reverse": "no",
+   "wifi": "yes",
+   "heatex": "no",
+   "rackdry": "no"
+  }
+ },
+ "dryer|Haier|HD90-CQ387U1": {
+  "pages": [
+   "https://www.haier-europe.com/en_GB/products/31102998-hd90-cq387u1-uk",
+   "https://www.haier-europe.com/en_IE/tumble-dryers/31102998/hd90-cq387u1-uk/"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "heatpump": {
+    "found": true,
+    "phrase": "heat pump",
+    "snippet": "device-width,initial-scale=1 X9 - HD90-CQ387U1 - 31102998 – Haier UK Freestanding, 9 Kg, Heat Pump Inverter, Class A+++, White, W x D x H (mm) 595x680x845 /71463207101/digital_wallets/dialo",
+    "url": "https://www.haier-europe.com/en_GB/products/31102998-hd90-cq387u1-uk"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/products/31102998-hd90-cq387u1-uk"
+   },
+   "steam": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/products/31102998-hd90-cq387u1-uk"
+   },
+   "selfclean": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/products/31102998-hd90-cq387u1-uk"
+   },
+   "reverse": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/products/31102998-hd90-cq387u1-uk"
+   },
+   "wifi": {
+    "found": true,
+    "phrase": "wi-fi",
+    "snippet": "Pump Inverter Technical features Connectivity Advanced remote control and extra content (Wi-Fi + BLUETOOTH®) IoT App hOn Drum material Inox Drum volume (l) 126 Electronics Led Plug type",
+    "url": "https://www.haier-europe.com/en_GB/products/31102998-hd90-cq387u1-uk"
+   },
+   "heatex": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/products/31102998-hd90-cq387u1-uk"
+   },
+   "rackdry": {
+    "found": true,
+    "phrase": "shoe rack",
+    "snippet": "Yes Knob colour Anthracite Colour / bezel Anthracite Accessories Exhaust water pipe Yes Shoe Rack Yes Performance Energy efficiency class A+++ Condensation efficiency class B Energy consum",
+    "url": "https://www.haier-europe.com/en_GB/products/31102998-hd90-cq387u1-uk"
+   }
+  },
+  "scanned": {
+   "heatpump": "yes",
+   "ai": "no",
+   "steam": "no",
+   "selfclean": "no",
+   "reverse": "no",
+   "wifi": "yes",
+   "heatex": "no",
+   "rackdry": "yes"
+  }
+ },
+ "dishwasher|Samsung|DW80H77H3B0": {
+  "pages": [
+   "https://www.samsung.com/it/dishwashers/built-in/dw90h-24-dish-washer-energy-efficiency-ai-wash-3rd-rack-washing-system-14-place-settings-white-dw80h77h3b0u1/"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "autoopen": {
+    "found": true,
+    "phrase": "auto open",
+    "snippet": "la fuoriuscita del vapore. Playing video Apertura automatica per un'asciugatura ottimale Auto Open Door Al termine del ciclo, la porta si apre automaticamente* per far fuoriuscire il vapore",
+    "url": "https://www.samsung.com/it/dishwashers/built-in/dw90h-24-dish-washer-energy-efficiency-ai-wash-3rd-rack-washing-system-14-place-settings-white-dw80h77h3b0u1/"
+   },
+   "zeolith": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/it/dishwashers/built-in/dw90h-24-dish-washer-energy-efficiency-ai-wash-3rd-rack-washing-system-14-place-settings-white-dw80h77h3b0u1/"
+   },
+   "autodose": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/it/dishwashers/built-in/dw90h-24-dish-washer-energy-efficiency-ai-wash-3rd-rack-washing-system-14-place-settings-white-dw80h77h3b0u1/"
+   },
+   "thirdrack": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/it/dishwashers/built-in/dw90h-24-dish-washer-energy-efficiency-ai-wash-3rd-rack-washing-system-14-place-settings-white-dw80h77h3b0u1/"
+   },
+   "zonewash": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/it/dishwashers/built-in/dw90h-24-dish-washer-energy-efficiency-ai-wash-3rd-rack-washing-system-14-place-settings-white-dw80h77h3b0u1/"
+   },
+   "ai": {
+    "found": true,
+    "phrase": "ai wash",
+    "snippet": "sung Serie 80 AI DW80H77H3B0 ㅤ ⠀ DW90H/24 Full Built-in Dishwasher Energy Efficiency and AI Wash ⠀ Front White DW90H/24 Full Built-in Dishwasher Energy Efficiency and AI Wash ⠀ Front-Open",
+    "url": "https://www.samsung.com/it/dishwashers/built-in/dw90h-24-dish-washer-energy-efficiency-ai-wash-3rd-rack-washing-system-14-place-settings-white-dw80h77h3b0u1/"
+   },
+   "softener": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.samsung.com/it/dishwashers/built-in/dw90h-24-dish-washer-energy-efficiency-ai-wash-3rd-rack-washing-system-14-place-settings-white-dw80h77h3b0u1/"
+   },
+   "wifi": {
+    "found": true,
+    "phrase": "wi-fi",
+    "snippet": "funzione Push to Open: DW**H7*{G, H, J, K, L, M, N, P}*******. Richiede una connessione Wi-Fi, un account Samsung e l'app Samsung SmartThings. L'app SmartThings è compatibile con Andro",
+    "url": "https://www.samsung.com/it/dishwashers/built-in/dw90h-24-dish-washer-energy-efficiency-ai-wash-3rd-rack-washing-system-14-place-settings-white-dw80h77h3b0u1/"
+   }
+  },
+  "scanned": {
+   "zeolith": "no",
+   "autodose": "no",
+   "zonewash": "no",
+   "ai": "yes",
+   "softener": "no",
+   "wifi": "yes"
+  }
+ },
+ "dishwasher|LG|DB597TXSN": {
+  "pages": [
+   "https://www.lg.com/it/lavastoviglie/db597txsn/"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "autoopen": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/it/lavastoviglie/db597txsn/"
+   },
+   "zeolith": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/it/lavastoviglie/db597txsn/"
+   },
+   "autodose": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/it/lavastoviglie/db597txsn/"
+   },
+   "thirdrack": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/it/lavastoviglie/db597txsn/"
+   },
+   "zonewash": {
+    "found": true,
+    "phrase": "dual zone",
+    "snippet": "d’acqua dalle lame rotanti della lavastoviglie in primo piano. Metti il video in pausa. Dual Zone: la giusta potenza, dove serve Non tutte le stoviglie necessitano della stessa forza pulen",
+    "url": "https://www.lg.com/it/lavastoviglie/db597txsn/"
+   },
+   "ai": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.lg.com/it/lavastoviglie/db597txsn/"
+   },
+   "softener": {
+    "found": true,
+    "phrase": "salt",
+    "snippet": "azie ai 4 bracci irroratori e al vapore. googletagmanager iframe googletagmanager iframe Salta al Contenuto Salta all’Accessibilità Si apre in una nuova finestra Cambia le impostazioni",
+    "url": "https://www.lg.com/it/lavastoviglie/db597txsn/"
+   },
+   "wifi": {
+    "found": true,
+    "phrase": "wi-fi",
+    "snippet": "istica Supprto per padelle Caratteristica terzo cestello personalizzabile Caratteristica Wi-Fi con ThinQ Foto ambientata della lavastoviglie in cucina Dimensioni della lavastoviglie Vis",
+    "url": "https://www.lg.com/it/lavastoviglie/db597txsn/"
+   }
+  },
+  "scanned": {
+   "autoopen": "no",
+   "zeolith": "no",
+   "autodose": "no",
+   "thirdrack": "no",
+   "zonewash": "yes",
+   "ai": "no",
+   "softener": "yes",
+   "wifi": "yes"
+  }
+ },
+ "dishwasher|Haier|XF 4A4M0W-80": {
+  "pages": [
+   "https://www.haier-europe.com/en_GB/products/32002696-xf-4a4m0w-80"
+  ],
+  "checked": "2026-08-05",
+  "tech": {
+   "autoopen": {
+    "found": true,
+    "phrase": "auto open",
+    "snippet": "ster, better cleaning DotMatrix Display – Full control with real-time eco and cycle info Auto Open Drying – Natural drying that saves energy and boosts results *Exclusions apply; cannot be",
+    "url": "https://www.haier-europe.com/en_GB/products/32002696-xf-4a4m0w-80"
+   },
+   "zeolith": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/products/32002696-xf-4a4m0w-80"
+   },
+   "autodose": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/products/32002696-xf-4a4m0w-80"
+   },
+   "thirdrack": {
+    "found": false,
+    "phrase": null,
+    "snippet": null,
+    "url": "https://www.haier-europe.com/en_GB/products/32002696-xf-4a4m0w-80"
+   },
+   "zonewash": {
+    "found": true,
+    "phrase": "half load",
+    "snippet": "tage (V) 220-240 Programs and Functions Number of programmes 10 Automatic programmes Yes Half load Yes End of cycle indicator Yes Salt indicator light Yes Rinse Aid indicator light Yes Star",
+    "url": "https://www.haier-europe.com/en_GB/products/32002696-xf-4a4m0w-80"
+   },
+   "ai": {
+    "found": true,
+    "phrase": "automatic programme",
+    "snippet": "ype UK Current (A) 13 Voltage (V) 220-240 Programs and Functions Number of programmes 10 Automatic programmes Yes Half load Yes End of cycle indicator Yes Salt indicator light Yes Rinse Aid indicator",
+    "url": "https://www.haier-europe.com/en_GB/products/32002696-xf-4a4m0w-80"
+   },
+   "softener": {
+    "found": true,
+    "phrase": "salt",
+    "snippet": "umber of programmes 10 Automatic programmes Yes Half load Yes End of cycle indicator Yes Salt indicator light Yes Rinse Aid indicator light Yes Start delay options 1-23 h Standard Wate",
+    "url": "https://www.haier-europe.com/en_GB/products/32002696-xf-4a4m0w-80"
+   },
+   "wifi": {
+    "found": true,
+    "phrase": "wi-fi",
+    "snippet": "Freestanding Technical features Connectivity Advanced remote control and extra content (Wi-Fi + BLUETOOTH®) IoT App hOn Automatic door open system Yes Adjustable upper basket Yes with",
+    "url": "https://www.haier-europe.com/en_GB/products/32002696-xf-4a4m0w-80"
+   }
+  },
+  "scanned": {
+   "autoopen": "yes",
+   "zeolith": "no",
+   "autodose": "no",
+   "thirdrack": "no",
+   "zonewash": "yes",
+   "ai": "yes",
+   "softener": "yes",
+   "wifi": "yes"
   }
  }
 }

@@ -1,17 +1,74 @@
 {
  "washing-machine|LG|F4X9009TBC": [
-  "https://www.lg.com/uk/laundry/washing-machines/f4x9009tbc/"
- ],
- "washing-machine|Bosch|WGB256A2GB": [
-  "https://www.bosch-home.co.uk/en/product/laundry/washing-machines/front-load-washing-machines/WGB256A2GB"
+  "https://www.hughes.co.uk/product/kitchen-appliances/laundry/washing-machines/lg/f4x9009tbc"
  ],
  "washing-machine|Haier|HW100-B14397EU1": [
-  "https://www.haier-europe.com/en_GB/washing-machines/"
+  "https://www.haier-europe.com/pl_PL/products/31021025-hw100-b14397eu1s"
  ],
  "washing-machine|Beko|B5W5941BDG 457100046100": [
   "https://www.beko.co.uk/appliances/laundry/washing-machines/product/freestanding-9kg-1400rpm-washing-machine-energyspin-autodose-b5w5941bd-graphite-white"
  ],
  "washer-dryer|Samsung|WD18DB8995BZ": [
-  "https://www.samsung.com/uk/washers-and-dryers/washer-dryers/wd8000d-washer-dryer-18kg-11kg-black-wd18db8995bzt1/"
+  "https://www.samsung.com/uk/washers-and-dryers/washer-dryer-combo/wd8000dk-combo-all-in-one-combo-super-speed-18kg-gray-wd18db8995bzt1/",
+  "https://www.samsung.com/ie/washers-and-dryers/washer-dryer-combo/wd8000dk-combo-all-in-one-combo-super-speed-18kg-gray-wd18db8995bzt1/"
+ ],
+ "washer-dryer|AEG|LWR9506BN4 914610721": [
+  "https://www.coolblue.be/en/product/964318/aeg-lwr9506bn4-absolutecare-10-6kg.html"
+ ],
+ "washer-dryer|Electrolux|EW2W3068E4 914603727": [
+  "https://www.elon.se/electrolux-ew2w3068e4-149044"
+ ],
+ "washer-dryer|Electrolux|EW9W1165RB 914600379": [
+  "https://www.boulanger.com/ref/1220605"
+ ],
+ "washer-dryer|Haier|HWD120-BD16397EU1": [
+  "https://www.haier-europe.com/en_GB/washer-dryers/31020725/hwd120bd16397euk/",
+  "https://www.haier-europe.com/en_IE/washer-dryers/31020725/hwd120bd16397euk/"
+ ],
+ "washer-dryer|Samsung|WD10HG6U34BB": [
+  "https://www.samsung.com/de/washers-and-dryers/washer-dryer-combo/wd6000f-wd10hg6u34bbu2-10kg-plus-6kg-white-wd10hg6u34beu2/"
+ ],
+ "washer-dryer|Hisense|WD5I1245BBRH": [
+  "https://uk.hisense.com/products/laundry/washer-dryers/WASHER-DRY-WD5I1245BWR-WD5I1245BBR-HSN/p/000000000020016654"
+ ],
+ "washer-dryer|Whirlpool|WAD 8536WBC EE": [
+  "https://www.whirlpool.cz/w/volne-stojici-pracka-se-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690",
+  "https://www.whirlpool.sk/w/volne-stojaca-pracka-so-susickou-whirlpool-8-0-kg.-wad-8536wbc-ee/869991722690"
+ ],
+ "dryer|AEG|TR9HH8AY 916900397": [
+  "https://www.vieffetrade.com/uk_en/aeg-tr9hh8ay-serie-9000x-absolutecarer-pro-60-cm-dryer-8-kg-capacity-white-581561.html"
+ ],
+ "dryer|Haier|HD90-CQ387U1": [
+  "https://www.haier-europe.com/en_GB/products/31102998-hd90-cq387u1-uk",
+  "https://www.haier-europe.com/en_IE/tumble-dryers/31102998/hd90-cq387u1-uk/"
+ ],
+ "dryer|LG|RH9X76BM": [
+  "https://www.lg.com/fr/lavage/seche-linge/lg-rh9x76bm-seche-linge/",
+  "https://www.auchan.fr/lg-seche-linge-pompe-a-chaleur-rh9x76bm/pr-3006267b-f28e-41c9-860a-139351b6aa55"
+ ],
+ "dryer|Midea|MD20EH80WB-A3": [
+  "https://www.midea.com/de/waschen-trocknen/trockner/waermepumpentrockner-md20eh80wb-a3.md20eh80wb-a3"
+ ],
+ "dryer|Samsung|DV90DB7845GB": [
+  "https://www.samsung.com/it/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/",
+  "https://www.samsung.com/be/washers-and-dryers/dryers/dv7000d-dryer-a-energy-efficiency-rating-ai-dry-plus-quickdrive-9kg-black-dv90db7845gbu3/"
+ ],
+ "washing-machine|Midea|MF205W90BA50/T-IT": [
+  "https://www.midea.com/it/washers-and-dryers/front-loading-washing-machines/front-load-washing-machine-mf205-class-a-50-9-kg-titanium.mf205w90ba50-t-it"
+ ],
+ "washing-machine|Samsung|WF90F09C4S": [
+  "https://www.samsung.com/uk/washers-and-dryers/washing-machines/wf90f24-front-load-washer-a-55-percent-energy-efficiency-ai-home-ai-wash-9kg-silver-wf90f09c4su1/"
+ ],
+ "dishwasher|Beko|BDIN38560WPF 7675093877": [
+  "https://www.beko.co.uk/appliances/integrated-appliances/dishwashers/product/integrated-full-size-dishwasher-powerintense-fast45-bdin38560wpf"
+ ],
+ "dishwasher|Haier|XF 4A4M0W-80": [
+  "https://www.haier-europe.com/en_GB/products/32002696-xf-4a4m0w-80"
+ ],
+ "dishwasher|LG|DB597TXSN": [
+  "https://www.lg.com/it/lavastoviglie/db597txsn/"
+ ],
+ "dishwasher|Samsung|DW80H77H3B0": [
+  "https://www.samsung.com/it/dishwashers/built-in/dw90h-24-dish-washer-energy-efficiency-ai-wash-3rd-rack-washing-system-14-place-settings-white-dw80h77h3b0u1/"
  ]
 }

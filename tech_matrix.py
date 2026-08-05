@@ -47,17 +47,33 @@ SLEEP_BETWEEN = 1.0
 # Marketing names per technology. A cell is "yes" when any alias appears on the
 # product's page. Keep these SPECIFIC: "steam" alone would match "steam iron" in
 # a footer, so the aliases carry enough context to be about this machine.
+# Aliases that repeat across categories, including the non-English wordings used
+# on the .de/.fr/.it/.nl/.pl/.cz product pages this job actually reads. Without
+# these, a German page silently produces "no" for every feature it names.
+_HEATPUMP = ["heat pump", "heatpump", "heat-pump", "ventless",
+             "wärmepumpe", "waermepumpe", "warmepumpe",
+             "pompe à chaleur", "pompe a chaleur",
+             "pompa di calore", "warmtepomp", "pompa ciepła", "pompa ciepla",
+             "tepelné čerpadlo", "tepelne cerpadlo", "bomba de calor"]
+_STEAM = ["steam", "dampf", "vapeur", "vapore", "stoom", "para wodna",
+          "pára", "vapor"]
+_WIFI = ["wi-fi", "wifi", "wlan", "smartthings", "thinq", "home connect",
+         "hon app", "hOn", "app control", "connected", "vernetzt", "connecté",
+         "connesso", "homewhiz", "connectlife"]
+_AUTODOSE = ["i-dos", "idos", "autodose", "auto dose", "auto-dose", "autodos",
+             "auto dosing", "automatic dosing", "auto dispense", "intellidose",
+             "smart dosing", "dosage automatique", "dosaggio automatico",
+             "automatische dosierung", "automatisch doseren"]
+
 KEYWORDS = {
     "washing-machine": {
-        "autodose": ["i-dos", "idos", "autodose", "auto dose", "auto-dose",
-                     "auto dosing", "automatic dosing", "auto dispense",
-                     "autodos", "intellidose", "smart dosing", "dose assist"],
+        "autodose": _AUTODOSE + ["dose assist"],
         "ai": ["ai wash", "ai dd", "ai direct drive", "artificial intelligence",
                "ai control", "sensorwash", "6th sense", "ai ecobubble",
                "fabric type", "load sensing", "ai energy"],
         "microplastic": ["microplastic", "micro plastic", "microfibre", "microfiber",
                          "less microfiber", "fibre catch", "fiber catch"],
-        "steam": ["steam", "steamcure", "steamcare", "hygiene steam", "allergiene"],
+        "steam": _STEAM + ["steamcure", "steamcare", "allergiene"],
         "directdrive": ["direct drive", "directdrive", "direct motion", "beltless",
                         "inverter direct drive", "ai dd"],
         "additem": ["addwash", "add wash", "add garment", "add item", "add laundry",
@@ -68,31 +84,31 @@ KEYWORDS = {
                      "recycled material", "ocean plastic"],
     },
     "washer-dryer": {
-        "heatpump": ["heat pump", "heatpump", "ventless", "heat-pump"],
-        "autodose": ["i-dos", "autodose", "auto dose", "auto dispense", "autodos",
-                     "automatic dosing", "intellidose"],
+        "heatpump": _HEATPUMP,
+        "autodose": _AUTODOSE,
         "ai": ["ai wash", "ai dd", "artificial intelligence", "6th sense",
                "sensorwash", "ai control", "ai laundry"],
         "nonstop": ["non-stop", "nonstop", "wash to dry", "wash and dry in one",
                     "one touch wash and dry", "wash & dry cycle", "full load wash and dry"],
         "autodry": ["auto dry", "autodry", "sensor dry", "dryness level",
                     "humidity sensor", "moisture sensor"],
-        "steam": ["steam", "steamcare", "steamcure", "refresh"],
-        "directdrive": ["direct drive", "direct motion", "beltless", "ai dd"],
-        "microplastic": ["microplastic", "microfibre", "microfiber"],
+        "steam": _STEAM + ["steamcare", "steamcure"],
+        "directdrive": ["direct drive", "direct motion", "beltless", "ai dd",
+                        "direktantrieb", "entraînement direct"],
+        "microplastic": ["microplastic", "microfibre", "microfiber",
+                         "mikroplastik", "microplastica"],
     },
     "dryer": {
-        "heatpump": ["heat pump", "heatpump", "heat-pump"],
+        "heatpump": _HEATPUMP,
         "ai": ["ai dry", "artificial intelligence", "ai control", "6th sense",
                "auto sensing", "ai super dry", "adaptive drying"],
-        "steam": ["steam", "refresh", "de-wrinkle", "dewrinkle", "crease"],
+        "steam": _STEAM + ["de-wrinkle", "dewrinkle"],
         "selfclean": ["self-cleaning condenser", "self cleaning condenser",
                       "auto cleaning condenser", "autoclean condenser",
                       "self-clean condenser"],
         "reverse": ["reverse tumble", "reverse action", "both directions",
                     "anti-crease", "anticrease", "alternating drum"],
-        "wifi": ["wi-fi", "wifi", "smartthings", "thinq", "home connect", "hon app",
-                 "app control", "connected"],
+        "wifi": _WIFI,
         "heatex": ["maintenance-free", "maintenance free heat exchanger",
                    "no filter cleaning", "self-cleaning heat exchanger"],
         "rackdry": ["drying rack", "static rack", "wool rack", "shoe rack",
@@ -102,8 +118,7 @@ KEYWORDS = {
         "autoopen": ["auto open", "autoopen", "auto-open", "airdry", "air dry",
                      "door opens automatically", "openassist", "autoair"],
         "zeolith": ["zeolith", "zeolite", "crystaldry", "crystal dry"],
-        "autodose": ["autodos", "autodose", "auto dose", "powerdisk",
-                     "automatic detergent", "auto dispense"],
+        "autodose": _AUTODOSE + ["powerdisk", "automatic detergent"],
         "thirdrack": ["third rack", "3rd rack", "cutlery drawer", "cutlery tray",
                       "third level", "flex rack"],
         "zonewash": ["zone wash", "zonewash", "half load", "intensive zone",
@@ -111,8 +126,7 @@ KEYWORDS = {
         "ai": ["auto programme", "auto program", "sensor wash", "soil sensor",
                "turbidity", "6th sense", "ai wash", "automatic programme"],
         "softener": ["water softener", "softening", "salt", "water hardness"],
-        "wifi": ["wi-fi", "wifi", "home connect", "smartthings", "thinq",
-                 "hon app", "app control", "connected"],
+        "wifi": _WIFI,
     },
 }
 
@@ -304,8 +318,14 @@ def run_scan(products, sources, only=None, log=print):
         scanned += 1
         found = [t for t, r in per_tech.items() if r["found"]]
         log(f"      read {len(pages)} page(s); mentions: {', '.join(found) or 'none'}")
+        prev = evidence.get(key, {})
+        # Preserve human/audit verdicts: a page scan must never erase them, or a
+        # later --apply silently reinstates the error the audit removed.
+        for tech, res in (prev.get("tech") or {}).items():
+            if res.get("phrase") == "audit":
+                per_tech[tech] = res
         evidence[key] = {"pages": pages, "checked": time.strftime("%Y-%m-%d"),
-                         "tech": per_tech}
+                         "tech": per_tech, "scanned": prev.get("scanned", {})}
     with open(EVIDENCE_FILE, "w", encoding="utf-8") as f:
         json.dump(evidence, f, indent=1, ensure_ascii=False)
     log(f"\n  scanned {scanned} products, {skipped} left unknown (no readable page)")
@@ -328,15 +348,24 @@ def run_apply(data, evidence, log=print):
         for tech, res in ev["tech"].items():
             if tech not in p["tech"]:
                 continue
+            if res.get("phrase") == "audit":
+                continue                      # human verdict, never overwritten
             verdict = "yes" if res["found"] else "no"
             current = p["tech"][tech]
-            if current == "unknown":
+            prior = (ev.get("scanned") or {}).get(tech)
+            if current == "unknown" or (prior is not None and current == prior):
+                # either unfilled, or still holding what a previous scan wrote,
+                # so this scan is allowed to correct it
+                if current != verdict:
+                    changed += 1
                 p["tech"][tech] = verdict
-                changed += 1
+                ev.setdefault("scanned", {})[tech] = verdict
             elif current != verdict and not (current == "partial" and verdict == "yes"):
                 conflicts += 1
                 log(f"  ! {p['company']} {p['model'][:24]} {tech}: "
                     f"page says {verdict}, matrix says {current} (kept {current})")
+    with open(EVIDENCE_FILE, "w", encoding="utf-8") as f:
+        json.dump(evidence, f, indent=1, ensure_ascii=False)
     log(f"\n  filled {changed} cells, {conflicts} conflicts left for review")
     return data
 

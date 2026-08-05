@@ -525,12 +525,12 @@
    "tech": {
     "autodose": "no",
     "ai": "yes",
-    "microplastic": "unknown",
+    "microplastic": "no",
     "steam": "yes",
     "directdrive": "yes",
     "additem": "yes",
     "dosescan": "no",
-    "recycled": "unknown"
+    "recycled": "no"
    }
   },
   {
@@ -570,12 +570,12 @@
    "tech": {
     "autodose": "yes",
     "ai": "yes",
-    "microplastic": "partial",
+    "microplastic": "yes",
     "steam": "yes",
     "directdrive": "no",
     "additem": "yes",
-    "dosescan": "unknown",
-    "recycled": "unknown"
+    "dosescan": "no",
+    "recycled": "no"
    }
   },
   {
@@ -619,7 +619,7 @@
     "steam": "yes",
     "directdrive": "no",
     "additem": "yes",
-    "dosescan": "unknown",
+    "dosescan": "no",
     "recycled": "no"
    }
   },
@@ -659,13 +659,13 @@
    },
    "tech": {
     "autodose": "no",
-    "ai": "partial",
-    "microplastic": "unknown",
-    "steam": "yes",
+    "ai": "no",
+    "microplastic": "no",
+    "steam": "no",
     "directdrive": "yes",
-    "additem": "unknown",
-    "dosescan": "unknown",
-    "recycled": "unknown"
+    "additem": "no",
+    "dosescan": "no",
+    "recycled": "no"
    }
   },
   {
@@ -883,14 +883,14 @@
     "programTimeText": "3 hours, 48 mins"
    },
    "tech": {
-    "autodose": "unknown",
-    "ai": "unknown",
-    "microplastic": "unknown",
-    "steam": "unknown",
-    "directdrive": "unknown",
-    "additem": "unknown",
-    "dosescan": "unknown",
-    "recycled": "unknown"
+    "autodose": "no",
+    "ai": "no",
+    "microplastic": "no",
+    "steam": "yes",
+    "directdrive": "no",
+    "additem": "no",
+    "dosescan": "no",
+    "recycled": "no"
    }
   },
   {
@@ -936,10 +936,10 @@
     "heatpump": "yes",
     "autodose": "yes",
     "ai": "yes",
-    "nonstop": "unknown",
+    "nonstop": "yes",
     "autodry": "yes",
-    "steam": "unknown",
-    "directdrive": "unknown",
+    "steam": "yes",
+    "directdrive": "no",
     "microplastic": "partial"
    }
   },
@@ -1033,14 +1033,14 @@
     "programTimeText": "9 hours, 0 mins"
    },
    "tech": {
-    "heatpump": "yes",
-    "autodose": "unknown",
-    "ai": "unknown",
-    "nonstop": "unknown",
-    "autodry": "unknown",
-    "steam": "unknown",
+    "heatpump": "no",
+    "autodose": "yes",
+    "ai": "no",
+    "nonstop": "no",
+    "autodry": "no",
+    "steam": "yes",
     "directdrive": "yes",
-    "microplastic": "unknown"
+    "microplastic": "no"
    }
   },
   {
@@ -1133,14 +1133,14 @@
     "programTimeText": "8 hours, 50 mins"
    },
    "tech": {
-    "heatpump": "yes",
-    "autodose": "unknown",
-    "ai": "unknown",
-    "nonstop": "unknown",
-    "autodry": "unknown",
-    "steam": "unknown",
-    "directdrive": "unknown",
-    "microplastic": "unknown"
+    "heatpump": "no",
+    "autodose": "yes",
+    "ai": "no",
+    "nonstop": "yes",
+    "autodry": "no",
+    "steam": "yes",
+    "directdrive": "yes",
+    "microplastic": "no"
    }
   },
   {
@@ -1184,13 +1184,13 @@
    },
    "tech": {
     "heatpump": "yes",
-    "autodose": "unknown",
-    "ai": "unknown",
-    "nonstop": "unknown",
-    "autodry": "unknown",
-    "steam": "unknown",
-    "directdrive": "unknown",
-    "microplastic": "unknown"
+    "autodose": "yes",
+    "ai": "no",
+    "nonstop": "no",
+    "autodry": "no",
+    "steam": "yes",
+    "directdrive": "no",
+    "microplastic": "no"
    }
   },
   {
@@ -1335,12 +1335,12 @@
    "tech": {
     "heatpump": "no",
     "autodose": "no",
-    "ai": "unknown",
-    "nonstop": "unknown",
-    "autodry": "unknown",
+    "ai": "yes",
+    "nonstop": "no",
+    "autodry": "no",
     "steam": "yes",
-    "directdrive": "unknown",
-    "microplastic": "unknown"
+    "directdrive": "no",
+    "microplastic": "yes"
    }
   },
   {
@@ -1634,13 +1634,13 @@
    },
    "tech": {
     "heatpump": "no",
-    "autodose": "unknown",
-    "ai": "unknown",
-    "nonstop": "unknown",
-    "autodry": "unknown",
-    "steam": "unknown",
-    "directdrive": "unknown",
-    "microplastic": "unknown"
+    "autodose": "no",
+    "ai": "no",
+    "nonstop": "no",
+    "autodry": "no",
+    "steam": "yes",
+    "directdrive": "no",
+    "microplastic": "no"
    }
   },
   {
@@ -1684,13 +1684,13 @@
    },
    "tech": {
     "heatpump": "no",
-    "autodose": "unknown",
-    "ai": "unknown",
-    "nonstop": "unknown",
-    "autodry": "unknown",
-    "steam": "unknown",
-    "directdrive": "unknown",
-    "microplastic": "unknown"
+    "autodose": "no",
+    "ai": "no",
+    "nonstop": "no",
+    "autodry": "no",
+    "steam": "no",
+    "directdrive": "no",
+    "microplastic": "no"
    }
   },
   {
@@ -1829,13 +1829,13 @@
    },
    "tech": {
     "heatpump": "yes",
-    "ai": "unknown",
-    "steam": "unknown",
-    "selfclean": "unknown",
-    "reverse": "unknown",
-    "wifi": "unknown",
-    "heatex": "unknown",
-    "rackdry": "unknown"
+    "ai": "no",
+    "steam": "yes",
+    "selfclean": "no",
+    "reverse": "yes",
+    "wifi": "yes",
+    "heatex": "no",
+    "rackdry": "yes"
    }
   },
   {
@@ -1920,12 +1920,12 @@
    "tech": {
     "heatpump": "yes",
     "ai": "yes",
-    "steam": "unknown",
-    "selfclean": "unknown",
-    "reverse": "unknown",
+    "steam": "no",
+    "selfclean": "no",
+    "reverse": "no",
     "wifi": "yes",
-    "heatex": "unknown",
-    "rackdry": "unknown"
+    "heatex": "no",
+    "rackdry": "no"
    }
   },
   {
@@ -2055,12 +2055,12 @@
    "tech": {
     "heatpump": "yes",
     "ai": "yes",
-    "steam": "unknown",
-    "selfclean": "yes",
-    "reverse": "unknown",
+    "steam": "yes",
+    "selfclean": "no",
+    "reverse": "no",
     "wifi": "yes",
-    "heatex": "unknown",
-    "rackdry": "unknown"
+    "heatex": "no",
+    "rackdry": "no"
    }
   },
   {
@@ -2144,13 +2144,13 @@
    },
    "tech": {
     "heatpump": "yes",
-    "ai": "unknown",
-    "steam": "unknown",
-    "selfclean": "unknown",
-    "reverse": "unknown",
-    "wifi": "unknown",
-    "heatex": "unknown",
-    "rackdry": "unknown"
+    "ai": "no",
+    "steam": "no",
+    "selfclean": "no",
+    "reverse": "no",
+    "wifi": "yes",
+    "heatex": "no",
+    "rackdry": "no"
    }
   },
   {
@@ -2189,13 +2189,13 @@
    },
    "tech": {
     "heatpump": "yes",
-    "ai": "unknown",
-    "steam": "unknown",
-    "selfclean": "unknown",
-    "reverse": "unknown",
-    "wifi": "unknown",
-    "heatex": "unknown",
-    "rackdry": "unknown"
+    "ai": "no",
+    "steam": "no",
+    "selfclean": "no",
+    "reverse": "no",
+    "wifi": "yes",
+    "heatex": "no",
+    "rackdry": "yes"
    }
   },
   {
@@ -2320,13 +2320,13 @@
    },
    "tech": {
     "autoopen": "yes",
-    "zeolith": "unknown",
-    "autodose": "unknown",
+    "zeolith": "no",
+    "autodose": "no",
     "thirdrack": "yes",
-    "zonewash": "unknown",
-    "ai": "unknown",
-    "softener": "unknown",
-    "wifi": "unknown"
+    "zonewash": "no",
+    "ai": "yes",
+    "softener": "no",
+    "wifi": "yes"
    }
   },
   {
@@ -2362,14 +2362,14 @@
     "programTimeText": "6 hours, 45 mins"
    },
    "tech": {
-    "autoopen": "unknown",
-    "zeolith": "unknown",
-    "autodose": "unknown",
-    "thirdrack": "unknown",
-    "zonewash": "unknown",
-    "ai": "unknown",
-    "softener": "unknown",
-    "wifi": "unknown"
+    "autoopen": "no",
+    "zeolith": "no",
+    "autodose": "no",
+    "thirdrack": "no",
+    "zonewash": "yes",
+    "ai": "no",
+    "softener": "yes",
+    "wifi": "yes"
    }
   },
   {
@@ -2577,14 +2577,14 @@
     "programTimeText": "4 hours, 35 mins"
    },
    "tech": {
-    "autoopen": "unknown",
-    "zeolith": "unknown",
+    "autoopen": "no",
+    "zeolith": "no",
     "autodose": "yes",
-    "thirdrack": "unknown",
-    "zonewash": "unknown",
+    "thirdrack": "yes",
+    "zonewash": "yes",
     "ai": "no",
-    "softener": "unknown",
-    "wifi": "unknown"
+    "softener": "yes",
+    "wifi": "yes"
    }
   },
   {
@@ -2620,14 +2620,14 @@
     "programTimeText": "3 hours, 59 mins"
    },
    "tech": {
-    "autoopen": "unknown",
-    "zeolith": "unknown",
-    "autodose": "unknown",
-    "thirdrack": "unknown",
-    "zonewash": "unknown",
-    "ai": "unknown",
-    "softener": "unknown",
-    "wifi": "unknown"
+    "autoopen": "yes",
+    "zeolith": "no",
+    "autodose": "no",
+    "thirdrack": "no",
+    "zonewash": "yes",
+    "ai": "yes",
+    "softener": "yes",
+    "wifi": "yes"
    }
   },
   {
