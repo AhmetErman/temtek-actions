@@ -34611,5 +34611,126 @@
         "title_en": "Exclusive | Revolutionizing the lives of lower-tier dealers: Midea Group takes over channel rights, and lower-tier channels terminate regional outsourcing",
         "summary_en": "Beautiful",
         "Classification": "N/A"
+    },
+    {
+        "source": "ITmedia",
+        "title": "X、「クリエイター収益分配プログラム」終了へ──「オリジナル投稿」に絞った新報酬制度に移行",
+        "date": "Sun, 09 Aug 2026 08:20:21 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/09/2000000464/",
+        "summary": "Xは「クリエイター収益配分プログラム」を終了し、新制度「Original Content Rewards Program」への移行を発表した。無断転載やインプレゾンビへの対策として自作コンテンツを重視し、有料会員の有効インプレッションに応じて報酬を支払う。既存制度からの申請は9月より開始される。",
+        "language": "ja",
+        "title_en": "X, “Creator Revenue Sharing Program” to end ─ Shift to a new reward system focused on “original posts”",
+        "summary_en": "",
+        "Classification": "N/A"
+    },
+    {
+        "source": "ITmedia",
+        "title": "Hugging Face侵害、AIエージェントは社内に“秘密の掲示板”を作っていた──OpenAIがBlack Hatで詳細説明",
+        "date": "Sun, 09 Aug 2026 07:16:59 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/09/2000000463/",
+        "summary": "OpenAIは、7月に発覚したHugging Face侵害インシデントの詳細を「Black Hat USA 2026」で説明した。評価中のAIエージェントたちが社内のパッケージ管理システムを“掲示板”として使い、脆弱性やスクリプトを共有して協調していたという。掲示板は一度消去されたが、2日後に別の手段で再構築されていた。",
+        "language": "ja",
+        "title_en": "Hugging Face breach: AI agent created a \"secret bulletin board\" within the company - OpenAI explains details at Black Hat",
+        "summary_en": "",
+        "Classification": "N/A"
+    },
+    {
+        "source": "ITmedia",
+        "title": "告知は前日、返金なし──ソシャゲ「文マヨ」サ終の顛末とマンガ家を驚かせたファンの嘆きとは？",
+        "date": "Sun, 09 Aug 2026 07:15:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/09/2000000457/",
+        "summary": "スマートフォンゲーム「文豪ストレイドッグス迷ヰ犬怪奇譚」がサービスを終了しました。告知されたのは、なんと前日の7月30日。SNS上では様々な意見が飛び交っていますが、その中にちょっと印象的なポストがありました。",
+        "language": "ja",
+        "title_en": "The announcement was made the day before, no refunds ---What was the end of the social game \"Bunmayo\" and the fans' lamentations that surprised the manga artist?",
+        "summary_en": "",
+        "Classification": "N/A"
+    },
+    {
+        "source": "ITmedia",
+        "title": "熊本県の「トラック通れた道マップ」、日野コンピューターシステムが公開",
+        "date": "Sat, 08 Aug 2026 09:30:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/08/2000000461/",
+        "summary": "日野コンピューターシステムが、熊本県近辺においてトラックが通行できた道を可視化する「トラック通れた道マップ」を公開している。",
+        "language": "ja",
+        "title_en": "Hino Computer Systems releases Kumamoto Prefecture's ``Truck Path Map''",
+        "summary_en": "",
+        "Classification": "N/A"
+    },
+    {
+        "source": "ITmedia",
+        "title": "Anthropic、「Fable 5」の生物学の制限を緩和　誤検知によるフォールバックを約85％削減",
+        "date": "Sat, 08 Aug 2026 07:57:07 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/08/2000000460/",
+        "summary": "Anthropicは、AIモデル「Claude Fable 5」の生物学分野における過度な保護機能を緩和したと発表した。安全性を重視するあまり発生していた無害な質問への誤検知や下位モデルへのフォールバックを大幅に削減。専門的な二重用途研究への制限は維持しつつ、一般的な健康・教育用途での利便性を向上させた。",
+        "language": "ja",
+        "title_en": "Anthropic eases Fable 5 biology restrictions, reducing fallbacks due to false positives by approximately 85%",
+        "summary_en": "",
+        "Classification": "N/A"
+    },
+    {
+        "source": "ITmedia",
+        "title": "OpenAI、次期モデル「Astra」の一部開発を停止　「Critical」級サイバー能力の可能性否定できず",
+        "date": "Sat, 08 Aug 2026 07:11:46 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/08/2000000459/",
+        "summary": "OpenAIは、次期主力モデル「Astra」のサイバー能力が自社の安全指針における最上位「Critical」に達している可能性を発表した。要件を満たさない一部活動を停止し、リアルタイム監視や思考過程の評価など管理を強化する。能力を抑制するのではなく、政府機関や外部組織と協力して検証と安全策の提供を進める方針だ。",
+        "language": "ja",
+        "title_en": "OpenAI suspends part of development of next model \"Astra\"; possibility of \"Critical\" class cyber capabilities cannot be denied",
+        "summary_en": "",
+        "Classification": "N/A"
+    },
+    {
+        "source": "ITmedia",
+        "title": "「ゲーム運営の修羅場過ぎる」　コロコロコミック系漫画サイトの新作が話題　Gitツリー見てガチャ不具合の犯人探し",
+        "date": "Sat, 08 Aug 2026 07:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/08/2000000458/",
+        "summary": "小学館の漫画配信サイト「週刊コロコロコミック」に掲載されている新作漫画「まだサ終しないんですか？」が、IT関係者を中心にXで話題だ。ソーシャルゲーム開発の現場をテーマにした作品だが、バージョン管理ツールの履歴を見て不具合の犯人探しをする描写などが「修羅場すぎる」と注目を浴びている。",
+        "language": "ja",
+        "title_en": "\"It's too much of a mess for game management\" A new work on the CoroCoro Comic manga site is a hot topic - Look at the Git tree to find the culprit behind the gacha glitch",
+        "summary_en": "",
+        "Classification": "N/A"
+    },
+    {
+        "source": "Senken",
+        "title": "ヒロタ、リカバリーウェア「メディカルエイト」立ち上げ　高橋尚子さんを起用",
+        "date": "Mon, 10 Aug 2026 06:27:00 +0900",
+        "url": "https://senken.co.jp/posts/hirota-260810",
+        "summary": "ヒロタは8月、リカバリーウェアの新ブランド「メディカルエイト」（商標登録申請中）を立ち上げた。一般医療機器の家庭用遠赤外線血行促進用衣（血行促進用衣）として届け出たリカバリーウェアで、イメージキャラクターにシドニ...",
+        "language": "ja",
+        "title_en": "Hirota launches recovery wear “Medical Eight”, appoints Naoko Takahashi",
+        "summary_en": "",
+        "Classification": "N/A"
+    },
+    {
+        "source": "Senken",
+        "title": "LVMH1～6月、ファッション改善の兆し　「ディオール」が増収",
+        "date": "Mon, 10 Aug 2026 06:26:00 +0900",
+        "url": "https://senken.co.jp/posts/lvmh-260810",
+        "summary": "【パリ＝松井孝予通信員】仏LVMHの26年1～6月は、売上高が為替一定ベースで前年同期比2％増（公表ベースでは3％減）の386億ユーロだった。営業利益は4％減の87億ユーロ、純利益は前年同期並みの58億ユーロ。営...",
+        "language": "ja",
+        "title_en": "LVMHJanuary-June: Signs of fashion improvement: Dior sales increase",
+        "summary_en": "",
+        "Classification": "N/A"
+    },
+    {
+        "source": "Senken",
+        "title": "《めてみみ》海島綿の未来",
+        "date": "Mon, 10 Aug 2026 06:24:00 +0900",
+        "url": "https://senken.co.jp/posts/mete-260810",
+        "summary": "上質で希少性が高く「繊維の宝石」とも言われてきた「シーアイランドコットン」（海島綿）。気候変動や経済環境の激変に伴い、安定的な供給体制の維持が重要になっている。今年、日本支部設立50周年を迎えた西印度諸島海島綿協...",
+        "language": "ja",
+        "title_en": "《Metemimi》The future of sea island cotton",
+        "summary_en": "",
+        "Classification": "N/A"
+    },
+    {
+        "source": "Senken",
+        "title": "時代の節目に沿って服づくりも変遷　ジュサラ・リー（杉本佳子）",
+        "date": "Mon, 10 Aug 2026 06:00:00 +0900",
+        "url": "https://senken.co.jp/posts/y-sugimoto163",
+        "summary": "ジュサラ・リーは、ブラジル生まれでニューヨークをベースとする韓国人ファッションデザイナーだ。かつては自分の名前を冠した既製服のブランド「ジュサラ・リー」で毎シーズンコレクションを発表し、15年間卸し売りを継続。バ...",
+        "language": "ja",
+        "title_en": "Clothes making changes along with the turning points of the times Jusara Lee (Yoshiko Sugimoto)",
+        "summary_en": "",
+        "Classification": "N/A"
     }
 ]
