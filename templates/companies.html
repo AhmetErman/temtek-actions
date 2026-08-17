@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company News — Appliance Tracker</title>
-    <meta name="description" content="Home-appliance company newsroom tracker with comparative analysis (since 2023).">
+    <meta name="description" content="Home-appliance company newsroom tracker (since 2023).">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -47,14 +46,6 @@
         .stat-card .num { font-size: 1.6rem; font-weight: 700; }
         .stat-card .lbl { font-size: .78rem; color: var(--text-3); text-transform: uppercase; letter-spacing: .04em; }
 
-        .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
-        .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.25rem; }
-        .chart-card.full { grid-column: 1 / -1; }
-        .chart-card h3 { font-size: .95rem; font-weight: 600; margin-bottom: .15rem; }
-        .chart-card .hint { font-size: .75rem; color: var(--text-3); margin-bottom: .75rem; }
-        .chart-box { position: relative; height: 300px; }
-        @media (max-width: 820px) { .charts { grid-template-columns: 1fr; } }
-
         .toolbar { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
         .search-box { flex: 1; min-width: 200px; position: relative; }
         .search-box input { width: 100%; padding: .55rem .75rem .55rem 2.1rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .875rem; background: var(--surface); color: var(--text-1); }
@@ -67,7 +58,6 @@
         .chip:hover { border-color: var(--border-hover); }
         .chip.active { background: var(--text-1); color: var(--bg); border-color: var(--text-1); }
         .chip .dot { width: 9px; height: 9px; border-radius: 50%; }
-        .chip .cnt { font-size: .7rem; opacity: .7; }
 
         .feed { display: flex; flex-direction: column; gap: .75rem; }
         .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; display: grid; grid-template-columns: 1fr auto; gap: 1rem; transition: border-color .12s; }
@@ -108,18 +98,12 @@
 
     <main class="wrap">
         <div class="page-title">Company News</div>
-        <div class="page-sub" id="pageSub">Press releases from top home-appliance companies, with comparative analysis.</div>
+        <div class="page-sub" id="pageSub">Press releases from top home-appliance companies.</div>
 
         <div id="loading" class="loading"><div class="spinner"></div>Loading company data…</div>
 
         <div id="content" style="display:none;">
             <div class="stat-row" id="statRow"></div>
-
-            <div class="charts">
-                <div class="chart-card"><h3>Press releases by company</h3><div class="hint">Total tracked since 2023</div><div class="chart-box"><canvas id="chartTotals"></canvas></div></div>
-                <div class="chart-card"><h3>Theme focus by company</h3><div class="hint">Share of releases by topic (normalized)</div><div class="chart-box"><canvas id="chartThemes"></canvas></div></div>
-                <div class="chart-card full"><h3>Publishing activity over time</h3><div class="hint">Releases per quarter, stacked by company</div><div class="chart-box"><canvas id="chartTime"></canvas></div></div>
-            </div>
 
             <div class="toolbar">
                 <div class="search-box"><input type="text" id="search" placeholder="Search releases…"></div>
@@ -137,7 +121,6 @@
         const PALETTE = ['#2563eb','#dc2626','#16a34a','#d97706','#7c3aed','#0891b2','#db2777','#65a30d','#ea580c','#0d9488'];
         let NEWS = [], ANALYSIS = {}, COLOR = {};
         let curCompany = 'All', curTheme = 'All', curSearch = '', curSort = 'newest';
-        let charts = {};
 
         function initTheme() {
             const saved = localStorage.getItem('theme');
@@ -153,10 +136,9 @@
         document.getElementById('themeToggle').addEventListener('click', () => {
             document.body.classList.toggle('dark-theme');
             localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
-            syncThemeBtn(); renderCharts();
+            syncThemeBtn();
         });
 
-        function cssVar(n){ return getComputedStyle(document.body).getPropertyValue(n).trim(); }
         function fmtDate(s){ if(!s) return ''; const d=new Date(s); return isNaN(d)?s:d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'}); }
 
         async function init() {
@@ -172,7 +154,7 @@
                 document.getElementById('loading').style.display='none';
                 if (!NEWS.length) { document.getElementById('content').innerHTML='<div class="empty">No company data yet. Run the company pipeline.</div>'; document.getElementById('content').style.display='block'; return; }
                 document.getElementById('content').style.display='block';
-                buildStats(); buildControls(); renderCharts(); render();
+                buildStats(); buildControls(); render();
             } catch(e) {
                 document.getElementById('loading').innerHTML='Error: '+e.message;
             }
@@ -188,15 +170,13 @@
                 <div class="stat-card"><div class="num">${comps.length}</div><div class="lbl">Companies</div></div>
                 <div class="stat-card"><div class="num">${(ANALYSIS.quarters||[]).length}</div><div class="lbl">Quarters</div></div>
                 <div class="stat-card"><div class="num">${fmtDate(earliest)} – ${fmtDate(latest)}</div><div class="lbl">Coverage</div></div>`;
-            document.getElementById('pageSub').textContent =
-                `${comps.join(' · ')} — ${ANALYSIS.total_articles||NEWS.length} press releases since 2023.`;
         }
 
         function buildControls() {
             const chips = document.getElementById('companyChips');
             const comps = ANALYSIS.companies||[];
-            let html = `<button class="chip active" data-c="All" onclick="selCompany(this)">All <span class="cnt">${NEWS.length}</span></button>`;
-            comps.forEach(c => { html += `<button class="chip" data-c="${c}" onclick="selCompany(this)"><span class="dot" style="background:${COLOR[c]}"></span>${c} <span class="cnt">${ANALYSIS.totals[c]||0}</span></button>`; });
+            let html = `<button class="chip active" data-c="All" onclick="selCompany(this)">All</button>`;
+            comps.forEach(c => { html += `<button class="chip" data-c="${c}" onclick="selCompany(this)"><span class="dot" style="background:${COLOR[c]}"></span>${c}</button>`; });
             chips.innerHTML = html;
             const tf = document.getElementById('themeFilter');
             (ANALYSIS.themes||[]).forEach(t => { const o=document.createElement('option'); o.value=t; o.textContent=t; tf.appendChild(o); });
@@ -205,44 +185,6 @@
             document.getElementById('sortOrder').addEventListener('change', e=>{ curSort=e.target.value; render(); });
         }
         function selCompany(btn){ document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); curCompany=btn.dataset.c; render(); }
-
-        function renderCharts() {
-            Object.values(charts).forEach(c=>c&&c.destroy());
-            const comps = ANALYSIS.companies||[];
-            const grid = cssVar('--border'), txt = cssVar('--text-2');
-            Chart.defaults.color = txt; Chart.defaults.font.family = "'DM Sans', sans-serif";
-            const gridCfg = { grid: { color: grid }, ticks: { color: txt } };
-
-            // 1) Totals (horizontal bar)
-            charts.totals = new Chart(document.getElementById('chartTotals'), {
-                type:'bar',
-                data:{ labels:comps, datasets:[{ data:comps.map(c=>ANALYSIS.totals[c]||0), backgroundColor:comps.map(c=>COLOR[c]) }] },
-                options:{ indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{x:gridCfg,y:gridCfg} }
-            });
-
-            // 2) Theme focus (normalized stacked horizontal bar by company)
-            const themes = ANALYSIS.themes||[];
-            const themePalette = ['#2563eb','#16a34a','#d97706','#dc2626','#7c3aed','#0891b2','#db2777','#65a30d','#ea580c','#64748b'];
-            const themeDs = themes.map((t,i)=>({
-                label:t,
-                data: comps.map(c=>{ const bt=(ANALYSIS.by_theme[c])||{}; const tot=Object.values(bt).reduce((a,b)=>a+b,0)||1; return Math.round(100*(bt[t]||0)/tot); }),
-                backgroundColor: themePalette[i%themePalette.length]
-            }));
-            charts.themes = new Chart(document.getElementById('chartThemes'), {
-                type:'bar',
-                data:{ labels:comps, datasets:themeDs },
-                options:{ indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'bottom',labels:{boxWidth:10,font:{size:9}}}}, scales:{ x:{...gridCfg, stacked:true, max:100, ticks:{...gridCfg.ticks, callback:v=>v+'%'}}, y:{...gridCfg, stacked:true} } }
-            });
-
-            // 3) Activity over time (stacked bar by quarter)
-            const quarters = ANALYSIS.quarters||[];
-            const timeDs = comps.map(c=>({ label:c, data: quarters.map(q=>(ANALYSIS.by_quarter[c]||{})[q]||0), backgroundColor:COLOR[c] }));
-            charts.time = new Chart(document.getElementById('chartTime'), {
-                type:'bar',
-                data:{ labels:quarters, datasets:timeDs },
-                options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'bottom',labels:{boxWidth:10,font:{size:10}}}}, scales:{ x:{...gridCfg, stacked:true}, y:{...gridCfg, stacked:true} } }
-            });
-        }
 
         function filtered() {
             let list = NEWS.slice();
