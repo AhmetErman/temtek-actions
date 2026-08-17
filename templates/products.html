@@ -81,9 +81,6 @@
         body.dark-theme .ecls.c-c { background: #422006; color: #fde047; } body.dark-theme .ecls.c-d { background: #451a03; color: #fbbf24; }
         body.dark-theme .ecls.c-e { background: #431407; color: #fdba74; } body.dark-theme .ecls.c-f { background: #450a0a; color: #fca5a5; }
         body.dark-theme .ecls.c-g { background: #450a0a; color: #f87171; }
-        .vtag { font-size: .7rem; font-weight: 700; padding: .1rem .45rem; border-radius: 5px; white-space: nowrap; cursor: help; }
-        .vtag.ok { background: var(--yes-bg); color: var(--yes); }
-        .vtag.todo { background: var(--partial-bg); color: var(--partial); }
 
         .ref-btn { margin-left: auto; background: none; border: 1px solid var(--border); color: var(--text-3);
                    font: inherit; font-size: .75rem; padding: .2rem .6rem; border-radius: 20px; cursor: pointer; }
@@ -347,17 +344,14 @@
             document.getElementById('spectable').innerHTML =
                 `<thead><tr><th>Brand</th><th>Model</th>` +
                 S.map(c=>`<th class="${c.type==='num'?'num':''}">${esc(c.label)}${c.unit?` <span class="u">${esc(c.unit)}</span>`:''}</th>`).join('') +
-                `<th>On Market</th><th>Availability</th><th>EPREL</th></tr></thead>` +
-                `<tbody>${prods.map(p=>{
-                    const vb = p.verified==='retail'
-                        ? `<span class="vtag ok" title="${esc(p.evidence||'')}">${esc(p.market||'EU')}${p.price?` · €${p.price}`:''}</span>`
-                        : `<span class="vtag todo" title="Registered and on-market in EPREL; retail listing not confirmed">EPREL only</span>`;
-                    return `<tr><td><span class="cdot" style="display:inline-block;background:${COLOR[p.company]};margin-right:6px"></span>${esc(p.company)}</td>`
+                `<th>On Market</th><th>EPREL</th></tr></thead>` +
+                `<tbody>${prods.map(p=>
+                    `<tr><td><span class="cdot" style="display:inline-block;background:${COLOR[p.company]};margin-right:6px"></span>${esc(p.company)}</td>`
                         + `<td class="mdl" title="${esc(p.range||'')}">${esc(p.model||'—')}</td>`
                         + S.map(c=>`<td class="${c.type==='num'?'num':''}">${specCell(p,c)}</td>`).join('')
-                        + `<td>${esc(p.marketStart||'—')}</td><td>${vb}</td>`
-                        + `<td>${p.url?`<a class="more" href="${esc(p.url)}" target="_blank" rel="noopener">EPREL ↗</a>`:'—'}</td></tr>`;
-                }).join('')}</tbody>`;
+                        + `<td>${esc(p.marketStart||'—')}</td>`
+                        + `<td>${p.url?`<a class="more" href="${esc(p.url)}" target="_blank" rel="noopener">EPREL ↗</a>`:'—'}</td></tr>`
+                ).join('')}</tbody>`;
         }
 
         function toggleHl(k){ hlTech = (hlTech===k? null : k); render(); }
