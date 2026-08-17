@@ -276,21 +276,14 @@
         }
 
         function setupUI() {
-            const cats = {};
-            allNews.forEach(item => {
-                const c = item.Classification || 'N/A';
-                cats[c] = (cats[c] || 0) + 1;
-            });
+            const cats = new Set(allNews.map(item => item.Classification || 'N/A'));
 
             const tabsEl = document.getElementById('tabs');
-            const mainCats = Object.keys(cats).filter(c => c !== 'Other' && c !== 'N/A').sort();
-            // "All" counts only the topic-focused articles shown on this page;
-            // off-topic "Other" news lives on the /beyond page.
-            const mainTotal = mainCats.reduce((sum, c) => sum + cats[c], 0);
+            const mainCats = [...cats].filter(c => c !== 'Other' && c !== 'N/A').sort();
 
-            let tabsHTML = `<button class="tab-btn active" data-cat="All" onclick="selectTab(this)">All <span class="tab-count">${mainTotal}</span></button>`;
+            let tabsHTML = `<button class="tab-btn active" data-cat="All" onclick="selectTab(this)">All</button>`;
             mainCats.forEach(cat => {
-                tabsHTML += `<button class="tab-btn" data-cat="${cat}" onclick="selectTab(this)">${getShortName(cat)} <span class="tab-count">${cats[cat]}</span></button>`;
+                tabsHTML += `<button class="tab-btn" data-cat="${cat}" onclick="selectTab(this)">${getShortName(cat)}</button>`;
             });
             // No "Other" tab. Off-topic news lives on its own /beyond page,
             // reachable via this button at the end of the topic tabs.
