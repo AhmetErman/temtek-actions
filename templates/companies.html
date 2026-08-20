@@ -41,11 +41,6 @@
         .page-title { font-size: 1.5rem; font-weight: 700; margin-bottom: .25rem; }
         .page-sub { color: var(--text-3); font-size: .9rem; margin-bottom: 1.5rem; }
 
-        .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 1rem; margin-bottom: 1.5rem; }
-        .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; }
-        .stat-card .num { font-size: 1.6rem; font-weight: 700; }
-        .stat-card .lbl { font-size: .78rem; color: var(--text-3); text-transform: uppercase; letter-spacing: .04em; }
-
         .toolbar { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
         .search-box { flex: 1; min-width: 200px; position: relative; }
         .search-box input { width: 100%; padding: .55rem .75rem .55rem 2.1rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .875rem; background: var(--surface); color: var(--text-1); }
@@ -103,8 +98,6 @@
         <div id="loading" class="loading"><div class="spinner"></div>Loading company data…</div>
 
         <div id="content" style="display:none;">
-            <div class="stat-row" id="statRow"></div>
-
             <div class="toolbar">
                 <div class="search-box"><input type="text" id="search" placeholder="Search releases…"></div>
                 <select id="themeFilter"><option value="All">All themes</option></select>
@@ -154,22 +147,10 @@
                 document.getElementById('loading').style.display='none';
                 if (!NEWS.length) { document.getElementById('content').innerHTML='<div class="empty">No company data yet. Run the company pipeline.</div>'; document.getElementById('content').style.display='block'; return; }
                 document.getElementById('content').style.display='block';
-                buildStats(); buildControls(); render();
+                buildControls(); render();
             } catch(e) {
                 document.getElementById('loading').innerHTML='Error: '+e.message;
             }
-        }
-
-        function buildStats() {
-            const comps = ANALYSIS.companies||[];
-            let earliest='9999', latest='0';
-            Object.values(ANALYSIS.date_range||{}).forEach(r=>{ if(r.earliest<earliest)earliest=r.earliest; if(r.latest>latest)latest=r.latest; });
-            const el = document.getElementById('statRow');
-            el.innerHTML = `
-                <div class="stat-card"><div class="num">${ANALYSIS.total_articles||NEWS.length}</div><div class="lbl">Releases</div></div>
-                <div class="stat-card"><div class="num">${comps.length}</div><div class="lbl">Companies</div></div>
-                <div class="stat-card"><div class="num">${(ANALYSIS.quarters||[]).length}</div><div class="lbl">Quarters</div></div>
-                <div class="stat-card"><div class="num">${fmtDate(earliest)} – ${fmtDate(latest)}</div><div class="lbl">Coverage</div></div>`;
         }
 
         function buildControls() {

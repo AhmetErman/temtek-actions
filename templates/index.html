@@ -57,7 +57,6 @@
             <div class="spinner"></div>
             Loading news...
         </div>
-        <div id="resultCount" class="result-count" style="display:none;"></div>
         <div id="newsList"></div>
     </main>
 
@@ -243,18 +242,12 @@
         function render() {
             const filtered = getFilteredNews();
             const listEl = document.getElementById('newsList');
-            const countEl = document.getElementById('resultCount');
 
             // This page shows only topic-focused (non-Other) news. Off-topic
             // "Other" news lives on the separate "Beyond Our Focus" page.
             const mainNews = filtered.filter(i =>
                 i.Classification && i.Classification !== 'Other' && i.Classification !== 'N/A' &&
                 (currentCategory === 'All' || i.Classification === currentCategory));
-
-            countEl.style.display = 'block';
-            countEl.textContent = `${mainNews.length} article${mainNews.length !== 1 ? 's' : ''}` +
-                (currentSearch ? ` matching "${currentSearch}"` : '') +
-                (currentCategory !== 'All' ? ` in ${getShortName(currentCategory)}` : '');
 
             let rowId = 0;
             if (mainNews.length > 0) {
