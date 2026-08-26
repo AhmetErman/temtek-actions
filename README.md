@@ -1,4 +1,4 @@
-# temtek-actions
+# TemTek Technology Tracker Agent 
 
 Automated competitive-intelligence pipeline for the home-appliance industry — scrapes and classifies tech news, tracks competitor press releases, and mirrors the EU's EPREL energy-label registry, all on a GitHub Actions schedule and served through a Flask dashboard (branded internally as the **Cleaning and Textile Squad News Tracker**).
 
