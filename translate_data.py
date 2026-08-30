@@ -100,14 +100,16 @@ def translate_news(force=False, limit=None):
     if not pending:
         return
 
-    # Pass 1: title + summary, straight out of the source language.
-    got = translation.translate_fields(
+    # Pass 1: title + summary, straight out of the source language. Saved after
+    # every language/field group, so an interrupted run keeps what it finished.
+    def save_progress(partial):
+        for i, values in partial.items():
+            side.setdefault(pending[i].get("url"), {}).update(values)
+        save_json(NEWS_TR_FILE, side)
+
+    translation.translate_fields(
         pending, {"title": "title", "summary": "summary"},
-        TARGET, log=log)
-    for i, values in got.items():
-        url = pending[i].get("url")
-        side.setdefault(url, {}).update(values)
-    save_json(NEWS_TR_FILE, side)
+        TARGET, log=log, checkpoint=save_progress)
     log(f"  saved {len(side)} entries")
 
     # Pass 2: the Gemini label, which only ever exists in English.
@@ -144,12 +146,14 @@ def translate_company(force=False, limit=None):
     if not pending:
         return
 
-    got = translation.translate_fields(
+    def save_progress(partial):
+        for i, values in partial.items():
+            side.setdefault(pending[i]["url"], {}).update(values)
+        save_json(COMPANY_TR_FILE, side)
+
+    translation.translate_fields(
         pending, {"title": "title", "summary": "summary"},
-        TARGET, log=log)
-    for i, values in got.items():
-        side.setdefault(pending[i]["url"], {}).update(values)
-    save_json(COMPANY_TR_FILE, side)
+        TARGET, log=log, checkpoint=save_progress)
     log(f"  {COMPANY_TR_FILE}: {len(side)} entries")
 
 
