@@ -168,6 +168,15 @@ def main():
         print(f"  {analysis['totals'][c]:4d}  {c}  "
               f"({dr.get('earliest','?')} -> {dr.get('latest','?')})")
 
+    # Turkish for whatever this run added. Incremental, and fault-isolated so a
+    # translation problem cannot cost us the scrape that just succeeded.
+    try:
+        import translate_data
+        print("\n=== Turkish translation pass ===")
+        translate_data.translate_company()
+    except Exception as e:
+        print(f"  -> Turkish translation skipped: {e}")
+
 
 if __name__ == "__main__":
     main()

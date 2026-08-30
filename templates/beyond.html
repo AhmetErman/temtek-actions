@@ -2,28 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="i18n-title" content="title.beyond">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyond Our Focus — Cleaning and Textile Squad News Tracker</title>
+    <title>Beyond Our Focus — Tem&Tek Technology Tracker Agent</title>
     <meta name="description" content="Wider tech and world news outside our core cleaning and textile topics.">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/app.css">
+    <script src="/static/i18n.js"></script>
 </head>
 <body>
     <header class="site-header">
         <div class="header-inner">
             <div class="logo">
                 <div class="logo-icon">T</div>
-                Cleaning and Textile Squad News Tracker
+                <span data-i18n="site.title">Tem&Tek Technology Tracker Agent</span>
             </div>
             <nav style="display:flex;gap:.25rem;">
-                <a href="/" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Tech News</a>
-                <a href="/companies" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Company News</a>
-                <a href="/products" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Products</a>
+                <a href="/" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;" data-i18n="nav.news">Tech News</a>
+                <a href="/companies" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;" data-i18n="nav.companies">Company News</a>
+                <a href="/products" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;" data-i18n="nav.products">Products</a>
             </nav>
             <div class="header-controls">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <button class="theme-toggle" id="langToggle" title="Switch language">TR</button>
+                <button class="theme-toggle" id="themeToggle" data-i18n-aria="common.toggleTheme" aria-label="Toggle dark mode">
                     <span id="themeToggleIcon">☀️</span>
-                    <span id="themeToggleText">Light</span>
+                    <span id="themeToggleText" data-i18n="theme.light">Light</span>
                 </button>
             </div>
         </div>
@@ -31,28 +34,28 @@
 
     <div class="toolbar" id="toolbar">
         <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Search wider news... (press '/' to focus)" />
+            <input type="text" id="searchInput" data-i18n-ph="beyond.search" placeholder="Search wider news... (press '/' to focus)" />
         </div>
         <select id="topicFilter">
-            <option value="All">All topics</option>
+            <option value="All" data-i18n="beyond.allTopics">All topics</option>
         </select>
         <select id="sortOrder">
-            <option value="newest">Newest first</option>
-            <option value="oldest">Oldest first</option>
-            <option value="score-high">Relevance ↓</option>
-            <option value="score-low">Relevance ↑</option>
+            <option value="newest" data-i18n="sort.newest">Newest first</option>
+            <option value="oldest" data-i18n="sort.oldest">Oldest first</option>
+            <option value="score-high" data-i18n="sort.scoreHigh">Relevance ↓</option>
+            <option value="score-low" data-i18n="sort.scoreLow">Relevance ↑</option>
         </select>
     </div>
 
     <main class="main-content">
         <div class="page-intro">
-            <a href="/" class="back-link">← Back to Tech News</a>
-            <h1>Beyond Our Focus</h1>
+            <a href="/" class="back-link" data-i18n="beyond.back">← Back to Tech News</a>
+            <h1 data-i18n="beyond.title">Beyond Our Focus</h1>
             <p>Wider tech &amp; world news that fell outside our core cleaning &amp; textile topics, grouped into sub-topics. Open a topic to browse its articles.</p>
         </div>
         <div id="loading" class="loading-state">
             <div class="spinner"></div>
-            Loading news...
+            <span data-i18n="news.loading">Loading news...</span>
         </div>
         <div id="resultCount" class="result-count" style="display:none;"></div>
         <div id="groups"></div>
@@ -60,7 +63,7 @@
 
     <footer class="page-footer" id="pageFooter"></footer>
 
-    <button class="back-to-top" id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
+    <button class="back-to-top" id="backToTop" data-i18n-title="common.backToTop" data-i18n-aria="common.backToTop" title="Back to top" aria-label="Back to top">↑</button>
 
     <script>
         let allNews = [];
@@ -86,14 +89,14 @@
             if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
                 document.body.classList.add('dark-theme');
                 document.getElementById('themeToggleIcon').textContent = '🌙';
-                document.getElementById('themeToggleText').textContent = 'Dark';
+                document.getElementById('themeToggleText').textContent = t('theme.dark');
             }
         }
         document.getElementById('themeToggle').addEventListener('click', () => {
             const isDark = document.body.classList.toggle('dark-theme');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             document.getElementById('themeToggleIcon').textContent = isDark ? '🌙' : '☀️';
-            document.getElementById('themeToggleText').textContent = isDark ? 'Dark' : 'Light';
+            document.getElementById('themeToggleText').textContent = isDark ? t('theme.dark') : t('theme.light');
         });
 
         function parseDate(s) { if (!s) return null; const d = new Date(s); return isNaN(d) ? null : d; }
@@ -101,9 +104,9 @@
             const d = parseDate(s);
             if (!d) return s || '';
             const days = Math.floor((new Date() - d) / 86400000);
-            if (days === 0) return 'Today';
-            if (days === 1) return 'Yesterday';
-            if (days < 7) return days + 'd ago';
+            if (days === 0) return t('common.today');
+            if (days === 1) return t('common.yesterday');
+            if (days < 7) return days + t('common.daysAgo');
             return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
         }
         function subOf(item) { return item.OtherSubclass || 'Uncategorized'; }
@@ -111,8 +114,8 @@
         function toggleAbstract(id) {
             const el = document.getElementById('abs-' + id);
             const btn = document.getElementById('btn-' + id);
-            if (el.classList.contains('open')) { el.classList.remove('open'); btn.textContent = 'Show details ▸'; }
-            else { el.classList.add('open'); btn.textContent = 'Hide details ▾'; }
+            if (el.classList.contains('open')) { el.classList.remove('open'); btn.textContent = t('common.showDetails'); }
+            else { el.classList.add('open'); btn.textContent = t('common.hideDetails'); }
         }
         function toggleSub(btn) { btn.classList.toggle('open'); btn.nextElementSibling.classList.toggle('open'); }
 
@@ -129,11 +132,11 @@
             let detailsHTML = '';
             if ((summary && summary.length > 10) || item.title) {
                 detailsHTML = `
-                    <button class="news-expand-btn" id="btn-${uid}" onclick="toggleAbstract('${uid}')">Show details ▸</button>
+                    <button class="news-expand-btn" id="btn-${uid}" onclick="toggleAbstract('${uid}')">${t('common.showDetails')}</button>
                     <div class="news-abstract" id="abs-${uid}">
                         ${summary ? `<p>${summary}</p>` : ''}
                         <div class="original-text-section">
-                            <div class="original-title">🇯🇵 Original Title: ${item.title || 'Untitled'}</div>
+                            <div class="original-title">🇯🇵 ${t('common.originalTitle')} ${item.title || ''}</div>
                             ${item.summary ? `<div class="original-body">${item.summary}</div>` : ''}
                         </div>
                     </div>`;
@@ -145,7 +148,7 @@
                         <span class="news-source">${item.source || ''}</span>
                         <span class="meta-dot"></span>
                         <span class="news-date">${dateStr}</span>
-                        ${isNew ? `<span class="new-badge">New</span>` : ''}
+                        ${isNew ? `<span class="new-badge">${t('common.new')}</span>` : ''}
                     </div>
                     <div class="news-title">
                         <a href="${item.url || '#'}" target="_blank" rel="noopener noreferrer">${title}</a>
@@ -182,16 +185,20 @@
             const groupsEl = document.getElementById('groups');
             const countEl = document.getElementById('resultCount');
             countEl.style.display = 'block';
-            countEl.textContent = `${list.length} article${list.length !== 1 ? 's' : ''}` +
-                (currentSearch ? ` matching "${currentSearch}"` : '') +
-                (currentTopic !== 'All' ? ` in ${currentTopic}` : '');
+            countEl.textContent = LANG === 'tr'
+                ? `${list.length} makale`
+                    + (currentSearch ? ` · "${currentSearch}"` : '')
+                    + (currentTopic !== 'All' ? ` · ${currentTopic}` : '')
+                : `${list.length} article${list.length !== 1 ? 's' : ''}`
+                    + (currentSearch ? ` matching "${currentSearch}"` : '')
+                    + (currentTopic !== 'All' ? ` in ${currentTopic}` : '');
 
             let rowId = 0;
             // Flat list while searching or when a single topic is chosen; otherwise grouped.
             if (currentSearch || currentTopic !== 'All') {
                 groupsEl.innerHTML = list.length
                     ? `<div class="news-list">${list.map(i => buildRow(i, rowId++)).join('')}</div>`
-                    : `<div class="empty-state">No articles found.</div>`;
+                    : `<div class="empty-state">${t('common.none')}</div>`;
                 return;
             }
             const groups = {};
@@ -248,8 +255,14 @@
 
         async function init() {
             initTheme();
+            initLang(async () => {
+                allNews = await (await fetch('/api/news' + langQuery())).json();
+                allNews.sort((a, b) => (parseDate(b.date) || 0) - (parseDate(a.date) || 0));
+                setup();
+                render();
+            });
             try {
-                allNews = await (await fetch('/api/news')).json();
+                allNews = await (await fetch('/api/news' + langQuery())).json();
                 document.getElementById('loading').style.display = 'none';
                 allNews.sort((a, b) => (parseDate(b.date) || 0) - (parseDate(a.date) || 0));
                 setup();

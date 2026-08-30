@@ -2,28 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="i18n-title" content="title.news">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tem&Tek Technology Tracker Agent</title>
     <meta name="description" content="AI-classified R&D and technology news from Far East countries and global tech sources.">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/app.css">
+    <script src="/static/i18n.js"></script>
 </head>
 <body>
     <header class="site-header">
         <div class="header-inner">
             <div class="logo">
                 <div class="logo-icon">T</div>
-                Tem&Tek Technology Tracker Agent
+                <span data-i18n="site.title">Tem&Tek Technology Tracker Agent</span>
             </div>
             <nav style="display:flex;gap:.25rem;">
-                <a href="/" style="font-size:.85rem;font-weight:600;color:var(--bg);background:var(--text-1);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Tech News</a>
-                <a href="/companies" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Company News</a>
-                <a href="/products" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;">Products</a>
+                <a href="/" style="font-size:.85rem;font-weight:600;color:var(--bg);background:var(--text-1);text-decoration:none;padding:.4rem .8rem;border-radius:8px;" data-i18n="nav.news">Tech News</a>
+                <a href="/companies" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;" data-i18n="nav.companies">Company News</a>
+                <a href="/products" style="font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;padding:.4rem .8rem;border-radius:8px;" data-i18n="nav.products">Products</a>
             </nav>
             <div class="header-controls">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <button class="theme-toggle" id="langToggle" title="Switch language">TR</button>
+                <button class="theme-toggle" id="themeToggle" data-i18n-aria="common.toggleTheme" aria-label="Toggle dark mode">
                     <span id="themeToggleIcon">☀️</span>
-                    <span id="themeToggleText">Light</span>
+                    <span id="themeToggleText" data-i18n="theme.light">Light</span>
                 </button>
             </div>
         </div>
@@ -31,22 +34,22 @@
 
     <div class="toolbar" id="toolbar">
         <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Search news... (press '/' to focus)" />
+            <input type="text" id="searchInput" data-i18n-ph="news.search" placeholder="Search news... (press '/' to focus)" />
         </div>
         <select id="sourceFilter">
-            <option value="All">All sources</option>
+            <option value="All" data-i18n="filter.allSources">All sources</option>
         </select>
         <select id="dateFilter">
-            <option value="All">Any time</option>
-            <option value="today">Past 24 hours</option>
-            <option value="week">Past week</option>
-            <option value="month">Past month</option>
+            <option value="All" data-i18n="filter.anyTime">Any time</option>
+            <option value="today" data-i18n="filter.past24">Past 24 hours</option>
+            <option value="week" data-i18n="filter.pastWeek">Past week</option>
+            <option value="month" data-i18n="filter.pastMonth">Past month</option>
         </select>
         <select id="sortOrder">
-            <option value="newest">Newest first</option>
-            <option value="oldest">Oldest first</option>
-            <option value="score-high">Relevance ↓</option>
-            <option value="score-low">Relevance ↑</option>
+            <option value="newest" data-i18n="sort.newest">Newest first</option>
+            <option value="oldest" data-i18n="sort.oldest">Oldest first</option>
+            <option value="score-high" data-i18n="sort.scoreHigh">Relevance ↓</option>
+            <option value="score-low" data-i18n="sort.scoreLow">Relevance ↑</option>
         </select>
     </div>
 
@@ -55,14 +58,14 @@
     <main class="main-content">
         <div id="loading" class="loading-state">
             <div class="spinner"></div>
-            Loading news...
+            <span data-i18n="news.loading">Loading news...</span>
         </div>
         <div id="newsList"></div>
     </main>
 
     <footer class="page-footer" id="pageFooter"></footer>
 
-    <button class="back-to-top" id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
+    <button class="back-to-top" id="backToTop" data-i18n-title="common.backToTop" data-i18n-aria="common.backToTop" title="Back to top" aria-label="Back to top">↑</button>
 
     <script>
         let allNews = [];
@@ -99,7 +102,7 @@
             if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
                 document.body.classList.add('dark-theme');
                 document.getElementById('themeToggleIcon').textContent = '🌙';
-                document.getElementById('themeToggleText').textContent = 'Dark';
+                document.getElementById('themeToggleText').textContent = t('theme.dark');
             }
         }
 
@@ -109,7 +112,7 @@
             const isDark = body.classList.contains('dark-theme');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             document.getElementById('themeToggleIcon').textContent = isDark ? '🌙' : '☀️';
-            document.getElementById('themeToggleText').textContent = isDark ? 'Dark' : 'Light';
+            document.getElementById('themeToggleText').textContent = isDark ? t('theme.dark') : t('theme.light');
         });
 
         function parseDate(dateStr) {
@@ -124,10 +127,10 @@
             const now = new Date();
             const diff = now - d;
             const days = Math.floor(diff / 86400000);
-            if (days === 0) return 'Today';
-            if (days === 1) return 'Yesterday';
-            if (days < 7) return days + 'd ago';
-            return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            if (days === 0) return t('common.today');
+            if (days === 1) return t('common.yesterday');
+            if (days < 7) return days + t('common.daysAgo');
+            return d.toLocaleDateString(LANG === 'tr' ? 'tr-TR' : 'en-US', { month: 'short', day: 'numeric' });
         }
 
         function getTagClass(cat) {
@@ -135,7 +138,7 @@
         }
 
         function getShortName(cat) {
-            return SHORT_NAMES[cat] || cat;
+            return tShort(cat) !== cat ? tShort(cat) : (SHORT_NAMES[cat] || cat);
         }
 
         function toggleAbstract(id) {
@@ -143,10 +146,10 @@
             const btn = document.getElementById('btn-' + id);
             if (el.classList.contains('open')) {
                 el.classList.remove('open');
-                btn.textContent = 'Show details ▸';
+                btn.textContent = t('common.showDetails');
             } else {
                 el.classList.add('open');
-                btn.textContent = 'Hide details ▾';
+                btn.textContent = t('common.hideDetails');
             }
         }
 
@@ -165,11 +168,11 @@
             let detailsHTML = '';
             if ((summary && summary.length > 10) || item.title) {
                 detailsHTML = `
-                    <button class="news-expand-btn" id="btn-${uid}" onclick="toggleAbstract('${uid}')">Show details ▸</button>
+                    <button class="news-expand-btn" id="btn-${uid}" onclick="toggleAbstract('${uid}')">${t('common.showDetails')}</button>
                     <div class="news-abstract" id="abs-${uid}">
                         ${summary ? `<p>${summary}</p>` : ''}
                         <div class="original-text-section">
-                            <div class="original-title">🇯🇵 Original Title: ${item.title || 'Untitled'}</div>
+                            <div class="original-title">🇯🇵 ${t('common.originalTitle')} ${item.title || ''}</div>
                             ${item.summary ? `<div class="original-body">${item.summary}</div>` : ''}
                         </div>
                     </div>
@@ -183,7 +186,7 @@
                         <span class="news-source">${item.source || ''}</span>
                         <span class="meta-dot"></span>
                         <span class="news-date">${dateStr}</span>
-                        ${isNew ? `<span class="new-badge">New</span>` : ''}
+                        ${isNew ? `<span class="new-badge">${t('common.new')}</span>` : ''}
                     </div>
                     <div class="news-title">
                         <a href="${item.url || '#'}" target="_blank" rel="noopener noreferrer">${title}</a>
@@ -253,7 +256,7 @@
             if (mainNews.length > 0) {
                 listEl.innerHTML = `<div class="news-list">${mainNews.map(item => buildRow(item, rowId++)).join('')}</div>`;
             } else {
-                listEl.innerHTML = `<div class="empty-state">No articles found.</div>`;
+                listEl.innerHTML = `<div class="empty-state">${t('common.none')}</div>`;
             }
         }
 
@@ -274,13 +277,13 @@
             const tabsEl = document.getElementById('tabs');
             const mainCats = [...cats].filter(c => c !== 'Other' && c !== 'N/A').sort();
 
-            let tabsHTML = `<button class="tab-btn active" data-cat="All" onclick="selectTab(this)">All</button>`;
+            let tabsHTML = `<button class="tab-btn active" data-cat="All" onclick="selectTab(this)">${t('common.all')}</button>`;
             mainCats.forEach(cat => {
                 tabsHTML += `<button class="tab-btn" data-cat="${cat}" onclick="selectTab(this)">${getShortName(cat)}</button>`;
             });
             // No "Other" tab. Off-topic news lives on its own /beyond page,
             // reachable via this button at the end of the topic tabs.
-            tabsHTML += `<a class="beyond-link" href="/beyond" title="Wider tech & world news outside our core topics">Beyond Our Focus →</a>`;
+            tabsHTML += `<a class="beyond-link" href="/beyond" title="${t('news.beyondHint')}">${t('news.beyondLink')}</a>`;
             tabsEl.innerHTML = tabsHTML;
 
             const sources = [...new Set(allNews.map(i => i.source).filter(Boolean))].sort();
@@ -299,10 +302,11 @@
             if (newest) latestNewsTime = newest.getTime();
 
             const statsEl = document.getElementById('pageFooter');
+            const loc = LANG === 'tr' ? 'tr-TR' : 'en-US';
             statsEl.innerHTML = `
-                <span>${allNews.length} articles</span>
-                <span>${sources.length} sources</span>
-                ${newest ? `<span>Latest scrape: ${newest.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>` : ''}
+                <span>${allNews.length} ${LANG === 'tr' ? 'makale' : 'articles'}</span>
+                <span>${sources.length} ${LANG === 'tr' ? 'kaynak' : 'sources'}</span>
+                ${newest ? `<span>${LANG === 'tr' ? 'Son tarama' : 'Latest scrape'}: ${newest.toLocaleDateString(loc, { month: 'short', day: 'numeric' })}</span>` : ''}
             `;
         }
 
@@ -355,15 +359,27 @@
         });
 
         // Init
+        async function loadNews() {
+            const res = await fetch('/api/news' + langQuery());
+            allNews = await res.json();
+        }
+
         async function init() {
             initTheme();
+            // Re-fetch on a language switch: article text is translated
+            // server-side, so the same field names come back in Turkish.
+            initLang(async () => {
+                await loadNews();
+                allNews.sort((a, b) => (parseDate(b.date) || 0) - (parseDate(a.date) || 0));
+                setupUI();
+                render();
+            });
             try {
-                const res = await fetch('/api/news');
-                allNews = await res.json();
+                await loadNews();
                 document.getElementById('loading').style.display = 'none';
 
                 if (allNews.length === 0) {
-                    document.getElementById('newsList').innerHTML = '<div class="empty-state">No news yet. The scraper might not have run.</div>';
+                    document.getElementById('newsList').innerHTML = `<div class="empty-state">${t('news.empty')}</div>`;
                     return;
                 }
 

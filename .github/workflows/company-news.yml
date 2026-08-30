@@ -48,7 +48,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add company_news.json company_analysis.json
+          git add company_news.json company_analysis.json company_news_tr.json
           if git diff --staged --quiet; then
             echo "No company-news changes to commit."
           else

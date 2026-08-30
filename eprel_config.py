@@ -93,8 +93,60 @@ BRAND_SUFFIXES = [
 ]
 
 
+# Turkish for every column label used below. Keyed by the English label so a
+# label is translated once no matter how many categories reuse it, and a new
+# column without an entry simply falls back to English in the UI rather than
+# rendering blank.
+COLUMN_LABELS_TR = {
+    "Brand": "Marka",
+    "Model": "Model",
+    "Installation": "Montaj Tipi",
+    "Capacity": "Kapasite",
+    "Energy Class": "Enerji Sınıfı",
+    "EEI": "EEI",
+    "Energy": "Enerji",
+    "Eco Programme Time": "Eko Program Süresi",
+    "Water": "Su",
+    "Spin Speed": "Sıkma Devri",
+    "Spin Class": "Sıkma Sınıfı",
+    "Wash Index": "Yıkama İndeksi",
+    "Noise": "Gürültü",
+    "Noise Class": "Gürültü Sınıfı",
+    "On Market Since": "Piyasaya Çıkış",
+    "EPREL": "EPREL",
+    "Drying Technology (est.)": "Kurutma Teknolojisi (tahmini)",
+    "Capacity Wash-Dry": "Yıkama-Kurutma Kapasitesi",
+    "Energy Class (Wash & Dry)": "Enerji Sınıfı (Yıkama ve Kurutma)",
+    "EEI (Wash & Dry)": "EEI (Yıkama ve Kurutma)",
+    "Energy (W&D)": "Enerji (Y&K)",
+    "Eco Programme Time W&D": "Eko Program Süresi (Y&K)",
+    "Water Wash & Dry": "Su (Yıkama ve Kurutma)",
+    "Capacity Wash": "Yıkama Kapasitesi",
+    "Energy Class (Wash)": "Enerji Sınıfı (Yıkama)",
+    "EEI (Wash)": "EEI (Yıkama)",
+    "Water Wash": "Su (Yıkama)",
+    "Energy Full Load": "Tam Yük Enerjisi",
+    "Weighted Programme Time": "Ağırlıklı Program Süresi",
+    "Condensation Class": "Yoğuşma Sınıfı",
+    "Auto-dry": "Otomatik Kurutma",
+    "Place Settings": "Kişilik Kapasite",
+    "Cleaning Index": "Temizleme İndeksi",
+    "Drying Index": "Kurutma İndeksi",
+}
+
+CATEGORY_LABELS_TR = {
+    "washing-machine": "Çamaşır Makineleri",
+    "washer-dryer": "Kurutmalı Çamaşır Makineleri",
+    "dryer": "Kurutma Makineleri",
+    "dishwasher": "Bulaşık Makineleri",
+}
+
+
 def _col(key, label, type="text", unit=None):
     c = {"key": key, "label": label, "type": type}
+    tr = COLUMN_LABELS_TR.get(label)
+    if tr:
+        c["label_tr"] = tr
     if unit:
         c["unit"] = unit
     return c

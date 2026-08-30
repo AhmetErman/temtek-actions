@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="i18n-title" content="title.eprel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPREL Database — Appliance Energy Benchmark</title>
     <meta name="description" content="Every appliance in the EU EPREL energy-label registry we track: washing machines, washer-dryers, dryers and dishwashers, ranked by energy class and consumption.">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="/static/i18n.js"></script>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -92,32 +94,35 @@
 <body>
     <header class="site-header">
         <div class="header-inner">
-            <div class="logo"><div class="logo-icon">E</div> EPREL Database</div>
+            <div class="logo"><div class="logo-icon">E</div> <span data-i18n="ep.title">EPREL Database</span></div>
             <nav class="nav">
-                <a href="/">Tech News</a>
-                <a href="/companies">Company News</a>
-                <a href="/products" class="active">Products</a>
+                <a href="/" data-i18n="nav.news">Tech News</a>
+                <a href="/companies" data-i18n="nav.companies">Company News</a>
+                <a href="/products" class="active" data-i18n="nav.products">Products</a>
             </nav>
-            <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span><span id="themeText">Light</span></button>
+            <div style="display:flex;align-items:center;gap:1rem;">
+                <button class="theme-toggle" id="langToggle" title="Switch language">TR</button>
+                <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span><span id="themeText" data-i18n="theme.light">Light</span></button>
+            </div>
         </div>
     </header>
 
     <main class="wrap">
-        <a class="back" href="/products">← Back to Products</a>
-        <div class="page-title">EPREL energy database</div>
-        <div class="page-sub" id="sub">EU energy-label registry, ranked by energy class then energy use.</div>
+        <a class="back" href="/products" data-i18n="ep.back">← Back to Products</a>
+        <div class="page-title" data-i18n="ep.heading">EPREL energy database</div>
+        <div class="page-sub" id="sub" data-i18n="ep.sub">EU energy-label registry, ranked by energy class then energy use.</div>
 
-        <div id="loading" class="loading">Loading EPREL database…</div>
+        <div id="loading" class="loading" data-i18n="ep.loading">Loading EPREL database…</div>
 
         <div id="content" style="display:none;">
             <div class="toolbar">
                 <select id="catPick" class="primary"></select>
-                <div class="search-box"><input id="eSearch" placeholder="Search models or brands…"></div>
-                <select id="eBrand"><option value="All">All brands</option></select>
-                <select id="eClass"><option value="All">All energy classes</option></select>
-                <label class="chk"><input type="checkbox" id="eTracked"> Tracked brands only</label>
-                <label class="chk"><input type="checkbox" id="eBest"> Best per brand</label>
-                <button class="more-btn" id="eExport" title="Download the filtered table as an Excel workbook (.xlsx)">⤓ Excel</button>
+                <div class="search-box"><input id="eSearch" data-i18n-ph="ep.search" placeholder="Search models or brands…"></div>
+                <select id="eBrand"><option value="All" data-i18n="ep.allBrands">All brands</option></select>
+                <select id="eClass"><option value="All" data-i18n="ep.allClasses">All energy classes</option></select>
+                <label class="chk"><input type="checkbox" id="eTracked"> <span data-i18n="ep.tracked">Tracked brands only</span></label>
+                <label class="chk"><input type="checkbox" id="eBest"> <span data-i18n="ep.bestPerBrand">Best per brand</span></label>
+                <button class="more-btn" id="eExport" data-i18n="ep.excel" data-i18n-title="ep.excelHint" title="Download the filtered table as an Excel workbook (.xlsx)">⤓ Excel</button>
             </div>
 
             <div class="estats" id="eprelStats"></div>
@@ -125,7 +130,7 @@
             <div class="btable-wrap"><table class="btable" id="btable"></table></div>
             <div class="tfoot">
                 <span id="eCount"></span>
-                <button class="more-btn" id="eMore">Show more</button>
+                <button class="more-btn" id="eMore" data-i18n="ep.showMore">Show more</button>
             </div>
 
             <div class="note" id="srcNote"></div>
@@ -138,7 +143,7 @@
             eF = {search:'', brand:'All', cls:'All', tracked:false, best:false};
 
         function initTheme(){ const s=localStorage.getItem('theme'); const d=window.matchMedia('(prefers-color-scheme: dark)').matches; if(s==='dark'||(!s&&d))document.body.classList.add('dark-theme'); syncBtn(); }
-        function syncBtn(){ const d=document.body.classList.contains('dark-theme'); themeIcon.textContent=d?'🌙':'☀️'; themeText.textContent=d?'Dark':'Light'; }
+        function syncBtn(){ const d=document.body.classList.contains('dark-theme'); themeIcon.textContent=d?'🌙':'☀️'; themeText.textContent=d?t('theme.dark'):t('theme.light'); }
         themeToggle.onclick=()=>{ document.body.classList.toggle('dark-theme'); localStorage.setItem('theme', document.body.classList.contains('dark-theme')?'dark':'light'); syncBtn(); };
 
         function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
@@ -166,7 +171,7 @@
 
                 const pick = document.getElementById('catPick');
                 pick.innerHTML = cats.map(k=>
-                    `<option value="${esc(k)}">${esc(EPREL.categories[k].label)}</option>`).join('');
+                    `<option value="${esc(k)}">${esc(tCat(k, EPREL.categories[k].label))}</option>`).join('');
                 // Deep-linkable: /eprel#dryer opens that machine type directly.
                 const hash = (location.hash||'').replace('#','');
                 curCat = cats.includes(hash) ? hash : cats[0];
@@ -185,12 +190,27 @@
                 document.getElementById('eMore').addEventListener('click', ()=>{ eShown+=E_PAGE; render(); });
                 document.getElementById('eExport').addEventListener('click', exportXlsx);
 
-                document.getElementById('srcNote').textContent =
-                    `Source: EPREL (European Product Registry for Energy Labelling), scraped ${EPREL.generated||'—'}. `
-                    + `Energy classes shown as "A-30%" indicate how far below the class ceiling the model's EEI sits. `
-                    + `⚠ marks a registration whose declared values contradict each other.`;
+                paintNote();
+                initLang(() => {
+                    paintNote();
+                    const p2 = document.getElementById('catPick');
+                    [...p2.options].forEach(o => {
+                        o.textContent = tCat(o.value, (EPREL.categories[o.value]||{}).label);
+                    });
+                    render();
+                });
                 selectCat(curCat);
             } catch(e){ loading.textContent='Error: '+e.message; }
+        }
+
+        function paintNote(){
+            document.getElementById('srcNote').textContent = LANG === 'tr'
+                ? `Kaynak: EPREL (Avrupa Enerji Etiketi Ürün Kayıt Sistemi), ${EPREL.generated||'—'} tarihinde tarandı. `
+                    + `"A-30%" biçimindeki enerji sınıfları, modelin EEI değerinin sınıf tavanının ne kadar altında olduğunu gösterir. `
+                    + `⚠ işareti, bildirilen değerleri birbiriyle çelişen bir kaydı belirtir.`
+                : `Source: EPREL (European Product Registry for Energy Labelling), scraped ${EPREL.generated||'—'}. `
+                    + `Energy classes shown as "A-30%" indicate how far below the class ceiling the model's EEI sits. `
+                    + `⚠ marks a registration whose declared values contradict each other.`;
         }
 
         function selectCat(key){
@@ -201,9 +221,9 @@
             document.getElementById('eSearch').value = '';
             ['eTracked','eBest'].forEach(id=> document.getElementById(id).checked=false);
             const c = ecat();
-            document.getElementById('eBrand').innerHTML = '<option value="All">All brands</option>' +
+            document.getElementById('eBrand').innerHTML = `<option value="All">${t('ep.allBrands')}</option>` +
                 Object.entries((c&&c.brand_counts)||{}).map(([b,n])=>`<option value="${esc(b)}">${esc(b)} (${n})</option>`).join('');
-            document.getElementById('eClass').innerHTML = '<option value="All">All energy classes</option>' +
+            document.getElementById('eClass').innerHTML = `<option value="All">${t('ep.allClasses')}</option>` +
                 ((c&&c.class_order)||[]).filter(x=>(c.class_counts||{})[x]).map(x=>`<option value="${esc(x)}">${esc(x)} (${c.class_counts[x]})</option>`).join('');
             render();
         }
@@ -255,33 +275,37 @@
             const cols = c.columns||[], list = rows(), page = list.slice(0, eShown), tset = trackedSet();
 
             document.getElementById('eprelStats').innerHTML = [
-                ['Models', list.length],
-                ['Brands', new Set(list.map(r=>r.brand)).size],
-                ['Best class', (list.find(r=>r.classLabel)||{}).classLabel || '—'],
-                ['Regulation', c.regulation||'—'],
+                [LANG==='tr'?'Model':'Models', list.length],
+                [LANG==='tr'?'Marka':'Brands', new Set(list.map(r=>r.brand)).size],
+                [t('ep.bestClass'), (list.find(r=>r.classLabel)||{}).classLabel || '—'],
+                [LANG==='tr'?'Yönetmelik':'Regulation', c.regulation||'—'],
             ].map(([l,n])=>`<div class="estat"><div class="n">${esc(n)}</div><div class="l">${esc(l)}</div></div>`).join('');
 
             const head = `<thead><tr><th class="num" onclick="sortBy('rank')">#</th>` + cols.map(col=>{
                 const cn = (col.type==='num'?'num ':'') + (eSort.key===col.key?'sorted':'');
                 const arrow = eSort.key===col.key ? (eSort.dir===1?' ↑':' ↓') : '';
-                return `<th class="${cn}" onclick="sortBy('${col.key}')">${esc(col.label)}${col.unit?` <span class="u">${esc(col.unit)}</span>`:''}${arrow}</th>`;
+                return `<th class="${cn}" onclick="sortBy('${col.key}')">${esc(L(col))}${col.unit?` <span class="u">${esc(col.unit)}</span>`:''}${arrow}</th>`;
             }).join('') + '</tr></thead>';
 
             const body = page.map(r=>{
                 const tr = tset.has(r.brand) ? ' class="tracked"' : '';
-                const flag = r.dataFlag ? ' <span class="flag" title="EPREL registration declares values that contradict each other">⚠</span>' : '';
+                const flag = r.dataFlag ? ` <span class="flag" title="${t('ep.flagHint')}">⚠</span>` : '';
                 return `<tr${tr}><td class="rk">${r.rank}</td>` + cols.map(col=>{
                     const cn = col.type==='num' ? 'num' : (col.key==='model' ? 'mdl' : (col.key==='brand' ? 'brd' : ''));
                     const extra = col.key==='model' ? flag : '';
                     return `<td class="${cn}"${col.key==='model'?` title="${esc(r.model)}"`:''}>${cell(r,col)}${extra}</td>`;
                 }).join('') + '</tr>';
-            }).join('') || `<tr><td colspan="${cols.length+1}" class="empty">No models match these filters.</td></tr>`;
+            }).join('') || `<tr><td colspan="${cols.length+1}" class="empty">${t('ep.empty')}</td></tr>`;
 
             document.getElementById('btable').innerHTML = head + `<tbody>${body}</tbody>`;
-            document.getElementById('eCount').textContent = `${Math.min(eShown, list.length)} of ${list.length} shown`;
+            document.getElementById('eCount').textContent = LANG==='tr'
+                ? `${list.length} modelden ${Math.min(eShown, list.length)} tanesi gösteriliyor`
+                : `${Math.min(eShown, list.length)} of ${list.length} shown`;
             const more = document.getElementById('eMore');
             more.disabled = eShown >= list.length;
-            more.textContent = more.disabled ? 'All shown' : `Show ${Math.min(E_PAGE, list.length-eShown)} more`;
+            more.textContent = more.disabled ? t('ep.allShown')
+                : (LANG==='tr' ? `${Math.min(E_PAGE, list.length-eShown)} tane daha göster`
+                               : `Show ${Math.min(E_PAGE, list.length-eShown)} more`);
         }
 
         function sortBy(key){
@@ -397,8 +421,8 @@
         function exportXlsx(){
             const c = ecat(); if (!c) return;
             const cols = (c.columns||[]).filter(col=>col.type!=='link');
-            const header = ['#', ...cols.map(col=> col.unit ? `${col.label} (${col.unit})` : col.label),
-                            'EPREL link', 'Data flag'];
+            const header = ['#', ...cols.map(col=> col.unit ? `${L(col)} (${col.unit})` : L(col)),
+                            LANG==='tr'?'EPREL bağlantısı':'EPREL link', LANG==='tr'?'Veri uyarısı':'Data flag'];
             const body = rows().map(r=>[
                 r.rank,
                 ...cols.map(col=>{
@@ -408,7 +432,7 @@
                 }),
                 r.url || '', r.dataFlag || ''
             ]);
-            const blob = new Blob([buildXlsx(c.label, header, body)],
+            const blob = new Blob([buildXlsx(tCat(curCat, c.label), header, body)],
                                   {type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
             const a = document.createElement('a');
             a.href = URL.createObjectURL(blob);

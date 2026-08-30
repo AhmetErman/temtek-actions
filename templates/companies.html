@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="i18n-title" content="title.companies">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company News — Appliance Tracker</title>
     <meta name="description" content="Home-appliance company newsroom tracker (since 2023).">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="/static/i18n.js"></script>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -79,29 +81,30 @@
 <body>
     <header class="site-header">
         <div class="header-inner">
-            <div class="logo"><div class="logo-icon">C</div> Company News</div>
+            <div class="logo"><div class="logo-icon">C</div> <span data-i18n="co.title">Company News</span></div>
             <nav class="nav">
-                <a href="/">Tech News</a>
-                <a href="/companies" class="active">Company News</a>
-                <a href="/products">Products</a>
+                <a href="/" data-i18n="nav.news">Tech News</a>
+                <a href="/companies" class="active" data-i18n="nav.companies">Company News</a>
+                <a href="/products" data-i18n="nav.products">Products</a>
             </nav>
             <div class="header-controls">
-                <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span><span id="themeText">Light</span></button>
+                <button class="theme-toggle" id="langToggle" title="Switch language">TR</button>
+                <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span><span id="themeText" data-i18n="theme.light">Light</span></button>
             </div>
         </div>
     </header>
 
     <main class="wrap">
-        <div class="page-title">Company News</div>
-        <div class="page-sub" id="pageSub">Press releases from top home-appliance companies.</div>
+        <div class="page-title" data-i18n="co.title">Company News</div>
+        <div class="page-sub" id="pageSub" data-i18n="co.sub">Press releases from top home-appliance companies.</div>
 
-        <div id="loading" class="loading"><div class="spinner"></div>Loading company data…</div>
+        <div id="loading" class="loading"><div class="spinner"></div><span data-i18n="co.loading">Loading company data…</span></div>
 
         <div id="content" style="display:none;">
             <div class="toolbar">
-                <div class="search-box"><input type="text" id="search" placeholder="Search releases…"></div>
-                <select id="themeFilter"><option value="All">All themes</option></select>
-                <select id="sortOrder"><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select>
+                <div class="search-box"><input type="text" id="search" data-i18n-ph="co.search" placeholder="Search releases…"></div>
+                <select id="themeFilter"><option value="All" data-i18n="co.allThemes">All themes</option></select>
+                <select id="sortOrder"><option value="newest" data-i18n="sort.newest">Newest first</option><option value="oldest" data-i18n="sort.oldest">Oldest first</option></select>
             </div>
             <div class="chips" id="companyChips"></div>
 
@@ -124,7 +127,7 @@
         function syncThemeBtn() {
             const dark = document.body.classList.contains('dark-theme');
             document.getElementById('themeIcon').textContent = dark ? '🌙' : '☀️';
-            document.getElementById('themeText').textContent = dark ? 'Dark' : 'Light';
+            document.getElementById('themeText').textContent = dark ? t('theme.dark') : t('theme.light');
         }
         document.getElementById('themeToggle').addEventListener('click', () => {
             document.body.classList.toggle('dark-theme');
@@ -132,22 +135,28 @@
             syncThemeBtn();
         });
 
-        function fmtDate(s){ if(!s) return ''; const d=new Date(s); return isNaN(d)?s:d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'}); }
+        function fmtDate(s){ if(!s) return ''; const d=new Date(s); return isNaN(d)?s:d.toLocaleDateString(LANG==='tr'?'tr-TR':'en-US',{year:'numeric',month:'short',day:'numeric'}); }
 
         async function init() {
             initTheme();
             try {
                 const [n, a] = await Promise.all([
-                    fetch('/api/company-news').then(r=>r.json()),
+                    fetch('/api/company-news' + langQuery()).then(r=>r.json()),
                     fetch('/api/company-analysis').then(r=>r.json())
                 ]);
                 NEWS = Array.isArray(n) ? n : [];
                 ANALYSIS = a || {};
                 (ANALYSIS.companies||[]).forEach((c,i)=> COLOR[c]=PALETTE[i%PALETTE.length]);
                 document.getElementById('loading').style.display='none';
-                if (!NEWS.length) { document.getElementById('content').innerHTML='<div class="empty">No company data yet. Run the company pipeline.</div>'; document.getElementById('content').style.display='block'; return; }
+                if (!NEWS.length) { document.getElementById('content').innerHTML=`<div class="empty">${t('co.noData')}</div>`; document.getElementById('content').style.display='block'; return; }
                 document.getElementById('content').style.display='block';
                 buildControls(); render();
+                initLang(async () => {
+                    NEWS = await (await fetch('/api/company-news' + langQuery())).json();
+                    const tf = document.getElementById('themeFilter');
+                    [...tf.options].forEach(o => { if (o.value !== 'All') o.textContent = tTheme(o.value); });
+                    render();
+                });
             } catch(e) {
                 document.getElementById('loading').innerHTML='Error: '+e.message;
             }
@@ -156,11 +165,11 @@
         function buildControls() {
             const chips = document.getElementById('companyChips');
             const comps = ANALYSIS.companies||[];
-            let html = `<button class="chip active" data-c="All" onclick="selCompany(this)">All</button>`;
+            let html = `<button class="chip active" data-c="All" onclick="selCompany(this)">${t('common.all')}</button>`;
             comps.forEach(c => { html += `<button class="chip" data-c="${c}" onclick="selCompany(this)"><span class="dot" style="background:${COLOR[c]}"></span>${c}</button>`; });
             chips.innerHTML = html;
             const tf = document.getElementById('themeFilter');
-            (ANALYSIS.themes||[]).forEach(t => { const o=document.createElement('option'); o.value=t; o.textContent=t; tf.appendChild(o); });
+            (ANALYSIS.themes||[]).forEach(name => { const o=document.createElement('option'); o.value=name; o.textContent=tTheme(name); tf.appendChild(o); });
             document.getElementById('search').addEventListener('input', e=>{ curSearch=e.target.value.trim().toLowerCase(); render(); });
             tf.addEventListener('change', e=>{ curTheme=e.target.value; render(); });
             document.getElementById('sortOrder').addEventListener('change', e=>{ curSort=e.target.value; render(); });
@@ -178,12 +187,12 @@
 
         function render() {
             const list = filtered();
-            document.getElementById('resultCount').textContent = `${list.length} release${list.length!==1?'s':''}` + (curCompany!=='All'?` · ${curCompany}`:'') + (curTheme!=='All'?` · ${curTheme}`:'');
+            document.getElementById('resultCount').textContent = `${list.length} ${list.length!==1?t('co.releases'):t('co.release')}` + (curCompany!=='All'?` · ${curCompany}`:'') + (curTheme!=='All'?` · ${tTheme(curTheme)}`:'');
             const feed = document.getElementById('feed');
-            if (!list.length) { feed.innerHTML='<div class="empty">No releases match your filters.</div>'; return; }
+            if (!list.length) { feed.innerHTML=`<div class="empty">${t('co.empty')}</div>`; return; }
             feed.innerHTML = list.slice(0,300).map(a=>{
                 const col = COLOR[a.company]||'#888';
-                const themes = (a.themes||[]).filter(t=>t!=='Other').slice(0,4).map(t=>`<span class="ttag">${t}</span>`).join('');
+                const themes = (a.themes||[]).filter(x=>x!=='Other').slice(0,4).map(x=>`<span class="ttag">${tTheme(x)}</span>`).join('');
                 const thumb = a.image ? `<img class="thumb" src="${a.image}" loading="lazy" onerror="this.style.display='none'">` : '';
                 return `<div class="card"><div class="card-main">
                     <div class="card-meta"><span class="badge" style="background:${col}">${a.company}</span><span class="card-date">${fmtDate(a.date)}</span></div>

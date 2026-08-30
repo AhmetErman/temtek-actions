@@ -12,111 +12,140 @@
     {
      "key": "autodose",
      "label": "Automatic detergent dosing",
-     "short": "Auto-dose"
+     "short": "Auto-dose",
+     "label_tr": "Otomatik deterjan dozajlama",
+     "short_tr": "Oto-dozaj"
     },
     {
      "key": "ai",
      "label": "AI load & fabric sensing",
-     "short": "AI sensing"
+     "short": "AI sensing",
+     "label_tr": "Yapay zekâ yük ve kumaş algılama",
+     "short_tr": "YZ algılama"
     },
     {
      "key": "microplastic",
      "label": "Microplastic / microfibre filter",
-     "short": "Microplastic"
+     "short": "Microplastic",
+     "label_tr": "Mikroplastik / mikrofiber filtre",
+     "short_tr": "Mikroplastik"
     },
     {
      "key": "steam",
      "label": "Steam programme",
-     "short": "Steam"
+     "short": "Steam",
+     "label_tr": "Buhar programı",
+     "short_tr": "Buhar"
     },
     {
      "key": "directdrive",
      "label": "Direct-drive (beltless) motor",
-     "short": "Direct drive"
+     "short": "Direct drive",
+     "label_tr": "Direkt tahrikli (kayışsız) motor",
+     "short_tr": "Direkt tahrik"
     },
     {
      "key": "additem",
      "label": "Add garment mid-cycle",
-     "short": "Add-item"
+     "short": "Add-item",
+     "label_tr": "Program sırasında çamaşır ekleme",
+     "short_tr": "Çamaşır ekle"
     },
     {
      "key": "dosescan",
      "label": "Detergent recognition / dosing assistant",
-     "short": "Dose scan"
+     "short": "Dose scan",
+     "label_tr": "Deterjan tanıma / dozaj asistanı",
+     "short_tr": "Dozaj tarama"
     },
     {
      "key": "recycled",
      "label": "Recycled-material drum or tub",
-     "short": "Recycled"
+     "short": "Recycled",
+     "label_tr": "Geri dönüştürülmüş malzemeli kazan",
+     "short_tr": "Geri dönüşüm"
     }
    ],
    "specColumns": [
     {
      "key": "design",
      "label": "Installation",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Montaj Tipi"
     },
     {
      "key": "capacity",
      "label": "Capacity",
      "type": "num",
-     "unit": "kg"
+     "unit": "kg",
+     "label_tr": "Kapasite"
     },
     {
      "key": "classDetail",
      "label": "Energy Class",
-     "type": "class"
+     "type": "class",
+     "label_tr": "Enerji Sınıfı"
     },
     {
      "key": "eei",
      "label": "EEI",
-     "type": "num"
+     "type": "num",
+     "label_tr": "EEI"
     },
     {
      "key": "energy100",
      "label": "Energy",
      "type": "num",
-     "unit": "kWh/100"
+     "unit": "kWh/100",
+     "label_tr": "Enerji"
     },
     {
      "key": "programTimeText",
      "label": "Eco Programme Time",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Eko Program Süresi"
     },
     {
      "key": "water",
      "label": "Water",
      "type": "num",
-     "unit": "L/cycle"
+     "unit": "L/cycle",
+     "label_tr": "Su"
     },
     {
      "key": "spin",
      "label": "Spin Speed",
      "type": "num",
-     "unit": "rpm"
+     "unit": "rpm",
+     "label_tr": "Sıkma Devri"
     },
     {
      "key": "spinClass",
      "label": "Spin Class",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Sıkma Sınıfı"
     },
     {
      "key": "washIndex",
      "label": "Wash Index",
-     "type": "num"
+     "type": "num",
+     "label_tr": "Yıkama İndeksi"
     },
     {
      "key": "noise",
      "label": "Noise",
      "type": "num",
-     "unit": "dB"
+     "unit": "dB",
+     "label_tr": "Gürültü"
     },
     {
      "key": "noiseClass",
      "label": "Noise Class",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Gürültü Sınıfı"
     }
-   ]
+   ],
+   "label_tr": "Çamaşır Makineleri"
   },
   {
    "key": "washer-dryer",
@@ -127,112 +156,141 @@
     {
      "key": "heatpump",
      "label": "Heat-pump (ventless) drying",
-     "short": "Heat-pump"
+     "short": "Heat-pump",
+     "label_tr": "Isı pompalı (bacasız) kurutma",
+     "short_tr": "Isı pompası"
     },
     {
      "key": "autodose",
      "label": "Automatic detergent dosing",
-     "short": "Auto-dose"
+     "short": "Auto-dose",
+     "label_tr": "Otomatik deterjan dozajlama",
+     "short_tr": "Oto-dozaj"
     },
     {
      "key": "ai",
      "label": "AI load & fabric sensing",
-     "short": "AI sensing"
+     "short": "AI sensing",
+     "label_tr": "Yapay zekâ yük ve kumaş algılama",
+     "short_tr": "YZ algılama"
     },
     {
      "key": "nonstop",
      "label": "Full load wash-to-dry without unloading",
-     "short": "Non-stop"
+     "short": "Non-stop",
+     "label_tr": "Boşaltmadan tam yük yıkama-kurutma",
+     "short_tr": "Kesintisiz"
     },
     {
      "key": "autodry",
      "label": "Sensor-controlled dryness level",
-     "short": "Auto-dry"
+     "short": "Auto-dry",
+     "label_tr": "Sensör kontrollü kuruluk seviyesi",
+     "short_tr": "Oto-kurutma"
     },
     {
      "key": "steam",
      "label": "Steam programme",
-     "short": "Steam"
+     "short": "Steam",
+     "label_tr": "Buhar programı",
+     "short_tr": "Buhar"
     },
     {
      "key": "directdrive",
      "label": "Direct-drive (beltless) motor",
-     "short": "Direct drive"
+     "short": "Direct drive",
+     "label_tr": "Direkt tahrikli (kayışsız) motor",
+     "short_tr": "Direkt tahrik"
     },
     {
      "key": "microplastic",
      "label": "Microplastic / microfibre filter",
-     "short": "Microplastic"
+     "short": "Microplastic",
+     "label_tr": "Mikroplastik / mikrofiber filtre",
+     "short_tr": "Mikroplastik"
     }
    ],
    "specColumns": [
     {
      "key": "dryingTech",
      "label": "Drying Technology (est.)",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Kurutma Teknolojisi (tahmini)"
     },
     {
      "key": "capacity",
      "label": "Capacity Wash-Dry",
      "type": "num",
-     "unit": "kg"
+     "unit": "kg",
+     "label_tr": "Yıkama-Kurutma Kapasitesi"
     },
     {
      "key": "classDetail",
      "label": "Energy Class (Wash & Dry)",
-     "type": "class"
+     "type": "class",
+     "label_tr": "Enerji Sınıfı (Yıkama ve Kurutma)"
     },
     {
      "key": "eei",
      "label": "EEI (Wash & Dry)",
-     "type": "num"
+     "type": "num",
+     "label_tr": "EEI (Yıkama ve Kurutma)"
     },
     {
      "key": "energy100",
      "label": "Energy (W&D)",
      "type": "num",
-     "unit": "kWh/100"
+     "unit": "kWh/100",
+     "label_tr": "Enerji (Y&K)"
     },
     {
      "key": "programTimeText",
      "label": "Eco Programme Time W&D",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Eko Program Süresi (Y&K)"
     },
     {
      "key": "water",
      "label": "Water Wash & Dry",
      "type": "num",
-     "unit": "L/cycle"
+     "unit": "L/cycle",
+     "label_tr": "Su (Yıkama ve Kurutma)"
     },
     {
      "key": "capacityWash",
      "label": "Capacity Wash",
      "type": "num",
-     "unit": "kg"
+     "unit": "kg",
+     "label_tr": "Yıkama Kapasitesi"
     },
     {
      "key": "classDetailWash",
      "label": "Energy Class (Wash)",
-     "type": "class"
+     "type": "class",
+     "label_tr": "Enerji Sınıfı (Yıkama)"
     },
     {
      "key": "eeiWash",
      "label": "EEI (Wash)",
-     "type": "num"
+     "type": "num",
+     "label_tr": "EEI (Yıkama)"
     },
     {
      "key": "spin",
      "label": "Spin Speed",
      "type": "num",
-     "unit": "rpm"
+     "unit": "rpm",
+     "label_tr": "Sıkma Devri"
     },
     {
      "key": "waterWash",
      "label": "Water Wash",
      "type": "num",
-     "unit": "L/cycle"
+     "unit": "L/cycle",
+     "label_tr": "Su (Yıkama)"
     }
-   ]
+   ],
+   "label_tr": "Kurutmalı Çamaşır Makineleri"
   },
   {
    "key": "dryer",
@@ -243,95 +301,121 @@
     {
      "key": "heatpump",
      "label": "Heat-pump condenser",
-     "short": "Heat-pump"
+     "short": "Heat-pump",
+     "label_tr": "Isı pompalı yoğuşmalı",
+     "short_tr": "Isı pompası"
     },
     {
      "key": "ai",
      "label": "AI / adaptive drying programme",
-     "short": "AI drying"
+     "short": "AI drying",
+     "label_tr": "Yapay zekâ / uyarlanabilir kurutma programı",
+     "short_tr": "YZ kurutma"
     },
     {
      "key": "steam",
      "label": "Steam refresh & de-wrinkle",
-     "short": "Steam"
+     "short": "Steam",
+     "label_tr": "Buharla tazeleme ve kırışık giderme",
+     "short_tr": "Buhar"
     },
     {
      "key": "selfclean",
      "label": "Self-cleaning condenser",
-     "short": "Self-clean"
+     "short": "Self-clean",
+     "label_tr": "Kendini temizleyen kondenser",
+     "short_tr": "Oto-temizlik"
     },
     {
      "key": "reverse",
      "label": "Reverse-tumble anti-crease",
-     "short": "Reverse"
+     "short": "Reverse",
+     "label_tr": "Ters yönlü dönüşle kırışık önleme",
+     "short_tr": "Ters dönüş"
     },
     {
      "key": "wifi",
      "label": "Wi-Fi / app control",
-     "short": "Wi-Fi"
+     "short": "Wi-Fi",
+     "label_tr": "Wi-Fi / uygulama kontrolü",
+     "short_tr": "Wi-Fi"
     },
     {
      "key": "heatex",
      "label": "Maintenance-free heat exchanger",
-     "short": "No-clean HX"
+     "short": "No-clean HX",
+     "label_tr": "Bakım gerektirmeyen ısı eşanjörü",
+     "short_tr": "Bakımsız eşanjör"
     },
     {
      "key": "rackdry",
      "label": "Static rack for shoes / wool",
-     "short": "Rack dry"
+     "short": "Rack dry",
+     "label_tr": "Ayakkabı / yün için sabit raf",
+     "short_tr": "Sabit raf"
     }
    ],
    "specColumns": [
     {
      "key": "dryingTech",
      "label": "Drying Technology (est.)",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Kurutma Teknolojisi (tahmini)"
     },
     {
      "key": "capacity",
      "label": "Capacity",
      "type": "num",
-     "unit": "kg"
+     "unit": "kg",
+     "label_tr": "Kapasite"
     },
     {
      "key": "classDetail",
      "label": "Energy Class",
-     "type": "class"
+     "type": "class",
+     "label_tr": "Enerji Sınıfı"
     },
     {
      "key": "energyAnnual",
      "label": "Energy",
      "type": "num",
-     "unit": "kWh/year"
+     "unit": "kWh/year",
+     "label_tr": "Enerji"
     },
     {
      "key": "energyFull",
      "label": "Energy Full Load",
      "type": "num",
-     "unit": "kWh"
+     "unit": "kWh",
+     "label_tr": "Tam Yük Enerjisi"
     },
     {
      "key": "programTimeText",
      "label": "Weighted Programme Time",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Ağırlıklı Program Süresi"
     },
     {
      "key": "condensationClass",
      "label": "Condensation Class",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Yoğuşma Sınıfı"
     },
     {
      "key": "noise",
      "label": "Noise",
      "type": "num",
-     "unit": "dB"
+     "unit": "dB",
+     "label_tr": "Gürültü"
     },
     {
      "key": "autoDry",
      "label": "Auto-dry",
-     "type": "bool"
+     "type": "bool",
+     "label_tr": "Otomatik Kurutma"
     }
-   ]
+   ],
+   "label_tr": "Kurutma Makineleri"
   },
   {
    "key": "dishwasher",
@@ -342,104 +426,132 @@
     {
      "key": "autoopen",
      "label": "Auto-open door drying",
-     "short": "Auto-open"
+     "short": "Auto-open",
+     "label_tr": "Otomatik kapak açmalı kurutma",
+     "short_tr": "Oto-açılım"
     },
     {
      "key": "zeolith",
      "label": "Zeolith drying",
-     "short": "Zeolith"
+     "short": "Zeolith",
+     "label_tr": "Zeolit kurutma",
+     "short_tr": "Zeolit"
     },
     {
      "key": "autodose",
      "label": "Automatic detergent dosing",
-     "short": "Auto-dose"
+     "short": "Auto-dose",
+     "label_tr": "Otomatik deterjan dozajlama",
+     "short_tr": "Oto-dozaj"
     },
     {
      "key": "thirdrack",
      "label": "Third cutlery rack",
-     "short": "3rd rack"
+     "short": "3rd rack",
+     "label_tr": "Üçüncü çatal-bıçak sepeti",
+     "short_tr": "3. sepet"
     },
     {
      "key": "zonewash",
      "label": "Zone / half-load intensive wash",
-     "short": "Zone wash"
+     "short": "Zone wash",
+     "label_tr": "Bölgesel / yarım yük yoğun yıkama",
+     "short_tr": "Bölgesel yıkama"
     },
     {
      "key": "ai",
      "label": "Sensor / AI automatic programme",
-     "short": "AI sensing"
+     "short": "AI sensing",
+     "label_tr": "Sensör / yapay zekâ otomatik programı",
+     "short_tr": "YZ algılama"
     },
     {
      "key": "softener",
      "label": "Built-in water softener",
-     "short": "Softener"
+     "short": "Softener",
+     "label_tr": "Dahili su yumuşatıcı",
+     "short_tr": "Su yumuşatıcı"
     },
     {
      "key": "wifi",
      "label": "Wi-Fi / app control",
-     "short": "Wi-Fi"
+     "short": "Wi-Fi",
+     "label_tr": "Wi-Fi / uygulama kontrolü",
+     "short_tr": "Wi-Fi"
     }
    ],
    "specColumns": [
     {
      "key": "design",
      "label": "Installation",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Montaj Tipi"
     },
     {
      "key": "capacity",
      "label": "Place Settings",
-     "type": "num"
+     "type": "num",
+     "label_tr": "Kişilik Kapasite"
     },
     {
      "key": "classDetail",
      "label": "Energy Class",
-     "type": "class"
+     "type": "class",
+     "label_tr": "Enerji Sınıfı"
     },
     {
      "key": "eei",
      "label": "EEI",
-     "type": "num"
+     "type": "num",
+     "label_tr": "EEI"
     },
     {
      "key": "energy100",
      "label": "Energy",
      "type": "num",
-     "unit": "kWh/100"
+     "unit": "kWh/100",
+     "label_tr": "Enerji"
     },
     {
      "key": "programTimeText",
      "label": "Eco Programme Time",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Eko Program Süresi"
     },
     {
      "key": "water",
      "label": "Water",
      "type": "num",
-     "unit": "L/cycle"
+     "unit": "L/cycle",
+     "label_tr": "Su"
     },
     {
      "key": "cleaningIndex",
      "label": "Cleaning Index",
-     "type": "num"
+     "type": "num",
+     "label_tr": "Temizleme İndeksi"
     },
     {
      "key": "dryingIndex",
      "label": "Drying Index",
-     "type": "num"
+     "type": "num",
+     "label_tr": "Kurutma İndeksi"
     },
     {
      "key": "noise",
      "label": "Noise",
      "type": "num",
-     "unit": "dB"
+     "unit": "dB",
+     "label_tr": "Gürültü"
     },
     {
      "key": "noiseClass",
      "label": "Noise Class",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Gürültü Sınıfı"
     }
-   ]
+   ],
+   "label_tr": "Bulaşık Makineleri"
   }
  ],
  "products": [

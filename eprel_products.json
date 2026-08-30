@@ -46,87 +46,103 @@
     {
      "key": "brand",
      "label": "Brand",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Marka"
     },
     {
      "key": "model",
      "label": "Model",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Model"
     },
     {
      "key": "design",
      "label": "Installation",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Montaj Tipi"
     },
     {
      "key": "capacity",
      "label": "Capacity",
      "type": "num",
-     "unit": "kg"
+     "unit": "kg",
+     "label_tr": "Kapasite"
     },
     {
      "key": "classDetail",
      "label": "Energy Class",
-     "type": "class"
+     "type": "class",
+     "label_tr": "Enerji Sınıfı"
     },
     {
      "key": "eei",
      "label": "EEI",
-     "type": "num"
+     "type": "num",
+     "label_tr": "EEI"
     },
     {
      "key": "energy100",
      "label": "Energy",
      "type": "num",
-     "unit": "kWh/100"
+     "unit": "kWh/100",
+     "label_tr": "Enerji"
     },
     {
      "key": "programTimeText",
      "label": "Eco Programme Time",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Eko Program Süresi"
     },
     {
      "key": "water",
      "label": "Water",
      "type": "num",
-     "unit": "L/cycle"
+     "unit": "L/cycle",
+     "label_tr": "Su"
     },
     {
      "key": "spin",
      "label": "Spin Speed",
      "type": "num",
-     "unit": "rpm"
+     "unit": "rpm",
+     "label_tr": "Sıkma Devri"
     },
     {
      "key": "spinClass",
      "label": "Spin Class",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Sıkma Sınıfı"
     },
     {
      "key": "washIndex",
      "label": "Wash Index",
-     "type": "num"
+     "type": "num",
+     "label_tr": "Yıkama İndeksi"
     },
     {
      "key": "noise",
      "label": "Noise",
      "type": "num",
-     "unit": "dB"
+     "unit": "dB",
+     "label_tr": "Gürültü"
     },
     {
      "key": "noiseClass",
      "label": "Noise Class",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Gürültü Sınıfı"
     },
     {
      "key": "marketStart",
      "label": "On Market Since",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Piyasaya Çıkış"
     },
     {
      "key": "url",
      "label": "EPREL",
-     "type": "link"
+     "type": "link",
+     "label_tr": "EPREL"
     }
    ],
    "registered_total": 23005,
@@ -29238,7 +29254,8 @@
      "programTimeText": "3 hours, 48 mins",
      "rank": 1000
     }
-   ]
+   ],
+   "label_tr": "Çamaşır Makineleri"
   },
   "washer-dryer": {
    "label": "Washer-Dryers",
@@ -29263,88 +29280,104 @@
     {
      "key": "brand",
      "label": "Brand",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Marka"
     },
     {
      "key": "dryingTech",
      "label": "Drying Technology (est.)",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Kurutma Teknolojisi (tahmini)"
     },
     {
      "key": "model",
      "label": "Model",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Model"
     },
     {
      "key": "capacity",
      "label": "Capacity Wash-Dry",
      "type": "num",
-     "unit": "kg"
+     "unit": "kg",
+     "label_tr": "Yıkama-Kurutma Kapasitesi"
     },
     {
      "key": "classDetail",
      "label": "Energy Class (Wash & Dry)",
-     "type": "class"
+     "type": "class",
+     "label_tr": "Enerji Sınıfı (Yıkama ve Kurutma)"
     },
     {
      "key": "eei",
      "label": "EEI (Wash & Dry)",
-     "type": "num"
+     "type": "num",
+     "label_tr": "EEI (Yıkama ve Kurutma)"
     },
     {
      "key": "energy100",
      "label": "Energy (W&D)",
      "type": "num",
-     "unit": "kWh/100"
+     "unit": "kWh/100",
+     "label_tr": "Enerji (Y&K)"
     },
     {
      "key": "programTimeText",
      "label": "Eco Programme Time W&D",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Eko Program Süresi (Y&K)"
     },
     {
      "key": "water",
      "label": "Water Wash & Dry",
      "type": "num",
-     "unit": "L/cycle"
+     "unit": "L/cycle",
+     "label_tr": "Su (Yıkama ve Kurutma)"
     },
     {
      "key": "capacityWash",
      "label": "Capacity Wash",
      "type": "num",
-     "unit": "kg"
+     "unit": "kg",
+     "label_tr": "Yıkama Kapasitesi"
     },
     {
      "key": "classDetailWash",
      "label": "Energy Class (Wash)",
-     "type": "class"
+     "type": "class",
+     "label_tr": "Enerji Sınıfı (Yıkama)"
     },
     {
      "key": "eeiWash",
      "label": "EEI (Wash)",
-     "type": "num"
+     "type": "num",
+     "label_tr": "EEI (Yıkama)"
     },
     {
      "key": "spin",
      "label": "Spin Speed",
      "type": "num",
-     "unit": "rpm"
+     "unit": "rpm",
+     "label_tr": "Sıkma Devri"
     },
     {
      "key": "waterWash",
      "label": "Water Wash",
      "type": "num",
-     "unit": "L/cycle"
+     "unit": "L/cycle",
+     "label_tr": "Su (Yıkama)"
     },
     {
      "key": "marketStart",
      "label": "On Market Since",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Piyasaya Çıkış"
     },
     {
      "key": "url",
      "label": "EPREL",
-     "type": "link"
+     "type": "link",
+     "label_tr": "EPREL"
     }
    ],
    "registered_total": 3270,
@@ -63476,7 +63509,8 @@
      "programTimeText": "7 hours, 59 mins",
      "rank": 1000
     }
-   ]
+   ],
+   "label_tr": "Kurutmalı Çamaşır Makineleri"
   },
   "dryer": {
    "label": "Dryers",
@@ -63501,71 +63535,84 @@
     {
      "key": "brand",
      "label": "Brand",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Marka"
     },
     {
      "key": "dryingTech",
      "label": "Drying Technology (est.)",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Kurutma Teknolojisi (tahmini)"
     },
     {
      "key": "model",
      "label": "Model",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Model"
     },
     {
      "key": "capacity",
      "label": "Capacity",
      "type": "num",
-     "unit": "kg"
+     "unit": "kg",
+     "label_tr": "Kapasite"
     },
     {
      "key": "classDetail",
      "label": "Energy Class",
-     "type": "class"
+     "type": "class",
+     "label_tr": "Enerji Sınıfı"
     },
     {
      "key": "energyAnnual",
      "label": "Energy",
      "type": "num",
-     "unit": "kWh/year"
+     "unit": "kWh/year",
+     "label_tr": "Enerji"
     },
     {
      "key": "energyFull",
      "label": "Energy Full Load",
      "type": "num",
-     "unit": "kWh"
+     "unit": "kWh",
+     "label_tr": "Tam Yük Enerjisi"
     },
     {
      "key": "programTimeText",
      "label": "Weighted Programme Time",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Ağırlıklı Program Süresi"
     },
     {
      "key": "condensationClass",
      "label": "Condensation Class",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Yoğuşma Sınıfı"
     },
     {
      "key": "noise",
      "label": "Noise",
      "type": "num",
-     "unit": "dB"
+     "unit": "dB",
+     "label_tr": "Gürültü"
     },
     {
      "key": "autoDry",
      "label": "Auto-dry",
-     "type": "bool"
+     "type": "bool",
+     "label_tr": "Otomatik Kurutma"
     },
     {
      "key": "marketStart",
      "label": "On Market Since",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Piyasaya Çıkış"
     },
     {
      "key": "url",
      "label": "EPREL",
-     "type": "link"
+     "type": "link",
+     "label_tr": "EPREL"
     }
    ],
    "registered_total": 5674,
@@ -92635,7 +92682,8 @@
      "programTimeText": "2 hours, 35 mins",
      "rank": 1000
     }
-   ]
+   ],
+   "label_tr": "Kurutma Makineleri"
   },
   "dishwasher": {
    "label": "Dishwashers",
@@ -92660,80 +92708,95 @@
     {
      "key": "brand",
      "label": "Brand",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Marka"
     },
     {
      "key": "model",
      "label": "Model",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Model"
     },
     {
      "key": "design",
      "label": "Installation",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Montaj Tipi"
     },
     {
      "key": "capacity",
      "label": "Place Settings",
-     "type": "num"
+     "type": "num",
+     "label_tr": "Kişilik Kapasite"
     },
     {
      "key": "classDetail",
      "label": "Energy Class",
-     "type": "class"
+     "type": "class",
+     "label_tr": "Enerji Sınıfı"
     },
     {
      "key": "eei",
      "label": "EEI",
-     "type": "num"
+     "type": "num",
+     "label_tr": "EEI"
     },
     {
      "key": "energy100",
      "label": "Energy",
      "type": "num",
-     "unit": "kWh/100"
+     "unit": "kWh/100",
+     "label_tr": "Enerji"
     },
     {
      "key": "programTimeText",
      "label": "Eco Programme Time",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Eko Program Süresi"
     },
     {
      "key": "water",
      "label": "Water",
      "type": "num",
-     "unit": "L/cycle"
+     "unit": "L/cycle",
+     "label_tr": "Su"
     },
     {
      "key": "cleaningIndex",
      "label": "Cleaning Index",
-     "type": "num"
+     "type": "num",
+     "label_tr": "Temizleme İndeksi"
     },
     {
      "key": "dryingIndex",
      "label": "Drying Index",
-     "type": "num"
+     "type": "num",
+     "label_tr": "Kurutma İndeksi"
     },
     {
      "key": "noise",
      "label": "Noise",
      "type": "num",
-     "unit": "dB"
+     "unit": "dB",
+     "label_tr": "Gürültü"
     },
     {
      "key": "noiseClass",
      "label": "Noise Class",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Gürültü Sınıfı"
     },
     {
      "key": "marketStart",
      "label": "On Market Since",
-     "type": "text"
+     "type": "text",
+     "label_tr": "Piyasaya Çıkış"
     },
     {
      "key": "url",
      "label": "EPREL",
-     "type": "link"
+     "type": "link",
+     "label_tr": "EPREL"
     }
    ],
    "registered_total": 14189,
@@ -119804,7 +119867,8 @@
      "programTimeText": "4 hours, 30 mins",
      "rank": 1000
     }
-   ]
+   ],
+   "label_tr": "Bulaşık Makineleri"
   }
  }
 }

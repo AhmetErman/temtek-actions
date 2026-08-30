@@ -12,6 +12,7 @@ import json
 import sys
 
 sys.path.insert(0, "/home/a26124811/projects/temtek-actions")
+import eprel_config as ec
 import eprel_lookup as L
 
 # --- Technology sets: only features that actually separate these machines. ---
@@ -59,6 +60,37 @@ TECHNOLOGIES = {
         ("softener",     "Built-in water softener",        "Softener"),
         ("wifi",         "Wi-Fi / app control",            "Wi-Fi"),
     ],
+}
+
+# Turkish for the technology labels, keyed by the English long form so a
+# technology shared across categories (auto-dosing, steam, Wi-Fi) is translated
+# once. A technology with no entry falls back to English in the UI.
+TECH_LABELS_TR = {
+    "Automatic detergent dosing":              ("Otomatik deterjan dozajlama", "Oto-dozaj"),
+    "AI load & fabric sensing":                ("Yapay zekâ yük ve kumaş algılama", "YZ algılama"),
+    "Microplastic / microfibre filter":        ("Mikroplastik / mikrofiber filtre", "Mikroplastik"),
+    "Steam programme":                         ("Buhar programı", "Buhar"),
+    "Direct-drive (beltless) motor":           ("Direkt tahrikli (kayışsız) motor", "Direkt tahrik"),
+    "Add garment mid-cycle":                   ("Program sırasında çamaşır ekleme", "Çamaşır ekle"),
+    "Detergent recognition / dosing assistant": ("Deterjan tanıma / dozaj asistanı", "Dozaj tarama"),
+    "Recycled-material drum or tub":           ("Geri dönüştürülmüş malzemeli kazan", "Geri dönüşüm"),
+    "Heat-pump (ventless) drying":             ("Isı pompalı (bacasız) kurutma", "Isı pompası"),
+    "Full load wash-to-dry without unloading": ("Boşaltmadan tam yük yıkama-kurutma", "Kesintisiz"),
+    "Sensor-controlled dryness level":         ("Sensör kontrollü kuruluk seviyesi", "Oto-kurutma"),
+    "Heat-pump condenser":                     ("Isı pompalı yoğuşmalı", "Isı pompası"),
+    "AI / adaptive drying programme":          ("Yapay zekâ / uyarlanabilir kurutma programı", "YZ kurutma"),
+    "Steam refresh & de-wrinkle":              ("Buharla tazeleme ve kırışık giderme", "Buhar"),
+    "Self-cleaning condenser":                 ("Kendini temizleyen kondenser", "Oto-temizlik"),
+    "Reverse-tumble anti-crease":              ("Ters yönlü dönüşle kırışık önleme", "Ters dönüş"),
+    "Wi-Fi / app control":                     ("Wi-Fi / uygulama kontrolü", "Wi-Fi"),
+    "Maintenance-free heat exchanger":         ("Bakım gerektirmeyen ısı eşanjörü", "Bakımsız eşanjör"),
+    "Static rack for shoes / wool":            ("Ayakkabı / yün için sabit raf", "Sabit raf"),
+    "Auto-open door drying":                   ("Otomatik kapak açmalı kurutma", "Oto-açılım"),
+    "Zeolith drying":                          ("Zeolit kurutma", "Zeolit"),
+    "Third cutlery rack":                      ("Üçüncü çatal-bıçak sepeti", "3. sepet"),
+    "Zone / half-load intensive wash":         ("Bölgesel / yarım yük yoğun yıkama", "Bölgesel yıkama"),
+    "Sensor / AI automatic programme":         ("Sensör / yapay zekâ otomatik programı", "YZ algılama"),
+    "Built-in water softener":                 ("Dahili su yumuşatıcı", "Su yumuşatıcı"),
 }
 
 CATEGORY_META = {
@@ -215,14 +247,23 @@ SPEC_NOTE = ("Specs are read from the model's EPREL registration, so they match 
              "EU energy label rather than marketing copy.")
 
 
+def _tech_entry(key, label, short):
+    """One technology, with Turkish alongside when we have it."""
+    entry = {"key": key, "label": label, "short": short}
+    tr = TECH_LABELS_TR.get(label)
+    if tr:
+        entry["label_tr"], entry["short_tr"] = tr
+    return entry
+
+
 def build():
     cats, products, missing = [], [], []
     for key, picks in PICKS.items():
         label, icon, blurb = CATEGORY_META[key]
         cats.append({
             "key": key, "label": label, "icon": icon, "blurb": blurb,
-            "technologies": [{"key": k, "label": lb, "short": sh}
-                             for k, lb, sh in TECHNOLOGIES[key]],
+            "label_tr": ec.CATEGORY_LABELS_TR.get(key, label),
+            "technologies": [_tech_entry(k, lb, sh) for k, lb, sh in TECHNOLOGIES[key]],
         })
         for brand, model, range_name, verified, country, price, currency, evidence in picks:
             rec, how = L.resolve(key, model, brand)

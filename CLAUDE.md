@@ -106,6 +106,64 @@ Filling in a category means editing `products.json` only — no template or rout
 See `COMPANY_TRACKER.md` for the company-tracker details (per-company scraping status, Phase-2
 blockers, how to extend `products.json`).
 
+## Bilingual UI (English / Turkish)
+
+Every page has an EN/TR toggle in the header. Three kinds of text are handled
+three different ways — mixing them up is the easy mistake here:
+
+| Kind | Where the Turkish lives | How it reaches the page |
+|---|---|---|
+| Static UI strings | `static/i18n.js` (hand-written dictionary) | `data-i18n` attributes + `t('key')` in render code |
+| Config labels (categories, spec columns, technologies) | `label_tr` / `short_tr` **beside** the English, in `eprel_config.py` and `products.json` | `L(obj)` picks by current language |
+| Scraped article text | **sidecar JSON files**, machine-translated | `/api/news?lang=tr` merges them server-side |
+
+- Chosen language is `localStorage.lang`, exactly like the existing `theme` key,
+  so it carries across pages with no router and no server session.
+- `applyI18n()` runs on `DOMContentLoaded` so static text never flashes English;
+  each page additionally calls `initLang(cb)` to wire the button, where `cb`
+  re-fetches its data with `langQuery()` and re-renders.
+- A missing key falls back to English, never to blank. Same for `L()`.
+
+### Turkish sidecars — why not a second copy of each dataset
+
+`translate_data.py` writes `{url: {field: translation}}` files, not translated
+copies of the datasets:
+
+```
+tech_news_tr.json        title, summary, gemini
+company_news_tr.json     title, summary
+dynamic_classes_tr.json  {english sub-class: Turkish}
+```
+
+A full parallel copy would double a 5.8 MB file that is committed on every
+scrape, and would go stale in its **classification** fields the moment
+`reclassify.py` or the Layer-2 subclassifier changed a label — with nothing to
+detect the drift. With a sidecar, classification and scores have exactly one
+home and cannot disagree between the two languages.
+
+Facts worth keeping:
+
+- **Turkish is translated from the original language**, not from our English —
+  `ja -> tr` in one hop. A `ja -> en -> tr` relay compounds two machine
+  translations. Only `Gemini_Summary`, which we generate in English, goes
+  `en -> tr`. `translation.source_lang()` sends a record with no usable
+  `language` to `auto` rather than assuming English: guessing wrong does not
+  fail loudly, it returns the text untranslated or invents a plausible sentence.
+- Some feeds (36Kr) put the whole article body **with HTML markup** in the RSS
+  summary. `translation.clean_text()` strips it first — otherwise the API
+  rejects the length or we translate tag soup.
+- Google throttles long backfills and reports it as *"No translation was found
+  using the current translator"*, which reads like a bad input string but clears
+  after a wait. Hence the exponential backoff, and the item-by-item salvage pass
+  when a chunk fails (`translate_batch` fails all-or-nothing, so one throttled
+  call would otherwise cost every string travelling with it).
+- `translate_data.py` is **incremental**: it only fills what is missing. That is
+  what lets both scrapers call it at the end of a run for their handful of new
+  items, and what makes a re-run after a failure cheap.
+
+Both scheduled workflows stage the sidecars alongside their datasets — a
+translation that is not committed never reaches the site.
+
 ## Commands
 
 ```bash
@@ -123,6 +181,10 @@ python eprel_scraper.py             # full EPREL refresh (~46k registrations, ~3
 python eprel_scraper.py --category dishwasher --top 500
 python eprel_scraper.py --max-pages 3   # smoke test, a handful of API calls
 python eprel_scraper.py --dry-run       # print the plan, no requests
+
+python translate_data.py            # fill in missing Turkish (incremental; safe to re-run)
+python translate_data.py --force    # retranslate everything
+python translate_data.py --only company --limit 20   # one stage, smoke test
 
 python count_classes.py [file.json] # class distribution of a classified dataset
 python dynamic_subclassifier.py --dry-run          # inspect the sub-taxonomy registry, no API calls

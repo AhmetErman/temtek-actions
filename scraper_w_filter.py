@@ -306,5 +306,19 @@ def scrape_and_translate():
 
     print(f"Classified data saved to {classified_filename}")
 
+    # === Turkish pass ===
+    # translate_data is incremental, so this only touches what this run added:
+    # the articles just classified, plus any sub-class the Layer-2 pass invented.
+    # Fault-isolated like every other stage — the dashboard falls back to English
+    # for anything untranslated, so a failure here must not fail the scrape.
+    try:
+        import translate_data
+        print("\n=== Turkish translation pass ===")
+        translate_data.translate_news()
+        translate_data.translate_classes()
+    except Exception as e:
+        print(f"  -> Turkish translation skipped: {e}")
+
+
 if __name__ == "__main__":
     scrape_and_translate()
