@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T22:26:59Z",
-  "total_articles": 224,
+  "generated_at": "2026-08-31T00:19:10Z",
+  "total_articles": 225,
   "companies": [
     "Samsung",
     "Haier",
@@ -9,8 +9,8 @@
     "BSH (Bosch/Siemens)"
   ],
   "totals": {
+    "Whirlpool": 13,
     "Samsung": 157,
-    "Whirlpool": 12,
     "Midea": 20,
     "BSH (Bosch/Siemens)": 12,
     "Haier": 23
@@ -33,6 +33,10 @@
     "2026-Q3"
   ],
   "by_quarter": {
+    "Whirlpool": {
+      "2026-Q3": 7,
+      "2026-Q2": 6
+    },
     "Samsung": {
       "2026-Q3": 6,
       "2026-Q2": 9,
@@ -48,10 +52,6 @@
       "2023-Q4": 8,
       "2023-Q3": 17,
       "2023-Q2": 7
-    },
-    "Whirlpool": {
-      "2026-Q3": 6,
-      "2026-Q2": 6
     },
     "Midea": {
       "2026-Q3": 1,
@@ -98,6 +98,13 @@
     "Other"
   ],
   "by_theme": {
+    "Whirlpool": {
+      "Cooking & Kitchen": 1,
+      "Other": 2,
+      "Laundry": 1,
+      "Design & Events": 8,
+      "Business & Corporate": 10
+    },
     "Samsung": {
       "AI": 98,
       "Cooking & Kitchen": 23,
@@ -109,12 +116,6 @@
       "Refrigeration": 21,
       "Hygiene & Health": 4,
       "Business & Corporate": 8
-    },
-    "Whirlpool": {
-      "Other": 2,
-      "Laundry": 1,
-      "Design & Events": 8,
-      "Business & Corporate": 10
     },
     "Midea": {
       "Design & Events": 9,
@@ -149,12 +150,12 @@
     }
   },
   "date_range": {
-    "Samsung": {
-      "earliest": "2023-06-01",
-      "latest": "2026-08-20"
-    },
     "Whirlpool": {
       "earliest": "2026-05-06",
+      "latest": "2026-08-27"
+    },
+    "Samsung": {
+      "earliest": "2023-06-01",
       "latest": "2026-08-20"
     },
     "Midea": {
