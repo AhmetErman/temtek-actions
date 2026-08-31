@@ -41467,7 +41467,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "PLA fiber adoption in apparel",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "Senken",
@@ -41478,7 +41482,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Welfare and fashion collaboration",
+        "OtherSubclass": "Arts and Culture",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41489,7 +41497,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Apple announces Mac Studio M5",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41500,7 +41512,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Apple launches new Mac mini",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41511,7 +41527,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Ryza AI app pricing controversy",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41522,7 +41542,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Industrial robot AI market trends",
+        "OtherSubclass": "Robotics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41533,7 +41557,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Japan signs defense drone contract",
+        "OtherSubclass": "Robotics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41544,7 +41572,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Tokyo trainless area map viral",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41555,7 +41587,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Watch theft at Nakano Broadway",
+        "OtherSubclass": "Public Safety and Disasters",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41566,7 +41602,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Rakuten launches budget shopping site",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41577,7 +41617,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Testing Adobe plugin on ChatGPT",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41588,7 +41632,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Japan launches new Myna App",
+        "OtherSubclass": "Politics and Government",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41599,7 +41647,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "iPhone MyNumber passport application update",
+        "OtherSubclass": "Politics and Government",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41610,7 +41662,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Automatic photo service at themepark",
+        "OtherSubclass": "Entertainment and Media",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41621,7 +41677,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Mie government bans personal USBs",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41632,7 +41692,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "pixivFANBOX fights scraped content piracy",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41643,7 +41707,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Vocaloid contest entry disqualification controversy",
+        "OtherSubclass": "Entertainment and Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41654,7 +41722,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "New Myna app launches today",
+        "OtherSubclass": "Politics and Government",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41665,7 +41737,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Measuring pool urine via sweeteners",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41676,7 +41752,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Humanoid robot wins 400m race",
+        "OtherSubclass": "Robotics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41687,7 +41767,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Students use SNS for jobhunting",
+        "OtherSubclass": "Social Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41698,7 +41782,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Tokyo earthquake susceptibility map viral",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41709,7 +41797,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Japan plans dark pattern regulations",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41720,7 +41812,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Streamer apologizes for desecrating grave",
+        "OtherSubclass": "Social Media",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41731,7 +41827,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Docomo Bike Share delays rebranding",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41742,7 +41842,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Leap second abolition plan",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41753,7 +41857,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Used PC security risks",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41764,7 +41872,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Humanoid robot sports event",
+        "OtherSubclass": "Robotics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41775,7 +41887,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Cafe leaves Rakuten",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -41786,7 +41902,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Xiaomi smartphone price hike",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41797,7 +41917,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Unappetizing AI food images",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -41808,7 +41932,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Metabolic syndrome brain study",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -41819,7 +41947,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Ecovacs window cleaning robot",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -41830,7 +41962,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Nescafe coffee maker launch",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -41841,7 +41977,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "SwitchBot circulator new color",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -41852,7 +41992,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Thermos Pokémon cold bottles",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -41863,7 +42007,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Yamaha electric stroller",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -41874,7 +42022,9 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Fabric Care & Textile Engineering",
+        "RelationScore": 5,
+        "Gemini_Summary": "Toshiba drum washer-dryer"
     },
     {
         "source": "KadenWatch",
@@ -41885,7 +42035,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Jackery portable power station",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -41896,7 +42050,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Summer cooling goods",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -41907,7 +42065,9 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 4,
+        "Gemini_Summary": "Sharp home battery system"
     },
     {
         "source": "KadenWatch",
@@ -41918,7 +42078,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Chiikawa learning notebooks",
+        "OtherSubclass": "Toys and Hobbies",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -41929,7 +42093,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Panasonic trimmer review ranking",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -41940,7 +42108,9 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 4,
+        "Gemini_Summary": "Sharp residential solar panels"
     },
     {
         "source": "KadenWatch",
@@ -41951,7 +42121,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Shark cordless blower",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -41962,7 +42136,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Thanko rice cracker maker",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -41973,7 +42151,9 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 5,
+        "Gemini_Summary": "Sharp compact heat-pump washer"
     },
     {
         "source": "Senken",
@@ -41984,7 +42164,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Zett fitness shoes expansion",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -41995,7 +42179,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Santey uniform brand expansion",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42006,7 +42194,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Urban Research CEO column",
+        "OtherSubclass": "Personal Commentary",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42017,7 +42209,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Aeon business motto discussion",
+        "OtherSubclass": "Personal Commentary",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42028,7 +42224,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Pop culture commentary",
+        "OtherSubclass": "Personal Commentary",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42039,7 +42239,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Shanghai textile exhibition opens",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42050,7 +42254,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "High school fashion championship",
+        "OtherSubclass": "Arts and Culture",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42061,7 +42269,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Atre Nakano opening announcement",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42072,7 +42284,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Cool Japan funding cut",
+        "OtherSubclass": "Politics and Government",
+        "OtherSubclassScore": 4
     },
     {
         "source": "Senken",
@@ -42083,7 +42299,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Aeon Mall safety measures",
+        "OtherSubclass": "Public Safety and Disasters",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -42094,7 +42314,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Consumer camera market report",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -42105,7 +42329,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Dreame corporate restructuring analysis",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -42116,7 +42344,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Appliance retail online shift",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -42127,7 +42359,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Tineco brand global expansion",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -42138,7 +42374,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Smart toilet market trends",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 4
     },
     {
         "source": "OFweek SmartHome",
@@ -42149,7 +42389,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Aucma financial performance report",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -42160,7 +42404,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Appliance market subsidy policy",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -42171,7 +42419,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Home appliance market trends",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -42182,7 +42434,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Weekly appliance industry digest",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -42193,7 +42449,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Air conditioner market review",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42204,7 +42464,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Cloudflare developer event update",
+        "OtherSubclass": "Enterprise Software",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42215,7 +42479,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "University website page issue",
+        "OtherSubclass": "Education",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42226,7 +42494,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Google Gemini Notebook update",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42237,7 +42509,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AI chat app warning",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42248,7 +42524,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "NISA account security breach",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42259,7 +42539,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Generative AI in commercial",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42270,7 +42554,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Zurich Insurance data leak",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42281,7 +42569,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Weekly Diamond ends print",
+        "OtherSubclass": "Entertainment and Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42292,7 +42584,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "iOS Alternative Game Store",
+        "OtherSubclass": "Gaming",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42303,7 +42599,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Kioxia SanDisk Investment Japan",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42314,7 +42614,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Kioxia Factory Construction Japan",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42325,7 +42629,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Ring Shaped Tamagotchi Toy",
+        "OtherSubclass": "Toys and Hobbies",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42336,7 +42644,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Twitter Trademark Dispute SNS",
+        "OtherSubclass": "Social Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42347,7 +42659,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Historic Earthquake Map Online",
+        "OtherSubclass": "Public Safety and Disasters",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42358,7 +42674,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Toyota AI Autonomous Driving",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42369,7 +42689,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "US Government Cyberattack Report",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42380,7 +42704,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Backlog Service Price Increase",
+        "OtherSubclass": "Enterprise Software",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42391,7 +42719,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Humanoid Robot Running Competition",
+        "OtherSubclass": "Robotics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42402,7 +42734,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Kioxia Factory Rumor Clarification",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42413,7 +42749,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Game Service Shut Down",
+        "OtherSubclass": "Gaming",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42424,7 +42764,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Refurbished PC Market Growth",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42435,7 +42779,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "NVIDIA Hugging Face Acquisition",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42446,7 +42794,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Teen Instagram Time Limit",
+        "OtherSubclass": "Social Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42457,7 +42809,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Alzheimer Brain Waste Treatment",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42468,7 +42824,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Myna App Login Issue",
+        "OtherSubclass": "Politics and Government",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42479,7 +42839,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Air Conditioned Clothing Review",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42490,7 +42854,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Wearable Tamagotchi Ring Launched",
+        "OtherSubclass": "Toys and Hobbies",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42501,7 +42869,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "MCP AI Agent Roadmap",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42512,7 +42884,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Yahoo Weather App Indicator",
+        "OtherSubclass": "Public Safety and Disasters",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42523,7 +42899,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Wind Resistant Umbrella Tech",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42534,7 +42914,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "ChatGPT Corporate Safety Guide",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42545,7 +42929,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "SK Hynix Factory Rumors",
+        "OtherSubclass": "Semiconductors",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42556,7 +42944,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Dark Pattern Museum Website",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42567,7 +42959,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Hololive site hacked",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42578,7 +42974,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Penguin Suica sales ending",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42589,7 +42989,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Refurbished PC demand rising",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42600,7 +43004,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Microsoft Teams outage",
+        "OtherSubclass": "Enterprise Software",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42611,7 +43019,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "New nanaco credit card",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42622,7 +43034,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Heavy rain level 5 tips",
+        "OtherSubclass": "Public Safety and Disasters",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42633,7 +43049,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Controversial Akita press conference",
+        "OtherSubclass": "Politics and Government",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42644,7 +43064,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "7-Eleven self-shipping machines",
+        "OtherSubclass": "Logistics and Delivery",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42655,7 +43079,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Digital gift hacked",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42666,7 +43094,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "LUUP used in theft",
+        "OtherSubclass": "Transportation",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42677,7 +43109,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Dark patterns article irony",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42688,7 +43124,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Apple polishing cloth cheaper",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -42699,7 +43139,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "J-Alert nationwide test",
+        "OtherSubclass": "Public Safety and Disasters",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42710,7 +43154,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Meta Glasses Japan launch",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -42721,7 +43169,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Short video brain study",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -42732,7 +43184,9 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 4,
+        "Gemini_Summary": "Eco-friendly Mitsubishi refrigerators"
     },
     {
         "source": "KadenWatch",
@@ -42743,7 +43197,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Garmin fenix 9 smartwatch",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -42754,7 +43212,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Laundry rack extension released",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -42765,7 +43227,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Xiaomi smart camera launched",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -42776,7 +43242,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Soft serve maker review",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -42787,7 +43257,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Household freezer replacement story",
+        "OtherSubclass": "Personal Commentary",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -42798,7 +43272,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Homemade ginger ale recipe",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -42809,7 +43287,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Stylish Ladonna rice cooker",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -42820,7 +43302,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "New Jackery power station",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -42831,7 +43317,9 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Hygiene & Health Technologies",
+        "RelationScore": 4,
+        "Gemini_Summary": "Toshiba self-cleaning vacuum cleaner"
     },
     {
         "source": "KadenWatch",
@@ -42842,7 +43330,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Anker security camera launch",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -42853,7 +43345,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Bicycle helmet color launch",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -42864,7 +43360,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Dog plush lamp launch",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -42875,7 +43375,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Quick cleaning tips advice",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "KadenWatch",
@@ -42886,7 +43390,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Iris Ohyama automatic cooker",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42897,7 +43405,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Montbell center operations resume",
+        "OtherSubclass": "Public Safety and Disasters",
+        "OtherSubclassScore": 4
     },
     {
         "source": "Senken",
@@ -42908,7 +43420,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Beams launches new brand",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42919,7 +43435,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Specialized socks for children",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "Senken",
@@ -42930,7 +43450,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Pal Group recruitment strategy",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42941,7 +43465,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Stationery joint collection launch",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42952,7 +43480,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Seiwa comfortable shoes design",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42963,7 +43495,9 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 4,
+        "Gemini_Summary": "Textile recycling SDGs event"
     },
     {
         "source": "Senken",
@@ -42974,7 +43508,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Orihica late summer suits",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42985,7 +43523,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Clane and Wacoal collaboration",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "Senken",
@@ -42996,7 +43538,11 @@
         "language": "ja",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Customer service competition essay",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 4
     },
     {
         "source": "OFweek SmartHome",
@@ -43007,7 +43553,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Smart lock security discussion",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
     },
     {
         "source": "OFweek SmartHome",
@@ -43018,7 +43568,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Home appliance industry transition",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43029,7 +43583,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Bear Appliance financial struggles",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43040,7 +43598,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "MOVA market expansion Australia",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43051,7 +43613,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Zero coating cookware materials",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 4
     },
     {
         "source": "OFweek SmartHome",
@@ -43062,7 +43628,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Robot vacuum market sales",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43073,7 +43643,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Home appliance market analysis",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43084,7 +43658,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Home appliance market decline",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43095,7 +43673,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Roborock and iRobot business",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43106,7 +43688,11 @@
         "language": "zh-CN",
         "title_en": "",
         "summary_en": "",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Xiaomi home appliance business",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -43117,7 +43703,11 @@
         "language": "ja",
         "title_en": "``FANZA Studio'' is coming to life. What are the expectations of manga artists who feel uncomfortable with AI manga for adults?",
         "summary_en": "FANZA, an e-commerce site for adults, has started offering a preview of FANZA Studio, a service that allows users to create and publish works using generative AI.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Generative AI adult manga",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -43128,7 +43718,11 @@
         "language": "ja",
         "title_en": "Will video cameras lead to an era of chaos? Industry trends in the first half of 2026, with some action cam manufacturers starting to move into mirrorless single-lens cameras",
         "summary_en": "This time, I would like to take a look back at the camera world over the past 26 years. What stands out is the focus of camera companies on full-fledged video cameras. On the other hand, action/wearable camera manufacturers are also making interesting moves.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Camera industry trend review",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -43139,7 +43733,11 @@
         "language": "ja",
         "title_en": "The \"Supercar Bicycle\" for adults has a Japanese taste and is fully equipped with retractable lights, RFID authentication, etc.",
         "summary_en": "Do you know the popular name \"supercar bicycle\" that was popular among boys in the 1970s? Many bicycle manufacturers introduced children's bicycles equipped with car motifs, which became huge hits. Such a Showa era bicycle has been revived as a Reiwa version. And it's also for adults.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Retro adult bicycle revival",
+        "OtherSubclass": "Toys and Hobbies",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -43150,7 +43748,11 @@
         "language": "ja",
         "title_en": "Minister of Justice Hiraguchi, who \"takes criticism seriously\", cancels collaboration with Netflix's \"Love Jotou\"",
         "summary_en": "At a press conference on the 28th, Justice Minister Hiroshi Hiraguchi said, ``We will seriously take the criticism and concerns'' regarding the cancellation of the tie-up with Netflix's love reality show ``Love Jodou'' Season 2.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Netflix tie-up canceled",
+        "OtherSubclass": "Politics and Government",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -43161,7 +43763,9 @@
         "language": "ja",
         "title_en": "Panasonic lowers CO2 reduction target from 31.45 million tons to 5.5 million tons due to increased sales of air conditioners, etc.",
         "summary_en": "Panasonic Holdings (HD) has announced that it will lower its carbon dioxide (CO2) reduction target for fiscal 2030 across all business activities from the previous 31.45 million tons to 5.5 million tons. We will review the intermediate goals of the long-term environmental vision \"Panasonic GREEN IMPACT (PGI)\" formulated in 2022. This was due to increased sales of air conditioners, which lead to an increase in CO2 emissions. The goal of reducing emissions to net zero by 2050 will be maintained.",
-        "Classification": "N/A"
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 4,
+        "Gemini_Summary": "Panasonic lowers CO2 targets"
     },
     {
         "source": "ITmedia",
@@ -43172,7 +43776,11 @@
         "language": "ja",
         "title_en": "A TikToker's video is controversial because he stuck his smartphone on a train and filmed himself running as fast as he could on the train.Is it to promote a clothing brand?",
         "summary_en": "Attach your smartphone to the train with tape. After the train departs, it is filmed running parallel to the train on the platform.This video, posted on Instagram and TikTok between August 27th and 28th, is causing controversy on social media, calling it ``a dangerous act.'' The video was posted by the official account of a streetwear clothing brand, and the video appears to be for promotional purposes.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Controversial train TikTok stunt",
+        "OtherSubclass": "Social Media",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -43183,7 +43791,11 @@
         "language": "ja",
         "title_en": "Yellow Hat's information on up to 1.8 million people was leaked; unauthorized access to work reservation system",
         "summary_en": "On August 28, Yellow Hat announced that the ``Yellow Hat Web Work Reservation System,'' which is used to reserve work at stores, had been accessed illegally, resulting in the possible leakage of personal information of up to 1,801,499 people. Information that may have been leaked includes names and phone numbers, but does not include credit card information.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Yellow Hat data leak",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -43194,7 +43806,11 @@
         "language": "ja",
         "title_en": "A competition to create lame slide materials is being held, and the application form is also lame",
         "summary_en": "Supporters (Shibuya-ku, Tokyo), which provides job hunting support services for students, is holding a competition to solicit clunky slide materials. It is a project to accompany the tech conference \"Gikusai 2026 [Autumn]\" for students, which will be held by the company from October 10th to 11th, and the winner will receive a certificate of commendation and the right to speak at the event together with YouTuber \"Lambda Technology Department.\"",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Clunky slide competition held",
+        "OtherSubclass": "Internet Culture",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -43205,7 +43821,11 @@
         "language": "ja",
         "title_en": "Implementing wearable cameras for police officers ``confirming usefulness through trial''",
         "summary_en": "When dealing with fights, he was asked, ``Why are you filming?'' and during questioning about his duties, he was sometimes told, ``If you record me, I won't talk.''",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Police wearable camera trial",
+        "OtherSubclass": "Politics and Government",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -43216,7 +43836,11 @@
         "language": "ja",
         "title_en": "Unauthorized access to ToreFac subsidiary, leaking customer information of over 130,000 people Two-step authentication was not set",
         "summary_en": "Treasure Factory announced on August 28 that its e-commerce site operated by its consolidated subsidiary Kindol was accessed illegally by a third party, and the personal information of 136,464 people was leaked. The cause was a phishing email targeting staff account credentials.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Kindol customer data leaked",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -43227,7 +43851,11 @@
         "language": "ja",
         "title_en": "Former president of retirement agency “Momuri” found guilty of illegally arranging a user to be a lawyer",
         "summary_en": "He was charged with violating the Lawyers Act for paying a lawyer to assist a person who wanted to retire.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Retirement agency president guilty",
+        "OtherSubclass": "Business Regulation",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -43238,7 +43866,11 @@
         "language": "ja",
         "title_en": "Hugging Face announces duck-shaped robot “Microduck” Pre-order now available for $399",
         "summary_en": "Pollen Robotics has announced the bipedal robot \"Microduck\" and has started accepting reservations. 25cm small design for $399. It specializes in behavioral learning using reinforcement learning and releases its SDK and simulator as OSS. Unlike large machines, we aim to create a ``platform for behavioral AI'' that can be used safely at home or in the classroom through trial and error.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Microduck bipedal robot pre-order",
+        "OtherSubclass": "Robotics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -43249,7 +43881,11 @@
         "language": "ja",
         "title_en": "As PC prices soar, how can you manage your limited IT budget? Interview with a systems person at a company that chose a “refurbished PC”",
         "summary_en": "As PC prices soar, refurbished PCs are attracting attention as a means of PC procurement for companies. We asked Mitsubishi HC Capital IT Partners, which introduced refurbished PCs with manufacturer warranties, about performance, warranties, security, how to determine the number of PCs needed, and how to allocate limited IT budgets.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Refurbished PC corporate procurement",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
     },
     {
         "source": "ITmedia",
@@ -43260,7 +43896,11 @@
         "language": "ja",
         "title_en": "Anthropic announces “MHS”, a common standard for controlling physical devices using AI, to be open sourced in the future",
         "summary_en": "Anthropic announced the Model Hardware Standard (MHS), a common specification for AI agents to safely operate experimental and manufacturing equipment. It greatly reduces equipment integration work, standardizes basic commands and safety limits, and enables autonomous control. The plan is to release examples of early implementation and make it open source after conducting safety evaluations.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Anthropic open-source AI MHS",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
     },
     {
         "source": "ITmedia",
@@ -43271,7 +43911,11 @@
         "language": "ja",
         "title_en": "“If you switch to 5G SA, you are out of service” ─ Povo cannot connect with some smartphones KDDI apologizes, saying it was an incorrect setting",
         "summary_en": "KDDI announced on August 28th that some terminals were unable to connect to the network with the ``5G SA'' service launched on the 25th under the online-only brand ``povo2.0''. The cause was a setting error on the company's side, which was fixed on the night of the 27th.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Povo 5G connection issue",
+        "OtherSubclass": "Infrastructure and Utilities",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -43282,7 +43926,11 @@
         "language": "ja",
         "title_en": "Nagano's local supermarket \"Tsuruya\" attracts e-bike friends",
         "summary_en": "I go to Nagano several times a year for both work and private purposes. This is because there are many spots where you can enjoy MTB (mountain biking). Run around the mountains with your friends and enjoy soba and local gourmet food. Nagano, with its wonderful scenery, air, and food, is one of my favorite travel destinations.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Nagano e-bike travel",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
     },
     {
         "source": "KadenWatch",
@@ -43293,7 +43941,11 @@
         "language": "ja",
         "title_en": "Blue Tea's thin 75mm portable power supply allows you to use your refrigerator even during power outages",
         "summary_en": "BLUETTI JAPAN will pre-sell \"FridgePower\", a thin portable power supply that can continue to run refrigerators and other devices even during power outages, on Makuake from September 1st. The capacity is 2,016Wh and the rated output is 1,800W.",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "BLUETTI refrigerator power supply",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43304,7 +43956,11 @@
         "language": "zh-CN",
         "title_en": "Exchange drags down profits! Haier Smart Home's Q2 revenue turns positive, profits improve quarter-on-quarter",
         "summary_en": "Haier Smart Home",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Haier Smart Home report",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43315,7 +43971,11 @@
         "language": "zh-CN",
         "title_en": "Semi-annual reports of two major home furnishing stores PK: Smart Home has benefited from new business, and Fussenmei’s gross profit margin has surpassed the rest!",
         "summary_en": "home,financial report",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Home furnishing financial report",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43326,7 +43986,11 @@
         "language": "zh-CN",
         "title_en": "Profitability under pressure, recovery in the second quarter, Haier Smart Home’s performance reaches an inflection point",
         "summary_en": "Haier Smart Home, home appliance industry",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Haier performance inflection point",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43337,7 +44001,11 @@
         "language": "zh-CN",
         "title_en": "Love Space explodes with thunder: dismantling the final dilemma of the brutal growth of Internet home decoration in the past ten years",
         "summary_en": "Love space, home decoration",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Internet home decoration dilemma",
+        "OtherSubclass": "Real Estate",
+        "OtherSubclassScore": 4
     },
     {
         "source": "OFweek SmartHome",
@@ -43348,7 +44016,11 @@
         "language": "zh-CN",
         "title_en": "Net profit soared 228% and revenue reached nearly 60 billion. Why is Changhong’s market value only 32.2 billion?",
         "summary_en": "home appliances, changhong, market",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "Changhong market value discussion",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
     },
     {
         "source": "OFweek SmartHome",
@@ -43359,6 +44031,456 @@
         "language": "zh-CN",
         "title_en": "Analysis of market performance of major home appliance categories this year",
         "summary_en": "Home appliance market, categories",
-        "Classification": "N/A"
+        "Classification": "Other",
+        "RelationScore": 3,
+        "Gemini_Summary": "Home appliance market analysis",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "「テスト」「あああああ」誤って本番公開　サンライズ「MAO」公式サイトで",
+        "date": "Mon, 31 Aug 2026 13:56:12 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000962/",
+        "summary": "見出し「テスト」、本文「?テスト」「あああああ」とだけ記された記事が公開されていた。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Sunrise website test leak",
+        "OtherSubclass": "Entertainment and Media",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "ITmedia",
+        "title": "“リソースの上位集中”は、文字・貨幣の登場前から現在とそっくりな形だった？　成城大准教授が古墳の体積から導出",
+        "date": "Mon, 31 Aug 2026 13:56:10 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000867/",
+        "summary": "成城大学の渡邊隼史准教授が発表したプレプリント論文「Zipf’s law before the monetary economy and written administration: volume distribution of kofun, ancient Japanese burial mounds」は、古代日本における集団の資源動員力の集中構造を数理的な視点から解き明かした研究報告だ。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "Ancient burial mound research",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "参議院サイト、17年ぶり刷新の裏で「制作費26万円」が話題に　落札結果から判明　SNSで驚きの声",
+        "date": "Mon, 31 Aug 2026 13:30:33 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000959/",
+        "summary": "参議院が8月28日に公開した公式Webサイトの新デザインを巡り、リニューアル業務の落札額がわずか26万7710円だったとして、SNS上で驚きの声が広がっている。デザインの刷新は17年ぶり。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "参議院サイトがリニューアル",
+        "OtherSubclass": "Politics and Government",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "なぜ「事故物件」をあえて買うのか　“2～5割安”の魅力と、AIによる透明性への道",
+        "date": "Mon, 31 Aug 2026 12:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000944/",
+        "summary": "不動産の「ミステリー」を専門家がわかりやすく読み解き、AIをはじめITを活用した不動産の近未来を探る。バブル経済の崩壊後、低迷してきた日本の不動産価格が反転上昇し、内外からの投資が盛り上がる中、海外の先進事例なども交えて将来の不動産業界や価格を分かりやすく展望する。第5回は「なぜ『ワケあり物件』が売れるのか」を深掘りする。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "事故物件と不動産AI",
+        "OtherSubclass": "Real Estate",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "備品のオシロスコープなど持ち出し換金　仙台高専の技術職員を懲戒解雇",
+        "date": "Mon, 31 Aug 2026 11:18:31 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000957/",
+        "summary": "技術専門職員の立場を利用し、2018年ごろから長期間にわたって備品を持ち出して換金していたという。被害総額は465万2365円。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "仙台高専職員の横領",
+        "OtherSubclass": "Education",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "フェスの“案内AI”、正体は「Acrobat」――大阪・ジャイガで稼働したPDF製の即席チャットbot",
+        "date": "Mon, 31 Aug 2026 11:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000939/",
+        "summary": "最高気温37度の野外フェス「ジャイガ」で、来場者の質問に答えていたのは文書業務ツールだった。米Adobeの「PDFスペース」が無人の案内窓口として働く現場。プロデューサー自ら300件のメールに返信していた運営の悩みをAIはどう変えたのか。5問目に現れたログイン画面が示す、想定外の転用の壁も見えてきた。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "PDFで作ったフェス案内AI",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "ITmedia",
+        "title": "DuckDB開発元のDuckLabs、AWSの子会社に　オープンソースのMITライセンスは維持",
+        "date": "Mon, 31 Aug 2026 10:33:41 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000954/",
+        "summary": "No Summary Available",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AWSがDuckLabs買収",
+        "OtherSubclass": "Finance and Markets",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "厚労省の調査書類、ヤマトが配送中に紛失　339人分の氏名や給与額など漏えいのおそれ",
+        "date": "Mon, 31 Aug 2026 09:57:53 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000952/",
+        "summary": "漏えいのおそれがある情報は、労働者の氏名、性別、年齢、給与額、就業形態、勤続年数、職種、諸手当など。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "ヤマト運輸の書類紛失",
+        "OtherSubclass": "Logistics and Delivery",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "ソニー・ミュージックパブリッシングとワーナー・チャペル、Anthropicを著作権侵害で提訴",
+        "date": "Mon, 31 Aug 2026 08:21:28 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000950/",
+        "summary": "Sony Music PublishingやWarner Chappell Musicなどの音楽出版社グループは、Anthropicと同社幹部を著作権侵害で提訴した。海賊版サイトからの歌詞取得や無断学習を「史上最大の知財窃盗」と主張し、数十億ドル規模の損害賠償を請求している。Anthropicは全面的に争う姿勢だ。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "音楽会社がAIを提訴",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "LinkedInの写真で買収先を絞る──とある階段メーカーが海外M&Aでやっている“地方の優良企業”発掘法",
+        "date": "Mon, 31 Aug 2026 07:45:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000790/",
+        "summary": "グローバルニッチは高い技術力を持つ一方で、知名度が実力に比べて劣り、ITを駆使して海外でのブランディングや販売に生かしていることも多い。この連載では、こうした企業のIT戦略をインタビューで深堀りする。今回は鉄骨階段を製造・販売する横森製作所に注目。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "階段メーカーのM&A",
+        "OtherSubclass": "Business Strategy",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "ITmedia",
+        "title": "AIが生成した“存在しない病名”、研修医の44％が信用　見抜けた医師との差は？　仏大学病院が検証",
+        "date": "Mon, 31 Aug 2026 07:00:00 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/31/2000000865/",
+        "summary": "フランスの大学病院「Lille University Hospital」などに所属する研究者らが発表した論文「Hallucination by proxy in LLM-assisted differential diagnosis」は、大規模言語モデル（LLM）がもっともらしく提示した架空の病名が医師にどのような影響を与えるかを検証した研究報告だ。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AIによる偽病名検証",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "Hugging Face侵害事件、OpenAIとMETRが最終報告書公開──約1200体のAIエージェントが“闇掲示板”で結託し700体が攻撃に参加",
+        "date": "Sun, 30 Aug 2026 18:23:12 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/30/2000000949/",
+        "summary": "OpenAIと評価機関METRは、Hugging Face侵害事案の技術報告書を公開した。約1200体のAIエージェントが非公式掲示板で結託し、難問攻略のため採点機構を探る過程で攻撃を実行したという。OpenAIは根本原因を報酬ハッキングとし対策を公表したが、METRは自律的集団行動の再発リスクに警戒を示している。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "AIによる攻撃の検証",
+        "OtherSubclass": "Cybersecurity",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "ITmedia",
+        "title": "OpenAI、Cursorへのモデル提供を11月12日に終了　SpaceXによる買収が理由",
+        "date": "Sun, 30 Aug 2026 08:12:23 +0900",
+        "url": "https://www.itmedia.co.jp/news/article/2608/30/2000000945/",
+        "summary": "OpenAIは、AIコードエディタ「Cursor」へのモデル提供契約を11月12日に終了すると発表した。SpaceXによるCursor買収を受け、イーロン・マスク氏の過去の契約違反実績から規約順守を確信できないことを理由に挙げている。Cursor側は影響が限定的としつつ協議継続を表明、Anthropicは支援継続を示した。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "OpenAIがCursor提供終了",
+        "OtherSubclass": "Artificial Intelligence",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "KadenWatch",
+        "title": "EcoFlow、大容量2048Whポタ電から日本限定ホワイト",
+        "date": "2026-08-31T14:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2136897.html",
+        "summary": "EcoFlow Technology Japanは、ポータブル電源「EcoFlow DELTA 3 Max」から、日本限定カラー「ホワイト」を8月28日に発売した。価格は209,980円。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "EcoFlow限定色ポタ電",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "KadenWatch",
+        "title": "眠るカービィがかわいい、デジタルめざまし時計",
+        "date": "2026-08-31T12:34:50+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2136837.html",
+        "summary": "リズムは、「星のカービィ」をデザインしたデジタルめざまし時計「アラームデジタルR84/星のカービィ 8RDA84KB13」を9月上旬に発売する。直販価格は5,500円。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "カービィのデジタル時計",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 4
+    },
+    {
+        "source": "KadenWatch",
+        "title": "焼肉の煙や油ハネ気にならないホットプレート、ピーコック",
+        "date": "2026-08-31T11:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2136465.html",
+        "summary": "ピーコック魔法瓶工業は、調理中の煙やニオイを軽減する減煙電気焼肉器「DINING 焼肉 WY-G120」を8月21日に発売した。直販価格は7,678円。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "煙低減ホットプレート",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "KadenWatch",
+        "title": "幅15cmの本格エスプレッソマシン、日本初上陸KRUPS by T-fal",
+        "date": "2026-08-31T10:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2136540.html",
+        "summary": "グループセブ ジャパンは、日本初上陸ブランド「KRUPS by T-fal」から、全自動エスプレッソマシン「COFFEE CRUSH(コーヒークラッシュ)」を9月に発売する。スタンダードモデル「COFFEE CRUSH」と、上位モデル「COFFEE CRUSH EXPERIENCE(エクスペリエンス)」の2機種をラインナップ。価格は順に60,000円、70,000円。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "小型エスプレッソマシン",
+        "OtherSubclass": "Home Appliances",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "KadenWatch",
+        "title": "フィリップス、手のりサイズの最上級シェーバー",
+        "date": "2026-08-31T09:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2136608.html",
+        "summary": "フィリップス・ジャパンは、回転式の最上級シェービングシステムを手のりサイズに凝縮した「フィリップス コンパクトシェーバー 800 シリーズ」を、9月2日に発売する。価格はオープンで、市場想定価格は35,200円。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 2,
+        "Gemini_Summary": "小型電気シェーバー",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "KadenWatch",
+        "title": "【家電ミニレビュー】スマート扇風機が薄くて置きやすい! モバ充OKだから家でも外でも",
+        "date": "2026-08-31T08:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/column_review/kdnreview/2135834.html",
+        "summary": "日本の夏の風物詩として親しまれてきた「扇風機」。近年はデザインや機能の進化が著しく、どれを選んだらよいか迷うほど、多彩なモデルがラインナップします。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "AI, IoT & Smart Sensors",
+        "RelationScore": 3,
+        "Gemini_Summary": "スマート扇風機レビュー"
+    },
+    {
+        "source": "KadenWatch",
+        "title": "運転中に首元涼しいヘッドレスト用ファン　卓上でも使える",
+        "date": "2026-08-31T07:04:00+09:00",
+        "url": "https://kaden.watch.impress.co.jp/docs/news/2136225.html",
+        "summary": "昌騰(しょうとう)は、カー用品ブランド「MAXWIN(マックスウィン)」より、車内でも卓上でも使える2WAYヘッドレストファン「K-FAN18-B」を発売した。Amazonでの販売価格は3,480円。",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "車載用扇風機",
+        "OtherSubclass": "Consumer Electronics",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "古着主力の専門店「ツナギジャパン」　日本らしさ込めたオリジナルが人気　交流イベントでつながり広げる",
+        "date": "Mon, 31 Aug 2026 12:00:00 +0900",
+        "url": "https://senken.co.jp/posts/tunagijapan-260831",
+        "summary": "東京・渋谷の古着主力「ツナギジャパン」は、オーセンティックで上質な古着と店主の井澤元気さんが手掛けるオリジナルブランドが評判の人気店だ。店名の通り、人のつながりを大切にし、ファッション業界人向けの交流イベントも主...",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "古着店ツナギジャパン",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "デザイナー・ツジカズミさん　新鮮な驚きや感性を行動力で届ける《ちょうどいいといいな　ファッションビジネスの新たな芽》",
+        "date": "Mon, 31 Aug 2026 11:30:00 +0900",
+        "url": "https://senken.co.jp/posts/fb-new-sprout-260831",
+        "summary": "今年、創業30周年を迎えたデザイナーのツジカズミさん。アクセサリーや雑貨の「フルフルドシュクル」とジュエリーの「カズミジュエリー」を手掛けています。心を動かされたものを、独自の感性で商品に落とし込み、人へ届けよう...",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "デザイナーの活動紹介",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "バイオベンチャーの米クレイグ・バイオクラフト・ラボラトリーズ　遺伝子組み換え蚕を使ってクモ糸を生産",
+        "date": "Mon, 31 Aug 2026 11:00:00 +0900",
+        "url": "https://senken.co.jp/posts/kraig-biocraft-labs-260831",
+        "summary": "バイオベンチャーの米クレイグ・バイオクラフト・ラボラトリーズ（ミシガン州アナーバー）は、遺伝子組み換え蚕を使ったクモ糸生産によって、生産量を従来の30％以上増加できたと発表した。連続生産による商業化実現に向け、大...",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "遺伝子組み換えクモ糸",
+        "OtherSubclass": "Science",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "アークテリクス、循環前提のシェルジャケットを発売　リサイクルナイロン「エコニール」を採用",
+        "date": "Mon, 31 Aug 2026 10:59:00 +0900",
+        "url": "https://senken.co.jp/posts/arcteryx-260831",
+        "summary": "アウトドアメーカーのアークテリクスは9月4日、製品寿命を迎えた後に分解・再生しやすいシェル「スペーロSVジャケット」を発売する。表地と裏地に伊アクアフィルのケミカルリサイクルナイロン「エコニール」を使う。分解しや...",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Sustainability & Environmental Impact",
+        "RelationScore": 2,
+        "Gemini_Summary": "リサイクルナイロンジャケット"
+    },
+    {
+        "source": "Senken",
+        "title": "「第44回毎日ファッション大賞」　大賞は「CFCL」の高橋悠介さん",
+        "date": "Mon, 31 Aug 2026 09:00:00 +0900",
+        "url": "https://senken.co.jp/posts/mainichi-fashion-cfcl-260831",
+        "summary": "毎日新聞社は8月31日、第44回毎日ファッション大賞の受賞者を発表した。大賞は「CFCL」の代表兼クリエイティブディレクターの高橋悠介さんに決まった。　高橋さんは20年に三宅デザイン事務所退社後、CFCLを設立。...",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "毎日ファッション大賞発表",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "アンダーカバープロダクション　初の映画を製作　9月14日から公開",
+        "date": "Mon, 31 Aug 2026 06:27:00 +0900",
+        "url": "https://senken.co.jp/posts/undercover-production-260831",
+        "summary": "アンダーカバーは、アンダーカバープロダクションによる初の映画作品『UNDERGIRL』（アンダーガール）を、東京・渋谷のスペースパート3バイパルコで9月14日から公開する。11年春夏コレクションとして発表した、架...",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "アンダーカバー初映画製作",
+        "OtherSubclass": "Entertainment and Media",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "「ハレ」27年春夏　重ねて取り込む日本の美意識",
+        "date": "Mon, 31 Aug 2026 06:26:00 +0900",
+        "url": "https://senken.co.jp/posts/adastria-260831",
+        "summary": "アダストリアの「ハレ」は8月27日、東京・八芳園で27年春夏のショーを行った。日本庭園を背景に、質感の異なるテキスタイルや色、クラフトワークを重ねるように構成し、シルエット変化に富んだレイヤードスタイルを見せた。...",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 1,
+        "Gemini_Summary": "ハレの春夏コレクション",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "東京ソラマチ　食物販ゾーンを刷新　開業以来初",
+        "date": "Mon, 31 Aug 2026 06:25:00 +0900",
+        "url": "https://senken.co.jp/posts/tokyo-solamachi-260831",
+        "summary": "東京スカイツリータウンの商業施設、東京ソラマチは今秋、2階の食物販ゾーン「フードマルシェ」の改装を進める。春の第1弾に続くもので、12年の開業以来の刷新。新店導入のほか利便性や快適性の向上を図る。乗り入れる鉄道の...",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Tokyo Solamachi retail renovation",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "Senken",
+        "title": "《めてみみ》中間価格帯にも新たな活路",
+        "date": "Mon, 31 Aug 2026 06:24:00 +0900",
+        "url": "https://senken.co.jp/posts/mete-260831",
+        "summary": "コスト高騰による物価高などの影響から、消費の二極化がさらに進んでいる。紳士服専門店のスーツも二極化を前提とした価格戦略を強化している。引き続き1万円前半の低価格商品を打ち出す一方で、10万円前後、さらに上の15万...",
+        "language": "ja",
+        "title_en": "",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Apparel pricing strategy analysis",
+        "OtherSubclass": "Retail and Lifestyle",
+        "OtherSubclassScore": 5
+    },
+    {
+        "source": "OFweek SmartHome",
+        "title": "继车企之后，三大家电巨头海尔美的格力集体入局机器人",
+        "date": "2026-08",
+        "url": "https://smarthome.ofweek.com/2026-08/ART-91005-8460-30700708.html",
+        "summary": "家电企业,家庭服务机器人,具身智能,人形机器人",
+        "language": "zh-CN",
+        "title_en": "Following the car companies, Gree Group of the three major home appliance giants Haiermei has entered the robot industry",
+        "summary_en": "",
+        "Classification": "Other",
+        "RelationScore": 5,
+        "Gemini_Summary": "Appliance giants enter robotics",
+        "OtherSubclass": "Robotics",
+        "OtherSubclassScore": 5
     }
 ]
