@@ -14195,8 +14195,9 @@
   "gemini": "Müşteri hizmetleri yarışması makalesi"
  },
  "https://www.itmedia.co.jp/news/article/2608/30/2000000911/": {
-  "title": "``FANZA Studio'' hayat buluyor. Yetişkinlere yönelik yapay zeka mangalarından rahatsızlık duyan manga sanatçılarının beklentileri neler?",
-  "summary": "Yetişkinlere yönelik bir e-ticaret sitesi olan FANZA, kullanıcıların üretken yapay zeka kullanarak çalışmalar oluşturmasına ve yayınlamasına olanak tanıyan bir hizmet olan FANZA Studio'nun ön izlemesini sunmaya başladı."
+  "title": "``FANZA Studio'' hayat buluyor. Yetişkinlere yönelik yapay zeka mangalarından rahatsız olan manga sanatçılarının beklentileri neler?",
+  "summary": "Yetişkinlere yönelik bir e-ticaret sitesi olan FANZA, kullanıcıların üretken yapay zeka kullanarak çalışmalar oluşturmasına ve yayınlamasına olanak tanıyan bir hizmet olan FANZA Studio'nun ön izlemesini sunmaya başladı.",
+  "gemini": "Üretken yapay zeka yetişkin mangası"
  },
  "https://www.itmedia.co.jp/news/article/2608/29/2000000906/": {
   "title": "Video kameralar kaos çağına yol açacak mı? Bazı aksiyon kamerası üreticilerinin aynasız tek lensli kameralara geçmeye başlamasıyla 2026'nın ilk yarısında sektör trendleri",
@@ -14225,7 +14226,8 @@
  },
  "https://www.itmedia.co.jp/news/article/2608/28/2000000922/": {
   "title": "Sarı Şapka'nın 1,8 milyona yakın kişiye ait bilgileri, iş rezervasyon sistemine izinsiz erişim nedeniyle sızdırıldı",
-  "summary": "28 Ağustos'ta Yellow Hat, mağazalarda iş rezerve etmek için kullanılan \"Sarı Şapka Web İş Rezervasyon Sistemi\"ne yasadışı olarak erişildiğini ve bu durumun 1.801.499 kişiye kadar kişisel bilgilerin sızmasına yol açabileceğini duyurdu. Sızan bilgiler arasında isimler ve telefon numaraları yer alıyor ancak kredi kartı bilgileri yer almıyor."
+  "summary": "28 Ağustos'ta Yellow Hat, mağazalarda iş rezerve etmek için kullanılan \"Sarı Şapka Web İş Rezervasyon Sistemi\"ne yasadışı olarak erişildiğini ve bu durumun 1.801.499 kişiye kadar kişisel bilgilerin sızmasına yol açabileceğini duyurdu. Sızan bilgiler arasında isimler ve telefon numaraları yer alıyor ancak kredi kartı bilgileri yer almıyor.",
+  "gemini": "Sarı Şapka veri sızıntısı"
  },
  "https://www.itmedia.co.jp/news/article/2608/28/2000000902/": {
   "title": "Topal slayt malzemeleri oluşturma yarışması yapılıyor ve başvuru formu da yetersiz.",
@@ -14423,32 +14425,39 @@
   "gemini": "Giyim fiyatlandırma stratejisi analizi"
  },
  "https://www.itmedia.co.jp/news/article/2608/21/2000000696/": {
-  "summary": "Ekonomi, Ticaret ve Sanayi Bakanlığı 20 Ağustos'ta, Japon içeriğinin yurtdışı satışlarını 2033'te 20 trilyon yen'e çıkarmayı hedefleyen \"Eğlence ve Yaratıcı Endüstri Stratejisi 2026\"yı derlediğini duyurdu. Hükümet, beş alanda yurtdışı satışlarını 2024'te 6,1 trilyon yenden 24,5 trilyon yene kabaca üç katına çıkarmak için bir kamu-özel hedefi belirledi: oyunlar, anime, manga, müzik ve canlı aksiyon ve ayrıca özel yatırımı üç katına çıkararak 24,5 trilyon yene çıkardı.",
-  "gemini": "Hükümetin içerik endüstrisi stratejisi"
+  "summary": "Ekonomi, Ticaret ve Sanayi Bakanlığı 20 Ağustos'ta, Japon içeriğinin yurtdışı satışlarını 2033'te 20 trilyon yene çıkarmayı hedefleyen \"Eğlence ve Yaratıcı Endüstri Stratejisi 2026\"yı derlediğini duyurdu. Hükümet, beş alanda yurtdışı satışlarını 2024'te 6,1 trilyon yenden 24,5 trilyon yene kabaca üç katına çıkarmak için bir kamu-özel hedefi belirledi: oyunlar, anime, manga, müzik ve canlı aksiyon ve ayrıca özel yatırımı üç katına çıkararak 24,5 trilyon yene çıkardı.",
+  "gemini": "Hükümetin içerik endüstrisi stratejisi",
+  "title": "Japonya menşeli IP'den yurt dışına 20 trilyon yen satış hedefleniyor Ekonomi, Ticaret ve Sanayi Bakanlığı yeni stratejisini duyurdu \"Hikaye anlatımının güç merkezi için beş yıllık plan\""
  },
  "https://www.itmedia.co.jp/news/article/2608/21/2000000682/": {
-  "summary": "Spectee tarafından sağlanan “Spectee Pro”, çeşitli bilgileri toplayan ve o dönemde meydana gelen “kriz”i görselleştiren bir sistemdir. Birçok yerel yönetim ve kitle iletişim araçlarının kullandığı Spectee Pro, söylentileri ve yanlış bilgileri nasıl tespit ediyor?",
-  "gemini": "Kriz bilgi sistemi kontrolü"
+  "summary": "Spectee tarafından sağlanan “Spectee Pro”, çeşitli bilgileri toplayan ve o dönemde meydana gelen “kriz”i görselleştiren bir sistemdir. Pek çok yerel yönetim ve kitle iletişim araçlarının kullandığı Spectee Pro, söylentileri ve yanlış bilgileri nasıl tespit ediyor?",
+  "gemini": "Kriz bilgi sistemi kontrolü",
+  "title": "SNS'deki sahte görselleri nasıl tespit edebilirsiniz? Kumamoto eyalet hükümetinin ve TV istasyonlarının güvendiği \"harika şirketin\" gerçek doğası"
  },
  "https://www.itmedia.co.jp/news/article/2608/25/2000000737/": {
   "summary": "Ajans bünyesinde bulunan 12.357 adet resmi ve özel eşyanın tamamında yapılan inceleme sonucunda yaklaşık %30'unun yani 3.789 adetinin kişisel eşya olduğu tespit edildi.",
-  "gemini": "Mie hükümeti kişisel USB'leri yasakladı"
+  "gemini": "Mie hükümeti kişisel USB'leri yasakladı",
+  "title": "Mie eyalet hükümeti tüm kişisel USB flash sürücüleri yasaklıyor; Toplamın %30'u (3.789) kişisel eşyalardan oluştu"
  },
  "https://www.itmedia.co.jp/news/article/2608/25/2000000733/": {
   "summary": "Katılan şarkılardan bazıları kuralları ihlal ettiği gerekçesiyle sıralamadan çıkarıldı, ancak standartlar \"belirsiz\" ve \"aşırı düzenleme\" olarak nitelendirilen eleştirilerle eleştirildi.",
-  "gemini": "Vocaloid yarışmasına katılım diskalifiye tartışması"
+  "gemini": "Vocaloid yarışmasına katılım diskalifiye tartışması",
+  "title": "BokaColle ateş altında, yaratıcılar MV'de kullanılan \"3DS\" şarkısının \"sıralamadan çıkarılmasının\" ardından \"belirsiz standartlara\" isyan ediyor"
  },
  "https://www.itmedia.co.jp/news/article/2608/24/2000000730/": {
   "summary": "Bir kamyonun etrafında benzersiz bir biçimde koşan insansı robotun videosu, sosyal medyada gündem oldu. Robot, Çin'in Beijing Doll Machinery İnsan İnovasyon Merkezi (TianGong Robotics) tarafından geliştirilen \"TianGong Omni\"dir. 23 Ağustos'ta (yerel saatle) Pekin'de düzenlenen 2. Dünya İnsansı Robot Sporları Festivali'nde küçük grupta 400 metre yarışını 45.66 saniyeyle kazandılar.",
-  "gemini": "İnsansı robot 400 metre yarışını kazandı"
+  "gemini": "İnsansı robot 400 metre yarışını kazandı",
+  "title": "``Eksantrik bir tür gibi'' - Belirli bir insansı robotun patlayıcı formu, Çin'in robot sporları festivalinde 400 metre koşusunu kazanarak sıcak bir konu haline geldi"
  },
  "https://www.itmedia.co.jp/news/article/2608/24/2000000729/": {
   "summary": "2027 baharında mezun olmayı planlayan iş arayan üniversite öğrencileri arasında yapılan ankette, iş arayanların %83,5'i çalışacak şirketi seçerken şirketlerin kurduğu sosyal ağ hizmetlerinden bahsettiklerini söyledi.",
-  "gemini": "Öğrenciler SNS'yi iş aramak için kullanıyor"
+  "gemini": "Öğrenciler SNS'yi iş aramak için kullanıyor",
+  "title": "%83'ü iş seçerken \"SNS'e başvurduklarını\" söyledi; 2027 bahar üniversitesi mezunu, \"Şirkete göz attıktan sonra katılma isteğim daha da arttı\" dedi."
  },
  "https://www.itmedia.co.jp/news/article/2608/24/2000000725/": {
   "summary": "Docomo Bikeshare (Minato-ku, Tokyo), 24 Ağustos'ta hizmet markasının 1 Eylül'de yapılması planlanan NOLL'a yenilenmesini erteleyeceğini duyurdu. 1 Ağustos'ta hizmet spesifikasyonlarının değiştirilmesinin ardından ülke genelinde sistem arızaları meydana gelmesinin ardından şirket, mevcut hizmetlerin ve müşteri desteğinin istikrarlı bir şekilde sağlanmasına öncelik vermeye karar verdi.",
-  "gemini": "Docomo Bike Share, yeniden markalaşmayı geciktiriyor"
+  "gemini": "Docomo Bike Share, yeniden markalaşmayı geciktiriyor",
+  "title": "Docomo Bike Share'in yeni markaya yenilenmesi Ağustos ayındaki sistem arızası nedeniyle ertelendi"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91009-12004-30699323.html": {
   "title": "Endonezya pazarında %2,2 pazar payıyla ilk sırada yer alan 3C, duraksayarak küçük ev aletlerinin yerini alıyor. Walker Feifan halka arza doğru hızla ilerlemeye nasıl güvenebilir?",
@@ -14497,23 +14506,28 @@
  },
  "https://smarthome.ofweek.com/2026-08/ART-91009-8420-30699941.html": {
   "title": "Fiziksel ev aletleri mağazaları bu yıl internetten ürün satacak mı?",
-  "gemini": "Cihaz perakendesinde çevrimiçi değişim"
+  "gemini": "Cihaz perakendesinde çevrimiçi değişim",
+  "summary": "Ev aletleri pazarı, mağaza"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91005-12003-30699859.html": {
-  "title": "Tianke, denizaşırı genişleme için bir referans noktası belirliyor ve bir takipçi değil, tanımlayıcıdır.",
-  "gemini": "Tineco markasının küresel genişlemesi"
+  "title": "Tianke, yurt dışına açılmak, takipçi değil tanımlayıcı olmak için bir referans noktası belirliyor",
+  "gemini": "Tineco markasının küresel genişlemesi",
+  "summary": "Ticari, zemin temizleme makinesi, Timco"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91005-8420-30699851.html": {
   "title": "Akıllı tuvaletlerin penetrasyon oranı yüzde 10'un altında ama akıllı sağlık gereçleri bir \"Kızıldeniz\" mi oldu?",
-  "gemini": "Akıllı tuvalet pazarı trendleri"
+  "gemini": "Akıllı tuvalet pazarı trendleri",
+  "summary": "Tuvalet, akıllı banyo"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91009-12003-30699759.html": {
   "title": "37,47 milyon kardan 43,04 milyon zarara kadar Aucma son altı ayda neler yaşadı?",
-  "gemini": "Aucma finansal performans raporu"
+  "gemini": "Aucma finansal performans raporu",
+  "summary": "ev aletleri, aucma, buzdolabı"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91009-8480-30699751.html": {
   "title": "Batan ev aletleri pazarı yeni politika getirileri elde ediyor",
-  "gemini": "Cihaz pazarı sübvansiyon politikası"
+  "gemini": "Cihaz pazarı sübvansiyon politikası",
+  "summary": "Ev aletleri pazarı, ulusal sübvansiyon politikası"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91009-8420-30699750.html": {
   "title": "Ev Aletleri Piyasasının Soğumasının Arkasındaki Büyük Tüketim Göçü",
@@ -14557,23 +14571,28 @@
  },
  "https://smarthome.ofweek.com/2026-08/ART-91005-8420-30700401.html": {
   "title": "Yineleme döngüsü yarım yıla indirildi! Süpürme robotları, yeni ve eski ürünler arasındaki geçişi hızlandırır; yeni ürünler pazar satışlarının %60'ından fazlasını oluşturur",
-  "summary": "Süpürme robotu, market, satış"
+  "summary": "Süpürme robotu, market, satış",
+  "gemini": "Robot vakum pazarı satışları"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91009-8420-30700396.html": {
   "title": "Ev aletleri devleri hep birlikte tuhaf bir döneme girdi | Dev Gelgit",
-  "summary": "ev aletleri, market"
+  "summary": "ev aletleri, market",
+  "gemini": "Ev aletleri pazar analizi"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91009-8420-30700357.html": {
   "title": "Ev aletleri pazarındaki düşüş trend haline geldiğinde",
-  "summary": "ev aletleri, pazar, sonbahar"
+  "summary": "ev aletleri, pazar, sonbahar",
+  "gemini": "Ev aletleri pazarında düşüş"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91005-12003-30700318.html": {
   "title": "iRobot iflas etti, Roborock Technology yarım yılda 986 milyonluk dev kar elde etti: Bir süpürme makinesi neden ABD tedarik zincirine zarar veriyor?",
-  "summary": "süpürme robotu, süpürücü"
+  "summary": "süpürme robotu, süpürücü",
+  "gemini": "Roborock ve iRobot işi"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91009-12003-30700241.html": {
   "title": "Xiaomi ev aletleri geride mi kalıyor?",
-  "summary": "Xiaomi, ev aletleri, market, sevkiyatlar"
+  "summary": "Xiaomi, ev aletleri, market, sevkiyatlar",
+  "gemini": "Xiaomi ev aletleri işi"
  },
  "https://smarthome.ofweek.com/2026-08/ART-91005-12003-30700606.html": {
   "title": "Borsa kârı düşürüyor! Haier Akıllı Ev'in 2. çeyrek geliri pozitife döndü, kârı önceki çeyreğe göre arttı",
@@ -14609,5 +14628,140 @@
   "title": "Otomobil şirketlerinin ardından üç büyük ev aletleri devi Haiermei'den oluşan Gree Grubu da robot sektörüne girdi",
   "summary": "Ev aletleri şirketleri, ev hizmeti robotları, somutlaşmış zeka, insansı robotlar",
   "gemini": "Cihaz devleri robot teknolojisine giriyor"
+ },
+ "https://www.itmedia.co.jp/news/article/2609/01/2000000997/": {
+  "title": "ChatGPT reklamlarının yıllık satışı 200 günden kısa sürede 1 milyar dolara ulaştı",
+  "summary": "OpenAI, reklamcılık işi \"ChatGPT Ads\"in \"ChatGPT\" üzerindeki yıllık satışlarının, lansmanından bu yana 200 günden kısa bir süre içinde 1 milyar dolara (yaklaşık 160 milyar yen) ulaştığını duyurdu. Self servis ilanının sağlandığı alanları Hindistan, Avrupa vb.'ye genişletiyor. Şirket halka açılmaya hazırlanırken, gelir kaynaklarını çeşitlendirmeyi ve hızlı büyümesini teşvik etmeyi hedefleyerek reklamcılığı çeşitlendirmenin önemli bir ayağı olarak konumlandırıyor."
+ },
+ "https://www.itmedia.co.jp/news/article/2609/01/2000000995/": {
+  "title": "Nissan ve Honda, araç içi sistemleri standartlaştıracak; ECU, işletim sistemi, yazılım vb.'yi ortaklaşa geliştirecek.",
+  "summary": "Nissan Motor ve Honda, 31 Ağustos'ta yeni nesil SDV'nin çekirdeğini oluşturan birden fazla ECU'nun ana parçalarının yanı sıra bunlar üzerinde çalışan araç içi işletim sistemi, ara katman yazılımı ve araç kontrol yazılımını standartlaştırmak için ortak bir geliştirme anlaşması imzaladıklarını duyurdu. Her iki şirket de bunu 2029'dan itibaren yeni nesil SDV'lerine uygulamayı hedefliyor."
+ },
+ "https://www.itmedia.co.jp/news/article/2609/01/2000000996/": {
+  "title": "Tim Cook'un Apple CEO'su olarak son gününde mesajı: ``Hayatta bir kez yaşanabilecek bir ayrıcalıktı''",
+  "summary": "Apple CEO'su Tim Cook, görevdeki son gününde çalışanlara gönderdiği bir mesaj ve X üzerinden yaptığı bir paylaşımla son 15 yıl için minnettarlığını dile getirdi. John Ternus, 1 Eylül'de yeni CEO olarak atanacak ve Cook, icra başkanı olarak politika yapıcılarla ilişkilerin sürdürülmesinden sorumlu olacak."
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000973/": {
+  "title": "Başlangıçta hükümet tarafından yapılması gereken DX'i tek bir kişi tamamladı. Yapay zeka, ölçeği \"uygulanabilir bir ölçek\" olarak değiştirdi. Çocuk bakımı bekleme listesi sorununda fark yaratan \"okul seçimi ipucu\" örneği.",
+  "summary": "Çocukların anaokulu bulmasına yardımcı olmak amacıyla Ağustos ayında “Çocuk Seçim Rehberi” başlatıldı. Tek bir geliştiricinin, normalde ulusal veya yerel hükümet tarafından yapılması gereken ölçekte bir şeyi başarmak için yapay zekayı kullanabildiği söyleniyor."
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000991/": {
+  "title": "Yeni iPhone'da yer alacağı söylenen \"değişken diyafram\" özelliğinin etkisi ne olacak?",
+  "summary": "10 Eylül'de duyurulması planlanan bir sonraki iPhone serisi arasında \"Pro Max\"in \"değişken diyafram\" ile donatılacağına dair söylentiler var. Gerçekte ne olacağını bilmiyorum ama eğer varsa ne yapabileceğini açıklayacağım."
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000992/": {
+  "title": "Tokyo Kulesi, Fuji Dağı, Eyfel Kulesi...günün saatine göre gölgeler nasıl büyüyor? Dünya çapında \"gölgeyi\" yeniden yaratan bir harita sıcak bir konudur",
+  "summary": "Dünyanın her yerindeki herhangi bir konum, tarih ve saatin gölgesini harita üzerinde görüntüleyen bir web hizmeti olan Shade Map, X üzerinde dikkat çekiyor. Sadece binaların değil dağların da oluşturduğu gölgeleri yeniden üretebilir, zamanı değiştirerek gölgelerdeki değişiklikleri takip edebilirsiniz."
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000986/": {
+  "title": "İlk ve ortaokullarda \"Bilgi\" konusu yapılacak, yapay zekanın kullanımı ilk kez İngilizce olarak belirtildi",
+  "summary": "Merkezi Eğitim Konseyi'nin (Eğitim, Kültür, Spor, Bilim ve Teknoloji Bakanı'nın danışma organı) özel bir komitesi, bir sonraki müfredat yönergelerinin genel bir resmini sağlayacak olan görüşmelerinin bir taslak özetini sundu. Okul, yapay zekanın (AI) yayılması da dahil olmak üzere dijital toplumdaki gelişmelerin ışığında, ilkokul ve ortaokullarda bilgiyi bir ders olarak birleştirme ve bu okulların bilgiyi kullanma becerilerini geliştirme hedefini belirledi. Bu arada İngilizcede de yapay zekanın kullanımı ilk kez açıkça belirtildi."
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000985/": {
+  "title": "“Yeni Bilişim Pasaportu Sınavı” örnek soruları ve müfredat taslağı yayımlandı. Yeni soru kapsamı nedir?",
+  "summary": "Bilgi Teknolojileri Tanıtım Ajansı (IPA), 2027 yılında başlaması planlanan yeni Bilgi İşlem Mühendisi Sınavı ve Destek Teknisyeni Sınavı için bazı örnek sorular ve taslak müfredat (düzenlenmiş öğrenme hedefleri ve gerekli bilgi ve beceriler) yayınladı. Ayrıca kapsamı revize edildiği açıklanan BT Pasaport sınavına ilişkin taslak müfredat da içeriyor."
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000984/": {
+  "title": "Tokyo Metrosu, TikToker'ın \"trenlere akıllı telefon yapıştırması\" tartışmasını ele alıyor: \"Fotoğrafçılığa izin verilmiyor.\"",
+  "summary": "Tokyo Metrosu, 31 Ağustos'ta ITmedia NEWS'e verdiği röportajda, bir trene bantlanmış akıllı telefon ve trenin hareket ettikten sonra peronda trene paralel hareket etmesinin videosunun sosyal medyada viral olduğu olayla ilgili olarak, ``Bu çekim için izin verdiğimize dair bir gerçek yok.'' diyerek yanıt verdi."
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000982/": {
+  "title": "Bireysel olarak geliştirilen çevrimiçi shogi ``Hikaku'' sona erdi, ``oyunların çoğu YİD oyunlarıydı ve oyuncular birbirlerine karşı oynayamıyordu''",
+  "summary": "Şirket, ``İnsanların diğer insanlarla oyun oynamaktan keyif almasını istiyoruz'' düşüncesiyle hizmeti yürütüyordu ve insanlar arasında neredeyse hiç oyun yaşanmadığı için, ``Artık çalıştırmanın bir anlamı kalmadı'' diyerek oyunu sonlandırmaya karar verdiler."
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000976/": {
+  "title": "Sony Music'in VTuber projesi \"VEE\", \"işleri sürdürmenin zorluğu\" nedeniyle 5 yıl aradan sonra sona eriyor",
+  "summary": "\"Sürdürülebilir bir işletme olarak faaliyet göstermeye devam etmenin zor\" olacağı belirlendi."
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000975/": {
+  "title": "Google Haritalar, ABD'de \"Ontario Gölü\" olan adı \"Lake America\" ​​olarak değiştirir ve Japonya'da da gösterir",
+  "summary": "Google, 29 Ağustos'ta (yerel saat) ABD hükümetinin yer adı veritabanının ABD'deki \"Ontario Gölü\" adını \"Amerikan Gölleri\" olarak değiştirmesinin ardından Google Haritalar'daki gösterimi değiştireceğini duyurdu. ABD'deki kullanıcılar \"Amerika Gölü\"nü görecek, Kanada'daki kullanıcılar ise \"Ontario Gölü\"nü görmeye devam edecek."
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000969/": {
+  "title": "Bilmek istemedim... ``Yüzme havuzundaki idrar miktarı'' yazısı en çok görüntülenen yazı oldu",
+  "summary": "O havuzda ne kadar idrar var?"
+ },
+ "https://www.itmedia.co.jp/news/article/2608/31/2000000968/": {
+  "title": "Grok, Ani'ye \"veda\" diyor, 3D yardımcı işlevi sona eriyor, karakterler geliştirme stüdyosunun yeni uygulaması \"Animates\"te devam edecek",
+  "summary": "ABD xAI'nin yapay zeka sohbeti \"Grok\"ta 3D karakterlerle etkileşime girmenizi sağlayan \"tamamlayıcı\" işlevi kullanımdan kaldırılacak. ``Ani'' gibi karakterler, ABD'de geliştirici Animation Inc. tarafından piyasaya sürülen yeni bir uygulama olan ``Animates''te kullanılmaya devam edecek."
+ },
+ "https://kaden.watch.impress.co.jp/docs/column/iine/2123540.html": {
+  "title": "Workman'ın yatak takımları da harika! İyileşme kıyafetinizle aynı iplikle uyanın◎ [Günün beğenileri! ]",
+  "summary": "Workman'ın kurtarma giysisi Mediheal serisi, paranın karşılığını vermesi ve işlevselliğiyle dikkat çekiyor. Uzun kollu sıfır yaka, uzun pantolon, kısa kollu gömlek ve kısa pantolonlardan oluşan seri yayınlanmaya devam ediyor."
+ },
+ "https://kaden.watch.impress.co.jp/docs/column_review/kaden/2136985.html": {
+  "title": "[Ev Aletleri İncelemesi] Buzdolaplarına yönelik Bruti'nin Potaden FridgePower'ı ile yiyeceklerinizi ani elektrik kesintilerinden koruyun",
+  "summary": "Her yıl yaz aylarında tayfunla ilgili felaketler Japon takımadalarını vuruyordu, ancak bu yıl yaşanan tek felaket bu değildi. 28 Temmuz'da Kumamoto'da 7,1 büyüklüğünde büyük bir deprem meydana geldi ve geniş çapta hasara neden oldu. Ayrıca 13 Ağustos'tan itibaren çoğunlukla Chiba Eyaleti'nde doğrusal bir yağmur bandında şiddetli yağmur yağdı ve 2.300'den fazla evin hasar gördüğü büyük bir felaketle sonuçlandı. Etkilenenlere en derin taziyelerimizi ifade etmek isteriz."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2136955.html": {
+  "title": "Arabanızda ve evinizin camında su lekesi bırakmayacak saf su temizleyici.",
+  "summary": "Komeri \"CRUZARD Saf Su Bardağı Temizleyici 500mL\"yi piyasaya sürdü. Fiyatı 498 yen. 31 Ağustos itibarıyla e-ticaret sitesi Komeri.com'da stoklarımız tükenmiş durumda ancak eylül ayı sonlarında yeniden stoklara girmesi planlanıyor."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2136906.html": {
+  "title": "Komeri, masa üstü kömür ızgarasında yemek pişirmenize olanak sağlayan bir dış mekan sobasıdır.",
+  "summary": "Komeri, 28 Ağustos'ta “Doğal Mevsim Masa Üstü Küp Ocağı”nı piyasaya sürdü. Fiyatı 1.980 yen."
+ },
+ "https://senken.co.jp/posts/tutuanna-250901": {
+  "title": "Tutuanna kurtarma pijamaları şimdi satışta",
+  "summary": "Çorap ve iç giyim üreticisi ve perakendecisi Tutuanna (Osaka City), ``Giyilebilir!Yorgunluk giderme giysisi'' satıyor. Basit ama sevimli tasarımı ve yüksek suni ipek karışımına sahip pürüzsüz dokusuyla farklılaşıyor ve sadece giyerek yorgunluğun giderilmesini kolayca destekliyor."
+ },
+ "https://senken.co.jp/posts/hepfive-260901": {
+  "title": "HEP Five'ın çalışanlara yönelik \"Yaz Şenliği\" bir günde 490 kişinin katılımıyla büyük ilgi gördü",
+  "summary": "Osaka, Umeda'daki HEP Five (Hankyu Hanshin Building Management tarafından işletilmektedir) 27 Ağustos'ta çalışanlar için bir “Yaz Festivali” düzenledi. İlk kez olmasına rağmen 490 kişi katıldı. Yaz festivalinin içeriğinde çift kişilik otel yemeği biletleri, çift öğle yemeği biletleri ve..."
+ },
+ "https://senken.co.jp/posts/pal-260901": {
+  "title": "\"Pal Closet\" gerçek bir etkinliktir ve şirket içi etkileyicilerle etkileşime girer",
+  "summary": "28-30 Ağustos tarihleri ​​arasında PAL, Tokyo'daki Omotesando Hills ana binasının 3. bodrum katındaki Space O'da resmi EC ``PAL Closet'' (Barclos) için ``PAL's Kyun Matsuri 2026 Sonbahar Moda Festivali'' gerçek etkinliğini düzenledi. Pal Group fiziksel mağazaları ve..."
+ },
+ "https://senken.co.jp/posts/antiqua-240901": {
+  "title": "Antica, Daikanyama'da sınırlı süreli bir mağaza açarak üretimin arka planı hakkında farkındalık yayıyor",
+  "summary": "Bir moda e-ticaret şirketi olan Antica, 28-30 Ağustos tarihleri ​​arasında Daikanyama, Tokyo'da sınırlı süreli sergi tarzı bir mağaza açtı. 28'inde etkileyicileri, medyayı, iş ortaklarını ve diğer ilgili tarafları davet ettik. Yeni gelenler ve ön sipariş verenler, 26 sonbahar/kış dış giyimine odaklanıyor..."
+ },
+ "https://senken.co.jp/posts/mete-260901": {
+  "title": "《Metemimi》Protein fiyat artışı",
+  "summary": "Protein fiyatları artmaya devam ediyor. Gittiğim spor salonundaki orijinal ürünlerin fiyatı Ekim 2025 ve Ağustos 2016'da iki kez artırılarak orijinal fiyatından %40 oranında artırıldı. Başka bir markaya baktığımda fiyatı iki yıl öncesine göre ikiye katlanmıştı. En dikkat çekici fiyat artışı sütten peynir üretiminde yaşandı..."
+ },
+ "https://senken.co.jp/posts/view-260901": {
+  "title": "《Bakış açısı》 Bir satış nasıl olmalı",
+  "summary": "Yaz indirim sezonu sona erdi. Bu yıl da büyük ticari tesislerdeki satışların zamanlaması kutuplaştı; bazı tesisler haziran sonundan temmuz başına, bazıları ise temmuz ortasından itibaren başlıyor. Lumine, mağaza genelindeki satışı yalnızca ilk gün olan 16 Temmuz'da birleştirdi ve Parco, şirket genelindeki satışı birleştirdi..."
+ },
+ "https://senken.co.jp/posts/sts27ss": {
+  "title": "[Erken kayıt indirimi başladı] [29 Ekim] 2027 İlkbahar/Yaz Senken Bayan Trend Semineri",
+  "summary": "“27 İlkbahar/Yaz Senken Bayan Trend Semineri” 29 Ekim (Perşembe) günü gerçek ve online olarak gerçekleştirilecek. Paris, Milano, New York, Londra ve Tokyo'daki en son koleksiyonları haber yapan Senken Shimbun'dan bir muhabir, 27. ilkbahar/yaz sezonunu haber yapacak..."
+ },
+ "https://senken.co.jp/posts/yurakucho-park-260831": {
+  "title": "Tokyo'daki Yurakucho İstasyonu'nun önündeki kültürel yayma tesisi Yurakucho Park, 2027'de açılacak",
+  "summary": "Mitsubishi Estate, şirketin Yurakucho Binası ve Tokyo'daki Yurakucho İstasyonu önündeki Yeni Yurakucho Binasının alanını kullanacak, kültürel odaklı yeni bir tesis olan Yurakucho Park'ta inşaata 1 Eylül'de başlayacak. 2027'de açılması planlanıyor. [İlgili yazı] IMS sitesinin adı ``Tenjin Taiki'' 27..."
+ },
+ "https://senken.co.jp/posts/mitsubishiestate-260831": {
+  "title": "IMS sahasının adı “Tenjin Taiki” olarak belirlendi. İnşaatın Mayıs 2027 sonunda tamamlanması planlanıyor.",
+  "summary": "Mitsubishi Estate'in şu anda Tenjin, Fukuoka Şehri'ndeki eski IMS'nin yerinde inşa etmekte olduğu büyük ölçekli kompleksin ismine ``Tenjin Taiki'' karar verildi. Tamamlanmasının Mayıs 2027 sonunda yapılması planlanıyor. Ayrıca planın geliştirme konsepti olan \"Fukuoka Kültürel Ekosistemi\"ni somutlaştıran bir unsur olarak üçüncü katın girişinde bir kahve dükkanı bulunuyor..."
+ },
+ "https://senken.co.jp/posts/fukuigouu-260831": {
+  "summary": "29-30 Ağustos tarihleri ​​arasında Fukui Eyaletinde rekor düzeyde şiddetli yağmur yağdı. Fukui Şehri, Katsuyama Şehri ve Ono Şehrinde Seviye 5 şiddetli yağmur uyarısı yapıldı ve ayrıca Sakai Şehri ve diğer şehirlerde de sel hasarı meydana geldi. Burası tekstil firmalarının yoğunlaştığı bir bölge ama sular altında kalan bazı fabrikalar dışında büyük firmalar da..."
+ },
+ "https://smarthome.ofweek.com/2026-08/ART-91005-12003-30700921.html": {
+  "title": "Mutfağın yapay zekaya ihtiyacı var mı? Boss Electric \"Evet\" diyor",
+  "summary": "Finans, AI mutfak aletleri, Robam Aletleri"
+ },
+ "https://smarthome.ofweek.com/2026-08/ART-91005-12008-30700847.html": {
+  "title": "Robam Electric Yarı Yıllık Raporu: Yapay zeka pişirme %53 arttı, ancak -360 milyonluk nakit akışı dikkatli olunması gereken gerçek bir sinyal",
+  "summary": "Ev aletleri, patron aletleri, AI pişirme"
+ },
+ "https://smarthome.ofweek.com/2026-08/ART-91005-12003-30700846.html": {
+  "title": "Hem gelir hem de net kâr arttı. Ecovacs ve Roborock Technology neden limite kadar düşüp sonra limite kadar yükseldi?",
+  "summary": "Finans, Ecovacs, Taş Teknolojisi, Mali Rapor"
+ },
+ "https://smarthome.ofweek.com/2026-08/ART-91005-12003-30700826.html": {
+  "title": "Yüksek sıcaklık iklimlendirmeyi kurtaramıyor ve beyaz eşya sektörü ulusal sübvansiyonun \"vade borcunu\" ödüyor",
+  "summary": "İklimlendirme, beyaz eşya sektörü, Gree Elektrikli Ev Aletleri, mali rapor"
+ },
+ "https://smarthome.ofweek.com/2026-08/ART-91009-8420-30700811.html": {
+  "title": "Ev aletlerinde çevrimdışı fiziksel mağazaların kaderi belli oldu",
+  "summary": "Ev aletleri, fiziki mağazalar, marketler"
+ },
+ "https://smarthome.ofweek.com/2026-08/ART-91009-12003-30700785.html": {
+  "title": "İnternet ünlülerinin küçük ev aletleri çöktü",
+  "summary": "küçük ev aletleri, market"
  }
 }
