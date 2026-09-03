@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-31T00:19:10Z",
-  "total_articles": 225,
+  "generated_at": "2026-09-03T05:57:22Z",
+  "total_articles": 227,
   "companies": [
     "Samsung",
     "Haier",
@@ -9,8 +9,8 @@
     "BSH (Bosch/Siemens)"
   ],
   "totals": {
+    "Samsung": 159,
     "Whirlpool": 13,
-    "Samsung": 157,
     "Midea": 20,
     "BSH (Bosch/Siemens)": 12,
     "Haier": 23
@@ -33,12 +33,8 @@
     "2026-Q3"
   ],
   "by_quarter": {
-    "Whirlpool": {
-      "2026-Q3": 7,
-      "2026-Q2": 6
-    },
     "Samsung": {
-      "2026-Q3": 6,
+      "2026-Q3": 8,
       "2026-Q2": 9,
       "2026-Q1": 14,
       "2025-Q4": 12,
@@ -52,6 +48,10 @@
       "2023-Q4": 8,
       "2023-Q3": 17,
       "2023-Q2": 7
+    },
+    "Whirlpool": {
+      "2026-Q3": 7,
+      "2026-Q2": 6
     },
     "Midea": {
       "2026-Q3": 1,
@@ -98,24 +98,24 @@
     "Other"
   ],
   "by_theme": {
+    "Samsung": {
+      "Laundry": 28,
+      "Design & Events": 118,
+      "AI": 99,
+      "Sustainability & Energy": 30,
+      "Cooking & Kitchen": 23,
+      "Other": 5,
+      "IoT & Connectivity": 43,
+      "Refrigeration": 21,
+      "Hygiene & Health": 4,
+      "Business & Corporate": 8
+    },
     "Whirlpool": {
       "Cooking & Kitchen": 1,
       "Other": 2,
       "Laundry": 1,
       "Design & Events": 8,
       "Business & Corporate": 10
-    },
-    "Samsung": {
-      "AI": 98,
-      "Cooking & Kitchen": 23,
-      "Design & Events": 116,
-      "Other": 5,
-      "IoT & Connectivity": 43,
-      "Laundry": 26,
-      "Sustainability & Energy": 29,
-      "Refrigeration": 21,
-      "Hygiene & Health": 4,
-      "Business & Corporate": 8
     },
     "Midea": {
       "Design & Events": 9,
@@ -150,13 +150,13 @@
     }
   },
   "date_range": {
+    "Samsung": {
+      "earliest": "2023-06-01",
+      "latest": "2026-09-03"
+    },
     "Whirlpool": {
       "earliest": "2026-05-06",
       "latest": "2026-08-27"
-    },
-    "Samsung": {
-      "earliest": "2023-06-01",
-      "latest": "2026-08-20"
     },
     "Midea": {
       "earliest": "2023-04-01",
