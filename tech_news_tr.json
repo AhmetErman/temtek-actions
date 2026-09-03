@@ -13411,11 +13411,13 @@
  },
  "https://www.itmedia.co.jp/news/article/2608/20/2000000639/": {
   "title": "Stripe, 400'den fazla AI modelini bir araya getiren tarafsız platformu koruyan AI model ağ geçidi OpenRouter'ı satın aldı",
-  "gemini": "Stripe, OpenRouter'ı satın aldı"
+  "gemini": "Stripe, OpenRouter'ı satın aldı",
+  "summary": "Stripe, yapay zeka modelleri için bir ağ geçidi şirketi olan OpenRouter'ı satın almayı kabul ettiğini duyurdu. Bildirilen satın alma fiyatı yaklaşık 7,5 milyar dolar. OpenRouter, tek bir API ile 400'den fazla modelin değiştirilmesine olanak sağlar. Stripe, token maliyet optimizasyonunu güçlendirecek ve OpenRouter, satın alma sonrasında tarafsız olarak çalışmaya devam edecek."
  },
  "https://www.itmedia.co.jp/news/article/2608/20/2000000624/": {
   "title": "Futbolda kafa vuruşundan hemen sonra beyin hasarı indeksi artıyor; Amerikan tıp dergisinde yayınlanan 300 kişi tarafından ölçülen gerçek veriler",
-  "gemini": "Futbol kafa yaralanması çalışması"
+  "gemini": "Futbol kafa yaralanması çalışması",
+  "summary": "Hollanda'nın Amsterdam Üniversitesi'ne bağlı araştırmacılar tarafından \"JAMA Neurology\" tıp dergisinde yayınlanan \"Amatör Futbol Kafa Atışı ve Kan Bazlı p-Tau217 ve S100B'de Akut Yükselmeler\" başlıklı makale, gerçekte amatör futbol maçlarında ortaya çıkan kafa vuruşunun beyin hasarını gösteren \"kan biyobelirteçlerini\" etkileyip etkilemediğini inceleyen bir araştırma raporudur."
  },
  "https://www.itmedia.co.jp/news/article/2608/20/2000000634/": {
   "title": "Google, ``Google AI Plus''ı üniversite öğrencilerine 1 yıl boyunca ücretsiz sunuyor ``Gemini'' uygulaması aynı zamanda öğrenciler için yeni özellikler de içeriyor",
@@ -13424,43 +13426,53 @@
  },
  "https://www.itmedia.co.jp/news/article/2608/20/2000000582/": {
   "title": "Japonya “Ay taşımacılığını” bir endüstri haline getirebilir mi? ispace, Mitsubishi Heavy Industries ile iş birliği yaptı; yerli üretim roketleri seçmelerinin 3 nedeni",
-  "gemini": "Ay keşif endüstrisindeki büyüme"
+  "gemini": "Ay keşif endüstrisindeki büyüme",
+  "summary": "Ay keşif şirketi iSpace, 2028 yılında yapılması planlanan yeni Ay iniş aracı ULTRA'yı fırlatmak için Mitsubishi Heavy Industries'in H3 roketini kullanmak üzere bir sözleşme imzaladı. Her ne kadar yerli üretim bir roket ile yerli üretim iniş aracını (Aya iniş aracı) birleştirmek için göz alıcı bir girişim olsa da, bu sözleşmenin anlamı Hinomaru Ay Keşfi'nin gerçekleştirilmesinin ötesine geçiyor."
  },
  "https://kaden.watch.impress.co.jp/docs/column/iikoto/2132838.html": {
   "title": "Klimanızı 80.000 yen indirimle değiştirin! Tokyo sakinleri Tokyo Sıfır Emisyon Noktaları hakkında bilgi sahibi olmadıkları takdirde çok şey kaçırıyor olabilirler",
-  "gemini": "AC enerji verimliliği noktaları"
+  "gemini": "AC enerji verimliliği noktaları",
+  "summary": "Geçen gün Cuma günü öğleden sonra geç saatlerde, erkek kardeş-kız kardeş grubu LINE'daki ağabeyimden nadir bir bağlantı aldım."
  },
  "https://kaden.watch.impress.co.jp/docs/news/2134152.html": {
   "title": "Shark'ın ilk hava temizleyicisi - klimayı ekranda görebilirsiniz",
-  "gemini": "Shark hava temizleyici lansmanı"
+  "gemini": "Shark hava temizleyici lansmanı",
+  "summary": "Shark Ninja, havadaki değişiklikleri gerçek zamanlı olarak görselleştiren bir hava temizleyici olan \"Shark BreatheClear\"ı piyasaya sürecek. 7 tatami alanına sahip kompakt model \"HP062J serisi\" 25 Eylül'de, 15 tatami alanına sahip standart model \"HP162J serisi\" ise 15 Ekim'de piyasaya sürülecek. Tahmini piyasa fiyatı kompakt model için 29.700 yen ve standart model için 39.600 yendir."
  },
  "https://kaden.watch.impress.co.jp/docs/news/2134246.html": {
   "title": "Iris, ultra ince baloncuklarla sarılmış bir duş başlığı",
-  "gemini": "Yeni kabarcık duş başlığı"
+  "gemini": "Yeni kabarcık duş başlığı",
+  "summary": "Iris Ohyama, şirketin güzellik ekipmanları markası \"MiCOLA\"nın \"Ultra İnce Kabarcıklı Temizleyici Duş Başlığı SHS-M01-S\" duş başlığının spa modelini 26 Ağustos'ta piyasaya sürecek. Doğrudan satış fiyatı 19.580 yen."
  },
  "https://kaden.watch.impress.co.jp/docs/news/2131146.html": {
   "title": "Daikanyama'da kargo bisikleti e-bisikletlerini kullanan mobil bir çiçekçi dükkanı açıldı",
-  "gemini": "Mobil bisiklet çiçekçisi"
+  "gemini": "Mobil bisiklet çiçekçisi",
+  "summary": "Elektrik destekli bisikletler konusunda uzmanlaşmış bir mağaza olan Motovelo, 25 ve 26 Temmuz'da kargo e-bisikletlerini kullanan \"Motovelo Flower Shop\" adlı mobil bir çiçekçi dükkanı düzenledi."
  },
  "https://kaden.watch.impress.co.jp/docs/news/2134145.html": {
   "title": "Transkripsiyon ve yapılacak işlerin çıkarılması için giyilebilir bir yapay zeka kayıt cihazı olan SwitchBot",
-  "gemini": "Giyilebilir AI transkripsiyon kayıt cihazı"
+  "gemini": "Giyilebilir AI transkripsiyon kayıt cihazı",
+  "summary": "SwitchBot, konuşmaları kaydeden ve programları yazıya dökmek ve düzenlemek için yapay zekayı kullanan giyilebilir bir cihaz olan \"SwitchBot AI MindClip\"i 19 Ağustos'ta piyasaya sürdü. Fiyatı 19.980 yen. 11 Eylül'e kadar her resmi çevrimiçi mağazadan 16.980 yen karşılığında satın alınabilir."
  },
  "https://kaden.watch.impress.co.jp/docs/news/2134341.html": {
   "title": "Sharp'ın tamburlu çamaşır makinesi, penguenlerden ilham alan mikro kabarcıklarla temizleme gücünü artırıyor",
-  "gemini": "Sharp tamburlu çamaşır makinesi lansmanı"
+  "gemini": "Sharp tamburlu çamaşır makinesi lansmanı",
+  "summary": "Sharp, 10 Eylül'de 12 kg yıkama kapasitesi/6 kg kurutma kapasitesi ile Plasmacluster tamburlu yıkama/kurutucu \"ES-12X2\" ve \"ES-12P2\"yi piyasaya sürdü. Rezervasyonlar 20 Ağustos'tan itibaren kabul edilecektir. Fiyatlar açıktır. Beklenen piyasa fiyatı 416.000 yen ve 356.000 yen civarında."
  },
  "https://kaden.watch.impress.co.jp/docs/topic/topic/2133261.html": {
   "title": "Mirable Rain neden kiri ovalamadan temizliyor? İnce kabarcık teknolojisi muhteşem!",
-  "gemini": "İnce kabarcık teknolojili duş başlıkları"
+  "gemini": "İnce kabarcık teknolojili duş başlıkları",
+  "summary": "İnce kabarcık oluşturma mekanizmalarıyla donatılmış yüksek performanslı duş başlıkları birbiri ardına ortaya çıkıyor. Science, ince kabarcıklar konusunda uzmanlaşmış bir üreticidir. Bazılarınız, duş başlığının yanak üzerine kalıcı kalemle çizilen bir çizgiye uygulandığı “Mirable” duş başlığı serisinin TV reklamını görmüş olabilir. 2025 Osaka/Kansai Fuarı'nda sergilenen Mirai İnsan Yıkama Makinesi de ilgi gördü."
  },
  "https://kaden.watch.impress.co.jp/docs/news/2134304.html": {
   "title": "Afet Önleme Günü öncesinde evimizin afete karşı önlemlerini gözden geçirelim.",
-  "gemini": "Ev felaketini önleme tedbirlerinin gözden geçirilmesi"
+  "gemini": "Ev felaketini önleme tedbirlerinin gözden geçirilmesi",
+  "summary": "Chiba Eyaleti'nde son dönemde yaşanan yoğun yağışlarda suya batan ve hareket edemeyen araçlara dokunulmazken, apartmanların bodrum katlarında bulunan elektrikli ekipmanlar da hala su altında kalırken, bazı bölgelerde elektrik kesintileri ve su kesintileri yaşandı. Dürüst olmak gerekirse inanılmaz bir şoktu çünkü nehirden bu kadar uzak bir yerde böyle bir hasarın meydana geleceğini hiç beklemiyordum."
  },
  "https://kaden.watch.impress.co.jp/docs/news/2134130.html": {
   "title": "Panasonic'in tamburlu çamaşır makinesi, kurutma sorunlarını ortadan kaldırmak için bir siklon ünitesi kullanıyor",
-  "gemini": "Panasonic kurutma makinesi performans iyileştirme özelliği"
+  "gemini": "Panasonic kurutma makinesi performans iyileştirme özelliği",
+  "summary": "Panasonic, diyagonal tamburlu yıkayıcı/kurutucuların kurutma performansındaki düşüşü bastıracak bir işlevle donatılmış olan ``NA-LX129FL'' ve ``NA-LX127FL''yi Ekim başında piyasaya sürecek. Her iki model de 12 kg yıkama/kurutma kapasitesine ve 6 kg kurutma kapasitesine sahiptir ve her ikisi de ısı pompalı kurutma yöntemini kullanır. Fiyat açık olup doğrudan satış fiyatı 398.970 yen ve 358.380 yendir."
  },
  "https://kaden.watch.impress.co.jp/docs/news/2133578.html": {
   "title": "Termos, taşıması kolay, mobil bir kupa",
@@ -13469,7 +13481,8 @@
  },
  "https://kaden.watch.impress.co.jp/docs/news/2133444.html": {
   "title": "Kahve tozunun etrafa saçılmasını önleyen Russell Hobbs elektrikli değirmen",
-  "gemini": "Russell Hobbs kahve değirmeni sürümü"
+  "gemini": "Russell Hobbs kahve değirmeni sürümü",
+  "summary": "Oishi & Associates, 18 Eylül'de ev aletleri markası \"Russell Hobbs\"un \"Akıllı Mısır Öğütücü 8500JP\"sini piyasaya sürecek. Fiyatı 16.500 yen."
  },
  "https://kaden.watch.impress.co.jp/docs/news/2133779.html": {
   "title": "Termos Ocaktan sofraya “Yemek pişirmek için de kullanılabilen tabak”",
@@ -15159,5 +15172,169 @@
   "title": "Goldwin Catale Toyama resmi üniformalara DPP'yi getiriyor",
   "summary": "Goldwin, J2 Futbol Takımı Katare Toyama'ya 2026-27 sezonu için sağlanan sınırlı formalar için ürün bilgilerine erişim sağlayan Dijital Ürün Pasaportunu (DPP) tanıttı. Zaten 22 Ağustos 1'den beri satışta...",
   "gemini": "Goldwin üniformaları dijital pasaportu benimsiyor"
+ },
+ "https://www.itmedia.co.jp/news/article/2609/03/2000001140/": {
+  "title": "Toei Animation, Fransa'daki Dragon Ball tema parkıyla ilgili habere izin vermediğini söylüyor... Hikaye nerede çarpıklaştı? Konu nasıl karmaşıklaştı",
+  "summary": "Fransa'da bir Dragon Ball tema parkı inşa edilecek - hem yurt içinde hem de yurt dışında bildirilen planlarla ilgili olarak Toei Animation, 31 Ağustos'ta herhangi bir lisans vermediğini belirten bir açıklama yayınladı. Japonya'da şirketin açıklaması şaşkınlıkla karşılandı, çünkü ilk raporlar projenin Japonya'da neden başlatılmadığına dair tartışmalara yol açtı."
+ },
+ "https://www.itmedia.co.jp/news/article/2609/03/2000001141/": {
+  "title": "“Saf altın para” satın alın → İçeriği bakır ve demirdir Tanaka Kikinzoku ve Mikimoto Kataru Tüketici İşleri Ajansı gibi sahte sitelere dikkat edin",
+  "summary": "3 Eylül'de Tüketici İşleri Dairesi, \"Tanaka Kikinzoku Kogyo\" ve \"Mikimoto\" kisvesi altında sahte değerli metaller ve mücevherler satan sahte web siteleri hakkında bir uyarı yayınladı. İşin püf noktasının, mağdurları sosyal medya reklamları yoluyla cezbetmek ve onlara teslimatta nakit olarak sahte ürünler göndermek olduğu söyleniyor."
+ },
+ "https://www.itmedia.co.jp/news/article/2609/03/2000001130/": {
+  "title": "Trump yönetimi: ``AI öğrenme makaleleri telif hakkı ihlali değildir'' OpenAI'yi destekleyen görüş, New York Times'a karşı dava vb.",
+  "summary": "\"Yüksek Lisans çalışmaları için telif hakkıyla korunan metinlerin kullanılması, adil kullanım anlamına gelir ve telif hakkı yasasını ihlal etmez.\""
+ },
+ "https://www.itmedia.co.jp/news/article/2609/03/2000001115/": {
+  "title": "New York City, yapay zekanın devlet okullarında kullanımını bir yıl süreyle yasakladı; bu durum 8. sınıfa kadar yaklaşık 600.000 öğrenciyi etkiliyor",
+  "summary": "New York City, 2 Eylül'de (yerel saat) gelecek bir yıl boyunca devlet okulu öğrencilerinin üretken yapay zeka kullanımını yasaklayacağını duyurdu. Hedef kitlesi 2 yaştan (okul öncesi eğitim) 8. sınıfa (13-14 yaş) kadardır. Yaklaşık 600.000 kişi etkilenecek."
+ },
+ "https://www.itmedia.co.jp/news/article/2609/03/2000001127/": {
+  "title": "Tokuryu'nun zarar görmesini önlemek için Ulusal Polis Teşkilatı uzman panelinin önerdiği eğitmenlerin akıllı telefonlarının ``uzaktan analizi''",
+  "summary": "2 Eylül'de, anonim ve mobil suç gruplarının (Tokuryu) neden olduğu zararları önlemeye yönelik tedbirleri değerlendiren Ulusal Polis Teşkilatının uzman inceleme komitesi, akıllı telefonlar ve komutanlar tarafından kullanılan diğer cihazlardan iletişim içeriğini uzaktan elde etmek için yeni bir yöntemin uygulamaya konulması çağrısında bulunan bir teklifin taslağını duyurdu. Ulusal Polis Teşkilatı tavsiyelere dayanarak gerekli yasaları revize etmeyi planlıyor."
+ },
+ "https://www.itmedia.co.jp/news/article/2609/03/2000001125/": {
+  "title": "AWS, Japonya ile ABD'yi birbirine bağlayan ve 2029'da 420 Tbps hızında çalışmaya başlaması planlanan yeni Pasifik denizaltı kablosu \"Sta'O'Nuk\"u duyurdu",
+  "summary": "Özet Mevcut Değil"
+ },
+ "https://www.itmedia.co.jp/news/article/2609/03/2000001124/": {
+  "title": "Bir oyun olarak AWS hakkında bilgi edinebileceğiniz \"AWS Quest\"in beklenmedik yeni sürümü, yapay zeka sanal müşterileriyle etkileşim kurmanıza olanak tanır",
+  "summary": "Amazon Web Services (AWS), 3 boyutlu açık dünyada AWS hakkında bilgi edinebileceğiniz çevrimiçi bir oyun olan AWS Cloud Quest 2.0'ın yeni bir sürümünü piyasaya sürdü."
+ },
+ "https://www.itmedia.co.jp/news/article/2609/03/2000001120/": {
+  "title": "X, artık profil gönderilerinizi beğenilere göre sıralayabilirsiniz",
+  "summary": "Artık X'in profil ekranında geçmiş gönderileri \"popüler\"e göre sıralayabilirsiniz. Gönderiler, beğeni sayısına göre azalan sırada görüntülenebilir, bu da bir hesabın geçmiş hit gönderilerinin kontrol edilmesini kolaylaştırır."
+ },
+ "https://kaden.watch.impress.co.jp/docs/column/puko/2137980.html": {
+  "title": "JAF'a katıldığım için mutluyum! Yaz tatiline yol yardımı yardım etti",
+  "summary": "Sonunda Eylül geldi. Yeni eğitim-öğretim yılından ve yaz tatilinden uzak kaldığımdan bu yana uzun zaman geçti ama yaz tatilinin sona ermesinin üzüntüsünü hâlâ hissediyorum. Yetişkinler için yaz tatili kısadır. Bazı şirketler Obon tatillerinde tatil yapabilirken, bazıları da dilediğiniz zaman yaz tatili yapmanıza izin veriyor."
+ },
+ "https://kaden.watch.impress.co.jp/docs/column/precooking/2137372.html": {
+  "title": "Mentsuyudan sıkıldıysanız miso soslu somene ne dersiniz?",
+  "summary": "Erişte çorbasıyla somen yemekten sıkıldıysanız neden miso soslu bir büküm denemiyorsunuz? Misonun yumuşak tadı, bazı eriştelerle iyi gider. Bu kez zengin bir sosla kaplanmış Miso Soslu Somen'i tanıtacağız."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2137909.html": {
+  "title": "Buz yapımını ve kahveyi de destekleyen su sunucusu. Musluk suyuyla kullanımı kolaydır.",
+  "summary": "\"HAYIR.\" (Nodot), 5 Eylül saat 10:00'dan itibaren GREEN FUNDING'de yeni nesil hepsi bir arada içecek sunucusu \"Noend Drink Atelier\"in ön satışına başlayacak. Genel perakende fiyatı 198.000 yen, ancak ön satış sırasında 138.600 yenden %30'a varan indirimle satın alabilirsiniz."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2137864.html": {
+  "title": "Caddo Hava Temizleme Cihazı Ozon sterilizasyonu ve yüksek performanslı HEPA filtre",
+  "summary": "Cado, LEAF hava temizleyici serisinden ozon alanı sterilizasyon fonksiyonuna sahip sterilizasyon hava temizleyici LEAF 330i AP-C330i'yi 4 Eylül'de piyasaya sürecek. Fiyatı 88.000 yen."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2124840.html": {
+  "title": "Comfee, katlanabilir kapaklı, yerden tasarruf sağlayan dikey çamaşır makinesi",
+  "summary": "1 Temmuz'da Nippon Midea, ev aletleri markası ``Comfee'' adı altında katlanabilir kapaklı bir dizi tam otomatik çamaşır makinesini piyasaya sürdü. Seri ve fiyatlar, 4,5 kg yıkama kapasiteli model \"CA-451\" için 25,800 yen, 5,5 kg \"CA-552\" modeli için 27,800 yen ve 6 kg model \"CA-602\" için 30,300 yen. Her biri iki renkte mevcuttur: beyaz ve metalik gri."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2137219.html": {
+  "title": "Yuvarlak ayaklı klasik bir soba olan Aladdin, deprem anında yangını anında söndürüyor",
+  "summary": "Japonya AIC, 1 Eylül'de gaz sobası \"Aladdin Mavi Alev Isıtıcısı\"nın yeni bir modelini piyasaya sürecek. Fiyatı \"BF3913\" için 54.780 yen ve \"BF3914\" için 65.780 yendir."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2137691.html": {
+  "title": "Sıcak su da yapabilen, şişe şeklinde portatif bir su ısıtıcısı",
+  "summary": "ELECOM, hareket halindeyken bir kişi için kolayca su kaynatmanıza olanak tanıyan “ECLEAR Taşınabilir Sıcak Su Isıtıcısını” Eylül ortasında piyasaya sürecek. Doğrudan satış fiyatı 6.980 yen."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2137520.html": {
+  "title": "Hem sakal hem de vücut için tıraş bıçağı hissi veren elektrikli tıraş makinesi.",
+  "summary": "Dreame Technology Japan, 1 Ekim'den itibaren GREEN FUNDING'de çok işlevli tıraş makinesi \"Dreame SwiftBlade\"in ön satışına başlayacak. Fiyatının ise proje başladıktan sonra açıklanması bekleniyor."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2137687.html": {
+  "title": "Pana'nın 20. yıl dönümü için tamamen yenilenen sektörün en küçük derinliği üzerine oturmayı kolaylaştırıyor",
+  "summary": "Panasonic Konut Çözümleri, tam otomatik tuvalet temizliği \"Ara Uno\"nun piyasaya sürülmesinin 20. yılını fırsat bilerek tam model değişikliğine gidecek ve 21 Ekim'den itibaren sırayla \"Ara Uno L-CLASS\"ı piyasaya sürecek. Fiyatlar, yer tipi için 352.000 yen'den (vergi ve inşaat maliyetleri hariç) ve yarı yüzer tip için 382.000 yen'den (vergi ve inşaat maliyetleri hariç) başlıyor. Sipariş başlangıç ​​tarihi, dikili tip için 21 Ekim, yarı yüzer tip için ise 21 Aralık'tır."
+ },
+ "https://kaden.watch.impress.co.jp/docs/column_review/kaden/2128489.html": {
+  "title": "[Ev aletleri incelemesi] Jakuri'nin SlimPower H1'in günlük kullanımı kolaydır.",
+  "summary": "Geçmişte çeşitli pil üreticileriyle yaptığım görüşmelerden öğrendiğime göre, Japonya'da pil satışları doğal afetlerden sonra önemli ölçüde artıyor. Sadece afetlerden etkilenen bölgelerde değil, diğer alanlarda da afet önleme bilinci artacak, yerel yönetimler ve bireyler arasında pillere olan talep artacaktır."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2137352.html": {
+  "title": "Sharp'ın Plasmacluster Nemlendirici Hava Temizleme Cihazı Evcil hayvanlarla yaşayan insanlar için",
+  "summary": "Sharp, 10 Eylül'de entegre AI hizmeti \"NIAH\" ile uyumlu iki plazma kümesi nemlendirme hava temizleyicisi modelini piyasaya sürecek. Seride 28 tatami mat taban alanına sahip ``KI-WX100'' ve 22 tatami mat taban alanına sahip ``KI-WX75'' yer alıyor. Fiyat açık olup doğrudan satış fiyatı KI-WX100 için 148.000 yen ve KI-WX75 için 98.800 yendir."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2136848.html": {
+  "title": "Zojirushi buharlı nemlendiriciler, yatak odaları için küçük boyuttan yüksek güce kadar çeşitlilik gösterir",
+  "summary": "Zojirushi Mahobin, filtre gerektirmeyen ve bakımı kolay buhar tipi nemlendiriciyi 1 Eylül'den itibaren piyasaya sürecek. Ürün serisi dört seriden oluşur: geniş oturma odaları için uygun yüksek güçlü tip \"EE-TC60\", uyumaya uygun uzun süreli nemlendirme tipi \"EE-DG35/50\", basit çalıştırma özelliğine sahip temel tip \"EE-RV35/50\" ve yatak odaları ve masa alanları için uygun kompakt tip \"EE-MC20\". Tüm fiyatlar açıktır. Doğrudan satış fiyatları 17.380 yen ile 29.480 yen arasında değişmektedir."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2137602.html": {
+  "title": "Dyson'ın elektrikli diş fırçası, fırçalama sırasında dişlerin arasına jet püskürtüyor",
+  "summary": "Dyson, aynı anda dişlerinizi fırçalamanıza ve diş ipi kullanmanıza olanak tanıyan diş ipi özellikli Dyson CameraJet elektrikli diş fırçasını 1 Eylül'de piyasaya sürdü. Doğrudan satış fiyatı 79.800 yen."
+ },
+ "https://kaden.watch.impress.co.jp/docs/news/2137169.html": {
+  "title": "Toshiba ütü küçüktür ve ileri geri taşınması kolaydır",
+  "summary": "Toshiba Lifestyle, Ekim ayı başında kablosuz buharlı ütüler \"TA-FV580\" ve \"TA-FV480\"i piyasaya sürecek. Fiyat açık ve beklenen piyasa fiyatı TA-FV580 için 9.980 yen, TA-FV480 için ise 7.980 yen civarında."
+ },
+ "https://kaden.watch.impress.co.jp/docs/kadenya/comic/2137505.html": {
+  "title": "No. 401: Kolay Fotoğrafçılık [Cadeña Company] - Ev Aletleri Saati",
+  "summary": "Özet Mevcut Değil"
+ },
+ "https://senken.co.jp/posts/krisvanassche-260904": {
+  "title": "Kris Van Assche yeniden kendi adıyla kıyafet üretiyor",
+  "summary": "[PARIS = Muhabir Takayuki Matsui] Belçikalı tasarımcı Chris Van Assche yeniden kendi adıyla kıyafet üretmeye başladı. Kendi markası \"Chris Van Assche\"yi kurduktan sonra \"Dior\" ve \"Berluti\" için erkek ürünleri yarattı..."
+ },
+ "https://senken.co.jp/posts/jpx-260904": {
+  "title": "Unitika, Fujibo HD, Teikoku Senryo'nun TSE'ye bağlı sektörleri artık \"Tekstil\" olarak listelenmiyor",
+  "summary": "Tokyo Menkul Kıymetler Borsası'nda işlem gören Unitika, Fujibo Holdings (HD) ve Teikoku Seni'nin sektör kategorisi 1 Ekim itibarıyla \"tekstil ürünleri\"nden değişecek. Bu sonuçların her ikisi de satış kompozisyon oranındaki değişikliklerden kaynaklandı. Unitika \"Kimya\" olur. 24 yıl..."
+ },
+ "https://senken.co.jp/posts/ua-260904": {
+  "title": "United Arrows, kişisel stil hizmetlerini 6 marka ve 56 satış personeline genişletiyor",
+  "summary": "United Arrows, 3 Eylül'den itibaren rezervasyona dayalı \"Kişisel Şekillendirme Hizmeti\"nin hedef markalarını ve kapsamını genişletti. Mevcut \"United Arrows\" markasına beş marka eklenerek toplam altı marka elde edilecek. Sorumlu satış elemanı sayısı 21'den 5'e çıktı..."
+ },
+ "https://senken.co.jp/posts/mete-260904": {
+  "title": "《Metemimi》Bunu Dejima, Nagazaki'de düşündüm",
+  "summary": "Yaz tatili sırasında ailem Nagazaki'den Goto Adaları'na seyahat etti. Güzel plajları ve Dünya Mirası Alanı haline gelen gizli Hıristiyan kalıntılarını ziyaret ettik. Dejima ve Glover House gibi tarihi binalar aracılığıyla geçmişi anımsayın. Bu şehir modern Japonya'nın başlangıç ​​noktasıydı. Eğer o toprak..."
+ },
+ "https://senken.co.jp/posts/horoscope-260904": {
+  "title": "《Youlin'den Dokuz Yıldızlı Ki Astroloji》7 Eylül'den 6 Ekim'e kadar falınız nedir?",
+  "summary": "'Dokuz Yıldız Ki' antik Çin'den günümüze kadar gelmiştir ve Japonya'da en iyi bilinen kehanet tekniklerinden biridir. Geleceği \"Beş Element\" ile evrenin Qi'sinin dokuz bölümünün birleşiminden yorumlayın. [Öne çıkan makale] 《Analiz》 Giyim perakende satış sıralamasında 1 numara Uniqlo 1 trilyon..."
+ },
+ "https://senken.co.jp/posts/branshes-260903": {
+  "title": "Blanches gençler için EC markası “Mellowly”yi piyasaya sürüyor",
+  "summary": "Bir çocuk giyim şirketi olan Blanches (Suita City, Osaka Eyaleti), ilkokulun üst sınıflarından ortaokul öğrencilerine kadar gençleri hedef alan ``Mellowly'' adlı bir e-ticaret markası başlattı. Ön satış 28 Ağustos'tan itibaren resmi EC'de başlayacak ve 1 Eylül'den itibaren Zozo Town ve Rakuten Market'te de satışa sunulacak. ..."
+ },
+ "https://senken.co.jp/posts/aeonretail-260903": {
+  "title": "Aeon Retail, 2030'da 50 mağazaya genişlemek için İskandinav iç mekan ürünleri \"Granito\"yu geliştiriyor",
+  "summary": "Aeon Retail, yeni bir büyüme stratejisi olarak özel mağazacılık işi üzerinde çalışıyor. Amaç, İskandinav iç mekan ürünleri markası ``Granito'yu' geliştirmek ve 2030 yılına kadar 50 mağazaya genişletmektir. [İlgili makale] Aeon Retail'in eğlence katı \"Wonder Gate\" Ürün departmanı..."
+ },
+ "https://senken.co.jp/posts/systemsoft-260903": {
+  "title": "Sistem yazılımı, Matsuo Inter desteği, sistem iyileştirmeleri, finansman vb.",
+  "summary": "31 Ağustos'ta sistem geliştiricisi System Soft (Tokyo, başkan: Yoshifumi Iida), kurumsal yeniden yapılandırma prosedürlerinden geçen Matsuo International ve Matsuo Sangyo ile bir sponsorluk anlaşması imzaladı. Nisan ayında iki şirket, bilgisayar yazılımı planlama, geliştirme ve satış alanlarında ortak girişimde bulunacaklarını duyurdu..."
+ },
+ "https://senken.co.jp/posts/wacoal-underwear-260903": {
+  "title": "Wacoal, çeşitli vücut şekillerine uyum sağlayabilen, 312 göğüs tipiyle uyumlu 6 beden sütyen satıyor",
+  "summary": "Wacoal, sütyenleri için bir \"basınç dağılım yapısı\" geliştirmek amacıyla biriktirdiği vücut verilerini birleştirdi. Tasarım, göğsün benzersizliğini ve yaşla birlikte meydana gelen değişiklikleri dikkate alarak tek bedenin çeşitli vücut şekillerine uymasına olanak tanır. \"Tamir sutyeni\" olarak..."
+ },
+ "https://news.cheaa.com/2026/0901/658018.shtml": {
+  "title": "Huawei Hongmeng Akıllı Ev: Yeni akıllı ev yaşamı deneyimini üstün etkileşim ve tam senaryo çözümleriyle yükseltme",
+  "summary": "Zekanın sınırlarını yeniden aşıyor, tüm sahne deneyimini yeniliyoruz."
+ },
+ "https://smarthome.ofweek.com/2026-09/ART-91005-12003-30701507.html": {
+  "title": "Haier Akıllı Ev, dalgalarda yelken açıyor",
+  "summary": "Haier, pazar, veri, Ar-Ge"
+ },
+ "https://smarthome.ofweek.com/2026-09/ART-91009-8420-30701502.html": {
+  "title": "Araştırma Raporu Ana Sayfa丨Ev mobilyası şirketleri neden “ilçe bölgelerine dönmek” istiyor?",
+  "summary": "ev, pazar"
+ },
+ "https://smarthome.ofweek.com/2026-09/ART-91009-8420-30701469.html": {
+  "title": "Ev aletleri satıcıları artık yüksek kalite veya düşük fiyat konusunda endişelenmemeli",
+  "summary": "ev aletleri, market"
+ },
+ "https://smarthome.ofweek.com/2026-09/ART-91005-8420-30701448.html": {
+  "title": "İklimlendirme endüstrisi yeni bir \"inverter savaşı\" mı başlatacak?",
+  "summary": "klima, sanayi, market"
+ },
+ "https://smarthome.ofweek.com/2026-09/ART-91005-12008-30701409.html": {
+  "title": "Pazarlamaya 16,4 milyar dolar harcandı ama Üç Kanatlı Kuş kârdan zarara dönüştü: Haier Akıllı Ev'in \"ekolojik rüyasından\" uyanmanın zamanı geldi",
+  "summary": "Haier Akıllı Ev,Haier"
+ },
+ "https://smarthome.ofweek.com/2026-09/ART-91009-8480-30701350.html": {
+  "title": "Yedi bölüm iç talebi destekliyor! Önümüzdeki beş yıllık ev aletleri tüketiminde fırsatlar kapıda!",
+  "summary": "ev aletleri"
+ },
+ "https://smarthome.ofweek.com/2026-09/ART-91005-8110-30701304.html": {
+  "title": "Yineleme döngüsü yarım yıla kısaltıldı! Giderek daha fazla \"anında süpürme robotu\", akıllı temizlik ve hızlı sindirim var mı?",
+  "summary": "Zhuimi, Roborock Teknolojisi, Ecovacs, süpürme robotu, akıllı temizlik"
+ },
+ "https://smarthome.ofweek.com/2026-09/ART-91009-8420-30701261.html": {
+  "title": "Beyaz eşya firmalarının 2026 yarı yıllık raporundaki sırlar",
+  "summary": "ev aletleri, iş, market"
  }
 }
