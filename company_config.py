@@ -49,6 +49,27 @@ COMPANIES = {
         "list_url_template": "https://www.midea.com/global/news?page={page}",
         "article_url_re": r"https://www\.midea\.com/global/news/[a-z0-9\-]{8,}$",
     },
+    # Hisense publishes an Adobe AEM query index per locale. Its European site
+    # (hisense-europe.com) is a single-page app whose article pages return
+    # "Not Found" with no metadata, so the JSON index is the only clean source.
+    "Hisense": {
+        "company": "Hisense",
+        "language": "en",
+        "enabled": True,
+        "type": "aem",
+        "base_url": "https://www.hisense.com",
+        "index_template": "/{locale}/newsroom.json",
+        # us/en is the only locale whose rows carry a real ISO `published`
+        # date. ca/en returns 6 English releases with both date fields empty
+        # (only a boilerplate dateline in the description, and the same one on
+        # two different articles), and the pipeline drops undated records — so
+        # requesting it costs a round trip for nothing. cn/zh has ~20 recent
+        # releases but they are Chinese, and company_news has no English
+        # translation stage, so they would land as Chinese headlines on the
+        # English page. Both are listed here ready to enable if that changes.
+        "locales": ["us/en"],
+        "locale_language": {"us/en": "en", "ca/en": "en", "cn/zh": "zh-CN"},
+    },
     # --- Phase 2: JS-rendered / bot-protected (no server-side meta) ---
     "Beko (Arçelik)": {
         "company": "Beko (Arçelik)",
@@ -88,6 +109,9 @@ PHASE2_NOTES = {
     "Electrolux": "Listing times out / blocks the runner IP; retry via API or browser.",
     "Haier": "Listing article links injected via JS; only nav present server-side.",
     "LG": "JS-rendered + bot-protected (Akamai); plain fetch returns a stub.",
+    "Hisense (Europe site)": "hisense-europe.com is an Angular SPA; article pages "
+                             "return '<title>Not Found' with no OG/JSON-LD. Scraped "
+                             "via the AEM index on www.hisense.com instead.",
 }
 
 

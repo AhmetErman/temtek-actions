@@ -17,6 +17,7 @@ from collections import Counter, defaultdict
 import company_config as cc
 from company_scrapers import scrape_company
 from company_scrapers.wp import scrape_wordpress
+from company_scrapers.aem import scrape_aem_index
 
 # Keyword -> theme map (lowercased substring match on title + summary).
 THEME_KEYWORDS = {
@@ -132,7 +133,11 @@ def main():
     new_count = 0
     for name, cfg in cc.enabled_companies().items():
         print(f"\nScraping {name} ({'backfill' if backfill else 'incremental'})...")
-        if cfg.get("type") == "wordpress" or cfg.get("api_url"):
+        if cfg.get("type") == "aem":
+            recs = scrape_aem_index(cfg, since=args.since,
+                                    existing_urls=existing_urls,
+                                    max_articles=max_articles, log=log)
+        elif cfg.get("type") == "wordpress" or cfg.get("api_url"):
             recs = scrape_wordpress(cfg, since=args.since,
                                     existing_urls=existing_urls,
                                     max_articles=max_articles,

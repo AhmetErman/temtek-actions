@@ -1,15 +1,17 @@
 {
-  "generated_at": "2026-09-03T05:57:22Z",
-  "total_articles": 227,
+  "generated_at": "2026-09-03T08:59:25Z",
+  "total_articles": 234,
   "companies": [
     "Samsung",
     "Haier",
     "Midea",
     "Whirlpool",
-    "BSH (Bosch/Siemens)"
+    "BSH (Bosch/Siemens)",
+    "Hisense"
   ],
   "totals": {
     "Samsung": 159,
+    "Hisense": 7,
     "Whirlpool": 13,
     "Midea": 20,
     "BSH (Bosch/Siemens)": 12,
@@ -48,6 +50,9 @@
       "2023-Q4": 8,
       "2023-Q3": 17,
       "2023-Q2": 7
+    },
+    "Hisense": {
+      "2026-Q3": 7
     },
     "Whirlpool": {
       "2026-Q3": 7,
@@ -110,6 +115,10 @@
       "Hygiene & Health": 4,
       "Business & Corporate": 8
     },
+    "Hisense": {
+      "Other": 1,
+      "Design & Events": 6
+    },
     "Whirlpool": {
       "Cooking & Kitchen": 1,
       "Other": 2,
@@ -153,6 +162,10 @@
     "Samsung": {
       "earliest": "2023-06-01",
       "latest": "2026-09-03"
+    },
+    "Hisense": {
+      "earliest": "2026-07-31",
+      "latest": "2026-08-28"
     },
     "Whirlpool": {
       "earliest": "2026-05-06",
