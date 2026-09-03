@@ -2,9 +2,8 @@ import feedparser
 import json
 import time
 import os
-import threading
-from deep_translator import GoogleTranslator
 import config
+import translation
 
 def _is_valid_entry(entry):
     """Guard against malformed input from any source (RSS or custom scrapers).
@@ -31,31 +30,6 @@ def _is_valid_entry(entry):
     if not entry.get('summary', '').strip():
         entry['summary'] = entry['title']
     return True
-
-def _translate_batch_with_timeout(translator, texts, timeout=300):
-    """Wrapper to prevent GoogleTranslator.translate_batch() from hanging indefinitely."""
-    if not texts:
-        return []
-        
-    result = [None]
-    error = [None]
-    
-    def _do_translate():
-        try:
-            result[0] = translator.translate_batch(texts)
-        except Exception as e:
-            error[0] = e
-    
-    thread = threading.Thread(target=_do_translate)
-    thread.daemon = True
-    thread.start()
-    thread.join(timeout=timeout)
-    
-    if thread.is_alive():
-        raise TimeoutError(f"Batch translation timed out after {timeout}s")
-    if error[0]:
-        raise error[0]
-    return result[0] or []
 
 def scrape_and_translate():
     classified_filename = config.CLASSIFIED_FILENAME
@@ -173,44 +147,33 @@ def scrape_and_translate():
         print(f"  -> Dropped {dropped} malformed entr{'y' if dropped == 1 else 'ies'}.")
 
     if new_entries_to_process:
-        print(f"\nFound {len(new_entries_to_process)} new articles. Batch translating...")
-        
-        # Group by language
-        entries_by_lang = {}
-        for entry in new_entries_to_process:
-            lang = entry['language']
-            if lang not in entries_by_lang:
-                entries_by_lang[lang] = []
-            entries_by_lang[lang].append(entry)
-            
-        translators = {}
-        for lang, entries in entries_by_lang.items():
-            if lang not in translators:
-                translators[lang] = GoogleTranslator(source=lang, target=config.TARGET_LANGUAGE)
-            translator = translators[lang]
-            
-            titles_to_translate = [entry['title'] for entry in entries]
-            summaries_to_translate = [entry['summary'] for entry in entries]
-            
-            try:
-                print(f"  -> Batch translating titles ({lang})...")
-                titles_en = _translate_batch_with_timeout(translator, titles_to_translate, timeout=config.TRANSLATION_TIMEOUT)
-            except Exception as e:
-                print(f"Error batch translating titles ({lang}): {e}")
-                titles_en = [""] * len(titles_to_translate)
-                
-            try:
-                print(f"  -> Batch translating summaries ({lang})...")
-                summaries_en = _translate_batch_with_timeout(translator, summaries_to_translate, timeout=config.TRANSLATION_TIMEOUT)
-            except Exception as e:
-                print(f"Error batch translating summaries ({lang}): {e}")
-                summaries_en = [""] * len(summaries_to_translate)
-                
-            for i, entry in enumerate(entries):
-                entry["title_en"] = titles_en[i] if titles_en and i < len(titles_en) else ""
-                entry["summary_en"] = summaries_en[i] if summaries_en and i < len(summaries_en) else ""
-                new_articles.append(entry)
-    
+        print(f"\nFound {len(new_entries_to_process)} new articles. Translating to English...")
+
+        # Same engine as the Turkish pass. It matters which one is used here:
+        # deep_translator's translate_batch() is a serial loop that raises on the
+        # first failure and discards everything it already translated, so one
+        # throttled request used to blank out an entire language group's titles
+        # in a single run — which is what left raw Japanese and Chinese headlines
+        # on the English page. translation.batch_translate() isolates each
+        # string, auto-detects a missing language, strips HTML and caps on the
+        # API's real (URL-encoded) size limit.
+        got = translation.translate_fields(
+            new_entries_to_process,
+            {"title_en": "title", "summary_en": "summary"},
+            config.TARGET_LANGUAGE,
+            log=lambda m: print(m, flush=True),
+        )
+        for i, entry in enumerate(new_entries_to_process):
+            values = got.get(i, {})
+            entry["title_en"] = values.get("title_en", "")
+            entry["summary_en"] = values.get("summary_en", "")
+            new_articles.append(entry)
+
+        blank = sum(1 for e in new_articles if not (e.get("title_en") or "").strip())
+        if blank:
+            print(f"  -> {blank} titles could not be translated; "
+                  f"the English backfill stage will retry them.")
+
     print(f"\n=== Scrape Summary ===")
     print(f"Total articles found in feeds: {total_scraped}")
     print(f"New articles translated: {len(new_articles)}")
@@ -313,11 +276,14 @@ def scrape_and_translate():
     # for anything untranslated, so a failure here must not fail the scrape.
     try:
         import translate_data
-        print("\n=== Turkish translation pass ===")
+        print("\n=== Translation passes ===")
+        # English first: title_en/summary_en are what the dashboard renders, so
+        # a gap there shows the reader a raw Japanese or Chinese headline.
+        translate_data.translate_english()
         translate_data.translate_news()
         translate_data.translate_classes()
     except Exception as e:
-        print(f"  -> Turkish translation skipped: {e}")
+        print(f"  -> Translation pass skipped: {e}")
 
 
 if __name__ == "__main__":

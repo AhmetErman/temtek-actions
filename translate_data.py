@@ -19,7 +19,7 @@ Progress is saved after every source-language group for the same reason.
 
     python translate_data.py                 # fill in whatever is missing
     python translate_data.py --force         # retranslate everything
-    python translate_data.py --only news     # news | company | classes
+    python translate_data.py --only news     # english | news | company | classes
     python translate_data.py --limit 50      # smoke test
 """
 import argparse
@@ -127,6 +127,61 @@ def translate_news(force=False, limit=None):
     log(f"  {NEWS_TR_FILE}: {len(side)} entries")
 
 
+def translate_english(force=False, limit=None):
+    """Repair missing English in the tech-news dataset itself.
+
+    ``title_en`` / ``summary_en`` are what the dashboard renders, and when one
+    is blank the page falls back to the raw Japanese or Chinese — which is
+    exactly what a reader sees as "the news is in the wrong language". Older
+    runs lost whole language groups at a time, because the batch helper they
+    used raised on the first failure and threw away the rest of the group.
+
+    Unlike the Turkish stages this writes back into the base file rather than a
+    sidecar: these two fields already live there and are the ones the UI reads.
+    """
+    articles = load_json(NEWS_FILE, [])
+    if not articles:
+        log(f"  {NEWS_FILE} is empty or missing — nothing to do.")
+        return
+
+    pending = []
+    for art in articles:
+        wants_title = not (art.get("title_en") or "").strip()
+        wants_sum = ((art.get("summary") or "").strip()
+                     and not (art.get("summary_en") or "").strip())
+        if force or wants_title or wants_sum:
+            pending.append(art)
+    if limit:
+        pending = pending[:limit]
+
+    log(f"\n=== English repair ===")
+    log(f"  {len(articles)} articles, {len(pending)} missing English")
+    if not pending:
+        return
+
+    def apply(partial):
+        """Copy finished translations onto the records, never overwriting."""
+        for i, values in partial.items():
+            for key, value in values.items():
+                if value and not (pending[i].get(key) or "").strip():
+                    pending[i][key] = value
+
+    def save_progress(partial):
+        # Apply before saving, or the checkpoint writes the file unchanged and
+        # an interrupted run loses everything it had already translated.
+        apply(partial)
+        save_json(NEWS_FILE, articles)      # records are edited in place
+
+    got = translation.translate_fields(
+        pending, {"title_en": "title", "summary_en": "summary"},
+        "en", log=log, checkpoint=save_progress)
+    apply(got)
+    save_json(NEWS_FILE, articles)
+
+    still = sum(1 for a in articles if not (a.get("title_en") or "").strip())
+    log(f"  {NEWS_FILE}: {still} articles still without an English title")
+
+
 def translate_company(force=False, limit=None):
     """Turkish for the competitor press releases (all English at source)."""
     items = load_json(COMPANY_FILE, [])
@@ -190,16 +245,18 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--force", action="store_true",
                     help="retranslate everything, not just what is missing")
-    ap.add_argument("--only", choices=["news", "company", "classes"],
+    ap.add_argument("--only", choices=["english", "news", "company", "classes"],
                     help="run a single stage")
     ap.add_argument("--limit", type=int,
                     help="cap the number of records (smoke test)")
     args = ap.parse_args()
 
-    stages = [args.only] if args.only else ["news", "company", "classes"]
+    stages = [args.only] if args.only else ["english", "news", "company", "classes"]
     for stage in stages:
         try:
-            if stage == "news":
+            if stage == "english":
+                translate_english(args.force, args.limit)
+            elif stage == "news":
                 translate_news(args.force, args.limit)
             elif stage == "company":
                 translate_company(args.force, args.limit)

@@ -357,11 +357,22 @@
 
             // Spec table = the EPREL benchmark for these flagships: same columns as
             // /eprel, so the figures match the EU energy label exactly.
+            // Ordered best-first by energy efficiency index, so the table reads as a
+            // ranking rather than in whatever order the file happens to list brands.
+            // Dryers sit under the old regulation and carry no EEI, so they rank on
+            // annual energy instead — the equivalent figure on that ladder. Rows with
+            // neither value sort last rather than jumping to the top as 0.
+            const rankKey = S.some(c=>c.key==='eei') ? 'eei' : 'energyAnnual';
+            const rankOf = p => {
+                const v = (p.eprel||{})[rankKey];
+                return (typeof v === 'number' && isFinite(v)) ? v : Infinity;
+            };
+            const ranked = prods.slice().sort((a,b)=> rankOf(a) - rankOf(b));
             document.getElementById('spectable').innerHTML =
                 `<thead><tr><th>${t('pr.brand')}</th><th>${t('pr.model')}</th>` +
                 S.map(c=>`<th class="${c.type==='num'?'num':''}">${esc(L(c))}${c.unit?` <span class="u">${esc(c.unit)}</span>`:''}</th>`).join('') +
                 `<th>${t('pr.onMarket')}</th><th>EPREL</th></tr></thead>` +
-                `<tbody>${prods.map(p=>
+                `<tbody>${ranked.map(p=>
                     `<tr><td><span class="cdot" style="display:inline-block;background:${COLOR[p.company]};margin-right:6px"></span>${esc(p.company)}</td>`
                         + `<td class="mdl" title="${esc(p.range||'')}">${esc(p.model||'—')}</td>`
                         + S.map(c=>`<td class="${c.type==='num'?'num':''}">${specCell(p,c)}</td>`).join('')
