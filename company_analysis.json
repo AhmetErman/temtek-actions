@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-09-13T23:59:23Z",
-  "total_articles": 246,
+  "generated_at": "2026-09-20T23:59:54Z",
+  "total_articles": 247,
   "companies": [
     "Samsung",
     "Midea",
     "Haier",
     "BSH (Bosch/Siemens)",
-    "Whirlpool",
-    "Hisense"
+    "Hisense",
+    "Whirlpool"
   ],
   "totals": {
+    "Hisense": 13,
     "Samsung": 161,
     "BSH (Bosch/Siemens)": 14,
     "Midea": 23,
-    "Hisense": 12,
     "Whirlpool": 13,
     "Haier": 23
   },
@@ -35,6 +35,9 @@
     "2026-Q3"
   ],
   "by_quarter": {
+    "Hisense": {
+      "2026-Q3": 13
+    },
     "Samsung": {
       "2026-Q3": 10,
       "2026-Q2": 9,
@@ -72,9 +75,6 @@
       "2023-Q3": 1,
       "2023-Q2": 1
     },
-    "Hisense": {
-      "2026-Q3": 12
-    },
     "Whirlpool": {
       "2026-Q3": 7,
       "2026-Q2": 6
@@ -104,6 +104,15 @@
     "Other"
   ],
   "by_theme": {
+    "Hisense": {
+      "Design & Events": 12,
+      "Business & Corporate": 1,
+      "AI": 2,
+      "IoT & Connectivity": 1,
+      "Laundry": 1,
+      "Cooking & Kitchen": 1,
+      "Other": 1
+    },
     "Samsung": {
       "AI": 101,
       "Laundry": 29,
@@ -138,15 +147,6 @@
       "Cooking & Kitchen": 4,
       "Sustainability & Energy": 2
     },
-    "Hisense": {
-      "Design & Events": 11,
-      "Business & Corporate": 1,
-      "AI": 2,
-      "IoT & Connectivity": 1,
-      "Laundry": 1,
-      "Cooking & Kitchen": 1,
-      "Other": 1
-    },
     "Whirlpool": {
       "Cooking & Kitchen": 1,
       "Other": 2,
@@ -166,6 +166,10 @@
     }
   },
   "date_range": {
+    "Hisense": {
+      "earliest": "2026-07-31",
+      "latest": "2026-09-18"
+    },
     "Samsung": {
       "earliest": "2023-06-01",
       "latest": "2026-09-07"
@@ -176,10 +180,6 @@
     },
     "Midea": {
       "earliest": "2023-04-01",
-      "latest": "2026-09-05"
-    },
-    "Hisense": {
-      "earliest": "2026-07-31",
       "latest": "2026-09-05"
     },
     "Whirlpool": {
