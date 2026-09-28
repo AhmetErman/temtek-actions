@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-20T23:59:54Z",
-  "total_articles": 247,
+  "generated_at": "2026-09-28T00:26:32Z",
+  "total_articles": 250,
   "companies": [
     "Samsung",
     "Midea",
     "Haier",
-    "BSH (Bosch/Siemens)",
+    "Whirlpool",
     "Hisense",
-    "Whirlpool"
+    "BSH (Bosch/Siemens)"
   ],
   "totals": {
-    "Hisense": 13,
-    "Samsung": 161,
+    "Whirlpool": 14,
+    "Hisense": 14,
+    "Samsung": 162,
     "BSH (Bosch/Siemens)": 14,
     "Midea": 23,
-    "Whirlpool": 13,
     "Haier": 23
   },
   "quarters": [
@@ -35,11 +35,15 @@
     "2026-Q3"
   ],
   "by_quarter": {
+    "Whirlpool": {
+      "2026-Q3": 8,
+      "2026-Q2": 6
+    },
     "Hisense": {
-      "2026-Q3": 13
+      "2026-Q3": 14
     },
     "Samsung": {
-      "2026-Q3": 10,
+      "2026-Q3": 11,
       "2026-Q2": 9,
       "2026-Q1": 14,
       "2025-Q4": 12,
@@ -75,10 +79,6 @@
       "2023-Q3": 1,
       "2023-Q2": 1
     },
-    "Whirlpool": {
-      "2026-Q3": 7,
-      "2026-Q2": 6
-    },
     "Haier": {
       "2025-Q1": 2,
       "2024-Q4": 3,
@@ -104,8 +104,16 @@
     "Other"
   ],
   "by_theme": {
+    "Whirlpool": {
+      "Refrigeration": 1,
+      "Cooking & Kitchen": 1,
+      "Other": 2,
+      "Laundry": 1,
+      "Design & Events": 8,
+      "Business & Corporate": 10
+    },
     "Hisense": {
-      "Design & Events": 12,
+      "Design & Events": 13,
       "Business & Corporate": 1,
       "AI": 2,
       "IoT & Connectivity": 1,
@@ -114,12 +122,12 @@
       "Other": 1
     },
     "Samsung": {
+      "Cooking & Kitchen": 24,
       "AI": 101,
       "Laundry": 29,
       "Refrigeration": 22,
       "Design & Events": 120,
       "Sustainability & Energy": 30,
-      "Cooking & Kitchen": 23,
       "Other": 5,
       "IoT & Connectivity": 43,
       "Hygiene & Health": 4,
@@ -147,13 +155,6 @@
       "Cooking & Kitchen": 4,
       "Sustainability & Energy": 2
     },
-    "Whirlpool": {
-      "Cooking & Kitchen": 1,
-      "Other": 2,
-      "Laundry": 1,
-      "Design & Events": 8,
-      "Business & Corporate": 10
-    },
     "Haier": {
       "Other": 4,
       "Laundry": 6,
@@ -166,13 +167,17 @@
     }
   },
   "date_range": {
+    "Whirlpool": {
+      "earliest": "2026-05-06",
+      "latest": "2026-09-23"
+    },
     "Hisense": {
       "earliest": "2026-07-31",
-      "latest": "2026-09-18"
+      "latest": "2026-09-23"
     },
     "Samsung": {
       "earliest": "2023-06-01",
-      "latest": "2026-09-07"
+      "latest": "2026-09-22"
     },
     "BSH (Bosch/Siemens)": {
       "earliest": "2023-09-02",
@@ -181,10 +186,6 @@
     "Midea": {
       "earliest": "2023-04-01",
       "latest": "2026-09-05"
-    },
-    "Whirlpool": {
-      "earliest": "2026-05-06",
-      "latest": "2026-08-27"
     },
     "Haier": {
       "earliest": "2023-02-13",
