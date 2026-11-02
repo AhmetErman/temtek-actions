@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-25T23:58:54Z",
-  "total_articles": 261,
+  "generated_at": "2026-11-02T01:23:25Z",
+  "total_articles": 262,
   "companies": [
     "Samsung",
     "Midea",
     "Haier",
-    "BSH (Bosch/Siemens)",
     "Whirlpool",
+    "BSH (Bosch/Siemens)",
     "Hisense"
   ],
   "totals": {
+    "Whirlpool": 18,
     "Hisense": 16,
     "Samsung": 164,
-    "Whirlpool": 17,
     "BSH (Bosch/Siemens)": 18,
     "Midea": 23,
     "Haier": 23
@@ -36,6 +36,11 @@
     "2026-Q4"
   ],
   "by_quarter": {
+    "Whirlpool": {
+      "2026-Q4": 3,
+      "2026-Q3": 9,
+      "2026-Q2": 6
+    },
     "Hisense": {
       "2026-Q4": 2,
       "2026-Q3": 14
@@ -56,11 +61,6 @@
       "2023-Q4": 8,
       "2023-Q3": 17,
       "2023-Q2": 7
-    },
-    "Whirlpool": {
-      "2026-Q4": 2,
-      "2026-Q3": 9,
-      "2026-Q2": 6
     },
     "BSH (Bosch/Siemens)": {
       "2026-Q3": 2,
@@ -110,6 +110,14 @@
     "Other"
   ],
   "by_theme": {
+    "Whirlpool": {
+      "Design & Events": 10,
+      "Business & Corporate": 13,
+      "Cooking & Kitchen": 2,
+      "Refrigeration": 1,
+      "Other": 2,
+      "Laundry": 1
+    },
     "Hisense": {
       "Refrigeration": 2,
       "Design & Events": 15,
@@ -131,14 +139,6 @@
       "IoT & Connectivity": 43,
       "Hygiene & Health": 4,
       "Business & Corporate": 8
-    },
-    "Whirlpool": {
-      "Business & Corporate": 12,
-      "Cooking & Kitchen": 2,
-      "Design & Events": 9,
-      "Refrigeration": 1,
-      "Other": 2,
-      "Laundry": 1
     },
     "BSH (Bosch/Siemens)": {
       "Hygiene & Health": 1,
@@ -174,6 +174,10 @@
     }
   },
   "date_range": {
+    "Whirlpool": {
+      "earliest": "2026-05-06",
+      "latest": "2026-10-26"
+    },
     "Hisense": {
       "earliest": "2026-07-31",
       "latest": "2026-10-21"
@@ -181,10 +185,6 @@
     "Samsung": {
       "earliest": "2023-06-01",
       "latest": "2026-10-20"
-    },
-    "Whirlpool": {
-      "earliest": "2026-05-06",
-      "latest": "2026-10-19"
     },
     "BSH (Bosch/Siemens)": {
       "earliest": "2023-02-17",
